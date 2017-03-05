@@ -41,7 +41,7 @@
                 <div class="panel-heading" role="tab" id="headingOne">
                     <h4 class="panel-title">
                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            <span class="fa fa-folder"></span> <a href="{{ category.path }}">{{ category.name }}</a> ({{ site.categories[category.name] | first }})
+                            <span class="fa fa-folder"></span> <a href="{{ category.path }}">{{ category.name }}</a> ({{ site.categories[category.name] | last | size }})
                         </a>
                     </h4>
                 </div>
@@ -52,7 +52,6 @@
                                 {% for cat in category.subcategories %}
                                     <li>
                                         {% assign site_cat = site.categories[cat.name] %}
-                                        {{ site_cat }}
                                         <span class="fa fa-folder-outline"></span> <a href="{{ cat.path }}">{{ cat.name }}</a> {{ site_cat | last | size }}
                                     </li>
                                 {% endfor %}
