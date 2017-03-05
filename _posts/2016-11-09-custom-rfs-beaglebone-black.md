@@ -89,15 +89,15 @@ Download the Busybox source from [here:](https://busybox.net/downloads/busybox-1
 
 Extract the tarball using following command
 
-{% highlight shell %}
+<pre>
 $ tar -xvf busybox-1.24.1.tar.bz2
-{% endhighlight %}
+</pre>
 
 Then, cross compile the source for ARM platform using the following commands.
 
 Note: This assumes that you have the arm cross compilation toolchain configured in your system. If not please go through my [previous post](http://embedjournal.com/kernel-compilation-beaglebone-black/) to see how to get it done.
 
-{% highlight shell %}
+{% highlight bash %}
 $ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- defconfig
 $ make ARCH=arm CRSOO_COMPILE=arm-linux-gnueabihf- menuconfig
 {% endhighlight %}

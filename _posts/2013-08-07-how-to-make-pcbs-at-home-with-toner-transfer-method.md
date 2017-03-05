@@ -8,7 +8,7 @@ permalink: /how-to-make-pcbs-at-home-with-toner-transfer-method/
 dsq_thread_id: "2728571825"
 
 image: /wp-content/uploads/2013/06/DSC09563.jpg
-categories: [ "Basics", "General Posts", "How-To's" ]
+categories: [ "Basics", "General Posts", "How To" ]
 tags: [ "basics", "Development Board", "DIY", "EDA" ]
 ---
 

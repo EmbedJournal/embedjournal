@@ -11,21 +11,21 @@ layout: default
             <div class="b-postImg" style="background-image: url({{ site.baseurl }}/assets/images/sample-post-image.jpg);">
                 <!-- <img src="{{ site.baseurl }}/assets/images/sample-post-image.jpg" class="e-postImg" alt="My Approach to the Mesh Flare Problem (IIT-B's Techfest)"> -->
 				<div class="b-postHeader">
-					<h1>My Approach to the Mesh Flare Problem (IIT-B's Techfest)</h1>
+					<h1>{{ page.title }}</h1>
 					<div class="b-postDetails">
-						<p><span class="b-thumb" style="background-image: url({{ site.baseurl }}/assets/images/sample-siddharth-image.jpg);"></span> by <a href="#">Siddharth</a> <span class="b-bullet">•</span> October 21, 2016 <span class="b-bullet">•</span> <span class="fa fa-folder b-icon"></span> <a href="#">Linux</a></p>
+					    {% assign author = site.data.authors[page.author] %}
+						<p><span class="b-thumb" style="background-image: url({{ author.image }});"></span> by <a href="{{ author.url }}">Siddharth</a> <span class="b-bullet">•</span> {{ page.date | date: "%B %-d, %Y" }}</p>
+						<ul class="b-tags">
+						    <li><span class="fa fa-folder b-icon"></span></li>
+						    {% for cat in page.categories %}
+						        <li><a href="{{ site.baseurl }}/categories/{{ cat | slugify }}" >{{ cat }}</a></li>
+						    {% endfor %}
 						<ul class="b-tags">
 							<li><span class="fa fa fa-tag b-icon"></span></li>
-							<li><a href="#" class="b-tag">Linux</a></li>
-							<li><a href="#" class="b-tag">Tech</a></li>
-							<li><a href="#" class="b-tag">OS</a></li>
-							<li><a href="#" class="b-tag">Ubuntu</a></li>
+							{% for tag in page.tags %}
+						        <li><a href="{{ site.baseurl }}/tags/{{ tag | slugify }}" class="b-tag">{{ tag }}</a></li>
+						    {% endfor %}
 						</ul>
-						<!-- <ul>
-							<li class="b-user"><a href="#">Siddarth</a></li>
-							<li class="b-date"><a href="#">October 21, 2016</a></li>
-							<li class="b-category"><a href="#">Linux</a></li>
-						</ul> -->
 					</div>
 				</div>
             </div>
@@ -38,7 +38,7 @@ layout: default
         	<!-- End of article subscribe form -->
 			<div class="c-subscribe">
 				<div class="b-subscribeContent">
-					<p>Liked this post, subscribe with your email and we will keep you posted!</p>
+					<p>Liked this post? Subscribe with your email and we will keep you engagged!</p>
 					<form action="/" method="post">
 						<div class="b-field">
 							<input type="text" placeholder="Email">

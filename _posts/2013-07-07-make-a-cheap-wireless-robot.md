@@ -8,7 +8,7 @@ permalink: /make-a-cheap-wireless-robot/
 dsq_thread_id: "2728559176"
 
 image: /wp-content/uploads/2013/07/DSC09479.jpg
-categories: [ "How-To's", "Robotics", "Robots" ]
+categories: [ "How To", "Robotics", "Robots" ]
 tags: [ "DIY", "PIC", "RF", "robotics", "wireless" ]
 ---
 

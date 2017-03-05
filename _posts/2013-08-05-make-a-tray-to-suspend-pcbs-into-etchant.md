@@ -8,7 +8,7 @@ permalink: /make-a-tray-to-suspend-pcbs-into-etchant/
 dsq_thread_id: "3297032822"
 
 image: /wp-content/uploads/2013/08/DSC09619.jpg
-categories: [ "How-To's" ]
+categories: [ "How To" ]
 tags: [ "circuit design", "DIY", "PCB Etching" ]
 ---
 

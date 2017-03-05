@@ -8,7 +8,7 @@ permalink: /make-a-digital-clock/
 dsq_thread_id: "2728571391"
 
 image: /wp-content/uploads/2013/07/DSC08035.jpg
-categories: [ "How-To's", "PIC Microcontroller" ]
+categories: [ "How To", "PIC Microcontroller" ]
 tags: [ "DIY", "interface", "programming", "rtc" ]
 ---
 

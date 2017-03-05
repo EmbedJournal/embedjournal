@@ -8,7 +8,7 @@ permalink: /how-to-make-chassis/
 dsq_thread_id: "2728571901"
 
 image: /wp-content/uploads/2013/06/robots_chassis_is_ready.jpg
-categories: [ "How-To's", "Robotics" ]
+categories: [ "How To", "Robotics" ]
 tags: [ "DIY", "robotics" ]
 ---
 

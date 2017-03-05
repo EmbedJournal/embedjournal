@@ -8,7 +8,7 @@ permalink: /diy-dont-buy-breadboard-power-supply-make-it/
 dsq_thread_id: "2728638611"
 
 image: /wp-content/uploads/2013/10/first.jpg
-categories: [ "How-To's" ]
+categories: [ "How To" ]
 ---
 
 <p style="text-align: center;">

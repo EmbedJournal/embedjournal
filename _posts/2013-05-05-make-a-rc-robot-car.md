@@ -8,7 +8,7 @@ permalink: /make-a-rc-robot-car/
 dsq_thread_id: "2701802176"
 
 image: /wp-content/uploads/2013/05/22032012361.jpg
-categories: [ "How-To's", "Robotics", "Robots" ]
+categories: [ "How To", "Robotics", "Robots" ]
 tags: [ "DIY", "RF", "robotics", "wireless" ]
 ---
 

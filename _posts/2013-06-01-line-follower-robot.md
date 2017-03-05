@@ -8,7 +8,7 @@ permalink: /line-follower-robot/
 dsq_thread_id: "2728574119"
 
 image: /wp-content/uploads/2013/05/DSC089861.jpg
-categories: [ "How-To's", "Robotics", "Robots" ]
+categories: [ "How To", "Robotics", "Robots" ]
 tags: [ "basics", "DIY", "line follower robot", "theory" ]
 ---
 

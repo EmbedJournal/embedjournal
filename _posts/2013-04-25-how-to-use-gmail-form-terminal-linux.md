@@ -8,7 +8,7 @@ permalink: /how-to-use-gmail-form-terminal-linux/
 dsq_thread_id: "2728571155"
 
 image: /wp-content/uploads/2013/04/Gmail-Icon.png
-categories: [ "How-To's", "Linux" ]
+categories: [ "How To", "Linux" ]
 tags: [ "command line", "linux" ]
 ---
 
