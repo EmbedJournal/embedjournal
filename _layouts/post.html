@@ -1,0 +1,142 @@
+---
+layout: default
+---
+
+<div class="row">
+    <div class="col-md-8">
+
+        <article class="c-singlePost">
+
+        	<!-- Post meta -->
+            <div class="b-postImg" style="background-image: url({{ site.baseurl }}/assets/images/sample-post-image.jpg);">
+                <!-- <img src="{{ site.baseurl }}/assets/images/sample-post-image.jpg" class="e-postImg" alt="My Approach to the Mesh Flare Problem (IIT-B's Techfest)"> -->
+				<div class="b-postHeader">
+					<h1>My Approach to the Mesh Flare Problem (IIT-B's Techfest)</h1>
+					<div class="b-postDetails">
+						<p><span class="b-thumb" style="background-image: url({{ site.baseurl }}/assets/images/sample-siddharth-image.jpg);"></span> by <a href="#">Siddharth</a> <span class="b-bullet">•</span> October 21, 2016 <span class="b-bullet">•</span> <span class="fa fa-folder b-icon"></span> <a href="#">Linux</a></p>
+						<ul class="b-tags">
+							<li><span class="fa fa fa-tag b-icon"></span></li>
+							<li><a href="#" class="b-tag">Linux</a></li>
+							<li><a href="#" class="b-tag">Tech</a></li>
+							<li><a href="#" class="b-tag">OS</a></li>
+							<li><a href="#" class="b-tag">Ubuntu</a></li>
+						</ul>
+						<!-- <ul>
+							<li class="b-user"><a href="#">Siddarth</a></li>
+							<li class="b-date"><a href="#">October 21, 2016</a></li>
+							<li class="b-category"><a href="#">Linux</a></li>
+						</ul> -->
+					</div>
+				</div>
+            </div>
+
+            <!-- Main content -->
+            <div class="b-postContent">
+        		{{ content }}
+        	</div>
+
+        	<!-- End of article subscribe form -->
+			<div class="c-subscribe">
+				<div class="b-subscribeContent">
+					<p>Liked this post, subscribe with your email and we will keep you posted!</p>
+					<form action="/" method="post">
+						<div class="b-field">
+							<input type="text" placeholder="Email">
+						</div>
+						<div class="b-field">
+							<input type="submit" value="Subscribe" class="btn btn-soft">
+						</div>
+					</form>
+				</div>
+			</div>
+        </article>
+
+        <!-- Author box -->
+		<div class="c-postAuthor">
+			{% assign author = site.data.authors[page.author] %}
+			<div class="b-authorTitle">
+				<div class="b-title">
+					<h3>About {{ page.author }}</h3>
+				</div>
+				<div class="b-authorSocial">
+					<ul>
+						{% if author.social.facebook %}
+							<li class="b-facebook"><a href="{{author.social.facebook}}" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+						{% endif %}
+						{% if author.social.twitter %}
+						<li class="b-twitter"><a href="{{author.social.twitter}}" title="Twitter"><span class="fa fa-twitter"></span></a></li>
+						{% endif %}
+						{% if author.social.google_plus %}
+						<li class="b-google-plus"><a href="{{author.social.google_plus}}" title="Google+"><span class="fa fa-google-plus"></span></a></li>
+						{% endif %}
+						{% if author.social.linkedin %}
+						<li class="b-linkedin"><a href="{{author.social.linkedin}}" title="Linkedin"><span class="fa fa-linkedin"></span></a></li>
+						{% endif %}
+                    </ul>
+				</div>
+			</div>
+			<div class="b-authorCard">
+				<div class="b-authorImg">
+					<img src="{{ author.image }}" alt="Sample Thumb">
+				</div>
+				<div class="b-authorDesc">
+					<p>{{ author.short_desc }}</p>
+				</div>
+				<a href="#" class="e-readMore">Read more about {{ author.name }}</a>
+			</div>
+		</div>
+
+		<!-- Post social share -->
+		<div class="c-postSocial">
+            <ul>
+                <li class="b-label">Share</li>
+                <li class="b-twitter"><a href="#"><span class="fa fa-twitter"></span> Twitter</a></li>
+                <li class="b-facebook"><a href="#"><span class="fa fa-facebook"></span> Facebook</a></li>
+                <li class="b-linkedin"><a href="#"><span class="fa fa-linkedin"></span> Linkedin</a></li>
+                <li class="b-google-plus"><a href="#"><span class="fa fa-google-plus"></span> Google+</a></li>
+            </ul>
+        </div>
+
+        <!-- Related articles -->
+		<div class="c-relatedArticle">
+			<h3>Related Articles</h3>
+			<div class="b-relatedArticle">
+
+				<!-- Single block start -->
+				<div class="media">
+                	<div class="media-body">
+                		<a href="#"><h4 class="media-heading">Make a Simple RC (Remote Controlled) Robot Car</h4></a>
+                        <p class="b-dateLabel">May 5, 2016</p>
+                	</div>
+                </div>
+				<!-- Single block end -->
+
+				<div class="media">
+                	<div class="media-body">
+                		<a href="#"><h4 class="media-heading">Make a Simple RC (Remote Controlled) Robot Car</h4></a>
+                        <p class="b-dateLabel">May 5, 2016</p>
+                	</div>
+                </div>
+				<div class="media">
+                	<div class="media-body">
+                		<a href="#"><h4 class="media-heading">Make a Simple RC (Remote Controlled) Robot Car</h4></a>
+                        <p class="b-dateLabel">May 5, 2016</p>
+                	</div>
+                </div>
+			</div>
+		</div>
+
+		<!-- Load comments button -->
+		<div class="c-loadComment">
+			<a href="#" class="btn btn-soft"><span class="fa fa-commenting-o"></span> View comments</a>
+		</div>
+    </div>
+
+    <!-- Blog Sidebar Widgets Column -->
+    <div class="col-md-4">
+    	<aside class="c-aside">
+        	{% include sidebar.html %}
+        </aside>
+    </div>
+
+</div>

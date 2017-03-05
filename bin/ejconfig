@@ -1,0 +1,113 @@
+#!/usr/bin/perl
+
+use Getopt::Long;
+use Time::Piece;
+use Unicode::Normalize 'normalize';
+use Text::Unidecode;
+
+$CONFIG_FILE_NAME = ".config";
+
+sub dieUsage {
+	print "\n";
+	print "Usage:\n";
+	print "\t$0 options, [[options],..]\n";
+	print "Options:\n";
+	print "\t--title=TITLE\t\t Title for this post\n";
+	print "\t--date=DATE\t\t Date of the format 'YYY-MM-DD'. Defaults to today\n";
+	print "\t--author=NAME\t\t Post author's name\n";
+	print "\n";
+	exit 1;
+}
+
+sub slugify {
+	$str = shift;
+	$str = normalize('KD', $str); # Normalize the Unicode string
+	$str = unidecode($str);       # Un-accent characters
+	$str =~ tr/\000-\177//cd;     # Strip non-ASCII characters (>127)
+	$str =~ s/[^\w\s-]//g;        # Remove all non-word characters
+	$str = lc($str);              # Lowercase
+	$str =~ s/[-\s]+/-/g;         # Replace spaces and hyphens with a single hyphen
+	$str =~ s/^-|-$//g;           # Trim hyphens from both ends
+	return $str;
+}
+
+GetOptions(
+	"type=s" => \$type,
+	"title=s" => \$title,
+	"date=s" => \$date,
+	"slug=s" => \$slug,
+	"content=s" => \$contentFile,
+	"author=s" => \$author,
+	"help" => \$isHelp)
+or die("Error parsing arugements! See --help");
+
+# Print help menu and die.
+dieUsage() if ($isHelp);
+
+# defaults to creating posts.
+$type = "post" unless defined ($type);
+
+# Any post/page should have a "title".
+dieUsage() unless defined($title);
+
+# Slug is what comes in the url. If one was sepcified,
+# use it to override the font matter. Or just create one.
+$slug = slugify($title) unless defined($slug);
+
+print "slug: $slug\n";
+
+if ($type eq "post") {
+	mkdir "_post";
+	$pTime = time();
+	$pTime = Time::Piece->strptime($date, "%Y-%m-%d") if defined ($date);
+	$postTimeStamp = localtime($t)->strftime('%Y/%m/%d %H:%M:%S %z');
+	$fileName = "_post/" . localtime($t)->strftime('%Y-%m-%d') . "-" . slugify($title) . ".md";
+	open $F, '>', $fileName;
+	print $F "---\n";
+	print $F "title: $title\n";
+	print $F "author: $author\n";
+	print $F "date: $postTimeStamp\n";
+	print $F "slug: $slug\n";
+	print $F "layout: post\n";
+	print $F "tags: \n";
+	print $F "categories: \n";
+	print $F "published: flase\n";
+	print $F "---\n";
+	print $F "\n";
+
+	if (defined ($contentFile) && (-f $contentFile)) {
+		open $CF, '<', $contentFile;
+		while(<CF>) { # iterate through each line in file.
+			print $F $_;
+		}
+		print $F "\n";
+	}
+
+	print $F "\n";
+	print "Created $fileName\n";
+	exit;
+}
+
+if ($type eq "page") {
+	mkdir "_page";
+	$fileName = "_page/" . slugify($title) . ".md";
+
+	open $F, '>', $fileName;
+	print $F "---\n";
+	print $F "title: $title\n";
+	print $F "slug: $slug\n";
+	print $F "layout: page\n";
+	print $F "---\n";
+	print $F "\n\n";
+	close $F;
+
+	if (defined ($contentFile) && (-f $contentFile)) {
+		open $CF, '<', $contentFile;
+		while(<CF>) { # iterate through each line in file.
+			print $F $_;
+		}
+		print $F "\n";
+	}
+
+	print "Created $fileName\n";
+}

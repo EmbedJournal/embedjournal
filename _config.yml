@@ -1,0 +1,65 @@
+title:   "EmbedJournal"
+tagline: "Add a brain to everything with embedded systems"
+email:   "admin@embedjournal.com"
+version: "0.1.0"
+url:     "http://embedjournal.com/"
+baseurl: ""
+logo:    "/images/logo/embedjournal-120px.png"
+description: > # this ignores newlines until next key.
+  This is a website focusing on embedded software/hardware design and a
+  hunch of other things that has to do with it.
+
+permalink:     pretty
+markdown:      kramdown
+highlighter:   rougue
+
+disqus:
+google_analytics:
+
+social:
+  rss:         /feed.xml
+  twitter:     https://twitter.com/embedjournal
+  faceboook:   https://facebook.com/embedjournal
+  google_plus: https://plus.google.com/+Embedjournal
+  linkedin:    https://www.linkedin.com/company/3181824
+  youtube:     https://www.youtube.com/user/embedjournal
+  github:      https://github.com/embedjournal
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/index.html
+
+liquid:
+  error_mode: warn
+
+gems:
+  - jekyll
+  - jekyll-feed
+  - jekyll-assets
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-archives
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - README.md
+  - bin/
+
+paginate:      10
+paginate_path: "/page-:num"
+
+jekyll-archives:
+  enabled: [ "year", "month", "tags", "categories" ]
+  layouts:
+    year:  archive-year
+    month: archive-month
+    tag:   archive
+    category: archive
+  permalinks:
+    year:  "/:year/"
+    month: "/:year/:month/"
+    tag:   "/tag/:name/"
+    category: "/category/:name/"

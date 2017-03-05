@@ -1,0 +1,27 @@
+{% include meta.html %}
+
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/plugins/font-awesome/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/plugins/bootstrap/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/plugins/bootstrap/css/bootstrap-theme.css" type="text/css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/plugins/featherlight/featherlight.min.css" type="text/css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/plugins/featherlight/featherlight.gallery.min.css" type="text/css" />
+
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/stylesheets/master.css" type="text/css" />
+
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<link rel="icon" type="image/ico" href="{{ site.baseurl }}/assets/images/favicon.ico">
+<link rel="shortcut-icon" type="image/ico" href="{{ site.baseurl }}/assets/images/favicon.ico">
+
+<title>{{ page.title }} - {{ site.title }}</title>
+
+{% if page.url == "/404.html" %}
+<meta http-equiv="refresh" content="5; url=/">
+{% endif %}
+
+<script src="{{ site.baseurl }}/assets/plugins/jquery/jquery-1.11.1.min.js"></script>
+<script src="{{ site.baseurl }}/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="scripts/iepngfix_tilebg.js"></script>
+<![endif]-->

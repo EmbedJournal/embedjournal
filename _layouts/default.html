@@ -1,0 +1,38 @@
+<!--
+
+This is a generic template. All other layouts will derive from this. So
+this has to include only stuffs that are common for all pages. This gives
+the flexiblity of allowing each layout to choose its design without code
+repetetion.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include head.html %}
+</head>
+<body>
+
+    {% include header.html %}
+
+    <main class="l-main">
+        <section class="s-mainContent">
+            <div class="container">
+
+            	{{ content }}
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Include footer -->
+    {% include footer.html %}
+
+    <!-- Back to top button -->
+    <a href="#" class="c-toTop js-toTop"><span class="fa fa-angle-up"></span></a>
+</body>
+<!-- Load scripts at the the end of page to increase page speed -->
+{% include scripts.html %}
+</html>

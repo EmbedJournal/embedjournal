@@ -1,0 +1,120 @@
+<div class="b-asideSocial">
+    <h3>Social Media</h3>
+    <ul>
+        <li class="b-rss">
+            <a href="{{ site.social.rss }}" target="_blank" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        </li>
+        <li class="b-google-plus">
+            <a href="{{ site.social.google_plus }}" title="Google+" target="_blank"><span class="fa fa-google-plus"></span></a>
+        </li>
+        <li class="b-facebook">
+            <a href="{{ site.facebook }}" title="Facebook" target="_blank"><span class="fa fa-facebook"></span></a>
+        </li>
+        <li class="b-twitter">
+            <a href="{{ site.twitter }}" title="Twitter" target="_blank"><span class="fa fa-twitter"></span></a>
+        </li>
+        <li class="b-linkedin">
+            <a href="{{ site.linkedin }}" title="Linkedin" target="_blank"><span class="fa fa-linkedin"></span></a>
+        </li>
+        <li class="b-youtube">
+            <a href="{{ site.youtube }}" title="Youtube" target="_blank"><span class="fa fa-youtube"></span></a>
+        </li>
+        <li class="b-github">
+            <a href="{{ site.github }}" title="Github" target="_blank"><span class="fa fa-github"></span></a>
+        </li>
+    </ul>
+</div>
+
+
+<!--     {% for category in site.categories %}
+        <ul>
+        <li><a href="">{{ category | first }}</a> - {{ category | last | size }}</li>
+        </ul>
+    {% endfor %}
+ -->
+<!-- Categories widget -->
+<div class="b-categories">
+    <h3>Categories</h3>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        {% for category in site.data.categories %}
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <span class="fa fa-folder"></span> <a href="{{ category.path }}">{{ category.name }}</a> ({{ site.categories[category.name] | first }})
+                        </a>
+                    </h4>
+                </div>
+                {% if category.subcategories %}
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <ul class="b-categoryLinks">
+                                {% for cat in category.subcategories %}
+                                    <li>
+                                        {% assign site_cat = site.categories[cat.name] %}
+                                        {{ site_cat }}
+                                        <span class="fa fa-folder-outline"></span> <a href="{{ cat.path }}">{{ cat.name }}</a> {{ site_cat | last | size }}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- Recent posts widget -->
+<div class="b-recentPost">
+    <h3>Recent Posts</h3>
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object" src="{{ site.baseurl }}/assets/images/sample-thumb.jpg" alt="Sample Thumb">
+            </a>
+        </div>
+        <div class="media-body">
+            <a href="#"><h4 class="media-heading">Make a Simple RC (Remote Controlled) Robot Car</h4></a>
+            <p class="b-dateLabel">May 5, 2016</p>
+        </div>
+    </div>
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object" src="{{ site.baseurl }}/assets/images/sample-thumb.jpg" alt="Sample Thumb">
+            </a>
+        </div>
+        <div class="media-body">
+            <a href="#"><h4 class="media-heading">Make a Simple RC (Remote Controlled) Robot Car</h4></a>
+            <p class="b-dateLabel">May 5, 2016</p>
+        </div>
+    </div>
+</div>
+
+<!-- Popular page widget -->
+<div class="b-popularPost">
+    <h3>Popular Posts</h3>
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object" src="{{ site.baseurl }}/assets/images/sample-thumb.jpg" alt="Sample Thumb">
+            </a>
+        </div>
+        <div class="media-body">
+            <a href="#"><h4 class="media-heading">Make a Simple RC (Remote Controlled) Robot Car</h4></a>
+            <p class="b-dateLabel">May 5, 2016</p>
+        </div>
+    </div>
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object" src="{{ site.baseurl }}/assets/images/sample-thumb.jpg" alt="Sample Thumb">
+            </a>
+        </div>
+        <div class="media-body">
+            <a href="#"><h4 class="media-heading">Make a Simple RC (Remote Controlled) Robot Car</h4></a>
+            <p class="b-dateLabel">May 5, 2016</p>
+        </div>
+    </div>
+</div>

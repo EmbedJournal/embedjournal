@@ -1,0 +1,63 @@
+<header class="l-header">
+    <section class="s-navigation">
+        <nav class="navbar navbar-default">
+            <div class="container">
+
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/images/logo/embedjournal.png" alt="Embed Journal" class="img-responsive"></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        {% for nav in site.data.navigation.main %}
+                            {% if page.url == nav.url %}
+                                <li class="active visible-xs visible-sm">
+                                    <a href="{{ nav.url }}">{{ nav.item }} <span class="sr-only">(current)</span></a>
+                                </li>
+                            {% else %}
+                                <li class="visible-xs visible-sm">
+                                    <a href="{{ nav.url }}">{{ nav.item }}</a>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+
+                        {% for nav in site.data.navigation.static %}
+                            {% if page.url == nav.url %}
+                                <li class="active"><a href="{{ nav.url }}">{{ nav.item }} <span class="sr-only">(current)</span></a></li>
+                            {% else %}
+                                <li><a href="{{ nav.url }}">{{ nav.item }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="s-categoryNav hidden-xs hidden-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="c-categoryNav js-categoryNav">
+                        <ul>
+                            {% for nav in site.data.navigation.main %}
+                                {% if page.url == nav.url %}
+                                    <li class="active"><a href="{{ nav.url }}">{{ nav.item }} <span class="sr-only">(current)</span></a></li>
+                                {% else %}
+                                    <li><a href="{{ nav.url }}">{{ nav.item }}</a></li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
