@@ -15,21 +15,21 @@ tags: [ "Beaglebone Black", "Embedded Linux" ]
 
 Hello folks,
 
-In my [previous post](/kernel-compilation-beaglebone-black/) about Linux kernel compilation for Beaglebone black, I had used pre-built RFS for booting the kernel. Also, I mentioned that the RFS could be built from scratch using an utility called Busybox. In this post, we'll see how to create one Custom RFS using Busybox and what are all the additional files required to boot the kernel. The RFS which we're going to create contains only the bare minimum stuffs required to boot the kernel, so you can't expect it to behave like your distribution's rootfs.
+In my [previous post](/kernel-compilation-beaglebone-black/) about Linux kernel compilation for Beaglebone black, I had used pre-built RFS for booting the kernel. Also, I mentioned that the RFS could be built from scratch using a utility called Busybox. In this post, we'll see, how to create a Custom RFS using Busybox and what are all the additional files required to boot the kernel. The RFS which we're going to create contains only the bare minimum stuff required to boot the kernel, so you can't expect it to behave like your distribution's rootfs.
 
 Before getting our hands dirty by working with Busybox, let's acquire some basic theory to get things organized!
 
 **What is RFS?**
   
-RFS is the Root File SystemA  (/), the place where the kernel acts upon. All of the applications will reside inside this root file system. Usually RFS is created and placed in the Flash memory of the device, it could be either your Android phone or your Personal computer. There is also one filesystem called initramfs, which is used in the boot process of the Linux based desktops/servers. But, initramfs is a RAM based filesystem which contains the entire root file system directories often compressed and passed along with the kernel image. Embedded Linux devices doesn't necessarily need initramfs for booting.
+RFS is the Root File System (/), the place where the kernel acts upon. All the applications will reside inside this root file system. Usually RFS is created and placed in the Flash memory of the device, which could be either your Android phone or your Personal computer. There is also one filesystem called initramfs, which is used in the boot process of the Linux based desktops/servers. But, initramfs is a RAM based filesystem which contains the entire root file system directories often compressed and passed along with the kernel image. Embedded Linux devices don't necessarily need initramfs for booting.
 
 During the last stage of the Linux legacy booting process, the kernel executes the /sbin/init which in turn looks for the inittab file in /etc directory. It is based upon the SysV init process. But, most of the modern linux distros now switched from SysV init to Systemd, which is more flexible.
 
 **How do I create a RFS?**
 
-Now, we know that rootfs is mandatory inorder to boot the linux kernel. But how do I create one? Have you tried "ls /" in your linux machine... Yes, there are lot of directories under '/'. Usually not all of the directories were needed to get your linux system up and running. Only a fair amount of directories were needed by the kernel, but it entirely depends upon the end application your linux system is used. It could be either a server or an Embedded linux system for a dedicated application.
+Now, we know that rootfs is mandatory inorder to boot the linux kernel. But how do I create one? Have you tried "ls /" in your linux machine... Yes, there are lot of directories under '/'. Usually not all the directories are needed to get your linux system up and running. Only a fair amount of directories are needed by the kernel, but it entirely depends upon the end application your linux system is using. It could be either a server or an Embedded linux system for a dedicated application.
 
-In our case we'll consider the later one because our target platform is Beaglebone black, which is mostly used for an Embedded application. Let's discuss the list of directories needed and their uses.
+In our case we'll consider the latter one, because our target platform is Beaglebone black, which is mostly used for an Embedded application. Let's discuss the list of directories needed and their uses.
 
 **Mandatory directories:**
 
@@ -51,21 +51,21 @@ In our case we'll consider the later one because our target platform is Beaglebo
 
 5. /lib
   
-/lib directory contains the shared libraries used the applications in the system. Often it contains the glibc/klibc, ld-linux shared libraries. It also contains the loadable kernel modules under /lib/modules which could be inserted into the system dynamically using modprobe/insmod commands. List of modules should be built while building the kernel using 'make modules' command. Modules could also be loaded automatically when the devices were attached to the system using some utilities.
+/lib directory contains the shared libraries used by the applications in the system. Often it contains the glibc/klibc, ld-linux shared libraries. It also contains the loadable kernel modules under /lib/modules which could be inserted into the system dynamically using modprobe/insmod commands. List of modules should be built while building the kernel using 'make modules' command. Modules could also be loaded automatically when the devices are attached to the system using some utilities.
 
 6. /usr
 
-/usr directory contains the userspace programs and data. In old unix implementations, this is the place where the home directories of all users were placed. It contains the necessary data, headers, libraries and also some programs like telnet, git etc...
+/usr directory contains the userspace programs and data. In older unix implementations, this is the place where the home directories of all users were placed. It contains the necessary data, headers, libraries and also some programs like telnet, git etc...
 
 **Nice to have:**
 
 1. /proc
   
-/proc directory is based on procfs filesystem. It is a type of virtual file system which contains files based on the processes exist in the system. There is no need to create any files under this directory, all files will be created once you mount the procfs in this directory.
+/proc directory is based on procfs filesystem. It is a type of virtual file system which contains files based on the processes existing in the system. There is no need to create any files under this directory, all files will be created once you mount the procfs in this directory.
 
 2. /sys
   
-/sys directory is based on sysfs filesystem. Like procfs, this is also a type of virtual file system based on the Kernel objects and its attributes. It is most widely used to interact with the device drivers like /dev directory. Drivers need to create sysfs entry, then it may contain files to send/receive data from the driver. For instance Led's in Beaglebone black could be configured using sysfs/class/leds.
+/sys directory is based on sysfs filesystem. Like procfs, this is also a type of virtual file system based on the Kernel objects and its attributes. It is most widely used to interact with the device drivers like /dev directory. Drivers need to create sysfs entry, then it may contain files to send/receive data from the driver. For instance LED's in Beaglebone black could be configured using sysfs/class/leds.
 
 3. /config
   
@@ -73,7 +73,7 @@ In our case we'll consider the later one because our target platform is Beaglebo
 
 Alright, we have seen the list of directories needed and their uses. So, are we going to create all these directories and its contents by hand? It would be an over kill, isn't it?
 
-For this scenario, we're going to use an utility called Busybox, which will make our life easier dYtm,
+For this scenario, we're going to use a utility called Busybox, which will make our life easier.
 
 **Busybox Cross compilation**
 
@@ -81,7 +81,7 @@ Definition from its site:
 
 "BusyBox combines tiny versions of many common UNIX utilities into a single small executable. It provides replacements for most of the utilities you usually find in GNU fileutils, shellutils, etc. The utilities in BusyBox generally have fewer options than their full-featured GNU cousins; however, the options that are included provide the expected functionality and behave very much like their GNU counterparts. BusyBox provides a fairly complete environment for any small or embedded system."
 
-Busybox is focused mainly on Embedded platforms as the size optimization is vastly required. It could be built as the binary requiring shared libraries (default option) or a single static binary requiring no external shared libraries. We are going to use the later one.
+Busybox is focused mainly on Embedded platforms as the size optimization is vastly required. It could be built as the binary requiring shared libraries (default option) or a single static binary requiring no external shared libraries. We are going to use the latter one.
 
 **Working with Busybox**
 
@@ -89,15 +89,15 @@ Download the Busybox source from [here:](https://busybox.net/downloads/busybox-1
 
 Extract the tarball using following command
 
-<pre>
+{% highlight shell %}
 $ tar -xvf busybox-1.24.1.tar.bz2
-</pre>
+{% endhighlight %}
 
 Then, cross compile the source for ARM platform using the following commands.
 
 Note: This assumes that you have the arm cross compilation toolchain configured in your system. If not please go through my [previous post](http://embedjournal.com/kernel-compilation-beaglebone-black/) to see how to get it done.
 
-{% highlight bash %}
+{% highlight shell %}
 $ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- defconfig
 $ make ARCH=arm CRSOO_COMPILE=arm-linux-gnueabihf- menuconfig
 {% endhighlight %}
@@ -136,7 +136,7 @@ Zero: Contains sequence of zeros used to fill up the memory regions.
 $ mkdir lib usr/lib
 {% endhighlight %}
 
-For the static libraries, copy from the arm cross compiler toolchain path.
+For the static libraries, copy from the ARM cross compiler toolchain path.
 
 {% highlight shell %}
 $ rsync -a /opt/arm-linux-gnueabihf/lib/ ./lib/
@@ -172,12 +172,12 @@ Create another file called fstab and populate it. This file will mount the virtu
 
 {% highlight shell %}
 $ cat >> etc/fstab
-procA  /proc procA  defaultsA  0 0
-sysfs /sysA  sysfs defaultsA  0 0
+proc  /proc proc  defaults  0 0
+sysfs /sys  sysfs defaults  0 0
 [ctrl-D]
 {% endhighlight %}
 
-Also, create files hostname and passwd.
+Also, create files called hostname and passwd.
 
 {% highlight shell %}
 $ cat >> etc/hostname

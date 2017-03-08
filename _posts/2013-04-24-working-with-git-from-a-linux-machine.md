@@ -16,7 +16,7 @@ After a long struggle I managed to learn the basics of Working with gitA and use
 
 ### Create a repository
 
-Creating a git repository is very simple. All you have to do is create an empty directory and issue a <code>git init</code> within it. Now when you <code>ls -la</code> in that directory you should see a <code>.git</code> directory. This is the only directory that git creates to work its magic.
+Creating a git repository is very simple. All you have to do is create an empty directory and issue a `git init` within it. Now when you `ls -la` in that directory you should see a `.git` directory. This is the only directory that git creates to work its magic.
 
 You can set up your own git repository in another location and use that as the remote. n account in gihub.com go ahead and create one. Create a repository using the aEUR~Create a new repository aEURtm icon from the top right. Give the unnecessary description for the repository and finish the procedures that follows.
 
@@ -58,7 +58,7 @@ Think of commit as a way to indicate changes made for a specific purpose on a bu
 git commit -m 'my first commit'
 {% endhighlight %}
 
-Once your changes have been committed, if you run a <code>git status</code> again, you will notice that it says there is one local commit. This means that the commit that we just made, has not been sent out to any other remote git server. At this point if you deleted the files, you will loose that commit you just made.
+Once your changes have been committed, if you run a `git status` again, you will notice that it says there is one local commit. This means that the commit that we just made, has not been sent out to any other remote git server. At this point if you deleted the files, you will loose that commit you just made.
 
 ### Push local commits to remote
 Git is a distributed version tracking system. So you will have to push your changes to a remote machine so that others can see what changes you have made to the system.
@@ -67,4 +67,4 @@ Git is a distributed version tracking system. So you will have to push your chan
 git push origin master
 {% endhighlight %}
 
-You should give your username and passwordif/when prompted.
+You should give your username and password if/when prompted.

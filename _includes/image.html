@@ -1,12 +1,20 @@
-{% capture imagePath %}{{ page.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/{{ include.src }}{% endcapture %}
-<figure>
-    <img 
-    	src="/assets/{{ imagePath }}" 
-    	alt="{{ include.src | replace '-', ' ' | replace '.png', '' | replace '.jpg', '' | replace '.gif', '' }}" 
-    	{% if include.width %} width="{{ include.width }}" {% endif %} />
-	{% if include.caption %}
-	    <figcaption>
-	    	{{ include.caption }}
-	    </figcaption>
-	{% endif %}
-</figure>
+{% capture imagePath %}{{ site.baseurl }}/assets/{{ page.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/{{ include.src }}{% endcapture %}
+
+<div>
+	<a class="b-captionImg" href="#" data-featherlight="{{ imagePath }}">
+		<img 
+			src="{{ imagePath }}" class="img-responsive" 
+			{% if include.width %}
+				width="{{ include.width }}"
+				{% endif %}
+			{% if include.alt %}
+				alt="{{ include.alt }}"
+			{% else %}
+				alt="{{ include.src | replace '-', ' ' | replace '.png', '' | replace '.jpg', '' | replace '.gif', '' }}"
+			{% endif %}
+		/>
+		{% if include.caption %}
+			<p>{{ include.caption }}</p>
+		{% endif %}
+	</a>
+</div>

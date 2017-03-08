@@ -11,21 +11,21 @@ image: /wp-content/uploads/2013/08/DSC09693.jpg
 categories: [ "Embedded Systems", "PIC Microcontroller" ]
 ---
 
-External event counters are pretty useful things to have around. Once I had aA feud with a shopkeeper for selling 4 motors in 3 different RPMs. Well, I don't know if you have ever tried making a robot that had wheels rotating at different speeds,A I did. It wan't a very memorable experience. A The shopkeeper agreed that the RPM on one of the motors was of a different RPM and other 'slightly-off' but the others where just fine. It took me a lot of time to convince him that his definition of 'slight' was way-too-much-off.
+External event counters are pretty useful things to have around. Once I had a feud with a shopkeeper for selling 4 motors in 3 different RPMs. Well, I don't know if you have ever tried making a robot that had wheels rotating at different speeds,A I did. It wasn't a very memorable experience. A The shopkeeper agreed that the RPM on one of the motors was of a different RPM and other 'slightly-off' but the others where just fine. It took me a lot of time to convince him that his definition of 'slight' was way-too-much-off.
 
-Anyways, reason I brought that up was because, external event counters can be used for a variety of reasons. One of them is to make your own tachometer (and I did it) to prove your argument in a street fight. But of-course you need to be jobless to start with.
+Anyway, I brought that up because, external event counters can be used for a variety of reasons. One of them is to make your own tachometer (and I did it) to prove your argument in a street fight. But of-course you need to be jobless to start with.
 
-In my previous post we discussed the basic [interface seven segment displays](http://embedjournal.com/2013/08/interface-7-segment-display-with-microcontroller/ "Interface 7 Segment Display with Microcontroller")A and how the concept of persistence of vision can be used to used to decrease the pin count of the embedded device.
+In my previous post we discussed the basic [interface seven segment displays](http://embedjournal.com/2013/08/interface-7-segment-display-with-microcontroller/ "Interface 7 Segment Display with Microcontroller") and how the concept of persistence of vision can be used to used to decrease the pin count of the embedded device.
 
-Counters can either count up from zero or count down to zero. In the embedded space, down counter gives a marginal improvements in performance as most processors have a decrement and jump if not zero kind of instructions. But don't worry that was just "fun facts" you don't have to worry about it. Your optimizing C compiler will take care that for you.
+Counters can either count up from zero or count down to zero. In the embedded space, down counter gives a marginal improvements in performance as most processors have a decrement and jump if not zero kind of instructions. But don't worry, that was just "fun facts" you don't have to worry about it. Your optimizing C compiler will take care that for you.
 
-In this post we will discuss a basics application of the concept that we discussed earlier and proceed along to make a physicalA counter that keeps a track of anA external event (key press).
+In this post, we will discuss a basic application of the concept that we discussed earlier and proceed along to make a physical counter that keeps track of an external event (key press).
 
 First, we will take up the task to write different data into all the 4 digits of the 7 segment display. Let's say we want to print 1234 on the display. Here is a flow chart that will help you better understand the concept of persistence of vision (POV).
 
 {% include image.html src="pov-seven-segment-display.png" %}
 
-So if you write 1 to the data bus and enable the first segment, you will have to first step. Likewise, write 2 to data bus and enable the second segment. Similarly do the third and fourth step. Once this cycle is finished, repeat the step above steps at a frequency. For the sake of argument lets say 50 Hz.
+So if you write 1 to the data bus and enable the first segment, you will have to do the first step. Likewise, write 2 to data bus and enable the second segment. Similarly do the third and fourth step. Once this cycle is finished, repeat the above steps at a frequency, for the sake of argument, lets say 50 Hz.
 
 If you did it correctly, you should see a static 1234 appear over the 4 digits of the 7 segment display. This is how you should program the above logic.
 
@@ -81,7 +81,7 @@ Here is a flowchart to help you understand the working of the counter. Since the
 
 In the main function, the controller first checks if there is a counter overflow condition. If there is overflow, it will reset it back to 0. After this it tests the state of the input switch. If the switch is pressed, it increments the counter. After this, it send the value of the counter to the seg_wrt() function to write the data to the display.
 
-Here a program to implement the above logic in embedded C.
+Here is a program to implement the above logic in embedded C.
 
 {% highlight c %}
 #include <xc.h>
@@ -116,7 +116,7 @@ void main()
     }
 }
 
-/*Function to write data inot the 7 segment display*/
+/*Function to write data in the 7 segment display*/
 void seg_wrt(unsigned char val)
 {
     uint8_t	lookup[] = {
@@ -150,4 +150,4 @@ I hope this post was helpful in understanding the interface of 7 Segment Display
 **Edit History**:
 
   * Article first published 15th Aug 2013
-  * Code updated to xc8 compiler and republished A 6th Dec 2015
+  * Code updated to xc8 compiler and republished 6th Dec 2015

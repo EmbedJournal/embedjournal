@@ -8,9 +8,35 @@ dsq_thread_id: "2701837037"
 image: /wp-content/uploads/2013/05/CIMG1176.jpg
 categories: [ "General Posts" ]
 tags: [ "event", "robotics", "theory" ]
+
+gallery1:
+  - src:  track-3d-view.png
+    name: Track 3D View
+  - src:  track-spec.png
+    name: Track Specification
+  - src:  object-spec.png
+    name: Object Specification
+
+gallery2:
+  - src:  chassis-making.jpg
+    name: Chassis in the making
+  - src:  robotic-arm-prototype.jpg
+    name: Robotic arm prototype
+  - src:  nexgen-shortlist.jpg
+    name: Our team Nexgen got selected for final round
+  - src:  ranger-robot.jpg
+    name: Land Rover (second robot)
+  - src:  servo-inventory.jpg
+    name: My modest servo collection
+  - src:  robot-pair.jpg
+    name: Robot pair
+  - src:  me-at-work.jpg
+    name: Me at work :)
 ---
 
 Shaastra is an annual tech fest conducted by Indian Institute of Technology, Chennai. There are events and workshops for almost all streams of Engineering and I love their Robotics events the most. The robotics event conducted by them is "The mother of all the robotics event in the county"-or that is what they say.. don't know how they guessed the gender of robotics dY~> (mother). I had always had an eye on this event ever since I was in my first year and I was a keen observer all this while until last October when they released their problem statement.
+
+{% include image.html src="picker-robot.jpg" width=300 alt="6 DoF pick and place robot" %}
 
 This time I made up my mind to give it a try. It has always been just me and me alone lost in my own thoughts thinking about the problem statement and how I -if money and means were there- would meet the requirement. I knew that this wouldn't do any good but I cant help my self but ponder on the idea. I forgot to mention their Prize money is always huge... Well big enough to tempt a hobby electronic-ist. But I really don't know why but money hardlyA fascinatesA me. Its not that I am not interested, Its just that I didn't need the money (unlessA of course there is some hardware that I badly needed.. In that case I always knew I has a lovely dad to turn to..)
 
@@ -18,35 +44,7 @@ Now for sure I knew I had the means (for I have been spending too much time on t
 
 Now we need some one to do our CAD ,some one to manage the finances and take care of the paper work while we had our hands dirty.. and some one to help in hardware... There goes theA remaining three (Naveen, Sivakumar, Natesan) of the Team NEXGEN. Yes, that was our team name for the event. All thisA finalizingA and pulling our selves together had already taken up fifteen days of A our time. I had already formed a fair picture of all the do-s and don't-s but I really had not started the work as such. Then came the time to give the problem statement a more closer look.
 
-![](http://embedthink.wordpress.com/wp-includes/js/tinymce/plugins/wpgallery/img/t.gif "gallery ids="58,42,59,55,56,57"")
-
-<div id='gallery-1' class='gallery galleryid-27 gallery-columns-3 gallery-size-thumbnail'>
-  <figure class='gallery-item'> 
-  
-  <div class='gallery-icon landscape'>
-    <a href='http://embedjournal.com/shaastra-nights-jan-2013/perfect/'><img width="150" height="150" src="/images/posts/2013/05/perfect-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" /></a>
-  </div></figure><figure class='gallery-item'> 
-  
-  <div class='gallery-icon landscape'>
-    <a href='http://embedjournal.com/shaastra-nights-jan-2013/untitled4/'><img width="150" height="150" src="/images/posts/2013/05/untitled4-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" /></a>
-  </div></figure><figure class='gallery-item'> 
-  
-  <div class='gallery-icon landscape'>
-    <a href='http://embedjournal.com/shaastra-nights-jan-2013/untitled5/'><img width="150" height="150" src="/images/posts/2013/05/untitled5-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" /></a>
-  </div></figure><figure class='gallery-item'> 
-  
-  <div class='gallery-icon landscape'>
-    <a href='http://embedjournal.com/shaastra-nights-jan-2013/untitled6/'><img width="150" height="150" src="/images/posts/2013/05/untitled6-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" /></a>
-  </div></figure><figure class='gallery-item'> 
-  
-  <div class='gallery-icon landscape'>
-    <a href='http://embedjournal.com/shaastra-nights-jan-2013/untitled7-2/'><img width="150" height="150" src="/images/posts/2013/05/untitled71-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" /></a>
-  </div></figure><figure class='gallery-item'> 
-  
-  <div class='gallery-icon landscape'>
-    <a href='http://embedjournal.com/shaastra-nights-jan-2013/untitled7/'><img width="150" height="150" src="/images/posts/2013/05/untitled7-150x150.png" class="attachment-thumbnail size-thumbnail" alt="" /></a>
-  </div></figure>
-</div>
+{% include gallery.html list=page.gallery1 %}
 
 I am new toA WordPressA and can't figure out how the make this image bigger... so go ahead and click the image toA enrageA it -that is the most primitive solution to the problem.
 
@@ -54,47 +52,7 @@ And back to the issue at hand, we were supposed to make two bots one to follow t
 
 To do this we are given two cameras. We have to take the Image feed and process the data to find our wayA throughA the arena. IA prioritized on hardware and thought that if theA hardwareA wasA ready most of our work was done. Only later on that I realized that both hardware and software were of equalA importanceA and should have started them at the same time. But for now the hardware is what we were concentrating and Vijay could sleep as and when he pleased.
 
-![](http://embedthink.wordpress.com/wp-includes/js/tinymce/plugins/wpgallery/img/t.gif "gallery ids="44,45,46,48,52,50,49,51,53"")
-
-<div id='gallery-2' class='gallery galleryid-27 gallery-columns-3 gallery-size-thumbnail'>
-  <figure class='gallery-item'> 
-  
-  <div class='gallery-icon portrait'>
-    <a href='http://embedjournal.com/shaastra-nights-jan-2013/cimg1176/'><img width="150" height="150" src="/images/posts/2013/05/CIMG1176-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-2-37" /></a>
-  </div><figcaption class='wp-caption-text gallery-caption' id='gallery-2-37'> The Saviour Robot </figcaption></figure><figure class='gallery-item'> 
-  
-  <div class='gallery-icon landscape'>
-    <a href='http://embedjournal.com/shaastra-nights-jan-2013/cimg1157/'><img width="150" height="150" src="/images/posts/2013/05/CIMG1157-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-2-36" /></a>
-  </div><figcaption class='wp-caption-text gallery-caption' id='gallery-2-36'> The Tunnel Robot </figcaption></figure><figure class='gallery-item'> 
-  
-  <div class='gallery-icon landscape'>
-    <a href='http://embedjournal.com/shaastra-nights-jan-2013/cimg1187/'><img width="150" height="150" src="/images/posts/2013/05/CIMG1187-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-2-38" /></a>
-  </div><figcaption class='wp-caption-text gallery-caption' id='gallery-2-38'> The Team NexGen </figcaption></figure><figure class='gallery-item'> 
-  
-  <div class='gallery-icon landscape'>
-    <a href='http://embedjournal.com/shaastra-nights-jan-2013/dsc08455/'><img width="150" height="150" src="/images/posts/2013/05/DSC08455-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-2-41" /></a>
-  </div><figcaption class='wp-caption-text gallery-caption' id='gallery-2-41'> Design of the Gripper </figcaption></figure><figure class='gallery-item'> 
-  
-  <div class='gallery-icon landscape'>
-    <a href='http://embedjournal.com/shaastra-nights-jan-2013/dsc08457/'><img width="150" height="150" src="/images/posts/2013/05/DSC08457-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-2-43" /></a>
-  </div><figcaption class='wp-caption-text gallery-caption' id='gallery-2-43'> Top portion of the chassis </figcaption></figure><figure class='gallery-item'> 
-  
-  <div class='gallery-icon landscape'>
-    <a href='http://embedjournal.com/shaastra-nights-jan-2013/dsc08450/'><img width="150" height="150" src="/images/posts/2013/05/DSC08450-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-2-40" /></a>
-  </div><figcaption class='wp-caption-text gallery-caption' id='gallery-2-40'> Sides and bottom of the chassis </figcaption></figure><figure class='gallery-item'> 
-  
-  <div class='gallery-icon landscape'>
-    <a href='http://embedjournal.com/shaastra-nights-jan-2013/dsc08530/'><img width="150" height="150" src="/images/posts/2013/05/DSC08530-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-2-34" /></a>
-  </div><figcaption class='wp-caption-text gallery-caption' id='gallery-2-34'> Servos from e-Bay. </figcaption></figure><figure class='gallery-item'> 
-  
-  <div class='gallery-icon landscape'>
-    <a href='http://embedjournal.com/shaastra-nights-jan-2013/cimg1655/'><img width="150" height="150" src="/images/posts/2013/05/CIMG1655-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-2-39" /></a>
-  </div><figcaption class='wp-caption-text gallery-caption' id='gallery-2-39'> Thats me lol dYtm, </figcaption></figure><figure class='gallery-item'> 
-  
-  <div class='gallery-icon landscape'>
-    <a href='http://embedjournal.com/shaastra-nights-jan-2013/78124_456535027725549_2095203897_o/'><img width="150" height="150" src="/images/posts/2013/05/78124_456535027725549_2095203897_o-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-2-45" /></a>
-  </div><figcaption class='wp-caption-text gallery-caption' id='gallery-2-45'> Our team at Position 5 dYtm, </figcaption></figure>
-</div>
+{% include gallery.html list=page.gallery2 %}
 
 This the collection of Images I could find. From the top going left to right,
 

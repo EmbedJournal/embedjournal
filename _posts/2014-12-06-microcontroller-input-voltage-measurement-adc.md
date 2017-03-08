@@ -11,30 +11,30 @@ image: /wp-content/uploads/2014/12/measure-mcu-input-Voltage-with-adc.png
 categories: [ "Basics" ]
 ---
 
-Input voltage measurement of an embedded device is not as simple as it sounds. But if estimated, can come inA very handy at a number of occasions. In this article we will see how we can add this feature to your embedded systemA with minimal components.
+Input voltage measurement of an embedded device is not as simple as it sounds. But if estimated, can come in very handy in a number of occasions. In this article we will see how we can add this feature to your embedded system with minimal components.
 
-It is one thing to measure the voltage and totally another to measure the input voltage. If you haven't guessed the difficulty in itA already, the ADC pins of the microcontroller measures form the Vref+ to the Vref+. A In most casesA Vref+A defaults to VCC and Vref- to GND. Vref can be configured through software to some other fixed voltage referenceA points (in some architectures)A or have an external fixed bandgap voltage reference, for your ADC module.
+It is one thing to measure the voltage and totally another to measure the input voltage. If you haven't guessed the difficulty in it already, the ADC pins of the microcontroller measures form the Vref+ to the Vref-. In most cases Vref+ defaults to VCC and Vref- to GND. Vref can be configured through software to some other fixed voltage reference points (in some architectures) or have an external fixed bandgap voltage reference, for your ADC module.
 
 But if that weren't the case, then if system voltage was to increase or decrease, then the Vref values which are derived from the supply voltage will also change. This makes it hard to detect if there is variation in the input voltage.
 
 Now why would we need to measure the input voltage for a microcontroller?
 
-Well the question may sound unreasonable as long as you are not on a battery operated system. On a battery operated system, the battery voltage may vary with the state of charge of the battery. The battery curve is pretty stable for costly Lithium-ion batteries but that is not the case with low cost rechargeable and non rechargeable batteries. The voltage can vary from a .5v to 1v depending on cell chemistry and quality of the battery. Here are some reasons whyA you would need to know the input voltage.
+Well the question may sound unreasonable as long as you are not on a battery operated system. On a battery operated system, the battery voltage may vary with the state of charge of the battery. The battery curve is pretty stable for costly Lithium-ion batteries but that is not the case with low cost rechargeable and non rechargeable batteries. The voltage can vary from a .5v to 1v depending on cell chemistry and quality of the battery. Here are some reasons why you would need to know the input voltage.
 
   1. Battery is going to die and you want to shift to a low power consumption mode until replacement.
-  2. Battery is going to die and you need save enough energy to report this as an alert.
+  2. Battery is going to die and you need to save enough energy to report this as an alert.
   3. To detect a brown-out before it occurs so that you could complete the current task and prepare for a shutdown.
   4. Adjusting ADC values based on the input voltage to get better accuracy.
 
 With that said, having the feature to look into the supply voltage, gives a lot of flexibility to the developer to build a robust code.
 
-Now there is a super-easy way and a okay-easy way to accomplish this. The super-easy way to look for something called as band gap referenceA voltage in your controllers datasheet. If there is something like that then you are in luck! you do not need to add a single extra component to get this feature. Read along to know how to use it to determine the input voltage.
+Now there is a super-easy way and a okay-easy way to accomplish this. The super-easy way is to look for something called as band gap reference voltage in your controllers datasheet. If there is something like that then you are in luck! you do not need to add a single extra component to get this feature. Read along to know how to use it to determine the input voltage.
 
-Well if you don't, don't worry, there is still the okay-easy way. Surprisingly, the circuit required to accomplish this so primitive that you will find yourself addingA this into any project you make just for the sake of having it!
+Well if you don't, don't worry, there is still the okay-easy way. Surprisingly, the circuit required to accomplish this so primitive that you will find yourself adding this into any project you make just for the sake of having it!
 
 ### What's the secret?
 
-Its no secret that the forward drop of a standard PN junction diode is 0.7V. At least that's the textbooks say. But in practice you will have anywhere between 0.55V to 0.7V depending again on the make and quality. But for the sake of this discussion we will assume that is is indeed 0.7V.A The value of forward drop for a given diode is constant and does not vary. This 0.7V is called as the band gap of the diode and does not vary with the supply voltage given it so long as it is above the band gap voltage (in this case 0.7V).
+Its no secret that the forward drop of a standard PN junction diode is 0.7V. At least that's what the textbooks say. But in practice you will have anywhere between 0.55V to 0.7V depending again on the make and quality. But for the sake of this discussion we will assume that it is indeed 0.7V.A The value of forward drop for a given diode is constant and does not vary. This 0.7V is called as the band gap of the diode and does not vary with the supply voltage given to it so long as it is above the band gap voltage (in this case 0.7V).
 
 [<img class="aligncenter size-full wp-image-2536" src="/images/posts/2014/08/adc-working.png" alt="adc working" width="692" height="421" srcset="/images/posts/2014/08/adc-working.png 692w, /images/posts/2014/08/adc-working-300x183.png 300w" sizes="(max-width: 692px) 100vw, 692px" />](/images/posts/2014/08/adc-working.png)
 

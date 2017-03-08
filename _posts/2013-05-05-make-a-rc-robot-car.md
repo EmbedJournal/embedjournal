@@ -26,15 +26,11 @@ The emphasis is just on the mechanical design and some basic circuitry. We learn
 
 Most of the components that we will be usingA are really common and can be bought in local electronics stores. Here is an list of all the hardware items that you will need for this project.
 
-[<img class="aligncenter size-full wp-image-2616" src="/images/posts/2013/05/hardware-requirements.png" alt="hardware requirements" width="851" height="486" srcset="/images/posts/2013/05/hardware-requirements.png 851w, /images/posts/2013/05/hardware-requirements-300x171.png 300w" sizes="(max-width: 851px) 100vw, 851px" />](/images/posts/2013/05/hardware-requirements.png)
-
- 
+{% include image.html src=rc-car-hardware.png %}
 
 And in terms of electronics, you will need the following major components. You may also need some other basic components such as resistors and capacitors but we will discuss them as and when we get it.
 
-[<img class="aligncenter wp-image-2617" src="/images/posts/2013/05/electronic-requirements.png" alt="electronic requirements" width="814" height="455" srcset="/images/posts/2013/05/electronic-requirements.png 898w, /images/posts/2013/05/electronic-requirements-300x168.png 300w" sizes="(max-width: 814px) 100vw, 814px" />](/images/posts/2013/05/electronic-requirements.png)
-
- 
+{% include image.html src=rc-car-electronic.png %}
 
 Other than the above components, you will need a basic supply of tools, soldering iron, and related stuffs.
 
@@ -42,21 +38,13 @@ So lets get started!!
 
 ### **Working Logic for the RC Robot Car**
 
-<p style="text-align: left;">
-  Here is a flowchart to help you understand the working logic of the robot car. First we will go over the basic idea of the RC car and the working logic that is involved in the car. There are two blocks, the Transmitter (remote control) and the Receiver (robot car).
-</p>
+Here is a flowchart to help you understand the working logic of the robot car. First we will go over the basic idea of the RC car and the working logic that is involved in the car. There are two blocks, the Transmitter (remote control) and the Receiver (robot car).
 
-<p style="text-align: center;">
-  <a href="/images/posts/2013/05/untitled72.png"><img class=" wp-image-52 aligncenter" src="/images/posts/2013/05/untitled72.png" alt="RC Robot Car block diagram" width="584" height="353" srcset="/images/posts/2013/05/untitled72.png 632w, /images/posts/2013/05/untitled72-300x181.png 300w" sizes="(max-width: 584px) 100vw, 584px" /></a>
-</p>
+{% include image.html src=rc-car-flowchart.png %}
 
-<p style="text-align: left;">
-  On the transmitter side, you have the switches to give the digital inputsA to the encoder IC. The encoder then encodes this data and sends it to the the RF Transmitter module.
-</p>
+On the transmitter side, you have the switches to give the digital inputsA to the encoder IC. The encoder then encodes this data and sends it to the the RF Transmitter module.
 
-<p style="text-align: left;">
-  On the receiver side, you will have the RF Receiver which receives the encoded data and passes it on to the decoder. The decoder decodes the data and sends it to the motor driver IC to drive the motors.
-</p>
+On the receiver side, you will have the RF Receiver which receives the encoded data and passes it on to the decoder. The decoder decodes the data and sends it to the motor driver IC to drive the motors.
 
 ### Understanding Datasheets
 

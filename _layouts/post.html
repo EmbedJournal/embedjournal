@@ -88,12 +88,21 @@ layout: default
 
 		<!-- Post social share -->
 		<div class="c-postSocial">
+			{% capture share_url %}http%3a//{{ site.host }}/{{ site.baseurl}}/{{ page.url }}{% endcapture %}
             <ul>
                 <li class="b-label">Share</li>
-                <li class="b-twitter"><a href="#"><span class="fa fa-twitter"></span> Twitter</a></li>
-                <li class="b-facebook"><a href="#"><span class="fa fa-facebook"></span> Facebook</a></li>
-                <li class="b-linkedin"><a href="#"><span class="fa fa-linkedin"></span> Linkedin</a></li>
-                <li class="b-google-plus"><a href="#"><span class="fa fa-google-plus"></span> Google+</a></li>
+                <li class="b-twitter">
+                	<a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.social.twitter }}&related={{ site.social.twitter }}" rel="nofollow" target="_blank" title="Share on Twitter"><span class="fa fa-twitter"></span> Twitter</a>
+                </li>
+                <li class="b-facebook">
+                	<a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"><span class="fa fa-facebook"></span> Facebook</a>
+                </li>
+                <li class="b-linkedin">
+                	<a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ share_url }}&title={{ page.title }}&summary={{ post.content | strip_html | truncatewords:30 }}&source="><span class="fa fa-linkedin"></span> Linkedin</a>
+                </li>
+                <li class="b-google-plus">
+                	<a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+"><span class="fa fa-google-plus"></span> Google+</a>
+                </li>
             </ul>
         </div>
 

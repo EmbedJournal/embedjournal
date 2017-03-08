@@ -12,13 +12,13 @@ categories: [ "General Posts" ]
 tags: [ "elctromagnet" ]
 ---
 
-You might think its past time I was talking about simple electromagnetic bells at my blog. Truth be told I would agree with you and embedjournal is pitching for a higher game in the near future. We will soon get into some android programming and write mobile apps that will talk with our embedded systems. But for now we will have to stick with this little bell as it was asked to be made by my boss. But trust me it is not as simple as it looks! there are somethings about this project that had me stuck for a couple of hours.
+You might think its pass time while I was talking about simple electromagnetic bells at my blog. Truth be told I would agree with you and embedjournal is pitching for a higher game in the near future. We will soon get into some android programming and write mobile apps that will talk with our embedded systems. But for now we will have to stick with this little bell as it was asked to be made by my boss. But trust me it is not as simple as it looks! there are somethings about this project that had me stuck for a couple of hours.
 
-So, my boss calls me one morning (actually a threeA days ago) and declaresA that his daughter had aA project day coming up at school and need a simpleA project for her to showcase. The kid is in her first standard and things had to be simple for her to understand and the topic for the event was "sound". Its actually good to have a theme to work on.. it helps us to focus our thought and also posses a bigger challenge that we should come up with some idea within the limit of the theme. I still remember all the project themes that was allotted to me at school and missed all the good oldA days. And just as you might have guessed, I jumped right at the opportunity.
+So, my boss calls me one morning (actually three days ago) and declares that his daughter had a project day coming up at school and need a simple project for her to showcase. The kid is in her first standard and things had to be simple for her to understand and the topic for the event was "sound". It's actually good to have a theme to work on. It helps us to focus our thought and also posses a bigger challenge that we should come up with some idea within the limit of the theme. I still remember all the project themes that was allotted to me at school. I miss all the good old days. And just as you might have guessed, I jumped right at the opportunity.
 
 ### Mechanical Hitter Setup
 
-Setting up the mechanical hitter was the most time consuming task of all. Especially if you haven't seen anybodies design or haven't experimented with a couple of designs yourselves. I thought this project was too simple to even Google for similar designs and decided that I should just get on with it. The end result was that I had to do this whole thing twice (two different designs, this is the third one) before I could get it to work as expected and still be simple enough for a kid to understand.
+Setting up the mechanical hitter was the most time consuming task of all. Especially if you haven't seen anybody's design or haven't experimented with a couple of designs yourselves. I thought this project was too simple to even Google for similar designs and decided that I should just get on with it. The end result was that I had to do this whole thing twice (two different designs, this is the third one) before I could get it to work as expected and still be simple enough for a kid to understand.
 
 [<img class="aligncenter size-full wp-image-2570" src="/images/posts/2014/12/dic1.png" alt="Mechanical hitter setup" width="850" height="477" srcset="/images/posts/2014/12/dic1.png 850w, /images/posts/2014/12/dic1-300x168.png 300w" sizes="(max-width: 850px) 100vw, 850px" />](/images/posts/2014/12/dic1.png)
 
@@ -26,17 +26,17 @@ I wouldn't call it the best setup, but it is adequate. It has a movable Pivot to
 
 ### Electromagnet
 
-If you had any exposure to science at all, you wouldA know that a current carrying conductor is associated with a magnetic field. That is exactly what the electromagnet is all about. All you have to do is take a long wire and wind it around a magnetic material and power it up, voila you have an electromagnet.
+If you had any exposure to science at all, you would know that a current carrying conductor is associated with a magnetic field. That is exactly what the electromagnet is all about. All you have to do is take a long wire and wind it around a magnetic material and power it up, voila you have an electromagne!
 
 For this particular project I did not need a very powerful magnet. I took a screw that was lying around and wound it with some insulated copper wire to get the electromagnet working.
 
 [<img class="aligncenter size-full wp-image-2574" src="/images/posts/2014/12/electromagnet.png" alt="electromagnet" width="852" height="477" srcset="/images/posts/2014/12/electromagnet.png 852w, /images/posts/2014/12/electromagnet-300x168.png 300w" sizes="(max-width: 852px) 100vw, 852px" />](/images/posts/2014/12/electromagnet.png)
 
-You should be careful that there is no short in two adjacent wires or with the metallic screw while winding it. It is also a good practice to place one layer of insulator between the screw and the first layer of copper wire. You should certainly have an insulation at the end to prevent anyA accidental short circuit.
+You should be careful that there is no short in two adjacent wires or with the metallic screw while winding it. It is also a good practice to place one layer of insulator between the screw and the first layer of copper wire. You should certainly have an insulation at the end to prevent any accidental short circuit.
 
 ### Flyback Diode
 
-The flyback diode or feedback diode is use in almost all circuits that involves bigA inductors. If you haven't noticed it already, there is a reverse biased diode in all relay coils to suppress back EMF and protect the rest of the circuit. In the electromagnet also we have a similar setup.
+The flyback diode or feedback diode is use in almost all circuits that involves big inductors. If you haven't noticed it already, there is a reverse biased diode in all relay coils to suppress back EMF and protect the rest of the circuit. In the electromagnet also we have a similar setup.
 
 But in this case, it is not used for protection purpose (there is nothing to protect). Here we use it to decay the energy that is stored in the coil after the supply is removed. This is especially important because we need the electromagnet to de-energize as soon as possible to produce a sharp sound. Without the diode, it take its own sweet time to decay. There is also the case of the residual magnetism in the core but we just wont go that far.
 
@@ -60,7 +60,7 @@ Now all you have to do is setup the bell and hear it working!!
 
 ### Working Demonstration
 
-I took the time to make a video of its working and have explained most of the details in the videoA as well.
+I took the time to make a video of its working and have explained most of the details in the video as well.
 
 
 
