@@ -202,7 +202,7 @@ This is a video that I have made documenting the entire process of making the RC
 
 And please excuse my poor video making/editing skills. I am yet to master them.
 
-{% youtube kuVMidJ6CbA %}
+# add video here
 
 ### Testing your Circuit
 

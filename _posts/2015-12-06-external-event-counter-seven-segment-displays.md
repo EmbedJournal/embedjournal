@@ -67,7 +67,7 @@ void main()
 
 Here is a small video that I made to demonstrate the working of the above procedure.
 
-{% youtube IpFqXNPH1NU %}
+# add video here
 
 ### <span style="font-family: 'arial black', 'avant garde';">Event Counter</span>
 
@@ -143,7 +143,7 @@ void seg_wrt(unsigned char val)
 
 Here is a demonstration of the above procedure,
 
-{% youtube 7EUbdQuakY4 %}
+# add video here
 
 I hope this post was helpful in understanding the interface of 7 Segment Displays and how they can be used to display numeric data. In the upcoming posts we will start working with these displays to make some real projects.
 

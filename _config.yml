@@ -14,6 +14,9 @@ permalink:     pretty
 markdown:      kramdown
 highlighter:   rougue
 
+kramdown:
+  syntax_highlighter: rouge
+
 disqus:
 google_analytics:
 
@@ -47,7 +50,7 @@ exclude:
   - Gemfile.lock
   - package.json
   - README.md
-  - bin/
+  - bin
 
 paginate:      10
 paginate_path: "/page-:num"
@@ -64,3 +67,17 @@ jekyll-archives:
     month: "/:year/:month/"
     tag:   "/tag/:name/"
     category: "/category/:name/"
+
+assets:
+  compress:
+    css: true
+    js: true
+
+  prefix: "/assets"
+  digest: true
+
+  sources:
+    - _assets/images
+    - _assets/vendor
+
+
