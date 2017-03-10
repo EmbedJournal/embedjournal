@@ -1,9 +1,9 @@
-<!-- {% capture imagePath %}{{ site.baseurl }}/assets/{{ page.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/{{ include.src }}{% endcapture %} -->
+{% capture image-path %}{{ site.baseurl }}/images/{{ page.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/{{ include.src }}{% endcapture %}
 
 <div>
-	<a class="b-captionImg" href="#" data-featherlight="{{ imagePath }}">
+	<a class="b-captionImg" href="#" data-featherlight="{{ image-path }}">
 		<img 
-			src="{{ imagePath }}" class="img-responsive" 
+			src="{{ image-path }}" class="img-responsive" 
 			{% if include.width %}
 				width="{{ include.width }}"
 				{% endif %}

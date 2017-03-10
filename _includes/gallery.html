@@ -1,11 +1,11 @@
-{% capture imagePath %}{{ site.baseurl }}/assets/{{ page.path | replace:'_posts/', 'posts/' | replace:'.md','' }}{% endcapture %}
+{% capture image_path %}{{ site.baseurl }}/images/{{ page.path | replace:'_posts/', 'posts/' | replace:'.md','' }}{% endcapture %}
 
 <div class="b-galleryBox">
 	<div class="row" data-featherlight-gallery data-featherlight-filter="a">
 		{% for image in include.list %}
 			<div class="col-md-4 col-xs-6">
-				<a class="b-captionImg" href="{{ imagePath }}/{{ image.src }}">
-					<img src="{{ imagePath }}/{{ image.src }}" class="img-responsive" alt="{{ image.name }}">
+				<a class="b-captionImg" href="{{ image_path }}/{{ image.src }}">
+					<img src="{{ image_path }}/{{ image.src }}" class="img-responsive" alt="{{ image.name }}">
 				</a>
 			</div>
 		{% endfor %}

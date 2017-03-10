@@ -40,7 +40,6 @@ liquid:
 gems:
   - jekyll
   - jekyll-feed
-  - jekyll-assets
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-archives
@@ -78,6 +77,5 @@ assets:
 
   sources:
     - _assets/images
-    - _assets/vendor
 
 
