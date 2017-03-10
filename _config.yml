@@ -56,11 +56,7 @@ paginate_path: "/page-:num"
 
 jekyll-archives:
   enabled: [ "year", "month", "tags", "categories" ]
-  layouts:
-    year:  archive-year
-    month: archive-month
-    tag:   archive
-    category: archive
+  layouts: archive
   permalinks:
     year:  "/:year/"
     month: "/:year/:month/"
