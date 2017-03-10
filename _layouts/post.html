@@ -2,61 +2,67 @@
 layout: default
 ---
 
+{% assign author = site.data.authors[page.author] %}
 <div class="row">
     <div class="col-md-8">
-
         <article class="c-singlePost">
 
-        	<!-- Post meta -->
-            <div class="b-postImg" style="background-image: url({{ site.baseurl }}/assets/images/sample-post-image.jpg);">
-                <!-- <img src="{{ site.baseurl }}/assets/images/sample-post-image.jpg" class="e-postImg" alt="My Approach to the Mesh Flare Problem (IIT-B's Techfest)"> -->
-				<div class="b-postHeader">
-					<h1>{{ page.title }}</h1>
-					<div class="b-postDetails">
-					    {% assign author = site.data.authors[page.author] %}
-						<p><span class="b-thumb" style="background-image: url({{ author.image }});"></span> by <a href="{{ author.url }}">Siddharth</a> <span class="b-bullet">•</span> {{ page.date | date: "%B %-d, %Y" }}</p>
-						<ul class="b-tags">
-						    <li><span class="fa fa-folder b-icon"></span></li>
-						    {% for cat in page.categories %}
-						        <li><a href="{{ site.baseurl }}/categories/{{ cat | slugify }}" >{{ cat }}</a></li>
-						    {% endfor %}
-						<ul class="b-tags">
-							<li><span class="fa fa fa-tag b-icon"></span></li>
+        	<!-- Post Head -->
+			<div class="b-postHeader -withoutImg">
+				<h1>{{ page.title }}</h1>
+				<div class="b-postDate">
+					<span class="b-dayMonth">{{ page.date | date: "%b %-d" }}</span>
+					<span class="b-year">{{ page.date | date: "%Y" }}</span>
+				</div>
+				<div class="c-postInfo">
+					<div class="b-author">
+						<p>By <a href="{{ site.baseurl }}/author/{{ author.full_name | slugify }}">{{ author.name }}</a></p>
+					</div>
+					<div class="b-category">
+						<p>
+							<span class="fa fa-folder"></span>
+							{% for category in page.categories %}
+								<a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}{% unless forloop.last %}</a>, {% endunless %}
+							{% endfor %}
+						</p>
+					</div>
+					<div class="b-tags">
+						<p><span class="fa fa-tags"></span></p>
+						<ul>
 							{% for tag in page.tags %}
-						        <li><a href="{{ site.baseurl }}/tags/{{ tag | slugify }}" class="b-tag">{{ tag }}</a></li>
-						    {% endfor %}
+								<li><a href="{{ site.baseurl }}/tag/{{ tag | slugify }}">{{ tag }}</a></li>
+							{% endfor %}
 						</ul>
 					</div>
 				</div>
-            </div>
-
+			</div>
             <!-- Main content -->
             <div class="b-postContent">
-        		{{ content }}
-        	</div>
 
-        	<!-- End of article subscribe form -->
-			<div class="c-subscribe">
-				<div class="b-subscribeContent">
-					<p>Liked this post? Subscribe with your email and we will keep you engagged!</p>
-					<form action="/" method="post">
-						<div class="b-field">
-							<input type="text" placeholder="Email">
-						</div>
-						<div class="b-field">
-							<input type="submit" value="Subscribe" class="btn btn-soft">
-						</div>
-					</form>
+        		{{ content }}
+
+	        	<!-- subscribe form -->
+				<div class="c-subscribe">
+					<div class="b-subscribeContent">
+						<p>Liked this post? Subscribe with your email and we will keep you engagged!</p>
+						<form action="/" method="post">
+							<div class="b-field">
+								<input type="text" placeholder="Email">
+							</div>
+							<div class="b-field">
+								<input type="submit" value="Subscribe" class="btn btn-soft">
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
         </article>
 
         <!-- Author box -->
 		<div class="c-postAuthor">
-			{% assign author = site.data.authors[page.author] %}
 			<div class="b-authorTitle">
 				<div class="b-title">
-					<h3>About {{ page.author }}</h3>
+					<h3>{{ author.full_name }}</h3>
 				</div>
 				<div class="b-authorSocial">
 					<ul>
