@@ -1,5 +1,4 @@
 ---
-id: 2623
 title: "Interfacing 16x2 LCD with C2000 launchpad"
 date: 2015-05-24T09:48:03+00:00
 author: Mani

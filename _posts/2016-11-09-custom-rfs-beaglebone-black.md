@@ -1,5 +1,4 @@
 ---
-id: 2814
 title: Custom RFS for Beaglebone Black using Busybox
 date: 2016-11-09T20:44:41+00:00
 author: Mani

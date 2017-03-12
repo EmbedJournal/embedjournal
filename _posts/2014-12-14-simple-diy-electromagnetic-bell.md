@@ -1,5 +1,4 @@
 ---
-id: 2567
 title: Simple DIY Electromagnetic Bell
 date: 2014-12-14T16:45:18+00:00
 author: Siddharth

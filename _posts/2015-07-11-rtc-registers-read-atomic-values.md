@@ -1,5 +1,4 @@
 ---
-id: 2595
 title: Race condition in reading RTC timekeeping registers
 date: 2015-07-11T08:35:10+00:00
 author: Siddharth

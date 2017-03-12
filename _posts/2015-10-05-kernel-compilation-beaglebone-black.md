@@ -1,5 +1,4 @@
 ---
-id: 2697
 title: Compiling and Deploying BeagleBone Black Kernel
 date: 2015-10-05T05:17:14+00:00
 author: Mani

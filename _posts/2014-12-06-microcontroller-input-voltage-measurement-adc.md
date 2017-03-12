@@ -1,5 +1,4 @@
 ---
-id: 2522
 title: Microcontroller Input voltage Measurement through ADC Module
 date: 2014-12-06T18:49:22+00:00
 author: Siddharth

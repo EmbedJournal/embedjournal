@@ -1,5 +1,4 @@
 ---
-id: 2463
 title: Useful Books for Reference
 date: 2014-06-06T13:25:13+00:00
 author: Siddharth

@@ -49,6 +49,8 @@ $(document).ready(function() {
     // jquery code here
     $('.l-main').addClass('-fadeIn');
 
+    $('.js-expand').addClass('-expand');
+
     $('.js-categoryNav .hasSubmenu > a').click(function(e){
         e.preventDefault();
         $(this).siblings('.submenu').show();

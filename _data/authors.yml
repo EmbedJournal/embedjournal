@@ -2,6 +2,7 @@ Siddharth:
   name: "Siddharth"
   full_name: "Siddharth Chandrasekran"
   image: "/images/authors/siddharth.jpg"
+  blogging_since: "Early 2013"
   short_desc: >
     Siddharth is a Firmware Engineer, techie, and a movie-buff. His interests include, Programming,
     Embedded Systems, Linux, Robotics, CV, Carpentry and a lot more. At times, you could see some of
@@ -16,6 +17,7 @@ Mani:
   name: "Mani"
   full_name: "Mani Sadhashivam"
   image: "/images/authors/mani.jpg"
+  blogging_since: "Mid 2016"
   short_desc: >
     Mani is an Embedded Linux hobbyist having perennial interest towards Electronics and Agriculture. You
     can reach him by the following social channels.
