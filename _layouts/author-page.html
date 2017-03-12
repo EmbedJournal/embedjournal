@@ -1,0 +1,96 @@
+---
+layout: default
+---
+
+{% assign author = site.data.authors[page.author] %}
+<div class="row">
+    <div class="col-lg-10 col-lg-offset-1">
+        <div class="c-authorInfo">
+            <div class="b-authorImg">
+                <div class="b-img js-expand">
+                    <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}"><img src="{{ author.image }}"></a>
+                </div>
+            </div>
+            <div class="b-authorInfo">
+                <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}"><h3 class="e-title">{{ author.full_name }}</h3></a>
+                <div class="b-contact">
+                    <p><strong>Email:</strong> <a href="mailto:{{ author.email }}">{{ author.email }}</a></p>
+                </div>
+                <div class="b-social">
+                    <ul>
+                    {% if author.social.facebook %}
+                        <li class="b-facebook"><a href="{{author.social.facebook}}" title="Facebook" target="_blank"><span class="fa fa-facebook"></span></a></li>
+                    {% endif %}
+                    {% if author.social.twitter %}
+                    	<li class="b-twitter"><a href="{{author.social.twitter}}" title="Twitter" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                    {% endif %}
+                    {% if author.social.google_plus %}
+                    	<li class="b-google-plus"><a href="{{author.social.google_plus}}" title="Google+" target="_blank"><span class="fa fa-google-plus"></span></a></li>
+                    {% endif %}
+                    {% if author.social.linkedin %}
+                    	<li class="b-linkedin"><a href="{{author.social.linkedin}}" title="Linkedin" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+                    {% endif %}
+                    {% if author.social.github %}
+                    	<li class="b-github"><a href="{{author.social.github}}" title="Github" target="_blank"><span class="fa fa-github"></span></a></li>
+                    {% endif %}
+                    </ul>
+                </div>
+                <div class="b-metaTag">
+                    <p><span class="e-label">Posts</span> {{ site.posts | where: "author", author.name | size }}</p>
+                    <p><span class="e-label">Since</span> {{ author.blogging_since }}</p>
+                </div>
+            </div>
+			<div class="b-authorDesc">
+				{{ content }}
+			</div>
+        </div>
+
+		<div class="c-posts">
+			<div class="b-title" id="authorName">
+				<h3>{{ author.name }}'s Posts</h3>
+			</div>
+			<div class="b-posts">
+				{% assign author_posts = site.posts | where: "author", author.name %}
+				{% for post in author_posts %}
+					<div class="b-postItem">
+					    <div class="b-postImg">
+					        <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
+					            {% capture image-path %}{{ site.baseurl }}/images/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/post-thumb.jpg{% endcapture %}
+					            <img src="{{ image-path }}" alt="{{ post.title }}">
+					        </a>
+					    </div>
+					    <div class="b-postDesc">
+					        <a href="{{ post.url | relative_url }}" title="{{ post.title }}"><h4>{{ post.title }}</h4></a>
+					        <p>{{ post.content | strip_html | truncatewords:50 }}</p>
+					        <div class="c-postInfo">
+					            <div class="b-author">
+					                {% assign author = site.data.authors[post.author] %}
+					                <p>By <a href="{{ site.baseurl }}/author/{{ author.full_name | slugify }}">{{ author.name }}</a></p>
+					            </div>
+					            <div class="b-category">
+					                <p>
+					                    <span class="fa fa-folder"></span>
+					                    {% for category in post.categories %}
+					                        <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}{% unless forloop.last %}</a>, {% endunless %}
+					                    {% endfor %}
+					                </p>
+					            </div>
+					            <div class="b-tags">
+					                <p><span class="fa fa-tags"></span></p>
+					                <ul>
+					                    {% for tag in post.tags %}
+					                        <li><a href="{{ site.baseurl }}/tag/{{ tag | slugify }}">{{ tag }}</a></li>
+					                    {% endfor %}
+					                </ul>
+					            </div>
+					        </div>
+					    </div>
+					    <div class="b-dateLabel">
+					        {{ post.date | date: "%b %-d, %Y" }}
+					    </div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+    </div>
+</div>

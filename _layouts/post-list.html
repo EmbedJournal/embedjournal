@@ -10,7 +10,45 @@ layout: default
 			</div>
 			<div class="b-posts">
 
-			{{ content }}
+				{% for post in page.posts %}
+				<div class="b-postItem">
+				    <div class="b-postImg">
+				        <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
+				            {% capture image-path %}{{ site.baseurl }}/images/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/post-thumb.jpg{% endcapture %}
+				            <img src="{{ image-path }}" alt="{{ post.title }}">
+				        </a>
+				    </div>
+				    <div class="b-postDesc">
+				        <a href="{{ post.url | relative_url }}" title="{{ post.title }}"><h4>{{ post.title }}</h4></a>
+				        <p>{{ post.content | strip_html | truncatewords:50 }}</p>
+				        <div class="c-postInfo">
+				            <div class="b-author">
+				                {% assign author = site.data.authors[post.author] %}
+				                <p>By <a href="{{ site.baseurl }}/author/{{ author.full_name | slugify }}">{{ author.name }}</a></p>
+				            </div>
+				            <div class="b-category">
+				                <p>
+				                    <span class="fa fa-folder"></span>
+				                    {% for category in post.categories %}
+				                        <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}{% unless forloop.last %}</a>, {% endunless %}
+				                    {% endfor %}
+				                </p>
+				            </div>
+				            <div class="b-tags">
+				                <p><span class="fa fa-tags"></span></p>
+				                <ul>
+				                    {% for tag in post.tags %}
+				                        <li><a href="{{ site.baseurl }}/tag/{{ tag | slugify }}">{{ tag }}</a></li>
+				                    {% endfor %}
+				                </ul>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="b-dateLabel">
+				        {{ post.date | date: "%b %-d, %Y" }}
+				    </div>
+				</div>
+				{% endfor %}
 
 			</div>
 		</div>

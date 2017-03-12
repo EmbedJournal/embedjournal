@@ -1,31 +1,48 @@
 ---
-layout: post-list
+layout: default
 ---
 
-<!-- Loop through all the authors -->
-{% for author in site.data.authors %}
-<div class="b-postItem">
-    <div class="b-postImg">
-        <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
-            <img src="{{ author.image }}" alt="{{ author.full_name }}">
-        </a>
-    </div>
-    <div class="b-postDesc">
-        <a href="{{ site.baseurl }}/author/{{ author.full_name | slugify }}" title="{{ author.full_name }}"><h4>{{ author.full_name }}</h4></a>
-        <div class="c-postInfo">
-        	{{ author.short_desc }}
-			<div class="b-social">
-				<ul>
-					<li class="b-facebook"><a href="#" title="Facebook"><span class="fa fa-facebook"></span></a></li>
-					<li class="b-twitter"><a href="#" title="Twitter"><span class="fa fa-twitter"></span></a></li>
-					<li class="b-google-plus"><a href="#" title="Google+"><span class="fa fa-google-plus"></span></a></li>
-					<li class="b-linkedin"><a href="#" title="Linkedin"><span class="fa fa-linkedin"></span></a></li>
-                </ul>
-			</div>
+<div class="row">
+    <div class="col-lg-10 col-lg-offset-1">
+        <!-- Loop through all the authors -->
+        {% for author_name in site.data.authors.list %}
+        {% assign author = site.data.authors[author_name] %}
+        <div class="c-authorInfo">
+            <div class="b-authorImg">
+                <div class="b-img js-expand">
+                    <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}"><img src="{{ author.image }}"></a>
+                </div>
+            </div>
+            <div class="b-authorInfo">
+                <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}"><h3 class="e-title">{{ author.full_name }}</h3></a>
+                <div class="b-contact">
+                    <p><strong>Email:</strong> <a href="mailto:{{ author.email }}">{{ author.email }}</a></p>
+                </div>
+                <div class="b-social">
+                    <ul>
+                        {% if author.social.facebook %}
+                            <li class="b-facebook"><a href="{{author.social.facebook}}" title="Facebook" target="_blank"><span class="fa fa-facebook"></span></a></li>
+                        {% endif %}
+                        {% if author.social.twitter %}
+                        <li class="b-twitter"><a href="{{author.social.twitter}}" title="Twitter" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                        {% endif %}
+                        {% if author.social.google_plus %}
+                        <li class="b-google-plus"><a href="{{author.social.google_plus}}" title="Google+" target="_blank"><span class="fa fa-google-plus"></span></a></li>
+                        {% endif %}
+                        {% if author.social.linkedin %}
+                        <li class="b-linkedin"><a href="{{author.social.linkedin}}" title="Linkedin" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+                        {% endif %}
+                        {% if author.social.github %}
+                        <li class="b-github"><a href="{{author.social.github}}" title="Github" target="_blank"><span class="fa fa-github"></span></a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+                <div class="b-metaTag">
+                    <p><span class="e-label">Posts</span> {{ site.posts | where: "author", author.name | size }}</p>
+                    <p><span class="e-label">Since</span> {{ author.blogging_since }}</p>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="b-dateLabel">
-        since {{ author.blogging_since }}
+        {% endfor %}
     </div>
 </div>
-{% endfor %}

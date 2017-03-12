@@ -33,14 +33,15 @@ collections:
   pages:
     output: true
     permalink: /:path/index.html
+  authors:
+    output: true
+    permalink: /authors/:path/index.html
 
 liquid:
   error_mode: warn
 
 gems:
   - jekyll
-  - jekyll-feed
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-archives
 
@@ -51,12 +52,9 @@ exclude:
   - README.md
   - bin
 
-paginate:      10
-paginate_path: "/page-:num"
-
 jekyll-archives:
   enabled: [ "year", "month", "tags", "categories" ]
-  layouts: archive
+  layout: "post-list"
   permalinks:
     year:  "/:year/"
     month: "/:year/:month/"

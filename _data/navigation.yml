@@ -17,6 +17,8 @@ main:
     url:  "/category/general-posts/"
 
 static:
+  - item: "Authors"
+    url:  "/authors"
   - item: "Guest Blogging"
     url:  "/guest-blogging/"
   - item: "About"
