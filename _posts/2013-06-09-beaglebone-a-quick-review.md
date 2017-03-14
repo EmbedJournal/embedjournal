@@ -1,15 +1,12 @@
 ---
-id: 546
 title: "BeagleBone - Detailed Technical Review"
 date: 2013-06-09T23:24:23+00:00
 author: Siddharth
 layout: post
 permalink: /beaglebone-a-quick-review/
 dsq_thread_id: "3298573222"
-
-image: /wp-content/uploads/2013/06/beaglebone_diagram.jpg
-categories: [ "Embedded Hardware", "Tech Review" ]
-tags: [ "review", "specification" ]
+categories: [ "Hardware", "Review" ]
+tags: [ "Beagle Bone" ]
 ---
 
  

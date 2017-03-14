@@ -1,15 +1,12 @@
 ---
-id: 463
 title: "Raspberry Pi Google Calendar - A Combined venture for Mobile Phones"
 date: 2013-06-08T12:22:54+00:00
 author: Siddharth
 layout: post
 permalink: /raspberry-pi-google-calendar/
 dsq_thread_id: "2728571503"
-
-image: /wp-content/uploads/2013/06/uyl_ep96_large.jpg
-categories: [ "Latest News" ]
-tags: [ "raspberry pi", "review", "specification" ]
+categories: [ "News" ]
+tags: [ "RaspberryPi" ]
 ---
 
 <p style="text-align: center;">

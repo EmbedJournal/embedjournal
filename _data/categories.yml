@@ -1,42 +1,24 @@
-- name: "Embedded Systems"
-  path:  "/category/embedded-systems/"
-  subcategories:
-    - name: "Arduino"
-      path: "/category/arduino/"
-    - name: "Embedded Theory"
-      path: "/category/theory/"
-    - name: "Interface"
-      path: "/category/interface/"
-    - name: "PIC Microcontroller"
-      path: "/category/pic-microcontroller/"
-
+- name: "Embedded Theory"
+  path: "/category/embedded-theory/"
+- name: "Arduino"
+  path: "/category/arduino/"
+- name: "Microchip PIC"
+  path: "/category/microchip-pic/"
 - name: "Robotics"
   path: "/category/robotics/"
-  subcategories:
-    - name: "Robot Theory"
-      path: "/category/robot-theory/"
-    - name: "Robots"
-      path: "/category/robots/"
-
 - name: "How To"
   path: "/category/how-to/"
-
 - name: "News"
   path: "/category/news/"
-
 - name: "Linux"
   path: "/category/linux/"
-
 - name: "Programming"
   path: "/category/programming/"
-
-- name: "Tech Review"
+- name: "Review"
   path: "/category/review/"
-  subcategories:
-    - name: "Hardware"
-      path: "/category/review-hardware/"
-    - name: "Software"
-      path: "/category/review-software/"
-
+- name: "Hardware"
+  path: "/category/hardware/"
+- name: "Software"
+  path: "/category/software/"
 - name: "General Posts"
   path: "/category/general-posts/"

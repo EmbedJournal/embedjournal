@@ -1,14 +1,12 @@
 ---
-id: 1929
-title: Are you reading the datasheet? What to look for and how to find them!
+title: "Reading datasheet, what to look for and how to find them"
 date: 2013-11-12T09:10:44+00:00
 author: Siddharth
 layout: post
 permalink: /are-you-reading-the-datasheet/
 dsq_thread_id: "2728571966"
-
-image: /wp-content/uploads/2013/10/datasheet.png
-categories: [ "Basics", "Embedded Systems" ]
+categories: [ "Embedded Theory" ]
+tags: [ "Basics" ]
 ---
 
 Did you know that experienced engineers spend up to an hour on every major component that they are going to be using for upcoming projects? Project as in, real commercial work involving a lot of money and man hour.. not just some hobby project.

@@ -1,15 +1,12 @@
 ---
-id: 2299
 title: Arduino Like Serial / UART Library for PIC 18 Microcontrollers
 date: 2014-05-23T13:48:26+00:00
 author: Siddharth
 layout: post
 permalink: /arduino-like-serial-uart-library-pic-18-microcontrollers/
 dsq_thread_id: "3290732954"
-
-image: /wp-content/uploads/2014/05/2014-05-23-12.02.02.jpg
-categories: [ "Arduino", "PIC Microcontroller" ]
-tags: [ "arduino", "Embedded C", "programming" ]
+categories: [ "Arduino", "Microchip PIC" ]
+tags: [ "Arduino", "Ideas" ]
 ---
 
 In my last post describing the <a title="Implementing Circular Buffer in Embedded C" href="http://embedjournal.com/2014/05/implementing-circular-buffer-embedded-c/" target="_blank">implementation of a circular buffer</a> I mentioned that I was working on a serial UART library for PIC 18. Well it is now completed! Yesterday I tested all the functions of the library and its working like a charm!

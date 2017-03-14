@@ -1,15 +1,12 @@
 ---
-id: 2094
 title: "Circuit Debugging - Tips Tricks & Techniques"
 date: 2014-03-02T14:39:20+00:00
 author: Siddharth
 layout: post
 permalink: /circuit-debugging-tips-tricks-techniques/
 dsq_thread_id: "2728571998"
-
-image: /wp-content/uploads/2014/03/test_equipment.jpg
-categories: [ "Basics", "General Posts" ]
-tags: [ "Circuit Debugging", "Hardware", "Practice" ]
+categories: [ "General Posts", "Hardware" ]
+tags: [ "Basics", "Intro" ]
 ---
 
 Here we are with a TTT (Tips, Tricks and Techniques) post again after a long time! Firstly I have to apologize for the recent inactivity in the blog. I've been a little busy over the last few months. But guess what! I have some good news!

@@ -1,15 +1,12 @@
 ---
-id: 1282
 title: "Stepper Motors - Introduction and Working Principle"
 date: 2013-07-21T11:54:28+00:00
 author: Siddharth
 layout: post
 permalink: /stepper-motors-introduction-and-working-principle/
 dsq_thread_id: "2728571571"
-
-image: /wp-content/uploads/2013/07/Stepper-Motor.jpg
-categories: [ "Basics" ]
-tags: [ "interface", "programming", "stepper motor" ]
+categories: [ "Embedded Theory" ]
+tags: [ "Interface", "Programming", "PWM" ]
 ---
 
 Stepper motor is a specially designed DC motor that can be driven by giving excitation pulses to the phase windings. They cannot be driven by just connecting the positive and negative leads of the power supply.

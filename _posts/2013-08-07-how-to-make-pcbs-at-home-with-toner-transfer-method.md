@@ -1,15 +1,12 @@
 ---
-id: 704
 title: How to Make PCBs at Home With Toner Transfer Method
 date: 2013-08-07T21:22:56+00:00
 author: Siddharth
 layout: post
 permalink: /how-to-make-pcbs-at-home-with-toner-transfer-method/
 dsq_thread_id: "2728571825"
-
-image: /wp-content/uploads/2013/06/DSC09563.jpg
 categories: [ "Basics", "General Posts", "How To" ]
-tags: [ "basics", "Development Board", "DIY", "EDA" ]
+tags: [ "Basics", "DevKit", "DIY", "EDA" ]
 ---
 
 Toner Transfer method for making PCB at home is probably one thing that went as viral as the Arduino. Electronics hobbyists around the world started using it to make professional looking PCBs at home. Here I will document the steps involved in fabricating PCBs with things that you can mostly find off the shelf.

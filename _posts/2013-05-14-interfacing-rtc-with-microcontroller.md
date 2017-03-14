@@ -1,15 +1,12 @@
 ---
-id: 94
 title: Interfacing RTC with Microcontroller
 date: 2013-05-14T18:26:31+00:00
 author: Siddharth
 layout: post
 permalink: /interfacing-rtc-with-microcontroller/
 dsq_thread_id: "2728571110"
-
-image: /wp-content/uploads/2013/05/dsc08038.jpg
-categories: [ "Basics", "Embedded Systems" ]
-tags: [ "embedded system", "i2c", "interface", "rtc" ]
+categories: [ "Embedded Theory" ]
+tags: [ "I2C", "Interface", "RTC" ]
 ---
 
 Have you ever wondered how your PC and phones keep track of time even when the device is turned OFF? Well there is aA <a title="Real-time clock" href="http://en.wikipedia.org/wiki/Real-time_clock" target="_blank" rel="wikipedia">Real Time Clock</a>A (RTC) that is kept powered even is the device is turned OFF. Once the device is turned ON and connected to the internet the device connects to aA <a title="Network Time Protocol" href="http://ntp.org/" target="_blank" rel="homepage">NTP server</a>A (Network Time Protocol) and updates the time and date. This post is intended to give a little insight over these RTCs and their interface with mid-range 8-bit microcontollers withA <a title="IA2C" href="http://en.wikipedia.org/wiki/I%C2%B2C" target="_blank" rel="wikipedia">I2C</a>A interface. It is possible to define a software I2C library if your favorite controller does not have a I2C bus, but that is beyond the scope of this post. This post will walk you through the steps involved in interfacing RTC with microcontroller.

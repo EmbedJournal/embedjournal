@@ -1,15 +1,12 @@
 ---
-id: 91
 title: Beagle Bone a look from outside
 date: 2013-05-10T18:22:37+00:00
 author: Siddharth
 layout: post
 permalink: /beagle-bone-a-look-from-outside/
 dsq_thread_id: "3297479930"
-
-image: /wp-content/uploads/2013/05/beaglebone.jpg
-categories: [ "Latest News" ]
-tags: [ "beagle bone", "review", "specification" ]
+categories: [ "News" ]
+tags: [ "Beagle Bone" ]
 ---
 
 [<img class="aligncenter size-full wp-image-299" alt="beaglebone" src="/images/posts/2013/05/beaglebone.jpg" width="1024" height="996" srcset="/images/posts/2013/05/beaglebone.jpg 1024w, /images/posts/2013/05/beaglebone-300x292.jpg 300w" sizes="(max-width: 1024px) 100vw, 1024px" />](/images/posts/2013/05/beaglebone.jpg)The Beagle BoneA is a pocket sized computer with Arm cortex A8 processor running a striped down version of angstrom Linux. Beagle BoneA is much costlier than the popular counterpartA <a title="Raspberry Pi" href="http://www.raspberrypi.org" target="_blank" rel="homepage">Raspberry Pi</a>, but has many advantages when compared to it.

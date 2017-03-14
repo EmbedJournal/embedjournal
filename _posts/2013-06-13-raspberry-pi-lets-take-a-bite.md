@@ -1,15 +1,12 @@
 ---
-id: 636
 title: "Raspberry Pi: Let's take a bite from it!"
 date: 2013-06-13T09:43:20+00:00
 author: Siddharth
 layout: post
 permalink: /raspberry-pi-lets-take-a-bite/
 dsq_thread_id: "3296171215"
-
-image: /wp-content/uploads/2013/06/main2-Rasp.-Pi1.jpg
-categories: [ "Embedded Hardware", "Tech Review" ]
-tags: [ "review", "specification" ]
+categories: [ "Hardware", "Review" ]
+tags: [ "Raspberry Pi" ]
 ---
 
 [<img class="aligncenter size-large wp-image-672" alt="Raspberry Pi" src="/images/posts/2013/06/Raspberry_Pi_Volt-1024x706.jpg" width="620" height="427" />](/images/posts/2013/06/Raspberry_Pi_Volt.jpg)

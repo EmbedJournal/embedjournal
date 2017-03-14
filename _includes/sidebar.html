@@ -115,7 +115,7 @@
         {% else %}
             {% capture post_count %}{{ post_count | plus:1 }}{% endcapture %}   
             {% if this_month != next_month %}
-                        <li><a href="{{ site.baseurl }}/{{ this_year }}/{{ next_month_num }}"><span class="fa fa-folder-outline"></span> {{ this_month }} <span class="b-badge">{{ post_count }}</span></a></li>
+                        <li><a href="{{ site.baseurl }}/archives/{{ this_year }}/{{ next_month_num }}"><span class="fa fa-folder-outline"></span> {{ this_month }} <span class="b-badge">{{ post_count }}</span></a></li>
             {% assign post_count = 0 %}
             {% endif %}
         {% endif %}

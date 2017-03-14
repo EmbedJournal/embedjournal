@@ -1,15 +1,12 @@
 ---
-id: 99
 title: How to use gmail form terminal (Linux)
 date: 2013-04-25T18:33:39+00:00
 author: Siddharth
 layout: post
 permalink: /how-to-use-gmail-form-terminal-linux/
 dsq_thread_id: "2728571155"
-
-image: /wp-content/uploads/2013/04/Gmail-Icon.png
 categories: [ "How To", "Linux" ]
-tags: [ "command line", "linux" ]
+tags: [ "CLI", "Intro" ]
 ---
 
 {% include image.html src="Gmail-Icon.png" caption="Gmail Icon" %}

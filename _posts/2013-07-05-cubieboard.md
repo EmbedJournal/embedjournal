@@ -1,15 +1,12 @@
 ---
-id: 1033
 title: Cubieboard a $50 Single Board Computer
 date: 2013-07-05T13:45:38+00:00
 author: Siddharth
 layout: post
 permalink: /cubieboard/
 dsq_thread_id: "3298574154"
-
-image: /wp-content/uploads/2013/07/cubieboard1.jpg
-categories: [ "Embedded Hardware", "Tech Review" ]
-tags: [ "review", "specification" ]
+categories: [ "Hardware", "Review" ]
+tags: [ "DevKit" ]
 ---
 
 <p style="text-align: left;">

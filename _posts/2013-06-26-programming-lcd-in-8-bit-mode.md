@@ -1,15 +1,12 @@
 ---
-id: 895
 title: "Programming LCD in 8 bit mode - Part -2"
 date: 2013-06-26T19:58:25+00:00
 author: Siddharth
 layout: post
 permalink: /programming-lcd-in-8-bit-mode/
 dsq_thread_id: "2728571557"
-
-image: /wp-content/uploads/2013/06/LCD-interface.png
-categories: [ "Embedded Systems", "PIC Microcontroller" ]
-tags: [ "embedded system", "interface", "LCD", "PIC" ]
+categories: [ "Embedded Theory", "Microchip PIC" ]
+tags: [ "Interface", "LCD" ]
 ---
 
 This post documents the steps involved in interfacing the LCD in 8 bit mode with a microcontroller. It belongs to a series of 4 posts. If you landed here straight from a search engine here is an index to help you navigate.

@@ -5,9 +5,8 @@ author: Siddharth
 layout: post
 permalink: /useful-books-reference/
 dsq_thread_id: "3290444297"
-
-image: /wp-content/uploads/2014/06/Untitled.png
 categories: [ "General Posts" ]
+tags: [ "Ideas" ]
 ---
 
 Books are an invaluable source of information. Listed below are some of the books that we feel will help you understand the basic concepts behind embedded systems, robotics, andA basic electronics. Check if you have come across some of these books and leave a comment if I have missed some good books.

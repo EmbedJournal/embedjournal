@@ -1,15 +1,12 @@
 ---
-id: 234
 title: Engineers! are you starting embedded systems with arduino?
 date: 2013-05-28T18:04:44+00:00
 author: Siddharth
 layout: post
 permalink: /learning-embedded-system-with-arduino/
 dsq_thread_id: "2728571169"
-
-image: /wp-content/uploads/2013/05/arduino.jpg
-categories: [ "Arduino", "General Posts" ]
-tags: [ "arduino" ]
+categories: [ "Arduino", "Embedded Theory" ]
+tags: [ "Arduino", "Intro" ]
 ---
 
 The term '_Arduino_' is no longer new to anyone having the least bit of exposure to Embedded System. SomeA years ago when I first heard Arduino, it hadn't come into India yet and the only shops selling them we charging a little more than twice the actual cost. So I wasA inclined to believeA that it was yet another fancy toyA for those with some good monthly allowances or for those with the financial support from some university (in today's terms, telosB motes serves as a perfect example for what I was thinking of Arduino).

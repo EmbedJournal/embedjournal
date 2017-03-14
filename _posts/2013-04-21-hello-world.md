@@ -6,7 +6,7 @@ layout: post
 permalink: /hello-world/
 dsq_thread_id: "3306085917"
 categories: [ "General Posts" ]
-tags:
+tags: [ "Intro" ]
 ---
 
 {% include image.html src="hello-world.jpg" caption="yet another hello world" %}

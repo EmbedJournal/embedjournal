@@ -1,15 +1,12 @@
 ---
-id: 1057
 title: "Interface - LCD in 4 bit Mode: Part 3"
 date: 2013-07-04T11:02:08+00:00
 author: Siddharth
 layout: post
 permalink: /interface-lcd-in-4-bit-mode/
 dsq_thread_id: "2728571307"
-
-image: /wp-content/uploads/2013/07/DSC09449.jpg
-categories: [ "Embedded Systems", "PIC Microcontroller" ]
-tags: [ "embedded system", "interface", "LCD", "PIC" ]
+categories: [ "Embedded Theory", "Microchip PIC" ]
+tags: [ "Interface", "LCD" ]
 ---
 
 Embedded applications are always developed on controllers whose resources are almost fully used in order to cut the cost of the product. This is done especially in applications that do not need any future expansions or a firmware updates. They are _Make-it_ and _Forget-it_ kind of applications. Most of the time, either the memory or the available pins are in demand. In some cases both memory and pin count are less.

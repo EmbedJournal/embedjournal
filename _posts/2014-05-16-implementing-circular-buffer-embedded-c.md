@@ -1,15 +1,12 @@
 ---
-id: 2229
 title: Implementing Circular/Ring Buffer in Embedded C
 date: 2014-05-16T18:55:54+00:00
 author: Siddharth
 layout: post
 permalink: /implementing-circular-buffer-embedded-c/
 dsq_thread_id: "3290596090"
-
-image: /wp-content/uploads/2014/05/cbuff-module_final.png
 categories: [ "Programming" ]
-tags: [ "Embedded C", "programming", "theory" ]
+tags: [ "Theory", "Algorithms" ]
 ---
 
 Most embedded programmers come to realize that majority of the code that they write in a day are either related to state machines or circular buffers or queues. In this article we will have a look at circular buffers and how you can implement them in low memory devices.

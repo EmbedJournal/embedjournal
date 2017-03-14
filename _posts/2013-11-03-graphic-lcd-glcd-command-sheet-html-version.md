@@ -1,20 +1,14 @@
 ---
-id: 1976
-title: "Graphic LCD: GLCD Command Sheet HTML Version"
+title: "Graphic LCD Command Sheet HTML Version"
 date: 2013-11-03T21:12:52+00:00
 author: Siddharth
 layout: post
 permalink: /graphic-lcd-glcd-command-sheet-html-version/
 dsq_thread_id: "2728572025"
-
-image: /wp-content/uploads/2013/11/graphic_lcd_128x64.png
-categories: [ "Embedded Systems" ]
+categories: [ "Embedded Theory" ]
+tags: [ "LCD" ]
 ---
 
-<!--NoAds-->
-
-
-  
 Yet again I was looking for the GLCD command sheetA in the internet and failed find any good resolution images that I can use for post references. Even the one of the data sheet looks really bad.A So here I am with a **HTML Version of the GLCD command sheet** just like the one for the <a title="Character LCD Command Sheet HTML Version" href="http://embedjournal.com/2013/06/character-lcd-command-sheet/" target="_blank">character LCD</a> I posted a while back.
 
  

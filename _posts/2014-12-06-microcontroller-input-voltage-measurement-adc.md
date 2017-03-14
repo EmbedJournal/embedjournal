@@ -5,9 +5,8 @@ author: Siddharth
 layout: post
 permalink: /microcontroller-input-voltage-measurement-adc/
 dsq_thread_id: "3296548731"
-
-image: /wp-content/uploads/2014/12/measure-mcu-input-Voltage-with-adc.png
-categories: [ "Basics" ]
+categories: [ "Embedded Theory" ]
+tags: [ "Theory", "Basics" ]
 ---
 
 Input voltage measurement of an embedded device is not as simple as it sounds. But if estimated, can come in very handy in a number of occasions. In this article we will see how we can add this feature to your embedded system with minimal components.

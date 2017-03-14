@@ -1,14 +1,12 @@
 ---
-id: 1936
 title: Getting Started with PIC Microcontrollers
 date: 2013-10-13T08:04:33+00:00
 author: Siddharth
 layout: post
 permalink: /getting-started-with-pic-microcontrollers/
 dsq_thread_id: "3290736684"
-
-image: /wp-content/uploads/2013/10/pickit2.png
-categories: [ "Embedded Systems", "PIC Microcontroller" ]
+categories: [ "Embedded Theory", "Microchip PIC" ]
+tags: [ "Intro" ]
 ---
 
 Having worked with any one Microcontroller, moving from one of its family to another is A just a matter of matter knowing the right tools and understanding how things have to be done in terms of software (compiler specific addressing like that of the SRFs) and hardware (circuitry, design practices, etc., ) In this post we will have a look at everything you will need while getting started with PIC microcontrollers.

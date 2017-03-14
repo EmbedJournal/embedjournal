@@ -1,15 +1,12 @@
 ---
-id: 1095
 title: Programming Shortest Path Line Follower Robot
 date: 2013-07-06T13:05:15+00:00
 author: Siddharth
 layout: post
 permalink: /programming-shortest-path-line-follower-robot/
 dsq_thread_id: "2701844078"
-
-image: /wp-content/uploads/2013/07/DSC08988.jpg
-categories: [ "Robot Theory", "Robotics" ]
-tags: [ "algorithm", "programming", "robotics" ]
+categories: [ "Robotics" ]
+tags: [ "Algorithm", "Programming" ]
 ---
 
 This post is the programming section of my previous post <a title="Shortest Path Line Follower Robot Logic Revealed!" href="http://embedjournal.com/2013/06/shortest-path-line-follower-robot-logic-revealed/" target="_blank">Shortest Path Line Follower Robot Logic Revealed!</a> A that dealt with the logic behind the following routines. To understand the complete nature of this post you should read that post first and then continue with this one.

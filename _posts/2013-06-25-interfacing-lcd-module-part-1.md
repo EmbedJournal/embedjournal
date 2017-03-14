@@ -1,15 +1,12 @@
 ---
-id: 880
-title: "Interfacing LCD Module with Microcontroller: Part -1"
+title: "Interfacing LCD Module with Microcontroller - Part -1"
 date: 2013-06-25T11:15:02+00:00
 author: Siddharth
 layout: post
 permalink: /interfacing-lcd-module-part-1/
 dsq_thread_id: "2728571244"
-
-image: /wp-content/uploads/2013/06/DSC09429.jpg
-categories: [ "Basics", "Embedded Systems", "PIC Microcontroller" ]
-tags: [ "embedded system", "interface", "LCD", "PIC" ]
+categories: [ "Embedded Theory", "Microchip PIC" ]
+tags: [ "Interface", "LCD" ]
 ---
 
 The LCD module interface with a microcontroller is simple and it is a primitive means of adding a visual appeal to your embedded application. There are two basic types of LCD modules in the market they are, <a title="Wiki" href="http://en.wikipedia.org/wiki/Hitachi_HD44780_LCD_controller" target="_blank">Character LCD</a> and <a title="wiki" href="http://en.wikipedia.org/wiki/Graphics_display_resolution" target="_blank">Graphics LCD</a>. Character LCDaEURtms are the some of the cheapest means LCD displays available today.

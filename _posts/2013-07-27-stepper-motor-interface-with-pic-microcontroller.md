@@ -1,15 +1,12 @@
 ---
-id: 1404
 title: Stepper Motor Interface with PIC Microcontroller
 date: 2013-07-27T07:25:12+00:00
 author: Siddharth
 layout: post
 permalink: /stepper-motor-interface-with-pic-microcontroller/
 dsq_thread_id: "2701808208"
-
-image: /wp-content/uploads/2013/07/DSC09500.jpg
-categories: [ "Embedded Systems", "PIC Microcontroller" ]
-tags: [ "basics", "stepper motor", "theory" ]
+categories: [ "Embedded Theory", "Microchip PIC" ]
+tags: [ "Basics", "Theory", "PWM" ]
 ---
 
 In my previous postA <a href="http://embedjournal.com/2013/07/stepper-motor-and-how-they-work/" target="_blank">Introduction to Stepper Motors and How they Work</a>, we had a look at stepper motors and how they work. This post will deal with the programming and circuitry involved in the stepper motor interface with PIC Microcontrollers.

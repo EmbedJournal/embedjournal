@@ -1,15 +1,12 @@
 ---
-id: 1702
 title: Interface 7 Segment Display with Microcontroller
 date: 2013-08-12T19:15:44+00:00
 author: Siddharth
 layout: post
 permalink: /interface-7-segment-display-with-microcontroller/
 dsq_thread_id: "2701815486"
-
-image: /wp-content/uploads/2013/08/name.png
-categories: [ "Basics", "Embedded Systems" ]
-tags: [ "7 segment diaplay", "basics", "interface", "theory" ]
+categories: [ "Embedded Theory" ]
+tags: [ "Basics", "Interface", "Theory" ]
 ---
 
 The 7 segment display is widely used to display numeric data. They are limited by the number of segments (LEDs) they have and hence are not suitable for displaying text. There are some variants of this kind of displays that have 11 segments which enables them to display text also.

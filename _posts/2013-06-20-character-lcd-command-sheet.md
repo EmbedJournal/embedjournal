@@ -1,15 +1,12 @@
 ---
-id: 729
 title: Character LCD Command Sheet HTML Version
 date: 2013-06-20T10:43:18+00:00
 author: Siddharth
 layout: post
 permalink: /character-lcd-command-sheet/
 dsq_thread_id: "3295036483"
-
-image: /wp-content/uploads/2013/06/20x4-Character-LCD-Module.jpg
-categories: [ "Embedded Systems" ]
-tags: [ "LCD", "specification" ]
+categories: [ "Embedded Theory" ]
+tags: [ "LCD" ]
 ---
 
 I was looking for an Image of the CharacterA LCD command sheet throughout the internet and failed find any good resolution images that I can use for post references. Here is a HTML Version that could be used at whichever resolution you choose!

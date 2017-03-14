@@ -1,15 +1,12 @@
 ---
-id: 610
 title: Compiling C Programs Using GCC
 date: 2013-06-11T23:22:10+00:00
 author: Siddharth
 layout: post
 permalink: /compiling-c-programs-using-gcc/
 dsq_thread_id: "3290507807"
-
-image: /wp-content/uploads/2013/06/gcc_sm.png
 categories: [ "Linux" ]
-tags: [ "command line", "linux" ]
+tags: [ "CLI" ]
 ---
 
 <p style="text-align: center;">

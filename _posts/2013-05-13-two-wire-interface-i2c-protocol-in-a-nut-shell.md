@@ -1,15 +1,12 @@
 ---
-id: 79
 title: I2C Protocol (2-Wire Interface) in a nut shell
 date: 2013-05-13T18:19:29+00:00
 author: Siddharth
 layout: post
 permalink: /two-wire-interface-i2c-protocol-in-a-nut-shell/
 dsq_thread_id: "2728571673"
-
-image: /wp-content/uploads/2013/05/untitled1-1.png
-categories: [ "Basics", "Embedded Systems" ]
-tags: [ "basics", "i2c", "protocol", "theory" ]
+categories: [ "Embedded Theory" ]
+tags: [ "Basics", "I2C", "Protocol", "Theory" ]
 ---
 
 The I2C protocol also known as the two wire interface is a simple serial communication protocol that uses just two pins of aA microcontroller namely SCL (serial clock) and SDA (serial data). This is a very popular protocol cat can be used to address a large number of slave devices that areA connectedA to the same bus. This protocol comes in handy when there is scarcity onA availableA pins in the microcontroller. Each slave device has a slave address or names for which they respond this is usually 7-bit binary number. Once a master sends a valid slave address only that slave will respond to the master's queries and all other slaves ignore any conversation between the master and that particular slave.

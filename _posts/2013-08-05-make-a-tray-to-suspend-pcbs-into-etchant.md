@@ -1,15 +1,12 @@
 ---
-id: 1654
 title: How to Make a Tray to suspend PCBs into the Etchant
 date: 2013-08-05T19:33:49+00:00
 author: Siddharth
 layout: post
 permalink: /make-a-tray-to-suspend-pcbs-into-etchant/
 dsq_thread_id: "3297032822"
-
-image: /wp-content/uploads/2013/08/DSC09619.jpg
 categories: [ "How To" ]
-tags: [ "circuit design", "DIY", "PCB Etching" ]
+tags: [ "EDA", "DIY" ]
 ---
 
 In this post I will document the procedure involved in making a tray to suspend PCBs.A The etchant (FeCl<sub>3 </sub>solution)A is toxic and cannot be handled with bare hands. So I devised this easy and reusable method for suspending the PCBs with the toner into the solution.

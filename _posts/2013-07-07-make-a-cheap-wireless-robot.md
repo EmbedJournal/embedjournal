@@ -1,15 +1,12 @@
 ---
-id: 1139
 title: Hack a Toy Car to Make a Cheap Wireless Robot
 date: 2013-07-07T23:44:58+00:00
 author: Siddharth
 layout: post
 permalink: /make-a-cheap-wireless-robot/
 dsq_thread_id: "2728559176"
-
-image: /wp-content/uploads/2013/07/DSC09479.jpg
-categories: [ "How To", "Robotics", "Robots" ]
-tags: [ "DIY", "PIC", "RF", "robotics", "wireless" ]
+categories: [ "How To", "Robotics" ]
+tags: [ "DIY", "Wireless", "Robot", "Wireless" ]
 ---
 
 Hack a toy car to make a cheap wireless robot? Yes, cheap toy remote cars form china can be scavenged to get their remotes to work with our robots.A All of us have seen and played with toy cars some time in the past. Some -like me- might have bought them to get the magnets inside those DC motors. I don't know why those C shaped magnets caught my attention more than the car.

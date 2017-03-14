@@ -5,9 +5,8 @@ author: Siddharth
 layout: post
 permalink: /shaastra-nights-jan-2013/
 dsq_thread_id: "2701837037"
-image: /wp-content/uploads/2013/05/CIMG1176.jpg
 categories: [ "General Posts" ]
-tags: [ "event", "robotics", "theory" ]
+tags: [ "Tech Fest", "Experience" ]
 
 gallery1:
   - src:  track-3d-view.png

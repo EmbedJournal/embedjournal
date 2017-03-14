@@ -1,14 +1,12 @@
 ---
-id: 2328
 title: "Servo Motor Interface - Looking behind Arduino's Servo library"
 date: 2014-05-28T12:24:23+00:00
 author: Siddharth
 layout: post
 permalink: /servo-motor-interface-looking-behind-arduino-servo-library/
 dsq_thread_id: "3293479740"
-
-image: /wp-content/uploads/2014/05/1272856951256_hz_en_mp32_4_4217.jpg
-categories: [ "Arduino", "Basics", "Programming" ]
+categories: [ "Arduino", "Programming" ]
+tags: [ "Basics", "Interface" ]
 ---
 
 Have you ever looked into the Arduino's source files? Well you should be!!

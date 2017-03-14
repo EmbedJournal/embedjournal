@@ -1,14 +1,12 @@
 ---
-id: 1900
-title: "PIC Timer Calculator : giveAway#1"
+title: "PIC Timer Calculator"
 date: 2013-09-12T10:21:01+00:00
 author: Siddharth
 layout: post
 permalink: /pic-timer-calculator-give-away-1/
 dsq_thread_id: "3297077771"
-
-image: /wp-content/uploads/2013/09/giveaway.png
 categories: [ "Embedded Systems", "PIC Microcontroller" ]
+tags: [ "Tools" ]
 ---
 
 <p style="text-align: center;">

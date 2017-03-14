@@ -1,15 +1,12 @@
 ---
-id: 2058
-title: "PIC Pin Diagram: A printable copy for quick reference"
+title: "PIC Pin Diagram, A printable copy for quick reference"
 date: 2013-11-16T12:46:27+00:00
 author: Siddharth
 layout: post
 permalink: /printable-pic-18f-pin-diagram-for-rapid-prototyping/
 dsq_thread_id: "3291262335"
-
-image: /wp-content/uploads/2013/11/PIC-18-Pin-Diagram.png
-categories: [ "PIC Microcontroller" ]
-tags: [ "PIC", "pin diagram" ]
+categories: [ "Microchip PIC" ]
+tags: [ "Intro" ]
 ---
 
 Today when I was hooking up my PIC micro on to a breadboard for a quick demonstration to a friend of mine, I realized how often I needed the Pin Diagram from the datasheet.

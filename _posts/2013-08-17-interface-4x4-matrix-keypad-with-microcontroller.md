@@ -1,15 +1,12 @@
 ---
-id: 1756
 title: "Interface 4x4 Matrix Keypad With Microcontroller"
 date: 2013-08-17T17:05:52+00:00
 author: Siddharth
 layout: post
 permalink: /interface-4x4-matrix-keypad-with-microcontroller/
 dsq_thread_id: "2701818794"
-
-image: /wp-content/uploads/2013/08/4x4-matrix-keypad-featured-image.jpg
-categories: [ "Embedded Systems", "PIC Microcontroller" ]
-tags: [ "algorithm", "embedded system", "interface", "theory" ]
+categories: [ "Embedded Thory", "Microchip PIC" ]
+tags: [ "Algorithm", "Interface", "Theory" ]
 ---
 
 In this post we will discuss logic and interface of a matrix keypad (4x4 for this post) with microcontroller to reduce the number of port pins required to read a certain number of inputs (digital). The same logic applies to any matrix keypad of order NxN. Where, N is the order of the matrix.

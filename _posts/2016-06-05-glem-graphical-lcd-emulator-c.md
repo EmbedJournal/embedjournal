@@ -5,9 +5,8 @@ author: Siddharth
 layout: post
 permalink: /glem-graphical-lcd-emulator-c/
 dsq_thread_id: "4885041559"
-
-image: /wp-content/uploads/2016/05/glem.png
-categories: [ "Embedded Systems" ]
+categories: [ "Embedded Theory" ]
+tags: [ "Tools" ]
 ---
 
 At some point in time we all have had to develop some sort of UI for our embedded devices. The thing about UI design is, it can take one hell of a time before we can get it right (and it's a thankless job! I have my reasons).

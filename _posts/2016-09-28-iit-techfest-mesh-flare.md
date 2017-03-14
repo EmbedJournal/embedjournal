@@ -5,9 +5,8 @@ author: Siddharth
 layout: post
 permalink: /iit-techfest-mesh-flare/
 dsq_thread_id: "5179907417"
-
-image: /wp-content/uploads/2016/09/MeshFlare_Track.jpg
 categories: [ "Programming", "Robotics" ]
+tags: [ "Tech Fest" ]
 ---
 
 Over the past few days, I received a plethora of emails and messages on how to

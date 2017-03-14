@@ -1,15 +1,12 @@
 ---
-id: 1803
 title: Interrupt On Change (IOC) in PIC Microcontrollers
 date: 2013-08-27T18:27:26+00:00
 author: Siddharth
 layout: post
 permalink: /interrupt-on-change-ioc-in-pic-microcontrollers/
 dsq_thread_id: "2728571858"
-
-image: /wp-content/uploads/2013/08/ioc-port-b.png
-categories: [ "Embedded Systems", "PIC Microcontroller" ]
-tags: [ "interrupt" ]
+categories: [ "Embedded Theory", "Microchip PIC" ]
+tags: [ "Basics", "Theory" ]
 ---
 
 The interrupt on change is a cool feature on microcontrollers. Like you guessed, the interrupt occurs when there is a state change in any of the port pin associated with this feature. In PIC microcontrollers, PORT B is has the Interrupt on Change feature. The controller jumps into the interrupt vector when there is a change in the state of any of the pins in the port.

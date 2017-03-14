@@ -1,15 +1,12 @@
 ---
-id: 709
 title: Need for Clock Line in Digital Communication
 date: 2013-06-15T10:12:50+00:00
 author: Siddharth
 layout: post
 permalink: /need-for-clock/
 dsq_thread_id: "2728591622"
-
-image: /wp-content/uploads/2013/06/Untitled11.png
-categories: [ "Basics", "Embedded Systems", "General Posts" ]
-tags: [ "basics", "embedded system" ]
+categories: [ "Embedded Theory" ]
+tags: [ "Basics", "FAQ" ]
 ---
 
 <address>

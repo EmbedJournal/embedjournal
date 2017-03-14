@@ -1,8 +1,10 @@
 main:
+  - item: "Archives"
+    url:  "/archives/"
   - item: "Embedded Theory"
-    url:  "/category/basics/"
-  - item: "PIC Micro"
-    url:  "/category/pic-microcontroller/"
+    url:  "/category/embedded-theory/"
+  - item: "Microchip PIC"
+    url:  "/category/microchip-pic/"
   - item: "Arduino"
     url:  "/category/arduino/"
   - item: "Robotics"
@@ -13,20 +15,16 @@ main:
     url:  "/category/how-to/"
   - item: "Programming"
     url:  "/category/programming/"
-  - item: "General Posts"
-    url:  "/category/general-posts/"
 
 static:
   - item: "Authors"
     url:  "/authors"
-  - item: "Guest Blogging"
-    url:  "/guest-blogging/"
   - item: "About"
     url:  "/about/"
   - item: "contact"
     url:  "/contact/"
 
-footer:
+footer_policies:
   - item: "Privacy"
     url:  "/privacy-policy/"
   - item: "Disclaimer"
@@ -35,3 +33,13 @@ footer:
     url:  "/sitemap.xml"
   - item: "RSS Feed"
     url:  "/feed.xml"
+
+footer_pages:
+  - item: "Guest Blogging"
+    url:  "/guest-blogging/"
+  - item: "Authors"
+    url:  "/authors"
+  - item: "About"
+    url:  "/about/"
+  - item: "contact"
+    url:  "/contact/"

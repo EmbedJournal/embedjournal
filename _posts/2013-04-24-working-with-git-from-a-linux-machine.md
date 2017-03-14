@@ -5,9 +5,8 @@ author: Siddharth
 layout: post
 permalink: /working-with-git-from-a-linux-machine/
 dsq_thread_id: "3293147013"
-image: /wp-content/uploads/2013/04/blog-github.png
 categories: [ "Linux" ]
-tags: [ "cli",  "git" ]
+tags: [ "CLI",  "git", Intro ]
 ---
 
 {% include image.html src="git-logo.png" %}

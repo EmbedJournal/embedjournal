@@ -1,15 +1,12 @@
 ---
-id: 499
 title: "How-to: Make a Chassis For Your Robot"
 date: 2013-06-11T07:30:01+00:00
 author: Siddharth
 layout: post
 permalink: /how-to-make-chassis/
 dsq_thread_id: "2728571901"
-
-image: /wp-content/uploads/2013/06/robots_chassis_is_ready.jpg
 categories: [ "How To", "Robotics" ]
-tags: [ "DIY", "robotics" ]
+tags: [ "DIY", "Theory" ]
 ---
 
 [<img class="aligncenter size-full wp-image-602" alt="robots chassis" src="/images/posts/2013/06/robots_chassis_is_ready.jpg" width="500" height="329" srcset="/images/posts/2013/06/robots_chassis_is_ready.jpg 500w, /images/posts/2013/06/robots_chassis_is_ready-300x197.jpg 300w, /images/posts/2013/06/robots_chassis_is_ready-310x205.jpg 310w" sizes="(max-width: 500px) 100vw, 500px" />](/images/posts/2013/06/robots_chassis_is_ready.jpg)

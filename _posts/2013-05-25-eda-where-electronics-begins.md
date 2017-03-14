@@ -1,15 +1,12 @@
 ---
-id: 130
 title: "EDA (Electronic Design Automation) - Where Electronics Begins"
 date: 2013-05-25T15:54:54+00:00
 author: Siddharth
 layout: post
 permalink: /eda-where-electronics-begins/
 dsq_thread_id: "2728571220"
-
-image: /wp-content/uploads/2013/05/eda-net1.gif
-categories: [ "Circuit Design", "Latest News" ]
-tags: [ "circuit design", "EDA" ]
+categories: [ "News", "General Posts" ]
+tags: [ "EDA" ]
 ---
 
 ****Electronic Design Automation (EDA) is a relatively young five-billion$ industry with a very colorful upbringing, IaEURtmm very grateful for, and is an honor to write about it.

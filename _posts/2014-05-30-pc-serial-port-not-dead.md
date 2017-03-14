@@ -1,13 +1,10 @@
 ---
-id: 2342
 title: Serial Ports are dead? Think again!
 date: 2014-05-30T13:15:02+00:00
 author: Siddharth
 layout: post
 permalink: /pc-serial-port-not-dead/
 dsq_thread_id: "2728589255"
-
-image: /wp-content/uploads/2014/05/2014-05-24-17.14.16_compressed.jpg
 categories: [ "General Posts" ]
 tags: [ "DIY" ]
 ---

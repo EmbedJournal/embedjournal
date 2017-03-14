@@ -1,15 +1,12 @@
 ---
-id: 1216
 title: 8 Reasons Why You Should Switch to MPLAB X IDE
 date: 2013-07-13T12:40:39+00:00
 author: Siddharth
 layout: post
 permalink: /8-reasons-why-you-should-switch-to-mplab-x-ide/
 dsq_thread_id: "2728571357"
-
-image: /wp-content/uploads/2013/07/Untitled3.png
-categories: [ "PIC Microcontroller" ]
-tags: [ "IDE", "review" ]
+categories: [ "Microchip PIC" ]
+tags: [ "Tools", "Review" ]
 ---
 
 [<img class="aligncenter size-full wp-image-1201" alt="Untitled3" src="/images/posts/2013/07/Untitled3.png" width="473" height="300" srcset="/images/posts/2013/07/Untitled3.png 473w, /images/posts/2013/07/Untitled3-300x190.png 300w" sizes="(max-width: 473px) 100vw, 473px" />](/images/posts/2013/07/Untitled3.png)

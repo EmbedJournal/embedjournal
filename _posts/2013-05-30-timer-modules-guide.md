@@ -1,15 +1,12 @@
 ---
-id: 286
 title: "Timer / Counter Module - A Controller Independent Guide"
 date: 2013-05-30T18:12:31+00:00
 author: Siddharth
 layout: post
 permalink: /timer-modules-guide/
 dsq_thread_id: "3300463351"
-
-image: /wp-content/uploads/2013/05/timer.jpg
-categories: [ "Basics", "Embedded Systems" ]
-tags: [ "basics", "embedded system", "interface", "theory" ]
+categories: [ "Embedded Theory" ]
+tags: [ "Basics", "Interface", "Theory" ]
 ---
 
 In this post I intend to provide a standalone, controller independent, Guide to Timer / Counter Module in Microcontrollers. The concepts explained are not associated with any one particular controller which might not be useful for all readers. To an extent this is an independent post but little exposure to Interrupts and how they work is a prerequisite, which may not be within the scope of this post. But otherwise this post should have everything you need to know about timer modules.[<img class="aligncenter size-full wp-image-345" alt="timer" src="/images/posts/2013/05/timer.jpg" width="800" height="533" srcset="/images/posts/2013/05/timer.jpg 800w, /images/posts/2013/05/timer-300x200.jpg 300w" sizes="(max-width: 800px) 100vw, 800px" />](/images/posts/2013/05/timer.jpg)

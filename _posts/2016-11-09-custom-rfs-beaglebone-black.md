@@ -5,9 +5,8 @@ author: Mani
 layout: post
 permalink: /custom-rfs-beaglebone-black/
 dsq_thread_id: "5291157687"
-image: /wp-content/uploads/2016/11/busybox.png
 categories: [ "Linux" ]
-tags: [ "Beaglebone Black", "Embedded Linux" ]
+tags: [ "Beagle Bone" ]
 ---
 
 {% include image.html src="busybox.png" %}

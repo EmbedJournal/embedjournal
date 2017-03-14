@@ -1,15 +1,12 @@
 ---
-id: 1332
 title: Make a Digital Clock with DS1307 and PIC 18F4520
 date: 2013-07-19T11:34:58+00:00
 author: Siddharth
 layout: post
 permalink: /make-a-digital-clock/
 dsq_thread_id: "2728571391"
-
-image: /wp-content/uploads/2013/07/DSC08035.jpg
-categories: [ "How To", "PIC Microcontroller" ]
-tags: [ "DIY", "interface", "programming", "rtc" ]
+categories: [ "How To", "Microchip PIC" ]
+tags: [ "DIY", "Interface", "Programming", "RTC", "I2C" ]
 ---
 
 Digital clocks are are very commonly (cheaply)A availableA these days. Some of them have a built in RTC to keep the time running even if the main battery fails and some of them don't. In either case, for anA offline embedded application to get a time stamp, an RTC in almost the only cheap solution solution available. Most of these clocks use a 7-Segment display to display the time and date while some use LCD displays.A In this post we will see how to make a digital clock with DS1307 and PIC 18F4520.

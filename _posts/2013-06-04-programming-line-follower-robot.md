@@ -1,15 +1,12 @@
 ---
-id: 356
 title: Programming a Line Follower Robot
 date: 2013-06-04T22:46:31+00:00
 author: Siddharth
 layout: post
 permalink: /programming-line-follower-robot/
 dsq_thread_id: "2701837863"
-
-image: /wp-content/uploads/2013/06/DSC08214.jpg
-categories: [ "Robot Theory", "Robotics" ]
-tags: [ "DIY", "line follower robot", "programming", "robotics" ]
+categories: [ "Robotics", "Programming" ]
+tags: [ "DIY", "LFR" ]
 ---
 
 Programming a Line Follower Robot is the next step that you should do after building it. This is a follow-up on my previous post <span style="text-decoration: underline;"><a title="Line Follower Robot aEUR" Build it from scratch" href="http://embedjournal.com/line-follower-robot/" target="_blank">Line Follower Robot - Build it from scratch</a></span>. If you haven't already read it, I suggest you read it before going any further in this post.

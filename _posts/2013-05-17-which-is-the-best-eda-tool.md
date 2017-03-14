@@ -1,15 +1,12 @@
 ---
-id: 136
 title: Which is the best EDA tool?
 date: 2013-05-17T15:38:04+00:00
 author: Siddharth
 layout: post
 permalink: /which-is-the-best-eda-tool/
 dsq_thread_id: "2728643989"
-
-image: /wp-content/uploads/2013/05/47943dpict11.gif
-categories: [ "Circuit Design", "General Posts" ]
-tags: [ "circuit design", "EDA" ]
+categories: [ "General Posts" ]
+tags: [ "EDA" ]
 ---
 
 If youA haven't locked yourself in a cave for a couple of years, you would have easily come across this question several times when you went through electronics forums and the discussions atA FacebookA pages. This is one question that has been directed at me for a very long time by my friends the "best EDA tool". The answer to the question is quite primitive.

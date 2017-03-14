@@ -1,14 +1,12 @@
 ---
-id: 1826
 title: Cool C Programming Tricks For Embedded Software Developers
 date: 2013-08-31T08:29:27+00:00
 author: Siddharth
 layout: post
 permalink: /cool-c-programming-tricks-for-embedded-software-developers/
 dsq_thread_id: "2728571436"
-
-image: /wp-content/uploads/2013/08/binary_data.jpg
-categories: [ "Embedded Systems" ]
+categories: [ "Programming" ]
+tags: [ "Ideas" ]
 ---
 
 Proficiency in C is an essential skill set for embedded software developers. In this post we will see some really cool C programming tricks that you should have already known. If you didn't, it's time to take a pen and paper.

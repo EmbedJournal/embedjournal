@@ -1,15 +1,12 @@
 ---
-id: 1685
 title: Standalone BreadBoard Breakout for PIC Microcontrollers
 date: 2013-08-09T15:39:03+00:00
 author: Siddharth
 layout: post
 permalink: /breadboard-breakout-for-pic-microcontrollers/
 dsq_thread_id: "3298312963"
-
-image: /wp-content/uploads/2013/08/DSC09678.jpg
-categories: [ "Embedded Systems", "PIC Microcontroller" ]
-tags: [ "circuit design", "DIY", "PIC" ]
+categories: [ "Hardware", "Microchip PIC" ]
+tags: [ "DIY" ]
 ---
 
 I wanted to make a breadboard breakout for PIC microcontrollersA after seeingA thisA <a title="visit adafruit.com" href="http://www.adafruit.com/products/91" target="_blank">arduino breadboard breakout from adafruit</a>. This product is fully standalone and yet has very small footprint so that it can be conveniently plugged into the breadboard. The most amazing part was that it still had 2 rows on each side of the breadboard for the user to jump wires.

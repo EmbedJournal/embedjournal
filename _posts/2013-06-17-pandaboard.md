@@ -1,15 +1,12 @@
 ---
-id: 685
-title: "PandaBoard : Technical Reference and Review."
+title: "PandaBoard, Technical Reference and Review."
 date: 2013-06-17T10:20:56+00:00
 author: Siddharth
 layout: post
 permalink: /pandaboard/
 dsq_thread_id: "3298571283"
-
-image: /wp-content/uploads/2013/06/PandaBoard_top_view.png
-categories: [ "Embedded Hardware", "Tech Review" ]
-tags: [ "Development Board", "Embedded Linux" ]
+categories: [ "Hardware", "Review" ]
+tags: [ "DevKit" ]
 ---
 
 A PandaBoard is a low-cost, low-power single board development platform from the famous Texas Instruments OMAP4430 system. It is capable of ruining all major flavors of Linux with native support from Ubuntu. It has been on the list of linux hackers for quite some time now and has a huge archive of project documentation form diehard Linux fans all over the world.

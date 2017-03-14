@@ -1,14 +1,12 @@
 ---
-id: 2138
 title: Testing RF Transmitter and Receiver Circuit
 date: 2014-04-27T22:51:15+00:00
 author: Siddharth
 layout: post
 permalink: /testing-rf-transmitter-and-receiver-circuit/
 dsq_thread_id: "3290444642"
-
-image: /wp-content/uploads/2014/04/testing.jpg
-categories: [ "How To" ]
+categories: [ "How To", "Hardware" ]
+tags: [ "Wireless" ]
 ---
 
 After publishing the article <a title="Make a Simple RC (Remote Controlled) Robot Car" href="http://embedjournal.com/2013/05/make-a-rc-robot-car/" target="_blank">Make a simple RC car</a>A I have received a lot of comments and e-mails from readers who have faced some difficulties while trying to make the circuit by themselves. I have complied a small list of testing methods for various components that will help your narrow down the caused of the malfunction.

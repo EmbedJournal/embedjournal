@@ -1,15 +1,12 @@
 ---
-id: 313
 title: "Line Follower Robot - Build it from scratch"
 date: 2013-06-01T11:20:55+00:00
 author: Siddharth
 layout: post
 permalink: /line-follower-robot/
 dsq_thread_id: "2728574119"
-
-image: /wp-content/uploads/2013/05/DSC089861.jpg
-categories: [ "How To", "Robotics", "Robots" ]
-tags: [ "basics", "DIY", "line follower robot", "theory" ]
+categories: [ "How To", "Robotics" ]
+tags: [ "Basics", "DIY", "LFR", "Theory" ]
 ---
 
 Line Follower Robots are the most common type of robots that are built by hobbyist and student interested in robotics and embedded systems. The reason for the popularity of the Line Follower robot is the fact that is simple to build and easy to understand the logic behind it. This post will give you working level knowledge on building and programming line follower robots from scratch.

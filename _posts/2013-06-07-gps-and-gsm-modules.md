@@ -1,15 +1,12 @@
 ---
-id: 437
 title: Got the GPS and GSM Modules delivered!!
 date: 2013-06-07T16:48:48+00:00
 author: Siddharth
 layout: post
 permalink: /gps-and-gsm-modules/
 dsq_thread_id: "3292256477"
-
-image: /wp-content/uploads/2013/06/DSC09234.jpg
 categories: [ "General Posts" ]
-tags: [ "gps", "gsm/gprs" ]
+tags: [ "GSM", "GPS", "GPRS" ]
 ---
 
 I had always wanted to interface something other than the conventional embedded devices in the market. Thats when I laid my eyes on the GSM module. So I have worked with many embedded peripherals but nothing as big and promising as the GSM module.A  For some reasons I could never get involved with anything that has to do with GSM so far. The latest project I'm working on requires me to send a text file to a server with FTP using GPRS connection. And the best part is the project is fully funded dYtm,

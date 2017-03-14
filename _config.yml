@@ -2,13 +2,15 @@ title:   "EmbedJournal"
 #host: embedjournal.com
 tagline: "Add a brain to everything with embedded systems"
 email:   "admin@embedjournal.com"
-version: "0.1.0"
+version: "0.2.0"
 url:     "http://embedjournal.com/"
 baseurl: ""
 logo:    "/images/logo/embedjournal-120px.png"
 description: > # this ignores newlines until next key.
-  This is a website focusing on embedded software/hardware design and a
-  hunch of other things that has to do with it.
+  This is a website focusing on embedded software/hardware design and a hunch of
+  other things that has to do with it. Embedded systems play a vital role in our
+  day to day lives. Even without our knowledge we are using dozens of embedded
+  devices.
 
 permalink:     pretty
 markdown:      kramdown
@@ -35,7 +37,10 @@ collections:
     permalink: /:path/index.html
   authors:
     output: true
-    permalink: /authors/:path/index.html
+    permalink: /author/:path/index.html
+  categories:
+    output: true
+    permalink: /category/:path/index.html
 
 liquid:
   error_mode: warn
@@ -44,6 +49,7 @@ gems:
   - jekyll
   - jekyll-sitemap
   - jekyll-archives
+  - octopress-paginate
 
 exclude:
   - Gemfile
@@ -52,13 +58,15 @@ exclude:
   - README.md
   - bin
 
+include:
+  - .htaccess
+
 jekyll-archives:
-  enabled: [ "year", "month", "tags", "categories" ]
+  enabled: [ "year", "month", "tags" ]
   layout: "post-list"
   permalinks:
-    year:  "/:year/"
-    month: "/:year/:month/"
+    year:  "/archives/:year/"
+    month: "/archives/:year/:month/"
     tag:   "/tag/:name/"
-    category: "/category/:name/"
 
 

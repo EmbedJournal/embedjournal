@@ -1,15 +1,12 @@
 ---
-id: 51
 title: Make a Simple RC (Remote Controlled) Robot Car
 date: 2013-05-05T17:31:56+00:00
 author: Siddharth
 layout: post
 permalink: /make-a-rc-robot-car/
 dsq_thread_id: "2701802176"
-
-image: /wp-content/uploads/2013/05/22032012361.jpg
-categories: [ "How To", "Robotics", "Robots" ]
-tags: [ "DIY", "RF", "robotics", "wireless" ]
+categories: [ "How To", "Robotics" ]
+tags: [ "DIY", "RF", "Wireless",  "Robot" ]
 ---
 
 Whether you are an engineering student building a multi terrain vehicle or an electronics hobbyist trying to impress people with your skills, making a RC robot car (wireless)A  is much better than the wired robot which you will have to tail while driving.

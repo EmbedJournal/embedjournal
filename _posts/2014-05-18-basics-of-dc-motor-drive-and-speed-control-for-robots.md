@@ -1,15 +1,12 @@
 ---
-id: 2134
 title: Basics of DC Motor Drive and Speed Control for Robots
 date: 2014-05-18T09:00:27+00:00
 author: Siddharth
 layout: post
 permalink: /basics-of-dc-motor-drive-and-speed-control-for-robots/
 dsq_thread_id: "3290522357"
-
-image: /wp-content/uploads/2014/05/dcmotor.jpg
-categories: [ "Basics" ]
-tags: [ "basics", "interface", "theory" ]
+categories: [ "Embedded Theory" ]
+tags: [ "Basics", "Interface", "Theory" ]
 ---
 
 [<img class="aligncenter size-full wp-image-2255" src="/images/posts/2014/05/dcmotor.jpg" alt="dc motor" width="499" height="366" srcset="/images/posts/2014/05/dcmotor.jpg 499w, /images/posts/2014/05/dcmotor-300x220.jpg 300w" sizes="(max-width: 499px) 100vw, 499px" />](/images/posts/2014/05/dcmotor.jpg)DC motors are really cheap and can be found very easily. In this post we will discuss the basic theory behind the DC motor drive system and its speed control. Having some basic understanding of how your motor driver works will play a key role in building your own circuits debugging them.

@@ -1,15 +1,12 @@
 ---
-id: 1272
 title: Getting Started with Linux
 date: 2013-07-15T17:18:32+00:00
 author: Siddharth
 layout: post
 permalink: /getting-started-with-linux/
 dsq_thread_id: "3295791995"
-
-image: /wp-content/uploads/2013/07/Linux.jpg
 categories: [ "Linux" ]
-tags: [ "linux" ]
+tags: [ "Intro" ]
 ---
 
 Linux is fast becoming the order of the day. Gone are the days when hackers, techies and geeks were the only people who could use it. The GUI (Graphical User Interface) of the Linux machines have also improved so much that one can use the computer without having to know anything about CLI (Command Line Interface).A This post will help you inA Getting Started with Linux.A Having the skill to work with Linux as a native environment, and being able to take care of day-to-day activities that you would do on a windows PC in Linux is a really essential for engineers.

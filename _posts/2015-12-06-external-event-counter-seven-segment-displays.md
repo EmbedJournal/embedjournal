@@ -5,9 +5,8 @@ author: Siddharth
 layout: post
 permalink: /external-event-counter-seven-segment-displays/
 dsq_thread_id: "2701807862"
-
-image: /wp-content/uploads/2013/08/DSC09693.jpg
-categories: [ "Embedded Systems", "PIC Microcontroller" ]
+categories: [ "Embedded Theory", "Microchip PIC" ]
+tags: [ "Interface", "Theory" ]
 ---
 
 External event counters are pretty useful things to have around. Once I had a feud with a shopkeeper for selling 4 motors in 3 different RPMs. Well, I don't know if you have ever tried making a robot that had wheels rotating at different speeds,A I did. It wasn't a very memorable experience. A The shopkeeper agreed that the RPM on one of the motors was of a different RPM and other 'slightly-off' but the others where just fine. It took me a lot of time to convince him that his definition of 'slight' was way-too-much-off.

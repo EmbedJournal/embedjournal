@@ -1,14 +1,12 @@
 ---
-id: 1810
 title: Migrating to HI-TECH C Compiler from the Microchip C18 Compiler
 date: 2013-08-24T21:39:52+00:00
 author: Siddharth
 layout: post
 permalink: /migrating-to-hi-tech-c-compiler-from-the-microchip-c18-compiler/
 dsq_thread_id: "3292578747"
-
-image: /wp-content/uploads/2013/08/HTSoft.gif
-categories: [ "Embedded Software", "PIC Microcontroller" ]
+categories: [ "Software", "Microchip PIC" ]
+tags: [ "Tools" ]
 ---
 
 Migrating to <a title="Visit Microchip Product Page" href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1406&dDocName=en535448" target="_blank">HI-TECH C compiler</a> for PIC MCU is not really hard task. The developers have taken much care in keeping it that way. In addition to the existing features of the C18 compiler, there are a lot of other added features in the HI-TECH C compiler.A This post will give you an introduction to the compiler, its features and how to write C programs in it.

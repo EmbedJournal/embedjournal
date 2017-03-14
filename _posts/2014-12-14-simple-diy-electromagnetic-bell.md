@@ -5,10 +5,8 @@ author: Siddharth
 layout: post
 permalink: /simple-diy-electromagnetic-bell/
 dsq_thread_id: "3322373915"
-
-image: /wp-content/uploads/2014/12/smalller.jpg
-categories: [ "General Posts" ]
-tags: [ "elctromagnet" ]
+categories: [ "General Posts", "How To" ]
+tags: [ "DIY", "Basics" ]
 ---
 
 You might think its pass time while I was talking about simple electromagnetic bells at my blog. Truth be told I would agree with you and embedjournal is pitching for a higher game in the near future. We will soon get into some android programming and write mobile apps that will talk with our embedded systems. But for now we will have to stick with this little bell as it was asked to be made by my boss. But trust me it is not as simple as it looks! there are somethings about this project that had me stuck for a couple of hours.

@@ -1,15 +1,12 @@
 ---
-id: 378
 title: Shortest Path Line Follower Robot Logic Revealed!
 date: 2013-06-08T18:24:42+00:00
 author: Siddharth
 layout: post
 permalink: /shortest-path-line-follower-robot-logic-revealed/
 dsq_thread_id: "3290567661"
-
-image: /wp-content/uploads/2013/06/Shortest.png
-categories: [ "Robot Theory", "Robotics" ]
-tags: [ "algorithm", "basics", "robotics", "theory" ]
+categories: [ "Robotics" ]
+tags: [ "Algorithm", "Basics", "Theory" ]
 ---
 
 Bored of the conventional line follower? People nearby are losing interest? Here is a post that could change it all and turn the winds to your side.
