@@ -4,154 +4,158 @@ layout: default
 
 {% assign author = site.data.authors[page.author] %}
 <div class="row">
-    <div class="col-md-8">
-        <article class="c-singlePost">
+    <div class="col-md-8 js-content">
+    	<div class="theiaStickySidebar">
+	        <article class="c-singlePost">
 
-        	<!-- Post Head -->
-			<div class="b-postHeader -withoutImg">
-				<h1>{{ page.title }}</h1>
-				<div class="b-postDate">
-					<span class="b-dayMonth">{{ page.date | date: "%b %-d" }}</span>
-					<span class="b-year">{{ page.date | date: "%Y" }}</span>
+	        	<!-- Post Head -->
+				<div class="b-postHeader -withoutImg">
+					<h1>{{ page.title }}</h1>
+					<div class="b-postDate">
+						<span class="b-dayMonth">{{ page.date | date: "%b %-d" }}</span>
+						<span class="b-year">{{ page.date | date: "%Y" }}</span>
+					</div>
+					<div class="c-postInfo">
+						<div class="b-author">
+							<p>By <a href="{{ site.baseurl }}/author/{{ author.full_name | slugify }}">{{ author.name }}</a></p>
+						</div>
+						<div class="b-category">
+							<p>
+								<span class="fa fa-folder"></span>
+								{% for category in page.categories %}
+									<a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+								{% endfor %}
+							</p>
+						</div>
+						<div class="b-tags">
+							<p><span class="fa fa-tags"></span></p>
+							<ul>
+								{% for tag in page.tags %}
+									<li><a href="{{ site.baseurl }}/tag/{{ tag | slugify }}">{{ tag }}</a></li>
+								{% endfor %}
+							</ul>
+						</div>
+					</div>
 				</div>
-				<div class="c-postInfo">
-					<div class="b-author">
-						<p>By <a href="{{ site.baseurl }}/author/{{ author.full_name | slugify }}">{{ author.name }}</a></p>
+	            <!-- Main content -->
+	            <div class="b-postContent">
+
+	        		{{ content }}
+
+		        	<!-- subscribe form -->
+					<div class="c-subscribe">
+						<div class="b-subscribeContent">
+							<p>Liked this post? Subscribe with your email and we will keep you engagged!</p>
+							<form action="/" method="post">
+								<div class="b-field">
+									<input type="text" placeholder="Email">
+								</div>
+								<div class="b-field">
+									<input type="submit" value="Subscribe" class="btn btn-soft">
+								</div>
+							</form>
+						</div>
 					</div>
-					<div class="b-category">
-						<p>
-							<span class="fa fa-folder"></span>
-							{% for category in page.categories %}
-								<a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
-							{% endfor %}
-						</p>
+				</div>
+	        </article>
+
+	        <!-- Author box -->
+			<div class="c-postAuthor">
+				<div class="b-authorTitle">
+					<div class="b-title">
+						<a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}"><h3>{{ author.full_name }}</h3></a>
 					</div>
-					<div class="b-tags">
-						<p><span class="fa fa-tags"></span></p>
+					<div class="b-authorSocial">
 						<ul>
-							{% for tag in page.tags %}
-								<li><a href="{{ site.baseurl }}/tag/{{ tag | slugify }}">{{ tag }}</a></li>
-							{% endfor %}
-						</ul>
+							{% if author.social.facebook %}
+								<li class="b-facebook"><a href="{{author.social.facebook}}" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+							{% endif %}
+							{% if author.social.twitter %}
+							<li class="b-twitter"><a href="{{author.social.twitter}}" title="Twitter"><span class="fa fa-twitter"></span></a></li>
+							{% endif %}
+							{% if author.social.google_plus %}
+							<li class="b-google-plus"><a href="{{author.social.google_plus}}" title="Google+"><span class="fa fa-google-plus"></span></a></li>
+							{% endif %}
+							{% if author.social.linkedin %}
+							<li class="b-linkedin"><a href="{{author.social.linkedin}}" title="Linkedin"><span class="fa fa-linkedin"></span></a></li>
+							{% endif %}
+	                    </ul>
 					</div>
 				</div>
-			</div>
-            <!-- Main content -->
-            <div class="b-postContent">
-
-        		{{ content }}
-
-	        	<!-- subscribe form -->
-				<div class="c-subscribe">
-					<div class="b-subscribeContent">
-						<p>Liked this post? Subscribe with your email and we will keep you engagged!</p>
-						<form action="/" method="post">
-							<div class="b-field">
-								<input type="text" placeholder="Email">
-							</div>
-							<div class="b-field">
-								<input type="submit" value="Subscribe" class="btn btn-soft">
-							</div>
-						</form>
+				<div class="b-authorCard">
+					<div class="b-authorImg">
+						<img src="{{ author.image }}" alt="Sample Thumb">
 					</div>
+					<div class="b-authorDesc">
+						<p>{{ author.short_desc }}</p>
+					</div>
+					<a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}" class="e-readMore">Read more about {{ author.name }}</a>
 				</div>
 			</div>
-        </article>
 
-        <!-- Author box -->
-		<div class="c-postAuthor">
-			<div class="b-authorTitle">
-				<div class="b-title">
-					<h3>{{ author.full_name }}</h3>
-				</div>
-				<div class="b-authorSocial">
-					<ul>
-						{% if author.social.facebook %}
-							<li class="b-facebook"><a href="{{author.social.facebook}}" title="Facebook"><span class="fa fa-facebook"></span></a></li>
-						{% endif %}
-						{% if author.social.twitter %}
-						<li class="b-twitter"><a href="{{author.social.twitter}}" title="Twitter"><span class="fa fa-twitter"></span></a></li>
-						{% endif %}
-						{% if author.social.google_plus %}
-						<li class="b-google-plus"><a href="{{author.social.google_plus}}" title="Google+"><span class="fa fa-google-plus"></span></a></li>
-						{% endif %}
-						{% if author.social.linkedin %}
-						<li class="b-linkedin"><a href="{{author.social.linkedin}}" title="Linkedin"><span class="fa fa-linkedin"></span></a></li>
-						{% endif %}
-                    </ul>
+			<!-- Post social share -->
+			<div class="c-postSocial">
+				{% capture share_url %}http%3a//{{ site.host }}/{{ site.baseurl}}/{{ page.url }}{% endcapture %}
+	            <ul>
+	                <li class="b-label">Share</li>
+	                <li class="b-twitter">
+	                	<a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.social.twitter }}&related={{ site.social.twitter }}" rel="nofollow" target="_blank" title="Share on Twitter"><span class="fa fa-twitter"></span> Twitter</a>
+	                </li>
+	                <li class="b-facebook">
+	                	<a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"><span class="fa fa-facebook"></span> Facebook</a>
+	                </li>
+	                <li class="b-linkedin">
+	                	<a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ share_url }}&title={{ page.title }}&summary={{ post.content | strip_html | truncatewords:30 }}&source="><span class="fa fa-linkedin"></span> Linkedin</a>
+	                </li>
+	                <li class="b-google-plus">
+	                	<a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+"><span class="fa fa-google-plus"></span> Google+</a>
+	                </li>
+	            </ul>
+	        </div>
+
+	        <!-- Related articles -->
+			<div class="c-relatedArticle">
+				<h3>Related Articles</h3>
+				<div class="b-relatedArticle">
+
+					<!-- Single block start -->
+					<div class="media">
+	                	<div class="media-body">
+	                		<a href="#"><h4 class="media-heading">Make a Simple RC (Remote Controlled) Robot Car</h4></a>
+	                        <p class="b-dateLabel">May 5, 2016</p>
+	                	</div>
+	                </div>
+					<!-- Single block end -->
+
+					<div class="media">
+	                	<div class="media-body">
+	                		<a href="#"><h4 class="media-heading">Make a Simple RC (Remote Controlled) Robot Car</h4></a>
+	                        <p class="b-dateLabel">May 5, 2016</p>
+	                	</div>
+	                </div>
+					<div class="media">
+	                	<div class="media-body">
+	                		<a href="#"><h4 class="media-heading">Make a Simple RC (Remote Controlled) Robot Car</h4></a>
+	                        <p class="b-dateLabel">May 5, 2016</p>
+	                	</div>
+	                </div>
 				</div>
 			</div>
-			<div class="b-authorCard">
-				<div class="b-authorImg">
-					<img src="{{ author.image }}" alt="Sample Thumb">
-				</div>
-				<div class="b-authorDesc">
-					<p>{{ author.short_desc }}</p>
-				</div>
-				<a href="#" class="e-readMore">Read more about {{ author.name }}</a>
+
+			<!-- Load comments button -->
+			<div class="c-loadComment">
+				<a href="#" class="btn btn-soft"><span class="fa fa-commenting-o"></span> View comments</a>
 			</div>
-		</div>
-
-		<!-- Post social share -->
-		<div class="c-postSocial">
-			{% capture share_url %}http%3a//{{ site.host }}/{{ site.baseurl}}/{{ page.url }}{% endcapture %}
-            <ul>
-                <li class="b-label">Share</li>
-                <li class="b-twitter">
-                	<a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.social.twitter }}&related={{ site.social.twitter }}" rel="nofollow" target="_blank" title="Share on Twitter"><span class="fa fa-twitter"></span> Twitter</a>
-                </li>
-                <li class="b-facebook">
-                	<a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"><span class="fa fa-facebook"></span> Facebook</a>
-                </li>
-                <li class="b-linkedin">
-                	<a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ share_url }}&title={{ page.title }}&summary={{ post.content | strip_html | truncatewords:30 }}&source="><span class="fa fa-linkedin"></span> Linkedin</a>
-                </li>
-                <li class="b-google-plus">
-                	<a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+"><span class="fa fa-google-plus"></span> Google+</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Related articles -->
-		<div class="c-relatedArticle">
-			<h3>Related Articles</h3>
-			<div class="b-relatedArticle">
-
-				<!-- Single block start -->
-				<div class="media">
-                	<div class="media-body">
-                		<a href="#"><h4 class="media-heading">Make a Simple RC (Remote Controlled) Robot Car</h4></a>
-                        <p class="b-dateLabel">May 5, 2016</p>
-                	</div>
-                </div>
-				<!-- Single block end -->
-
-				<div class="media">
-                	<div class="media-body">
-                		<a href="#"><h4 class="media-heading">Make a Simple RC (Remote Controlled) Robot Car</h4></a>
-                        <p class="b-dateLabel">May 5, 2016</p>
-                	</div>
-                </div>
-				<div class="media">
-                	<div class="media-body">
-                		<a href="#"><h4 class="media-heading">Make a Simple RC (Remote Controlled) Robot Car</h4></a>
-                        <p class="b-dateLabel">May 5, 2016</p>
-                	</div>
-                </div>
-			</div>
-		</div>
-
-		<!-- Load comments button -->
-		<div class="c-loadComment">
-			<a href="#" class="btn btn-soft"><span class="fa fa-commenting-o"></span> View comments</a>
 		</div>
     </div>
 
     <!-- Blog Sidebar Widgets Column -->
-    <div class="col-md-4">
-    	<aside class="c-aside">
-        	{% include sidebar.html %}
-        </aside>
+    <div class="col-md-4 js-aside">
+    	<div class="theiaStickySidebar">
+	    	<aside class="c-aside">
+	        	{% include sidebar.html %}
+	        </aside>
+        </div>
     </div>
 
 </div>

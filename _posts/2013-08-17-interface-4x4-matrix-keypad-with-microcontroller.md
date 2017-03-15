@@ -5,7 +5,7 @@ author: Siddharth
 layout: post
 permalink: /interface-4x4-matrix-keypad-with-microcontroller/
 dsq_thread_id: "2701818794"
-categories: [ "Embedded Thory", "Microchip PIC" ]
+categories: [ "Embedded Theory", "Microchip PIC" ]
 tags: [ "Algorithm", "Interface", "Theory" ]
 ---
 

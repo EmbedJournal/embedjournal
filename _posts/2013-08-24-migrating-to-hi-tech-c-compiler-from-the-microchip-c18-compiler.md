@@ -5,7 +5,7 @@ author: Siddharth
 layout: post
 permalink: /migrating-to-hi-tech-c-compiler-from-the-microchip-c18-compiler/
 dsq_thread_id: "3292578747"
-categories: [ "Software", "Microchip PIC" ]
+categories: [ "Microchip PIC" ]
 tags: [ "Tools" ]
 ---
 

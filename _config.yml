@@ -37,10 +37,10 @@ collections:
     permalink: /:path/index.html
   authors:
     output: true
-    permalink: /author/:path/index.html
-  categories:
+    permalink: /authors/:path/index.html
+  category_pages:
     output: true
-    permalink: /category/:path/index.html
+    permalink:  /category/:path/index.html
 
 liquid:
   error_mode: warn

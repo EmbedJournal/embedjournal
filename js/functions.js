@@ -77,6 +77,11 @@ $(document).ready(function() {
         closeSpeed:   300
     });
 
+    jQuery('.js-content, .js-aside').theiaStickySidebar({
+      // Settings
+      additionalMarginTop: 80
+    });
+
     $.featherlight.defaults.afterContent = function() {
         var caption = this.$currentTarget.find('img').attr('alt');
         console.log(caption);

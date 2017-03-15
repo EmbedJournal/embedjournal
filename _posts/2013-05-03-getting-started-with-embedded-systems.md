@@ -5,7 +5,7 @@ author: Siddharth
 layout: post
 permalink: /getting-started-with-embedded-systems/
 dsq_thread_id: "3290443883"
-categories: [ "Basics", "General Posts" ]
+categories: [ "Embedded Theory", "General Posts" ]
 tags: [ "Intro" ]
 ---
 

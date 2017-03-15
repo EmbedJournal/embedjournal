@@ -5,7 +5,7 @@ author: Siddharth
 layout: post
 permalink: /pic-timer-calculator-give-away-1/
 dsq_thread_id: "3297077771"
-categories: [ "Embedded Systems", "PIC Microcontroller" ]
+categories: [ "Microchip PIC" ]
 tags: [ "Tools" ]
 ---
 

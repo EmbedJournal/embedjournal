@@ -5,7 +5,7 @@ author: Siddharth
 layout: post
 permalink: /how-to-make-pcbs-at-home-with-toner-transfer-method/
 dsq_thread_id: "2728571825"
-categories: [ "Basics", "General Posts", "How To" ]
+categories: [ "How To" ]
 tags: [ "Basics", "DevKit", "DIY", "EDA" ]
 ---
 
