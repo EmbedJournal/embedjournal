@@ -10,27 +10,27 @@ tags: [ "Tech Fest", "Experience" ]
 
 gallery1:
   - src:  track-3d-view.png
-    name: Track 3D View
+    name: "Track 3D View"
   - src:  track-spec.png
-    name: Track Specification
+    name: "Track Specification"
   - src:  object-spec.png
-    name: Object Specification
+    name: "Object Specification"
 
 gallery2:
   - src:  chassis-making.jpg
-    name: Chassis in the making
+    name: "Chassis in the making"
   - src:  robotic-arm-prototype.jpg
-    name: Robotic arm prototype
+    name: "Robotic arm prototype"
   - src:  nexgen-shortlist.jpg
-    name: Our team Nexgen got selected for final round
+    name: "Our team Nexgen got selected for final round"
   - src:  ranger-robot.jpg
-    name: Land Rover (second robot)
+    name: "Land Rover (second robot)"
   - src:  servo-inventory.jpg
-    name: My modest servo collection
+    name: "My modest servo collection"
   - src:  robot-pair.jpg
-    name: Robot pair
+    name: "Robot pair"
   - src:  me-at-work.jpg
-    name: Me at work :)
+    name: "Me at work :)"
 ---
 
 Shaastra is an annual tech fest conducted by Indian Institute of Technology, Chennai. There are events and workshops for almost all streams of Engineering and I love their Robotics events the most. The robotics event conducted by them is "The mother of all the robotics event in the county"-or that is what they say.. don't know how they guessed the gender of robotics dY~> (mother). I had always had an eye on this event ever since I was in my first year and I was a keen observer all this while until last October when they released their problem statement.

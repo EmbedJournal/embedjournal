@@ -5,7 +5,7 @@ email:   "admin@embedjournal.com"
 version: "0.2.0"
 url:     "http://embedjournal.com/"
 baseurl: ""
-logo:    "/images/logo/embedjournal-120px.png"
+logo:    "/assets/images/logo/embedjournal-120px.png"
 description: > # this ignores newlines until next key.
   This is a website focusing on embedded software/hardware design and a hunch of
   other things that has to do with it. Embedded systems play a vital role in our
@@ -57,6 +57,7 @@ exclude:
   - package.json
   - README.md
   - bin
+  - assets # CAREFUL!
 
 include:
   - .htaccess

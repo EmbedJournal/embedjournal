@@ -1,6 +1,5 @@
 ---
-id: 280
-title: Privacy Policy
+title: "Privacy Policy"
 layout: page
 ---
 

@@ -1,6 +1,5 @@
 ---
-id: 493
-title: Guest Blogging
+title: "Guest Blogging"
 layout: page
 ---
 

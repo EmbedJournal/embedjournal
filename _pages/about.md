@@ -1,6 +1,5 @@
 ---
-id: 2
-title: About
+title: "About"
 layout: page
 ---
 

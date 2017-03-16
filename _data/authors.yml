@@ -6,14 +6,14 @@ Siddharth:
   name: "Siddharth"
   full_name: "Siddharth Chandrasekaran"
   email: siddharth@embedjournal.com
-  image: "/images/authors/siddharth.jpg"
+  image: "/assets/images/authors/siddharth.jpg"
   blogging_since: "Apr 2013"
   short_desc: >
     Siddharth is a Firmware Engineer, techie, and a movie-buff. His interests include, Programming,
     Embedded Systems, Linux, Robotics, CV, Carpentry and a lot more. At times, you could see some of
     his sunday projects converge on release quality. You get to know him on the following social channels."
   social:
-    twitter: http://twitter.com/embedjournal
+    twitter:  http://twitter.com/embedjournal
     facebook: https://facebook.com/cbsiddharth
     github:   https://github.com/cbsiddharth
     linkedin: https://in.linkedin.com/in/cbsiddharth
@@ -22,12 +22,12 @@ Mani:
   name: "Mani"
   full_name: "Mani Sadhashivam"
   email: manivannan@embedjournal.com
-  image: "/images/authors/mani.jpg"
+  image: "/assets/images/authors/mani.jpg"
   blogging_since: "May 2015"
   short_desc: >
     Mani is an Embedded Linux hobbyist having perennial interest towards Electronics and Agriculture. You
     can reach him by the following social channels.
   social:
-    twitter: http://twitter.com/mani_sadhasivam
+    twitter:  http://twitter.com/mani_sadhasivam
     facebook: http://www.facebook.com/mani.manivannan.888
     linkedin: https://in.linkedin.com/in/manisadhasivam

@@ -1,4 +1,4 @@
-{% capture image-path %}{{ site.baseurl }}/images/{{ page.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/{{ include.src }}{% endcapture %}
+{% capture image-path %}{{ site.baseurl }}/assets/{{ page.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/{{ include.src }}{% endcapture %}
 
 <div>
 	<a class="b-captionImg" href="#" data-featherlight="{{ image-path }}">

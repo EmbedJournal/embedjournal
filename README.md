@@ -17,3 +17,4 @@ Issues:
 	- footer about section remove hover underline. make it bright on hover. Same for all text links there.
 	- numbered list typography has to be fixed. See, /glem-graphical-lcd-emulator-c/ & /contact/
 	- block quotes are ave too small a font and has too much padding in the bottom. Fix this.
+	- post page author widget link decoration has to be fixed.

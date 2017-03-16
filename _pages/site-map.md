@@ -1,6 +1,5 @@
 ---
-id: 500
-title: Site Map
+title: "Site Map"
 layout: page
 ---
 

@@ -1,6 +1,5 @@
 ---
-id: 502
-title: Time Line
+title: "Time Line"
 layout: page
 ---
 
