@@ -18,7 +18,7 @@ So, my boss calls me one morning (actually three days ago) and declares that his
 
 Setting up the mechanical hitter was the most time consuming task of all. Especially if you haven't seen anybody's design or haven't experimented with a couple of designs yourselves. I thought this project was too simple to even Google for similar designs and decided that I should just get on with it. The end result was that I had to do this whole thing twice (two different designs, this is the third one) before I could get it to work as expected and still be simple enough for a kid to understand.
 
-[<img class="aligncenter size-full wp-image-2570" src="/images/posts/2014/12/dic1.png" alt="Mechanical hitter setup" width="850" height="477" srcset="/images/posts/2014/12/dic1.png 850w, /images/posts/2014/12/dic1-300x168.png 300w" sizes="(max-width: 850px) 100vw, 850px" />](/images/posts/2014/12/dic1.png)
+{% include image.html src="electic-bell-pivot-arm.png" %}
 
 I wouldn't call it the best setup, but it is adequate. It has a movable Pivot to allow the hitter to move forward and backward. The stopper is to hold it at a position under normal conditions, a rubber band to provide for the recoil. Lastly it has a supporting pole to hold everything in place.
 
@@ -28,7 +28,7 @@ If you had any exposure to science at all, you would know that a current carryin
 
 For this particular project I did not need a very powerful magnet. I took a screw that was lying around and wound it with some insulated copper wire to get the electromagnet working.
 
-[<img class="aligncenter size-full wp-image-2574" src="/images/posts/2014/12/electromagnet.png" alt="electromagnet" width="852" height="477" srcset="/images/posts/2014/12/electromagnet.png 852w, /images/posts/2014/12/electromagnet-300x168.png 300w" sizes="(max-width: 852px) 100vw, 852px" />](/images/posts/2014/12/electromagnet.png)
+{% include image.html src="electromagnet.png" %}
 
 You should be careful that there is no short in two adjacent wires or with the metallic screw while winding it. It is also a good practice to place one layer of insulator between the screw and the first layer of copper wire. You should certainly have an insulation at the end to prevent any accidental short circuit.
 
@@ -46,7 +46,7 @@ Once you have the electromagnet and the hitter ready, you will have to mount it 
   2. Magnet is too far away
   3. The rubber band is in too tight a leash.
 
-[<img class="aligncenter size-full wp-image-2571" src="/images/posts/2014/12/IMG_20141211_183806491-small.jpg" alt="IMG_20141211_183806491-small" width="934" height="525" srcset="/images/posts/2014/12/IMG_20141211_183806491-small.jpg 934w, /images/posts/2014/12/IMG_20141211_183806491-small-300x169.jpg 300w" sizes="(max-width: 934px) 100vw, 934px" />](/images/posts/2014/12/IMG_20141211_183806491-small.jpg)
+{% include image.html src="electric-bell.jpg" %}
 
 If your magnet is not strong, you can increase the Voltage/Current and check if there is an improvement in the force of attraction. Sometimes it could be because you did not do enough winding around the screw or you just didn't choose the proper material for the core. Just keep experimenting and you should be able to get it working without much of an effort.
 

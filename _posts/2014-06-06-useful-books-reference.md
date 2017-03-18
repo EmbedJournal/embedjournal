@@ -10,15 +10,15 @@ categories: [ "General Posts" ]
 tags: [ "Ideas" ]
 ---
 
-Books are an invaluable source of information. Listed below are some of the books that we feel will help you understand the basic concepts behind embedded systems, robotics, andA basic electronics. Check if you have come across some of these books and leave a comment if I have missed some good books.
+Books are an invaluable source of information. Listed below are some books that we feel, will help you understand the basic concepts behind embedded systems, robotics, and basic electronics. Check if you have come across some of these books and leave a comment if I have missed some good books.
 
-We do not condoneA illegal sharing of copyright content at EmbedJournal. We suggest, you purchase the books from your local store or from an online vendor (book/e-book).
+We do not condone illegal sharing of copyright content at EmbedJournal. We suggest, you purchase the books from your local store or from an online vendor (book/e-book).
 
 But if you cannot afford these books, here is a tip, almost everything is there in the internet. All you have to do is Google the name of the book along with the author names. Most probably you will get the book in the first few pages of the search.
 
 ### <span style="color: #993300;">Embedded Systems</span>
 
-**ARM System Developers GuideA  Designing and optimizing system software**
+**ARM System Developers Guide  Designing and optimizing system software**
   
 Andrew N. Sloss, Dominic Symes, Chris Wright
 
@@ -44,7 +44,7 @@ T. Wilmshurst
   
 Myke Predko
 
-**Advanced PICA Microcontroller Projects in c**
+**Advanced PIC Microcontroller Projects in c**
   
 Dogan Ibrahim
 
@@ -98,7 +98,7 @@ Joseph J. Carr
 
 **Circuit Design-Know it all**
   
-Darren Ashby,A Bonnie Baker,A Stuart Ball,A J. Crowe,A Barrie Hayes-Gill,A Ian Hickman,A Walt Kester, Ron Mancini,A Ian Grout,A Robert A. Pease,A Mike Tooley,A Tim Williams,A Peter Wilson,A Bob Zeidman
+Darren Ashby, Bonnie Baker, Stuart Ball, J. Crowe, Barrie Hayes-Gill, Ian Hickman, Walt Kester, Ron Mancini, Ian Grout, Robert , Pease, Mike Tooley, Tim Williams, Peter Wilson, Bob Zeidman
 
 **Build Your Own Low-Power Transmitters**
   
@@ -114,9 +114,9 @@ David Cook
   
 David Cook
 
-**RobotA Builder'sA Bonaza**
+**Robot Builder's Bonaza**
   
-Gordon McComb,A Myke Predko
+Gordon McComb, Myke Predko
 
 **Autonomous Mobile Robots**
   
@@ -135,9 +135,9 @@ We do give out some monthly freebies! Subscribe to our mailing list now and don'
 </p>
 
 <p style="color: #292929;">
-  We willA keep your email safely locked away from the spammers!
+  We will keep your email safely locked away from the spammers!
 </p>
 
 <p style="color: #292929;">
-  Also youA donaEURtmt have to worry about a dozen email in your inbox when you log in! Atmost, you will get a coupe ofA mails in a week and we are sure you will love it!.
+  Also you don't have to worry about a dozen emails in your inbox when you log in! Atmost, you will get a coupe of mails in a week and we are sure you will love it!.
 </p>

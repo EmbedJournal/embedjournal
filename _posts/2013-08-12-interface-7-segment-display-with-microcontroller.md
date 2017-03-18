@@ -14,11 +14,11 @@ The 7 segment display is widely used to display numeric data. They are limited b
 
 [<img class="aligncenter size-full wp-image-1705" src="/images/posts/2013/08/name.png" alt="name" width="509" height="318" srcset="/images/posts/2013/08/name.png 509w, /images/posts/2013/08/name-300x187.png 300w" sizes="(max-width: 509px) 100vw, 509px" />](/images/posts/2013/08/name.png)
 
-This post will deal with the basics of 7 segment displays and how to interface them with microcontrollers. As the name suggests, there are 7 segments to display a number and an additional decimal point. These are essentially LED that turn on according to the excitation given by the controller that gives the appearance of the number.
+This post will deal with the basics of 7 segment displays and how to interface them with microcontrollers. As the name suggests, there are 7 segments to display a number and an additional decimal point. These are essentially LEDs that turn on according to the excitation given by the controller that gives the appearance of the number.
 
-These segments are named with alphabets A through G with a DP (Decimal Point) or in some cases an eighth alphabet H. These 8 pins corresponding to each the segments are connected to the port pins of a microcontroller.
+These segments are named with alphabets A through G with a DP (Decimal Point) or in some cases an eighth alphabet H. These 8 pins corresponding to each of the segments are connected to the port pins of a microcontroller.
 
-While addressing these segments, (in most cases) A is the LSB and DP is the MSB. If you are using a development board, you should read it's documentation before addressing them.
+While addressing these segments, (in most cases) A is the LSB and DP(H) is the MSB. If you are using a development board, you should read it's documentation before addressing them.
 
 ### Types of 7 Segment Displays
 
@@ -28,11 +28,11 @@ Yes, there are two types of 7 segment displays. They look alike and there is no 
 
 [<img class="aligncenter size-full wp-image-1708" src="/images/posts/2013/08/Types-7-segment-displays.png" alt="Types 7 segment displays" width="795" height="354" srcset="/images/posts/2013/08/Types-7-segment-displays.png 795w, /images/posts/2013/08/Types-7-segment-displays-300x134.png 300w" sizes="(max-width: 795px) 100vw, 795px" />](/images/posts/2013/08/Types-7-segment-displays.png)
 
-These types are based on which type of pin each LED is tied together. If all the cathodes are grouped to give a singe cathode it calledA **Common Cathode**A type displays. Similarly there is aA **Common Anode**A type which as the name suggests, has the cathode of all the LED put together to form a single cathode.
+These types are based on which type of pin each LED is tied together. If all the cathodes are grouped to give a singe cathode it called **Common Cathode** type displays. Similarly there is a **Common Anode** type which as the name suggests, has the cathode of all the LED put together to form a single cathode.
 
 ### Wiring them up to a Microcontroller
 
-Here is the circuit diagram my development board has. I guess this is the best way to connect these displays. Any other method I can think off uses more pins for the microcontroller.
+Here is the circuit diagram my development board has. I guess this is the best way to connect these displays. Any other method I can think of uses more pins for the microcontroller.
 
 [<img class="aligncenter size-full wp-image-1704" src="/images/posts/2013/08/circuit1.png" alt="circuit" width="674" height="467" srcset="/images/posts/2013/08/circuit1.png 674w, /images/posts/2013/08/circuit1-300x208.png 300w, /images/posts/2013/08/circuit1-110x75.png 110w" sizes="(max-width: 674px) 100vw, 674px" />](/images/posts/2013/08/circuit1.png)
 
@@ -75,7 +75,7 @@ This way you will be able to use all the 4 digits to do some useful work. The ke
 
 ### Framing the data
 
-The data (bitmap) has to be sent the 7 segment display fr0m the controller to the data bus. So we have to have a pre determined set of bitmaps for the numbers that we would be using.
+The data (bitmap) has to be sent to the 7 segment display from the controller through the data bus. So we have to have a pre determined set of bitmaps for the numbers that we would be using.
 
 In any kind of application, it's good practice to have a Look-up-Table for the data to be displayed on the 7 segment. The data to be displayed has to be framed separately for common cathode and common anode type displays
 

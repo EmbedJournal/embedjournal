@@ -17,13 +17,13 @@ Toner Transfer method for making PCB at home is probably one thing that went as 
 
 Before getting to the details in the making your own PCBs I wish to share an old experience. So, if you have left the soldering iron turned on you can skip it and jump straight into the content.
 
-The first time I was a PCB made at home was around 2005. My brother, an electronics enthusiast and hobbyist made an audio amplifier for a broken music system. Back then, I don't know if this method was yet to be introduced or we overlooked it, we were in stone age.
+The first time I saw a PCB made at home was around 2005. My brother, an electronics enthusiast and hobbyist made an audio amplifier for a broken music system. Back then, I din't know if this method was yet to be introduced or we overlooked it, we were in stone age.
 
 We did not have any means to transfer the layout to the copper clad board as such. So we took a print out of the silk screen layer and pasted it over the non copper side of the board. Then we drilled all the holes into the clad board. Once this was done, we took a printout of the bottom layer and started connecting the dots with a marker pen according to the layout image.
 
-Once all the dots were connected, we started to thicken the lines and also covered the pads. All this was done manually and we proceeded to the etching process. The endeavor took us the whole day and I'm happy to inform that the board still works (to-date) like a charm.
+Once all the dots were connected, we started to thicken the lines and also covered the pads. All this was done manually and we proceeded to the etching process. The endeavor took us a whole day and I'm happy to inform that the board still works (to-date) like a charm.
 
-### Toner Transfer Method -A Underlying Theory
+### Toner Transfer Method -An Underlying Theory
 
 Originally this method was to be used with photo paper. They did not become very popular due to two reasons. First the paper is very costly (compared to the kind of paper used for this tutorial). Next the plastic coat that they have over them seemed to bond very tightly with the copper and hence making it difficult to remove the paper after the toner has fully been transferred to the clad board.
 
@@ -35,7 +35,7 @@ Once the ink is on the copper it forms a protective coating and keeps away the e
 
 This method is really easy to follow and you can jump into action by just seeing the images that I have posted below (which you are free to do) but you'll soon realize that there is one hell lot of things to learn from making mistakes. So it's advisable to go through the few words I have added to each of the steps below.
 
-Here is a tip, don't try to learn from your own mistakes while making PCBs. One small mistake will force to go back to step one which is a laborious and daunting task.
+Here is a tip, don't try to learn from your own mistakes while making PCBs. One small mistake will force to go back to step one which is a laborious and a daunting task.
 
 ### Print the design on the Toner Transfer Paper
 
@@ -49,7 +49,7 @@ I could print, as you can see 8 images in one sheet after a lot of modification 
 
 ### Prepare the copper clad board
 
-The next step is to prepare the copper clad board for the toner transfer. The toner sticks on to copper that is free from oxidation and any oil stains. Even the moisture in your hands could spoil the transfer. So use proper detergent to clean the copper board. Spend enough time in this process as the steps that follows rely on how well you did this.
+The next step is to prepare the copper clad board for the toner transfer. The toner sticks on to copper that is free from oxidation and any oil stains. Even the moisture in your hands could spoil the transfer. So use proper detergent to clean the copper board. Spend enough time in this process as the steps that follow rely on how well you did this.
 
 <p style="text-align: center;">
   <a href="/images/posts/2013/06/DSC09550.jpg"><img class="aligncenter size-large wp-image-1620" alt="clean the copper clad board" src="/images/posts/2013/06/DSC09550-1024x576.jpg" width="618" height="347" srcset="/images/posts/2013/06/DSC09550-1024x576.jpg 1024w, /images/posts/2013/06/DSC09550-300x169.jpg 300w" sizes="(max-width: 618px) 100vw, 618px" /></a>
@@ -67,9 +67,9 @@ After it is dry mostly avoid touching the copper surface. If need be, wash your 
 
 ### Transfer the Toner to the copper clad board
 
-The next step is to transfer the toner to the copper clad board. For this you will have place the printed paper on the clad board with the print-side to the copper as in the image below.
+The next step is to transfer the toner to the copper clad board. For this you will have to place the printed paper on the clad board with the printed side to the copper as in the image below.
 
-I had an irregular copper board as I bought a big plate some time back used it a couple of times. So I had to cut the printed sheet into the size of the board layout to better utilize the available copper plate.
+I had an irregular copper board as I bought a big plate some time back and used it a couple of times. So I had to cut the printed sheet into the size of the board layout to better utilize the available copper plate.
 
 <p style="text-align: center;">
   <a href="/images/posts/2013/06/DSC09554.jpg"><img class="aligncenter size-large wp-image-1622" alt="PCB paper over the copper clad board" src="/images/posts/2013/06/DSC09554-1024x576.jpg" width="618" height="347" srcset="/images/posts/2013/06/DSC09554-1024x576.jpg 1024w, /images/posts/2013/06/DSC09554-300x169.jpg 300w" sizes="(max-width: 618px) 100vw, 618px" /></a>
@@ -91,7 +91,7 @@ After ironing, don't pull away the paper immediately. Wait for some time and let
   <a href="/images/posts/2013/06/DSC09558.jpg"><img class="aligncenter size-large wp-image-1624" alt="Copper clad board after toner transfer" src="/images/posts/2013/06/DSC09558-1024x576.jpg" width="618" height="347" srcset="/images/posts/2013/06/DSC09558-1024x576.jpg 1024w, /images/posts/2013/06/DSC09558-300x169.jpg 300w" sizes="(max-width: 618px) 100vw, 618px" /></a>
 </p>
 
-After removing the paper, the toner should be transferred to the copper board fully under ideal circumstances. But normally some small parts do not get fully transferred to the copper board. Don't worry about it. I can be cured.
+After removing the paper, the toner should be transferred to the copper board fully under ideal circumstances. But normally some small parts do not get fully transferred to the copper board. Don't worry about it. It can be cured.
 
 ### Prepare for the Etching process
 
@@ -101,21 +101,21 @@ Etching such a large plate is not possible. So roughly cut the plate into small 
   <a href="/images/posts/2013/06/DSC09563.jpg"><img class="aligncenter size-large wp-image-1625" alt="Cut the PCB into smaller parts" src="/images/posts/2013/06/DSC09563-1024x576.jpg" width="618" height="347" srcset="/images/posts/2013/06/DSC09563-1024x576.jpg 1024w, /images/posts/2013/06/DSC09563-300x169.jpg 300w" sizes="(max-width: 618px) 100vw, 618px" /></a>
 </p>
 
-After all the PCBs are cut, don't place them one over the other as you might make some fine scratch in the transferred toner and end up having discontinuity in the track. I placed them one over the other just for the beauty of it - don't try this at home dYtm,
+After all the PCBs are cut, don't place them one over the other as you might make some fine scratch in the transferred toner and end up having discontinuity in the track. I placed them one over the other just for the beauty of it - don't try this at home.
 
 <p style="text-align: center;">
   <a href="/images/posts/2013/06/DSC09565.jpg"><img class="aligncenter size-large wp-image-1626" alt="PCBs made from toner transfer method" src="/images/posts/2013/06/DSC09565-1024x576.jpg" width="618" height="347" srcset="/images/posts/2013/06/DSC09565-1024x576.jpg 1024w, /images/posts/2013/06/DSC09565-300x169.jpg 300w" sizes="(max-width: 618px) 100vw, 618px" /></a>
 </p>
 
-Now is the time to correct the mistakes in the transfer of the toner. Sit with a magnifying glass to see if there are any discontinuity in the tracks or if some lines are missing. If you spot one, use a permanent marker pen with a sharp tip to color them. Most of the time, the big massed of copper seems to have a problem in being fully transferred. So use the pen to fill up any openings.
+Now is the time to correct the mistakes in the transfer of the toner. Sit with a magnifying glass to see if there are any discontinuities in the tracks or if some lines are missing. If you spot one, use a permanent marker pen with a sharp tip to color them. Most of the time, the big masses of copper seems to have a problem in being fully transferred. So use the pen to fill up any openings.
 
 <p style="text-align: center;">
   <a href="/images/posts/2013/06/DSC09568.jpg"><img class="aligncenter size-large wp-image-1627" alt="Use a marker pen to correct the tracks" src="/images/posts/2013/06/DSC09568-1024x576.jpg" width="618" height="347" srcset="/images/posts/2013/06/DSC09568-1024x576.jpg 1024w, /images/posts/2013/06/DSC09568-300x169.jpg 300w" sizes="(max-width: 618px) 100vw, 618px" /></a>
 </p>
 
-Not all the marker pen are good at keeping off the etchant. One way is to buy some costly markers, sometimes this also helps. A After this process is over, leave the board to dry for some time and give it another coat. You can see the places where you have colored by slightly tilting the PCB in light.
+Not all the marker pens are good at keeping off the etchant. One way is to buy some costly markers, sometimes this also helps. After this process is over, leave the board to dry for some time and give it another coat. You can see the places where you have colored by slightly tilting the PCB in light.
 
-### Prepare the FeCl<sub>3A </sub>Solution
+### Prepare the FeCl<sub>3</sub>Solution
 
 The etchant that I'm using is ferric chloride. Some argue that the ferric chloride solution is really toxic and difficult to dispose (safely) and hence don't prefer it. I bought 2 Kilos of the chemical and have half of it remaining so I will stick to it for now.
 
@@ -125,7 +125,7 @@ Here is how it looks in solid state. It's a bad idea to buy and stock them. If y
   <a href="/images/posts/2013/06/DSC09624.jpg"><img class="aligncenter size-large wp-image-1637" alt="Ferric chloride PCB Etchant" src="/images/posts/2013/06/DSC09624-1024x576.jpg" width="618" height="347" srcset="/images/posts/2013/06/DSC09624-1024x576.jpg 1024w, /images/posts/2013/06/DSC09624-300x169.jpg 300w" sizes="(max-width: 618px) 100vw, 618px" /></a>
 </p>
 
-Put some quantity of the ferric chloride solution into the container (a fish tank in this case). Use protective surgical gloves while handling the chemical.
+Put some quantity of the ferric chloride solution into a container (a fish tank in this case). Use protective surgical gloves while handling the chemical.
 
 <p style="text-align: center;">
   <a href="/images/posts/2013/06/DSC09630.jpg"><img class="aligncenter size-large wp-image-1638" alt="Prepare the solution" src="/images/posts/2013/06/DSC09630-1024x576.jpg" width="618" height="347" srcset="/images/posts/2013/06/DSC09630-1024x576.jpg 1024w, /images/posts/2013/06/DSC09630-300x169.jpg 300w" sizes="(max-width: 618px) 100vw, 618px" /></a>
@@ -145,13 +145,13 @@ Then use a stick or a spoon to mix the solution well. The big lumps of the chemi
 
 ### Dissolve the unwanted copper inside the FeCl<sub>3</sub> Solution
 
-Now that the solution is ready, we can submerge the PCBs into the etchant. For this I made a suspension tray to house the PCBs. Here is a step by stem guide onA [How to Make a Tray to suspend PCBs into the Etchant to make your own tray](http://embedjournal.com/2013/08/make-a-tray-to-suspend-pcbs-into-etchant/ "How to Make a Tray to suspend PCBs into the Etchant").
+Now that the solution is ready, we can submerge the PCBs into the etchant. For this I made a suspension tray to house the PCBs. Here is a step by step guide on [How to Make a Tray to suspend PCBs into the Etchant to make your own tray](http://embedjournal.com/2013/08/make-a-tray-to-suspend-pcbs-into-etchant/ "How to Make a Tray to suspend PCBs into the Etchant").
 
 <p style="text-align: center;">
   <a href="/images/posts/2013/06/DSC09638.jpg"><img class="aligncenter size-large wp-image-1641" alt="Toner transfer method - PCB making" src="/images/posts/2013/06/DSC09638-1024x576.jpg" width="618" height="347" srcset="/images/posts/2013/06/DSC09638-1024x576.jpg 1024w, /images/posts/2013/06/DSC09638-300x169.jpg 300w" sizes="(max-width: 618px) 100vw, 618px" /></a>
 </p>
 
-Another important detail is that, the PCBs should not be allowed to settle inside the etchant.A This means you have to keep agitating them. This is when the tray comes in handy.
+Another important detail is that, the PCBs should not be allowed to settle inside the etchant. This means that you have to keep agitating them. This is when the tray comes in handy.
 
 <p style="text-align: center;">
   <a href="/images/posts/2013/06/DSC09644.jpg"><img class="aligncenter size-large wp-image-1642" alt="Etching process" src="/images/posts/2013/06/DSC09644-1024x576.jpg" width="618" height="347" srcset="/images/posts/2013/06/DSC09644-1024x576.jpg 1024w, /images/posts/2013/06/DSC09644-300x169.jpg 300w" sizes="(max-width: 618px) 100vw, 618px" /></a>
@@ -171,7 +171,7 @@ If you don't remove the boards once all the excess copper is dissolved the etcha
   <a href="/images/posts/2013/06/DSC09649.jpg"><img class="aligncenter size-large wp-image-1643" alt="Etching complete" src="/images/posts/2013/06/DSC09649-1024x576.jpg" width="618" height="347" srcset="/images/posts/2013/06/DSC09649-1024x576.jpg 1024w, /images/posts/2013/06/DSC09649-300x169.jpg 300w" sizes="(max-width: 618px) 100vw, 618px" /></a>
 </p>
 
-As soon as you remove them from the solution. drop them into a basin with cold water. This will remove the remains of copper and the etchant. After this step you can touch the board.
+As soon as you remove them from the solution, drop them into a basin with cold water. This will remove the remains of copper and the etchant. After this step you can touch the board.
 
 <p style="text-align: center;">
   <a href="/images/posts/2013/06/DSC09652.jpg"><img class="aligncenter size-large wp-image-1644" alt="Wash the PCBs in water" src="/images/posts/2013/06/DSC09652-1024x576.jpg" width="618" height="347" srcset="/images/posts/2013/06/DSC09652-1024x576.jpg 1024w, /images/posts/2013/06/DSC09652-300x169.jpg 300w" sizes="(max-width: 618px) 100vw, 618px" /></a>
@@ -185,7 +185,7 @@ This is how the PCB looks after the etching process. If you observe carefully yo
 
 ### Remove the toner from the board
 
-Once the etching process is finished, the toner is no longer needed and has to be removed. This can be done in the same way the oxidation was removed. It's really easy to remove use some detergent and scrub the board.
+Once the etching process is finished, the toner is no longer needed and has to be removed. This can be done in the same way the oxidation was removed. It's really easy to remove using some detergent and scrubbing the board.
 
 <p style="text-align: center;">
   <a href="/images/posts/2013/06/DSC09656.jpg"><img class="aligncenter size-large wp-image-1646" alt="Remove the toner from the PCB" src="/images/posts/2013/06/DSC09656-1024x576.jpg" width="618" height="347" srcset="/images/posts/2013/06/DSC09656-1024x576.jpg 1024w, /images/posts/2013/06/DSC09656-300x169.jpg 300w" sizes="(max-width: 618px) 100vw, 618px" /></a>
@@ -203,7 +203,7 @@ You should have noticed that the boards are irregularly cut and are not of equal
 
 ### Final Result
 
-Here is an image of all the PCB that I made. The whole endeavor took me around 3 to 4 hours. With practice and no time loss in documentation the time taken to make these PCBs should have taken much lesser time.
+Here is an image of all the PCBs I made. The whole endeavor took me around 3 to 4 hours. With practice and no time loss in documentation the time taken to make these PCBs should have taken much lesser time.
 
 <p style="text-align: center;">
   <img class="aligncenter size-large wp-image-1648" alt="Printed circuit board with toner transfer method" src="/images/posts/2013/06/DSC09659-1024x576.jpg" width="618" height="347" srcset="/images/posts/2013/06/DSC09659-1024x576.jpg 1024w, /images/posts/2013/06/DSC09659-300x169.jpg 300w" sizes="(max-width: 618px) 100vw, 618px" />

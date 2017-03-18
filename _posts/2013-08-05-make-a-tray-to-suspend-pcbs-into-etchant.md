@@ -10,11 +10,11 @@ categories: [ "How To" ]
 tags: [ "EDA", "DIY" ]
 ---
 
-In this post I will document the procedure involved in making a tray to suspend PCBs.A The etchant (FeCl<sub>3 </sub>solution)A is toxic and cannot be handled with bare hands. So I devised this easy and reusable method for suspending the PCBs with the toner into the solution.
+In this post I will document the procedure involved in making a tray to suspend PCBs. The etchant (FeCl<sub>3 </sub>solution) is toxic and cannot be handled with bare hands. So I devised this easy and reusable method for suspending the PCBs with the toner into the solution.
 
 If you are planning to make PCBs once in a while, then this method could prove to be really useful and time saving. But if you are a one timer then this a tiresome venture and I will recommend you not to do it.
 
-Personally, I see no reason why you will want to do it only once. It's like and addiction to me these days.
+Personally, I see no reason why you will want to do it only once. It's like an addiction to me these days.
 
 ### You will need
 
@@ -26,13 +26,13 @@ You will need this steel wire to make the tray. It's really cheap and mostly sol
 
 ### Make the Frame
 
-The first thing you should do is to make the exterior frame of the tray. The size of this is determined by the size of the container you are planning to use for the etching process. I use an old fish tank for the process, so I made quite a big tray.
+The first thing you should do is to make the exterior frame of the tray. The size of this is determined by the size of the container you are planning to use for the etching process. I used an old fish tank for the process, so I made quite a big tray.
 
-Once the frame size is ready, make thick by running another line over it. Remember this is what is going to give a mechanical structure for the tray so make it as strong and possible (consider running another line of wire parallel to it - just in case)
+Once the frame size is ready, make it thicker by running another line over it. Remember this is what is going to give a mechanical structure for the tray so make it as strong and possible (consider running another line of wire parallel to it - just in case)
 
 ### Breadth wise lines
 
-After this cut out two sets of wires form the reel that are about 2 inches longer than the length and similarly the breadth. I will call them the breadth wise wires (Y-axis) and length wise wires (X-axis).
+After this, cut out two sets of wires form the reel that are about 2 inches longer than the length and similarly the breadth. I will call them the breadth wise wires (Y-axis) and length wise wires (X-axis).
 
 Start off with the breadth wise first. Place the wires at equal distance and tie them to either end of the external frame as shown in the image above.
 
@@ -62,7 +62,7 @@ Similarly, by following the same step you should have something like the below i
 
 [<img class="aligncenter size-large wp-image-1631" alt="DSC09583" src="/images/posts/2013/06/DSC09583-1024x576.jpg" width="618" height="347" srcset="/images/posts/2013/06/DSC09583-1024x576.jpg 1024w, /images/posts/2013/06/DSC09583-300x169.jpg 300w" sizes="(max-width: 618px) 100vw, 618px" />](/images/posts/2013/06/DSC09583.jpg)
 
-Once the arranging is done, you can precede to tie up the loose ends to the frame. Be very careful and have a first aid kit close by. I should have mentioned this earlier; I had a handful ofA bruisesA in my hands.
+Once the arranging is done, you can precede to tie up the loose ends to the frame. Be very careful and have a first aid kit close by. I should have mentioned this earlier; I had a handful of bruises in my hands.
 
 [<img class="aligncenter size-large wp-image-1632" alt="DSC09588" src="/images/posts/2013/06/DSC09588-1024x576.jpg" width="618" height="347" srcset="/images/posts/2013/06/DSC09588-1024x576.jpg 1024w, /images/posts/2013/06/DSC09588-300x169.jpg 300w" sizes="(max-width: 618px) 100vw, 618px" />](/images/posts/2013/06/DSC09588.jpg)
 
@@ -96,7 +96,7 @@ Once this is done, you can see that I am able to make hold the tray in one hand.
 
 But again I felt like adding another feature that would allow me to hold the entire tray in one finger.
 
-I got this idea form an old Aluminium hanger in my house. I just made a replica of it that would sit permanently over the tray for me to hold it with ease.
+I got this idea form an old aluminium hanger in my house. I just made a replica of it that would sit permanently over the tray for me to hold it with ease.
 
 <p style="text-align: center;">
   <a href="/images/posts/2013/08/DSC09620.jpg"><img class="aligncenter size-large wp-image-1660" title="PCB tray" alt="PCB tray" src="/images/posts/2013/08/DSC09620-1024x576.jpg" width="618" height="347" srcset="/images/posts/2013/08/DSC09620-1024x576.jpg 1024w, /images/posts/2013/08/DSC09620-300x169.jpg 300w" sizes="(max-width: 618px) 100vw, 618px" /></a>
@@ -104,7 +104,7 @@ I got this idea form an old Aluminium hanger in my house. I just made a replica 
 
 ### The Big Picture
 
-Here is the big picture! You can see that I'm able to place multiple PCBs in the tray that means I can make a lot of boars in one GO!
+Here is the big picture! You can see that I'm able to place multiple PCBs in the tray that means I can make a lot of boards in one GO!
 
 <p style="text-align: center;">
   <a href="/images/posts/2013/08/DSC09619.jpg"><img class="aligncenter size-large wp-image-1661" title="suspension tray" alt="suspension tray" src="/images/posts/2013/08/DSC09619-1024x576.jpg" width="618" height="347" srcset="/images/posts/2013/08/DSC09619-1024x576.jpg 1024w, /images/posts/2013/08/DSC09619-300x169.jpg 300w" sizes="(max-width: 618px) 100vw, 618px" /></a>

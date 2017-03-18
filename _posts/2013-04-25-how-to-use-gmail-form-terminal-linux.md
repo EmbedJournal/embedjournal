@@ -10,7 +10,6 @@ categories: [ "How To", "Linux" ]
 tags: [ "CLI", "Intro" ]
 ---
 
-
 {% include image.html src="Gmail-Icon.png" caption="Gmail Icon" %}
 
 Great news gmail our favorite mail service can be accessed form command line!!

@@ -14,11 +14,11 @@ Proficiency in C is an essential skill set for embedded software developers. In 
 
 Be warned this is just a small collection of routines that will help embedded software developers write better code. Of course I have listed only those that came to my mind while writing this article and I most probably left out something much better. In case something pops up in your head, leave a comment and I will update this post.
 
-> After finishing an intensive, week long, hands-on session on C programming, my teacher said "I have taught you all that is there to know about the syntax in C. This is one of those things that will take days to learn and A a lifetime to master. Now it up to you to practice and perfect".
+> After finishing an intensive, week long, hands-on session on C programming, my teacher said "I have taught you all that is there to know about the syntax in C. This is one of those things that will take days to learn and a lifetime to master. Now it's up to you to practice and perfect".
 
-'_Practice and Perfect_' is the unsaid mantra of C. The more you write, the better you get at it. I'm no professional at C. Hence I will not be writing any posts on C programming as such. There are a lot of resource on the internet and books on shelves for learning C.
+'_Practice and Perfect_' is the unsaid mantra of C. The more you write, the better you get at it. I'm no professional at C. Hence I will not be writing any posts on C programming as such. There are a lot of resources on the internet and books for learning C.
 
-For learning C from it's very basic, I would suggestA <a title="Amazon" href="http://www.amazon.com/C-UNIX-Tools-Software-Design/dp/0471309273" target="_blank">C and UNIX: Tools for Software Design by Martin L. Barrett, Clifford H. Wagner</a>A The book covers a lot about C and <a title="Compiling C Programs Using GCC" href="http://embedjournal.com/2013/06/compiling-c-programs-using-gcc/" target="_blank">using GCC to compile C programs in a Linux</a> machine. Linux is mostly written in C and hence provides a native environment for the language. If you are really interested, you can find some books and links to follow for getting started with Linux <a title="Getting Started with Linux" href="http://embedjournal.com/2013/07/getting-started-with-linux/" target="_blank">here</a>.
+For learning C from it's very basic, I would suggest <a title="Amazon" href="http://www.amazon.com/C-UNIX-Tools-Software-Design/dp/0471309273" target="_blank">C and UNIX: Tools for Software Design by Martin L. Barrett, Clifford H. Wagner</a> The book covers a lot about C and <a title="Compiling C Programs Using GCC" href="http://embedjournal.com/2013/06/compiling-c-programs-using-gcc/" target="_blank">using GCC to compile C programs in a Linux</a> machine. Linux is mostly written in C and hence provides a native environment for the language. If you are really interested, you can find some books and links to follow for getting started with Linux <a title="Getting Started with Linux" href="http://embedjournal.com/2013/07/getting-started-with-linux/" target="_blank">here</a>.
 
 #### Rotate left or right in C
 
@@ -26,11 +26,11 @@ In assembly there are direct instruction for rotate left and rotate right. But i
 
 <pre class="lang:c decode:true">val = ( (val >> 1) | (val << 7) );</pre>
 
-The <span class="lang:c decode:true  crayon-inline ">val << 7</span>A A is used as I assumed a 8 bit variable is being rotated. If you were to rotate a 16 bit value , use <span class="lang:c decode:true  crayon-inline ">val << 15</span>A A instead.
+The <span class="lang:c decode:true  crayon-inline ">val << 7</span> is used as I assumed an 8 bit variable is being rotated. If you were to rotate a 16 bit value , use <span class="lang:c decode:true  crayon-inline ">val << 15</span>instead.
 
 #### Bit Set and Bit Clear in Macro
 
-In embedded software applications, we have a constant need for setting and clearing bits. Some of us feel like using the mask and set/clear strategy each time there is a need to set and clear bits. But when working with 32 bit systems (ARM), it is not practical to write masks each time we need to set/clear a single bit. That's when functions are written to handle this. But having function will occupy memory. A better alternative for this is to have code macros to take care of this at compile time.
+In embedded software applications, we will always will be setting and clearing bits. Some of us feel like using the mask and set/clear strategy each time there is a need to set and clear bits. But when working with 32 bit systems (ARM), it is not practical to write masks each time we need to set/clear a single bit. That's when functions are written to handle this. But having a function will occupy memory. A better alternative for this is to have code macros to take care of this at compile time.
 
 <pre class="lang:c decode:true">#define BitSet ( var, bitnum ) ( (var) |= 1UL << (bitnum) )
 #define BitClr ( var, bitnum ) ( (var) &= ~(1UL << (bitnum) ) )</pre>
@@ -39,9 +39,9 @@ You can use this function in you program like this, BitSet( myVar, 5); this will
 
 #### Bitfields
 
-In embedded systems, most of the time there is a need to access the individual bits of a byte (in 8 bit system) or group of bytes (16 or 32 bit system). One way of doing this is by using the shift operations. The other ways is to use the bit fields in C.
+In embedded systems, most of the time there is a need to access the individual bits of a byte (in 8 bit system) or group of bytes (in a 16 or 32 bit system). One way of doing this is by using the shift operations. The other way is to use the bit fields in C.
 
-The bit fields is a lesser known feature of the C programming language (at least to a common user). It comes in handy for low level firmware developers (system software) to have bit level access to the registers. If you take a look at the device specific header file for your favorite microcontroller you will find that most of the code is structure and union definitions much like what is below.
+The bit field is a lesser known feature of the C programming language (at least to a common user). It comes in handy for low level firmware developers (system software) to have bit level access to the registers. If you take a look at the device specific header file for your favorite microcontroller you will find that most of the code is _structure_ and _union_ definitions much like what is below.
 
 I will take the liberty to assume you have a working knowledge on structures and unions to understand bit fields. The size of a structure is the sum of the size of all its member variables where as in the case of a union, its size is given by the size of its biggest member. Union is used when only either of its member is needed at any time.
 
@@ -60,21 +60,21 @@ I will take the liberty to assume you have a working knowledge on structures and
 }bitF;
 </pre>
 
-Here, you can set the value of data to something and then access each bit in the byte by using the variables of the anonymous union bit0 to bit7.
+Here, you can set the value of data to something and then access each and every bit in the byte by using the variables of the anonymous union bit0 to bit7.
 
 #### Duality of Array names
 
 You should have heard about the duality of light, but duality of array names??
 
-Yes, Array names are not just the label for the group of elements of similar data types. It is also a pointer to the base element of the array. All normal pointer reference and arithmetic to array label is allowed. But this pointer is a constant pointer and cannot be modified by the user.
+Yes, Array names are not just the label for the group of elements of similar data types. It is also a pointer to the base element of the array. All normal pointer reference and arithmetic to the array label is allowed. But this pointer is a constant pointer and cannot be modified by the user.
 
-ie., if you have an arrayA test\_arr[5] = { 1, 2, 3, 4, 5 }; then test\_arr is a pointer that has the address of the first element of the array. So a difference like, \*test\_arr will return 1 and \*(test\_arr+2) will return 3.
+ie., if you have an array test\_arr[5] = { 1, 2, 3, 4, 5 }; then test\_arr is a pointer that has the address of the first element of the array. So a difference like, \*test\_arr will return 1 and \*(test\_arr+2) will return 3.
 
 #### Interoperability of array index
 
-In C, if you had an arrayA <span class="lang:c decode:true  crayon-inline ">int arr[5];</span>A you could access it with an index 'i' and assign values to it. That is you can writeA <span class="lang:c decode:true  crayon-inline">arr[i] = 7;</span>
+In C, if you had an array <span class="lang:c decode:true  crayon-inline ">int arr[5];</span> you could access it with an index 'i' and assign values to it. That is you can write <span class="lang:c decode:true  crayon-inline">arr[i] = 7;</span>
 
-Turns out you could swap the array names and array index. That means you could write the same statement asA <span class="lang:c decode:true  crayon-inline ">i[arr] = j;</span>A  and its perfectly valid C code.
+Turns out you could swap the array names and array index. That means you could write the same statement as <span class="lang:c decode:true  crayon-inline ">i[arr] = j;</span>  and its perfectly valid C code.
 
 #### Passing an array to functions and returning them
 
@@ -86,7 +86,7 @@ When a flow of control reaches the end of a function, the variables created in t
 
 One way is by using a globally declared array and let the functions make use of this array. But using globally declared arrays is not always possible and is not a good practice. There comes the second and better alternative, while calling a function give it the pointer of the array defined in the calling function. This way, the array is not declared globally and still is available for the calling function locally.
 
-Not clear? consider this case, we have 2 arrays which has to be added in a separate function and store them in another array. Here is how you can do this,
+Not clear? consider this case, 2 arrays have to be added in a separate function and store them in another array. Here is how you can do this,
 
 <pre lang="c">int main()
 {
@@ -115,12 +115,12 @@ Have I missed anything that you feel is a really neat trick? In what way does it
 
 **Update #1: Paolopat said,**
 
-Sometimes I have to swap two variablesaEUR|
+Sometimes I have to swap two variables.
   
-You can avoid using a temporary variable using aEURoeXOR swapaEUR like following :
+You can avoid using a temporary variable using an EXOR swap like following :
 
 <pre lang="c" class="">a = a ^ b
 b = a ^ b
 a = a ^ b</pre>
 
-Wow, that is a really cool trick! You can now swap variableA without using the conventionalA <span class="lang:c decode:true crayon-inline">temp = a; a = b; b = temp;</span>. As vijay pointed out, you could also do it in one line as, <span class="lang:c decode:true crayon-inline">a ^= b ^= a ^= b;</span>A Which looks sleek but is rather cryptic.
+Wow, that is a really cool trick! You can now swap variables without using the conventional <span class="lang:c decode:true crayon-inline">temp = a; a = b; b = temp;</span>. As vijay pointed out, you could also do it in one line as, <span class="lang:c decode:true crayon-inline">a ^= b ^= a ^= b;</span> which looks sleek but is rather cryptic.

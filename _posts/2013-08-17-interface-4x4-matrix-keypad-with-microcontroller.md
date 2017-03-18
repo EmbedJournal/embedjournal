@@ -14,25 +14,25 @@ In this post we will discuss logic and interface of a matrix keypad (4x4 for thi
 
 ### Why Matrix Keypad?
 
-Typically one port pin is required to read a digital input into the controller.A When there are a lot of digital input that has to be read, it is not feasible to allocate one pin for each of them. This is when a matrix keypad arrangement is used to reduce the pin count.
+Typically one port pin is required to read a digital input into the controller. When there are a lot of digital inputs that have to be read, it is not feasible to allocate one pin for each of them. This is when a matrix keypad arrangement is used to reduce the pin count.
 
 Therefore, the number of pins that are required to interface a given number of inputs decreases with increase in the order of the matrix.
 
 <img class="aligncenter size-full wp-image-1785" src="/images/posts/2013/08/4x4-matrix-keypad-featured-image.jpg" alt="4x4 matrix keypad featured image" width="444" height="401" srcset="/images/posts/2013/08/4x4-matrix-keypad-featured-image.jpg 444w, /images/posts/2013/08/4x4-matrix-keypad-featured-image-300x271.jpg 300w" sizes="(max-width: 444px) 100vw, 444px" />
 
-**Example:** If the matrix is 2x2, you will need 2 pins for the rows and 2 pins for the columns in such a case there is no difference in the cost of reading that many inputs. But if you consider a 10x10 matrix you will just need 20 pins (10 for the rows and 10 for the columns) to read 100 digital inputs.
+**Example:** If the matrix is 2x2, you will need 2 pins for the rows and 2 pins for the columns. In such a case there is no difference in the cost of reading that many inputs. But if you consider a 10x10 matrix you will just need 20 pins (10 for the rows and 10 for the columns) to read 100 digital inputs.
 
 ### How is it wired up internally?
 
-Here is how the matrix keypad is wired internally.A [<img class="aligncenter size-full wp-image-2587" src="/images/posts/2013/08/matrixKeyPadSch.png" alt="matrix keypad Schematic" width="664" height="626" srcset="/images/posts/2013/08/matrixKeyPadSch.png 664w, /images/posts/2013/08/matrixKeyPadSch-300x283.png 300w" sizes="(max-width: 664px) 100vw, 664px" />](/images/posts/2013/08/matrixKeyPadSch.png)
+Here is how the matrix keypad is wired internally. [<img class="aligncenter size-full wp-image-2587" src="/images/posts/2013/08/matrixKeyPadSch.png" alt="matrix keypad Schematic" width="664" height="626" srcset="/images/posts/2013/08/matrixKeyPadSch.png 664w, /images/posts/2013/08/matrixKeyPadSch-300x283.png 300w" sizes="(max-width: 664px) 100vw, 664px" />](/images/posts/2013/08/matrixKeyPadSch.png)
 
  
 
-From the circuit you can see that of one of the 16 buttons are pressed, a pair of pins are connected together. We will used this feature to detect with button was pressed in the following sections.
+From the circuit you can see that when one of the 16 buttons are pressed, a pair of pins are connected together. We will use this feature to detect the button that was pressed in the following sections.
 
 ### Matrix Keypad Interface Logic
 
-Initially all switches are assumed to be released. So there is no connection between the rows and columns.A When any one of the switches are pressed, the corresponding rows and columns are connected (short circuited). This will drive that column pin (initially high) low. Using this logic, the button press can be detected. The colors red and black is for logic high and low respectively. A Here are the steps involved in determining the key that was pressed.
+Initially all switches are assumed to be released. So there is no connection between the rows and columns. When any one of the switches are pressed, the corresponding row and column are connected (short circuited). This will drive that column pin (initially high) low. Using this logic, the button press can be detected. The colors red and black is for logic high and low respectively. Here are the steps involved in determining the key that was pressed.
 
 #### Step 1:
 
@@ -56,21 +56,21 @@ Note: color of the lines indicate the logic values they return.
 
 #### Step 3:
 
-Once the column corresponding to the key pressedA is located, the next thing that the software has to do is to start writing logic 1's to the rows sequentially (one after the other) and check if C2 become high. The logic is that if a button in that row was pressed, then the value written to that row will be reflected in determined column (C2) as they are short circuited.A Note: color of the lines indicate the logic values they return.
+Once the column corresponding to the key pressed is located, the next thing that the software has to do is to start writing logic 1's to the rows sequentially (one after the other) and check if C2 becomes high. The logic is that if a button in that row was pressed, then the value written to that row will be reflected in the corresponding column (C2) as they are short circuited. Note: color of the lines indicate the logic values they return.
 
 <img class="aligncenter size-full wp-image-1769" src="/images/posts/2013/08/step-4.png" alt="step 4" width="383" height="350" srcset="/images/posts/2013/08/step-4.png 383w, /images/posts/2013/08/step-4-300x274.png 300w" sizes="(max-width: 383px) 100vw, 383px" />
 
 #### Step 4:
 
-The procedure is followed till C2 goes high with logic high is written to a row. In this case, a logic high to the second row will be reflected in the second column.
+The procedure is followed till C2 goes high when logic high is written to a row. In this case, a logic high to the second row will be reflected in the second column.
 
 Note: color of the lines indicate the logic values they return.
 
 <img class="aligncenter size-full wp-image-1770" src="/images/posts/2013/08/Step-5.png" alt="Step 5" width="383" height="361" srcset="/images/posts/2013/08/Step-5.png 383w, /images/posts/2013/08/Step-5-300x283.png 300w" sizes="(max-width: 383px) 100vw, 383px" />
 
-We already know the key press happened at column 2. Now we have detected that the key is in row 2. So, the position of the key in the matrix is (2,2)
+We already know that the key press happened at column 2. Now we have detected that the key is in row 2. So, the position of the key in the matrix is (2,2)
 
-Once this is detected, its up to us to name it or provide it with a task in the event of the key press.
+Once this is detected, its up to us to name it or provide it with a task on the event of the key press.
 
 ### Implementation with C
 
@@ -207,7 +207,7 @@ Here is a video demonstration for the interface of the 4x4 matrix keypad with th
 
 
 
-The above program is done with polling and utilizes the entire time of the controller to scan the keypad and display the data on the 7 segment displays. There is a cool feature on Microcontrollers called as the Interrupt on Change (IOC). As the name suggests, the controller will interrupt if it finds any change in a port. In PIC the whole of PORT B has this feature. By using the feature without any change in the hardware setup we can scan the keypad in the ISR and have more of the controllers time to do some thing useful.
+The above program is done with polling and utilizes the entire time of the controller to scan the keypad and display the data on the 7 segment displays. There is a cool feature on Microcontrollers called as the Interrupt on Change (IOC). As the name suggests, the controller will interrupt if it finds any change in a port. In PIC the whole of PORT B has this feature. By using the feature without any change in the hardware setup we can scan the keypad in the ISR and have more of the controller's time to do something useful.
 
 ### Related Downloads
 

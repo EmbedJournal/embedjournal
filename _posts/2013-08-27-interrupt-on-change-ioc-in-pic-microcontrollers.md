@@ -10,23 +10,23 @@ categories: [ "Embedded Theory", "Microchip PIC" ]
 tags: [ "Basics", "Theory" ]
 ---
 
-The interrupt on change is a cool feature on microcontrollers. Like you guessed, the interrupt occurs when there is a state change in any of the port pin associated with this feature. In PIC microcontrollers, PORT B is has the Interrupt on Change feature. The controller jumps into the interrupt vector when there is a change in the state of any of the pins in the port.
+The interrupt on change is a cool feature on microcontrollers. Like you guessed, the interrupt occurs when there is a state change in any of the port pin associated with this feature. In PIC microcontrollers, PORT B  has the Interrupt on Change feature. The controller jumps into the interrupt vector when there is a change in the state of any of the pins in the port.
 
-In my previous post on [interfacing matrix keypad](http://embedjournal.com/2013/08/interface-4x4-matrix-keypad-with-microcontroller/ "Interface 4A--4 Matrix Keypad With Microcontroller"), we used the conventional polling technique to poll for the data. In this post we will see how the same task can be done with interrupt on change. This is probably the best example that I can think off for demonstrating the interrupt on change feature as the entire PORT B is used by the keypad.
+In my previous post on [interfacing matrix keypad](http://embedjournal.com/2013/08/interface-4x4-matrix-keypad-with-microcontroller/ "Interface -4x4- Matrix Keypad With Microcontroller"), we used the conventional polling technique to poll for the data. In this post we will see how the same task can be done with interrupt on change. This is probably the best example that I can think of for demonstrating the interrupt on change feature as the entire PORT B is used by the keypad.
 
 The keypad is not always used in the system. It is mostly used while staring up the system or making some configuration settings. In either case it is used for a small fraction of the controller's up time, so checking it in each run is purely a waste of time. Lets see how this can be done with interrupts.
 
 ### Whats an Interrupt?
 
-An interrupt is a way of letting the controller know that something important happened without having it to look at the possibility each time. This save a lot of time; time spent in checking for that event. Besides saving time, it is more accurate in reading that event without any sampling issues.
+An interrupt is a way of letting the controller know that something important happened without having it to look at the possibility each time. This saves a lot of time; time spent in checking for that event. Besides saving time, it is more accurate in reading that event without any sampling issues.
 
-The idea is this, either you can keep looking at the power indicator on the wall and check if the power is back or switch on the fan and be notified once it is there dYtm,
+The idea is this, either you can keep looking at the power indicator on the wall and check if the power is back or switch on the fan and be notified once it is there.
 
 ### Modifying the code to work with IOC
 
-There was not much to change in the code that we wrote for the matrix keypad interface <a title="Interface 4A--4 Matrix Keypad With Microcontroller" href="http://embedjournal.com/2013/08/interface-4x4-matrix-keypad-with-microcontroller/" target="_blank">here</a>. If you open that code in a separate window and compare it with this code you will see that there is not much difference between them. The major working logic of that program has been moved into the ISR and some IOC related configuration is made in the main program.
+There was not much to change in the code that we wrote for the matrix keypad interface <a title="Interface -4x4- Matrix Keypad With Microcontroller" href="http://embedjournal.com/2013/08/interface-4x4-matrix-keypad-with-microcontroller/" target="_blank">here</a>. If you open that code in a separate window and compare it with this code you will see that there is not much difference between them. The major working logic of that program has been moved into the ISR and some IOC related configuration is made in the main program.
 
-**Note:**A The code in the <a title="Interface 4A--4 Matrix Keypad With Microcontroller" href="http://embedjournal.com/2013/08/interface-4x4-matrix-keypad-with-microcontroller/" target="_blank">4x4 matrix keypad interface</a> was written for the C18 compiler and this one below is for the HI-Tech C Compiler for PIC Microcontrollers. If you are not familiar with this compiler, have a look at my previous post on <a title="Migrating to HI-TECH C Compiler from the Microchip C18 Compiler" href="http://embedjournal.com/2013/08/migrating-to-hi-tech-c-compiler-from-the-microchip-c18-compiler/" target="_blank">migrating to the Hi-Tech C compiler</a> its not really that difficult.
+**Note:** The code in the <a title="Interface -4x4- Matrix Keypad With Microcontroller" href="http://embedjournal.com/2013/08/interface-4x4-matrix-keypad-with-microcontroller/" target="_blank">4x4 matrix keypad interface</a> was written for the C18 compiler and this one below is for the HI-Tech C Compiler for PIC Microcontrollers. If you are not familiar with this compiler, have a look at my previous post on <a title="Migrating to HI-TECH C Compiler from the Microchip C18 Compiler" href="http://embedjournal.com/2013/08/migrating-to-hi-tech-c-compiler-from-the-microchip-c18-compiler/" target="_blank">migrating to the Hi-Tech C compiler</a> its not really that difficult.
 
 <pre>// Matrix Keypad Interface with Interrupt on Change  /////////////////////////
 #include <p18f4520.h>

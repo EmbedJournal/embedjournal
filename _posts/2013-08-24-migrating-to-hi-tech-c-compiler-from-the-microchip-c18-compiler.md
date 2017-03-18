@@ -10,9 +10,9 @@ categories: [ "Microchip PIC" ]
 tags: [ "Tools" ]
 ---
 
-Migrating to <a title="Visit Microchip Product Page" href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1406&dDocName=en535448" target="_blank">HI-TECH C compiler</a> for PIC MCU is not really hard task. The developers have taken much care in keeping it that way. In addition to the existing features of the C18 compiler, there are a lot of other added features in the HI-TECH C compiler.A This post will give you an introduction to the compiler, its features and how to write C programs in it.
+Migrating to <a title="Visit Microchip Product Page" href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1406&dDocName=en535448" target="_blank">HI-TECH C compiler</a> for PIC MCU is not really a hard task. The developers have taken much care in keeping it that way. In addition to the existing features of the C18 compiler, there are a lot of other added features in the HI-TECH C compiler. This post will give you an introduction to the compiler, its features and how to write C programs in it.
 
-This compiler can be used to program all 8 bit PIC MCUs. There is one compiler for <a title="Download Compiler Here" href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1406&dDocName=en542861" target="_blank">PIC 18</a> series and another for <a title="Download Compiler Here" href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1406&dDocName=en542849" target="_blank">PIC 10/12/16</a> series. You can choose the compiler based on the family of controller that you are working with. Most of the time the code is interchangeable between the A two compilers, only the device specific references such as the configuration bits and SFRs may differ.
+This compiler can be used to program all 8 bit PIC MCUs. There is one compiler for <a title="Download Compiler Here" href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1406&dDocName=en542861" target="_blank">PIC 18</a> series and another for <a title="Download Compiler Here" href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1406&dDocName=en542849" target="_blank">PIC 10/12/16</a> series. You can choose the compiler based on the family of controller that you are working with. Most of the time the code is interchangeable between the compilers, only the device specific references such as the configuration bits and SFRs may differ.
 
 ### Why the HI-TECH C compiler?
 
@@ -25,20 +25,20 @@ The Microchip C18 compiler has been around for quite some time and has a lot doc
   3. Functions like printf() & scanf() are now available in HI-TECH C compiler under the header file stdio.h. The c18 compiler does not have this feature.
   4. In C18 compiler global data chunks larger than 256 bytes cannot be accommodated without having to modify the linker scripts. I had one hell of a time adding fonts for a GLCD code I wrote some time back. On the other hand, the HI-TECH C compiler takes care of the work for you.
   5. If you are a linux user, HI-TECH C compiler has a good integration.
-  6. There are no device specific header files in the HI-TECH C compiler. You just have to include htc.h to all your source codes. The compiler determined which device you are using form the project properties and includes the necessary headers. This reduces the time taken to port the code form one device to another.
-  7. Some people have reported to have better code optimization with this compiler. I have not verified it personally nor verify the authenticity on the data (I came by this information in a forum thread).
+  6. There are no device specific header files in the HI-TECH C compiler. You just have to include htc.h to all your source codes. The compiler determines which device you are using from the project properties and includes the necessary headers. This reduces the time taken to port the code form one device to another.
+  7. Some people have reported to have better code optimization with this compiler. I have neither verified it personally nor did I verify the authenticity of the information (I came across this information in a forum thread).
 
 ### Install the compiler
 
-You can download the lite version of the compiler. A lite version compiler is sufficient for any hobby project that you can think off. If you ever feel that a lite version compiler is not good enough for the work you are doing, start optimizing your code run fast or occupy less space. If you still can't get reduce the size, the project is no longer a hobby project and you ought toA buy a pro version and start selling your product.
+You can download the lite version of the compiler. A lite version compiler is sufficient for any hobby project that you can think off. If you ever feel that a lite version compiler is not good enough for the work you are doing, start optimizing your code to run fast or occupy less space. If you still can't reduce the size, the project is no longer a hobby project and you ought to buy a pro version and start selling your product.
 
 Follow the on screen instruction to install the compiler. Check the options to add the path to the MPLAB environment variables so that the IDE knows where you have installed the compiler.
 
 ### Working with HI-TECH C compiler
 
-After the installation, you can see the compiler in the list of available compilers when creating a new project in the IDE. Choose this compiler and choose next. After the project is created, add a C source file and start writing you C program.
+After the installation, you can see the compiler in the list of available compilers when creating a new project in the IDE. Choose this compiler and choose next. After the project is created, add a C source file and start coding your C program.
 
-In all the programs you will have to add this line, <span style="color: #888888;">#include<htc.h></span> this will include header file for the PIC MCU that you choose while creating the project. Once this is added you will have to add code for the configuration bits. This is really important and most of the time, it will prevent the program form executing if you forget to add the pragma for the configuration bits. I will write a tutorial on configuration bits their purposes and uses some time soon.
+In all the programs, you will have to add this line, <span style="color: #888888;">#include<htc.h></span> this will include header file for the PIC MCU that you choose while creating the project. Once this is added you will have to add code for the configuration bits. This is really important and most of the time, it will prevent the program from executing if you forget to add the pragma for the configuration bits. I will write a tutorial on configuration bits, their purposes and uses some time soon.
 
 `#pragma config OSC=HS,WDT=OFF,FCMEN=ON,XINST=OFF,IESO=OFF,LVP=OFF`
 
@@ -90,4 +90,4 @@ void main()
     }
 }</pre>
 
-I hope this post was to an extent helpful in getting started with developing embedded software with HI-TECH C compiler.
+I hope this post was, to an extent, helpful in getting started with developing embedded software with HI-TECH C compiler.

@@ -10,11 +10,7 @@ categories: [ "Embedded Theory" ]
 tags: [ "Interface", "LCD" ]
 ---
 
- 
-
-<p class="western">
-  <a href="/images/posts/2015/05/c2000_lauchpad.png"><img class="aligncenter size-full wp-image-2631" src="/images/posts/2015/05/c2000_lauchpad.png" alt="c2000_lauchpad" width="878" height="640" srcset="/images/posts/2015/05/c2000_lauchpad.png 878w, /images/posts/2015/05/c2000_lauchpad-300x219.png 300w" sizes="(max-width: 878px) 100vw, 878px" /></a>The C2000 Launchpad is an inexpensive evaluation module based on Piccolo family microcontrollers from Texas Instruments (TI). The famous one is TMS320F28027 Digital Signal Controller (DSC). This DSC is intended for real time control and digital signal processing applications. If you want to learn about digital signal controllers, I would recommend this as the starting point. More information about the C2000 Launchpad can be found at <a href="http://www.ti.com/tool/launchxl-f28027" target="_blank">TI website</a>.
-</p>
+{% include image.html src="ti-c2000-lauchpad.png" %}
 
 There is <a href="http://www.ti.com/tool/CCSTUDIO" target="_blank">CCS (Code Composer Studio)</a> IDE for programming and debugging the Launchpad. It includes an optimizing C/C++ compiler, source code editor, project build environment, debugger, profiler, and many other features. Also, the presence of <a href="http://www.ti.com/tool/controlsuite" target="_blank">Control Suite</a>, a support software containing libraries and examples makes the learning easy.
 
@@ -26,9 +22,7 @@ For this post, I will assume that you are fairly acquitted with the basics invol
 
 ### Circuit Diagram:
 
-<p class="western">
-  <a href="/images/posts/2015/05/16x2lcd_with_tic2000_launchpad.jpg"><img class="aligncenter size-full wp-image-2630" src="/images/posts/2015/05/16x2lcd_with_tic2000_launchpad.jpg" alt="16x2lcd_with_tic2000_launchpad" width="601" height="365" srcset="/images/posts/2015/05/16x2lcd_with_tic2000_launchpad.jpg 601w, /images/posts/2015/05/16x2lcd_with_tic2000_launchpad-300x182.jpg 300w" sizes="(max-width: 601px) 100vw, 601px" /></a>
-</p>
+{% include image.html src="lcd-ti-c2000-schematic.png" %}
 
 Piccolo DSC provides multiplexed I/O lines, so we need to carefully choose the I/O lines for interfacing the modules. The following image shows the pin mapping of 16x2 LCD with the Piccolo DSC. The R/W line is always tied to ground, since we are always writing to the LCD.
 
@@ -66,7 +60,8 @@ void InitializeLCD(void)
 	WriteCommandLCD(0x0f);			//Command to on cursor,blink cursor
 	WriteCommandLCD(0x02);			//Command return the cursor to home
 	LCDDelay1600();
-}</pre>
+}
+</pre>
 
 ### Writing Command to LCD
 
@@ -137,7 +132,8 @@ void SendByte(unsigned char Value)
 	for(temp=0;temp<5; temp++);
 	GPIO_setLow(myGpio, E);				//Clear E pin to deselect LCD
 	LCDDelay();				            //Small delay
-}</pre>
+}
+</pre>
 
 ### Displaying character in LCD
 
@@ -161,7 +157,8 @@ void DisplayLCD(char LineNumber,char *Message)
 		Message++;                  //Increment pointer
 	}
 	return;
-}</pre>
+}
+</pre>
 
 Only necessary functions has been explained. For more information refer the code at the end of this article.
 

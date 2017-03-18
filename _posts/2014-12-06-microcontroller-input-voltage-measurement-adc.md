@@ -27,15 +27,15 @@ Well the question may sound unreasonable as long as you are not on a battery ope
 
 With that said, having the feature to look into the supply voltage, gives a lot of flexibility to the developer to build a robust code.
 
-Now there is a super-easy way and a okay-easy way to accomplish this. The super-easy way is to look for something called as band gap reference voltage in your controllers datasheet. If there is something like that then you are in luck! you do not need to add a single extra component to get this feature. Read along to know how to use it to determine the input voltage.
+Now there is a super-easy way and an okay-easy way to accomplish this. The super-easy way is to look for something called as band gap reference voltage in your controllers datasheet. If there is something like that then you are in luck! you do not need to add a single extra component to get this feature. Read along to know how to use it to determine the input voltage.
 
 Well if you don't, don't worry, there is still the okay-easy way. Surprisingly, the circuit required to accomplish this so primitive that you will find yourself adding this into any project you make just for the sake of having it!
 
 ### What's the secret?
 
-Its no secret that the forward drop of a standard PN junction diode is 0.7V. At least that's what the textbooks say. But in practice you will have anywhere between 0.55V to 0.7V depending again on the make and quality. But for the sake of this discussion we will assume that it is indeed 0.7V.A The value of forward drop for a given diode is constant and does not vary. This 0.7V is called as the band gap of the diode and does not vary with the supply voltage given to it so long as it is above the band gap voltage (in this case 0.7V).
+Its no secret that the forward drop of a standard PN junction diode is 0.7V. At least that's what the textbooks say. But in practice you will have anywhere between 0.55V to 0.7V depending again on the make and quality. But for the sake of this discussion we will assume that it is indeed 0.7V. The value of forward drop for a given diode is constant and does not vary. This 0.7V is called as the band gap of the diode and does not vary with the supply voltage given to it so long as it is above the band gap voltage (in this case 0.7V).
 
-[<img class="aligncenter size-full wp-image-2536" src="/images/posts/2014/08/adc-working.png" alt="adc working" width="692" height="421" srcset="/images/posts/2014/08/adc-working.png 692w, /images/posts/2014/08/adc-working-300x183.png 300w" sizes="(max-width: 692px) 100vw, 692px" />](/images/posts/2014/08/adc-working.png)
+{% image.html src="adc-working.png" %}
 
 The image above shows that the input voltage in case 1 and case 2 has changes but the voltage drop across the diode remains constant. So if you have a 10 bit ADC, then you will measure 2^10 counts between the Vref+ and Vref-. Now if you know the number of counts the ADC would return for the diode drop at nominal system voltage, simple math will assure you that you can compute the current voltage from the measured ADC reading of the diode drop.
 
@@ -43,20 +43,22 @@ The image above shows that the input voltage in case 1 and case 2 has changes bu
 
 If you are one of those lucky ones who have the internal bandgap reference, then you don't have to do the next few steps. You could directly configure your ADC module to give the bandgap reference voltage and get on to the formula that is mentioned below (in the code).
 
-For the others, a drop 0.7v is a little to low to measure with a good accuracy especially if you are operating your device at 5V. So you should use two or three such diodes in series to produce a higher drop. Two diodes in series will give 1.4V drop.A This is little less than 50%(very good) in case of a 3.3V device. and somewhere aroundA 25%(can live with A it) in case of a 5V device.
+For the others, a drop 0.7v is a little too low to measure with good accuracy especially if you are operating your device at 5V. So you should use two or three such diodes in series to produce a higher drop. Two diodes in series will give 1.4V drop. This is a little less than 50%(very good) in case of a 3.3V device. and somewhere around 25%(can live with it) in case of a 5V device.
 
 So, 2 PN junction diodes in series is your best bet at getting a reasonably accurate reading for both the voltage levels. But that's not it. So far you have accounted for the 1.4V drop of the total supply but there is still the remaining voltage that has to be dropped. We also want the current through this network to be as low as possible. So you will have to add a 10K ohm in series as well. Here is how the entire circuit will look like.
 
-[<img class="aligncenter size-large wp-image-2556" src="/images/posts/2014/12/measure-mcu-input-Voltage-with-adc-1024x687.png" alt="measure mcu input Voltage with adc" width="618" height="414" />](/images/posts/2014/12/measure-mcu-input-Voltage-with-adc.png)
+{% image.html src="input-voltage-measuremnt-adc-schematic.png" %}
 
 To get the actual system voltage from the ADC, you should do something like this,
 
-<pre class="lang:c decode:true">#define ADC_MAX_COUNT   1023   // 2^10 = 1024
+<pre class="lang:c decode:true">
+#define ADC_MAX_COUNT   1023   // 2^10 = 1024
 #define BANDGAP_VOLTAGE 1400   // in mV
 
 float getSystemVoltage()
 {
   return ((float)ADC_MAX_COUNT/getRawAdcValue() * (float)BANDGAP_VOLTAGE);
-}</pre>
+}
+</pre>
 
 I have defined two macros so that you do not have to change anything in the code. All you have to do is change the appropriate values in the first two lines (ofcourse you have to write your own implementation for getRawAdcValue). Note, the band gap voltage is expressed in millivolts.
