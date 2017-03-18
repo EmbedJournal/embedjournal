@@ -131,53 +131,38 @@
 <!-- Recent posts widget -->
 <div class="b-recentPost">
     <h3>Recent Posts</h3>
+    {% for post in site.posts limit:5 %}
     <div class="media">
         <div class="media-left">
-            <a href="#">
-                <img class="media-object" src="{{ site.baseurl }}/assets/images/sample-thumb.jpg" alt="Sample Thumb">
+            <a href="{{ post.url | relative_url }}">
+                {% capture image-path %}{{ site.baseurl }}/assets/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}{% endcapture %}
+                <img class="media-object" src="{{ image-path }}/{{ post.thumbnail }}" alt="{{ post.title }}">
             </a>
         </div>
         <div class="media-body">
-            <a href="#"><h4 class="media-heading">Make a Simple RC (Remote Controlled) Robot Car</h4></a>
-            <p class="b-dateLabel">May 5, 2016</p>
+            <a href="{{ image-path }}/{{ post.thumbnail }}"><h4 class="media-heading">{{ post.title }}</h4></a>
+            <p class="b-dateLabel">{{ post.date | date: "%b %-d, %Y" }}</p>
         </div>
     </div>
-    <div class="media">
-        <div class="media-left">
-            <a href="#">
-                <img class="media-object" src="{{ site.baseurl }}/assets/images/sample-thumb.jpg" alt="Sample Thumb">
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="#"><h4 class="media-heading">Make a Simple RC (Remote Controlled) Robot Car</h4></a>
-            <p class="b-dateLabel">May 5, 2016</p>
-        </div>
-    </div>
+    {% endfor %}
 </div>
 
 <!-- Popular page widget -->
 <div class="b-popularPost">
     <h3>Popular Posts</h3>
+    {% assign posts = site.posts | where: 'popular', 'true' %} 
+    {% for post in posts limit:10 %}
     <div class="media">
         <div class="media-left">
-            <a href="#">
-                <img class="media-object" src="{{ site.baseurl }}/assets/images/sample-thumb.jpg" alt="Sample Thumb">
+            <a href="{{ post.url | relative_url }}">
+                {% capture image-path %}{{ site.baseurl }}/assets/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}{% endcapture %}
+                <img class="media-object" src="{{ image-path }}/{{ post.thumbnail }}" alt="{{ post.title }}">
             </a>
         </div>
         <div class="media-body">
-            <a href="#"><h4 class="media-heading">Make a Simple RC (Remote Controlled) Robot Car</h4></a>
-            <p class="b-dateLabel">May 5, 2016</p>
+            <a href="{{ image-path }}/{{ post.thumbnail }}"><h4 class="media-heading">{{ post.title }}</h4></a>
+            <p class="b-dateLabel">{{ post.date | date: "%b %-d, %Y" }}</p>
         </div>
     </div>
-    <div class="media">
-        <div class="media-left">
-            <a href="#">
-                <img class="media-object" src="{{ site.baseurl }}/assets/images/sample-thumb.jpg" alt="Sample Thumb">
-            </a>
-        </div>
-        <div class="media-body">
-            <a href="#"><h4 class="media-heading">Make a Simple RC (Remote Controlled) Robot Car</h4></a>
-            <p class="b-dateLabel">May 5, 2016</p>
-        </div>
-    </div>
+    {% endfor %}
 </div>

@@ -1,8 +1,8 @@
 ---
-title: "Reviews"
+title: "Review"
 paginate:
   limit: false
-  category: "Reviews"
+  category: "Review"
 permalink: "/category/reviews/"
 layout: category-list
 ---

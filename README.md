@@ -1,6 +1,8 @@
 TODO:
+	HTML:
 	- Add 404.html
 	- Add lesser value contents removed page.
+	- Add next and previous buttons below post page like in embedjournal-old
 
 Notes:
 	- Collection names do not seem to support "-" in them, use "_" instead.
@@ -18,3 +20,5 @@ Issues:
 	- numbered list typography has to be fixed. See, /glem-graphical-lcd-emulator-c/ & /contact/
 	- block quotes are ave too small a font and has too much padding in the bottom. Fix this.
 	- post page author widget link decoration has to be fixed.
+	- fix comments card css
+	- fix size of image in sizebar post widgets.

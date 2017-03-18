@@ -6,6 +6,7 @@ layout: post
 thumbnail: post-thumb.jpg
 permalink: /programming-line-follower-robot/
 dsq_thread_id: "2701837863"
+popular_post: true
 categories: [ "Robotics", "Programming" ]
 tags: [ "DIY", "LFR" ]
 ---

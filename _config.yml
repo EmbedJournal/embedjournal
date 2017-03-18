@@ -19,8 +19,8 @@ highlighter:   rougue
 kramdown:
   syntax_highlighter: rouge
 
-disqus:
-google_analytics:
+disqus: embedjournal
+google_analytics: UA-41190078-1
 
 social:
   rss:         /feed.xml

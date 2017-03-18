@@ -142,10 +142,22 @@ layout: default
 				</div>
 			</div>
 
-			<!-- Load comments button -->
-			<div class="c-loadComment">
-				<a href="#" class="btn btn-soft"><span class="fa fa-commenting-o"></span> View comments</a>
-			</div>
+			{% if site.disqus %}
+				<!-- Load comments button -->
+				<div class="c-loadComment">
+					<div class="btn btn-soft"><span class="fa fa-commenting-o"></span> Load comments</div>
+				</div>
+				<div id="disqus_thread"></div>
+				<script type="text/javascript">
+					var disqus_config = function () {
+						this.page.url = "http://embedjournal.com{{ page.url }}";
+						{% if page.dsq_thread_id %}
+						this.page.identifier = {{ page.dsq_thread_id }};
+						{% endif %}
+					};
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			{% endif %}
 		</div>
     </div>
 
