@@ -1,0 +1,183 @@
+<div class="b-asideSocial">
+    <h3>Social Media</h3>
+    <ul>
+        <li class="b-rss">
+            <a href="{{ site.social.rss }}" target="_blank" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        </li>
+        <li class="b-google-plus">
+            <a href="{{ site.social.google_plus }}" title="Google+" target="_blank"><span class="fa fa-google-plus"></span></a>
+        </li>
+        <li class="b-facebook">
+            <a href="{{ site.social.facebook }}" title="Facebook" target="_blank"><span class="fa fa-facebook"></span></a>
+        </li>
+        <li class="b-twitter">
+            <a href="{{ site.social.twitter }}" title="Twitter" target="_blank"><span class="fa fa-twitter"></span></a>
+        </li>
+        <li class="b-linkedin">
+            <a href="{{ site.social.linkedin }}" title="Linkedin" target="_blank"><span class="fa fa-linkedin"></span></a>
+        </li>
+        <li class="b-youtube">
+            <a href="{{ site.social.youtube }}" title="Youtube" target="_blank"><span class="fa fa-youtube"></span></a>
+        </li>
+        <li class="b-github">
+            <a href="{{ site.social.github }}" title="Github" target="_blank"><span class="fa fa-github"></span></a>
+        </li>
+    </ul>
+</div>
+
+<!-- Tag Cloud -->
+<div class="c-cardWidget">
+    <div class="b-cardTitle">
+        <h3>Tag Cloud</h3>
+    </div>
+    <div class="b-cardContent">
+        <div class="b-tagCloud">
+            {% assign tags = site.tags | sort %}
+                {% for tag in tags %}
+                 <span class="site-tag">
+                    <a href="/tag/{{ tag | first | slugify }}/"
+                        style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+                            {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+                    </a>
+                </span>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- Categories widget -->
+<div class="c-cardWidget">
+    <div class="b-cardTitle">
+        <h3>Categories</h3>
+    </div>
+    <div class="b-cardContent">
+        <div class="b-category">
+            <ul class="b-categoryItems">
+                {% assign categories = site.categories | sort %}
+                {% for category in categories %}
+                    <li><a href="{{ site.baseurl }}/category/{{ category[0] | slugify }}"><span class="fa fa-folder"></span> {{ category[0] }} <span class="b-badge">{{ category[1].size }}</span></a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Categories widget -->
+<!-- The following loop is just crazy! Forget debugging -->
+<div class="c-cardWidget">
+    <div class="b-cardTitle">
+        <h3>Archive</h3>
+    </div>
+    <div class="b-cardContent">
+        <div class="b-archive">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+    {% assign post_count = 0 %}
+    {% for post in site.posts  %}
+        {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+        {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
+        {% capture this_month_num %}{{ post.date | date: "%m" }}{% endcapture %}
+        {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+        {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
+        {% capture next_month_num %}{{ post.date | date: "%m" }}{% endcapture %}
+        {% if forloop.first %}
+                        <div class="panel-heading" role="tab" id="heading-{{this_year}}">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{this_year}}" aria-expanded="false" aria-controls="collapse{{this_year}}">
+                                    <span class="fa fa-folder"></span> {{this_year}}
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse-{{this_year}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{{this_year}}">
+                            <div class="panel-body">
+                                <ul class="b-panelItems">
+        {% assign post_count = 0 %}
+    {% endif %}
+    {% if forloop.last %}
+                                </ul>
+                            </div>
+                        </div>
+    {% else %}
+        {% if this_year != next_year %}
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel-heading" role="tab" id="heading-{{next_year}}">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{next_year}}" aria-expanded="false" aria-controls="collapse-{{next_year}}">
+                                    <span class="fa fa-folder"></span> {{ next_year }}
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse-{{next_year}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{{next_year}}">
+                            <div class="panel-body">
+                                <ul class="b-panelItems">
+            {% assign post_count = 0 %}
+        {% else %}
+            {% capture post_count %}{{ post_count | plus:1 }}{% endcapture %}   
+            {% if this_month != next_month %}
+                        <li><a href="{{ site.baseurl }}/archives/{{ this_year }}/{{ next_month_num }}"><span class="fa fa-folder-outline"></span> {{ this_month }} <span class="b-badge">{{ post_count }}</span></a></li>
+            {% assign post_count = 0 %}
+            {% endif %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Recent posts widget -->
+<div class="b-recentPost">
+    <h3>Recent Posts</h3>
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object" src="{{ site.baseurl }}/assets/images/sample-thumb.jpg" alt="Sample Thumb">
+            </a>
+        </div>
+        <div class="media-body">
+            <a href="#"><h4 class="media-heading">Make a Simple RC (Remote Controlled) Robot Car</h4></a>
+            <p class="b-dateLabel">May 5, 2016</p>
+        </div>
+    </div>
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object" src="{{ site.baseurl }}/assets/images/sample-thumb.jpg" alt="Sample Thumb">
+            </a>
+        </div>
+        <div class="media-body">
+            <a href="#"><h4 class="media-heading">Make a Simple RC (Remote Controlled) Robot Car</h4></a>
+            <p class="b-dateLabel">May 5, 2016</p>
+        </div>
+    </div>
+</div>
+
+<!-- Popular page widget -->
+<div class="b-popularPost">
+    <h3>Popular Posts</h3>
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object" src="{{ site.baseurl }}/assets/images/sample-thumb.jpg" alt="Sample Thumb">
+            </a>
+        </div>
+        <div class="media-body">
+            <a href="#"><h4 class="media-heading">Make a Simple RC (Remote Controlled) Robot Car</h4></a>
+            <p class="b-dateLabel">May 5, 2016</p>
+        </div>
+    </div>
+    <div class="media">
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object" src="{{ site.baseurl }}/assets/images/sample-thumb.jpg" alt="Sample Thumb">
+            </a>
+        </div>
+        <div class="media-body">
+            <a href="#"><h4 class="media-heading">Make a Simple RC (Remote Controlled) Robot Car</h4></a>
+            <p class="b-dateLabel">May 5, 2016</p>
+        </div>
+    </div>
+</div>
