@@ -3,6 +3,7 @@ title: Standalone BreadBoard Breakout for PIC Microcontrollers
 date: 2013-08-09T15:39:03+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.jpg
 permalink: /breadboard-breakout-for-pic-microcontrollers/
 dsq_thread_id: "3298312963"
 categories: [ "Hardware", "Microchip PIC" ]

@@ -3,6 +3,7 @@ title: Testing RF Transmitter and Receiver Circuit
 date: 2014-04-27T22:51:15+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.jpg
 permalink: /testing-rf-transmitter-and-receiver-circuit/
 dsq_thread_id: "3290444642"
 categories: [ "How To", "Hardware" ]

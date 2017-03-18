@@ -3,6 +3,7 @@ title: "My approach to the Mesh Flare Problem (IIT-B's Techfest)"
 date: 2016-09-28T16:26:55+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.jpg
 permalink: /iit-techfest-mesh-flare/
 dsq_thread_id: "5179907417"
 categories: [ "Programming", "Robotics" ]

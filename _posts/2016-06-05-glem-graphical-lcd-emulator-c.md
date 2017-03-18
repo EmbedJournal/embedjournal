@@ -3,6 +3,7 @@ title: "GLEM: Graphical LCD Emulator in C"
 date: 2016-06-05T13:09:23+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.png
 permalink: /glem-graphical-lcd-emulator-c/
 dsq_thread_id: "4885041559"
 categories: [ "Embedded Theory" ]

@@ -3,6 +3,7 @@ title: Implementing Circular/Ring Buffer in Embedded C
 date: 2014-05-16T18:55:54+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.png
 permalink: /implementing-circular-buffer-embedded-c/
 dsq_thread_id: "3290596090"
 categories: [ "Programming" ]

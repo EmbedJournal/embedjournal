@@ -3,6 +3,7 @@ title: "Programming LCD in 8 bit mode - Part -2"
 date: 2013-06-26T19:58:25+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.png
 permalink: /programming-lcd-in-8-bit-mode/
 dsq_thread_id: "2728571557"
 categories: [ "Embedded Theory", "Microchip PIC" ]

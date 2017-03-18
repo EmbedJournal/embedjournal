@@ -3,6 +3,7 @@ title: "Line Follower Robot - Build it from scratch"
 date: 2013-06-01T11:20:55+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.jpg
 permalink: /line-follower-robot/
 dsq_thread_id: "2728574119"
 categories: [ "How To", "Robotics" ]

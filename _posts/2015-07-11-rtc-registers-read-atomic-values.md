@@ -3,6 +3,7 @@ title: Race condition in reading RTC timekeeping registers
 date: 2015-07-11T08:35:10+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.jpg
 permalink: /rtc-registers-read-atomic-values/
 dsq_thread_id: "3923345886"
 categories: [ "Embedded Theory", "Programming" ]

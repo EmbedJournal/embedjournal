@@ -3,6 +3,7 @@ title: Got the GPS and GSM Modules delivered!!
 date: 2013-06-07T16:48:48+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.jpg
 permalink: /gps-and-gsm-modules/
 dsq_thread_id: "3292256477"
 categories: [ "General Posts" ]

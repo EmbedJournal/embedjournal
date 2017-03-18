@@ -3,6 +3,7 @@ title: Getting Started with PIC Microcontrollers
 date: 2013-10-13T08:04:33+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.png
 permalink: /getting-started-with-pic-microcontrollers/
 dsq_thread_id: "3290736684"
 categories: [ "Embedded Theory", "Microchip PIC" ]

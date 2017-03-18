@@ -3,6 +3,7 @@ title: "Graphic LCD Command Sheet HTML Version"
 date: 2013-11-03T21:12:52+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.png
 permalink: /graphic-lcd-glcd-command-sheet-html-version/
 dsq_thread_id: "2728572025"
 categories: [ "Embedded Theory" ]

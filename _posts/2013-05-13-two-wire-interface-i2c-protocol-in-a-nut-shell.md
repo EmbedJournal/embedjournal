@@ -3,6 +3,7 @@ title: I2C Protocol (2-Wire Interface) in a nut shell
 date: 2013-05-13T18:19:29+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.png
 permalink: /two-wire-interface-i2c-protocol-in-a-nut-shell/
 dsq_thread_id: "2728571673"
 categories: [ "Embedded Theory" ]

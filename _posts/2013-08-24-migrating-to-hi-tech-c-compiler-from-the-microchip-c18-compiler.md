@@ -3,6 +3,7 @@ title: Migrating to HI-TECH C Compiler from the Microchip C18 Compiler
 date: 2013-08-24T21:39:52+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.png
 permalink: /migrating-to-hi-tech-c-compiler-from-the-microchip-c18-compiler/
 dsq_thread_id: "3292578747"
 categories: [ "Microchip PIC" ]

@@ -3,6 +3,7 @@ title: "BeagleBone - Detailed Technical Review"
 date: 2013-06-09T23:24:23+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.jpg
 permalink: /beaglebone-a-quick-review/
 dsq_thread_id: "3298573222"
 categories: [ "Hardware", "Review" ]

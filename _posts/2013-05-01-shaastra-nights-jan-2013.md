@@ -3,6 +3,7 @@ title: "Shaastra 2013 Nights on the streets (Jan'13)"
 date: 2013-05-01T16:49:54+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.jpg
 permalink: /shaastra-nights-jan-2013/
 dsq_thread_id: "2701837037"
 categories: [ "General Posts" ]

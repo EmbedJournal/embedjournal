@@ -3,6 +3,7 @@ title: Basics of DC Motor Drive and Speed Control for Robots
 date: 2014-05-18T09:00:27+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.jpg
 permalink: /basics-of-dc-motor-drive-and-speed-control-for-robots/
 dsq_thread_id: "3290522357"
 categories: [ "Embedded Theory" ]

@@ -3,6 +3,7 @@ title: "Stepper Motors - Introduction and Working Principle"
 date: 2013-07-21T11:54:28+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.jpg
 permalink: /stepper-motors-introduction-and-working-principle/
 dsq_thread_id: "2728571571"
 categories: [ "Embedded Theory" ]

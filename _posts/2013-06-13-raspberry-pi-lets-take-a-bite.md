@@ -3,6 +3,7 @@ title: "Raspberry Pi: Let's take a bite from it!"
 date: 2013-06-13T09:43:20+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.jpg
 permalink: /raspberry-pi-lets-take-a-bite/
 dsq_thread_id: "3296171215"
 categories: [ "Hardware", "Review" ]

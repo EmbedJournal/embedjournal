@@ -3,6 +3,7 @@ title: Interfacing RTC with Microcontroller
 date: 2013-05-14T18:26:31+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.jpg
 permalink: /interfacing-rtc-with-microcontroller/
 dsq_thread_id: "2728571110"
 categories: [ "Embedded Theory" ]

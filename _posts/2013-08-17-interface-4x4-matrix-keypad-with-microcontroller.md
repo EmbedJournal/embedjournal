@@ -3,6 +3,7 @@ title: "Interface 4x4 Matrix Keypad With Microcontroller"
 date: 2013-08-17T17:05:52+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.jpg
 permalink: /interface-4x4-matrix-keypad-with-microcontroller/
 dsq_thread_id: "2701818794"
 categories: [ "Embedded Theory", "Microchip PIC" ]

@@ -3,6 +3,7 @@ title: "Circuit Debugging - Tips Tricks & Techniques"
 date: 2014-03-02T14:39:20+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.jpg
 permalink: /circuit-debugging-tips-tricks-techniques/
 dsq_thread_id: "2728571998"
 categories: [ "General Posts", "Hardware" ]

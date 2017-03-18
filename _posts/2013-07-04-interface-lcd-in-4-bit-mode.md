@@ -3,6 +3,7 @@ title: "Interface - LCD in 4 bit Mode: Part 3"
 date: 2013-07-04T11:02:08+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.jpg
 permalink: /interface-lcd-in-4-bit-mode/
 dsq_thread_id: "2728571307"
 categories: [ "Embedded Theory", "Microchip PIC" ]

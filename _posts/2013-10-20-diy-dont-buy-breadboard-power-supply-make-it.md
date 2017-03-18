@@ -3,6 +3,7 @@ title: "How To Breadboard Power Supply"
 date: 2013-10-20T12:26:39+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.jpg
 permalink: /diy-dont-buy-breadboard-power-supply-make-it/
 dsq_thread_id: "2728638611"
 categories: [ "How To" ]

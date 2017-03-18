@@ -3,6 +3,7 @@ title: Hack a Toy Car to Make a Cheap Wireless Robot
 date: 2013-07-07T23:44:58+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.jpg
 permalink: /make-a-cheap-wireless-robot/
 dsq_thread_id: "2728559176"
 categories: [ "How To", "Robotics" ]

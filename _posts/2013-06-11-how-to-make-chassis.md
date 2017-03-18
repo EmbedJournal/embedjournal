@@ -3,6 +3,7 @@ title: "How-to: Make a Chassis For Your Robot"
 date: 2013-06-11T07:30:01+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.jpg
 permalink: /how-to-make-chassis/
 dsq_thread_id: "2728571901"
 categories: [ "How To", "Robotics" ]

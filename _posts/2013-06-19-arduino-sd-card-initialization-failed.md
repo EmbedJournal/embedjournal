@@ -3,6 +3,7 @@ title: "Workaround for 'SD Card Initialization Failed!' in Arduino"
 date: 2013-06-19T16:33:08+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.jpg
 permalink: /arduino-sd-card-initialization-failed/
 dsq_thread_id: "2728571509"
 categories: [ "Arduino", "Embedded Theory", "How To" ]

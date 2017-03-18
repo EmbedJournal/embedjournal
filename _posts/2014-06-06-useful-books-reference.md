@@ -3,6 +3,7 @@ title: Useful Books for Reference
 date: 2014-06-06T13:25:13+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.png
 permalink: /useful-books-reference/
 dsq_thread_id: "3290444297"
 categories: [ "General Posts" ]

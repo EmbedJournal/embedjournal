@@ -3,6 +3,7 @@ title: "PandaBoard, Technical Reference and Review."
 date: 2013-06-17T10:20:56+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.png
 permalink: /pandaboard/
 dsq_thread_id: "3298571283"
 categories: [ "Hardware", "Review" ]

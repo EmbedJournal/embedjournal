@@ -3,6 +3,7 @@ title: Make a Simple RC (Remote Controlled) Robot Car
 date: 2013-05-05T17:31:56+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.jpg
 permalink: /make-a-rc-robot-car/
 dsq_thread_id: "2701802176"
 categories: [ "How To", "Robotics" ]

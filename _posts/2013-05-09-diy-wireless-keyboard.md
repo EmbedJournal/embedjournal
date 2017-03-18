@@ -3,6 +3,7 @@ title: DIY wireless Keyboard (fun in making things yourself)
 date: 2013-05-09T18:20:21+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.jpg
 permalink: /diy-wireless-keyboard/
 dsq_thread_id: "2728571102"
 categories: [ "General Posts" ]

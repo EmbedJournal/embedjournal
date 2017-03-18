@@ -3,6 +3,7 @@ title: Getting Started with Linux
 date: 2013-07-15T17:18:32+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.jpg
 permalink: /getting-started-with-linux/
 dsq_thread_id: "3295791995"
 categories: [ "Linux" ]

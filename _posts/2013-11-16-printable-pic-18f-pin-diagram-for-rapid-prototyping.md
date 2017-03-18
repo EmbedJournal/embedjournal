@@ -3,6 +3,7 @@ title: "PIC Pin Diagram, A printable copy for quick reference"
 date: 2013-11-16T12:46:27+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.png
 permalink: /printable-pic-18f-pin-diagram-for-rapid-prototyping/
 dsq_thread_id: "3291262335"
 categories: [ "Microchip PIC" ]

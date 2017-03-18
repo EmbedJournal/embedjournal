@@ -3,6 +3,7 @@ title: Programming Shortest Path Line Follower Robot
 date: 2013-07-06T13:05:15+00:00
 author: Siddharth
 layout: post
+thumbnail: post-thumb.jpg
 permalink: /programming-shortest-path-line-follower-robot/
 dsq_thread_id: "2701844078"
 categories: [ "Robotics" ]
