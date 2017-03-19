@@ -7,6 +7,54 @@ layout: default
     <div class="col-md-8 js-content">
         <div class="theiaStickySidebar">
 
+            <!-- Recent Posts -->
+            <div class="c-posts" id="authorName">
+                <div class="b-title">
+                    <h3>Recent Posts</h3>
+                </div>
+                <div class="b-posts">
+                    {% for post in site.posts limit:10 %}
+                        <!-- Single block start -->
+                        <div class="b-postItem">
+                            <div class="b-postImg">
+                                <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
+                                    {% capture image-path %}{{ site.baseurl }}/assets/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}{% endcapture %}
+                                    <img src="{{ image-path }}/{{ post.thumbnail }}" alt="{{ post.title }}">
+                                </a>
+                            </div>
+                            <div class="b-postDesc">
+                                <a href="{{ post.url | relative_url }}" title="{{ post.title }}"><h4>{{ post.title }}</h4></a>
+                                <div class="c-postInfo">
+                                    <div class="b-author">
+                                        {% assign author = site.data.authors[post.author] %}
+                                        <p>By <a href="{{ site.baseurl }}/author/{{ author.full_name | slugify }}">{{ author.name }}</a></p>
+                                    </div>
+                                    <div class="b-category">
+                                        <p>
+                                            <span class="fa fa-folder"></span>
+                                            {% for category in post.categories %}
+                                                <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}{% unless forloop.last %}</a>, {% endunless %}
+                                            {% endfor %}
+                                        </p>
+                                    </div>
+                                    <div class="b-tags">
+                                        <p><span class="fa fa-tags"></span></p>
+                                        <ul>
+                                            {% for tag in post.tags %}
+                                                <li><a href="{{ site.baseurl }}/tag/{{ tag | slugify }}">{{ tag }}</a></li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-dateLabel">
+                                {{ post.date | date: "%b %-d, %Y" }}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+
             <!-- Featured Posts -->
             {% assign featured = site.posts | where: "featured_post", "true" %}
             {% if featured.size > 0 %}
@@ -20,8 +68,8 @@ layout: default
                         <div class="b-postItem">
                             <div class="b-postImg">
                                 <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
-                                    {% capture image-path %}{{ site.baseurl }}/assets/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/post-thumb.jpg{% endcapture %}
-                                    <img src="{{ image-path }}" alt="{{ post.title }}">
+                                    {% capture image-path %}{{ site.baseurl }}/assets/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}{% endcapture %}
+                                    <img src="{{ image-path }}/{{ post.thumbnail }}" alt="{{ post.title }}">
                                 </a>
                             </div>
                             <div class="b-postDesc">
@@ -71,8 +119,8 @@ layout: default
                         <div class="b-postItem">
                             <div class="b-postImg">
                                 <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
-                                    {% capture image-path %}{{ site.baseurl }}/assets/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/post-thumb.jpg{% endcapture %}
-                                    <img src="{{ image-path }}" alt="{{ post.title }}">
+                                    {% capture image-path %}{{ site.baseurl }}/assets/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}{% endcapture %}
+                                    <img src="{{ image-path }}/{{ post.thumbnail }}" alt="{{ post.title }}">
                                 </a>
                             </div>
                             <div class="b-postDesc">
@@ -122,8 +170,8 @@ layout: default
                         <div class="b-postItem">
                             <div class="b-postImg">
                                 <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
-                                    {% capture image-path %}{{ site.baseurl }}/assets/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/post-thumb.jpg{% endcapture %}
-                                    <img src="{{ image-path }}" alt="{{ post.title }}">
+                                    {% capture image-path %}{{ site.baseurl }}/assets/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}{% endcapture %}
+                                    <img src="{{ image-path }}/{{ post.thumbnail }}" alt="{{ post.title }}">
                                 </a>
                             </div>
                             <div class="b-postDesc">

@@ -35,7 +35,7 @@ Well if you don't, don't worry, there is still the okay-easy way. Surprisingly, 
 
 Its no secret that the forward drop of a standard PN junction diode is 0.7V. At least that's what the textbooks say. But in practice you will have anywhere between 0.55V to 0.7V depending again on the make and quality. But for the sake of this discussion we will assume that it is indeed 0.7V. The value of forward drop for a given diode is constant and does not vary. This 0.7V is called as the band gap of the diode and does not vary with the supply voltage given to it so long as it is above the band gap voltage (in this case 0.7V).
 
-{% image.html src="adc-working.png" %}
+{% include image.html src="adc-working.png" %}
 
 The image above shows that the input voltage in case 1 and case 2 has changes but the voltage drop across the diode remains constant. So if you have a 10 bit ADC, then you will measure 2^10 counts between the Vref+ and Vref-. Now if you know the number of counts the ADC would return for the diode drop at nominal system voltage, simple math will assure you that you can compute the current voltage from the measured ADC reading of the diode drop.
 
@@ -47,7 +47,7 @@ For the others, a drop 0.7v is a little too low to measure with good accuracy es
 
 So, 2 PN junction diodes in series is your best bet at getting a reasonably accurate reading for both the voltage levels. But that's not it. So far you have accounted for the 1.4V drop of the total supply but there is still the remaining voltage that has to be dropped. We also want the current through this network to be as low as possible. So you will have to add a 10K ohm in series as well. Here is how the entire circuit will look like.
 
-{% image.html src="input-voltage-measuremnt-adc-schematic.png" %}
+{% include image.html src="input-voltage-measuremnt-adc-schematic.png" %}
 
 To get the actual system voltage from the ADC, you should do something like this,
 

@@ -1,0 +1,383 @@
+.
+
+2013-04-21-hello-world
+	{% include image.html src="hello-world.jpg" %}
+
+2013-04-24-working-with-git-from-a-linux-machine
+	{% include image.html src="git-logo.png" %}
+
+2013-04-25-how-to-use-gmail-form-terminal-linux
+	{% include image.html src="Gmail-Icon.png" %}
+
+2013-05-01-shaastra-nights-jan-2013
+	{% include image.html src="chassis-making.jpg" %}
+	{% include image.html src="DSC08455.jpg" %}
+	{% include image.html src="me-at-work.jpg" %}
+	{% include image.html src="nexgen-shortlist.jpg" %}
+	{% include image.html src="object-spec.png" %}
+	{% include image.html src="picker-robot.jpg" %}
+	{% include image.html src="ranger-robot.jpg" %}
+	{% include image.html src="robot-pair.jpg" %}
+	{% include image.html src="robotic-arm-prototype.jpg" %}
+	{% include image.html src="servo-inventory.jpg" %}
+	{% include image.html src="track-3d-view.png" %}
+	{% include image.html src="track-3d-view1.png" %}
+	{% include image.html src="track-3d-view2.png" %}
+	{% include image.html src="track-spec.png" %}
+
+2013-05-03-getting-started-with-embedded-systems
+	{% include image.html src="embedded-systems.jpg" %}
+
+2013-05-05-make-a-rc-robot-car
+	{% include image.html src="rc-car-electronic.png" %}
+	{% include image.html src="rc-car-flowchart.png" %}
+	{% include image.html src="rc-car-hardware.png" %}
+	{% include image.html src="rc-car-receiver-layout.png" %}
+	{% include image.html src="rc-car-receiver-schematic.png" %}
+	{% include image.html src="rc-car-transmitter-layout.png" %}
+	{% include image.html src="rc-car-transmitter-schematic.png" %}
+
+2013-05-09-diy-wireless-keyboard
+	{% include image.html src="tvs-gold-keyboard.jpg" %}
+
+2013-05-10-beagle-bone-a-look-from-outside
+	{% include image.html src="beaglebone.jpg" %}
+
+2013-05-13-two-wire-interface-i2c-protocol-in-a-nut-shell
+	{% include image.html src="i2c-read-write.png" %}
+	{% include image.html src="i2c-read.png" %}
+	{% include image.html src="i2c-timing-diagram.png" %}
+	{% include image.html src="i2c-write.png" %}
+
+2013-05-14-interfacing-rtc-with-microcontroller
+	{% include image.html src="digital-clock.jpg" %}
+	{% include image.html src="rtc-ds1307-registers.png" %}
+	{% include image.html src="rtc-ds1307-schematic.png" %}
+
+2013-05-17-which-is-the-best-eda-tool
+	{% include image.html src="eda-tool.gif" %}
+
+2013-05-25-eda-where-electronics-begins
+	{% include image.html src="eda-network.gif" %}
+
+2013-05-28-learning-embedded-system-with-arduino
+	{% include image.html src="arduino.jpg" %}
+
+2013-05-30-timer-modules-guide
+	{% include image.html src="timer-block-diagram.png" %}
+	{% include image.html src="timer-scaling-ratio.png" %}
+	{% include image.html src="timer.jpg" %}
+
+2013-06-01-line-follower-robot
+	{% include image.html src="blackboy-inside.jpg" %}
+	{% include image.html src="blackboy.jpg" %}
+	{% include image.html src="comparator-schematic.png" %}
+	{% include image.html src="line-robot-1.jpg" %}
+	{% include image.html src="line-robot-2.jpg" %}
+	{% include image.html src="line-sensor-alignment.png" %}
+	{% include image.html src="pic-basic-schematic.png" %}
+	{% include image.html src="power-supply-schematic.png" %}
+	{% include image.html src="sensor-circuit.png" %}
+
+2013-06-04-programming-line-follower-robot
+	{% include image.html src="line-follower-sensor-board.jpg" %}
+	{% include image.html src="line-follower.png" %}
+	{% include image.html src="right-angle-acute-angle-truns.png" %}
+	{% include image.html src="work-area.jpg" %}
+
+2013-06-07-gps-and-gsm-modules
+	{% include image.html src="m2m-gsm-gps-module.jpg" %}
+
+2013-06-08-raspberry-pi-google-calendar
+	{% include image.html src="google-calander.jpg" %}
+
+2013-06-08-shortest-path-line-follower-robot-logic-revealed
+	{% include image.html src="shortest-path-default-left.png" %}
+	{% include image.html src="shortest-path-default-right.png" %}
+	{% include image.html src="shortest-path-points.png" %}
+	{% include image.html src="Shortest-path-solution.png" %}
+	{% include image.html src="shortest-track.png" %}
+
+2013-06-09-beaglebone-a-quick-review
+
+2013-06-11-compiling-c-programs-using-gcc
+	{% include image.html src="gnu-gcc.png" %}
+
+2013-06-11-how-to-make-chassis
+	{% include image.html src="acrylic-plate-chassis.jpg" %}
+	{% include image.html src="blackboy-assembly.jpg" %}
+	{% include image.html src="chassis-1.jpg" %}
+	{% include image.html src="chassis-2.jpg" %}
+	{% include image.html src="chassis-3.jpg" %}
+	{% include image.html src="chassis-4.jpg" %}
+	{% include image.html src="chassis-5.jpg" %}
+	{% include image.html src="chassis-6.jpg" %}
+	{% include image.html src="chassis-7.jpg" %}
+	{% include image.html src="chassis-8.jpg" %}
+	{% include image.html src="chassis-top-plate.jpg" %}
+	{% include image.html src="coup-saw.jpg" %}
+	{% include image.html src="file.png" %}
+	{% include image.html src="hand-drill.jpg" %}
+	{% include image.html src="hex-spacers.jpg" %}
+
+2013-06-13-raspberry-pi-lets-take-a-bite
+	{% include image.html src="pi-pin-mapping.jpg" %}
+	{% include image.html src="raspberry-pi2.jpg" %}
+
+2013-06-15-need-for-clock
+	{% include image.html src="clock-pulse.png" %}
+
+2013-06-17-pandaboard
+
+2013-06-19-arduino-sd-card-initialization-failed
+	{% include image.html src="arduino-sd-shield.jpg" %}
+
+2013-06-20-character-lcd-command-sheet
+
+2013-06-25-interfacing-lcd-module-part-1
+	{% include image.html src="16x2-character-lcd-module.jpg" %}
+	{% include image.html src="20x4-character-lcd-module.jpg" %}
+	{% include image.html src="lcd-display.jpg" %}
+	{% include image.html src="lcd-init-timing-diagram.png" %}
+	{% include image.html src="read-timing-diagram.png" %}
+	{% include image.html src="read-timing.png" %}
+	{% include image.html src="write-timing-diagram.png" %}
+	{% include image.html src="write-timing.png" %}
+
+2013-06-26-programming-lcd-in-8-bit-mode
+
+2013-07-04-interface-lcd-in-4-bit-mode
+	{% include image.html src="lcd-4bit-full-setup.jpg" %}
+	{% include image.html src="lcd-4bit-mcu.jpg" %}
+	{% include image.html src="lcd-4bit-witing.jpg" %}
+	{% include image.html src="lcd-display.jpg" %}
+
+2013-07-05-cubieboard
+
+2013-07-06-programming-shortest-path-line-follower-robot
+	{% include image.html src="sensor-alignment.png" %}
+	{% include image.html src="sensor-view.jpg" %}
+
+2013-07-07-make-a-cheap-wireless-robot
+	{% include image.html src="checking-output.jpg" %}
+	{% include image.html src="jst-connector-case-off.jpg" %}
+	{% include image.html src="receiver-board-back.jpg" %}
+	{% include image.html src="receiver-board.jpg" %}
+	{% include image.html src="setup.jpg" %}
+	{% include image.html src="wiring-blackboy.jpg" %}
+
+2013-07-13-8-reasons-why-you-should-switch-to-mplab-x-ide
+	{% include image.html src="click-navigation.png" %}
+	{% include image.html src="live-code-checker.png" %}
+	{% include image.html src="macro-grouping.png" %}
+	{% include image.html src="mplab-x-dashboard.png" %}
+	{% include image.html src="mplab-x-icons.png" %}
+	{% include image.html src="mplab-x-ide.png" %}
+	{% include image.html src="mplab-x-include-header-file.png" %}
+	{% include image.html src="mplabx-startup.png" %}
+	{% include image.html src="one-click-comment.png" %}
+
+2013-07-15-getting-started-with-linux
+
+2013-07-19-make-a-digital-clock
+	{% include image.html src="clock-display.jpg" %}
+	{% include image.html src="hardware-banner.png" %}
+
+2013-07-21-stepper-motors-introduction-and-working-principle
+	{% include image.html src="stepper-motor-basic-theory.png" %}
+	{% include image.html src="stepper-motor-half-step.png" %}
+	{% include image.html src="stepper-motor-open-1.jpg" %}
+	{% include image.html src="stepper-motor-open-2.jpg" %}
+	{% include image.html src="stepper-motor-open-3.jpg" %}
+	{% include image.html src="stepper-motor-rotor-poles.jpg" %}
+	{% include image.html src="stepper-motor-stator-poles.jpg" %}
+	{% include image.html src="stepper-motor-wave-drive.png" %}
+	{% include image.html src="stepper-motor-winding-diagram.png" %}
+	{% include image.html src="stepper-motor.jpg" %}
+
+2013-07-27-stepper-motor-interface-with-pic-microcontroller
+	{% include image.html src="breadboard-wiring.jpg" %}
+	{% include image.html src="cover.jpg" %}
+	{% include image.html src="pic-basic.png" %}
+	{% include image.html src="power-supply.png" %}
+	{% include image.html src="stepper-motor.jpg" %}
+	{% include image.html src="uln2003.png" %}
+
+2013-08-05-make-a-tray-to-suspend-pcbs-into-etchant
+	{% include image.html src="tray-metal-wire.jpg" %}
+	{% include image.html src="tray-step-1.jpg" %}
+	{% include image.html src="tray-step-10.jpg" %}
+	{% include image.html src="tray-step-11.jpg" %}
+	{% include image.html src="tray-step-2.jpg" %}
+	{% include image.html src="tray-step-3.jpg" %}
+	{% include image.html src="tray-step-4.jpg" %}
+	{% include image.html src="tray-step-5.jpg" %}
+	{% include image.html src="tray-step-6.jpg" %}
+	{% include image.html src="tray-step-7.jpg" %}
+	{% include image.html src="tray-step-8.jpg" %}
+	{% include image.html src="tray-step-9.jpg" %}
+
+2013-08-07-how-to-make-pcbs-at-home-with-toner-transfer-method
+	{% include image.html src="toner-transfer-paper.jpg" %}
+	{% include image.html src="toner-transfer-pcb.jpg" %}
+	{% include image.html src="toner-transfer-step-1.jpg" %}
+	{% include image.html src="toner-transfer-step-10.jpg" %}
+	{% include image.html src="toner-transfer-step-11.jpg" %}
+	{% include image.html src="toner-transfer-step-12.jpg" %}
+	{% include image.html src="toner-transfer-step-13.jpg" %}
+	{% include image.html src="toner-transfer-step-14.jpg" %}
+	{% include image.html src="toner-transfer-step-15.jpg" %}
+	{% include image.html src="toner-transfer-step-16.jpg" %}
+	{% include image.html src="toner-transfer-step-17.jpg" %}
+	{% include image.html src="toner-transfer-step-18.jpg" %}
+	{% include image.html src="toner-transfer-step-19.jpg" %}
+	{% include image.html src="toner-transfer-step-2.jpg" %}
+	{% include image.html src="toner-transfer-step-20.jpg" %}
+	{% include image.html src="toner-transfer-step-3.jpg" %}
+	{% include image.html src="toner-transfer-step-4.jpg" %}
+	{% include image.html src="toner-transfer-step-5.jpg" %}
+	{% include image.html src="toner-transfer-step-6.jpg" %}
+	{% include image.html src="toner-transfer-step-7.jpg" %}
+	{% include image.html src="toner-transfer-step-8.jpg" %}
+	{% include image.html src="toner-transfer-step-9.jpg" %}
+
+2013-08-09-breadboard-breakout-for-pic-microcontrollers
+	{% include image.html src="breadboard-breakout-botom.jpg" %}
+	{% include image.html src="breadboard-breakout-part.jpg" %}
+	{% include image.html src="breadboard-breakout-schematic.png" %}
+	{% include image.html src="breadboard-breakout-top.jpg" %}
+
+2013-08-12-interface-7-segment-display-with-microcontroller
+	{% include image.html src="circuit1-1376228810115.png" %}
+	{% include image.html src="common-anode-cathode-schematic.png" %}
+	{% include image.html src="seven-segment.png" %}
+
+2013-08-17-interface-4x4-matrix-keypad-with-microcontroller
+	{% include image.html src="4x4-matrix-keypad.jpg" %}
+	{% include image.html src="matrix-keypad-column-scan.png" %}
+	{% include image.html src="matrix-keypad-locate-keypress.png" %}
+	{% include image.html src="matrix-keypad-row-scan.png" %}
+	{% include image.html src="matrix-keypad-schematic.png" %}
+	{% include image.html src="matrix-keypad-wiring-diagram.png" %}
+
+2013-08-24-migrating-to-hi-tech-c-compiler-from-the-microchip-c18-compiler
+	{% include image.html src="HTSoft.gif" %}
+
+2013-08-27-interrupt-on-change-ioc-in-pic-microcontrollers
+
+2013-08-31-cool-c-programming-tricks-for-embedded-software-developers
+
+2013-09-12-pic-timer-calculator-give-away-1
+	{% include image.html src="giveaway.png" %}
+	{% include image.html src="pic-timer-calculator.png" %}
+
+2013-10-13-getting-started-with-pic-microcontrollers
+	{% include image.html src="mplab-x-create-1.png" %}
+	{% include image.html src="mplab-x-create-2.png" %}
+	{% include image.html src="mplab-x-create-3.png" %}
+	{% include image.html src="mplab-x-create-4.png" %}
+	{% include image.html src="mplab-x-create-5.png" %}
+	{% include image.html src="mplab-x-create-6.png" %}
+	{% include image.html src="mplab-x-create-7.png" %}
+	{% include image.html src="mplab-x-debugger.png" %}
+	{% include image.html src="mplab-x-new-file-1.png" %}
+	{% include image.html src="mplab-x-new-fine-2.png" %}
+	{% include image.html src="mplab-x-new-fine-3.png" %}
+	{% include image.html src="mplab-x-programming-window.png" %}
+	{% include image.html src="pickit2.png" %}
+
+2013-10-20-diy-dont-buy-breadboard-power-supply-make-it
+	{% include image.html src="assembly-step-1.jpg" %}
+	{% include image.html src="assembly-step-2.jpg" %}
+	{% include image.html src="assembly-step-3.jpg" %}
+	{% include image.html src="assembly-step-4.jpg" %}
+	{% include image.html src="breadboard-power-diagram.jpg" %}
+	{% include image.html src="breadboard-power-supply-cover.jpg" %}
+	{% include image.html src="discription-1381996749594.jpg" %}
+	{% include image.html src="diy-breadboard-power-supply.jpg" %}
+	{% include image.html src="male-berg-connector.jpg" %}
+
+2013-11-03-graphic-lcd-glcd-command-sheet-html-version
+
+2013-11-12-are-you-reading-the-datasheet
+	{% include image.html src="associated-registers.png" %}
+	{% include image.html src="data-bus.png" %}
+	{% include image.html src="datasheet.png" %}
+	{% include image.html src="ex-or-bloock-timer0.png" %}
+	{% include image.html src="multiplexer.png" %}
+	{% include image.html src="port.png" %}
+	{% include image.html src="temp.png" %}
+	{% include image.html src="timer-block-tiagram.png" %}
+
+2013-11-16-printable-pic-18f-pin-diagram-for-rapid-prototyping
+	{% include image.html src="pic18-pin-diagram.png" %}
+
+2014-03-02-circuit-debugging-tips-tricks-techniques
+	{% include image.html src="bad-vs-good.png" %}
+	{% include image.html src="do-the-math.jpg" %}
+	{% include image.html src="resist-urge.jpg" %}
+	{% include image.html src="soldering-good-practice.jpg" %}
+
+2014-04-27-testing-rf-transmitter-and-receiver-circuit
+	{% include image.html src="loopback-encoder-decoder.png" %}
+
+2014-05-16-implementing-circular-buffer-embedded-c
+
+2014-05-18-basics-of-dc-motor-drive-and-speed-control-for-robots
+	{% include image.html src="dc-motor.jpg" %}
+	{% include image.html src="h-bridge-1pin.png" %}
+	{% include image.html src="h-bridge-2pin.png" %}
+	{% include image.html src="h-bridge-4pin.png" %}
+	{% include image.html src="h-bridge-all-off.png" %}
+	{% include image.html src="h-bridge-s1-s4.png" %}
+	{% include image.html src="h-bridge-s3-s2.png" %}
+	{% include image.html src="l293d-pinout.png" %}
+	{% include image.html src="motor-spin-direction.png" %}
+	{% include image.html src="pwm-duty-average-output.png" %}
+	{% include image.html src="pwm-ton-toff-duration.png" %}
+
+2014-05-23-arduino-like-serial-uart-library-pic-18-microcontrollers
+
+2014-05-28-servo-motor-interface-looking-behind-arduino-servo-library
+	{% include image.html src="servo-motor.jpg" %}
+
+2014-05-30-pc-serial-port-not-dead
+	{% include image.html src="com-port-frc-connection.jpg" %}
+	{% include image.html src="com-port-pulled-out.jpg" %}
+	{% include image.html src="exposing-com-port-cabinet.jpg" %}
+
+2014-06-06-useful-books-reference
+
+2014-12-06-microcontroller-input-voltage-measurement-adc
+	{% include image.html src="adc-working.png" %}
+	{% include image.html src="input-voltage-measuremnt-adc-schematic.png" %}
+
+2014-12-14-simple-diy-electromagnetic-bell
+	{% include image.html src="electic-bell-pivot-arm.png" %}
+	{% include image.html src="electric-bell.jpg" %}
+	{% include image.html src="electromagnet.png" %}
+
+2015-05-24-interfacing-16x2-character-lcd-with-c2000-launchpad
+	{% include image.html src="lcd-ti-c2000-schematic.jpg" %}
+	{% include image.html src="ti-c2000-lauchpad.png" %}
+
+2015-07-11-rtc-registers-read-atomic-values
+
+2015-10-05-kernel-compilation-beaglebone-black
+
+2015-12-06-external-event-counter-seven-segment-displays
+	{% include image.html src="flowchart.png" %}
+	{% include image.html src="pov-seven-segment-display.png" %}
+
+2016-06-05-glem-graphical-lcd-emulator-c
+	{% include image.html src="glem-screenshot.png" %}
+	{% include image.html src="software-architecture.png" %}
+
+2016-09-28-iit-techfest-mesh-flare
+	{% include image.html src="meshflare-grid.jpg" %}
+	{% include image.html src="meshflare-track.jpg" %}
+	{% include image.html src="meshflare-vertices.jpg" %}
+	{% include image.html src="Mesh_Flare_Zonals_IIT_B_ProblemStatement.pdf" %}
+
+2016-11-09-custom-rfs-beaglebone-black
+	{% include image.html src="busybox.png" %}
