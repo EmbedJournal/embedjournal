@@ -7,8 +7,8 @@ EmbedJournal Jekyll Template
 
 ### Notes:
 
-	* Collection names do not seem to support "-" in them, use "_" instead.
-	* collection names cannot be same as global variables (site.VARIABLE) as collections get get into into global scope (site.COLLECTION) as well.
+* Collection names do not seem to support "-" in them, use "_" instead.
+* collection names cannot be same as global variables (site.VARIABLE) as collections get get into into global scope (site.COLLECTION) as well.
 
 
 Notes for AlphaWebLab:
@@ -16,25 +16,25 @@ Notes for AlphaWebLab:
 
 ### TODO:
 
-	* Add 404.html. Large 404 with a :) in current theme looks good. Get something similar.
-	* Add a page to state that some lesser value contents have been removed page. Nothing fancy, perhaps some links later in time?
-	* Add next and previous buttons below post page like in embedjournal-old. Use double arrows as in pagination block.
-	* Add email validation, recaptcha and dummy input fields for mailchimp signup. See form below.
+* Add 404.html. Large 404 with a :) in current theme looks good. Get something similar.
+* Add a page to state that some lesser value contents have been removed page. Nothing fancy, perhaps some links later in time?
+* Add next and previous buttons below post page like in embedjournal-old. Use double arrows as in pagination block.
+* Add email validation, recaptcha and dummy input fields for mailchimp signup. See form below.
 
 ### Issues:
 
-	* Footer first link is treated as heading automatically. Make that a separate div.
-	* Tags in post page has some UI overlap.
-	* Author name in post page author widget is broken to next line before using the full line.
-	* Social icons (sidebar, author widget, author pages) don't have any hover action.
-	* Make post list page category link hover to underline text.
-	* Post page top right date clip sometimes overlaps text. Add a small margin around it.
-	* Footer about section remove hover underline. make it bright on hover. Same for all text links there.
-	* Numbered list typography has to be fixed. See, /glem-graphical-lcd-emulator-c/ & /contact/
-	* Block quotes are ave too small a font and has too much padding in the bottom. Fix this.
-	* Post page author widget link decoration has to be fixed.
-	* Fix comments card CSS. Should fit rest of the the theme, with white back and heading as "Comments"
-	* Fix size of image in sidebar post widgets.
+* Footer first link is treated as heading automatically. Make that a separate div.
+* Tags in post page has some UI overlap.
+* Author name in post page author widget is broken to next line before using the full line.
+* Social icons (sidebar, author widget, author pages) don't have any hover action.
+* Make post list page category link hover to underline text.
+* Post page top right date clip sometimes overlaps text. Add a small margin around it.
+* Footer about section remove hover underline. make it bright on hover. Same for all text links there.
+* Numbered list typography has to be fixed. See, /glem-graphical-lcd-emulator-c/ & /contact/
+* Block quotes are ave too small a font and has too much padding in the bottom. Fix this.
+* Post page author widget link decoration has to be fixed.
+* Fix comments card CSS. Should fit rest of the the theme, with white back and heading as "Comments"
+* Fix size of image in sidebar post widgets.
 
 ### Resources:
 
