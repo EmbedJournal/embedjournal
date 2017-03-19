@@ -18,7 +18,7 @@ main:
 
 static:
   - item: "Authors"
-    url:  "/authors"
+    url:  "/authors/"
   - item: "About"
     url:  "/about/"
   - item: "contact"
@@ -31,8 +31,8 @@ footer_policies:
     url:  "/disclaimer/"
   - item: "Sitemap"
     url:  "/sitemap.xml"
-  - item: "RSS Feed"
-    url:  "/feed.xml"
+  - item: "FAQ"
+    url:  "/faq/"
 
 footer_pages:
   - item: "Guest Blogging"
@@ -41,5 +41,5 @@ footer_pages:
     url:  "/authors"
   - item: "About"
     url:  "/about/"
-  - item: "contact"
+  - item: "Contact"
     url:  "/contact/"

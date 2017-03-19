@@ -3,7 +3,7 @@ EmbedJournal Jekyll Template
 
 ### Installation:
 
-	* TBD in the near future.
+* TBD in the near future.
 
 ### Notes:
 
@@ -35,10 +35,11 @@ Notes for AlphaWebLab:
 * Post page author widget link decoration has to be fixed.
 * Fix comments card CSS. Should fit rest of the the theme, with white back and heading as "Comments"
 * Fix size of image in sidebar post widgets.
+* Fix CSS of faq page. Add spacing and make the accordian like in shootitshort. Add arrows in right like this https://codepen.io/tofanelli/pen/waadRY 
 
 ### Resources:
 
-	**Mailchimp Form:**
+**Mailchimp Form:**
 ```html
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
