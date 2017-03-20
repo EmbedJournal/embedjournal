@@ -3,6 +3,6 @@ title: "Review"
 paginate:
   limit: false
   category: "Review"
-permalink: "/category/reviews/"
+permalink: "/category/review/"
 layout: category-list
 ---
