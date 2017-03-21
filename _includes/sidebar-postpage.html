@@ -83,7 +83,7 @@
         {% if forloop.first %}
                         <div class="panel-heading" role="tab" id="heading-{{this_year}}">
                             <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{this_year}}" aria-expanded="false" aria-controls="collapse{{this_year}}">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{this_year}}" aria-expanded="false" aria-controls="collapse{{this_year}}" class="collapsed">
                                     <span class="fa fa-folder"></span> {{this_year}}
                                 </a>
                             </h4>
@@ -104,7 +104,7 @@
                         </div>
                         <div class="panel-heading" role="tab" id="heading-{{next_year}}">
                             <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{next_year}}" aria-expanded="false" aria-controls="collapse-{{next_year}}">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{next_year}}" aria-expanded="false" aria-controls="collapse-{{next_year}}" class="collapsed">
                                     <span class="fa fa-folder"></span> {{ next_year }}
                                 </a>
                             </h4>
