@@ -114,7 +114,7 @@
                                 <ul class="b-panelItems">
             {% assign post_count = 0 %}
         {% else %}
-            {% capture post_count %}{{ post_count | plus:1 }}{% endcapture %}   
+            {% capture post_count %}{{ post_count | plus:1 }}{% endcapture %}
             {% if this_month != next_month %}
                         <li><a href="{{ site.baseurl }}/archives/{{ this_year }}/{{ next_month_num }}"><span class="fa fa-folder-outline"></span> {{ this_month }} <span class="b-badge">{{ post_count }}</span></a></li>
             {% assign post_count = 0 %}
@@ -140,7 +140,7 @@
             </a>
         </div>
         <div class="media-body">
-            <a href="{{ image-path }}/{{ post.thumbnail }}"><h4 class="media-heading">{{ post.title }}</h4></a>
+            <a href="{{ post.url | relative_url }}"><h4 class="media-heading">{{ post.title }}</h4></a>
             <p class="b-dateLabel">{{ post.date | date: "%b %-d, %Y" }}</p>
         </div>
     </div>
@@ -150,7 +150,7 @@
 <!-- Popular page widget -->
 <div class="b-popularPost">
     <h3>Popular Posts</h3>
-    {% assign posts = site.posts | where: 'popular_post', 'true' %} 
+    {% assign posts = site.posts | where: 'popular_post', 'true' %}
     {% for post in posts limit:10 %}
     <div class="media">
         <div class="media-left">
@@ -160,7 +160,7 @@
             </a>
         </div>
         <div class="media-body">
-            <a href="{{ image-path }}/{{ post.thumbnail }}"><h4 class="media-heading">{{ post.title }}</h4></a>
+            <a href="{{ post.url | relative_url }}"><h4 class="media-heading">{{ post.title }}</h4></a>
             <p class="b-dateLabel">{{ post.date | date: "%b %-d, %Y" }}</p>
         </div>
     </div>

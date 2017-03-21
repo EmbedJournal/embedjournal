@@ -113,6 +113,16 @@ layout: default
 	            </ul>
 	        </div>
 
+            <!-- Post navigation -->
+            <div class="c-postNav">
+                <div class="b-navPrev">
+                    <a href="#" class="btn btn-green"><span class="fa fa-angle-double-left"></span> Previous Article</a>
+                </div>
+                <div class="b-navNext">
+                    <a href="#" class="btn btn-green">Next Article <span class="fa fa-angle-double-right"></span></a>
+                </div>
+            </div>
+
 	        <!-- Related articles -->
 			<div class="c-relatedArticle">
 				<h3>Related Articles</h3>
@@ -145,7 +155,7 @@ layout: default
 			{% if site.disqus %}
 				<!-- Load comments button -->
 				<div class="c-loadComment">
-					<div class="btn btn-soft"><span class="fa fa-commenting-o"></span> Load comments</div>
+					<div class="btn btn-soft js-loadComment"><span class="fa fa-commenting-o"></span> Load comments</div>
 				</div>
 				<div id="disqus_thread"></div>
 				<script type="text/javascript">

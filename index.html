@@ -23,7 +23,7 @@ layout: default
                                 </a>
                             </div>
                             <div class="b-postDesc">
-                                <a href="{{ post.url | relative_url }}" title="{{ post.title }}"><h4>{{ post.title }}</h4></a>
+                                <a href="{{ post.url | relative_url }}" title="{{ post.title }}" class="e-title"><h4>{{ post.title }}</h4></a>
                                 <div class="c-postInfo">
                                     <div class="b-author">
                                         {% assign author = site.data.authors[post.author] %}
@@ -33,7 +33,7 @@ layout: default
                                         <p>
                                             <span class="fa fa-folder"></span>
                                             {% for category in post.categories %}
-                                                <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}{% unless forloop.last %}</a>, {% endunless %}
+                                                <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}</a>{% unless forloop.last %},{% endunless %}
                                             {% endfor %}
                                         </p>
                                     </div>
@@ -73,7 +73,7 @@ layout: default
                                 </a>
                             </div>
                             <div class="b-postDesc">
-                                <a href="{{ post.url | relative_url }}" title="{{ post.title }}"><h4>{{ post.title }}</h4></a>
+                                <a href="{{ post.url | relative_url }}" title="{{ post.title }}" class="e-title"><h4>{{ post.title }}</h4></a>
                                 <div class="c-postInfo">
                                     <div class="b-author">
                                         {% assign author = site.data.authors[post.author] %}
@@ -83,7 +83,7 @@ layout: default
                                         <p>
                                             <span class="fa fa-folder"></span>
                                             {% for category in post.categories %}
-                                                <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}{% unless forloop.last %}</a>, {% endunless %}
+                                                <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
                                             {% endfor %}
                                         </p>
                                     </div>
@@ -124,7 +124,7 @@ layout: default
                                 </a>
                             </div>
                             <div class="b-postDesc">
-                                <a href="{{ post.url | relative_url }}" title="{{ post.title }}"><h4>{{ post.title }}</h4></a>
+                                <a href="{{ post.url | relative_url }}" title="{{ post.title }}" class="e-title"><h4>{{ post.title }}</h4></a>
                                 <div class="c-postInfo">
                                     <div class="b-author">
                                         {% assign author = site.data.authors[post.author] %}
@@ -134,7 +134,7 @@ layout: default
                                         <p>
                                             <span class="fa fa-folder"></span>
                                             {% for category in post.categories %}
-                                                <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}{% unless forloop.last %}</a>, {% endunless %}
+                                                <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
                                             {% endfor %}
                                         </p>
                                     </div>
@@ -175,7 +175,7 @@ layout: default
                                 </a>
                             </div>
                             <div class="b-postDesc">
-                                <a href="{{ post.url | relative_url }}" title="{{ post.title }}"><h4>{{ post.title }}</h4></a>
+                                <a href="{{ post.url | relative_url }}" title="{{ post.title }}" class="e-title"><h4>{{ post.title }}</h4></a>
                                 <div class="c-postInfo">
                                     <div class="b-author">
                                         {% assign author = site.data.authors[post.author] %}
@@ -185,7 +185,7 @@ layout: default
                                         <p>
                                             <span class="fa fa-folder"></span>
                                             {% for category in post.categories %}
-                                                <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}{% unless forloop.last %}</a>, {% endunless %}
+                                                <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
                                             {% endfor %}
                                         </p>
                                     </div>
