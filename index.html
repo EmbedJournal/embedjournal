@@ -24,6 +24,9 @@ layout: default
                             </div>
                             <div class="b-postDesc">
                                 <a href="{{ post.url | relative_url }}" title="{{ post.title }}" class="e-title"><h4>{{ post.title }}</h4></a>
+                                <div class="b-dateLabel">
+                                    {{ post.date | date: "%b %-d, %Y" }}
+                                </div>
                                 <div class="c-postInfo">
                                     <div class="b-author">
                                         {% assign author = site.data.authors[post.author] %}
@@ -46,9 +49,6 @@ layout: default
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="b-dateLabel">
-                                {{ post.date | date: "%b %-d, %Y" }}
                             </div>
                         </div>
                     {% endfor %}

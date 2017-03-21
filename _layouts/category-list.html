@@ -20,6 +20,9 @@ layout: default
 				    </div>
 				    <div class="b-postDesc">
 				        <a href="{{ post.url | relative_url }}" title="{{ post.title }}" class="e-title"><h4>{{ post.title }}</h4></a>
+                        <div class="b-dateLabel">
+    				        {{ post.date | date: "%b %-d, %Y" }}
+    				    </div>
 				        <p>{{ post.content | strip_html | truncatewords:50 }}</p>
 				        <div class="c-postInfo">
 				            <div class="b-author">
@@ -43,9 +46,6 @@ layout: default
 				                </ul>
 				            </div>
 				        </div>
-				    </div>
-				    <div class="b-dateLabel">
-				        {{ post.date | date: "%b %-d, %Y" }}
 				    </div>
 				</div>
 				{% endif %}
