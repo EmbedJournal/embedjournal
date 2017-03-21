@@ -33,7 +33,7 @@ paginate:
 				                <p>
 				                    <span class="fa fa-folder"></span>
 				                    {% for category in post.categories %}
-				                        <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}{% unless forloop.last %}</a>, {% endunless %}
+				                        <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
 				                    {% endfor %}
 				                </p>
 				            </div>
