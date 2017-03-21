@@ -49,6 +49,11 @@ $(document).ready(function() {
     // jquery code here
     $('.l-main').addClass('-fadeIn');
 
+
+    $('#disqus_thread').bind('DOMNodeInserted DOMNodeRemoved', function() {
+        $(this).css('padding', 16);
+    });
+
     $('.js-expand').addClass('-expand');
 
     $('.js-categoryNav .hasSubmenu > a').click(function(e){

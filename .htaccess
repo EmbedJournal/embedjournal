@@ -1,4 +1,3 @@
-# permanent redirects
 redirect 301 /author /authors
 redirect 301 /how-to /category/how-to
 redirect 301 /generalposts /category/general-posts
@@ -27,3 +26,5 @@ redirect 301 /embed-journal-about /about
 redirect 301 /siddharth-chandraskearan /authors/siddharth-chandraskearan
 redirect 301 /0-to-99-counter-using-7-segment-displays-based-on-external-events /external-event-counter-seven-segment-displays
 redirect 301 /pc-does-not-have-serial-port-maybe-it-does /pc-serial-port-not-dead
+
+ErrorDocument 404 /404.html

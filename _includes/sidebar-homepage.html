@@ -83,7 +83,7 @@
         {% if forloop.first %}
                         <div class="panel-heading" role="tab" id="heading-{{this_year}}">
                             <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{this_year}}" aria-expanded="false" aria-controls="collapse{{this_year}}">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{this_year}}" aria-expanded="false" aria-controls="collapse{{this_year}}" class="collapsed">
                                     <span class="fa fa-folder"></span> {{this_year}}
                                 </a>
                             </h4>
@@ -104,7 +104,7 @@
                         </div>
                         <div class="panel-heading" role="tab" id="heading-{{next_year}}">
                             <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{next_year}}" aria-expanded="false" aria-controls="collapse-{{next_year}}">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{next_year}}" aria-expanded="false" aria-controls="collapse-{{next_year}}" class="collapsed">
                                     <span class="fa fa-folder"></span> {{ next_year }}
                                 </a>
                             </h4>
@@ -114,7 +114,7 @@
                                 <ul class="b-panelItems">
             {% assign post_count = 0 %}
         {% else %}
-            {% capture post_count %}{{ post_count | plus:1 }}{% endcapture %}   
+            {% capture post_count %}{{ post_count | plus:1 }}{% endcapture %}
             {% if this_month != next_month %}
                         <li><a href="{{ site.baseurl }}/archives/{{ this_year }}/{{ next_month_num }}"><span class="fa fa-folder-outline"></span> {{ this_month }} <span class="b-badge">{{ post_count }}</span></a></li>
             {% assign post_count = 0 %}

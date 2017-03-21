@@ -21,7 +21,7 @@ static:
     url:  "/authors/"
   - item: "About"
     url:  "/about/"
-  - item: "contact"
+  - item: "Contact"
     url:  "/contact/"
 
 footer_policies:
