@@ -50,6 +50,7 @@ gems:
   - jekyll-sitemap
   - jekyll-archives
   - octopress-paginate
+  - octopress-render-code
 
 exclude:
   - Gemfile
@@ -69,4 +70,4 @@ jekyll-archives:
     month: "/archives/:year/:month/"
     tag:   "/tag/:name/"
 
-
+code_dir: /assets/code

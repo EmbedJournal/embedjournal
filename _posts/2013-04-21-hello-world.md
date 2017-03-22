@@ -10,9 +10,11 @@ categories: [ "General Posts" ]
 tags: [ "Intro" ]
 ---
 
-{% include image.html src="hello-world.jpg" caption="yet another hello world" %}
+There is always a convention, and I don't plan on violating any today.
 
-There you go! the age old thing to start off anything with. I don't plan on violating any conventions today.
+{% render_code hello-world.c lang:c %}
+
+There you go! the age old thing to start off anything with - a hello world.
 
 Welcome to EmbedJournal! a tech blog on embedded systems, Linux, and ofcourse some random electronics.
 

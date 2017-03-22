@@ -88,9 +88,9 @@ Download the Busybox source from [here:](https://busybox.net/downloads/busybox-1
 
 Extract the tarball using following command
 
-{% highlight shell %}
+``` shell
 $ tar -xvf busybox-1.24.1.tar.bz2
-{% endhighlight %}
+```
 
 Then, cross compile the source for ARM platform using the following commands.
 
