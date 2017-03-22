@@ -55,8 +55,8 @@ layout: default
 					<div class="b-postItem">
 					    <div class="b-postImg">
 					        <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
-					            {% capture image-path %}{{ site.baseurl }}/images/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/post-thumb.jpg{% endcapture %}
-					            <img src="{{ image-path }}" alt="{{ post.title }}">
+					            {% capture image-path %}{{ site.baseurl }}/images/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}{% endcapture %}
+					            <img src="{{ image-path }}/{{ post.thumbnail }}" alt="{{ post.title }}">
 					        </a>
 					    </div>
 					    <div class="b-postDesc">
@@ -65,7 +65,7 @@ layout: default
 					        <div class="c-postInfo">
 					            <div class="b-author">
 					                {% assign author = site.data.authors[post.author] %}
-					                <p>By <a href="{{ site.baseurl }}/author/{{ author.full_name | slugify }}">{{ author.name }}</a></p>
+					                <p>By <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}">{{ author.name }}</a></p>
 					            </div>
 					            <div class="b-category">
 					                <p>

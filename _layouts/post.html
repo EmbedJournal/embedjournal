@@ -17,7 +17,7 @@ layout: default
 					</div>
 					<div class="c-postInfo">
 						<div class="b-author">
-							<p>By <a href="{{ site.baseurl }}/author/{{ author.full_name | slugify }}">{{ author.name }}</a></p>
+							<p>By <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}">{{ author.name }}</a></p>
 						</div>
 						<div class="b-category">
 							<p>
@@ -125,27 +125,24 @@ layout: default
             <!-- Post navigation -->
             <div class="c-postNav">
                 <div class="b-navPrev">
-                    <a href="#" class="btn btn-green"><span class="fa fa-angle-double-left"></span> Previous Article</a>
+                    <a href="{{ page.next.url }}" class="btn btn-green"><span class="fa fa-angle-double-left"></span> Previous Article</a>
                 </div>
                 <div class="b-navNext">
-                    <a href="#" class="btn btn-green">Next Article <span class="fa fa-angle-double-right"></span></a>
+                    <a href="{{ page.previous.url }}" class="btn btn-green">Next Article <span class="fa fa-angle-double-right"></span></a>
                 </div>
             </div>
 
 	        <!-- Related articles -->
+	        <!-- 
 			<div class="c-relatedArticle">
 				<h3>Related Articles</h3>
 				<div class="b-relatedArticle">
-
-					<!-- Single block start -->
 					<div class="media">
 	                	<div class="media-body">
 	                		<a href="#"><h4 class="media-heading">Make a Simple RC (Remote Controlled) Robot Car</h4></a>
 	                        <p class="b-dateLabel">May 5, 2016</p>
 	                	</div>
 	                </div>
-					<!-- Single block end -->
-
 					<div class="media">
 	                	<div class="media-body">
 	                		<a href="#"><h4 class="media-heading">Make a Simple RC (Remote Controlled) Robot Car</h4></a>
@@ -159,7 +156,7 @@ layout: default
 	                	</div>
 	                </div>
 				</div>
-			</div>
+			</div> -->
 
 			{% if site.disqus %}
 				<!-- Load comments button -->
