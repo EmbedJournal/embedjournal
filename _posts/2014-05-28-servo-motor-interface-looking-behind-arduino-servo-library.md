@@ -30,67 +30,16 @@ To begin with, servo motors expect one pulse for every 20ms (which is 50 times a
 
 Now that we know the width of the pulse is what that matters, we have to get into it. Please note that this data is just an approximation to help you understand the logic. The minimum and maximum timings for the pulse varies from one servo to another and it's all dependent on the manufactures. Like always, read the datasheet that came with your motor.
 
-<table class="aligncenter" style="width: 60%;" border="5" frame="box" rules="all" cellspacing="0" align="CENTER">
-  <tr>
-    <td width="312">
-      <strong>Pulse Width</strong>
-    </td>
-    
-    <td width="312">
-      <strong>Servo Horn Position</strong>
-    </td>
-  </tr>
-  
-  <tr>
-    <td width="312">
-      At 1ms
-    </td>
-    
-    <td width="312">
-      0 degree
-    </td>
-  </tr>
-  
-  <tr>
-    <td width="312">
-      From 1ms to 1.5ms
-    </td>
-    
-    <td width="312">
-      0 degree to 90 degrees
-    </td>
-  </tr>
-  
-  <tr>
-    <td width="312">
-      At 1.5ms
-    </td>
-    
-    <td width="312">
-      90 degrees
-    </td>
-  </tr>
-  
-  <tr>
-    <td width="312">
-      From 1.5ms to 2ms
-    </td>
-    
-    <td width="312">
-      90 degrees to 180 degrees
-    </td>
-  </tr>
-  
-  <tr>
-    <td width="312">
-      At 2ms
-    </td>
-    
-    <td width="312">
-      180 degrees
-    </td>
-  </tr>
-</table>
+|-------------------+----------------------------|
+|Pulse Width        | Servo Horn Position        |
+|-------------------+----------------------------|
+|At 1ms             |  0 degree                  |
+|From 1ms to 1.5ms  |   0 degree to 90 degrees   |
+|At 1.5ms           |  90 degrees                | 
+|From 1.5ms to 2ms  |  90 degrees to 180 degrees |
+|At 2ms             | 180 degrees                |
+|-------------------+----------------------------|
+{: .table .table-bordered }
 
 Sometimes the pulse range can be from 0.5ms to 2.5ms. This is the reason why Arduino has a feature to set the minimum and maximum pulse duration.
 
@@ -110,8 +59,6 @@ As promised earlier we will get to the programming logic without any more chit c
 
 It's kind of hard to explain the concept in writing so I made a video explaining the logic.
 
-
-
 I hope that the video explained the programming concept very clearly. If you have any questions regarding the details presented in the video please leave a comment and I will get back to you ASAP.
 
 Now assuming that you have made a program that will interrupt every 0.1ms, all you have to do is to have an up counter variable that counts from 1 to 200 (which is from 0.1ms to 20ms). Then have another variable inside the ISR which will hold the data for the pulse width.
@@ -122,19 +69,19 @@ Every time, the counter variable value becomes equal to the width variable's val
 
 Assuming you have configured the timer interrupt to fire at 0.1ms and you have defined the variable count and widthCount, here is how you ISR should look like.
 
-<pre class="lang:c decode:true">void interrupt timerISR(void)
+``` c
+void interrupt timerISR(void)
 {
-  if(timer_interrupt_flag)
-  {
-    count++;
-    if (count > 200){
-      count = 0;
-      serovoPin = 0;
+    if(timer_interrupt_flag) {
+        count++;
+        if (count > 200) {
+            count = 0;
+            serovoPin = 0;
+        }
+        if (count == widthCount)
+            servoPin = 1; 
     }
-    if (count == widthCount)
-      servoPin = 1; 
-  }
 }
-</pre>
+```
 
 I hope the write up was to the point without any confusions. If you have any questions/suggestions, please leave a comment here and I will respond at best. In my future posts I will demonstrate the working of a servo motor with the logic explained above.

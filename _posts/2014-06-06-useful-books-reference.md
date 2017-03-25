@@ -125,19 +125,3 @@ Roland Siegwart, Illah R. Mourbakhsh
 **Principles of Robot Motion: Theory, Algorithms, and Implementations**
   
 Howie Choset, Kevin M. Lynch, Seth Hutchinson, George A. Kantor, Wolfram Burgard, Lydia E. Kavraki, Sebastian Thrun
-
-## Get Our Monthly Free Download
-
-We do give out some monthly freebies! Subscribe to our mailing list now and don't miss a single give away!!
-
-<p style="color: #292929;">
-  <strong>Your email is safe with us!</strong>
-</p>
-
-<p style="color: #292929;">
-  We will keep your email safely locked away from the spammers!
-</p>
-
-<p style="color: #292929;">
-  Also you don't have to worry about a dozen emails in your inbox when you log in! Atmost, you will get a coupe of mails in a week and we are sure you will love it!.
-</p>

@@ -32,8 +32,6 @@ Wait, all is not lost!
 
 Some popular alternatives are USB to Serial converters such as [FTDI's FT232](http://www.ftdichip.com/Products/ICs/FT232R.htm)A or [Silicon lab's CP10x](https://www.silabs.com/products/interface/usb-bridges/Pages/usb-bridges.aspx) to emulate a serial port through USB on our new computers. I mentioned these two as they are the most popular chips.
 
-<span style="text-decoration: underline;">Dishonorable mention:</span> There is this third USB to serial converter from the infamous Prolific Technologies Inc. Those were the dark days when I was forced to go on a wild goose chase looking for the ever-eluding prolific USB serial driver.
-
 There are some other not-so-popular alternatives such as, a PCI/PCIExpress card to achieve the same functionality. Apart from this, the USB standard advertises a [Communications Device Class (CDC)](https://en.wikipedia.org/wiki/USB_communications_device_class) which didn't kick off very well for a lot of reasons.
 
 ### Can we do something about this?
@@ -42,11 +40,7 @@ Like I said, most of the processors and controllers, come with UART. The enginee
 
 I opened my computer one day for cleaning and noticed that there were a lot unsoldered connectors on my motherboard (an Asus P7H55 MLX). Force of habit, I was looking through the silk screen for names when I came across the pads for a 10 pin box connector named aEURoeCOM 2aEUR.
 
-<div class="box warning  aligncenter">
-  <div class="box-inner-block">
-    <i class="fa tie-shortcode-boxicon"></i> Following this method can damage your motherboard and/or void your warranty. Do this at your own risk. Also, the connector on the motherboards are not RS232 levels They are raw 3.3v logic signals.
-  </div>
-</div>
+**Alert:** Following this method can damage your motherboard and/or void your warranty. Do this at your own risk. Also, the connector on the motherboards are not RS232 levels They are raw 3.3v logic signals.
 
 My hand automatically reached out for the soldering iron and in no time I had the box connector in place and a 10 pin FRC wire pushed on to it.
 

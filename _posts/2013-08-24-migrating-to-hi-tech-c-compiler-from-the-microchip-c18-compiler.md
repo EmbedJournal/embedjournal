@@ -10,13 +10,13 @@ categories: [ "Microchip PIC" ]
 tags: [ "Tools" ]
 ---
 
-Migrating to <a title="Visit Microchip Product Page" href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1406&dDocName=en535448" target="_blank">HI-TECH C compiler</a> for PIC MCU is not really a hard task. The developers have taken much care in keeping it that way. In addition to the existing features of the C18 compiler, there are a lot of other added features in the HI-TECH C compiler. This post will give you an introduction to the compiler, its features and how to write C programs in it.
+Migrating to [HI-TECH C compiler](http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1406&dDocName=en535448) for PIC MCU is not really a hard task. The developers have taken much care in keeping it that way. In addition to the existing features of the C18 compiler, there are a lot of other added features in the HI-TECH C compiler. This post will give you an introduction to the compiler, its features and how to write C programs in it.
 
-This compiler can be used to program all 8 bit PIC MCUs. There is one compiler for <a title="Download Compiler Here" href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1406&dDocName=en542861" target="_blank">PIC 18</a> series and another for <a title="Download Compiler Here" href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1406&dDocName=en542849" target="_blank">PIC 10/12/16</a> series. You can choose the compiler based on the family of controller that you are working with. Most of the time the code is interchangeable between the compilers, only the device specific references such as the configuration bits and SFRs may differ.
+This compiler can be used to program all 8 bit PIC MCUs. There is one compiler for [PIC 18](http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1406&dDocName=en542861) series and another for [PIC 10/12/16](http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&nodeId=1406&dDocName=en542849) series. You can choose the compiler based on the family of controller that you are working with. Most of the time the code is interchangeable between the compilers, only the device specific references such as the configuration bits and SFRs may differ.
 
 ### Why the HI-TECH C compiler?
 
-<img class="aligncenter size-full wp-image-1813" src="/images/posts/2013/08/HTSoft.gif" alt="HI-TECH C compiler Logo" width="420" height="136" />
+{% include image.html src="HTSoft.gif" %}
   
 The Microchip C18 compiler has been around for quite some time and has a lot documentation and device specific library functions. Yet, I feel that the HI-TECH C compiler is much more elegant and easy to program. Some of the major features are listed below.
 
@@ -46,7 +46,8 @@ After this its the user's space and you can add code and include custom header f
 
 Timer 0 is configured to interrupt every 20 milliseconds. In the ISR the LED pin (RD0) is toggled every 5th time the interrupt occurs. hence this gives a delay of 100 milliseconds.
 
-<pre>#include<htc.h>
+``` c
+#include<htc.h>
 #pragma config OSC=HS,WDT=OFF,FCMEN=ON,XINST=OFF,IESO=OFF,LVP=OFF
 
 void interrupt Timer_ISR(void)
@@ -88,6 +89,7 @@ void main()
     while(1){
     // do nothing here the ISR will handle the bit toggle
     }
-}</pre>
+}
+```
 
 I hope this post was, to an extent, helpful in getting started with developing embedded software with HI-TECH C compiler.

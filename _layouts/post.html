@@ -125,10 +125,13 @@ layout: default
             <!-- Post navigation -->
             <div class="c-postNav">
                 <div class="b-navPrev">
-                    <a href="{{ page.next.url }}" class="btn btn-green"><span class="fa fa-angle-double-left"></span> Previous Article</a>
+                    <a href="{{ page.next.url }}" class="btn btn-green"><span class="fa fa-angle-double-left"></span> Older Post</a>
                 </div>
+                <div class="c-loadComment">
+					<div class="btn btn-soft js-loadComment"><span class="fa fa-commenting-o"></span> Show Discussions</div>
+				</div>
                 <div class="b-navNext">
-                    <a href="{{ page.previous.url }}" class="btn btn-green">Next Article <span class="fa fa-angle-double-right"></span></a>
+                    <a href="{{ page.previous.url }}" class="btn btn-green">Newer Post <span class="fa fa-angle-double-right"></span></a>
                 </div>
             </div>
 
@@ -160,9 +163,6 @@ layout: default
 
 			{% if site.disqus %}
 				<!-- Load comments button -->
-				<div class="c-loadComment">
-					<div class="btn btn-soft js-loadComment"><span class="fa fa-commenting-o"></span> Load comments</div>
-				</div>
 				<div id="disqus_thread"></div>
 				<script type="text/javascript">
 					var disqus_config = function () {

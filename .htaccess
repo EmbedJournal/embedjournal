@@ -1,9 +1,69 @@
-redirect 301 /author /authors
+ErrorDocument 404 /404.html
+
+# ----------------------------------------------------------------------
+# Cache-Control and expires
+# ----------------------------------------------------------------------
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access 1 year"
+    ExpiresByType image/jpeg "access 1 year"
+    ExpiresByType image/gif "access 1 year"
+    ExpiresByType image/png "access 1 year"
+    ExpiresByType text/css "access 1 month"
+    ExpiresByType text/html "access 1 month"
+    ExpiresByType application/pdf "access 1 month"
+    ExpiresByType text/x-javascript "access 1 month"
+    ExpiresByType application/x-shockwave-flash "access 1 month"
+    ExpiresByType image/x-icon "access 1 year"
+    ExpiresDefault "access 1 month"
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header set Connection keep-alive
+    <filesmatch "\.(ico|flv|gif|swf|eot|woff|otf|ttf|svg)$">
+        Header set Cache-Control "max-age=2592000, public"
+    </filesmatch>
+    <filesmatch "\.(jpg|jpeg|png)$">
+        Header set Cache-Control "max-age=1209600, public"
+    </filesmatch>
+    <filesmatch "\.(eot|woff|otf|ttf|svg)$">
+        Header set Cache-Control "max-age=2592000, public"
+    </filesmatch>
+    # css and js should use private for proxy caching https://developers.google.com/speed/docs/best-practices/caching#LeverageProxyCaching
+    <filesmatch "\.(css)$">
+        Header set Cache-Control "max-age=31536000, private"
+    </filesmatch>
+    <filesmatch "\.(js)$">
+        Header set Cache-Control "max-age=1209600, private"
+    </filesmatch>
+    <filesMatch "\.(x?html?|php)$">
+        Header set Cache-Control "max-age=600, private, must-revalidate"
+      </filesMatch>
+</IfModule>
+
+# ----------------------------------------------------------------------
+# GZIP Compression
+# ----------------------------------------------------------------------
+
+SetOutputFilter DEFLATE
+AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript application/x-httpd-php
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
+SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip
+
+# ----------------------------------------------------------------------
+# Permanent Redirection
+# ----------------------------------------------------------------------
+
 redirect 301 /how-to /category/how-to
 redirect 301 /generalposts /category/general-posts
 redirect 301 /circuit_design /category/hardware
 redirect 301 /latest-news /category/news
 redirect 301 /linux /category/linux
+redirect 301 /programming-2 /category/programming
 
 redirect 301 /tech-review/embedded-software /category/review
 redirect 301 /tech-review/embedded-hardware /category/review
@@ -23,8 +83,10 @@ redirect 301 /embedjournal-about /about
 redirect 301 /about-embedjournal /about
 redirect 301 /embed-journal-about /about
 
-redirect 301 /siddharth-chandraskearan /authors/siddharth-chandraskearan
+redirect 301 /siddharth-chandrasekaran /authors/siddharth-chandrasekaran
+redirect 301 /author/siddharth /authors/siddharth-chandrasekaran
+redirect 301 /author/manivannan /authors/mani-sadhashivam
+redirect 301 /author /authors
+
 redirect 301 /0-to-99-counter-using-7-segment-displays-based-on-external-events /external-event-counter-seven-segment-displays
 redirect 301 /pc-does-not-have-serial-port-maybe-it-does /pc-serial-port-not-dead
-
-ErrorDocument 404 /404.html

@@ -248,7 +248,7 @@
 	{% include image.html src="breadboard-breakout-top.jpg" %}
 
 2013-08-12-interface-7-segment-display-with-microcontroller
-	{% include image.html src="circuit1-1376228810115.png" %}
+	{% include image.html src="7-segment-multiplexed.png" %}
 	{% include image.html src="common-anode-cathode-schematic.png" %}
 	{% include image.html src="seven-segment.png" %}
 
@@ -279,7 +279,7 @@
 	{% include image.html src="mplab-x-create-5.png" %}
 	{% include image.html src="mplab-x-create-6.png" %}
 	{% include image.html src="mplab-x-create-7.png" %}
-	{% include image.html src="mplab-x-debugger.png" %}
+	{% include image.html src="mplab-x-debuging-window.png" %}
 	{% include image.html src="mplab-x-new-file-1.png" %}
 	{% include image.html src="mplab-x-new-fine-2.png" %}
 	{% include image.html src="mplab-x-new-fine-3.png" %}
@@ -293,7 +293,7 @@
 	{% include image.html src="assembly-step-4.jpg" %}
 	{% include image.html src="breadboard-power-diagram.jpg" %}
 	{% include image.html src="breadboard-power-supply-cover.jpg" %}
-	{% include image.html src="discription-1381996749594.jpg" %}
+	{% include image.html src="final-board.jpg" %}
 	{% include image.html src="diy-breadboard-power-supply.jpg" %}
 	{% include image.html src="male-berg-connector.jpg" %}
 

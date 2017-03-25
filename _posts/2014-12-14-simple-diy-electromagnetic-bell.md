@@ -60,6 +60,4 @@ Now all you have to do is setup the bell and hear it working!!
 
 I took the time to make a video of its working and have explained most of the details in the video as well.
 
-
-
 If you have any suggestion/questions, leave them in the comments section below and I will get back to you as soon as possible.

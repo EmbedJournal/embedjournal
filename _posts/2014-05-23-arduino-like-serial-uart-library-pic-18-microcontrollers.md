@@ -10,19 +10,19 @@ categories: [ "Arduino", "Microchip PIC" ]
 tags: [ "Arduino", "Ideas" ]
 ---
 
-In my last post describing the <a title="Implementing Circular Buffer in Embedded C" href="http://embedjournal.com/2014/05/implementing-circular-buffer-embedded-c/" target="_blank">implementation of a circular buffer</a> I mentioned that I was working on a serial UART library for PIC 18. Well it is now completed! Yesterday I tested all the functions of the library and its working like a charm!
+In my last post describing the [implementation of a circular buffer](http://embedjournal.com/2014/05/implementing-circular-buffer-embedded-c/) I mentioned that I was working on a serial UART library for PIC 18. Well it is now completed! Yesterday I tested all the functions of the library and its working like a charm!
 
 In this post I will explain some key aspects of the code and how to download and use it in your code.
 
 ### What is UART?
 
-Universal Asynchronous Receiver and Transmitter is a serial communication protocol. It is an 'asynchronous communication protocol' meaning it does not have a clock line (read about the <a title="Need for Clock Line in Digital Communication" href="http://embedjournal.com/2013/06/need-for-clock/" target="_blank">use of clock line in digital communication protocols</a>) to sync the data transfer.
+Universal Asynchronous Receiver and Transmitter is a serial communication protocol. It is an 'asynchronous communication protocol' meaning it does not have a clock line (read about the [use of clock line in digital communication protocols](http://embedjournal.com/2013/06/need-for-clock/)) to sync the data transfer.
 
 For it to be defined as a protocol we have to have some ground rules so that the transmitter and receiver can understand what each other are trying to say. So that's when we have the baud rate (can be referred to as bit rate or rarely as bandwidth), Start and Stop bits.
 
-I will not go into the details of the serial communication protocol in general it's a post for another day! But if you really can't resist the urge, our friends at <a href="maxembedded.com/2013/09/21/serial-communication-rs232-basics/" target="_blank">MaxEmbedded</a> have done a wonderful job in explaining the basics. Do have look.
+I will not go into the details of the serial communication protocol in general it's a post for another day! But if you really can't resist the urge, our friends at [MaxEmbedded](http://maxembedded.com/2013/09/21/serial-communication-rs232-basics/) have done a wonderful job in explaining the basics. Do have look.
 
-Like I mentioned in my <a title="Implementing Circular Buffer in Embedded C" href="http://embedjournal.com/2014/05/implementing-circular-buffer-embedded-c/" target="_blank">previous post</a>, I wanted the serial transmission and reception to be handled by interrupts and that's exactly how I have done it. The best part is that I have tried to make the functions look and behave mostly like the Arduino serial library.
+Like I mentioned in my [previous post](http://embedjournal.com/2014/05/implementing-circular-buffer-embedded-c/), I wanted the serial transmission and reception to be handled by interrupts and that's exactly how I have done it. The best part is that I have tried to make the functions look and behave mostly like the Arduino serial library.
 
 ### Why use interrupts for reception and not for transmission?
 

@@ -1,3 +1,4 @@
+encoding: utf-8
 title:   "EmbedJournal"
 #host: embedjournal.com
 tagline: "Add a brain to everything with embedded systems"
@@ -12,11 +13,11 @@ description: > # this ignores newlines until next key.
   day to day lives. Even without our knowledge we are using dozens of embedded
   devices.
 
-permalink:     pretty
-markdown:      kramdown
-highlighter:   rougue
+permalink: pretty
+markdown: kramdown
 
 kramdown:
+  input: GFM
   syntax_highlighter: rouge
 
 disqus: embedjournal
@@ -48,9 +49,9 @@ liquid:
 gems:
   - jekyll
   - jekyll-sitemap
+  - jekyll-feed
   - jekyll-archives
   - octopress-paginate
-  - octopress-render-code
 
 exclude:
   - Gemfile
@@ -69,5 +70,3 @@ jekyll-archives:
     year:  "/archives/:year/"
     month: "/archives/:year/:month/"
     tag:   "/tag/:name/"
-
-code_dir: /assets/code

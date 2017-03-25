@@ -61,11 +61,9 @@ The existence of an errata document for a datasheet can be little hard to come b
 
 ### Timing Diagram
 
-The timing diagrams are mostly used for illustrating protocols. The image below is a timing diagram for the <a title="I2C Protocol (2-Wire Interface) in a nut shell" href="http://embedjournal.com/2013/05/two-wire-interface-i2c-protocol-in-a-nut-shell/" target="_blank">I2C protocol</a> that can be found on the Philips's specification of the protocol. They help us visualize the state of the pin with the timer interval. It comes in handy when you sit down and start writing low level drivers for hardware protocol.
+The timing diagrams are mostly used for illustrating protocols. The image below is a timing diagram for the [I2C protocol](http://embedjournal.com/2013/05/two-wire-interface-i2c-protocol-in-a-nut-shell/) that can be found on the Philips's specification of the protocol. They help us visualize the state of the pin with the timer interval. It comes in handy when you sit down and start writing low level drivers for hardware protocol.
 
-{% include image.html src="untitled1-1.png" %}
- 
-  Besides helping you to write your own libraries for the protocols, it also helps you in understanding the interface better and hence help debug, if something was to go wrong. There you go! Yet another aspect to look out for.
+Besides helping you to write your own libraries for the protocols, it also helps you in understanding the interface better and hence help debug, if something was to go wrong. There you go! Yet another aspect to look out for.
 
 
 ### List of associated Registers and their POR values

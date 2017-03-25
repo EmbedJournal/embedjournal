@@ -50,7 +50,7 @@ These are hardware fixes that people have come up with for this issue. This is h
 
 #### What's wrong with this approach?
 
-Unfortunately not all RTC manufactures are as keen in giving you a hardware fix. What if you have an RTC that does not have this feature? what if you had a <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/20002266F.pdf" target="_blank">MCP7941</a> in your design? Why this part? yes, you guessed it. If you are using it and you are lucky you will hit this bug in the initial stages of your testing. If Microchip has this issue then chances are a lot more of them could be having this issue as well.
+Unfortunately not all RTC manufactures are as keen in giving you a hardware fix. What if you have an RTC that does not have this feature? what if you had a [MCP7941](http://ww1.microchip.com/downloads/en/DeviceDoc/20002266F.pdf) in your design? Why this part? yes, you guessed it. If you are using it and you are lucky you will hit this bug in the initial stages of your testing. If Microchip has this issue then chances are a lot more of them could be having this issue as well.
 
 Above all, this fix isn't portable. Tomorrow you may change the RTC and you are back to square one.
 
@@ -58,8 +58,10 @@ Above all, this fix isn't portable. Tomorrow you may change the RTC and you are 
 
 Fortunately for us, there is a simple enough software fix to overcome this. All you have to do is read the time more one more time if the seconds is zero from the last read. So you will have something like this in your get time routine,
 
-<pre class="lang:c decode:true">getRTCTime(&t);
+``` c
+getRTCTime(&t);
 if (t.ss == 0)
-    getRTCTime(&t);</pre>
+    getRTCTime(&t);
+```
 
 This single extra read guarantees that you have the correct time. This takes very little time to implement and it's such a useful feature that  warrants this line in all RTC drivers even if your RTC is nice enough to fix it for you. This additional read is not going to cost you much in terms of performance but most certainly it will help you preserve your sanity.

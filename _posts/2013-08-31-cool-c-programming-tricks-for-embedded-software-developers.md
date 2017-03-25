@@ -18,22 +18,26 @@ Be warned this is just a small collection of routines that will help embedded so
 
 '_Practice and Perfect_' is the unsaid mantra of C. The more you write, the better you get at it. I'm no professional at C. Hence I will not be writing any posts on C programming as such. There are a lot of resources on the internet and books for learning C.
 
-For learning C from it's very basic, I would suggest <a title="Amazon" href="http://www.amazon.com/C-UNIX-Tools-Software-Design/dp/0471309273" target="_blank">C and UNIX: Tools for Software Design by Martin L. Barrett, Clifford H. Wagner</a> The book covers a lot about C and <a title="Compiling C Programs Using GCC" href="http://embedjournal.com/2013/06/compiling-c-programs-using-gcc/" target="_blank">using GCC to compile C programs in a Linux</a> machine. Linux is mostly written in C and hence provides a native environment for the language. If you are really interested, you can find some books and links to follow for getting started with Linux <a title="Getting Started with Linux" href="http://embedjournal.com/2013/07/getting-started-with-linux/" target="_blank">here</a>.
+For learning C from it's very basic, I would suggest [C and UNIX: Tools for Software Design by Martin L. Barrett, Clifford H. Wagner](http://www.amazon.com/C-UNIX-Tools-Software-Design/dp/0471309273) The book covers a lot about C and [using GCC to compile C programs in a Linux](http://embedjournal.com/2013/06/compiling-c-programs-using-gcc/) machine. Linux is mostly written in C and hence provides a native environment for the language. If you are really interested, you can find some books and links to follow for getting started with Linux [here](http://embedjournal.com/2013/07/getting-started-with-linux/).
 
 #### Rotate left or right in C
 
 In assembly there are direct instruction for rotate left and rotate right. But in C there is no straight forward method to do so. Here is a snippet that will let you do just that. And the best part is that, PIC C compiler will automatically know what you are trying to do and will replace this line of C with the corresponding assembly instruction.
 
-<pre class="lang:c decode:true">val = ( (val >> 1) | (val << 7) );</pre>
+``` c
+val = ( (val >> 1) | (val << 7) );
+```
 
-The <span class="lang:c decode:true  crayon-inline ">val << 7</span> is used as I assumed an 8 bit variable is being rotated. If you were to rotate a 16 bit value , use <span class="lang:c decode:true  crayon-inline ">val << 15</span>instead.
+The `val << 7` is used as I assumed an 8 bit variable is being rotated. If you were to rotate a 16 bit value , use `val << 15` instead.
 
 #### Bit Set and Bit Clear in Macro
 
 In embedded software applications, we will always will be setting and clearing bits. Some of us feel like using the mask and set/clear strategy each time there is a need to set and clear bits. But when working with 32 bit systems (ARM), it is not practical to write masks each time we need to set/clear a single bit. That's when functions are written to handle this. But having a function will occupy memory. A better alternative for this is to have code macros to take care of this at compile time.
 
-<pre class="lang:c decode:true">#define BitSet ( var, bitnum ) ( (var) |= 1UL << (bitnum) )
-#define BitClr ( var, bitnum ) ( (var) &= ~(1UL << (bitnum) ) )</pre>
+``` c
+#define BitSet ( var, bitnum ) ( (var) |= 1UL << (bitnum) )
+#define BitClr ( var, bitnum ) ( (var) &= ~(1UL << (bitnum) ) )
+```
 
 You can use this function in you program like this, BitSet( myVar, 5); this will set bit 5 of myVar. Similarly BitClr(myVar,5); will clear bit 5 of myVar.
 
@@ -45,7 +49,8 @@ The bit field is a lesser known feature of the C programming language (at least 
 
 I will take the liberty to assume you have a working knowledge on structures and unions to understand bit fields. The size of a structure is the sum of the size of all its member variables where as in the case of a union, its size is given by the size of its biggest member. Union is used when only either of its member is needed at any time.
 
-<pre class="lang:c decode:true">typedef union {
+``` c
+typedef union {
         uint8_t data;
         struct {
                 uint8_t bit0:1;
@@ -58,7 +63,7 @@ I will take the liberty to assume you have a working knowledge on structures and
                 uint8_t bit7:1;
         };
 }bitF;
-</pre>
+```
 
 Here, you can set the value of data to something and then access each and every bit in the byte by using the variables of the anonymous union bit0 to bit7.
 
@@ -72,9 +77,9 @@ ie., if you have an array test\_arr[5] = { 1, 2, 3, 4, 5 }; then test\_arr is a 
 
 #### Interoperability of array index
 
-In C, if you had an array <span class="lang:c decode:true  crayon-inline ">int arr[5];</span> you could access it with an index 'i' and assign values to it. That is you can write <span class="lang:c decode:true  crayon-inline">arr[i] = 7;</span>
+In C, if you had an array `int arr[5];` you could access it with an index 'i' and assign values to it. That is you can write `arr[i] = 7;`
 
-Turns out you could swap the array names and array index. That means you could write the same statement as <span class="lang:c decode:true  crayon-inline ">i[arr] = j;</span>  and its perfectly valid C code.
+Turns out you could swap the array names and array index. That means you could write the same statement as `i[arr] = j;`  and its perfectly valid C code.
 
 #### Passing an array to functions and returning them
 
@@ -88,7 +93,8 @@ One way is by using a globally declared array and let the functions make use of 
 
 Not clear? consider this case, 2 arrays have to be added in a separate function and store them in another array. Here is how you can do this,
 
-<pre lang="c">int main()
+``` c
+int main()
 {
     int arr1[5] = { 1, 4, 5, 7, 9 };    // Array No 1
     int arr2[5] = { 4, 7, 2, 1, 8 };    // Array No 2
@@ -107,7 +113,8 @@ void add(int *arr1, int *arr2, int *res)
     for (i=0; i<5; i++)     // 5 times again
         *(res+i) = *(arr1+i) + *(arr2+i);   // Adds the two arryas and sotes the 
     // result in the res array. Note: loop index is added to the pointer everytime
-}</pre>
+}
+```
 
 #### What did I miss?
 
@@ -119,8 +126,10 @@ Sometimes I have to swap two variables.
   
 You can avoid using a temporary variable using an EXOR swap like following :
 
-<pre lang="c" class="">a = a ^ b
+``` c
+a = a ^ b
 b = a ^ b
-a = a ^ b</pre>
+a = a ^ b
+```
 
-Wow, that is a really cool trick! You can now swap variables without using the conventional <span class="lang:c decode:true crayon-inline">temp = a; a = b; b = temp;</span>. As vijay pointed out, you could also do it in one line as, <span class="lang:c decode:true crayon-inline">a ^= b ^= a ^= b;</span> which looks sleek but is rather cryptic.
+Wow, that is a really cool trick! You can now swap variables without using the conventional `temp = a; a = b; b = temp;`. As vijay pointed out, you could also do it in one line as, `a ^= b ^= a ^= b;` which looks sleek but is rather cryptic.

@@ -51,7 +51,7 @@ So, 2 PN junction diodes in series is your best bet at getting a reasonably accu
 
 To get the actual system voltage from the ADC, you should do something like this,
 
-<pre class="lang:c decode:true">
+``` c
 #define ADC_MAX_COUNT   1023   // 2^10 = 1024
 #define BANDGAP_VOLTAGE 1400   // in mV
 
@@ -59,6 +59,6 @@ float getSystemVoltage()
 {
   return ((float)ADC_MAX_COUNT/getRawAdcValue() * (float)BANDGAP_VOLTAGE);
 }
-</pre>
+```
 
 I have defined two macros so that you do not have to change anything in the code. All you have to do is change the appropriate values in the first two lines (ofcourse you have to write your own implementation for getRawAdcValue). Note, the band gap voltage is expressed in millivolts.

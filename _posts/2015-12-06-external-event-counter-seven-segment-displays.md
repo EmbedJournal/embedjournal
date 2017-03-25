@@ -29,7 +29,7 @@ So if you write 1 to the data bus and enable the first segment, you will have to
 
 If you did it correctly, you should see a static 1234 appear over the 4 digits of the 7 segment display. This is how you should program the above logic.
 
-{% highlight c %}
+``` c
 #include <xc.h>
 #include <stdint.h>
 #include "delays.h"
@@ -44,7 +44,7 @@ If you did it correctly, you should see a static 1234 appear over the 4 digits o
 
 void main()
 {
-    uint8_t	lookup[] = {
+    uint8_t lookup[] = {
         0x3f,0x06,0x5b,0x4f,0x66,
         0x6d,0x7d,0x07,0x7f,0x6f
     };
@@ -63,7 +63,7 @@ void main()
         }
     }
 }
-{% endhighlight %}
+```
 
 Here is a small video that I made to demonstrate the working of the above procedure.
 
@@ -75,15 +75,13 @@ Now that the persistence of vision section has been dealt with, we can get start
 
 Here is a flowchart to help you understand the working of the counter. Since the controller runs endlessly in a while(1) loop, there is not Stop block in the flowchart.
 
-<p style="text-align: center;">
-  <img class="size-full wp-image-1750 aligncenter" src="/images/posts/2013/08/flowchart.png" alt="o to 99 counter flowchart" width="538" height="609" srcset="/images/posts/2013/08/flowchart.png 538w, /images/posts/2013/08/flowchart-265x300.png 265w" sizes="(max-width: 538px) 100vw, 538px" />
-</p>
+{% include image.html src="flowchart.png" %}
 
 In the main function, the controller first checks if there is a counter overflow condition. If there is overflow, it will reset it back to 0. After this it tests the state of the input switch. If the switch is pressed, it increments the counter. After this, it send the value of the counter to the seg_wrt() function to write the data to the display.
 
 Here is a program to implement the above logic in embedded C.
 
-{% highlight c %}
+``` c
 #include <xc.h>
 #include <stdint.h>
 #include "delays.h"
@@ -119,7 +117,7 @@ void main()
 /*Function to write data in the 7 segment display*/
 void seg_wrt(unsigned char val)
 {
-    uint8_t	lookup[] = {
+    uint8_t lookup[] = {
         0x3f,0x06,0x5b,0x4f,0x66,
         0x6d,0x7d,0x07,0x7f,0x6f
     };
@@ -139,7 +137,7 @@ void seg_wrt(unsigned char val)
         SEG_EN2 = 0; // Segment 2 OFF
     }
 }
-{% endhighlight %}
+```
 
 Here is a demonstration of the above procedure,
 

@@ -39,19 +39,19 @@
 					<div class="c-footerNav">
 						<ul>
 							{% for link in site.data.navigation.footer_pages %}
-								<li><a href="{{ site.baseurl }}/{{ link.url }}">{{ link.item }}</a></li>
+								<li><a href="{{ site.baseurl }}{{ link.url }}">{{ link.item }}</a></li>
 							{% endfor %}
 						</ul>
 						<ul>
 							{% for link in site.data.navigation.footer_policies %}
-								<li><a href="{{ site.baseurl }}/{{ link.url }}">{{ link.item }}</a></li>
+								<li><a href="{{ site.baseurl }}{{ link.url }}">{{ link.item }}</a></li>
 							{% endfor %}
 						</ul>
 					</div>
 				</div>
 				<div class="col-md-12">
 					<div class="c-footerCopyText">
-						<p>© Copyright 2017 {{ site.title }} All Rights Reserved.</p>
+						<p>© Copyright 2017 <a href="site.url">{{ site.title }}</a> All Rights Reserved.</p>
 					</div>
 				</div>
 			</div>

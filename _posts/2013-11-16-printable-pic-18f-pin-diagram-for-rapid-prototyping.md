@@ -28,4 +28,4 @@ After some touch-ups I should admit it looked professional,
 
 Use the link below to download a PDF file. What then? go ahead print and put it up on the wall close to your workbench!!
 
-#### [Download PDF version](http://embedjournal.com/download/printable-pin_dia-pdf/ "Download Now")
+[Download PDF version](http://embedjournal.com/download/printable-pin_dia-pdf/ "Download Now")

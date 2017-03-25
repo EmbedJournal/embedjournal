@@ -17,7 +17,7 @@ For the sake of this discussion,it is assumed that you have some working knowled
 
 **BeagleBone Black**
 
-BeagleBone Black aka BBB, is a popular Single Board Computer (SBC). We already have a <a href="http://embedjournal.com/beaglebone-a-quick-review/" target="_blank">tech review ofA BeagleBone White</a>. You might want to check that out as well.
+BeagleBone Black aka BBB, is a popular Single Board Computer (SBC). We already have a [tech review ofA BeagleBone White](http://embedjournal.com/beaglebone-a-quick-review/). You might want to check that out as well.
 
 So the BBB is nothing but the successor of BeagleBone White. If you don't have it, just order one to dive into the world of Embedded Linux. I'm sure that BBB will occupy a special place in your electronics hardware inventory :-).
 
@@ -45,23 +45,26 @@ You can download the compiler [here](http://releases.linaro.org/14.04/components
 
 After downloading, extract the compiler using the following command.
 
-<pre class="lang:default decode:true">$ sudo tar xvf gcc-linaro-arm-linux-gnueabihf-4.8-2014.04_linux.tar.xz -C /opt/
-</pre>
+``` shell
+$ sudo tar xvf gcc-linaro-arm-linux-gnueabihf-4.8-2014.04_linux.tar.xz -C /opt/
+```
 
 The compiler will be extracted to /opt/ directory. opt is nothing but the optional directory. Next, step is to add the compiler to the PATH variable, in order to direct the shell to find our compiler.
 
 Go to /opt/ directory and change the directory name for adaptivity. Then, add the compiler to PATH variable.
 
-<pre class="lang:default decode:true">$ cd /opt/
+``` shell
+$ cd /opt/
 $ sudo mv gcc-linaro-arm-linux-gnueabihf-4.8-2014.04_linux/ gcc-arm-linux
 $ export PATH=$PATH:/opt/gcc-arm-linux/bin
-</pre>
+```
 
 After installing the compiler you can verify it using the following command,
 
-<pre class="lang:c decode:true">$ arm-linux-gnueabihf-gcc --version
+``` shell
+$ arm-linux-gnueabihf-gcc --version
 arm-linux-gnueabihf-gcc (crosstool-NG linaro-1.13.1-4.8-2014.04 - Linaro GCC 4.8-2014.04) 4.8.3 20140401 (prerelease)
-</pre>
+```
 
  
 
@@ -69,14 +72,18 @@ arm-linux-gnueabihf-gcc (crosstool-NG linaro-1.13.1-4.8-2014.04 - Linaro GCC 4.8
 
 After installing the compiler, clone the kernel source for BeagleBone Black from GitHub using
 
-<pre class="lang:c decode:true">$ git clone https://github.com/beagleboard/linux.git</pre>
+``` shell
+$ git clone https://github.com/beagleboard/linux.git
+```
 
 Go to the linux directory and ensure that you have cloned the correct repo by executing the following command
 
-<pre class="lang:c decode:true">$ cd linux
+``` shell
+$ cd linux
 $ git remote -v
 origin https://github.com/beagleboard/linux.git (fetch)
-origin https://github.com/beagleboard/linux.git (push)</pre>
+origin https://github.com/beagleboard/linux.git (push)
+```
 
 **3. Cloning and Compiling U-boot(Optional)**
 
@@ -84,16 +91,22 @@ U-boot is an open source universal bootloader for Linux systems. It supports fea
 
 Clone u-boot using the following command
 
-<pre class="lang:default decode:true">$ git clone git://git.denx.de/u-boot.git u-boot/</pre>
+``` shell
+$ git clone git://git.denx.de/u-boot.git u-boot/
+```
 
 Before, compiling U-Boot we need to configure it. Thanks to the availability of configuration files in the configs/ directory under u-boot. We can configure using the am332x\_boneblack\_defconfig file. All the configuration will be written to .config file located in u-boot/ directory. By default you will not be able to view the .config file. To view give ls -a command.
 
-<pre class="lang:default decode:true">$ cd u-boot
-$ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- am335x_boneblack_defconfig</pre>
+``` shell
+$ cd u-boot
+$ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- am335x_boneblack_defconfig
+```
 
 After configuring, u-boot can be cross compiled using the following command.
 
-<pre class="lang:default decode:true">$ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-</pre>
+``` shell
+$ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
+```
 
 It will take around 10 to 15 minutes depending on the system configuration. Mine is Pentium dual core processor and it took 10 minutes for compilation. After successful compilation, several files will be produced in u-boot/ directory. Our prime concern is MLO and u-boot.img files.
 
@@ -103,8 +116,9 @@ For now, we will not use the above mentioned files for booting. But, during late
 
 For deploying kernel from sd card, we need to format it and place the files accordingly. For this process, "Gparted" tool is needed. Install Gparted by the following command.
 
-<pre class="lang:default decode:true">$ sudo apt-get install gparted
-</pre>
+``` shell
+$ sudo apt-get install gparted
+```
 
 Insert your sd card by means of card reader and open Gparted. Select your sd card from the top right corner. it will be something like this, "/dev/sdb"
 
@@ -128,13 +142,17 @@ Finally, click the green tick mark at the menu bar. The partition will be create
 
 Before compiling the kernel we need to configure it. It will be hard for the newbies. Once again, thanks to the kernel developers for providing all configurations in a single file. Go to the kernel directory and issue the following command.
 
-<pre class="lang:default decode:true">$ sudo make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- bb.org_defconfig</pre>
+``` shell
+$ sudo make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- bb.org_defconfig
+```
 
 This will write the configurations in file bb.org_defconfig to .config file.
 
 Then compile the kernel.
 
-<pre class="lang:default decode:true">$ sudo make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- uImage dtbs LOADADDR=0x80008000 -j4</pre>
+``` shell
+$ sudo make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- uImage dtbs LOADADDR=0x80008000 -j4
+```
 
 The above command will compile the kernel using the arm cross compiler having the load address as 80008000. "j4" corresponds to the number of process to be run during the compilation. Give the value as twice that of your cpu core. Mine is dual core, so I it gave as 4.
 
@@ -142,10 +160,12 @@ After compiling you can find the image files in "arch/arm/boot/" directory. Copy
 
 Then, create a file named as "uEnv.txt" in BOOT partition and copy the following code to it.
 
-<pre class="lang:default decode:true">console=ttyS0,115200n8
+``` shell
+console=ttyS0,115200n8
 netargs=setenv bootargs console=ttyO0,115200n8 root=/dev/mmcblk0p2 ro rootfstype=ext4 rootwait debug earlyprintk mem=512M
 netboot=echo Booting from microSD ...; setenv autoload no ; load mmc 0:1 ${loadaddr} uImage ; load mmc 0:1 ${fdtaddr} am335x-boneblack.dtb ; run netargs ; bootm ${loadaddr} - ${fdtaddr}
-uenvcmd=run netboot</pre>
+uenvcmd=run netboot
+```
 
 This will be the file in which uboot will look upon while booting. The instructions in this file will make the uboot to boot from our kernel.
 
@@ -163,11 +183,13 @@ Download RFS [here](https://www.dropbox.com/s/k93doprl261hwn2/rootfs.tar.xz?dl=0
 
 Instead of downloading RFS, we can create our own custom RFS using BusyBox, which will be covered in a separate post. So, as of now download and de-compress the RFS.
 
-<pre class="lang:default decode:true">$ sudo tar -xvf rootfs.tar.xz -C /media/mani/RFS/
+``` shell
+$ sudo tar -xvf rootfs.tar.xz -C /media/mani/RFS/
 $ cd /media/mani/RFS/rootfs/
 $ sudo mv ./* ../
 $ cd ../
-$ sudo rmdir rootfs</pre>
+$ sudo rmdir rootfs
+```
 
 The above command will de-compress the tar file and will place it in the RFS partition of sd card. Just replace "mani" with your username in the above command.
 
@@ -175,8 +197,10 @@ The above command will de-compress the tar file and will place it in the RFS par
 
 We need modules for proper working of the kernel. So, install the kernel modules by the following command.
 
-<pre class="lang:default decode:true ">$ sudo make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j4 modules
-$ sudo make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- INSTALL_MOD_PATH=/media/mani/RFS/ modules_install</pre>
+``` shell
+$ sudo make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j4 modules
+$ sudo make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- INSTALL_MOD_PATH=/media/mani/RFS/ modules_install
+```
 
 That's it. After completing the above steps, remove the sd card and place it in your BeagleBone. Connect the Bone to your PC via USB to serial converter and open the serial console using minicom in PC. (Set baud rate as 115200). After ensuring all things are correct, power on your BBB while holding the Boot switch (SW2). It will boot from your own custom kernel. Now you can cherish that you have created your own kernel image and deployed it in BeagleBone Black!!!
 

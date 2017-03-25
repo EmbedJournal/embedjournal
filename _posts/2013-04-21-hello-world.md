@@ -12,7 +12,15 @@ tags: [ "Intro" ]
 
 There is always a convention, and I don't plan on violating any today.
 
-{% render_code hello-world.c lang:c %}
+``` c
+#include <stdio.h>
+
+void main()
+{
+	printf "Hello World\n";
+	return 0;
+}
+```
 
 There you go! the age old thing to start off anything with - a hello world.
 

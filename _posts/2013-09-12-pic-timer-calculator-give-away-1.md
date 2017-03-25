@@ -10,21 +10,17 @@ categories: [ "Microchip PIC" ]
 tags: [ "Tools" ]
 ---
 
-<p style="text-align: center;">
-  <img class="aligncenter  wp-image-1902" alt="giveaway" src="/images/posts/2013/09/giveaway.png" width="614" height="224" srcset="/images/posts/2013/09/giveaway.png 1024w, /images/posts/2013/09/giveaway-300x110.png 300w" sizes="(max-width: 614px) 100vw, 614px" />
-</p>
+{% include image.html src="giveaway.png" %}
 
 Timers are one of the mostly used modules in microcontroller. Almost every system that has to reliably produce time interval or delays will have to use timers modules. The PIC timer calculator is a cool tool that will make life much simpler.
 
-If you haven't worked with timers, I suggest you read about the <a title="Timer / Counter Module aEUR" A Controller Independent Guide" href="http://embedjournal.com/2013/05/timer-modules-guide/" target="_blank">timer/counter module in microcontrollers</a> in general and then move on to read about the ones on PIC micros.
+If you haven't worked with timers, I suggest you read about the [timer/counter module in microcontrollers](http://embedjournal.com/2013/05/timer-modules-guide/) in general and then move on to read about the ones on PIC micros.
 
 ### PIC Timer Calculator!
 
 I found this great GUI tool to calculate PIC Timer preload value after you choose the necessary settings. The best part is that it gives you a copy-paste code for configuration settings that was set. If you are going to be working with timers frequently then this is a really cool piece of software to have around.
 
-<p style="text-align: center;">
-  <img class="aligncenter wp-image-1879" title="PIC Timer Calculator" alt="PIC Timer Calculator" src="/images/posts/2013/09/Untitled2.png" width="564" height="388" srcset="/images/posts/2013/09/Untitled2.png 1006w, /images/posts/2013/09/Untitled2-300x206.png 300w, /images/posts/2013/09/Untitled2-110x75.png 110w" sizes="(max-width: 564px) 100vw, 564px" />
-</p>
+{% include image.html src="pic-timer-calculator.png" %}
 
 This tool has options for timer parameters such as the oscillator frequency, mode, prescaler and postscaler, just graphically give it all the configurations and you will have the timer 0 preload values at your disposal.
 
@@ -32,9 +28,9 @@ The GUI is quite self explanatory. If you are facing any difficulties in underst
 
 Use the datasheet to fish for the bits to be set to make the timer work properly. Once you feel you are good enough in the old school way, you should not have any difficulties in using this tool.
 
-To unlock the download link, use one of the social media channels and help your friends find this post too. [sociallocker]
+To unlock the download link, use one of the social media channels and help your friends find this post too.
 
-[Download PIC Timer Calculator](https://www.dropbox.com/s/55wof9jbtf8uric/PICTimerCalculator.rar "Downlad")[/sociallocker] 
+[Download PIC Timer Calculator](https://www.dropbox.com/s/55wof9jbtf8uric/PICTimerCalculator.rar "Downlad")
 
 Use the 'Follow' button floating at the bottom of your browser to leave your e-mail address. We will let you know when the next give away is released!
 

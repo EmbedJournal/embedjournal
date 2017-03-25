@@ -1,4 +1,8 @@
-{% capture image-path %}{{ site.baseurl }}/assets/{{ page.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/{{ include.src }}{% endcapture %}
+{% if include.post %}
+	{% capture image-path %}{{ site.baseurl }}/assets/posts/{{ include.post | replace:'.md','' }}/{{ include.src }}{% endcapture %}
+{% else %}
+	{% capture image-path %}{{ site.baseurl }}/assets/{{ page.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/{{ include.src }}{% endcapture %}
+{% endif %}
 
 <div class="text-center">
 	<a class="b-captionImg" href="#" data-featherlight="{{ image-path }}">

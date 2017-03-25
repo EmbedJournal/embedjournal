@@ -1,0 +1,76 @@
+---
+title: Frequently asked questions
+layout: blank
+
+faq:
+  - question: Lorem Ipsum is simply dummy text of?
+    answer: >
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+      specimen book. It has survived not only five centuries,
+
+  - question: Lorem Ipsum is simply dummy text of?
+    answer: >
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+      specimen book. It has survived not only five centuries,
+
+  - question: Lorem Ipsum is simply dummy text of?
+    answer: >
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+      specimen book. It has survived not only five centuries,
+
+  - question: Lorem Ipsum is simply dummy text of?
+    answer: >
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+      specimen book. It has survived not only five centuries,
+
+  - question: Lorem Ipsum is simply dummy text of?
+    answer: >
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+      specimen book. It has survived not only five centuries,
+
+  - question: Lorem Ipsum is simply dummy text of?
+    answer: >
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+      specimen book. It has survived not only five centuries,
+
+  - question: Lorem Ipsum is simply dummy text of?
+    answer: >
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+      specimen book. It has survived not only five centuries,
+
+  - question: Lorem Ipsum is simply dummy text of?
+    answer: >
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+      specimen book. It has survived not only five centuries,
+
+---
+
+<div class="c-faq">
+	<div class="b-title">
+		<h3>{{ page.title }}</h3>
+	</div>
+	<div class="panel-group" id="accordion">
+		{% assign count = 0 %}
+		{% for entry in page.faq %}
+		{% capture count %}{{ count | plus:1 }}{% endcapture %}
+		<div class="panel panel-default">
+			<div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-target="#collapse-{{ count }}">
+				{{ entry.question }}
+			</div>
+			<div id="collapse-{{ count }}" class="panel-collapse collapse">
+				<div class="panel-body">
+					<p>{{ entry.answer }}</p>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>

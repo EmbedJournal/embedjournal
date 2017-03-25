@@ -24,16 +24,15 @@ The idea is this, either you can keep looking at the power indicator on the wall
 
 ### Modifying the code to work with IOC
 
-There was not much to change in the code that we wrote for the matrix keypad interface <a title="Interface -4x4- Matrix Keypad With Microcontroller" href="http://embedjournal.com/2013/08/interface-4x4-matrix-keypad-with-microcontroller/" target="_blank">here</a>. If you open that code in a separate window and compare it with this code you will see that there is not much difference between them. The major working logic of that program has been moved into the ISR and some IOC related configuration is made in the main program.
+There was not much to change in the code that we wrote for the matrix keypad interface [here](http://embedjournal.com/2013/08/interface-4x4-matrix-keypad-with-microcontroller/). If you open that code in a separate window and compare it with this code you will see that there is not much difference between them. The major working logic of that program has been moved into the ISR and some IOC related configuration is made in the main program.
 
-**Note:** The code in the <a title="Interface -4x4- Matrix Keypad With Microcontroller" href="http://embedjournal.com/2013/08/interface-4x4-matrix-keypad-with-microcontroller/" target="_blank">4x4 matrix keypad interface</a> was written for the C18 compiler and this one below is for the HI-Tech C Compiler for PIC Microcontrollers. If you are not familiar with this compiler, have a look at my previous post on <a title="Migrating to HI-TECH C Compiler from the Microchip C18 Compiler" href="http://embedjournal.com/2013/08/migrating-to-hi-tech-c-compiler-from-the-microchip-c18-compiler/" target="_blank">migrating to the Hi-Tech C compiler</a> its not really that difficult.
+**Note:** The code in the [4x4 matrix keypad interface](http://embedjournal.com/2013/08/interface-4x4-matrix-keypad-with-microcontroller/) was written for the C18 compiler and this one below is for the HI-Tech C Compiler for PIC Microcontrollers. If you are not familiar with this compiler, have a look at my previous post on [migrating to the Hi-Tech C compiler](http://embedjournal.com/migrating-to-hi-tech-c-compiler-from-the-microchip-c18-compiler/) its not really that difficult.
 
 <pre>// Matrix Keypad Interface with Interrupt on Change  /////////////////////////
 #include <p18f4520.h>
 #include "delay.h"
 #pragma config OSC=HS,WDT=OFF,FCMEN=ON,XINST=OFF,IESO=OFF,LVP=OFF
 
-//  Macros  ///////////////////////////////////////////////////////////////////
 #define HIGH 1
 #define LOW 0
 #define R1 PORTBbits.RB0
@@ -47,10 +46,8 @@ There was not much to change in the code that we wrote for the matrix keypad int
 #define SEG_EN1 LATCbits.LATC1
 #define SEG_EN2 LATCbits.LATC0
 
-//  Global  ///////////////////////////////////////////////////////////////////
 unsigned char val;
 
-// Functions  /////////////////////////////////////////////////////////////////
 void update(unsigned char);
 void seg_wrt();
 
@@ -75,12 +72,11 @@ void main(void)
     }
 }	// End of void main()
 
-// Interrupt Service Routine  /////////////////////////////////////////////////
 void interrupt IOC_ISR(void)
 {
     if(RBIF && RBIE)
     {
-	LATB = 0xf0;
+	   LATB = 0xf0;
         if(C1 == LOW){
             R1 = HIGH;
             if(C1 == HIGH)
@@ -152,15 +148,16 @@ void interrupt IOC_ISR(void)
 
 }
 
-// This function is not really needed /////////////////////////////////////////
 void update(unsigned char data)
 {
     val = data;
 }
 
-//  Function to write data to the 7 segment Display  //////////////////////////
 void seg_wrt() {
-    unsigned char lookup[]={0x3f,0x06,0x5b,0x4f,0x66,0x6d,0x7d,0x07,0x7f,0x6f};
+    unsigned char lookup[]={
+        0x3f,0x06,0x5b,0x4f,0x66,
+        0x6d,0x7d,0x07,0x7f,0x6f
+    };
     long unit,ten;
     long idx = 0;
     unit = val/10;
@@ -176,7 +173,8 @@ void seg_wrt() {
     	DelayUs(100);
     	SEG_EN2 = LOW;
     }
-}</pre>
+}
+```
 
 As far as the hardware is considered, there is absolutely no change and the output is also essentially the same. Only, now you have the while (1) loop all for yourself.
 
