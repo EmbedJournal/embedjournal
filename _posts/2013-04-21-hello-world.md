@@ -30,4 +30,5 @@ I'm Siddharth, and EmbedJournal is my blog on things that have fascinated me ove
 
 Like I said, the primary focus of most of my reading will be on Embedded Systems. But that doesn't stop there,A it's includes a lot of interesting fields such as robotics, computer vision, needless-to-say - electronics and a lot many more that I learn on a regular basis.
 
-I will try to document all my future projects here. Hopefully someone somewhere will find it useful along the way. I may not be very frequent at posting content. But when I do post something, I will try to make it as readable as possible. After all isn't that the whole point?
+I will try to document all my future projects here. Hopefully someone somewhere will find it useful along the way. I may not be very frequent at posting content, but when I do post something, I will try to make it as readable as possible. After all isn't that the whole point?
+
