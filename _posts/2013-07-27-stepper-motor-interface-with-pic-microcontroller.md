@@ -44,7 +44,7 @@ Here is the top view of the breadboard. I have separated the circuit into variou
 
 {% include image.html src="breadboard-wiring.jpg" %}
 
-{% include gallery.html list=gallery %}
+{% include gallery.html list=page.gallery %}
 
 ### Programming
 

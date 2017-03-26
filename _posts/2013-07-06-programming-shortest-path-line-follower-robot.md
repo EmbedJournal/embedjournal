@@ -43,7 +43,7 @@ In the code I use C macros to address these sensors without any confusion. Here 
 
 Here is an image to show the physical location of these senors on the base plate of the robot. For understanding the code snippets to come, you will need this as a reference to see which sensor we are talking about.
 
-{% include gallery.html list=gallery %}
+{% include gallery.html list=page.gallery %}
 
 #### Check for a bend or node:
 

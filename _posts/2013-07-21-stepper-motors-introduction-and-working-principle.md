@@ -60,7 +60,7 @@ The VR and PM stepper motors are the most common type of stepper motors. The onl
 
 Since I did not buy the motors (technically I did buy them; but not literally) I did not have a clue as to what the construction of the motor was.A Besides, there were no warranty issues that I had to worry about.
 
-{% include gallery.html list=gallery %}
+{% include gallery.html list=page.gallery %}
 
 Once I opened the enclosure I found out that I had a hybrid stepper motor. This motors also had multiple poles in the stator and rotor.
 
