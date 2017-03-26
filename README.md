@@ -20,3 +20,5 @@ EmbedJournal Jekyll Template
 * image lightbox popup should not have scroll bars in smaller displays.
 * fix gallary width and height.
 * fix copyright text kink link decoration to mathc other links in footer.
+
+* Don't fix nav bar in mobile view.

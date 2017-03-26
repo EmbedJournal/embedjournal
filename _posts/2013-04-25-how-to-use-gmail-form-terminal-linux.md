@@ -20,23 +20,23 @@ Lets get started. I use Ubuntu (current version) . If you have some other flavor
 
 **Step1 :** Open a new terminal and type the following command to install the package from the Ubuntu repositories.
 
-{% highlight shell %}
+``` shell
 # apt-get install msmtp-mta
-{% endhighlight %}
+```
 
 You have to enter your system password to provide administrative rights. Say 'y' when it asks for you choice after the size of the file to be downloaded is determined.
   
 **Step2 :** Now fire up you favorite text editor by typing
 
-{% highlight shell %}
+``` shell
 $ vim ~/.msmtprc
-{% endhighlight %}
+```
 
 If Vim is not already installed do a 'sudo apt-get install vim' install vim and proceed to typing the above command.
   
 Vim is one of the most powerful text editors in the Linux Environment consider mastering it. Once inside the file you have to hit 'i' to enter the insert mode, then copy the following code into the editor.
 
-{% highlight shell %}
+``` shell
 #Gmail account
 
 defaults
@@ -54,38 +54,37 @@ password <your-password>
 port 587
 #set gmail as your default mail server.
 account default : gmail
-{% endhighlight %}
+```
 
 then press ESC to enter into the command mode in vim then type ':wq' to save and quit the editor. Now if you do an 'ls -la' you should see the file in your home directory.
 
 **Step3 :** Now this is lame.. any one who has access to you computer could open this file to see your password. So you have to modify the access permit for this file to the root only (you). So type the following command
 
-{% highlight shell %}
+``` shell
 $ chmod 600 .msmtprc
-{% endhighlight %}
+```
 
 For more details see manual page of chmod.
 
 **Step4 :** Now we have configured the gmail settings and your computer should not have any trouble talking to the remote server. We have to set up a command-line email program to talk to the mail-server. So install mailx.
 
 
-{% highlight shell %}
+``` shell
 # apt-get install heirloom-mailx
-{% endhighlight %}
+```
 
 **Step5 :** Now configure Mailx by creating a file called '.mailrc' in your home directory.
 
-{% highlight shell %}
+``` shell
 $ vim ~/.mailrc
-{% endhighlight %}
-
+```
 
 follow the same procedure as in step2 to copy the following code into the newly created text file.
 
-{% highlight shell %}
+``` shell
 set sendmail="/usr/bin/msmtp"
 set message-sendmail-extra-arguments="-a gmail"
-{% endhighlight %}
+```
 
 This should be enough to set up gmail to work form the command line. If you are having any problems with the above procedure leave a comment and I will get back to you shortly.
 
@@ -93,17 +92,17 @@ This should be enough to set up gmail to work form the command line. If you are 
 
 ****Type this command and hit enter.
 
-{% highlight shell %}
-mail -s "subject" -a "attachment-if-any" "receiver@some-domain.com"
-{% endhighlight %}
+``` shell
+$ mail -s "subject" -a "attachment-if-any" "receiver@some-domain.com"
+```
 
 Now you have to type your message here.
 
 then hit enter and come to a new line and press CTRL+D you should see a EOT at the line this indicates that you have successfully sent the mail. The -a <A attachmentA > is completely optional so you can omit it. You can also use IO redirection operators in linux to transfer the contents of a file into a mail like,
 
-{% highlight shell %}
-mail -s "subject" "receiver@some-domain.com" < message.txt
-{% endhighlight %}
+``` shell
+$ mail -s "subject" "receiver@some-domain.com" < message.txt
+```
 
 This should send the contents of the text file to the receiver. If you are really concerned about your privacy then you have to become the superuser and perform the above steps in the root home directory.
 

@@ -22,10 +22,10 @@ You can set up your own git repository in another location and use that as the r
 
 If this is the first time you are using git, then have to tell git who you are so your commits are tagged accordingly.
 
-{% highlight shell %}
+``` shell
 $ git config --global user.name "Your Name Here"
 $ git config --global user.email "Your Email"
-{% endhighlight %}
+```
 
 You can omit the --global flag if you want a per-repository based configuration.
 
@@ -33,9 +33,9 @@ You can omit the --global flag if you want a per-repository based configuration.
 
 If you choose to make a copy of an existing git repository, you do what is called as a cloning. This creates a local copy of the files. Be careful of what you clone, some times these pojects can be a massive.
 
-{% highlight shell %}
+``` shell
 $ git clone https://github.com/username/my-repositoy.git
-{% endhighlight %}
+```
 
 ### Add files to be committed
 
@@ -43,28 +43,28 @@ Once you have either created or cloned the repository, you can start modifying t
 
 Once you have edited some files, they are marked as _modified/added_. You can see this by typing <code>git status</code>. But these changes are locally made. You will have to stage them for a commit. Git had what is called as a staging area, where it lines up all the items that are to saved to the version history. For your _modified/added_ files to get to this area, you will have to _add_ them there.
 
-{% highlight shell %}
+``` shell
 $ git add file-name  # to add file file-name to git.
 $ git add dir-name   # to start tracking changes made to directory dir-name.
 $ git add -A         # to add all. be careful
-{% endhighlight %}
+```
 
 So far so good. You have successfully added files and directories into your commit stack.
 
 ### Commit local changes
 Think of commit as a way to indicate changes made for a specific purpose on a bunch of files. This indication is given with a commit message.
 
-{% highlight shell %}
-git commit -m 'my first commit'
-{% endhighlight %}
+``` shell
+$ git commit -m 'my first commit'
+```
 
 Once your changes have been committed, if you run a `git status` again, you will notice that it says there is one local commit. This means that the commit that we just made, has not been sent out to any other remote git server. At this point if you deleted the files, you will loose that commit you just made.
 
 ### Push local commits to remote
 Git is a distributed version tracking system. So you will have to push your changes to a remote machine so that others can see what changes you have made to the system.
 
-{% highlight shell %}
-git push origin master
-{% endhighlight %}
+``` shell
+$ git push origin master
+```
 
 You should give your username and password if/when prompted.
