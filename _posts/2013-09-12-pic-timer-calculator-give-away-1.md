@@ -14,7 +14,7 @@ tags: [ "Tools" ]
 
 Timers are one of the mostly used modules in microcontroller. Almost every system that has to reliably produce time interval or delays will have to use timers modules. The PIC timer calculator is a cool tool that will make life much simpler.
 
-If you haven't worked with timers, I suggest you read about the [timer/counter module in microcontrollers](http://embedjournal.com/2013/05/timer-modules-guide/) in general and then move on to read about the ones on PIC micros.
+If you haven't worked with timers, I suggest you read about the [timer/counter module in microcontrollers](/timer-modules-guide/) in general and then move on to read about the ones on PIC micros.
 
 ### PIC Timer Calculator!
 
@@ -30,7 +30,7 @@ Use the datasheet to fish for the bits to be set to make the timer work properly
 
 To unlock the download link, use one of the social media channels and help your friends find this post too.
 
-[Download PIC Timer Calculator](https://www.dropbox.com/s/55wof9jbtf8uric/PICTimerCalculator.rar "Downlad")
+[Download PIC Timer Calculator](https://www.dropbox.com/s/55wof9jbtf8uric/PICTimerCalculator.rar)
 
 Use the 'Follow' button floating at the bottom of your browser to leave your e-mail address. We will let you know when the next give away is released!
 

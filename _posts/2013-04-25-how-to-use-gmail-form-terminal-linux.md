@@ -10,11 +10,11 @@ categories: [ "How To", "Linux" ]
 tags: [ "CLI", "Intro" ]
 ---
 
-{% include image.html src="Gmail-Icon.png" caption="Gmail Icon" %}
+{% include image.html src="Gmail-Icon.png" %}
 
 Great news!! Gmail, our favorite mail service can be accessed from the command line!!
 
-Now you can access your favorite mail service -gmail form a terminal in a linux system with a command line interface. People may wonder why anyone would want to use gmail from the command line, when Google has created such a nice user friendly interface for its users. There are a lot of reasons why one would want to use a CLI (command-line interface) for sending mails. One of the main reasons being the power of shell scripting in a Linux machine. You can automate the entire process by writing small shell scripts and make life much easier. The other reason why I use the command line way is because it uses very less bandwidth. Due the recent D-DOS (Distributed Denial-of-Service) attack on the domain name system by a group of really talented hackers my computer seemed to take ages to load even Facebook that was when the terminal way of sending mails came in handy.
+Now you can access your favorite mail service - gmail - form a terminal in a Linux system with a command line interface. People may wonder why anyone would want to use gmail from the command line, when Google has created such a nice user friendly interface for its users. There are a lot of reasons why one would want to use a CLI (command-line interface) for sending mails. One of the main reasons being the power of shell scripting in a Linux machine. You can automate the entire process by writing small shell scripts and make life much easier. The other reason why I use the command line way is because it uses very less bandwidth (Gmail tab on chrome takes up 400MB of RAM these days).
 
 Lets get started. I use Ubuntu (current version) . If you have some other flavor of Linux you might have to port the commands to work on your system.
 
@@ -33,7 +33,7 @@ $ vim ~/.msmtprc
 ```
 
 If Vim is not already installed do a 'sudo apt-get install vim' install vim and proceed to typing the above command.
-  
+
 Vim is one of the most powerful text editors in the Linux Environment consider mastering it. Once inside the file you have to hit 'i' to enter the insert mode, then copy the following code into the editor.
 
 ``` shell
@@ -96,9 +96,7 @@ This should be enough to set up gmail to work form the command line. If you are 
 $ mail -s "subject" -a "attachment-if-any" "receiver@some-domain.com"
 ```
 
-Now you have to type your message here.
-
-then hit enter and come to a new line and press CTRL+D you should see a EOT at the line this indicates that you have successfully sent the mail. The -a <A attachmentA > is completely optional so you can omit it. You can also use IO redirection operators in linux to transfer the contents of a file into a mail like,
+Now you have to type your message here and then hit enter and come to a new line and press CTRL+D you should see a EOT at the line this indicates that you have successfully sent the mail. The -a <A attachmentA > is completely optional so you can omit it. You can also use IO redirection operators in Linux to transfer the contents of a file into a mail like,
 
 ``` shell
 $ mail -s "subject" "receiver@some-domain.com" < message.txt

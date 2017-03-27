@@ -10,17 +10,17 @@ categories: [ "News", "General Posts" ]
 tags: [ "EDA" ]
 ---
 
-****Electronic Design Automation (EDA) is a relatively young five-billion$ industry with a very colorful upbringing, I'm very grateful for, and is an honor to write about it.
+Electronic Design Automation (EDA) is a relatively young five-billion$ industry with a very colorful upbringing, I'm very grateful for, and is an honor to write about it.
 
-<p style="text-align: left;">
-  EDA involves a diverse set of software algorithms and applications that are required for the design of complex next generation semiconductor and electronics products. The increase in VLSI design complexity poses a significant challenge to EDA; application performance is not scaling effectively, since microprocessor performance gains have been hampered due to increases in power and manufacturability issues, which accompany scaling.<a href="/images/posts/2013/05/eda-net1.gif"><img class="aligncenter size-full wp-image-226" alt="EDA industry net" src="/images/posts/2013/05/eda-net1.gif" width="1280" height="952" srcset="/images/posts/2013/05/eda-net1.gif 1280w, /images/posts/2013/05/eda-net1-300x223.gif 300w, /images/posts/2013/05/eda-net1-1024x762.gif 1024w" sizes="(max-width: 1280px) 100vw, 1280px" /></a>
-</p>
+EDA involves a diverse set of software algorithms and applications that are required for the design of complex next generation semiconductor and electronics products. The increase in VLSI design complexity poses a significant challenge to EDA; application performance is not scaling effectively, since microprocessor performance gains have been hampered due to increases in power and manufacturability issues, which accompany scaling.
 
-<p style="text-align: left;">
-  Digital systems are typically validated by distributing logic simulation tasks among huge computer farms for weeks at a time. Yet, the performance of simulation often falls behind, leading to incomplete verification and missed functional bugs. It is indeed no surprise that the semiconductor industry is always seeking for faster simulation solutions.Today EDA employs an estimated more than 30,000 people!.
-</p>
+{% include image.html src="eda-network.gif" %}
 
-The current <a title="Electronics Design Automation" href="http://en.wikipedia.org/wiki/Electronic_design_automation" target="_blank">Wikipedia</a> definition of EDA is - the category of software tools for designing and producing electronic systems ranging from printed circuit boards (PCBs) to integrated circuits. This is sometimes referred to as ECAD (electronic computer-aided design) or just CAD.aEUR
+Digital systems are typically validated by distributing logic simulation tasks among huge computer farms for weeks at a time. Yet, the performance of simulation often falls behind, leading to incomplete verification and missed functional bugs. It is indeed no surprise that the semiconductor industry is always seeking for faster simulation solutions.Today EDA employs an estimated more than 30,000 people!.
+
+The current [Wikipedia](http://en.wikipedia.org/wiki/Electronic_design_automation) definition of EDA is,
+
+> the category of software tools for designing and producing electronic systems ranging from printed circuit boards (PCBs) to integrated circuits. This is sometimes referred to as ECAD (electronic computer-aided design) or just CAD.
 
 The three aspects of EDA are:
 
@@ -50,6 +50,4 @@ The success of the EDA field is inspiring for many reasons:
 
 Today Synopsys, Mentor, and Cadence are the dominant players in the game.
 
-This post is a compilation of information that can be found in various parts of the internet.
-  
-Thanks to <a title="semiWiki" href="http://www.semiwiki.com/" target="_blank">Semiwiki</a>, <a title="EDA" href="http://en.wikipedia.org/wiki/Electronic_design_automation" target="_blank">Wikipedia</a> & <a href="http://www.edac.org/" target="_blank">EDA consortium</a>.
+This post is a compilation of information that can be found in various parts of the Internet.

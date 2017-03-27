@@ -42,4 +42,4 @@ Since the devices do not decide upon a fixed baud rate before in the later metho
 
 It must have been obvious by now that a clock line is used to calculate the duration of one bit so that the receiver is able to poll the status of the pin at exact locations so that it is reliably able to extract the data from the serial line. The number of times the receiver polls the line in one bit duration varies from just one to how many ever is possible. Just one sample per bit is not a very reliable means to extract the information and making a lot of samples is an over kill. The most logical number of polls per bit would be 3 to get the exact state of the pin along with an idea of the error in synchronization.
 
-I hope this post was helpful to an extent and helped you in some way. Please like us on Facebook and <a href="http://embedjournal.com/subscribe/" target="_blank">subscribe to our newsletters</a> with your email using the subscribe button below. We will keep you posted on our latest posts.
+I hope this post was helpful to an extent and helped you in some way.

@@ -14,7 +14,7 @@ tags: [ "LCD" ]
 
 
   
-Yet again I was looking for the GLCD command sheet in the internet and failed to find any good resolution images that I can use for post references. Even the data sheet looks really bad. So here I am with a **HTML Version of the GLCD command sheet** just like the one for the <a title="Character LCD Command Sheet HTML Version" href="http://embedjournal.com/2013/06/character-lcd-command-sheet/" target="_blank">character LCD</a> I posted a while back.
+Yet again I was looking for the GLCD command sheet in the internet and failed to find any good resolution images that I can use for post references. Even the data sheet looks really bad. So here I am with a **HTML Version of the GLCD command sheet** just like the one for the <a title="Character LCD Command Sheet HTML Version" href="/character-lcd-command-sheet/" target="_blank">character LCD</a> I posted a while back.
 
  
 

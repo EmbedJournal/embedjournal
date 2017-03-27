@@ -18,7 +18,7 @@ Note: I will be referring to the C2000 by its family name as Piccolo DSC in this
 
 ### LCD Interfacing part
 
-For this post, I will assume that you are fairly acquitted with the basics involved in the interface of the LCD. We have covered that topic in  detail at Embed Journal.For those who need to know the basics on interfacing LCD with microcontrollers read the post [Interfacing LCD module with microcontroller](http://embedjournal.com/interfacing-lcd-module-part-1/) by Siddharth. And as always, there are two modes of operation of the LCD 8 bit and 4 bit depending on the number of data lines you are willing to give for the interface. As I did not have any limitation on the number of pins available on the controller, I choose to use the 8 bit mode.
+For this post, I will assume that you are fairly acquitted with the basics involved in the interface of the LCD. We have covered that topic in  detail at Embed Journal.For those who need to know the basics on interfacing LCD with microcontrollers read the post [Interfacing LCD module with microcontroller](/interfacing-lcd-module-part-1/) by Siddharth. And as always, there are two modes of operation of the LCD 8 bit and 4 bit depending on the number of data lines you are willing to give for the interface. As I did not have any limitation on the number of pins available on the controller, I choose to use the 8 bit mode.
 
 ### Circuit Diagram:
 

@@ -14,9 +14,7 @@ The term '_Arduino_' is no longer new to anyone having the least bit of exposure
 
 Definitely, I was mistaken. By the time I was looking back at it, the Arduino platform had grown so much that even the kids around the place were speaking of it!
 
-<p style="text-align: center;">
-  <a href="/images/posts/2013/05/arduino.jpg"><img class="aligncenter  wp-image-238" src="/images/posts/2013/05/arduino.jpg" alt="Embedded System - Arduino" width="600" height="600" srcset="/images/posts/2013/05/arduino.jpg 600w, /images/posts/2013/05/arduino-150x150.jpg 150w, /images/posts/2013/05/arduino-300x300.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" /></a>
-</p>
+{% include image.html src="arduino.jpg" %}
 
 The Arduino is a really good platform. You could opt to work with it for more than one of the following (hard to ignore) reasons,
 

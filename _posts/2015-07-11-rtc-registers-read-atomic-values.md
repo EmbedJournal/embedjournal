@@ -10,7 +10,7 @@ categories: [ "Embedded Theory", "Programming" ]
 tags: [ "RTC", "Algorithms" ]
 ---
 
-Most of you must have used a Real Time Clock (RTC) at some point. RTCs are small ICs that have a separate battery backup and allow you to keep  track of time. Typical place where you can expect to see an RTC in action is your computer. They are used to keep track of time when your computer is powered off. Another more obvious application is digital clocks (see how you can make a [DIY digital clock](http://embedjournal.com/make-a-digital-clock/) for fun).
+Most of you must have used a Real Time Clock (RTC) at some point. RTCs are small ICs that have a separate battery backup and allow you to keep  track of time. Typical place where you can expect to see an RTC in action is your computer. They are used to keep track of time when your computer is powered off. Another more obvious application is digital clocks (see how you can make a [DIY digital clock](/make-a-digital-clock/) for fun).
 
 #### The race condition
 

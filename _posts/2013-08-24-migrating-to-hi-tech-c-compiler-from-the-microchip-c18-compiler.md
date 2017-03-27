@@ -38,9 +38,11 @@ Follow the on screen instruction to install the compiler. Check the options to a
 
 After the installation, you can see the compiler in the list of available compilers when creating a new project in the IDE. Choose this compiler and choose next. After the project is created, add a C source file and start coding your C program.
 
-In all the programs, you will have to add this line, <span style="color: #888888;">#include<htc.h></span> this will include header file for the PIC MCU that you choose while creating the project. Once this is added you will have to add code for the configuration bits. This is really important and most of the time, it will prevent the program from executing if you forget to add the pragma for the configuration bits. I will write a tutorial on configuration bits, their purposes and uses some time soon.
+In all the programs, you will have to add this line, `#include<htc.h>` this will include header file for the PIC MCU that you choose while creating the project. Once this is added you will have to add code for the configuration bits. This is really important and most of the time, it will prevent the program from executing if you forget to add the pragma for the configuration bits. I will write a tutorial on configuration bits, their purposes and uses some time soon.
 
-`#pragma config OSC=HS,WDT=OFF,FCMEN=ON,XINST=OFF,IESO=OFF,LVP=OFF`
+``` c
+#pragma config OSC=HS,WDT=OFF,FCMEN=ON,XINST=OFF,IESO=OFF,LVP=OFF
+```
 
 After this its the user's space and you can add code and include custom header files. You can address the bits of SFRs with their name as they appear in the data sheet. here is an example code that I wrote to demonstrate the features of the compiler.
 

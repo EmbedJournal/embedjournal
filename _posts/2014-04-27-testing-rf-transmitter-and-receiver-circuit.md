@@ -10,7 +10,7 @@ categories: [ "How To", "Hardware" ]
 tags: [ "Wireless" ]
 ---
 
-After publishing the article [Make a simple RC car](http://embedjournal.com/2013/05/make-a-rc-robot-car/) I have received a lot of comments and e-mails from readers who have faced some difficulties while trying to make the circuit by themselves. I have complied a small list of testing methods for various components that will help your narrow down the causes of malfunction.
+After publishing the article [Make a simple RC car](/make-a-rc-robot-car/) I have received a lot of comments and e-mails from readers who have faced some difficulties while trying to make the circuit by themselves. I have complied a small list of testing methods for various components that will help your narrow down the causes of malfunction.
 
 Like always, we will have to split the entire circuit into various segments in order to test them. So there are four major places where problems may arise.
 
@@ -47,4 +47,4 @@ If you have followed all the above steps and reached here without falling into a
 
 **Solution:** Unfortunately there is not much you could do about it. So buy another one.
 
-Besides that there are other places where things can go wrong. Your best bet is to trust your gut and work on instincts to solve the problem. You may want to read [other tips and tricks on circuit debugging](http://embedjournal.com/2014/03/circuit-debugging-tips-tricks-techniques/) to be better equipped to tackle the situation.
+Besides that there are other places where things can go wrong. Your best bet is to trust your gut and work on instincts to solve the problem. You may want to read [other tips and tricks on circuit debugging](/circuit-debugging-tips-tricks-techniques/) to be better equipped to tackle the situation.

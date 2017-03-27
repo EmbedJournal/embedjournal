@@ -10,13 +10,10 @@ categories: [ "Programming", "Robotics" ]
 tags: [ "Tech Fest" ]
 ---
 
-Over the past few days, I received a plethora of emails and messages on how to
-make a line follower robot. Mostly, the specification being white line on a
-black surface. Some even mentioned [shortest path
-detection](http://embedjournal.com/shortest-path-line-follower-robot-logic-revealed/)
+Over the past few days, I received a plethora of emails and messages on how to make a line follower robot. Mostly, the specification being white line on a black surface. Some even mentioned [shortest path detection](/shortest-path-line-follower-robot-logic-revealed/)
 loops in the track. Now, I do get emails in which people ask me questions about line follower robots. Nope, thats not unusual (actually I get quite a lot).
 
-The unusual thing was majority of them seemed to give out similar track and robot description. Then I asked one of them to send me an image of the track, thats when I got to know about [Mesh Flare](http://www.techfest.org/competitions), an Event in the TechFest-2016 a technical symposium organised by IIT Bombay. (Here is the <a href="/assets/posts/2016-09-28-iit-techfest-mesh-flare/Mesh_Flare_Zonals_IIT_B_ProblemStatement.pdf" target="_blank">full problem statement</a> just incase they pull it down)
+The unusual thing was majority of them seemed to give out similar track and robot description. Then I asked one of them to send me an image of the track, thats when I got to know about [Mesh Flare](http://www.techfest.org/competitions), an Event in the TechFest-2016 a technical symposium organized by IIT Bombay. (Here is the <a href="/assets/posts/2016-09-28-iit-techfest-mesh-flare/Mesh_Flare_Zonals_IIT_B_ProblemStatement.pdf" target="_blank">full problem statement</a> just incase they pull it down)
 
 After looking at it for sometime, I had to get up and search for my college ID card (so that I too can take part in it), hoping that my year of graduation wouldn't have been printed on the front.To my dismay, they did have it (very well pronounced).
 
@@ -36,8 +33,8 @@ Well it's not going to be easy. But I can try to make it seem possible to a cert
 
 Your robot must,
 
-  * be [able to follow a line](http://embedjournal.com/line-follower-robot/) (duh!)
-  * be able to [detect 189, 90 and 45 deg](http://embedjournal.com/programming-line-follower-robot/) direction changes. (not so tricky)
+  * be [able to follow a line](/line-follower-robot/) (duh!)
+  * be able to [detect 189, 90 and 45 deg](/programming-line-follower-robot/) direction changes. (not so tricky)
   * be able keep a track of how far in space it has moved between any two points. (tricky)
 
 Now let's take a closer look at the sample track that they have provided. There are certain points in the track where the robot has to make a decision. We will call these nodes 'vertices'. Lets mark out all the vertices in the track.
@@ -54,4 +51,4 @@ Now let's think about what we have done so far. We managed to discretize the tra
 
 Now you just have to perform a [Depth First Search (DFS)](https://en.wikipedia.org/wiki/Depth-first_search) on the graph to arrive at the destination node. If you have made it to this point successfully, choosing the least weighted path to the destination vertex should be a cake walk.
 
-All the best for anyone participating. Let me know if this was helpfull.
+All the best for anyone participating. Let me know if this was helpful.

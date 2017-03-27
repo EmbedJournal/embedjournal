@@ -393,4 +393,4 @@ Here is the Mplab X project folder in which the above program has been successfu
   * <a href="https://www.dropbox.com/s/lm58tyf7iqa7kll/lcd_basic_io.X.production.hex" target="_blank"><span style="line-height: 13px;">Pre-built HEX file</span></a>
   * <a title="Dropbox link" href="https://www.dropbox.com/s/qgkb6d1x1xtv0pc/lcd_basic_io.X.rar" target="_blank">MPLAB X project files</a> [/sociallocker] 
 
-My next post will discuss the [programming LCD in 4 bit mode](http://embedjournal.com/interface-lcd-in-4-bit-mode/ "Interface aEUR" LCD in 4 bit Mode: Part 3").
+My next post will discuss the [programming LCD in 4 bit mode](/interface-lcd-in-4-bit-mode/).

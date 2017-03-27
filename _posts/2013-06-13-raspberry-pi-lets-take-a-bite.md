@@ -16,7 +16,7 @@ The Raspberry Pi 2 is a credit card sized single-board computer. This you must h
 
 Raspberry Pi comes as two variants and they choose to call it Model A and Model B. Model A has one USB port and there is no in- built Ethernet controller ,whereas Model B had 2 USB ports and standard 10/100 Ethernet controller. Due to the lack of in-built  Ethernet controller Model A never really made it into the market. But still it's not totally out of business. Some developers prefer Model A over Model B as it's cost is ultra low.
 
-Actually Model A can also have Ethernet access by using an USB - Ethernet or by a Wi-Fi adapter. But the cost of the USB Ethernet adapter or the Wi-fi adapter combined with Model A's cost will be much higher than Model B raspberry Pi (if you have a spare adapter then it's a totally different issue).
+Actually Model A can also have Ethernet access by using an USB - Ethernet or by a WiFi adapter. But the cost of the USB Ethernet adapter or the Wi-fi adapter combined with Model A's cost will be much higher than Model B raspberry Pi (if you have a spare adapter then it's a totally different issue).
 
 Raspberry Pi has no RTC and hence no built in time stamping. This issue must be handled by an Operating System. The Operating System should poll an NTP server each time it boots or ask the user to enter the time while booting the system. However, an external RTC (like the DS1307) with battery backup can be configured through the IA2C interface to obtain the time stamp.
 

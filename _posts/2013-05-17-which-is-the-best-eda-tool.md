@@ -12,7 +12,7 @@ tags: [ "EDA" ]
 
 If you haven't locked yourself in a cave for a couple of years, you would have easily come across this question several times when you went through electronics forums and the discussions in Facebook pages. This is one question that has been directed at me for a very long time by my friends the "best EDA tool". The answer to the question is quite primitive.
 
-[<img class="aligncenter size-full wp-image-224" alt="best EDA tool" src="/images/posts/2013/05/47943dpict11.gif" width="500" height="375" srcset="/images/posts/2013/05/47943dpict11.gif 500w, /images/posts/2013/05/47943dpict11-300x225.gif 300w" sizes="(max-width: 500px) 100vw, 500px" />](/images/posts/2013/05/47943dpict11.gif)
+{% include image.html src="eda-tool.gif" %}
 
 There is no such thing as the _best_ EDA tool. All tools are good as long as there is enough support. Circuit design is an art, like every other art it depends on the designer and not on the design tool used. Industrial softwares come with a heavy $ tag because they have a very good auto routing algorithm. Now, I strongly believe that, no routing algorithm can see through, what even the dumbest of a human brain can, I'm sure the majority of people will believe me in this (Programmers - I am all ears tell me I am wrong :-P) Back to the issue at hand, I prefer doing all the routing manually with all my god-given insight. Besides I want to have my board layout in a single side with minimum jumpers to have a clean etch at home. The details of making a homemade PCB (single sided) will be found here. If manual routing is the case then Altium Designer is no better than KiCad.
 

@@ -18,7 +18,7 @@ Be warned this is just a small collection of routines that will help embedded so
 
 '_Practice and Perfect_' is the unsaid mantra of C. The more you write, the better you get at it. I'm no professional at C. Hence I will not be writing any posts on C programming as such. There are a lot of resources on the internet and books for learning C.
 
-For learning C from it's very basic, I would suggest [C and UNIX: Tools for Software Design by Martin L. Barrett, Clifford H. Wagner](http://www.amazon.com/C-UNIX-Tools-Software-Design/dp/0471309273) The book covers a lot about C and [using GCC to compile C programs in a Linux](http://embedjournal.com/2013/06/compiling-c-programs-using-gcc/) machine. Linux is mostly written in C and hence provides a native environment for the language. If you are really interested, you can find some books and links to follow for getting started with Linux [here](http://embedjournal.com/2013/07/getting-started-with-linux/).
+For learning C from it's very basic, I would suggest [C and UNIX: Tools for Software Design by Martin L. Barrett, Clifford H. Wagner](http://www.amazon.com/C-UNIX-Tools-Software-Design/dp/0471309273) The book covers a lot about C and [using GCC to compile C programs in a Linux](/compiling-c-programs-using-gcc/) machine. Linux is mostly written in C and hence provides a native environment for the language. If you are really interested, you can find some books and links to follow for getting started with Linux [here](/getting-started-with-linux/).
 
 #### Rotate left or right in C
 
