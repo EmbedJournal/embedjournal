@@ -11,11 +11,9 @@ categories: [ "How To", "Robotics" ]
 tags: [ "DIY", "Theory" ]
 ---
 
-[<img class="aligncenter size-full wp-image-602" alt="robots chassis" src="/images/posts/2013/06/robots_chassis_is_ready.jpg" width="500" height="329" srcset="/images/posts/2013/06/robots_chassis_is_ready.jpg 500w, /images/posts/2013/06/robots_chassis_is_ready-300x197.jpg 300w, /images/posts/2013/06/robots_chassis_is_ready-310x205.jpg 310w" sizes="(max-width: 500px) 100vw, 500px" />](/images/posts/2013/06/robots_chassis_is_ready.jpg)
+Ready made chassis that are available in the market (like the one above)A are really good, cheap and for all you know they might have been subjected to a R&D before fabrication. In spite of all these advantages I still see the following issues with ready made chassis.
 
-Readymade chassis that are available in the market (like the one above)A are really good, cheap and for all you know they might have been subjected to a R&D before fabrication. In spite of all these advantages I still see the following issues with readymade chassis.
-
-  * <span style="line-height: 13px;">They are not available the shape and size that I feel fit for my robot. Most of the time I am forced to restrict the robot size to the size of the chassis that is available.</span>
+  * They are not available the shape and size that I feel fit for my robot. Most of the time I am forced to restrict the robot size to the size of the chassis that is available.
   * They do not give the flexibility that a custom design can have.
   * You cannot cast your artistic touch (if you have one that is) over the design.
   * Above all, they are not unique. If you go for an event with high hopes and find that there are a dozen robots that looks exactly like yours, then you will understand the importance of being unique.
@@ -29,7 +27,7 @@ So the only other alternative is to build your own chassis.A ThereA are wide var
 
 Though wood has more advantages this post will cover the use of acrylic as the material for building chassis. Acrylic is available in all shapes and sizes with a wide range of thickness to choose from. One other compelling factor is that it available in vibrant colors which gives a new visual appeal to you robot.
 
-#### **Cutting the acrylic sheet:**
+#### Cutting the acrylic sheet:
 
 One of the most important tool you would need for building robots our of acrylic is a saw. Now don't ask me the name of the saw my carpentry skills are limited. All I know is that, you can ask for a saw to cut acrylic and you will most probably be handed this one.
 

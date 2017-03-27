@@ -12,7 +12,7 @@ tags: [ "LCD" ]
 
 I was looking for an Image of the CharacterA LCD command sheet throughout the internet and failed find any good resolution images that I can use for post references. Here is a HTML Version that could be used at whichever resolution you choose!
 
-<table class="aligncenter" style="width: 100%;" border="1" cellspacing="0" cellpadding="5" align="center">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="5" align="center">
   <tr align="center" valign="middle">
     <td colspan="13">
       <h2>

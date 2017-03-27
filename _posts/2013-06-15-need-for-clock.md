@@ -10,23 +10,17 @@ categories: [ "Embedded Theory" ]
 tags: [ "Basics", "FAQ" ]
 ---
 
-<address>
-  A 
-</address>
+> What is the need for a clock line in digital communication protocols?
 
-<address>
-  A <span style="color: #008080;"><strong>What is the need for a clock line in digital communication protocols?</strong></span>
-</address>
+This was the question that was posted on a Facebook page. I was surprised to see no one had posted a response. Probably they felt that the question was below standard, lame, stupid or on the worst case they did _NOT_ know it themselves!
 
-This was the question that was posted on a Facebook page. I was surprised to see no one had posted a response. Probably they felt that the question was below standard, lame, stupid or on the worst case they did NOT know it them self!
-
-That thought was disturbing. This is a concept that everyone (well, not exactly everyone) should be aware of in not in detail but atleast the outline. If you already knew the answer read and find out if I am right. If you didn't then here is your chance to know it.
+That thought was disturbing. This is a concept that everyone (well, not exactly everyone) should be aware of in not in detail but at least the outline. If you already knew the answer read and find out if I am right. If you didn't then here is your chance to know it.
 
 #### Clock Pulse:
 
 The clock line, constantly pulses the logic level high and low with a time duration "t<sub>b</sub>" in between each pulse denoted by pulse width in the image below. Most of the time "t<sub>b</sub>" is a constant and equal to one bit duration. Hence this line produces a pulsating wave form as shown below. The time period or the clock period is the time take for one complete cycle containing the high period and the low period.
 
-[<img class="aligncenter size-full wp-image-736" alt="clock pulse" src="/images/posts/2013/06/Untitled11.png" width="299" height="148" />](/images/posts/2013/06/Untitled11.png)
+{% include image.html src="clock-pulse.png" %}
 
 There are two types of communication systems that are possible. One is with a clock line A and called synchronous and the other is without it and called asynchronous.A There is not much difference between the two types of communication
 
@@ -47,5 +41,3 @@ Since the devices to not decide upon a fixed baud rate before in the later metho
 #### What is the Need?
 
 It must have been obvious by now that a clock line is used to calculate the duration of one bit so that the receiver is able to poll the status of the pin at exact locations so that it is reliably able to extract the data from the serial line. The number of times the receiver polls the line in one bit duration varies from just one to how many ever is possible. Just one sample per bit is not a very reliable means to extract the information and making a lot of samples is an over kill. The most logical number of polls per bit would be 3 to get the exact state of the pin along with an idea of the error in synchronization.
-
-I hope this post was helpful to an extent and helped you in some way. Please like us on Facebook and <a href="http://embedjournal.com/subscribe/" target="_blank">subscribe to our newsletters</a> with your email using the subscribe button below. We will keep you posted on our latest posts.
