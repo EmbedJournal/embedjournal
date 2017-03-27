@@ -14,7 +14,7 @@ This post documents the steps involved in interfacing the LCD in 8 bit mode with
 
   1. [LCD Module Basic Theory](/interfacing-lcd-module-part-1/) (LCD Controllers, CG&DD RAM, PIN description,Timing Diagram, Commands)
   2. Programming LCDs in 8 bit mode. (programming pic18f4520 in C with C18 compiler under 8 bit mode)
-  3. [Programming LCDs in 4 bit mode](/interface-lcd-in-4-bit-mode/). (programmingA pic18f4520A in C withA C18 compilerA under 4 bit mode)</a>
+  3. [Programming LCDs in 4 bit mode](/interface-lcd-in-4-bit-mode/). (programming pic18f4520 in C with C18 compiler under 4 bit mode)
   4. Creating Custom Characters (bit map symbols and arrows that are not usually present in the ASCII table)
 
 ### Why Reinvent the wheel?
@@ -23,7 +23,7 @@ There are a lot of libraries that are freely available in the Internet and in so
 
 Using existing libraries for fonts, FAT and other complex and time consuming applications is understandable but for an application as simple as the character LCD, I would rather write my own library than spending time reading and understanding some one else's code.
 
-Taking and using someone else's code means I have to put up with the names that they choose to call their functions with or stick to their naming convention (that can be solved by writing wrapper functions or refactoring but thats clumsy). 
+Taking and using someone else's code means I have to put up with the names that they choose to call their functions with or stick to their naming convention (that can be solved by writing wrapper functions or refactoring but that's clumsy). 
 
 We will first list a set of functions that we will be using to interface the LCD module and then wrap it up into a nice header file that can be included in your program's main file. It is good practice to use separate C files for each module that you interface so that combining two such module would be easy in the long run.
 
@@ -40,7 +40,7 @@ The 8 bit mode of operation of the LCD is relatively faster and simpler than the
 
 ### Code Macros:
 
-Before writing the code we have to decide on the pins that we are going to use for use for the interface. Once this is done, we have to put them to use by setting code macros with `#define`. In C the macros are just shortcuts. If you write `#define HIGH 1`A Where ever the compiler compiler encounters an instance of HIGH it will consider it as 1. This can be really helpful in providing more readability and portability for you code which you will see by the end of this post.
+Before writing the code we have to decide on the pins that we are going to use for use for the interface. Once this is done, we have to put them to use by setting code macros with `#define`. In C the macros are just shortcuts. If you write `#define HIGH 1` Where ever the compiler encounters an instance of HIGH it will consider it as 1. This can be really helpful in providing more readability and portability for you code which you will see by the end of this post.
 
 ``` c
 /****************** PIN Mapping *******************/
@@ -159,7 +159,7 @@ void LCD_string(const rom char *buffer)
 
 ### Source File lcd.c
 
-Now all that is remaining is to collect all the functions above and put then in a single C source file and include necessary header files and we are good to go. This is how you final C source file should look like. Use the small icon below the source code to copy the code with proper formatting.
+Now all that is remaining is to collect all the functions above and put then in a single C source file and include necessary header files and we are good to go. This is how your final C source file should look like. Use the small icon below the source code to copy the code with proper formatting.
 
 ``` c
 /* 

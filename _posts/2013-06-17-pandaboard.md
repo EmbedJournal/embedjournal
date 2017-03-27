@@ -10,15 +10,15 @@ categories: [ "Hardware", "Review" ]
 tags: [ "DevKit" ]
 ---
 
-A PandaBoard is a low-cost, low-power single board development platform from the famous Texas Instruments OMAP4430 system. It is capable of ruining all major flavors of Linux with native support from Ubuntu. It has been on the list of Linux hackers for quite some time now and has a huge archive of project documentation form die-hard Linux fans all over the world.
+A PandaBoard is a low-cost, low-power single board development platform from the famous Texas Instruments OMAP4430 system. It is capable of running all major flavors of Linux with native support from Ubuntu. It has been on the list of Linux hackers for quite some time now and has a huge archive of project documentation from die-hard Linux fans all over the world.
 
 {% include image.html src="pandaboard.png" %}
 
 PandaBoard consists of CPU and GPU which runs at higher clock rates which is a good news for the developers. The additional feature regarding the clock is that the PandaBoard has a RTC, but this feature is not of much help the developers as the PandaBoard RTC doesn't have a battery back up. Then you have to think of some alternative means to add a power supply to feed the RTC. Which might look really absurd.
 
-This means that once the power is plugged out of the board clock is disabled. Don't worry programmers,we have a solution to this also dYtm, nothing is impossible in Engineering. A To solve this we need to us the Network Time Protocol (NTP) to synchronize the clock, provided the board should have an Internet access. Another way is by Software Clock which can set the clock at the time of booting of the board dYtm,
+This means that once the power is plugged out of the board clock is disabled. Don't worry programmers,we have a solution to this, nothing is impossible in Engineering. To solve this we need to use the Network Time Protocol (NTP) to synchronize the clock, provided the board should have an Internet access. Another way is by Software Clock which can set the clock at the time of booting of the board.
 
-The PandaBoard is exclusively for Linux based developers as the board runs the Linux Kernel with the Android or Firefox OS. A The PandaBoard has an integrated SGX 540 Graphics Processor and provides an HDMI output of 1080 pixels. Here comes an another headache to all my fella developers the GPU driver has to written ,by the very difficult and inefficient reverse engineering method.
+The PandaBoard is exclusively for Linux based developers as the board runs the Linux Kernel with the Android or Firefox OS.  The PandaBoard has an integrated SGX 540 Graphics Processor and provides an HDMI output of 1080 pixels. Here comes an another headache to all my fellow developers - the GPU driver has to written ,by the very difficult and inefficient reverse engineering method.
 
 ### Block Diagram of the PandaBoard:
 
@@ -28,7 +28,7 @@ The PandaBoard is exclusively for Linux based developers as the board runs the L
 
   * Dual core 1GHz ARM Cortex-A9 Processor
   * Wired 10/100 Ethernet
-  * BluetoothA Connectivity
+  * Bluetooth Connectivity
   * Wireless Ethernet
   * Primary persistent storage is in SD and whose memory is extended to 32 GB
   * Dual Core 1.2 GHz CPU and 384 MHz GPU
@@ -37,7 +37,7 @@ The PandaBoard is exclusively for Linux based developers as the board runs the L
 
 ### Expansions Headers Details:
 
-Primary difference between the BeagleBoard expansion and the PandaBoard expansion is the removal of the McBSP support from the header. As the McBSP was one of the least used features of the expansion header, they were replaced with additional chip select lines for the McSPI. This allows for a greater number of SPI devices to be used on the expansionA header.
+Primary difference between the BeagleBoard expansion and the PandaBoard expansion is the removal of the McBSP support from the header. As the McBSP was one of the least used features of the expansion header, they were replaced with additional chip select lines for the McSPI. This allows for a greater number of SPI devices to be used on the expansion header.
 
 |-----+---------------------------+-------------------------|
 | PIN | BeagleBoard/BeagleBoardXM | PandaBoardES/PandaBoard |
@@ -75,7 +75,7 @@ Primary difference between the BeagleBoard expansion and the PandaBoard expansio
 
 ### Component Listing:
 
-Here are the list of components that are used in the PandaBoard with reference to their vendors and part ID. If you are planning to purchase of of these then you should have a closer look at the components used and the actual license behind the components they have used.
+Here are the list of components that are used in the PandaBoard with reference to their vendors and part ID. If you are planning to purchase one of these then you should have a closer look at the components used and the actual license behind the components they have used.
 
 |--------------------------+----------+---------------------|
 |Function                  | Vendor   | Part ID             |
@@ -109,6 +109,6 @@ The PandaBoard comes as is. That is it cannot be used fully out of the box. Ther
 
 ### Conclusion:
 
-PandaBoard is a good choice if you a seasoned Linux user looking forward to some real beast in terms of processing and computation powers. For beginners and intermediate level users you might have to wait a little longer to use this board. There are other boards that will suit your need properly.
+PandaBoard is a good choice if you are a seasoned Linux user looking forward to some real beast in terms of processing and computation powers. For beginners and intermediate level users you might have to wait a little longer to use this board. There are other boards that will suit your need properly.
 
 Also read our review on some other popular SBCs such as [BeagleBone](/beaglebone-a-quick-review/), [RaspberryPi](/raspberry-pi-lets-take-a-bite/) and [Cubieboard](/cubiebord/). 

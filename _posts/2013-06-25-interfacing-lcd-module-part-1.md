@@ -10,26 +10,26 @@ categories: [ "Embedded Theory", "Microchip PIC" ]
 tags: [ "Interface", "LCD" ]
 ---
 
-The LCD module interface with a microcontroller is simple and it is a primitive means of adding a visual appeal to your embedded application. There are two basic types of LCD modules in the market they are, <a title="Wiki" href="http://en.wikipedia.org/wiki/Hitachi_HD44780_LCD_controller" target="_blank">Character LCD</a> and <a title="wiki" href="http://en.wikipedia.org/wiki/Graphics_display_resolution" target="_blank">Graphics LCD</a>. Character LCDaEURtms are the some of the cheapest means LCD displays available today.
+The LCD module interface with a microcontroller is simple and it is a primitive means of adding a visual appeal to your embedded application. There are two basic types of LCD modules in the market they are, <a title="Wiki" href="http://en.wikipedia.org/wiki/Hitachi_HD44780_LCD_controller" target="_blank">Character LCD</a> and <a title="wiki" href="http://en.wikipedia.org/wiki/Graphics_display_resolution" target="_blank">Graphics LCD</a>. Character LCDs are the some of the cheapest means LCD displays available today.
 
 [<img class="aligncenter size-large wp-image-900" alt="lcd interface" src="/images/posts/2013/06/DSC09429-1024x576.jpg" width="618" height="347" srcset="/images/posts/2013/06/DSC09429-1024x576.jpg 1024w, /images/posts/2013/06/DSC09429-300x169.jpg 300w" sizes="(max-width: 618px) 100vw, 618px" />](/images/posts/2013/06/DSC09429.jpg)
 
-This post is first of a series of four posts that walks through entire process of interfacing an LCD module with a (any) microcontroller with all the basicA conceptsA dealt in detail. Subscribe to our post with your email using the subscribe button in the right sidebar and get free updates on these follow-up posts.
+This post is first of a series of four posts that walks through entire process of interfacing an LCD module with a (any) microcontroller with all the basic concepts dealt in detail. Subscribe to our post with your email using the subscribe button in the right sidebar and get free updates on these follow-up posts.
 
-  1. <span style="line-height: 13px; color: #808080;">LCD Module Basic Theory. (LCD Controllers, CG&DD RAM, PINA description,Timing Diagram,A Commands)</span>
+  1. <span style="line-height: 13px; color: #808080;">LCD Module Basic Theory. (LCD Controllers, CG&DD RAM, PIN description,Timing Diagram, Commands)</span>
   2. <a title="Programming LCD in 8 bit mode aEUR" Part -2" href="http://embedjournal.com/2013/06/programming-lcd-in-8-bit-mode/" target="_blank">Programming LCDs in 8 bit mode. (programming pic18f4520 in C with C18 compiler under 8 bit mode)</a>
-  3. <a title="Interface aEUR" LCD in 4 bit Mode: Part 3" href="http://embedjournal.com/2013/07/interface-lcd-in-4-bit-mode/" target="_blank">Programming LCDs in 4 bit mode.A (programming pic18f4520 in C with C18 compiler under 4 bit mode)</a>
+  3. <a title="Interface aEUR" LCD in 4 bit Mode: Part 3" href="http://embedjournal.com/2013/07/interface-lcd-in-4-bit-mode/" target="_blank">Programming LCDs in 4 bit mode (programming pic18f4520 in C with C18 compiler under 4 bit mode)</a>
   4. Creating Custom Characters (bit map symbols and arrows that are not usually present in the ASCII table)
 
-This Post will cover the basic theory that you should have a clearA understandingA before getting started with the programming. Some of the sections below are not really essential for the interface but it is a good practice to have a thorough knowledge about what you areA indulgingA in. Whereas some listed below are absolutely mandatory to understand how the LCD module works and to predict how it will behave for a given situation.
+This post will cover the basic theory that you should have a clear understanding of, before getting started with the programming. Some of the sections below are not really essential for the interface but it is a good practice to have a thorough knowledge about what you are indulging in. Whereas some listed below are absolutely mandatory to understand how the LCD module works and to predict how it will behave for a given situation.
 
 You are free to choose which to read and which to skim (that is if you know what you are doing).
 
 ### **LCD Controllers:**
 
-The LCD module has display controller that are used toA receiveA the data from theA controller use it to display the data in a legible format. These controller have and embedded font set that can be addressed by sending the corresponding ASCII value of the the character to be printed.
+The LCD module has display controller that are used to receive the data from the controller and uses it to display the data in a legible format. These controllers have an embedded font set that can be addressed by sending the corresponding ASCII value of the the character to be printed.
 
-Most LCD module have a <a title="read more" href="http://en.wikipedia.org/wiki/Hitachi_HD44780_LCD_controller" target="_blank">HD44780</a> or compatible controller which is specially designed to build LCDs with one or two lines with a maximum of 40 character positions each. They are ASIC (<a title="wiki" href="https://en.wikipedia.org/wiki/Application-specific_integrated_circuit" target="_blank">Application Specific Integrated Circuit</a>). A single HD44780 is able to display two lines of 8 characters each.
+Most LCD modules have a <a title="read more" href="http://en.wikipedia.org/wiki/Hitachi_HD44780_LCD_controller" target="_blank">HD44780</a> or compatible controller which is specially designed to build LCDs with one or two lines with a maximum of 40 character positions each. They are ASIC (<a title="wiki" href="https://en.wikipedia.org/wiki/Application-specific_integrated_circuit" target="_blank">Application Specific Integrated Circuit</a>). A single HD44780 is able to display two lines of 8 characters each.
 
 If we want more, the HD44780 has to be expanded with one or more expansion chips, like the HD44100 (2 x 8 characters expansion) or the HD66100 (2 x 16 characters expansion). Seen from the HD44780, the first line starts with 00h; the second line with 40h.
 
@@ -37,7 +37,7 @@ If we want more, the HD44780 has to be expanded with one or more expansion chips
 
 [<img class="size-thumbnail wp-image-940 alignright" alt="16x2 LCD module" src="/images/posts/2013/06/16x2-LCD-module-150x150.jpg" width="150" height="150" srcset="/images/posts/2013/06/16x2-LCD-module-150x150.jpg 150w, /images/posts/2013/06/16x2-LCD-module-300x300.jpg 300w, /images/posts/2013/06/16x2-LCD-module.jpg 600w" sizes="(max-width: 150px) 100vw, 150px" />](/images/posts/2013/06/16x2-LCD-module.jpg)
 
-This the most common configuration of LCD that most peopleA prefer mostly due to reduced cost and small footprint.A In a 16 x 2 line display LCD module, each the two lines have 40 character positions of which only 16 can be displayed at a time. The remaining positions are invisible and cannot be seen. To display the remaining 24 characters, the LCD has an option to move the window of characters displayed to the right or left so that; it appears as though the characters are scrolling. Here is a table of the DD RAM addresses that are within the visible data region. Note that in this module, DD RAM locations 10 to 27 on the first line and 51 to 67 are not covered by the displayable window of 16A character per line.
+This the most common configuration of LCD that most people prefer mostly due to reduced cost and small footprint. In a 16 x 2 line display LCD module, each the two lines have 40 character positions of which only 16 can be displayed at a time. The remaining positions are invisible and cannot be seen. To display the remaining 24 characters, the LCD has an option to move the window of characters displayed to the right or left so that; it appears as though the characters are scrolling. Here is a table of the DD RAM addresses that are within the visible data region. Note that in this module, DD RAM locations 10 to 27 on the first line and 51 to 67 are not covered by the displayable window of 16A character per line.
 
 <table class="aligncenter" style="width: 100%;" border="1" cellspacing="0" cellpadding="5" align="center">
   <tr>
@@ -187,7 +187,7 @@ This the most common configuration of LCD that most peopleA prefer mostly due to
 
 [<img class="size-thumbnail wp-image-857 alignright" alt="Character LCD Command Sheet" src="/images/posts/2013/06/20x4-Character-LCD-Module-150x150.jpg" width="150" height="150" />](/images/posts/2013/06/20x4-Character-LCD-Module.jpg)
 
-The 20 x 4 display module is a slight variant of the 16 x 2 Module such that, aA single 40 character (of which 16 are displayable) line is split up into 2 halves of 20 displayable characters each to make 4 lines.A Here the first line displays the first 20 DD RAM locations (00 - 13) and the third line displays theA remaining 20 DD RAM locations (14 - 53) of the first line in the case of 16 x 2 LCD Module.A And the second line displays the first 20 DD RAM locations (40 - 53) and the fourth line displays theA remaining 20 DD RAM locations (54 - 67) of the second line in the case of 16 x 2 LCD Module.A This is the module that I am using for this post. It has the disadvantage of not being able to scroll but looks better with 4 displayable lines.A Here is a table of the DD RAM addresses that are within the visible region.
+The 20 x 4 display module is a slight variant of the 16 x 2 Module such that, a single 40 character (of which 16 are displayable) line is split up into 2 halves of 20 displayable characters each to make 4 lines. Here the first line displays the first 20 DD RAM locations (00 - 13) and the third line displays the remaining 20 DD RAM locations (14 - 53) of the first line in the case of 16 x 2 LCD Module and the second line displays the first 20 DD RAM locations (40 - 53) and the fourth line displays the remaining 20 DD RAM locations (54 - 67) of the second line in the case of 16 x 2 LCD Module. This is the module that I am using in this post. It has the disadvantage of not being able to scroll but looks better with 4 displayable lines.Here is a table of the DD RAM addresses that are within the visible region.
 
 <table class="aligncenter" style="width: 100%;" border="1" cellspacing="0" cellpadding="5" align="center">
   <tr>
@@ -604,7 +604,7 @@ The 20 x 4 display module is a slight variant of the 16 x 2 Module such that, aA
     </td>
     
     <td>
-      Register Select; 0: InstructionA RegisterA 1: Data Register
+      Register Select; 0: Instruction Register 1: Data Register
     </td>
   </tr>
   
@@ -646,7 +646,7 @@ The 20 x 4 display module is a slight variant of the 16 x 2 Module such that, aA
     </td>
     
     <td class="aligncenter" rowspan="8" align="center" valign="middle">
-      LCD Data Bus line. They are responsible for theA parallel dataA transfer. DB7 is used to check the busy Flag.In 4 bitA mode, DB0 to DB3 are not used and are left open.
+      LCD Data Bus line. They are responsible for the parallel data transfer. DB7 is used to check the busy Flag.In 4 bit mode, DB0 to DB3 are not used and are left open.
     </td>
   </tr>
   
@@ -759,7 +759,7 @@ The <a title="datasheet" href="http://www.xilinx.com/products/boards/ml501/datas
 
 ### **Command Sheet:**
 
-The command sheet is a table which contains the various commands that can be issued to the LCD module so that it behaves as intended. I have not attached an image of the command sheet as I could not find any of a good readable resolution. So I created a HTML version of the command sheet that you could use at any resolution dYtm, You can find the <a title="Character LCD Command Sheet HTML Version" href="http://embedjournal.com/2013/06/character-lcd-command-sheet/" target="_blank">Command Sheet here</a>A (or I should call it command page). The cells that are filled with absolute values have to be used as such and the ones that are having letters are variables and take either 0 or 1 based on the task it has to perform.
+The command sheet is a table which contains the various commands that can be issued to the LCD module so that it behaves as intended. I have not attached an image of the command sheet as I could not find any of a good readable resolution. So I created a HTML version of the command sheet that you could use at any resolution dYtm, You can find the <a title="Character LCD Command Sheet HTML Version" href="http://embedjournal.com/2013/06/character-lcd-command-sheet/" target="_blank">Command Sheet here</a> (or I should call it command page). The cells that are filled with absolute values have to be used as such and the ones that are having letters are variables and take either 0 or 1 based on the task it has to perform.
 
 For example, the Display ON/OFF Control command has the following fields,
 
@@ -843,13 +843,13 @@ For example, the Display ON/OFF Control command has the following fields,
   </tr>
 </table>
 
-Here, D4:D7 are 0aEURtms, D3 is 1 and RS and R/W are held low. These are all constant values. They have to be used as such. But the, bits D0:D2 are all variables.
+Here, D4:D7 are 0ms, D3 is 1 and RS and R/W are held low. These are all constant values. They have to be used as such. But the, bits D0:D2 are all variables.
 
-D = 0 aEUR" Turns the display OFF D = 1 aEUR" Turns ON the display
+D = 0 " Turns the display OFF D = 1 " Turns ON the display
 
-C = 0 aEUR" Turns the Cursor OFF C = 1 aEUR" Turns the Cursor ON
+C = 0 " Turns the Cursor OFF C = 1" Turns the Cursor ON
 
-B = 0 aEUR" Character at the cursor is static B = 1 aEUR" Character at the cursor is blinking.
+B = 0 " Character at the cursor is static B = 1 " Character at the cursor is blinking.
 
 According to this description, the value has to be written to the command register. That is if you want, display ON, cursor ON and the character at the cursor to be static, you have to write, 0x0E while holding the RS and RW lines Low.
 
@@ -874,7 +874,7 @@ There are two basic timing diagrams, one for the read operation and another for 
 </p>
 
 <p style="text-align: left;">
-  <strong>Yet another timing diagram!A </strong>
+  <strong>Yet another timing diagram! </strong>
 </p>
 
 <p style="text-align: left;">
@@ -887,10 +887,10 @@ There are two basic timing diagrams, one for the read operation and another for 
 
 ### **Microcontroller Pin Requirements:**
 
-As you know these LCDs have a built in font set and can be used by indexing the ASCII value of the corresponding character. It capable of operating on 8 data lines (D0 to D7) or on 4 data lines (D4 to D7). The upcoming A posts will discuss the 8 bit and 4 bit mode of LCD interface. Other than the data lines the LCD needs 3 command lines - RS, R/W and EN. Therefore in total, an LCD interface will need 11 (8+3) or 7 (4+3) pins of the microcontroller.
+As you know these LCDs have a built in font set and can be used by indexing the ASCII value of the corresponding character. It capable of operating on 8 data lines (D0 to D7) or on 4 data lines (D4 to D7). The upcoming  posts will discuss the 8 bit and 4 bit mode of LCD interface. Other than the data lines the LCD needs 3 command lines - RS, R/W and EN. Therefore in total, an LCD interface will need 11 (8+3) or 7 (4+3) pins of the microcontroller.
 
 It is possible to further reduce the total number of port pins required from 7 (4+3) to 6 (4+2) by shorting the R/W pin to ground. If the R/W pin is connected to the ground, the LCD can be used to write data only. Reading from it is not possible. So we are not able to read the busy flag from the module. To live with this disability, we are forced to provide ample amount of delay loops (and hence compromise on the speed of execution) so that the LCD is seldom busy doing thing when new data is given.
 
-<a href="http://embedjournal.com/subscribe/" target="_blank">Subscribe to our posts and newsletters</a>A to stay updated with the upcoming series of this tutorial and get our posts delivered to your inbox.
+<a href="http://embedjournal.com/subscribe/" target="_blank">Subscribe to our posts and newsletters</a> to stay updated with the upcoming series of this tutorial and get our posts delivered to your inbox.
 
 Update: <a title="Programming LCD in 8 bit mode aEUR" Part -2" href="http://embedjournal.com/2013/06/programming-lcd-in-8-bit-mode/" target="_blank">Part 2 of this post in now available</a>.
