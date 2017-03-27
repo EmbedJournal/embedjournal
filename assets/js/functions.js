@@ -93,6 +93,14 @@ $(document).ready(function() {
         this.$instance.find('.caption').remove();
         $('<div class="caption">').text(caption).appendTo(this.$instance.find('.featherlight-content'));
     }
+    $.featherlight.defaults.beforeClose = function() {
+        $('body').removeClass('model-open');
+        $('body').css('padding-right', 0);
+    };
+    $.featherlight.defaults.afterOpen = function() {
+        $('body').addClass('model-open');
+        $('body').css('padding-right', 15);
+    };
 
     $.featherlightGallery.prototype.afterContent = function() {
         var caption = this.$currentTarget.find('img').attr('alt');
@@ -100,7 +108,7 @@ $(document).ready(function() {
         $('<div class="caption">').text(caption).appendTo(this.$instance.find('.featherlight-content'));
     };
 
-    $('.c-loadComment').on('click', function(){
+    $('.js-loadComment').on('click', function(){
         var disqus_shortname = 'embedjournal'; // Replace this value with *your* username.
         // ajax request to load the disqus javascript
         $.ajax({

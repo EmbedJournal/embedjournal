@@ -7,6 +7,9 @@ body {
     font-family: 'Istok Web', sans-serif;
     background: hsla(210, 10%, 92%, 1);
 }
+body.model-open {
+    overflow: hidden;
+}
 .l-main {
     position: relative;
     top: 32px;
@@ -823,12 +826,15 @@ body {
     font-size: 17px;
     word-break: normal;
     word-wrap: normal;
+    white-space: pre;
 }
 .c-singlePost .b-postContent pre code, .c-contentBlock pre code {
     background: none;
-    border-radius: none;
+    border-radius: 0;
     border: none;
     padding: 0;
+    word-break: keep-all;
+    white-space: pre;
 }
 .c-singlePost .b-postContent kbd, .c-contentBlock kbd {
     background: #293314;
@@ -1150,21 +1156,30 @@ body {
     margin-bottom: 30px;
 }
 .c-loadComment .btn {
-    padding: 12px 32px;
     width: 100%;
     box-shadow: 0px 1px 2px rgba(204,204,204,1);
 }
 .c-postNav {
     margin-bottom: 30px;
     display: flex;
+    flex-wrap: wrap;
+}
+.c-postNav .c-loadComment {
+    margin-bottom: 0;
+    order: 3;
+    width: 100%;
 }
 .c-postNav .b-navPrev {
+    margin-bottom: 10px;
     width: 50%;
     text-align: left;
+    order: 1;
 }
 .c-postNav .b-navNext {
+    margin-bottom: 10px;
     width: 50%;
     text-align: right;
+    order: 2;
 }
 .c-postNav .btn {
     border-radius: 0;
@@ -1610,6 +1625,13 @@ body {
     color: #676864;
     text-align: center;
 }
+.c-footerCopyText a {
+    color: #676864;
+    text-decoration: none;
+}
+.c-footerCopyText a:hover {
+    color: #cdcdcb;
+}
 .c-footerNav {
     display: flex;
     flex-wrap: wrap;
@@ -1724,6 +1746,7 @@ body {
 
 /* Disqus */
 #disqus_thread {
+    margin-bottom: 30px;
     background: #fff;
     box-shadow: 0px 1px 2px rgba(204,204,204,1);
 }
@@ -1928,6 +1951,19 @@ body {
         border-width: 5px;
         border-top-color: #5a5214;
         border-left-color: #5a5214;
+    }
+    .c-postNav .b-navPrev {
+        margin-bottom: 0;
+        width: 25%;
+    }
+    .c-postNav .c-loadComment {
+        order: 1;
+        width: 50%;
+    }
+    .c-postNav .b-navNext {
+        margin-bottom: 0;
+        width: 25%;
+        order: 3;
     }
     .c-subscribe {
         position: relative;
