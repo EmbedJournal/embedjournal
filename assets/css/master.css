@@ -3,9 +3,11 @@
 
 /* Mobile First CSS */
 body {
-    padding-top: 68px;
     font-family: 'Istok Web', sans-serif;
     background: hsla(210, 10%, 92%, 1);
+}
+body.landing {
+    padding-top: 0;
 }
 body.model-open {
     overflow: hidden;
@@ -22,11 +24,15 @@ body.model-open {
     opacity: 1;
     visibility: visible;
 }
+.s-logo {
+    margin-bottom: 30px;
+    background: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0px 1px 2px rgba(204,204,204,1);
+}
 .s-navigation {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    position: relative;
     z-index: 4;
     height: 81px;
 }
@@ -54,6 +60,97 @@ body.model-open {
 }
 .s-categoryNav.nav-up {
     top: -81px;
+}
+.c-logo {
+    text-align: center;
+}
+.c-logo .b-logo {
+    max-width: 250px;
+    display: inline-block;
+}
+.c-logo .e-logo {
+    max-width: 100%;
+}
+.c-landingForm {
+    margin: 20px -15px;
+    background: #ccc27c;
+    box-shadow: 0px 1px 2px rgba(204,204,204,1);
+}
+.c-landingForm .b-content {
+    padding: 16px;
+}
+.c-landingForm .b-content h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #5a5214;
+    font-size: 32px;
+    line-height: 1.4;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+.c-landingForm .b-content p {
+    margin-bottom: 20px;
+    color: #5a5214;
+    font-size: 17px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+.c-landingForm .b-image {
+    padding: 16px;
+    padding-bottom: 0;
+    text-align: center;
+}
+.c-landingForm .b-image .e-image {
+    max-width: 100%;
+}
+.c-landingForm .b-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+.c-landingForm .b-form .b-field {
+    margin-bottom: 20px;
+    width: 100%;
+}
+.c-landingForm .b-form .b-field .e-label {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 25px;
+    vertical-align: middle;
+}
+.c-landingForm .b-form .e-field.-text {
+    height: 34px;
+    padding: 8px;
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    background: rgba(255,255,255,0.9);
+    text-indent: 0;
+}
+.c-landingForm .b-form .e-field.-text:focus {
+    background: rgba(255,255,255,1);
+    outline: 0;
+}
+.c-landingForm .b-form .b-submit {
+    width: 100%;
+}
+.c-landingForm .b-form .b-submit .btn {
+    width: 100%;
+}
+.c-checkbox {
+    margin-right: 5px;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    background: #fff;
+    outline: none;
+    border: none;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 4px;
+    color: #476900;
 }
 .c-toTop {
     display: none;
@@ -835,17 +932,21 @@ body.model-open {
     padding: 0;
     word-break: keep-all;
     white-space: pre;
+    line-height: 1.5;
 }
 .c-singlePost .b-postContent kbd, .c-contentBlock kbd {
     background: #293314;
 }
 .c-singlePost .b-postContent code, .c-contentBlock code {
+    display: inline-block;
     font-size: .88889em;
     border: 1px solid #ddd;
     background-color: #f8f8f8;
     border-radius: 3px;
-    padding: 2px 5px;
+    padding: 5px;
+    line-height: 1;
     color: #333;
+    vertical-align: middle;
 }
 .c-singlePost .b-postContent .b-youtubeVideo, .c-contentBlock .b-youtubeVideo {
     margin-bottom: 30px;
@@ -853,6 +954,8 @@ body.model-open {
     height: 300px;
 }
 .c-singlePost .b-postContent .b-addImage, .c-contentBlock .b-addImage {
+    display: none!important;
+    margin-bottom: 30px;
     margin-left: -21px;
     max-width: none;
 }
@@ -1782,9 +1885,6 @@ body.model-open {
 
 /* For Tablet */
 @media (min-width: 768px) {
-    body {
-        padding-top: 88px;
-    }
     .c-toTop {
         display: block;
     }
@@ -2133,6 +2233,31 @@ body.model-open {
     .navbar-default {
         padding: 0;
     }
+    .c-landingForm {
+        overflow: hidden;
+        position: relative;
+    }
+    .c-landingForm .b-image {
+        height: 100%;
+    }
+    .c-landingForm .b-image .e-image {
+        position: absolute;
+        bottom: 0;
+        right: -50px;
+    }
+    .c-landingForm .b-content {
+        padding: 48px;
+    }
+    .c-landingForm .b-form .b-field.-halfWidth {
+        padding-right: 10px;
+        width: 50%;
+    }
+    .c-landingForm .b-form .b-field.-fullWidth {
+        width: 100%;
+    }
+    .c-landingForm .b-form .b-submit {
+        padding-right: 10px;
+    }
     .c-authorInfo .b-authorImg {
         width: auto;
     }
@@ -2263,6 +2388,9 @@ body.model-open {
     }
     .c-subscribe {
         padding: 32px 80px;
+    }
+    .c-singlePost .b-postContent .b-addImage, .c-contentBlock .b-addImage {
+        display: block!important;
     }
     .c-aside.affix {
         position: fixed!important;

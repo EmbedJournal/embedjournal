@@ -1,0 +1,115 @@
+---
+permalink: landing.html
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include meta.html %}
+    <!--[if lt IE 9]>
+    	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    	<script src="scripts/iepngfix_tilebg.js"></script>
+    <![endif]-->
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="icon" type="image/ico" href="{{ site.baseurl }}/assets/images/favicon.ico">
+    <link rel="shortcut-icon" type="image/ico" href="{{ site.baseurl }}/assets/images/favicon.ico">
+
+    <title>{{ page.title }} - {{ site.title }}</title>
+
+    {% if page.url == "/404.html" %}
+    <meta http-equiv="refresh" content="5; url=/">
+    {% endif %}
+
+    <!-- CDN Styles -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/bfe45b6074.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Begin MailChimp Signup Form -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+
+    <!-- CDN Early scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js" integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/master.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/syntax.css">
+</head>
+<body class="landing">
+
+    <header class="l-header">
+        <section class="s-logo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="c-logo">
+                            <a class="b-logo" href="{{ site.baseurl }}/"><img class="e-logo" src="{{ site.logo }}" alt="Embed Journal" class="img-responsive"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main class="l-main">
+        <section class="s-mainContent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <div class="c-landingForm">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="b-content">
+                                        <h1>What is Lorem Ipsum?</h1>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                        <form class="b-form">
+                                            <div class="b-field -halfWidth">
+                                                <input type="text" placeholder="Name" class="e-field -text">
+                                            </div>
+                                            <div class="b-field -halfWidth">
+                                                <input type="text" placeholder="Email" class="e-field -text">
+                                            </div>
+                                            <div class="b-field -fullWidth">
+                                                <input type="checkbox" class="e-field -checkbox js-checkbox">
+                                                <label class="e-label">Subscribe to newsletters</label>
+                                            </div>
+                                            <div class="b-submit">
+                                                <input type="submit" value="Subscribe" class="btn btn-green">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-image">
+                                <img src="{{ site.baseurl }}/assets/images/sample-tablet-image.png" class="e-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="l-footer">
+        <section class="s-footer">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<div class="c-footerCopyText">
+    						<p>© Copyright 2017 <a href="site.url">{{ site.title }}</a> All Rights Reserved.</p>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+        </section>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#" class="c-toTop js-toTop"><span class="fa fa-angle-up"></span></a>
+</body>
+    <!-- Load scripts at the the end of page to increase page speed -->
+    {% include scripts.html %}
+</html>

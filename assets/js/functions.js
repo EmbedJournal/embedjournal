@@ -46,6 +46,9 @@ function hasScrolled() {
 }
 
 $(document).ready(function() {
+
+    $('.js-checkbox').customCheckbox();
+
     // jquery code here
     $('.l-main').addClass('-fadeIn');
 
@@ -121,4 +124,35 @@ $(document).ready(function() {
         $(this).fadeOut();
     });
 
+    // $(document).on('click', '.js-checkboxTrigger', function() {
+    //     triggerCheck();
+    // });
+
 });
+
+
+$.fn.customCheckbox = function() {
+
+    $(this).hide();
+
+    if($(this).is(':checked')) {
+        $(this).before('<button class="c-checkbox js-checkboxTrigger" type="button" onclick="triggerCheck(this)"><span class="fa fa-check"></span></button>');
+    }
+    else {
+        $(this).before('<button class="c-checkbox js-checkboxTrigger" type="button" onclick="triggerCheck(this)"></button>');
+    }
+}
+
+function triggerCheck(e) {
+
+    var checkbox = $(e).siblings('.js-checkbox');
+
+    if(checkbox.is(':checked')) {
+        checkbox.prop('checked', false);
+        $(e).empty();
+    }
+    else {
+        checkbox.prop('checked', true);
+        $(e).append('<span class="fa fa-check"></span>');
+    }
+}
