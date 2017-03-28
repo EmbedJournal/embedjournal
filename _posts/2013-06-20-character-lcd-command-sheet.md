@@ -10,9 +10,9 @@ categories: [ "Embedded Theory" ]
 tags: [ "LCD" ]
 ---
 
-I was looking for an Image of the CharacterA LCD command sheet throughout the internet and failed find any good resolution images that I can use for post references. Here is a HTML Version that could be used at whichever resolution you choose!
+I was looking for an image of the Character LCD command sheet throughout the internet and failed to find any good resolution images that I can use for post references. Here is an HTML Version that could be used at whichever resolution you choose!
 
-<table class="aligncenter" style="width: 100%;" border="1" cellspacing="0" cellpadding="5" align="center">
+<table style="width: 100%;" border="1" cellspacing="0" cellpadding="5" align="center">
   <tr align="center" valign="middle">
     <td colspan="13">
       <h2>
@@ -119,18 +119,18 @@ I was looking for an Image of the CharacterA LCD command sheet throughout the in
     </td>
     
     <td>
-      A 0
+       0
     </td>
     
     <td>
     </td>
     
     <td>
-      A 0
+       0
     </td>
     
     <td>
-      A 0
+       0
     </td>
     
     <td>
@@ -153,11 +153,11 @@ I was looking for an Image of the CharacterA LCD command sheet throughout the in
     </td>
     
     <td>
-      A Clears display and returns cursor to the home position (address 0).
+       Clears display and returns cursor to the home position (address 0).
     </td>
     
     <td>
-      A 1.52 ms
+       1.52 ms
     </td>
   </tr>
   
@@ -173,7 +173,7 @@ I was looking for an Image of the CharacterA LCD command sheet throughout the in
     </td>
     
     <td>
-      A 0
+       0
     </td>
     
     <td>
@@ -186,27 +186,27 @@ I was looking for an Image of the CharacterA LCD command sheet throughout the in
     </td>
     
     <td>
-      A 0
+       0
     </td>
     
     <td>
-      A 0
+       0
     </td>
     
     <td>
-      A 1
+       1
     </td>
     
     <td>
-      A *
+       *
     </td>
     
     <td>
-      A Returns cursor to home position. Also returns display being shifted to the original position. DDRAM content remains unchanged.
+       Returns cursor to home position. Also returns display being shifted to the original position. DDRAM content remains unchanged.
     </td>
     
     <td>
-      A 1.52 ms
+       1.52 ms
     </td>
   </tr>
   
@@ -244,21 +244,21 @@ I was looking for an Image of the CharacterA LCD command sheet throughout the in
     </td>
     
     <td>
-      A S
+       S
     </td>
     
     <td>
-      A Sets cursor move direction (I/D); specifies to shift the display (S). These operations are performed during data read/write.
+       Sets cursor move direction (I/D); specifies to shift the display (S). These operations are performed during data read/write.
     </td>
     
     <td>
-      A 37 I1/4s
+       37 I1/4s
     </td>
   </tr>
   
   <tr>
     <td>
-      Display on/offA control
+      Display on/off control
     </td>
     
     <td>
@@ -287,25 +287,25 @@ I was looking for an Image of the CharacterA LCD command sheet throughout the in
     </td>
     
     <td>
-      A C
+       C
     </td>
     
     <td>
-      A B
+       B
     </td>
     
     <td>
-      A Sets on/off of all display (D), cursor on/off (C), and blink of cursor position character (B).
+       Sets on/off of all display (D), cursor on/off (C), and blink of cursor position character (B).
     </td>
     
     <td>
-      A 37 I1/4s
+       37 I1/4s
     </td>
   </tr>
   
   <tr>
     <td>
-      Cursor/displayA shift
+      Cursor/display shift
     </td>
     
     <td>
@@ -336,19 +336,19 @@ I was looking for an Image of the CharacterA LCD command sheet throughout the in
     </td>
     
     <td>
-      A *
+      *
     </td>
     
     <td>
-      A *
+       *
     </td>
     
     <td>
-      A Sets cursor-move or display-shift (S/C), shift direction (R/L). DDRAM content remains unchanged.
+       Sets cursor-move or display-shift (S/C), shift direction (R/L). DDRAM content remains unchanged.
     </td>
     
     <td>
-      A 37 I1/4s
+       37 I1/4s
     </td>
   </tr>
   

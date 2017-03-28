@@ -10,7 +10,7 @@ categories: [ "Hardware", "Review" ]
 tags: [ "DevKit" ]
 ---
 
-Lets welcome the new comer in the league of single board computers (SBCs). Yes the [Cubieboard](http://cubieboard.org/) is a new single board computer heading up in the market. It has already been in the market for some time but not gained popularity.
+Lets welcome the new comer in the league of single board computers (SBCs). Yes the [Cubieboard](http://cubieboard.org/) is a new single board computer heading up in the market. It has already been in the market for some time but has not gained popularity.
 
 {% include image.html src="cubieboard.jpg" %}
 
@@ -58,7 +58,7 @@ As George explains it,a Baseboard is a developer board and, like the Cubieboard,
 
 {% include image.html src="cubieboard-baseboard.jpg" %}
 
-He also adds this - Personally I think using one power supply for everything and having on board switching regulators for 5.0V and 3.3V is very useful for people wanting to connect devices to the GPIO headers. What good is this development board if you don't start connecting things to it and with this board you have 3.3V and 5.0V available on the header as well as powering the Cubieboard. Also having the audio amplifier on board is nice (for some people), with a speaker header for those applications which require sound. Then you could create a nice little box with screen, speakers, and Cubieboard.
+He also adds this - Personally I think using one power supply for everything and having on-board switching regulators for 5.0V and 3.3V is very useful for people wanting to connect devices to the GPIO headers. What good is this development board if you don't start connecting things to it and with this board you have 3.3V and 5.0V available on the header as well as powering the Cubieboard. Also having the audio amplifier on board is nice (for some people), with a speaker header for those applications which require sound. Then you could create a nice little box with screen, speakers, and Cubieboard.
 
 And at $29.99 (plus shipping) this card is a deal because it will adapt your Cubieboard to a touch screen, VGA, LVDS, and most importantly brings Cubieboard's 96 pin connector out to 0.103 pitch headers.
 

@@ -42,7 +42,7 @@ At times when you are designing your own circuit you may come across a situation
 
 {% include image.html src="do-the-math.jpg" %}
 
-So take a pen and paper like in good old times and calculate the values! Read the datasheet of that component before making the circuit. Read our article '[Are you reading the datasheet? What to look for and how to find them!](http://embedjournal.com/2013/11/are-you-reading-the-datasheet/ "Go to post")' for more insight into this concept.
+So take a pen and paper like in good old times and calculate the values! Read the datasheet of that component before making the circuit. Do you how to [read a datasheet effectively](/are-you-reading-the-datasheet/)? for more insight into this concept.
 
 ### **Don't make messy breadboard connections**
 

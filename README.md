@@ -12,13 +12,8 @@ EmbedJournal Jekyll Template
 
 ### Issues:
 
-* disqus comments page alignment bottom (whats app image sent to hadi)
-* pre tag content wrap in mobile view.
-* fix disqus comments button UI to match page nav links. Make it use up the rest of the space between page nav. In mobile view also preserve this alignment.
-* bottom of post page does not align with bottom of side bar. fix this.
-* when load comments button dissppears, show our loading symbol and hide disqus loading symbol (if possible). This is so we show one loading sumbol and comments load after that.
-* image lightbox popup should not have scroll bars in smaller displays.
-* fix gallary width and height.
-* fix copyright text kink link decoration to mathc other links in footer.
-
+* code tag should not be cut in between when wrapping, It should move as a single block to next line.
+* Not Fixed: image light box pop up should not have scroll bars in smaller displays.
+* fix gallery width and height.
 * Don't fix nav bar in mobile view.
+* 2 in addition to the existing 3 column gallery class.

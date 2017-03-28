@@ -203,12 +203,4 @@ Here is a video demonstration for the interface of the 4x4 matrix keypad with th
 
 The above program is done with polling and utilizes the entire time of the controller to scan the keypad and display the data on the 7 segment displays. There is a cool feature on Microcontrollers called as the Interrupt on Change (IOC). As the name suggests, the controller will interrupt if it finds any change in a port. In PIC the whole of PORT B has this feature. By using the feature without any change in the hardware setup we can scan the keypad in the ISR and have more of the controller's time to do something useful.
 
-### Downloads
-
-Here are links to download the related C files, HEX files and Project Folder for the above tutorial.
-
-  * [C Source File](https://www.dropbox.com/s/6vvegrcexbj0bfc/main.c)
-  * [Mplab X project Folder](https://www.dropbox.com/s/or4ehgu2q3d0l1m/mat_keypad.X.rar)
-  * [Precompiled HEX file](https://www.dropbox.com/s/oyygjmqz9af5bym/mat_keypad.X.production.hex)
-
-In my upcoming posts I will [use the IOC feature to interface the keypad](http://embedjournal.com/2013/08/interrupt-on-change-ioc-in-pic-microcontrollers/ "Interrupt On Change (IOC) in PIC Microcontrollers").
+In my upcoming posts I will [use the IOC feature to interface the keypad](/interrupt-on-change-ioc-in-pic-microcontrollers/).

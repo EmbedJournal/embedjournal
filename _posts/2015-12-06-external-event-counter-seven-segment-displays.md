@@ -15,7 +15,7 @@ External event counters are pretty useful things to have around. Once I had a fe
 
 Anyway, I brought that up because, external event counters can be used for a variety of reasons. One of them is to make your own tachometer (and I did it) to prove your argument in a street fight. But of-course you need to be jobless to start with.
 
-In my previous post we discussed the basic [interface seven segment displays](http://embedjournal.com/2013/08/interface-7-segment-display-with-microcontroller/ "Interface 7 Segment Display with Microcontroller") and how the concept of persistence of vision can be used to used to decrease the pin count of the embedded device.
+In my previous post we discussed the basic [interface seven segment displays](/interface-7-segment-display-with-microcontroller/) and how the concept of persistence of vision can be used to used to decrease the pin count of the embedded device.
 
 Counters can either count up from zero or count down to zero. In the embedded space, down counter gives a marginal improvements in performance as most processors have a decrement and jump if not zero kind of instructions. But don't worry, that was just "fun facts" you don't have to worry about it. Your optimizing C compiler will take care that for you.
 

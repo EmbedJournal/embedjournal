@@ -119,7 +119,7 @@ Then use a stick or a spoon to mix the solution well. The big lumps of the chemi
 
 ### Dissolve the unwanted copper inside the FeCl<sub>3</sub> Solution
 
-Now that the solution is ready, we can submerge the PCBs into the etchant. For this I made a suspension tray to house the PCBs. Here is a step by step guide on [How to Make a Tray to suspend PCBs into the Etchant to make your own tray](http://embedjournal.com/2013/08/make-a-tray-to-suspend-pcbs-into-etchant/ "How to Make a Tray to suspend PCBs into the Etchant").
+Now that the solution is ready, we can submerge the PCBs into the etchant. For this I made a suspension tray to house the PCBs. Here is a step by step guide on [How to Make a Tray to suspend PCBs into the Etchant to make your own tray](/make-a-tray-to-suspend-pcbs-into-etchant/).
 
 {% include image.html src="toner-transfer-step-13.jpg" %}
 

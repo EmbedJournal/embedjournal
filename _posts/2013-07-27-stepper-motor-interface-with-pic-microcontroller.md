@@ -18,7 +18,7 @@ gallery:
     name : "Power Supply"
 ---
 
-In my previous post [Introduction to Stepper Motors and How they Work](http://embedjournal.com/2013/07/stepper-motor-and-how-they-work/), we had a look at stepper motors and how they work. This post will deal with the programming and circuitry involved in the stepper motor interface with PIC microcontroller.
+In my previous post [Introduction to Stepper Motors and How they Work](/stepper-motors-introduction-and-working-principle/), we had a look at stepper motors and how they work. This post will deal with the programming and circuitry involved in the stepper motor interface with PIC microcontroller.
 
 Usually a microcontroller is used to produce the stepping sequence for the stepper motor. But this is not the only method of producing the stepping sequence. It can be produced by using flip flops, logic gates and some knowledge about digital electronics. But this post will deal with the former method as it is better and easier.
 
@@ -48,7 +48,7 @@ Here is the top view of the breadboard. I have separated the circuit into variou
 
 ### Programming
 
-The programming is really simple and can be done with just a few lines of C code. But before you go into it, you might want to take a look at my previous post on the [stepper motor basics](http://embedjournal.com/2013/07/stepper-motor-and-how-they-work/) to understand the program fully.
+The programming is really simple and can be done with just a few lines of C code. But before you go into it, you might want to take a look at my previous post on the [stepper motor basics](/stepper-motor-and-how-they-work/) to understand the program fully.
 
 In the following program I have included all the three types of stepping sequences in three arrays that are selectable with Macros. Hence to use the code for full step mode, you will have to make define a macro, FULL_STEP
 

@@ -17,7 +17,7 @@ For the sake of this discussion,it is assumed that you have some working knowled
 
 **BeagleBone Black**
 
-BeagleBone Black aka BBB, is a popular Single Board Computer (SBC). We already have a [tech review ofA BeagleBone White](http://embedjournal.com/beaglebone-a-quick-review/). You might want to check that out as well.
+BeagleBone Black aka BBB, is a popular Single Board Computer (SBC). We already have a [tech review ofA BeagleBone White](/beaglebone-a-quick-review/). You might want to check that out as well.
 
 So the BBB is nothing but the successor of BeagleBone White. If you don't have it, just order one to dive into the world of Embedded Linux. I'm sure that BBB will occupy a special place in your electronics hardware inventory :-).
 

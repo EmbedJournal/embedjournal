@@ -18,9 +18,9 @@ You may have made a screen shot and kept it as an image somewhere near by.. prob
 
 {% include image.html src="pic18-pin-diagram.png" %}
 
-Having the image on the desktop won't be of help if you are with the soldering iron in one hand. That's when this idea came to my mind, why not have it printed and pinned on the wall?Well that would be more accessible than anything you can think off, ( don't say you could have memorised the PIN diagram, I'm one of those die-hard Einstein fans who believes, "anything that can be recalled by reading a book is not worth remembering")
+Having the image on the desktop won't be of help if you are with the soldering iron in one hand. That's when this idea came to my mind, why not have it printed and pinned on the wall?Well that would be more accessible than anything you can think off, ( don't say you could have memorized the PIN diagram, I'm one of those die-hard Einstein fans who believes, "anything that can be recalled by reading a book is not worth remembering")
 
-It took some time to put my plan in action, the datasheet image needed a lot of alteration to look good on the A4 sheet without loosing the resolution. I had to blow up the diagram in the PDF file and take 4 screenshots each with one section of the image and then reassemble it on Paint to get a nice big image.
+It took some time to put my plan in action, the datasheet image needed a lot of alteration to look good on the A4 sheet without loosing the resolution. I had to blow up the diagram in the PDF file and take 4 screen shots each with one section of the image and then reassemble it on Paint to get a nice big image.
 
 After some touch-ups I should admit it looked professional,
 
@@ -28,4 +28,4 @@ After some touch-ups I should admit it looked professional,
 
 Use the link below to download a PDF file. What then? go ahead print and put it up on the wall close to your workbench!!
 
-[Download PDF version](http://embedjournal.com/download/printable-pin_dia-pdf/ "Download Now")
+[Download PDF version]

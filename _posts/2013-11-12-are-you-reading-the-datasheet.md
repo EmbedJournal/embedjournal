@@ -45,7 +45,7 @@ In almost every datasheet, there is a section that deals with the application of
 
 ### Absolute Maximum Ratings
 
-   The absolute maximum ratings are really important as they give you an idea on when your device will be bricked/fried! The manufacturers go to great extents in describing the behaviour of the chip at various operational parameters such as voltage, current, temperature and pressure. Most of the time, you don't have to read everything that is listed. Look for a table like the one below.
+   The absolute maximum ratings are really important as they give you an idea on when your device will be bricked/fried! The manufacturers go to great extents in describing the behavior of the chip at various operational parameters such as voltage, current, temperature and pressure. Most of the time, you don't have to read everything that is listed. Look for a table like the one below.
 
 {% include image.html src="temp.png" %}
 
@@ -61,14 +61,14 @@ The existence of an errata document for a datasheet can be little hard to come b
 
 ### Timing Diagram
 
-The timing diagrams are mostly used for illustrating protocols. The image below is a timing diagram for the [I2C protocol](http://embedjournal.com/2013/05/two-wire-interface-i2c-protocol-in-a-nut-shell/) that can be found on the Philips's specification of the protocol. They help us visualize the state of the pin with the timer interval. It comes in handy when you sit down and start writing low level drivers for hardware protocol.
+The timing diagrams are mostly used for illustrating protocols. The image below is a timing diagram for the [I2C protocol](/two-wire-interface-i2c-protocol-in-a-nut-shell/) that can be found on the Philips's specification of the protocol. They help us visualize the state of the pin with the timer interval. It comes in handy when you sit down and start writing low level drivers for hardware protocol.
 
 Besides helping you to write your own libraries for the protocols, it also helps you in understanding the interface better and hence help debug, if something was to go wrong. There you go! Yet another aspect to look out for.
 
 
 ### List of associated Registers and their POR values
 
-The one thing I find really helpful in PIC micro's datasheet is, the list of associated registers. If you are using a peripheral for the fist time you will, most probably, read through the entire documentation. But if you are just looking for the names of the registers that are to be modified for the working for the peripheral or checking if you have done everything that is needed for the interface the list of associated registers come in handy. These days I almost always scroll down to this table for all the peripherals.
+The one thing I find really helpful in PIC microcontroller's datasheet is, the list of associated registers. If you are using a peripheral for the fist time you will, most probably, read through the entire documentation. But if you are just looking for the names of the registers that are to be modified for the working for the peripheral or checking if you have done everything that is needed for the interface the list of associated registers come in handy. These days I almost always scroll down to this table for all the peripherals.
 
 {% include image.html src="associated-registers.png" %}
 
@@ -111,6 +111,6 @@ The TOSE and the T0CKI pin are given to the ex-or gate.A TOSE (Timer 0 Source Ed
 The output of the EX-OR gate and the F<sub>osc</sub>/4 (system clock) are given to the selection block with T0CS as the selector. The T0CS (Timer 0 Clock Select) bit is used to select the clock for the Timer 0 module. If this bit is set, external clock is used and if it is left cleared, the system clock is used to derive the clock source for the module.
 
 **The Programmable Prescaler block.**
-It takes in a 3 bit input (which can be see from the arrow with a 3 cut across it) to determine the prescaler value for the Timer. [Read more on prescaler and postscaler](http://embedjournal.com/2013/05/timer-modules-guide/ "Timer / Counter Module aEUR" A Controller Independent Guide"). The second selection block as you should have guessed, is used to enable or disable the prescaler. The selector, PSA (Prescaler Assignment) bit if set will enable prescaler and if cleared will disable it.
+It takes in a 3 bit input (which can be see from the arrow with a 3 cut across it) to determine the prescaler value for the Timer. Read more on [prescaler and postscaler](/timer-modules-guide/). The second selection block as you should have guessed, is used to enable or disable the prescaler. The selector, PSA (Prescaler Assignment) bit if set will enable prescaler and if cleared will disable it.
 
 The internal 8 bit bus (represented by the double headed arrow mark with a cross on it) is used to load the TMR0L register. Now that I have done this one, open a datasheet see if you are able to tell the story from the block diagram.
