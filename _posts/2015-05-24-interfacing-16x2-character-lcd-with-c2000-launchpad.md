@@ -22,7 +22,7 @@ For this post, I will assume that you are fairly acquitted with the basics invol
 
 ### Circuit Diagram:
 
-{% include image.html src="lcd-ti-c2000-schematic.png" %}
+{% include image.html src="lcd-ti-c2000-schematic.jpg" %}
 
 Piccolo DSC provides multiplexed I/O lines, so we need to carefully choose the I/O lines for interfacing the modules. The following image shows the pin mapping of 16x2 LCD with the Piccolo DSC. The R/W line is always tied to ground, since we are always writing to the LCD.
 

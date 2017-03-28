@@ -17,10 +17,10 @@ main:
     url:  "/category/programming/"
 
 static:
-  - item: "Authors"
-    url:  "/authors/"
   - item: "About"
     url:  "/about/"
+  - item: "Authors"
+    url:  "/authors/"
   - item: "Contact"
     url:  "/contact/"
 

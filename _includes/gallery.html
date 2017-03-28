@@ -3,7 +3,11 @@
 <div class="b-galleryBox">
 	<div class="row" data-featherlight-gallery data-featherlight-filter="a">
 		{% for image in include.list %}
+		{% if include.column == "two" %}
+		<div class="col-md-6 col-xs-6">
+		{% else %}
 		<div class="col-md-4 col-xs-6">
+		{% endif %}
 			<a class="b-captionImg" href="{{ image_path }}/{{ image.src }}">
 				<img src="{{ image_path }}/{{ image.src }}" class="img-responsive" {% if image.name %}alt="{{ image.name }}{% endif %}">
 			</a>

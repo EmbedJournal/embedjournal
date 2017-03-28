@@ -10,7 +10,8 @@
 <title>{{ page.title }} - {{ site.title }}</title>
 
 {% if page.url == "/404.html" %}
-<meta http-equiv="refresh" content="5; url=/">
+<!-- Go to home page after 10 seconds -->
+<meta http-equiv="refresh" content="10; url=/">
 {% endif %}
 
 <!-- CDN Styles -->

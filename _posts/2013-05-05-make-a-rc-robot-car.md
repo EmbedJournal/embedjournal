@@ -9,6 +9,12 @@ dsq_thread_id: "2701802176"
 popular_post: true
 categories: [ "How To", "Robotics" ]
 tags: [ "DIY", "RF", "Wireless",  "Robot" ]
+
+gallery:
+  - src:  rc-car-receiver-layout.png
+    name: RC Car Receiver Layout
+  - src:  rc-car-transmitter-layout.png
+    name: RC Car Transmitter Layout
 ---
 
 Whether you are an engineering student building a multi terrain vehicle or an electronics hobbyist trying to impress people with your skills, making a RC robot car (wireless) is much better than the wired robot which you will have to tail while driving.
@@ -113,9 +119,7 @@ Click on image to enlarge it!
 
 I took some time to create a small PCB layout for the above two circuits. You can download the source file for the eagle designs and printable PCB artworks from [here](#). I've never done any circuit design as a profession. This is a skill that I picked up somewhere on the run and its rather primitive. So this might not be the best layout possible but it did work for me. I'm willing to accept any help in improving this design (write to me) to help the others.
 
-{% include image.html src="rc-car-receiver-layout.png" caption="Receiver Layout" %}
-
-{% include image.html src="rc-car-transmitter-layout.png" caption="Transmitter Layout" %}
+{% include gallery.html list=page.gallery column="two" %}
 
 Update (April 2016): I will be unable to support this design as I have lost the original source files. Please use them only as a reference to your own design. And if you do make one good enough to share, contact me to put up your work here.
 
