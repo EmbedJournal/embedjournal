@@ -4,7 +4,7 @@ title:   "EmbedJournal"
 tagline: "Add a brain to everything with embedded systems"
 email:   "admin@embedjournal.com"
 version: "0.2.0"
-url:     "http://embedjournal.com/"
+url:     "http://embedjournal.com"
 baseurl: ""
 logo:    "/assets/images/logo/embedjournal-120px.png"
 description: > # this ignores newlines until next key.
@@ -31,6 +31,15 @@ social:
   linkedin:    https://www.linkedin.com/company/3181824
   youtube:     https://www.youtube.com/user/embedjournal
   github:      https://github.com/embedjournal
+  # Following is for jekyll-seo-tag
+  name: EmbedJournal
+  links:
+    - https://twitter.com/embedjournal
+    - https://facebook.com/embedjournal
+    - https://plus.google.com/+Embedjournal
+    - https://www.linkedin.com/company/3181824
+    - https://www.youtube.com/user/embedjournal
+    - https://github.com/embedjournal
 
 collections:
   pages:
@@ -41,16 +50,24 @@ collections:
     permalink: /authors/:path/index.html
   category_pages:
     output: true
-    permalink:  /category/:path/index.html
+    permalink: /category/:path/index.html
 
 liquid:
   error_mode: warn
 
+defaults:
+  -
+    scope:
+      path: ""      # empty string for all files
+      type: "posts"   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts
+
 gems:
   - jekyll
-  - jekyll-sitemap
   - jekyll-feed
   - jekyll-archives
+  - jekyll-sitemap
   - octopress-paginate
 
 exclude:
@@ -70,3 +87,10 @@ jekyll-archives:
     year:  "/archives/:year/"
     month: "/archives/:year/:month/"
     tag:   "/tag/:name/"
+
+twitter:
+  username: embedjournal
+
+facebook:
+  admins: 568323306524581
+

@@ -1,18 +1,10 @@
+
 <!--[if lt IE 9]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<script src="scripts/iepngfix_tilebg.js"></script>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="scripts/iepngfix_tilebg.js"></script>
 <![endif]-->
 
-<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-<link rel="icon" type="image/ico" href="{{ site.baseurl }}/assets/images/favicon.ico">
-<link rel="shortcut-icon" type="image/ico" href="{{ site.baseurl }}/assets/images/favicon.ico">
-
 <title>{{ page.title }} - {{ site.title }}</title>
-
-{% if page.url == "/404.html" %}
-<!-- Go to home page after 10 seconds -->
-<meta http-equiv="refresh" content="10; url=/">
-{% endif %}
 
 <!-- CDN Styles -->
 <link rel="stylesheet" href="https://use.fontawesome.com/bfe45b6074.css">
@@ -21,16 +13,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.1/featherlight.min.css" integrity="sha256-4JAn9pTSLsMigb/pMsQIsVuZVBIuzKzovU6ofF5HRcI=" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.1/featherlight.gallery.min.css" integrity="sha256-LfglqcCLb9uK5WBpGCtF17sC9kOKgOw5ZKZ+MQl0XV0=" crossorigin="anonymous" />
 
-<!-- Begin MailChimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-
 <!-- CDN Early scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js" integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <!-- Custom Styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/master.css">
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/syntax.css">
 
 <!-- Early scripts -->
 <script src="{{ site.baseurl }}/assets/js/lazysizes.min.js" async=""></script>

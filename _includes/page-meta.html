@@ -1,0 +1,26 @@
+{% if page.description %}
+  {% assign desc = page.description %}
+{% else %}
+  {% capture headchars %}{{ page.content | strip_html | truncatewords:50 }}{% endcapture %}
+  {% assign desc = headchars %}
+{% endif %}
+
+<!-- Content -->
+<meta charset="utf-8">
+<meta http-equiv="Cache-control" content="public">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<!-- Page -->
+<meta name="keywords" content="{{ site.author }}, {{ site.title }}, {{ page.keywords }}">
+<meta name="description" content="{{ desc }}" />
+<!-- Other -->
+<link rel="icon" type="image/ico" href="{{ site.baseurl }}/assets/images/favicon.ico">
+<link rel="shortcut-icon" type="image/ico" href="{{ site.baseurl }}/assets/images/favicon.ico">
+<meta property="fb:admins" content="568323306524581" />
+<link rel="alternate" type="application/rss+xml" title="RSS Feed for embedjournal.com" href="/rss.xml" />
+
+</script>
+{% if page.url == "/404.html" %}
+<!-- Go to home page after 10 seconds -->
+<meta http-equiv="refresh" content="10; url=/">
+{% endif %}

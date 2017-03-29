@@ -13,10 +13,13 @@ Siddharth:
     Embedded Systems, Linux, Robotics, CV, Carpentry and a lot more. At times, you could see some of
     his sunday projects converge on release quality. You get to know him on the following social channels."
   social:
-    twitter:  http://twitter.com/embedjournal
+    twitter:  http://twitter.com/cbsiddharth
     facebook: https://facebook.com/cbsiddharth
     github:   https://github.com/cbsiddharth
     linkedin: https://in.linkedin.com/in/cbsiddharth
+  picture: "/assets/images/authors/siddharth.jpg"
+  twitter: cbsiddharth
+  homepage: http://siddharthc.in/
 
 Mani:
   name: "Mani"
@@ -31,3 +34,6 @@ Mani:
     twitter:  http://twitter.com/mani_sadhasivam
     facebook: http://www.facebook.com/mani.manivannan.888
     linkedin: https://in.linkedin.com/in/manisadhasivam
+  picture: "/assets/images/authors/mani.jpg"
+  twitter: mani_sadhasivam
+  homepage: http://www.facebook.com/mani.manivannan.888

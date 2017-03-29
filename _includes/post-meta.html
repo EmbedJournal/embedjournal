@@ -1,0 +1,69 @@
+{% if page.description %}
+  {% assign desc = page.description %}
+{% else %}
+  {% capture headchars %}{{ page.content | strip_html | truncatewords:50 }}{% endcapture %}
+  {% assign desc = headchars %}
+{% endif %}
+{% assign author = site.data.authors.[page.author] %}
+{% capture post_image %}{{ site.url }}/assets/{{ page.path | replace:'.md','' | replace:'_post','post_image' }}/{{ page.thumbnail }}{% endcapture %}
+
+<!-- Content -->
+<meta charset="utf-8">
+<meta http-equiv="Cache-control" content="public">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<!-- Page -->
+<link rel="author" href="{{ author.homepage }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+<meta name="keywords" content="{{ site.author }}, {{ site.title }}, {{ page.keywords }}">
+<meta name="author" content="{{ author.full_name }}">
+<meta name="description" content="{{ desc }}" />
+<!-- Open Graph -->
+<meta name="og:site_name" content="{{ site.name }}">
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:description" content="{{ desc }}" />
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="{{ post_image }}">
+<meta property="article:published_time" content="{{ page.date }}" />
+<meta property="article:author" content="{{ author.full_name }}" />
+<meta property="article:section" content="{{ page.categories[0] }}" />
+{% for tag in page.tags %}
+<meta property="article:tag" content="{{ tag }}" />
+{% endfor %}
+<!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+<meta name="twitter:site" content="@embedjournal" />
+<meta name="twitter:creator" content="@{{ author.twitter }}" />
+<meta name="twitter:description" content="{{ desc }}">
+<meta name="twitter:image" content="{{ post_image }}">
+<!-- Other -->
+<link rel="icon" type="image/ico" href="{{ site.baseurl }}/assets/images/favicon.ico">
+<link rel="shortcut-icon" type="image/ico" href="{{ site.baseurl }}/assets/images/favicon.ico">
+<meta property="fb:admins" content="568323306524581" />
+<link rel="alternate" type="application/rss+xml" title="RSS Feed for embedjournal.com" href="/rss.xml" />
+<!-- Schema -->
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ page.title }}",
+  "datePublished": "{{ page.date }}",
+  "description": "{{ desc }}",
+  "publisher": {
+    "@type": "Organization",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.logo }}"
+    }
+  },
+  "url": "{{ site.url }}{{ page.url }}"
+}
+</script>
+{% if page.url == "/404.html" %}
+<!-- Go to home page after 10 seconds -->
+<meta http-equiv="refresh" content="10; url=/">
+{% endif %}
