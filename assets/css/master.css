@@ -12,18 +12,6 @@ body.landing {
 body.model-open {
     overflow: hidden;
 }
-.l-main {
-    position: relative;
-    top: 32px;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.6s all;
-}
-.l-main.-fadeIn {
-    top: 0px;
-    opacity: 1;
-    visibility: visible;
-}
 .s-logo {
     margin-bottom: 30px;
     background: #fff;
@@ -1673,6 +1661,9 @@ body.model-open {
     text-decoration: none;
     color: #293314;
 }
+.c-aside .b-asideAdd {
+    margin-bottom: 30px;
+}
 .c-footerLogo {
     margin-bottom: 10px;
     text-align: center;
@@ -1855,16 +1846,25 @@ body.model-open {
 }
 
 /* Featherlight */
+.featherlight {
+    overflow: auto;
+}
 .featherlight .featherlight-content {
     padding: 0;
     border-bottom: none;
 }
 .featherlight .featherlight-content .caption {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     padding: 8px 16px;
     text-align: center;
     font-size: 16px;
     color: #fff;
-    background: #476900;
+    background: rgba(71, 105, 0, 1);
+}
+.featherlight .featherlight-image {
+    border-bottom: 38px solid #fff;
 }
 .featherlight .featherlight-close-icon {
     background: rgba(86,127,3,0.3);
@@ -2053,17 +2053,25 @@ body.model-open {
         border-left-color: #5a5214;
     }
     .c-postNav .b-navPrev {
+        padding-right: 30px;
         margin-bottom: 0;
-        width: 25%;
+        width: 30%;
+    }
+    .c-postNav .b-navPrev .btn {
+        width: 100%;
     }
     .c-postNav .c-loadComment {
         order: 1;
-        width: 50%;
+        width: 40%;
     }
     .c-postNav .b-navNext {
         margin-bottom: 0;
-        width: 25%;
+        padding-left: 30px;
+        width: 30%;
         order: 3;
+    }
+    .c-postNav .b-navNext .btn {
+        width: 100%;
     }
     .c-subscribe {
         position: relative;
@@ -2538,7 +2546,7 @@ body.model-open {
 #mc_embed_signup .datefield label, #mc_embed_signup .phonefield-us label{display:none;}
 
 #mc_embed_signup .indicates-required {text-align:right; font-size:11px; margin-right:4%;}
-#mc_embed_signup .asterisk {color:#e85c41; font-size:150%; font-weight:normal; position:relative; top:5px;}     
+#mc_embed_signup .asterisk {color:#e85c41; font-size:150%; font-weight:normal; position:relative; top:5px;}
 #mc_embed_signup .clear {clear:both;}
 
 #mc_embed_signup .mc-field-group.input-group ul {margin:0; padding:5px 0; list-style:none;}

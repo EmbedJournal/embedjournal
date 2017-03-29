@@ -47,12 +47,9 @@ function hasScrolled() {
 
 $(document).ready(function() {
 
-    $('.js-checkbox').customCheckbox();
-
     // jquery code here
-    $('.l-main').addClass('-fadeIn');
-
-
+    $('.js-checkbox').customCheckbox();
+    
     $('#disqus_thread').bind('DOMNodeInserted DOMNodeRemoved', function() {
         $(this).css('padding', 16);
     });
@@ -113,13 +110,15 @@ $(document).ready(function() {
 
     $('.js-loadComment').on('click', function(){
         var disqus_shortname = 'embedjournal'; // Replace this value with *your* username.
+
         // ajax request to load the disqus javascript
         $.ajax({
-                type: "GET",
-                url: "http://" + disqus_shortname + ".disqus.com/embed.js",
-                dataType: "script",
-                cache: true
-    });
+            type: "GET",
+            url: "http://" + disqus_shortname + ".disqus.com/embed.js",
+            dataType: "script",
+            cache: true
+        });
+
         // hide the button once comments load
         $(this).fadeOut();
     });
