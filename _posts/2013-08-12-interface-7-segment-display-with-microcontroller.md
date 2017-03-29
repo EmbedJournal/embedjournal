@@ -50,7 +50,7 @@ The human eye has the ability to hold a memory of light signal for some time aft
 
 So if you turn ON and OFF a light faster than that, you won't be able to notice the light going OFF. Our microcontroller instructions are operated in a few hundred nanoseconds, toggling a pin or a set of pins at 50 or 60 Hertz is no big deal.
 
-Here is a small video to demonstrate the concept of POV,
+In an older article, have already discussed [persistence of vision](/external-event-counter-seven-segment-displays/) at lengths. You can check that out if you have any uncertainties. Here is the video from that post, just in case you are too lazy to follow the link.
 
 {% include youtube.html src="IpFqXNPH1NU" %}
 
@@ -58,7 +58,7 @@ Here is a small video to demonstrate the concept of POV,
 
 To use all the 4 displays to display 4 different data at the same time, you should follow this sequence.
 
-  1. <span style="line-height: 16px;">Write data to be displayed to Segment 1 into the data latch.</span>
+  1. Write data to be displayed to Segment 1 into the data latch.
   2. Enable First Segment.
   3. Wait for some time.
   4. Disable First Segment.

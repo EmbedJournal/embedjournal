@@ -69,7 +69,7 @@ Here is a small video that I made to demonstrate the working of the above proced
 
 {% include youtube.html src="IpFqXNPH1NU" %}
 
-### <span style="font-family: 'arial black', 'avant garde';">Event Counter</span>
+### Event Counter
 
 Now that the persistence of vision section has been dealt with, we can get started with the counter. For this post we will use a micro switch for providing the input to the microcontroller. But in practical application any digital input (such as that from a IR interruption system) can be used to increment the counter.
 

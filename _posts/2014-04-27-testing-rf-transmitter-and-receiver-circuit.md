@@ -37,7 +37,8 @@ The L293d ICs are fairly easy to brick. Most of the time you will see a visible 
 {% include image.html src="loopback-encoder-decoder.png" %}
 
 This is a very uncommon fault but it has to be ruled out any way to be certain that your encoder and decoder pair are working properly. You will have to short the DOUT pin of the Encoder to the DIN pin of th Decoder. You have effectively removed the RF module alone from the circuit. This will remove any trouble caused by the RF module. Here is small video that I have made to demonstrate this concept.
- 
+
+{% include youtube.html src="oXOOAlysxaU" %} 
 
 **Solution:** Unfortunately there is not much you could do about it. So buy another one.
 

@@ -59,6 +59,8 @@ As promised earlier we will get to the programming logic without any more chit c
 
 It's kind of hard to explain the concept in writing so I made a video explaining the logic.
 
+{% include youtube.html src="TtpNlQnzkhs" %}
+
 I hope that the video explained the programming concept very clearly. If you have any questions regarding the details presented in the video please leave a comment and I will get back to you ASAP.
 
 Now assuming that you have made a program that will interrupt every 0.1ms, all you have to do is to have an up counter variable that counts from 1 to 200 (which is from 0.1ms to 20ms). Then have another variable inside the ISR which will hold the data for the pulse width.

@@ -15,19 +15,17 @@ It's been a while since I wrote my first article and though I need to come up wi
 
 For the sake of this discussion,it is assumed that you have some working knowledge of the Linux operating systems (at least as a user). Needless to say you should have a working bone to follow this tutorial.
 
-**BeagleBone Black**
+### BeagleBone Black
 
-BeagleBone Black aka BBB, is a popular Single Board Computer (SBC). We already have a [tech review ofA BeagleBone White](/beaglebone-a-quick-review/). You might want to check that out as well.
+BeagleBone Black (BBB), is a popular Single Board Computer (SBC) which was released as a successor to the [BeagleBone or BeagleBone White](/beaglebone-a-quick-review/). If you don't have a BBB, just order one to dive into the world of Embedded Linux. I'm sure that BBB will occupy a special place in your electronics hardware inventory :-).
 
-So the BBB is nothing but the successor of BeagleBone White. If you don't have it, just order one to dive into the world of Embedded Linux. I'm sure that BBB will occupy a special place in your electronics hardware inventory :-).
-
-**Why custom kernel deploying?**
+### Why custom kernel deploying?
 
 Well, I know that this question will be itching your mind. Instead of using the pre-built image, why should we use this method of building our own image and RFS? The answer for this question is, you have to do this in order to get some fun out of BeagleBone. Electronics is fun when you start doing things of your own and also you will learn a lot of things while doing this.
 
 For starters, I would strongly recommend to use the pre-built image for working with BeagleBone. But, as I already stated, this post is for the intermediate level users of BBB. This will be cool when you do this and I'm sure this will guide you into the real world of Embedded Linux.
 
-**Tools needed to get started**
+### Tools needed to get started
 
 For building linux kernel you will need several tools other than BeagleBone. The tools which are required is listed below:
 
@@ -37,7 +35,7 @@ For building linux kernel you will need several tools other than BeagleBone. The
   * U-Boot(optional)
   * mkimage
 
-**1. Installing ARM cross compiler**
+### 1. Installing ARM cross compiler
 
 The first and foremost thing in compiling kernel is installing ARM gcc cross compiler. Since, BeagleBone Black is based on AM335x Sitara Processor, we need to compile the kernel for that environment. There are numerous compilers available online for free but it is important to install a stable one for proper compilation. For instance gcc-arm-linux-gnueabihf compiler available in standard Ubuntu package is an unstable one. So, download a stable compiler. The preferred one is Linaro cross compiler.
 
@@ -68,7 +66,7 @@ arm-linux-gnueabihf-gcc (crosstool-NG linaro-1.13.1-4.8-2014.04 - Linaro GCC 4.8
 
  
 
-**2. Cloning the Kernel**
+### 2. Cloning the Kernel
 
 After installing the compiler, clone the kernel source for BeagleBone Black from GitHub using
 
@@ -85,7 +83,7 @@ origin https://github.com/beagleboard/linux.git (fetch)
 origin https://github.com/beagleboard/linux.git (push)
 ```
 
-**3. Cloning and Compiling U-boot(Optional)**
+### 3. Cloning and Compiling U-boot(Optional)
 
 U-boot is an open source universal bootloader for Linux systems. It supports features like TFTP, DHCP, NFS etc... In order to boot the kernel, a valid kernel image (uImage) is required. It is not possible to explain u-boot here, as it is beyond the scope of this post. So, we will see how to produce a bootable image using U-boot.
 
@@ -112,7 +110,7 @@ It will take around 10 to 15 minutes depending on the system configuration. Mine
 
 For now, we will not use the above mentioned files for booting. But, during later stages those will be needed.
 
-**4. Formatting SD card**
+### 4. Formatting SD card
 
 For deploying kernel from sd card, we need to format it and place the files accordingly. For this process, "Gparted" tool is needed. Install Gparted by the following command.
 
@@ -138,7 +136,7 @@ Click Add button. Then, create another partition for storing RFS by entering the
 
 Finally, click the green tick mark at the menu bar. The partition will be created and you can see two partitions created as BOOT and RFS.
 
-**5. Compiling kernel**
+### 5. Compiling kernel
 
 Before compiling the kernel we need to configure it. It will be hard for the newbies. Once again, thanks to the kernel developers for providing all configurations in a single file. Go to the kernel directory and issue the following command.
 
@@ -177,11 +175,11 @@ After completing the above steps you can find the following files in BOOT partit
 
 **Note:** Make sure you have installed mkimage tool and mounted the sd card.
 
-**6. RFS**
+### 6. RFS
 
-Download RFS [here](https://www.dropbox.com/s/k93doprl261hwn2/rootfs.tar.xz?dl=0).
+You can download RFS [here](https://www.dropbox.com/s/k93doprl261hwn2/rootfs.tar.xz?dl=0).
 
-Instead of downloading RFS, we can create our own custom RFS using BusyBox, which will be covered in a separate post. So, as of now download and de-compress the RFS.
+Instead of downloading RFS, we can create our own [custom RFS using BusyBox](/custom-rfs-beaglebone-black/), which is an elaborate process and hence merits the need for a separate post. For the sake of simplicity, we can download and uncompress the RFS.
 
 ``` shell
 $ sudo tar -xvf rootfs.tar.xz -C /media/mani/RFS/
@@ -191,7 +189,7 @@ $ cd ../
 $ sudo rmdir rootfs
 ```
 
-The above command will de-compress the tar file and will place it in the RFS partition of sd card. Just replace "mani" with your username in the above command.
+The above command will uncompress the tar file and will place it in the RFS partition of SD card. Just replace "mani" with your username in the above command.
 
 **7. Install Kernel Modules**
 
@@ -202,8 +200,6 @@ $ sudo make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j4 modules
 $ sudo make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- INSTALL_MOD_PATH=/media/mani/RFS/ modules_install
 ```
 
-That's it. After completing the above steps, remove the sd card and place it in your BeagleBone. Connect the Bone to your PC via USB to serial converter and open the serial console using minicom in PC. (Set baud rate as 115200). After ensuring all things are correct, power on your BBB while holding the Boot switch (SW2). It will boot from your own custom kernel. Now you can cherish that you have created your own kernel image and deployed it in BeagleBone Black!!!
+That's it. After completing the above steps, remove the SD card and place it in your BeagleBone. Connect the Bone to your PC via USB to serial converter and open the serial console using minicom in PC. (Set baud rate as 115200). After ensuring all things are correct, power on your BBB while holding the Boot switch (SW2). It will boot from your own custom kernel. Now you can cherish that you have created your own kernel image and deployed it in BeagleBone Black!!!
 
-In my next post I will show you how to create custom RFS using BusyBox. Subscribe to our posts to get the article delivered to your inbox!
-
-As always, if you encountered any troubles on the way, just throw it in the comments, we will try to figure it out.
+In my next post I will show you how to create custom RFS using BusyBox. As always, if you encountered any troubles on the way, just throw it in the comments, we will try to figure it out.

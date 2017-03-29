@@ -7,7 +7,7 @@
 <div class="text-center">
 	<a class="b-captionImg" href="#" data-featherlight="{{ image-path }}">
 		<img 
-			src="{{ image-path }}" class="img-responsive" 
+			data-src="{{ image-path }}" class="img-responsive lazyload" 
 			{% if include.width %}
 				width="{{ include.width }}"
 				{% endif %}

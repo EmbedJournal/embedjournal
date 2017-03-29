@@ -78,7 +78,7 @@ $ make ARCH=arm CRSOO_COMPILE=arm-linux-gnueabihf- menuconfig
 Select Busybox Settings -> Build Options -> Build Busybox as a static binary (no shared libs). Press y for selecting that option and save it. Then execute the following commands for building.
 
 ``` shell
-$ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- CONFIG_PREFIX=/path/to/RFS install</pre>
+$ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- CONFIG_PREFIX=/path/to/RFS install
 ```
 
 After the successful completion of the above commands, you can see 3 directories (bin, sbin, usr) and one file (linuxrc) created in your RFS directory. Path to RFS should be like /media/user/rfs which resides in SD card as ext3 file system. Apart from these, we need few more directories mentioned above to boot the kernel. So, move to the RFS location and create the following files and directories.

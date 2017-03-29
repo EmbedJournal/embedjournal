@@ -197,7 +197,7 @@ void seg_wrt() {
 }
 ```
 
-Here is a video demonstration for the interface of the 4x4 matrix keypad with the above code.
+Here is a video demonstration for the interface of the 4x4 matrix keypad using the above code.
 
 {% include youtube.html src="5bZjwhawxVI" %}
 
