@@ -14,6 +14,10 @@ $(window).scroll(function(event){
     }
 });
 
+$(window).resize(function(){
+    $('.js-rectGallery').customGallery();
+});
+
 setInterval(function() {
     if (didScroll) {
         hasScrolled();
@@ -46,10 +50,12 @@ function hasScrolled() {
 }
 
 $(document).ready(function() {
-
     // jquery code here
+
+    $('.js-rectGallery').customGallery();
+
     $('.js-checkbox').customCheckbox();
-    
+
     $('#disqus_thread').bind('DOMNodeInserted DOMNodeRemoved', function() {
         $(this).css('padding', 16);
     });
@@ -154,4 +160,12 @@ function triggerCheck(e) {
         checkbox.prop('checked', true);
         $(e).append('<span class="fa fa-check"></span>');
     }
+}
+
+$.fn.customGallery = function() {
+    var galleryWidth = $(this).find('.b-galleryImg').width();
+    console.log(galleryWidth);
+    var galleryheight = galleryWidth * 0.6;
+    $(this).find('.b-galleryImg').height(galleryheight);
+    $(this).find('.b-galleryImg > img').height(galleryheight);
 }

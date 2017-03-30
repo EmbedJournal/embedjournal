@@ -47,6 +47,7 @@
                 <div class="col-md-12">
                     <nav class="c-categoryNav js-categoryNav">
                         <ul>
+                            <li class="logo"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/images/logo-embed-journal-2.png" alt="Embed Journal" class="img-responsive"></a></li>
                             {% for nav in site.data.navigation.main %}
                                 {% if page.url == nav.url %}
                                     <li class="active"><a href="{{ nav.url }}">{{ nav.item }} <span class="sr-only">(current)</span></a></li>
