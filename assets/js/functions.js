@@ -14,6 +14,10 @@ $(window).scroll(function(event){
     }
 });
 
+$(window).resize(function(){
+    $('.js-rectGallery').customGallery();
+});
+
 setInterval(function() {
     if (didScroll) {
         hasScrolled();
@@ -46,10 +50,12 @@ function hasScrolled() {
 }
 
 $(document).ready(function() {
-
     // jquery code here
+
+    $('.js-rectGallery').customGallery();
+
     $('.js-checkbox').customCheckbox();
-    
+
     $('#disqus_thread').bind('DOMNodeInserted DOMNodeRemoved', function() {
         $(this).css('padding', 16);
     });
@@ -109,24 +115,15 @@ $(document).ready(function() {
     };
 
     $('.js-loadComment').on('click', function(){
-        var disqus_shortname = 'embedjournal'; // Replace this value with *your* username.
-
-        // ajax request to load the disqus javascript
+        var disqus_shortname = 'embedjournal';
         $.ajax({
             type: "GET",
             url: "http://" + disqus_shortname + ".disqus.com/embed.js",
             dataType: "script",
             cache: true
         });
-
-        // hide the button once comments load
         $(this).fadeOut();
     });
-
-    // $(document).on('click', '.js-checkboxTrigger', function() {
-    //     triggerCheck();
-    // });
-
 });
 
 
@@ -174,4 +171,12 @@ function insertPostPageAdd() {
         $(addUnit).insertAfter('.b-postContent > *:nth-child(4)');
         (adsbygoogle = window.adsbygoogle || []).push({});
     }
+}
+
+$.fn.customGallery = function() {
+    var galleryWidth = $(this).find('.b-galleryImg').width();
+    console.log(galleryWidth);
+    var galleryheight = galleryWidth * 0.6;
+    $(this).find('.b-galleryImg').height(galleryheight);
+    $(this).find('.b-galleryImg > img').height(galleryheight);
 }
