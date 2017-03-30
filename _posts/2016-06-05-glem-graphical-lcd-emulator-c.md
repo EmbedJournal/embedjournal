@@ -17,7 +17,7 @@ I for one, hated (note past tense) glcd work. I always found reasons to postpone
   1. The roundtrip time involved in flashing the device, and reflashing with the updated layout. This time may be significantly long if your code base is large.
   2. How ever good a programmer you are (IMHO), GLCD layer almost always looks bad after speed optimizations.
 
-Now I know I can't do much about the second point. But with some thinking, I figured point one is actually addressable with only a couple of my sundays!
+Now I know I can't do much about the second point. But with some thinking, I figured point one is actually addressable with only a couple of my Sundays!
 
 So I spent some time to create an emulator that can take the glcd back plane and display it on a window on your desktop. So the round trip time is totally eliminated from the equation. I can't say I really like it now, but I certainly don't dislike it as much as I used too.
 
@@ -44,7 +44,7 @@ Therefore, the glcd buffer length would be, <code>buf_len = glcd_width/8 * glcd_
 
 If you have any experience installing software in Linux, installing GLEM should be little/no trouble at all.
 
-You can find the git upstream at <https://github.com/cbsiddharth/glem>.Clone this repository into your machine and follow the instructiosn in the README.md file to install it.
+You can find the git upstream at <https://github.com/cbsiddharth/glem>.Clone this repository into your machine and follow the instructions in the README.md file to install it.
 
 Once you have made the project, you will have to start the GLEM server with your GLCD's width and height as arguments. For example if you have a 128x64 1bit GLCD, you should run,
 

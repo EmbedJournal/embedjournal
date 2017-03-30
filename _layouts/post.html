@@ -2,18 +2,11 @@
 layout: default
 ---
 
+<!-- PostPage Adsense Unit -->
+<script>$(document).ready(function() { insertPostPageAdd(); });</script>
+
 {% assign author = site.data.authors[page.author] %}
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- PostPage Unit -->
-<script>
-$(document).ready(function() {
-    var childCount = $(".b-postContent").children().length;
-    if(childCount > 5) {
-        $('<ins class="adsbygoogle b-addImage postpageAddUnit" style="display:none;width:728px;height:90px" data-ad-client="ca-pub-2839664859161137" data-ad-slot="3313112802"></ins>').insertAfter('.b-postContent > *:nth-child(4)');
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    }
-});
-</script>
+
 <div class="row">
     <div class="col-md-8 js-content">
     	<div class="theiaStickySidebar">
@@ -49,41 +42,7 @@ $(document).ready(function() {
 					</div>
 				</div>
 	            <!-- Main content -->
-	            <div class="b-postContent">
-                    <div class="c-rectGallery js-rectGallery">
-                        <div class="row" data-featherlight-gallery data-featherlight-filter="a">
-                            <div class="col-sm-4">
-                                <a class="b-galleryItem" href="{{ site.baseurl }}/assets/posts/2013-05-01-shaastra-nights-jan-2013/track-3d-view.png">
-                                    <div class="b-galleryImg">
-                                        <img src="{{ site.baseurl }}/assets/posts/2013-05-01-shaastra-nights-jan-2013/track-3d-view.png" class="img-responsive" alt="Gallery Image 1">
-                                    </div>
-                                    <div class="b-galleryContent">
-                                        <p>Image Caption</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-4">
-                                <a class="b-galleryItem" href="{{ site.baseurl }}/assets/posts/2013-05-01-shaastra-nights-jan-2013/track-spec.png">
-                                    <div class="b-galleryImg">
-                                        <img src="{{ site.baseurl }}/assets/posts/2013-05-01-shaastra-nights-jan-2013/track-spec.png" class="img-responsive" alt="Gallery Image 1">
-                                    </div>
-                                    <div class="b-galleryContent">
-                                        <p>Image Caption</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-4">
-                                <a class="b-galleryItem" href="{{ site.baseurl }}/assets/posts/2013-05-01-shaastra-nights-jan-2013/object-spec.png">
-                                    <div class="b-galleryImg">
-                                        <img src="{{ site.baseurl }}/assets/posts/2013-05-01-shaastra-nights-jan-2013/object-spec.png" class="img-responsive" alt="Gallery Image 1">
-                                    </div>
-                                    <div class="b-galleryContent">
-                                        <p>Image Caption</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+	            <div class="b-postContent" id="postContent">
 
 	        		{{ content }}
 

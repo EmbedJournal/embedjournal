@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   {% if page.is_post %}
-    {% include post-meta.html %}
+    {% include post-head.html %}
   {% else %}
-    {% include page-meta.html %}
+    {% include page-head.html %}
   {% endif %}
-    {% include head.html %}
 </head>
 <body>
 

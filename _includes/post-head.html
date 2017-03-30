@@ -1,3 +1,9 @@
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="scripts/iepngfix_tilebg.js"></script>
+<![endif]-->
+
 {% if page.description %}
   {% assign desc = page.description %}
 {% else %}
@@ -6,6 +12,23 @@
 {% endif %}
 {% assign author = site.data.authors.[page.author] %}
 {% capture post_image %}{{ site.url }}/assets/{{ page.path | replace:'.md','' | replace:'_post','post_image' }}/{{ page.thumbnail }}{% endcapture %}
+
+<title>{{ page.title }} - {{ site.title }}</title>
+
+<!-- CDN Styles -->
+<link rel="stylesheet" href="https://use.fontawesome.com/bfe45b6074.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.1/featherlight.min.css" integrity="sha256-4JAn9pTSLsMigb/pMsQIsVuZVBIuzKzovU6ofF5HRcI=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.1/featherlight.gallery.min.css" integrity="sha256-LfglqcCLb9uK5WBpGCtF17sC9kOKgOw5ZKZ+MQl0XV0=" crossorigin="anonymous" />
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- Custom Styles -->
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/master.css">
+
+<!-- Early scripts -->
+<script src="{{ site.baseurl }}/assets/js/lazysizes.min.js" async=""></script>
 
 <!-- Content -->
 <meta charset="utf-8">
@@ -63,7 +86,9 @@
   "url": "{{ site.url }}{{ page.url }}"
 }
 </script>
-{% if page.url == "/404.html" %}
 <!-- Go to home page after 10 seconds -->
+{% if page.url == "/404.html" %}
 <meta http-equiv="refresh" content="10; url=/">
 {% endif %}
+<!-- CDN Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js" integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE=" crossorigin="anonymous"></script>
