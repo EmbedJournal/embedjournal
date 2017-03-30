@@ -26,8 +26,6 @@ Other than time and effort you will need the following components to make a digi
   * RTC [DS1307](http://datasheets.maximintegrated.com/en/ds/DS1307.pdf)
   * CMOS Battery and its slot.
 
-{% include image.html src="hardware-banner.png" %}
-
 ### Prerequisite
 
 For this tutorial I assume you have a [working knowledge about the I2C Protocol](/two-wire-interface-i2c-protocol-in-a-nut-shell/), and you know hot to [interfacing DS1307](/interfacing-rtc-with-microcontroller/) an get date and time out of it. We will also [interface character LCD](/interfacing-lcd-module-part-1/) to display the date and time.
