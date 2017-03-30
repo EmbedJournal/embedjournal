@@ -50,6 +50,17 @@ function hasScrolled() {
 }
 
 $(document).ready(function() {
+
+    $('#newsletter').on('change', function() {
+        triggerCheck($(this));
+        if($(this).is(':checked')) {
+            $('#landingSubmit').val('Subscribe and Download');
+        }
+        else {
+            $('#landingSubmit').val('Download');
+        }
+    });
+
     // jquery code here
 
     $('.js-rectGallery').customGallery();
@@ -154,10 +165,12 @@ function triggerCheck(e) {
 
     if(checkbox.is(':checked')) {
         checkbox.prop('checked', false);
+        checkbox.trigger('change');
         $(e).empty();
     }
     else {
         checkbox.prop('checked', true);
+        checkbox.trigger('change');
         $(e).append('<span class="fa fa-check"></span>');
     }
 }

@@ -39,7 +39,7 @@ permalink: landing.html
 </head>
 <body class="landing">
 
-    <header class="l-header">
+    <!-- <header class="l-header">
         <section class="s-logo">
             <div class="container">
                 <div class="row">
@@ -51,17 +51,18 @@ permalink: landing.html
                 </div>
             </div>
         </section>
-    </header>
+    </header> -->
 
     <main class="l-main">
-        <section class="s-mainContent">
+        <section class="s-landingContent">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1">
+                    <div class="col-lg-12">
                         <div class="c-landingForm">
                             <div class="row">
-                                <div class="col-md-8">
+                                <div class="col-md-7">
                                     <div class="b-content">
+                                        <a class="b-logo" href="{{ site.baseurl }}/"><img class="e-logo" src="{{ site.logo }}" alt="Embed Journal" class="img-responsive"></a>
                                         <h1>What is Lorem Ipsum?</h1>
                                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                         <form class="b-form">
@@ -72,18 +73,25 @@ permalink: landing.html
                                                 <input type="text" placeholder="Email" class="e-field -text">
                                             </div>
                                             <div class="b-field -fullWidth">
-                                                <input type="checkbox" class="e-field -checkbox js-checkbox">
+                                                <input type="checkbox" class="e-field -checkbox js-checkbox" id="newsletter">
                                                 <label class="e-label">Subscribe to newsletters</label>
                                             </div>
                                             <div class="b-submit">
-                                                <input type="submit" value="Subscribe" class="btn btn-green">
+                                                <input type="submit" value="Download" class="btn btn-green" id="landingSubmit">
                                             </div>
                                         </form>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="b-image">
-                                <img src="{{ site.baseurl }}/assets/images/sample-tablet-image.png" class="e-image">
+                                <div class="col-md-5">
+                                    <div class="b-image">
+                                        <img src="{{ site.baseurl }}/assets/images/sample-tablet-image-3.png" class="e-image">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="c-footerCopyText">
+                						<p>© Copyright 2017 <a href="site.url">{{ site.title }}</a> All Rights Reserved.</p>
+                					</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -93,7 +101,7 @@ permalink: landing.html
     </main>
 
     <!-- footer -->
-    <footer class="l-footer">
+    <!-- <footer class="l-footer">
         <section class="s-footer">
     		<div class="container">
     			<div class="row">
@@ -105,7 +113,7 @@ permalink: landing.html
     			</div>
     		</div>
         </section>
-    </footer>
+    </footer> -->
 
     <!-- Back to top button -->
     <a href="#" class="c-toTop js-toTop"><span class="fa fa-angle-up"></span></a>
