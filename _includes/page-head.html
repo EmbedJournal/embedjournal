@@ -6,8 +6,7 @@
 {% if page.description %}
   {% assign desc = page.description %}
 {% else %}
-  {% capture headchars %}{{ page.content | strip_html | truncatewords:50 }}{% endcapture %}
-  {% assign desc = headchars %}
+  {% assign desc = site.description %}
 {% endif %}
 
 <title>{{ page.title }} - {{ site.title }}</title>
