@@ -50,11 +50,16 @@ defaults:
   -
     scope:
       path: ""        # empty string for all files
-      type: "posts"   # limit to posts (_post/*)
+      type: "posts"
     values:
       is_post: true
       layout: post
-
+  -
+    scope:
+      path: ""       # empty string for all files
+      type: "posts"
+    values:
+      layout: page
 gems:
   - jekyll
   - jekyll-feed
