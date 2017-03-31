@@ -2,7 +2,6 @@
 title: Yet another Hello World?
 date: 2013-04-21T13:38:24+00:00
 author: Siddharth
-layout: post
 thumbnail: post-thumb.jpg
 permalink: /hello-world/
 dsq_thread_id: "3306085917"

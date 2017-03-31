@@ -2,7 +2,6 @@
 title: "PIC Timer Calculator"
 date: 2013-09-12T10:21:01+00:00
 author: Siddharth
-layout: post
 thumbnail: post-thumb.png
 permalink: /pic-timer-calculator-give-away-1/
 dsq_thread_id: "3297077771"

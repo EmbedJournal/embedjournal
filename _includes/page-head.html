@@ -6,8 +6,7 @@
 {% if page.description %}
   {% assign desc = page.description %}
 {% else %}
-  {% capture headchars %}{{ page.content | strip_html | truncatewords:50 }}{% endcapture %}
-  {% assign desc = headchars %}
+  {% assign desc = site.description %}
 {% endif %}
 
 <title>{{ page.title }} - {{ site.title }}</title>
@@ -20,9 +19,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.1/featherlight.gallery.min.css" integrity="sha256-LfglqcCLb9uK5WBpGCtF17sC9kOKgOw5ZKZ+MQl0XV0=" crossorigin="anonymous" />
 <!-- Custom Styles -->
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/master.css">
-<!-- CDN Scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js" integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE=" crossorigin="anonymous"></script>
 <!-- Early scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js" integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE=" crossorigin="anonymous"></script>
 <script async src="{{ site.baseurl }}/assets/js/lazysizes.min.js"></script>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Content -->

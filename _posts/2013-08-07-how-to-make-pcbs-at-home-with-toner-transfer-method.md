@@ -2,7 +2,6 @@
 title: How to Make PCBs at Home With Toner Transfer Method
 date: 2013-08-07T21:22:56+00:00
 author: Siddharth
-layout: post
 thumbnail: post-thumb.jpg
 permalink: /how-to-make-pcbs-at-home-with-toner-transfer-method/
 dsq_thread_id: "2728571825"

@@ -2,7 +2,6 @@
 title: Need for Clock Line in Digital Communication
 date: 2013-06-15T10:12:50+00:00
 author: Siddharth
-layout: post
 thumbnail: post-thumb.png
 permalink: /need-for-clock/
 dsq_thread_id: "2728591622"

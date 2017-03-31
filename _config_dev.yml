@@ -1,0 +1,6 @@
+title: "Embedjournal | Staging"
+host: ""
+env: developement
+
+include:
+  - robots.txt

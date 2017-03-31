@@ -2,7 +2,6 @@
 title: Programming a Line Follower Robot
 date: 2013-06-04T22:46:31+00:00
 author: Siddharth
-layout: post
 thumbnail: post-thumb.jpg
 permalink: /programming-line-follower-robot/
 dsq_thread_id: "2701837863"

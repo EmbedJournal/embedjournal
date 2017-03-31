@@ -2,7 +2,6 @@
 title: Cool C Programming Tricks For Embedded Software Developers
 date: 2013-08-31T08:29:27+00:00
 author: Siddharth
-layout: post
 thumbnail: post-thumb.jpg
 permalink: /cool-c-programming-tricks-for-embedded-software-developers/
 dsq_thread_id: "2728571436"

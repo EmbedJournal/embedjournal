@@ -2,7 +2,6 @@
 title: Working with git from a Linux machine
 date: 2013-04-24T18:34:41+00:00
 author: Siddharth
-layout: post
 thumbnail: post-thumb.png
 permalink: /working-with-git-from-a-linux-machine/
 dsq_thread_id: "3293147013"

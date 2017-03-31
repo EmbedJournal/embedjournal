@@ -2,7 +2,6 @@
 title: Engineers! are you starting embedded systems with arduino?
 date: 2013-05-28T18:04:44+00:00
 author: Siddharth
-layout: post
 thumbnail: post-thumb.jpg
 permalink: /learning-embedded-system-with-arduino/
 dsq_thread_id: "2728571169"

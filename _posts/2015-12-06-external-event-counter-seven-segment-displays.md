@@ -2,7 +2,6 @@
 title: "External Event Counter - Seven Segment Displays"
 date: 2015-12-06T21:30:12+00:00
 author: Siddharth
-layout: post
 thumbnail: post-thumb.jpg
 permalink: /external-event-counter-seven-segment-displays/
 dsq_thread_id: "2701807862"

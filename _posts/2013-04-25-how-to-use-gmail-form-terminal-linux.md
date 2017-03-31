@@ -2,7 +2,6 @@
 title: How to use gmail form terminal (Linux)
 date: 2013-04-25T18:33:39+00:00
 author: Siddharth
-layout: post
 thumbnail: post-thumb.png
 permalink: /how-to-use-gmail-form-terminal-linux/
 dsq_thread_id: "2728571155"

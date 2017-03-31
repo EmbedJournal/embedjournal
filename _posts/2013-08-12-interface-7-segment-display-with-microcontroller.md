@@ -2,7 +2,6 @@
 title: Interface 7 Segment Display with Microcontroller
 date: 2013-08-12T19:15:44+00:00
 author: Siddharth
-layout: post
 thumbnail: post-thumb.png
 permalink: /interface-7-segment-display-with-microcontroller/
 dsq_thread_id: "2701815486"

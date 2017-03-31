@@ -1,6 +1,6 @@
 encoding: utf-8
 title:   "EmbedJournal"
-#host: embedjournal.com
+host: embedjournal.com
 tagline: "Add a brain to everything with embedded systems"
 email:   "admin@embedjournal.com"
 version: "0.2.0"
@@ -12,7 +12,7 @@ description: > # this ignores newlines until next key.
   other things that has to do with it. Embedded systems play a vital role in our
   day to day lives. Even without our knowledge we are using dozens of embedded
   devices.
-
+env: production
 permalink: pretty
 markdown: kramdown
 
@@ -31,15 +31,6 @@ social:
   linkedin:    https://www.linkedin.com/company/3181824
   youtube:     https://www.youtube.com/user/embedjournal
   github:      https://github.com/embedjournal
-  # Following is for jekyll-seo-tag
-  name: EmbedJournal
-  links:
-    - https://twitter.com/embedjournal
-    - https://facebook.com/embedjournal
-    - https://plus.google.com/+Embedjournal
-    - https://www.linkedin.com/company/3181824
-    - https://www.youtube.com/user/embedjournal
-    - https://github.com/embedjournal
 
 collections:
   pages:
@@ -58,10 +49,11 @@ liquid:
 defaults:
   -
     scope:
-      path: ""      # empty string for all files
-      type: "posts"   # limit to posts
+      path: ""        # empty string for all files
+      type: "posts"   # limit to posts (_post/*)
     values:
-      is_post: true # automatically set is_post=true for all posts
+      is_post: true
+      layout: post
 
 gems:
   - jekyll
@@ -75,6 +67,7 @@ exclude:
   - Gemfile.lock
   - package.json
   - README.md
+  - robots.txt
   - bin
 
 include:
@@ -88,9 +81,8 @@ jekyll-archives:
     month: "/archives/:year/:month/"
     tag:   "/tag/:name/"
 
-twitter:
-  username: embedjournal
-
-facebook:
-  admins: 568323306524581
-
+compress_html:
+  clippings: all
+  comments: all
+  ignore:
+    envs: development  # disable compression in dev environment
