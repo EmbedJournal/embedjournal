@@ -2,7 +2,6 @@
 title: Cubieboard a $50 Single Board Computer
 date: 2013-07-05T13:45:38+00:00
 author: Siddharth
-layout: post
 thumbnail: post-thumb.jpg
 permalink: /cubieboard/
 dsq_thread_id: "3298574154"

@@ -2,7 +2,6 @@
 title: "Reading datasheet, what to look for and how to find them"
 date: 2013-11-12T09:10:44+00:00
 author: Siddharth
-layout: post
 thumbnail: post-thumb.png
 permalink: /are-you-reading-the-datasheet/
 dsq_thread_id: "2728571966"

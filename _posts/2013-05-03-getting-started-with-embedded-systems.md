@@ -2,7 +2,6 @@
 title: Getting started with Embedded Systems
 date: 2013-05-03T17:26:44+00:00
 author: Siddharth
-layout: post
 thumbnail: post-thumb.jpg
 permalink: /getting-started-with-embedded-systems/
 dsq_thread_id: "3290443883"

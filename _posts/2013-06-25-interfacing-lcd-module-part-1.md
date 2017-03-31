@@ -2,7 +2,6 @@
 title: "Interfacing LCD Module with Microcontroller - Part -1"
 date: 2013-06-25T11:15:02+00:00
 author: Siddharth
-layout: post
 thumbnail: post-thumb.jpg
 permalink: /interfacing-lcd-module-part-1/
 dsq_thread_id: "2728571244"

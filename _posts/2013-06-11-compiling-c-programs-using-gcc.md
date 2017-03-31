@@ -2,7 +2,6 @@
 title: Compiling C Programs Using GCC
 date: 2013-06-11T23:22:10+00:00
 author: Siddharth
-layout: post
 thumbnail: post-thumb.png
 permalink: /compiling-c-programs-using-gcc/
 dsq_thread_id: "3290507807"

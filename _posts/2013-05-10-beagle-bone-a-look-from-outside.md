@@ -2,7 +2,6 @@
 title: Beagle Bone a look from outside
 date: 2013-05-10T18:22:37+00:00
 author: Siddharth
-layout: post
 thumbnail: post-thumb.jpg
 permalink: /beagle-bone-a-look-from-outside/
 dsq_thread_id: "3297479930"
