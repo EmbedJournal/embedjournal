@@ -835,15 +835,16 @@ body.model-open {
 .c-rectGallery .b-galleryItem .b-galleryImg {
     position: relative;
     margin: 6px;
-    text-align: center;
     overflow: hidden;
     border: 1px solid #e3e5dc;
+    height: 100px;
 }
 .c-rectGallery .b-galleryItem .b-galleryImg img {
-    position: absolute;
+    position: relative;
+    top: 50%;
     left: 50%;
-    right: 0;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
     margin-bottom: 0;
     max-width: none;
     display: block;
@@ -2276,6 +2277,21 @@ body.model-open {
         margin-left: 0;
         margin-right: 0;
     }
+    .c-rectGallery.grid-1 .b-galleryItem .b-galleryImg {
+        height: 308px;
+    }
+    .c-rectGallery.grid-2 .b-galleryItem .b-galleryImg {
+        height: 150px;
+    }
+    .c-rectGallery.grid-3 .b-galleryItem .b-galleryImg {
+        height: 88px;
+    }
+    .c-rectGallery.grid-4 .b-galleryItem .b-galleryImg {
+        height: 61px;
+    }
+    .c-footerSocial ul {
+        justify-content: flex-start;
+    }
     .c-footerSocial ul li {
         padding-right: 32px;
         padding-left: 0;
@@ -2286,6 +2302,9 @@ body.model-open {
     }
     .c-footerNav ul {
         display: block;
+    }
+    .c-footerAbout {
+        margin-bottom: 32px;
     }
     .c-footerAbout p {
         text-align: left;
@@ -2458,6 +2477,21 @@ body.model-open {
     .c-aside .b-asideSocial ul li {
         width: 25%;
     }
+    .c-rectGallery.grid-1 .b-galleryItem .b-galleryImg {
+        height: 258px;
+    }
+    .c-rectGallery.grid-2 .b-galleryItem .b-galleryImg {
+        height: 117px;
+    }
+    .c-rectGallery.grid-3 .b-galleryItem .b-galleryImg {
+        height: 72px;
+    }
+    .c-rectGallery.grid-4 .b-galleryItem .b-galleryImg {
+        height: 48px;
+    }
+    .c-footerSocial ul {
+        justify-content: center;
+    }
 }
 
 /* For Desktop HD */
@@ -2505,6 +2539,15 @@ body.model-open {
     }
     .c-aside .b-asideSocial ul li {
         width: auto;
+    }
+    .c-rectGallery.grid-1 .b-galleryItem .b-galleryImg {
+        height: 371px;
+    }
+    .c-rectGallery.grid-2 .b-galleryItem .b-galleryImg {
+        height: 150px;
+    }
+    .c-rectGallery.grid-3 .b-galleryItem .b-galleryImg {
+        height: 93px;
     }
     .c-footerNav ul {
         justify-content: flex-end;
