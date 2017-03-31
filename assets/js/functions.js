@@ -14,9 +14,9 @@ $(window).scroll(function(event){
     }
 });
 
-$(window).resize(function(){
-    $('.js-rectGallery').customGallery();
-});
+// $(window).resize(function(){
+//     $('.js-rectGallery').customGallery();
+// });
 
 setInterval(function() {
     if (didScroll) {
@@ -61,9 +61,8 @@ $(document).ready(function() {
         }
     });
 
-    // jquery code here
-
-    $('.js-rectGallery').customGallery();
+    // // jquery code here
+    // $('.js-rectGallery').customGallery();
 
     $('.js-checkbox').customCheckbox();
 
@@ -106,7 +105,6 @@ $(document).ready(function() {
 
     $.featherlight.defaults.afterContent = function() {
         var caption = this.$currentTarget.find('img').attr('alt');
-        console.log(caption);
         this.$instance.find('.caption').remove();
         $('<div class="caption">').text(caption).appendTo(this.$instance.find('.featherlight-content'));
     }
@@ -188,7 +186,6 @@ function insertPostPageAdd() {
 
 $.fn.customGallery = function() {
     var galleryWidth = $(this).find('.b-galleryImg').width();
-    console.log(galleryWidth);
     var galleryheight = galleryWidth * 0.6;
     $(this).find('.b-galleryImg').height(galleryheight);
     $(this).find('.b-galleryImg > img').height(galleryheight);
