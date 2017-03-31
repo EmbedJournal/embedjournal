@@ -1,6 +1,5 @@
 ---
 title: "Site Map"
-layout: page
 ---
 
 Welcome to Embed Journal. This a static site map page for this blog. This page will help you in navigating through series of posts and closely related posts easily. All the post that are made in this blog are not easily accessible form the archives or form the corresponding category archives. Some times there are series of posts and not all of them are consecutive. Simply put, this page will guide you to locate what you are looking for easily. We will keep updating this page as and when series posts are made.

@@ -1,6 +1,5 @@
 ---
 title: "Guest Blogging"
-layout: page
 ---
 
 # Guest Blogging
