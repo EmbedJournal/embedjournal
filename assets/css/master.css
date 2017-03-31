@@ -13,8 +13,7 @@ body.model-open {
     overflow: hidden;
 }
 .s-logo {
-    margin-bottom: 30px;
-    background: #fff;
+    background: #ccc27c;
     padding-top: 20px;
     padding-bottom: 20px;
     box-shadow: 0px 1px 2px rgba(204,204,204,1);
@@ -59,37 +58,41 @@ body.model-open {
 .c-logo .e-logo {
     max-width: 100%;
 }
-.c-landingForm {
-    margin: 20px -15px;
-    background: #ccc27c;
-    box-shadow: 0px 1px 2px rgba(204,204,204,1);
-}
 .c-landingForm .b-content {
-    padding: 16px;
+    margin-bottom: 40px;
+}
+.c-landingForm .b-content .b-logo {
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.c-landingForm .b-content .b-logo .e-logo {
+    width: 250px;
 }
 .c-landingForm .b-content h1 {
     margin-top: 0;
-    margin-bottom: 10px;
-    color: #5a5214;
-    font-size: 32px;
+    margin-bottom: 15px;
+    color: #476900;
+    font-size: 42px;
     line-height: 1.4;
     font-family: 'Bree Serif', serif;
     font-weight: 400;
 }
 .c-landingForm .b-content p {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: #5a5214;
-    font-size: 17px;
-    line-height: 1.7;
+    font-size: 18px;
+    line-height: 1.8;
     font-weight: 400;
 }
 .c-landingForm .b-image {
-    padding: 16px;
+    margin-bottom: 40px;
     padding-bottom: 0;
     text-align: center;
 }
 .c-landingForm .b-image .e-image {
     max-width: 100%;
+    box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.4);
+    border-radius: 20px;
 }
 .c-landingForm .b-form {
     display: flex;
@@ -106,10 +109,10 @@ body.model-open {
     vertical-align: middle;
 }
 .c-landingForm .b-form .e-field.-text {
-    height: 34px;
+    height: 42px;
     padding: 8px;
     width: 100%;
-    border: 2px solid #fff;
+    border: 2px solid #e3e5dc;
     border-radius: 4px;
     font-size: 16px;
     background: rgba(255,255,255,0.9);
@@ -123,16 +126,25 @@ body.model-open {
     width: 100%;
 }
 .c-landingForm .b-form .b-submit .btn {
+    height: 42px;
     width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.c-landingForm .c-footerCopyText p {
+    text-align: left;
+}
+.c-landingForm .c-footerCopyText p a:hover {
+    color: #476900;
 }
 .c-checkbox {
     margin-right: 5px;
     padding: 0;
+    border: 2px solid #e3e5dc;
     display: inline-block;
     vertical-align: middle;
     background: #fff;
     outline: none;
-    border: none;
     width: 20px;
     height: 20px;
     line-height: 20px;
@@ -2288,6 +2300,13 @@ body.model-open {
     body {
         padding-top: 0;
     }
+    .s-landingContent {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-55%);
+        width: 100%;
+    }
     .s-navigation {
         margin-bottom: 98px;
         position: relative;
@@ -2309,19 +2328,10 @@ body.model-open {
         padding: 0;
     }
     .c-landingForm {
-        overflow: hidden;
         position: relative;
     }
     .c-landingForm .b-image {
-        height: 100%;
-    }
-    .c-landingForm .b-image .e-image {
-        position: absolute;
-        bottom: 0;
-        right: -50px;
-    }
-    .c-landingForm .b-content {
-        padding: 48px;
+        margin-top: 28px;
     }
     .c-landingForm .b-form .b-field.-halfWidth {
         padding-right: 10px;
