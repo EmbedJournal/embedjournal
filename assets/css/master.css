@@ -48,6 +48,21 @@ body.model-open {
 .s-categoryNav.nav-up {
     top: -81px;
 }
+.s-categoryNav.-fixed ul {
+    position: relative;
+    padding-left: 64px;
+}
+.s-categoryNav.-fixed ul li.logo {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    width: 50px;
+}
+.s-categoryNav.-fixed ul li.logo a {
+    padding: 0;
+}
 .c-logo {
     text-align: center;
 }
@@ -61,11 +76,13 @@ body.model-open {
 .c-landingForm .b-content {
     margin-bottom: 40px;
 }
-.c-landingForm .b-content .b-logo {
+.c-landingForm .b-logo {
+    margin-top: 20px;
     margin-bottom: 30px;
-    display: inline-block;
+    display: block;
+    text-align: center;
 }
-.c-landingForm .b-content .b-logo .e-logo {
+.c-landingForm .b-logo .e-logo {
     width: 250px;
 }
 .c-landingForm .b-content h1 {
@@ -83,6 +100,36 @@ body.model-open {
     font-size: 18px;
     line-height: 1.8;
     font-weight: 400;
+}
+.c-landingForm .b-content #mc_embed_signup form {
+    padding: 0;
+}
+.c-landingForm .b-content #mc_embed_signup .mc-field-group {
+    clear: none;
+    width: 100%;
+}
+.c-landingForm .b-content #mc_embed_signup .mc-field-group input {
+    height: 42px;
+    padding: 8px;
+    width: 100%;
+    border: 2px solid #e3e5dc;
+    border-radius: 4px;
+    font-size: 16px;
+    background: rgba(255,255,255,0.9);
+    text-indent: 0;
+}
+.c-landingForm .b-content #mc_embed_signup .mc-field-group input:focus {
+    outline: 0;
+}
+.c-landingForm .b-content #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+    display: none!important;
+}
+.c-landingForm .b-content #mc-embedded-subscribe {
+    margin: 0 10px 30px 0;
+    height: 42px;
+    width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 .c-landingForm .b-image {
     margin-bottom: 40px;
@@ -132,7 +179,7 @@ body.model-open {
     text-transform: uppercase;
 }
 .c-landingForm .c-footerCopyText p {
-    text-align: left;
+    margin-bottom: 20px;
 }
 .c-landingForm .c-footerCopyText p a:hover {
     color: #476900;
@@ -236,22 +283,6 @@ body.model-open {
 }
 .c-categoryNav ul li.logo {
     display: none;
-}
-.-fixed ul {
-    position: relative;
-    padding-left: 64px;
-}
-.-fixed ul li.logo {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0;
-    width: 54px;
-    height: 60px;
-}
-.-fixed ul li.logo a {
-    padding: 0;
 }
 .c-categoryNav ul li a {
     display: block;
@@ -1959,6 +1990,24 @@ body.model-open {
     .c-toTop {
         display: block;
     }
+    .c-landingForm .b-content #mc_embed_signup .mc-field-group {
+        width: 50%;
+        clear: none;
+        float: left;
+    }
+    .c-landingForm .b-content #mc_embed_signup .mc-field-group:first-child {
+        padding-right: 10px;
+    }
+    .c-landingForm .b-content #mc_embed_signup .mc-field-group input {
+        height: 42px;
+        padding: 8px;
+        width: 100%;
+        border: 2px solid #e3e5dc;
+        border-radius: 4px;
+        font-size: 16px;
+        background: rgba(255,255,255,0.9);
+        text-indent: 0;
+    }
     .c-singlePost .b-postHeader {
         padding: 256px 32px 0 32px;
     }
@@ -2349,8 +2398,8 @@ body.model-open {
     .c-landingForm {
         position: relative;
     }
-    .c-landingForm .b-image {
-        margin-top: 28px;
+    .c-landingForm .b-logo {
+        text-align: left;
     }
     .c-landingForm .b-form .b-field.-halfWidth {
         padding-right: 10px;
@@ -2361,6 +2410,9 @@ body.model-open {
     }
     .c-landingForm .b-form .b-submit {
         padding-right: 10px;
+    }
+    .c-landingForm .c-footerCopyText p {
+        text-align: left;
     }
     .c-authorInfo .b-authorImg {
         width: auto;
@@ -2489,9 +2541,6 @@ body.model-open {
     .c-rectGallery.grid-4 .b-galleryItem .b-galleryImg {
         height: 48px;
     }
-    .c-footerSocial ul {
-        justify-content: center;
-    }
 }
 
 /* For Desktop HD */
@@ -2548,6 +2597,9 @@ body.model-open {
     }
     .c-rectGallery.grid-3 .b-galleryItem .b-galleryImg {
         height: 93px;
+    }
+    .c-footerSocial ul {
+        justify-content: center;
     }
     .c-footerNav ul {
         justify-content: flex-end;

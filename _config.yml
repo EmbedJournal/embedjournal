@@ -1,6 +1,6 @@
 encoding: utf-8
 title:   "EmbedJournal"
-host: embedjournal.com
+# host: embedjournal.com
 tagline: "Add a brain to everything with embedded systems"
 email:   "admin@embedjournal.com"
 version: "0.2.0"
