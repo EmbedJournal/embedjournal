@@ -156,17 +156,17 @@ function triggerCheck(e) {
 function insertPostPageAdd() {
     var childCount = $(".b-postContent").children().length;
     var addUnitLarge = '<ins class="adsbygoogle b-addImage postpageAddUnit" style="display:none; width:728px; height:90px" data-ad-client="ca-pub-2839664859161137" data-ad-slot="3313112802"></ins>'
-    var addUnitSmall = '<ins class="adsbygoogle" style="display:inline-block;width:320px;height:100px" data-ad-client="ca-pub-2839664859161137" data-ad-slot="3986790400"></ins>'
     var addUnitMedium = '<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-2839664859161137" data-ad-slot="2355280008"></ins>'
+    var addUnitSmall = '<ins class="adsbygoogle" style="display:inline-block;width:320px;height:100px" data-ad-client="ca-pub-2839664859161137" data-ad-slot="3986790400"></ins>'
     var page_width = document.getElementById('postContent').getBoundingClientRect().width;
 
     if(childCount > 5) {
         if (page_width >= 728) {
             var addUnit = '<div align="center">' + addUnitLarge + '</div>'
         } else if(page_width >= 468){
-            var addUnit = '<div align="center">' + addUnitLarge + '</div>'
+            var addUnit = '<div align="center">' + addUnitMedium + '</div>'
         } else {
-            var addUnit = '<div align="center">' + addUnitLarge + '</div>'
+            var addUnit = '<div align="center">' + addUnitSmall + '</div>'
         }
         $(addUnit).insertAfter('.b-postContent > *:nth-child(4)');
         (adsbygoogle = window.adsbygoogle || []).push({});
