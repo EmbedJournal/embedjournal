@@ -17,7 +17,7 @@ permalink: pretty
 markdown: kramdown
 
 # Switch to local resources when working offline.
-use_local_resources: true
+use_local_resources: false
 
 kramdown:
   input: GFM
