@@ -9,22 +9,15 @@ categories: [ "Embedded Theory", "Microchip PIC" ]
 tags: [ "Interface", "LCD" ]
 ---
 
-This post documents the basics of interfacing the LCD with a microcontroller. It belongs to a series of 4 posts. If you landed here straight from a search engine, here is an index to help you navigate.
+The LCD module interface with a microcontroller is simple and it is a primitive means of adding a visual appeal to your embedded application. There are two basic types of LCD modules in the market they are, [Character LCD](http://en.wikipedia.org/wiki/Hitachi_HD44780_LCD_controller) and [Graphics LCD](http://en.wikipedia.org/wiki/Graphics_display_resolution). Character LCDs are the some of the cheapest means LCD displays available today.
+
+{% include image.html src="lcd-display.jpg" %}
+
+This post is first of a series of four posts that walks through entire process of interfacing an LCD module with a (any) microcontroller with all the basic concepts dealt in detail. Subscribe to our posts and get free updates on these follow-up posts.
 
   1. [LCD Module Basic Theory](/interfacing-lcd-module-basics/) (LCD Controllers, CG&DD RAM, PIN description,Timing Diagram, Commands)
   2. [Programming LCDs in 8 bit mode](/programming-lcd-in-8-bit-mode/) (programming pic18f4520 in C with C18 compiler under 8 bit mode)
   3. [Programming LCDs in 4 bit mode](/interface-lcd-in-4-bit-mode/). (programming pic18f4520 in C with C18 compiler under 4 bit mode)
-  4. Creating Custom Characters (bit map symbols and arrows that are not usually present in the ASCII table)
-
-The LCD module interface with a microcontroller is simple and it is a primitive means of adding a visual appeal to your embedded application. There are two basic types of LCD modules in the market they are, <a title="Wiki" href="http://en.wikipedia.org/wiki/Hitachi_HD44780_LCD_controller" target="_blank">Character LCD</a> and <a title="wiki" href="http://en.wikipedia.org/wiki/Graphics_display_resolution" target="_blank">Graphics LCD</a>. Character LCDs are the some of the cheapest means LCD displays available today.
-
-{% include image.html src="lcd-display.jpg" %}
-
-This post is first of a series of four posts that walks through entire process of interfacing an LCD module with a (any) microcontroller with all the basic concepts dealt in detail. Subscribe to our post with your email using the subscribe button in the right sidebar and get free updates on these follow-up posts.
-
-  1. LCD Module Basic Theory. (LCD Controllers, CG&DD RAM, PIN description,Timing Diagram, Commands)
-  2. [Programming LCDs in 8 bit mode](/programming-lcd-in-8-bit-mode/). (programming pic18f4520 in C with C18 compiler under 8 bit mode)
-  3. [Programming LCDs in 4 bit mode](/interface-lcd-in-4-bit-mode/) (programming pic18f4520 in C with C18 compiler under 4 bit mode)
   4. Creating Custom Characters (bit map symbols and arrows that are not usually present in the ASCII table)
 
 This post will cover the basic theory that you should have a clear understanding of, before getting started with the programming. Some of the sections below are not really essential for the interface but it is a good practice to have a thorough knowledge about what you are indulging in. Whereas some listed below are absolutely mandatory to understand how the LCD module works and to predict how it will behave for a given situation.
