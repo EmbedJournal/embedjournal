@@ -33,7 +33,7 @@ gallery2:
     name: "Me at work :)"
 ---
 
-Shaastra is an annual tech fest conducted by Indian Institute of Technology, Chennai. There are events and workshops for almost all streams of Engineering and I love their Robotics events, the most. The robotics event conducted by them is "The mother of all the robotics event in the county"-or that is what they say.. don't know how they guessed the gender of robotics -> (mother) :P. I always had an eye on this event ever since I was in my first year and I was a keen observer of all this while until last October when they released their problem statement.
+Shaastra is an annual tech fest conducted by Indian Institute of Technology, Chennai. There are events and workshops for almost all streams of Engineering and I love their Robotics events, the most. The robotics event conducted by them is "The mother of all the robotics event in the county" - or that is what they say.. don't know how they guessed the gender of robotics :P. I always had an eye on this event ever since I was in my first year and I was a keen observer of all this while until last October when they released their problem statement.
 
 {% include image.html src="picker-robot.jpg" width=300 alt="6 DoF pick and place robot" %}
 
