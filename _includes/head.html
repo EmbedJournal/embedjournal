@@ -1,7 +1,6 @@
-
 <!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<script src="scripts/iepngfix_tilebg.js"></script>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="scripts/iepngfix_tilebg.js"></script>
 <![endif]-->
 
 {% if page.description %}
@@ -15,26 +14,17 @@
 
 <title>{{ page.title }} - {{ site.title }}</title>
 
-{% if site.use_local_resources %}
 <!-- Local Resources -->
 <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.min.css" type="text/css" />
 <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css" type="text/css" />
 <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap-theme.css" type="text/css" />
-<link rel="stylesheet" href="/assets/plugins/featherlight/featherlight.min.css" type="text/css" />
-<link rel="stylesheet" href="/assets/plugins/featherlight/featherlight.gallery.min.css" type="text/css" />
-<script src="/assets/plugins/jquery/jquery-1.11.1.min.js"></script>
-{% else %}
-<!-- CDN Resources -->
-<link rel="stylesheet" href="https://use.fontawesome.com/bfe45b6074.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.1/featherlight.min.css" integrity="sha256-4JAn9pTSLsMigb/pMsQIsVuZVBIuzKzovU6ofF5HRcI=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.1/featherlight.gallery.min.css" integrity="sha256-LfglqcCLb9uK5WBpGCtF17sC9kOKgOw5ZKZ+MQl0XV0=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js" integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE=" crossorigin="anonymous"></script>
-{% endif %}
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.min.css">
 
+<!-- Blocking Script !! -->
+<script src="/assets/js/jquery-1.11.1.min.js"></script>
+
+<!-- Non Blocking Scripts -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/master.css">
 <script async src="{{ site.baseurl }}/assets/js/lazysizes.min.js"></script>
 
 <!-- Content -->
@@ -42,7 +32,13 @@
 <meta http-equiv="Cache-control" content="public">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<!-- Page -->
+<meta property="fb:admins" content="568323306524581" />
+<link rel="icon" type="image/ico" href="{{ site.baseurl }}/assets/images/favicon.ico">
+<link rel="shortcut-icon" type="image/ico" href="{{ site.baseurl }}/assets/images/favicon.ico">
+<link rel="alternate" type="application/rss+xml" title="RSS Feed for embedjournal.com" href="/rss.xml" />
+
+{% if page.is_post %}
+<!-- Post Specific -->
 <link rel="author" href="{{ author.homepage }}">
 <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 <meta name="keywords" content="{{ site.author }}, {{ site.title }}, {{ page.keywords }}">
@@ -70,11 +66,6 @@
 <meta name="twitter:creator" content="@{{ author.twitter }}" />
 <meta name="twitter:description" content="{{ desc }}">
 <meta name="twitter:image" content="{{ post_image }}">
-<!-- Other -->
-<link rel="icon" type="image/ico" href="{{ site.baseurl }}/assets/images/favicon.ico">
-<link rel="shortcut-icon" type="image/ico" href="{{ site.baseurl }}/assets/images/favicon.ico">
-<meta property="fb:admins" content="568323306524581" />
-<link rel="alternate" type="application/rss+xml" title="RSS Feed for embedjournal.com" href="/rss.xml" />
 <!-- Schema -->
 <script type="application/ld+json">
 {
@@ -93,8 +84,22 @@
   "url": "{{ site.url }}{{ page.url }}"
 }
 </script>
-<!-- Go to home page after 10 seconds -->
+{% endif %}
+
 {% if page.url == "/404.html" %}
+<!-- Go to home page after 10 seconds -->
 <meta http-equiv="refresh" content="10; url=/">
 {% endif %}
+
+{% if site.env == "production" %}
 <meta name="google-site-verification" content="wfclhhInI7WshnSa0y0OO4Ss1oawtkdaku15bTCiXgw" />
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-41190078-1', 'auto');
+  ga('send', 'pageview');
+</script>
+{% endif %}

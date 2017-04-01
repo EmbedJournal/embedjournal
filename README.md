@@ -77,3 +77,10 @@ $ gem install jekyll bundler
 
 * Collection names do not seem to support "-" in them, use "_" instead.
 * collection names cannot be same as global variables (site.VARIABLE) as collections get get into into global scope (site.COLLECTION) as well.
+
+
+### Issues:
+
+* Remove blocking jquery from head.
+* Finalize and provide dependency chain for JS and CSS.
+* Center footer social icons in all views.
