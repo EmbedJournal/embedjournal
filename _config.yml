@@ -1,29 +1,27 @@
-encoding: utf-8
 title:   "EmbedJournal"
-# host: embedjournal.com
+host: embedjournal.com
 tagline: "Add a brain to everything with embedded systems"
 email:   "admin@embedjournal.com"
-version: "0.2.0"
+version: "1.0.0"
 url:     "http://embedjournal.com"
-baseurl: ""
+encoding: utf-8
+baseurl: "" # path to load the site from.
 logo:    "/assets/images/logo/embedjournal-120px.png"
+env: production
+permalink: pretty
+markdown: kramdown
+use_local_resources: true # Switch to local resources when working offline.
+
 description: > # this ignores newlines until next key.
   This is a website focusing on embedded software/hardware design and a hunch of
   other things that has to do with it. Embedded systems play a vital role in our
   day to day lives. Even without our knowledge we are using dozens of embedded
   devices.
-env: production
-permalink: pretty
-markdown: kramdown
-
-# Switch to local resources when working offline.
-use_local_resources: false
 
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-disqus: embedjournal
 google_analytics: UA-41190078-1
 
 social:
@@ -63,6 +61,7 @@ defaults:
       type: "pages"
     values:
       layout: page
+
 gems:
   - jekyll
   - jekyll-feed
