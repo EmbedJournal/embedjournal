@@ -1,5 +1,5 @@
 ---
-title: "Programming LCD in 8 bit mode - Part -2"
+title: "Interface LCD in 8 bit mode"
 date: 2013-06-26T19:58:25+00:00
 author: Siddharth
 thumbnail: post-thumb.png
@@ -11,9 +11,9 @@ tags: [ "Interface", "LCD" ]
 
 This post documents the steps involved in interfacing the LCD in 8 bit mode with a microcontroller. It belongs to a series of 4 posts. If you landed here straight from a search engine, here is an index to help you navigate.
 
-  1. [LCD Module Basic Theory](/interfacing-lcd-module-part-1/) (LCD Controllers, CG&DD RAM, PIN description,Timing Diagram, Commands)
-  2. Programming LCDs in 8 bit mode. (programming pic18f4520 in C with C18 compiler under 8 bit mode)
-  3. [Programming LCDs in 4 bit mode](/interface-lcd-in-4-bit-mode/). (programming pic18f4520 in C with C18 compiler under 4 bit mode)
+  1. [LCD Module Basic Theory](/interfacing-lcd-module-basics/) (LCD Controllers, CG&DD RAM, PIN description,Timing Diagram, Commands)
+  2. [Programming LCDs in 8 bit mode](/programming-lcd-in-8-bit-mode/) (programming pic18f4520 in C with C18 compiler under 8 bit mode)
+  3. [Programming LCDs in 4 bit mode](/interface-lcd-in-4-bit-mode/) (programming pic18f4520 in C with C18 compiler under 4 bit mode)
   4. Creating Custom Characters (bit map symbols and arrows that are not usually present in the ASCII table)
 
 ### Why Reinvent the wheel?

@@ -47,11 +47,11 @@ layout: default
 
 		<div class="c-posts">
 			<div class="b-title" id="authorName">
-				<h3>{{ author.name }}'s Posts</h3>
+				<h3>{{ author.name }}'s Recent Posts</h3>
 			</div>
 			<div class="b-posts">
 				{% assign author_posts = site.posts | where: "author", author.name %}
-				{% for post in author_posts %}
+				{% for post in author_posts limit:10 %}
 					<div class="b-postItem">
 					    <div class="b-postImg">
 					        <a href="{{ post.url | relative_url }}" title="{{ post.title }}">

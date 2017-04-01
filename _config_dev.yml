@@ -1,6 +1,10 @@
 title: "EJ Staging"
 host: ""
 env: developement
+
+# Switch to local resources. Useful when working offline.
 use_local_resources: true
+
 include:
   - robots.txt
+  - .htaccess

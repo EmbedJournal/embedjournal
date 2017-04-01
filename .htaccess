@@ -88,5 +88,6 @@ redirect 301 /author/siddharth /authors/siddharth-chandrasekaran
 redirect 301 /author/manivannan /authors/mani-sadhashivam
 redirect 301 /author /authors
 
+redirect 301 /interfacing-lcd-module-part-1 /interfacing-lcd-module-basics
 redirect 301 /0-to-99-counter-using-7-segment-displays-based-on-external-events /external-event-counter-seven-segment-displays
 redirect 301 /pc-does-not-have-serial-port-maybe-it-does /pc-serial-port-not-dead

@@ -27,7 +27,7 @@ Other than time and effort you will need the following components to make a digi
 
 ### Prerequisite
 
-For this tutorial I assume you have a [working knowledge about the I2C Protocol](/two-wire-interface-i2c-protocol-in-a-nut-shell/), and you know hot to [interfacing DS1307](/interfacing-rtc-with-microcontroller/) an get date and time out of it. We will also [interface character LCD](/interfacing-lcd-module-part-1/) to display the date and time.
+For this tutorial I assume you have a [working knowledge about the I2C Protocol](/two-wire-interface-i2c-protocol-in-a-nut-shell/), and you know hot to [interfacing DS1307](/interfacing-rtc-with-microcontroller/) an get date and time out of it. We will also [interface character LCD](/interfacing-lcd-module-basics/) to display the date and time.
 
 If you do not know any of the above please read through them first and then get back to this post you can follow the links to read all the relevant posts (if it's not very obvious).
 

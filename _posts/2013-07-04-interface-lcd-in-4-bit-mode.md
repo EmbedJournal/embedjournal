@@ -1,5 +1,5 @@
 ---
-title: "Interface - LCD in 4 bit Mode: Part 3"
+title: "Interface LCD in 4 bit Mode"
 date: 2013-07-04T11:02:08+00:00
 author: Siddharth
 thumbnail: post-thumb.jpg
@@ -9,11 +9,18 @@ categories: [ "Embedded Theory", "Microchip PIC" ]
 tags: [ "Interface", "LCD" ]
 ---
 
+This post documents the steps involved in interfacing the LCD in 4 bit mode with a microcontroller. It belongs to a series of 4 posts. If you landed here straight from a search engine, here is an index to help you navigate.
+
+  1. [LCD Module Basic Theory](/interfacing-lcd-module-basics/) (LCD Controllers, CG&DD RAM, PIN description,Timing Diagram, Commands)
+  2. [Programming LCDs in 8 bit mode](/programming-lcd-in-8-bit-mode/) (programming pic18f4520 in C with C18 compiler under 8 bit mode)
+  3. [Programming LCDs in 4 bit mode](/interface-lcd-in-4-bit-mode/) (programming pic18f4520 in C with C18 compiler under 4 bit mode)
+  4. Creating Custom Characters (bit map symbols and arrows that are not usually present in the ASCII table)
+
 Embedded applications are always developed on controllers whose resources are almost fully used in order to cut the cost of the product. This is done especially in applications that do not need any future expansions or a firmware updates. They are _Make-it_ and _Forget-it_ kind of applications. Most of the time, either the memory or the available pins are in demand. In some cases both memory and pin count are less.
 
 {% include image.html src="lcd-display.jpg" %}
 
-The Character [LCD in 8 bit mode](/programming-lcd-in-8-bit-mode/) uses 8 data lines and 3 control lines to display characters. This kind of interface is costly in terms of pin usage. Most of the industrial applications use the LCD in 4 bit mode. The total data lines needed is reduced by half in this mode. I have already discussed this in one of my previous posts on the [Theory behind the LCD modules](/interfacing-lcd-module-part-1/). It is further possible to reduce the Port Pins required by asserting the R/W pin permanently LOW throughout the interface. By doing this we mean that the LCD will always be operated in Write mode and Read mode will not be used. This way another pin can be saved.
+The Character [LCD in 8 bit mode](/programming-lcd-in-8-bit-mode/) uses 8 data lines and 3 control lines to display characters. This kind of interface is costly in terms of pin usage. Most of the industrial applications use the LCD in 4 bit mode. The total data lines needed is reduced by half in this mode. I have already discussed this in one of my previous posts on the [Theory behind the LCD modules](/interfacing-lcd-module-basics/). It is further possible to reduce the Port Pins required by asserting the R/W pin permanently LOW throughout the interface. By doing this we mean that the LCD will always be operated in Write mode and Read mode will not be used. This way another pin can be saved.
 
 The interface of LCD in 4 bit mode without checking for busy flag can be little tricky and we have to give enough delays calls between data latch and next data write to insure that the LCD is never busy while a new data is written to it. This post will deal the programming of LCD in 4 bit mode with the R/W line of the LCD pulled low. Hence this interface will just use 6 pins of the interface.
 
