@@ -2,31 +2,32 @@
 
 {% if include.column == "two" %}
   {% assign b_grid="gird-2" %}
-  {% assign b_class="col-sm-6" %}
+  {% assign b_class="col-sm-6 col-xs-6" %}
 {% elsif include.column == "three" %}
   {% assign b_grid="gird-3" %}
-  {% assign b_class="col-sm-4" %}
+  {% assign b_class="col-sm-4 col-xs-6" %}
 {% elsif include.column == "four" %}
   {% assign b_grid="gird-4" %}
-  {% assign b_class="col-sm-3" %}
+  {% assign b_class="col-sm-3 col-xs-6" %}
 {% else %}
   {% assign b_grid="gird-3" %}
-  {% assign b_class="col-sm-4" %}
+  {% assign b_class="col-sm-4 col-xs-6" %}
 {% endif %}
+
 <div class="c-rectGallery js-rectGallery {{ b_grid }}">
-	<div class="row" data-featherlight-gallery data-featherlight-filter="a">
+	<div class="row" data-featherlight-gallery="" data-featherlight-filter="a">
 		{% for image in include.list %}
 		<div class="{{ b_class }}">
-            <a class="b-galleryItem" href="{{ image_path }}/{{ image.src }}">
-                <div class="b-galleryImg">
-                    <img data-src="{{ image_path }}/{{ image.src }}" class="img-responsive lazyload" {% if image.name %}alt="{{ image.name }}"{% endif %}>
-                </div>
-				{% if image.caption %}
-                <div class="b-galleryContent">
-                    <p>{{ image.caption }}</p>
-                </div>
-				{% endif %}
-            </a>
+      <a class="b-galleryItem" href="{{ image_path }}/{{ image.src }}">
+        <div class="b-galleryImg">
+          <img data-src="{{ image_path }}/{{ image.src }}" class="img-responsive lazyload" {% if image.name %}alt="{{ image.name }}"{% endif %}>
+        </div>
+        {% if image.caption %}
+        <div class="b-galleryContent">
+          <p>{{ image.caption }}</p>
+        </div>
+        {% endif %}
+      </a>
 		</div>
 		{% endfor %}
 	</div>
