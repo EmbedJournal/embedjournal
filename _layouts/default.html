@@ -5,11 +5,7 @@ layout: compress
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  {% if page.is_post %}
-    {% include post-head.html %}
-  {% else %}
-    {% include page-head.html %}
-  {% endif %}
+  {% include head.html %}
 </head>
 <body>
 
@@ -30,12 +26,7 @@ layout: compress
 
     <!-- Back to top button -->
     <a href="#" class="c-toTop js-toTop"><span class="fa fa-angle-up"></span></a>
-</body>
     <!-- Load scripts at the the end of page to increase page speed -->
-<<<<<<< Updated upstream
-    {% include scripts.html %}
-=======
     <script src="{{ site.baseurl }}/assets/js/main.min.js"></script>
 </body>
->>>>>>> Stashed changes
 </html>
