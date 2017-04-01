@@ -15,18 +15,26 @@
 
 <title>{{ page.title }} - {{ site.title }}</title>
 
-<!-- CDN Styles -->
+{% if site.use_local_resources %}
+<link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap-theme.css" type="text/css" />
+<link rel="stylesheet" href="/assets/plugins/featherlight/featherlight.min.css" type="text/css" />
+<link rel="stylesheet" href="/assets/plugins/featherlight/featherlight.gallery.min.css" type="text/css" />
+<script src="/assets/plugins/jquery/jquery-1.11.1.min.js"></script>
+{% else %}
 <link rel="stylesheet" href="https://use.fontawesome.com/bfe45b6074.css">
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.1/featherlight.min.css" integrity="sha256-4JAn9pTSLsMigb/pMsQIsVuZVBIuzKzovU6ofF5HRcI=" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.1/featherlight.gallery.min.css" integrity="sha256-LfglqcCLb9uK5WBpGCtF17sC9kOKgOw5ZKZ+MQl0XV0=" crossorigin="anonymous" />
-<!-- Custom Styles -->
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/master.css">
 <!-- Early scripts -->
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script src="{{ site.baseurl }}/assets/js/lazysizes.min.js" async=""></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js" integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE=" crossorigin="anonymous"></script>
+{% endif %}
+
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/master.css">
+<script async src="{{ site.baseurl }}/assets/js/lazysizes.min.js"></script>
+
 <!-- Content -->
 <meta charset="utf-8">
 <meta http-equiv="Cache-control" content="public">

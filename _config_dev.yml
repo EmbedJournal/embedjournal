@@ -1,6 +1,6 @@
-title: "Embedjournal | Staging"
+title: "EJ Staging"
 host: ""
 env: developement
-
+use_local_resources: true
 include:
   - robots.txt

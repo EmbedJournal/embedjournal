@@ -55,7 +55,7 @@ layout: default
 					<div class="b-postItem">
 					    <div class="b-postImg">
 					        <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
-					            {% capture image-path %}{{ site.baseurl }}/images/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}{% endcapture %}
+					            {% capture image-path %}{{ site.baseurl }}/assets/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}{% endcapture %}
 					            <img src="{{ image-path }}/{{ post.thumbnail }}" alt="{{ post.title }}">
 					        </a>
 					    </div>

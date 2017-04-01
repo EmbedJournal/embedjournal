@@ -57,7 +57,7 @@ defaults:
   -
     scope:
       path: ""       # empty string for all files
-      type: "posts"
+      type: "pages"
     values:
       layout: page
 gems:
