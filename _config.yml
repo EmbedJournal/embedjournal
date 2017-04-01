@@ -16,6 +16,9 @@ env: production
 permalink: pretty
 markdown: kramdown
 
+# Switch to local resources when working offline.
+use_local_resources: true
+
 kramdown:
   input: GFM
   syntax_highlighter: rouge
