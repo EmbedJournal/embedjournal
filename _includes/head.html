@@ -85,11 +85,14 @@
   "headline": "{{ page.title }}",
   "datePublished": "{{ page.date }}",
   "description": "{{ desc }}",
+  "author": "{{ author.full_name }}",
+  "image": "{{ site.url }}{{ post_image }}",
   "publisher": {
     "@type": "Organization",
+    "name": "{{ site.title }}",
     "logo": {
       "@type": "ImageObject",
-      "url": "{{ site.logo }}"
+      "url": "{{ site.url }}{{ site.logo }}"
     }
   },
   "url": "{{ site.url }}{{ page.url }}"
