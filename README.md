@@ -77,3 +77,26 @@ $ gem install jekyll bundler
 
 * Collection names do not seem to support "-" in them, use "_" instead.
 * collection names cannot be same as global variables (site.VARIABLE) as collections get get into into global scope (site.COLLECTION) as well.
+
+### Dependency Chain
+
+**CSS:**:
+``` text
+bootstrap.css
+bootstrap-theme.css
+```
+
+**JS:**
+``` text
+jquery.js
+bootstrap.js
+bootstrap-theme.js
+```
+
+### Issues:
+
+* Remove blocking jquery from head.
+* Finalize and provide dependency chain for JS and CSS. (update this README)
+* Center footer social icons in all views.
+* js-expand in author page not working after js min and unify
+* Homepage sticky nav bar not working.
