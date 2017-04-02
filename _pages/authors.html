@@ -9,7 +9,7 @@ layout: default
         {% assign author = site.data.authors[author_name] %}
         <div class="c-authorInfo">
             <div class="b-authorImg">
-                <div class="b-img js-expand">
+                <div class="b-img">  <!-- js-expand -->
                     <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}"><img src="{{ author.image }}"></a>
                 </div>
             </div>
@@ -21,7 +21,7 @@ layout: default
                 <div class="b-social">
                     <ul>
                         {% if author.social.facebook %}
-                            <li class="b-facebook"><a href="{{author.social.facebook}}" title="Facebook" target="_blank"><span class="fa fa-facebook"></span></a></li>
+                        <li class="b-facebook"><a href="{{author.social.facebook}}" title="Facebook" target="_blank"><span class="fa fa-facebook"></span></a></li>
                         {% endif %}
                         {% if author.social.twitter %}
                         <li class="b-twitter"><a href="{{author.social.twitter}}" title="Twitter" target="_blank"><span class="fa fa-twitter"></span></a></li>
