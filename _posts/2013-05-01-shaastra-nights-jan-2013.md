@@ -29,8 +29,12 @@ gallery2:
     name: "My modest servo collection"
   - src:  robot-pair.jpg
     name: "Robot pair"
+  - src:  robot-pair.jpg
+    name: Both robots in one View
   - src:  me-at-work.jpg
     name: "Me at work :)"
+  - src:  picker-robot.jpg
+    name: 6 DOF pick and place robot
 ---
 
 Shaastra is an annual tech fest conducted by Indian Institute of Technology, Chennai. There are events and workshops for almost all streams of Engineering and I love their Robotics events, the most. The robotics event conducted by them is "The mother of all the robotics event in the county" - or that is what they say.. don't know how they guessed the gender of robotics :P. I always had an eye on this event ever since I was in my first year and I was a keen observer of all this while until last October when they released their problem statement.

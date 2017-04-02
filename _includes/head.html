@@ -71,17 +71,29 @@
 {
   "@context": "http://schema.org",
   "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}"
+  },
   "headline": "{{ page.title }}",
   "datePublished": "{{ page.date }}",
   "description": "{{ desc }}",
-  "author": "{{ author.full_name }}",
-  "image": "{{ post_image }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ author.full_name }}"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ post_image }}",
+    "width": 765,
+    "height": 765
+  },
   "publisher": {
     "@type": "Organization",
     "name": "{{ site.title }}",
     "logo": {
       "@type": "ImageObject",
-      "url": "{{ site.url }}{{ site.logo }}"
+      "url": "{{ site.url }}{{ site.logo }}",
     }
   },
   "url": "{{ site.url }}{{ page.url }}"
