@@ -92,4 +92,4 @@ compress_html:
   clippings: all
   comments: all
   ignore:
-    envs: development  # disable compression in dev environment
+    envs: development  # disable compression in development environment

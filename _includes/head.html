@@ -17,7 +17,7 @@
 <!-- Local Resources -->
 <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.min.css" type="text/css" />
 <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css" type="text/css" />
-<link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap-theme.css" type="text/css" />
+<link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap-theme.min.css" type="text/css" />
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.min.css">
 
 <!-- Blocking Script !! -->
@@ -25,7 +25,6 @@
 
 <!-- Non Blocking Scripts -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script async src="{{ site.baseurl }}/assets/js/lazysizes.min.js"></script>
 
 <!-- Content -->
 <meta charset="utf-8">
@@ -86,14 +85,14 @@
     "@type": "ImageObject",
     "url": "{{ post_image }}",
     "width": 765,
-    "height": 765
+    "height": 165
   },
   "publisher": {
     "@type": "Organization",
     "name": "{{ site.title }}",
     "logo": {
       "@type": "ImageObject",
-      "url": "{{ site.url }}{{ site.logo }}",
+      "url": "{{ site.url }}{{ site.logo }}"
     }
   },
   "url": "{{ site.url }}{{ page.url }}"
