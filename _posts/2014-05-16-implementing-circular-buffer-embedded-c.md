@@ -34,13 +34,12 @@ The essence is that every time you try to push, you check for `is_buffer_full` c
 Armed with this knowledge, I will proceed to define the data types!
 
 ``` c
-typedef struct
-{
-	uint8_t * const buffer;
-	int head;
-	int tail;
-	const int maxLen;
-}circBuf_t;
+typedef struct {
+    uint8_t * const buffer;
+    int head;
+    int tail;
+    const int maxLen;
+} circBuf_t;
 ```
 
 There goes our primary structure to handle the buffer and its pointers. Notice that buffer is `uint8_t * const buffer` . `const uint8_t *` is a pointer to a byte array of constant elements, that is the value being pointed to can't be changed but the pointer itself can be. On the other hand `uint8_t * const` is a constant pointer to an array of bytes in which the value being pointed to can changed but the pointer cannot be changed.
