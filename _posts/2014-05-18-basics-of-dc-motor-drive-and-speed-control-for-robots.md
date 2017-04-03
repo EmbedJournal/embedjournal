@@ -10,7 +10,7 @@ categories: [ "Embedded Theory" ]
 tags: [ "Basics", "Interface", "Theory" ]
 ---
 
-{% include image.html src="dcmotor.jpg" %}
+{% include image.html src="dc-motor.jpg" %}
 
 DC motors are really cheap and can be found very easily. In this post we will discuss the basic theory behind the DC motor drive system and its speed control. Having some basic understanding of how your motor driver works will play a key role in building your own circuits and debugging them.
 

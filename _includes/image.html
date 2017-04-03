@@ -14,7 +14,7 @@
 			{% if include.alt %}
 				alt="{{ include.alt }}"
 			{% else %}
-				alt="{{ include.src | replace '-', ' ' | replace '.png', '' | replace '.jpg', '' | replace '.gif', '' }}"
+				alt="{{ include.src | replace: '-', ' ' | replace: '.png', '' | replace: '.jpg', '' | replace: '.gif', '' }}"
 			{% endif %}
 		/>
 		{% if include.caption %}
