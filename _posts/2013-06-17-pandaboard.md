@@ -1,6 +1,7 @@
 ---
 title: "PandaBoard, Technical Reference and Review."
 date: 2013-06-17T10:20:56+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.png
 permalink: /pandaboard/

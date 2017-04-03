@@ -1,6 +1,7 @@
 ---
 title: "GLEM: Graphical LCD Emulator in C"
 date: 2016-06-05T13:09:23+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.png
 permalink: /glem-graphical-lcd-emulator-c/

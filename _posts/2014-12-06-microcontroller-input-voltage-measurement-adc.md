@@ -1,6 +1,7 @@
 ---
 title: Microcontroller Input voltage Measurement through ADC Module
 date: 2014-12-06T18:49:22+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.png
 permalink: /microcontroller-input-voltage-measurement-adc/

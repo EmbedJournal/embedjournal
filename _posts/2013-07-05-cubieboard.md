@@ -1,6 +1,7 @@
 ---
 title: Cubieboard a $50 Single Board Computer
 date: 2013-07-05T13:45:38+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /cubieboard/

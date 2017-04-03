@@ -1,6 +1,7 @@
 ---
 title: "Line Follower Robot - Build it from scratch"
 date: 2013-06-01T11:20:55+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /line-follower-robot/

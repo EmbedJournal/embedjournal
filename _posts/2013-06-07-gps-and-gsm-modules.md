@@ -1,6 +1,7 @@
 ---
 title: Got the GPS and GSM Modules delivered!!
 date: 2013-06-07T16:48:48+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /gps-and-gsm-modules/

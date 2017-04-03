@@ -1,6 +1,7 @@
 ---
 title: Beagle Bone a look from outside
 date: 2013-05-10T18:22:37+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /beagle-bone-a-look-from-outside/

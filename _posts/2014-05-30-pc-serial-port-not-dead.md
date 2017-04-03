@@ -1,6 +1,7 @@
 ---
 title: Serial Ports are dead? Think again!
 date: 2014-05-30T13:15:02+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /pc-serial-port-not-dead/

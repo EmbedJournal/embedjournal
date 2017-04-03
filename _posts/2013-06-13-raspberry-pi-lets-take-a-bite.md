@@ -1,6 +1,7 @@
 ---
 title: "Raspberry Pi: Let's take a bite from it!"
 date: 2013-06-13T09:43:20+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /raspberry-pi-lets-take-a-bite/

@@ -1,6 +1,7 @@
 ---
 title: "PIC Timer Calculator"
 date: 2013-09-12T10:21:01+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.png
 permalink: /pic-timer-calculator-give-away-1/

@@ -1,6 +1,7 @@
 ---
 title: Getting Started with PIC Microcontrollers
 date: 2013-10-13T08:04:33+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.png
 permalink: /getting-started-with-pic-microcontrollers/

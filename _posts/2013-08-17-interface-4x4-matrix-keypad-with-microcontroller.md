@@ -1,6 +1,7 @@
 ---
 title: "Interface 4x4 Matrix Keypad With Microcontroller"
 date: 2013-08-17T17:05:52+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /interface-4x4-matrix-keypad-with-microcontroller/

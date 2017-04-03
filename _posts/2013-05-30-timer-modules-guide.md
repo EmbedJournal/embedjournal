@@ -1,6 +1,7 @@
 ---
 title: "Timer / Counter Module - A Controller Independent Guide"
 date: 2013-05-30T18:12:31+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /timer-modules-guide/

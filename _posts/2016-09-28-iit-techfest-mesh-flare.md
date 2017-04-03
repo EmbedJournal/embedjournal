@@ -1,6 +1,7 @@
 ---
 title: "My approach to the Mesh Flare Problem (IIT-B's Techfest)"
 date: 2016-09-28T16:26:55+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /iit-techfest-mesh-flare/

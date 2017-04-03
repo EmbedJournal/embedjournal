@@ -1,6 +1,7 @@
 ---
 title: "Stepper Motors - Introduction and Working Principle"
 date: 2013-07-21T11:54:28+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /stepper-motors-introduction-and-working-principle/

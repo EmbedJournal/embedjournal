@@ -1,6 +1,7 @@
 ---
 title: Interrupt On Change (IOC) in PIC Microcontrollers
 date: 2013-08-27T18:27:26+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.png
 permalink: /interrupt-on-change-ioc-in-pic-microcontrollers/

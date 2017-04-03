@@ -76,6 +76,12 @@
   },
   "headline": "{{ page.title }}",
   "datePublished": "{{ page.date }}",
+  {% if page.date_modified %}
+  "dateModified": "{{ page.date_modified }}",
+  {% else %}
+  "dateModified": "{{ page.date }}",
+  {% endif %}
+
   "description": "{{ desc }}",
   "author": {
     "@type": "Person",

@@ -1,6 +1,7 @@
 ---
 title: 8 Reasons Why You Should Switch to MPLAB X IDE
 date: 2013-07-13T12:40:39+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.png
 permalink: /8-reasons-why-you-should-switch-to-mplab-x-ide/

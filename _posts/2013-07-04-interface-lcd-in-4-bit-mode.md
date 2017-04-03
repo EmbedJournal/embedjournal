@@ -1,6 +1,7 @@
 ---
 title: "Interface LCD in 4 bit Mode"
 date: 2013-07-04T11:02:08+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /interface-lcd-in-4-bit-mode/

@@ -1,6 +1,7 @@
 ---
 title: Custom RFS for Beaglebone Black using Busybox
 date: 2016-11-09T20:44:41+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Mani
 thumbnail: post-thumb.png
 permalink: /custom-rfs-beaglebone-black/

@@ -1,6 +1,7 @@
 ---
 title: Working with git from a Linux machine
 date: 2013-04-24T18:34:41+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.png
 permalink: /working-with-git-from-a-linux-machine/

@@ -1,6 +1,7 @@
 ---
 title: Compiling and Deploying BeagleBone Black Kernel
 date: 2015-10-05T05:17:14+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Mani
 thumbnail: post-thumb.jpg
 permalink: /kernel-compilation-beaglebone-black/

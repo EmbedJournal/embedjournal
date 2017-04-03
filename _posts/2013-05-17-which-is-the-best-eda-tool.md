@@ -1,6 +1,7 @@
 `---
 title: Which is the best EDA tool?
 date: 2013-05-17T15:38:04+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.gif
 permalink: /which-is-the-best-eda-tool/

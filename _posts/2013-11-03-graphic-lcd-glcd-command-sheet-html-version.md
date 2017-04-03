@@ -1,6 +1,7 @@
 ---
 title: "Graphic LCD Command Sheet HTML Version"
 date: 2013-11-03T21:12:52+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.png
 permalink: /graphic-lcd-glcd-command-sheet-html-version/

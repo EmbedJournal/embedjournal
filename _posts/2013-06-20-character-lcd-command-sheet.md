@@ -1,6 +1,7 @@
 ---
 title: Character LCD Command Sheet HTML Version
 date: 2013-06-20T10:43:18+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /character-lcd-command-sheet/

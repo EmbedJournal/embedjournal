@@ -1,6 +1,7 @@
 ---
 title: Migrating to HI-TECH C Compiler from the Microchip C18 Compiler
 date: 2013-08-24T21:39:52+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.png
 permalink: /migrating-to-hi-tech-c-compiler-from-the-microchip-c18-compiler/

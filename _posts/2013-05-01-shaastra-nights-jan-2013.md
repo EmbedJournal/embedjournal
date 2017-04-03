@@ -1,6 +1,7 @@
 ---
 title: "Shaastra 2013 Nights on the streets (Jan'13)"
 date: 2013-05-01T16:49:54+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /shaastra-nights-jan-2013/

@@ -1,6 +1,7 @@
 ---
 title: "External Event Counter - Seven Segment Displays"
 date: 2015-12-06T21:30:12+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /external-event-counter-seven-segment-displays/

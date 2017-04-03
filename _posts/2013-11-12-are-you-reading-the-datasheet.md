@@ -1,6 +1,7 @@
 ---
 title: "Reading datasheet, what to look for and how to find them"
 date: 2013-11-12T09:10:44+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.png
 permalink: /are-you-reading-the-datasheet/

@@ -1,6 +1,7 @@
 ---
 title: How to Make a Tray to suspend PCBs into the Etchant
 date: 2013-08-05T19:33:49+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /make-a-tray-to-suspend-pcbs-into-etchant/

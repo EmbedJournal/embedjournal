@@ -1,6 +1,7 @@
 ---
 title: Getting started with Embedded Systems
 date: 2013-05-03T17:26:44+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /getting-started-with-embedded-systems/

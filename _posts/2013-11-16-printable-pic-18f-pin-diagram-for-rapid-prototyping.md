@@ -1,6 +1,7 @@
 ---
 title: "PIC Pin Diagram, A printable copy for quick reference"
 date: 2013-11-16T12:46:27+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.png
 permalink: /printable-pic-18f-pin-diagram-for-rapid-prototyping/

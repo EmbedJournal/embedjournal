@@ -1,6 +1,7 @@
 ---
 title: Race condition in reading RTC timekeeping registers
 date: 2015-07-11T08:35:10+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /rtc-registers-read-atomic-values/

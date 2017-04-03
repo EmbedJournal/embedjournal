@@ -1,6 +1,7 @@
 ---
 title: Need for Clock Line in Digital Communication
 date: 2013-06-15T10:12:50+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.png
 permalink: /need-for-clock/

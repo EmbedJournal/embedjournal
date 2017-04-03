@@ -1,6 +1,7 @@
 ---
 title: Simple DIY Electromagnetic Bell
 date: 2014-12-14T16:45:18+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /simple-diy-electromagnetic-bell/

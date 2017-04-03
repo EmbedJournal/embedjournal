@@ -1,6 +1,7 @@
 ---
 title: Testing RF Transmitter and Receiver Circuit
 date: 2014-04-27T22:51:15+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /testing-rf-transmitter-and-receiver-circuit/

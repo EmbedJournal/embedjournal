@@ -1,6 +1,7 @@
 ---
 title: Useful Books for Reference
 date: 2014-06-06T13:25:13+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.png
 permalink: /useful-books-reference/

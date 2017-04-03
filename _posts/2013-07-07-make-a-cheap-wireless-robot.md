@@ -1,6 +1,7 @@
 ---
 title: Hack a Toy Car to Make a Cheap Wireless Robot
 date: 2013-07-07T23:44:58+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /make-a-cheap-wireless-robot/

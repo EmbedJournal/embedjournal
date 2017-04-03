@@ -1,6 +1,7 @@
 ---
 title: "EDA (Electronic Design Automation) - Where Electronics Begins"
 date: 2013-05-25T15:54:54+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.gif
 permalink: /eda-where-electronics-begins/

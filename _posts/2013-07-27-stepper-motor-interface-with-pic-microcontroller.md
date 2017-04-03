@@ -1,6 +1,7 @@
 ---
 title: Stepper Motor Interface with PIC Microcontroller
 date: 2013-07-27T07:25:12+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /stepper-motor-interface-with-pic-microcontroller/

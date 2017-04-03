@@ -1,6 +1,7 @@
 ---
 title: "Interfacing 16x2 LCD with C2000 launchpad"
 date: 2015-05-24T09:48:03+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Mani
 thumbnail: post-thumb.png
 permalink: /interfacing-16x2-character-lcd-with-c2000-launchpad/

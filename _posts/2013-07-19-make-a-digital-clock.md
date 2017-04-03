@@ -1,6 +1,7 @@
 ---
 title: Make a Digital Clock with DS1307 and PIC 18F4520
 date: 2013-07-19T11:34:58+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /make-a-digital-clock/

@@ -1,6 +1,7 @@
 ---
 title: Arduino Like Serial / UART Library for PIC 18 Microcontrollers
 date: 2014-05-23T13:48:26+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /arduino-like-serial-uart-library-pic-18-microcontrollers/

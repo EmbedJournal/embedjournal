@@ -1,6 +1,7 @@
 ---
 title: "Servo Motor Interface - Looking behind Arduino's Servo library"
 date: 2014-05-28T12:24:23+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /servo-motor-interface-looking-behind-arduino-servo-library/

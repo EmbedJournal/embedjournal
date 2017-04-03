@@ -1,6 +1,7 @@
 ---
 title: "Interface LCD in 8 bit mode"
 date: 2013-06-26T19:58:25+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.png
 permalink: /programming-lcd-in-8-bit-mode/

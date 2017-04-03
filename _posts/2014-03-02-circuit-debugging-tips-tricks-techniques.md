@@ -1,6 +1,7 @@
 ---
 title: "Circuit Debugging - Tips Tricks & Techniques"
 date: 2014-03-02T14:39:20+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /circuit-debugging-tips-tricks-techniques/

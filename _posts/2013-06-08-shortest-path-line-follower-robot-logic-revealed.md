@@ -1,6 +1,7 @@
 ---
 title: Shortest Path Line Follower Robot Logic Revealed!
 date: 2013-06-08T18:24:42+00:00
+date_modified: 2017-04-01T10:00:00+05:30
 author: Siddharth
 thumbnail: post-thumb.png
 permalink: /shortest-path-line-follower-robot-logic-revealed/
