@@ -39,9 +39,9 @@ Based on the type of the construction, stepper motors can be classified as
 
 **Variable Reluctance (VR) stepper motor**
 
-The variable reluctance stepper motors are those which have a rotor made of ferromagnetic substances. Hence when the stator is excited it becomes an electromagnet and the rotor feels a pull in that direction. The ferromagnetic substance always tries to align itself in the minimum reluctance path.
+The Variable Reluctance stepper motors are those which have a rotor made of ferromagnetic substances. Hence when the stator is excited it becomes an electromagnet and the rotor feels a pull in that direction. The ferromagnetic substance always tries to align itself in the minimum reluctance path.
 
-By exciting the coils, a magnetic field is procured and air gap reluctance is varied. Hence it is called a variable reluctance stepper motor. In this motor, the direction of the motor is independent of the direction of the current flow in the windings.
+By exciting the coils, a magnetic field is produced and air gap reluctance is varied. Hence it is called a variable reluctance stepper motor. In this motor, the direction of the motor is independent of the direction of the current flow in the windings.
 
 **Permanent Magnet (PM) stepper motor**
 
