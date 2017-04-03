@@ -8,7 +8,7 @@ encoding: utf-8
 baseurl: "" # path to load the site from.
 logo:    "/assets/images/logo/embedjournal-120px.png"
 env: production
-permalink: pretty
+permalink: disqus
 markdown: kramdown
 use_local_resources: true # Switch to local resources when working offline.
 
@@ -23,6 +23,7 @@ kramdown:
   syntax_highlighter: rouge
 
 google_analytics: UA-41190078-1
+disqus: embedjournal
 
 social:
   rss:         /feed.xml

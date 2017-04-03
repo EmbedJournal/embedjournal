@@ -127,7 +127,7 @@ $(document).ready(function() {
         var disqus_shortname = 'embedjournal';
         $.ajax({
             type: "GET",
-            url: "http://" + disqus_shortname + ".disqus.com/embed.js",
+            url: "https://" + disqus_shortname + ".disqus.com/embed.js",
             dataType: "script",
             cache: true
         });
