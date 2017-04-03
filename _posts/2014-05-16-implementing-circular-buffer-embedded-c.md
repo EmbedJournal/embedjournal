@@ -10,9 +10,9 @@ categories: [ "Programming" ]
 tags: [ "Theory", "Algorithms" ]
 ---
 
-Most embedded programmers come to realize that majority of the code that they write in a day are either related to state machines or circular buffers or queues. In this article we will have a look at circular buffers and how you can implement them in low memory devices.
+Embedded software often involves state machines, circular buffers and queues. In this article will give you an overview of the data structure and walks you through the steps involved in implementing circular/ring buffers in low memory devices.
 
-For those of you who don't know what a circular buffer is, its a kind of an array that will loop back to 0 after it reaches the maximum number of bytes in the buffer. This is done by having two pointers to the array. One points to the "head" and the other points to the "tail" of the buffer. As data is added to the buffer, the head pointer moves up and as the data is being removed (read) the tail pointer moves up. This is implementation dependent and varies with perspective. So, for the sake of argument we will agree, you _write_ at head and read from _tail_.
+For those of you who don't know what a circular buffer is, it is data structure where in an array is treated as circular and the indices loop back to 0 after it reaches array length. This is done by having two pointers to the array. One points to the "head" and the other points to the "tail" of the buffer. As data is added to the buffer, the head pointer moves up and as the data is being removed (read) the tail pointer moves up. This is implementation dependent and varies with perspective. So, for the sake of argument we will agree, you _write_ at head and read from _tail_.
 
 Here is a nice GIF that [Wikipedia](https://en.wikipedia.org/wiki/Circular_buffer) had,
 
@@ -81,7 +81,7 @@ Pop routine is called by the application process to pull data off the buffer. Th
 
 Here, the tail _can_ be moved to the next offset before the data has been read since each data unit is one byte and we reserve one byte in the buffer when we are fully loaded. But in more advanced circular buffer implementations, data units does not _need_ to be of the same size. In such cases, we don't know how much tail has to be moved before reading the data.
 
-For consistency with such implementations, I will read data and then move the tail pointer.
+To maintain consistency with such implementations, I will read data and then move the tail pointer.
 
 ``` c
 int circBufPop(circBuf_t *c, uint8_t *data)
