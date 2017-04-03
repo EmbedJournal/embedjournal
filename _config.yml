@@ -22,6 +22,9 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
+sass:
+  style: compressed
+
 google_analytics: UA-41190078-1
 disqus: embedjournal
 
