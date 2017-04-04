@@ -24,4 +24,3 @@ get reviewed in the mailing list :D
 Alright. That's about me and as all authors would say if you want to enjoy reading tech stories/tutorials, please subscribe to my posts :)
 
 Last but not least, I love to do Organic farming and also a proud follower of Dr.Nammalzhvar.
-

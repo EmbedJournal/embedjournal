@@ -64,6 +64,7 @@ SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip
 # ----------------------------------------------------------------------
 
 redirect 301 /how-to /category/how-to
+redirect 301 /category/how-to /tag/howto
 redirect 301 /generalposts /category/general-posts
 redirect 301 /circuit_design /category/hardware
 redirect 301 /latest-news /category/news
