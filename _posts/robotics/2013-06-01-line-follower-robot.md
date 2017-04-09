@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /line-follower-robot/
 dsq_thread_id: "2728574119"
-categories: [ "Robotics" ]
+category: "Robotics"
 tags: [ "HowTo", "Basics", "DIY", "LFR", "Theory" ]
 ---
 

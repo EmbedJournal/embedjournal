@@ -7,7 +7,7 @@ thumbnail: post-thumb.jpg
 permalink: /make-a-cheap-wireless-robot/
 dsq_thread_id: "2728559176"
 popular_post: true
-categories: [ "Robotics" ]
+category: "Robotics"
 tags: [ "HowTo", "DIY", "Wireless", "Robot" ]
 ---
 

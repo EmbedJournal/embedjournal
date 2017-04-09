@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.gif
 permalink: /which-is-the-best-eda-tool/
 dsq_thread_id: "2728643989"
-categories: [ "General Posts" ]
+category: "General Posts"
 tags: [ "EDA" ]
 ---
 

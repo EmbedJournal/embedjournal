@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /interface-lcd-in-4-bit-mode/
 dsq_thread_id: "2728571307"
-categories: [ "Microchip PIC" ]
+category: "Microchip PIC"
 tags: [ "Interface", "LCD" ]
 ---
 

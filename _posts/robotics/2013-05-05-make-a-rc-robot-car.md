@@ -7,7 +7,7 @@ thumbnail: post-thumb.jpg
 permalink: /make-a-rc-robot-car/
 dsq_thread_id: "2701802176"
 popular_post: true
-categories: [ "Robotics" ]
+category: "Robotics"
 tags: [ "HowTo", "DIY", "RF", "Wireless",  "Robot" ]
 
 gallery:

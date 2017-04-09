@@ -7,7 +7,7 @@ thumbnail: post-thumb.jpg
 permalink: /how-to-make-chassis/
 dsq_thread_id: "2728571901"
 popular_post: true
-categories: [ "Hardware" ]
+category: "Hardware"
 tags: [ "HowTo", "DIY", "Theory" ]
 
 gallery:

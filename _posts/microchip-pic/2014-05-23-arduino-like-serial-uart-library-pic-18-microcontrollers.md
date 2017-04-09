@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /arduino-like-serial-uart-library-pic-18-microcontrollers/
 dsq_thread_id: "3290732954"
-categories: [ "Microchip PIC" ]
+category: "Microchip PIC"
 tags: [ "Arduino", "Ideas" ]
 ---
 

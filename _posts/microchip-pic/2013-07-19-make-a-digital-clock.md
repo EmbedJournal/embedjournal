@@ -7,7 +7,7 @@ thumbnail: post-thumb.jpg
 permalink: /make-a-digital-clock/
 dsq_thread_id: "2728571391"
 popular_post: true
-categories: [ "Microchip PIC" ]
+category: "Microchip PIC"
 tags: [ "HowTo", "DIY", "Interface", "Programming", "RTC", "I2C" ]
 ---
 

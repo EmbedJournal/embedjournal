@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.png
 permalink: /shortest-path-line-follower-robot-logic-revealed/
 dsq_thread_id: "3290567661"
-categories: [ "Robotics" ]
+category: "Robotics"
 tags: [ "Algorithm", "Basics", "Theory" ]
 ---
 

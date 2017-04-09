@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /learning-embedded-system-with-arduino/
 dsq_thread_id: "2728571169"
-categories: [ "Arduino" ]
+category: "Arduino"
 tags: [ "Arduino", "Intro" ]
 ---
 

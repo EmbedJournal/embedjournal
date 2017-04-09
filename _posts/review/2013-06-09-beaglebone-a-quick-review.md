@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /beaglebone-a-quick-review/
 dsq_thread_id: "3298573222"
-categories: [ "Review" ]
+category: "Review"
 tags: [ "Beagle Bone" ]
 ---
 

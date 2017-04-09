@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.png
 permalink: /interface-7-segment-display-with-microcontroller/
 dsq_thread_id: "2701815486"
-categories: [ "Embedded Theory" ]
+category: "Embedded Theory"
 tags: [ "Basics", "Interface", "Theory" ]
 ---
 

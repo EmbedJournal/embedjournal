@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /beagle-bone-a-look-from-outside/
 dsq_thread_id: "3297479930"
-categories: [ "News" ]
+category: "News"
 tags: [ "Beagle Bone" ]
 ---
 

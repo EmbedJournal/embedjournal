@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /simple-diy-electromagnetic-bell/
 dsq_thread_id: "3322373915"
-categories: [ "Hardware" ]
+category: "Hardware"
 tags: [ "HowTo", "DIY", "Basics" ]
 ---
 

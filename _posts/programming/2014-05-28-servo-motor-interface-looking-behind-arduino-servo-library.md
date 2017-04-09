@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /servo-motor-interface-looking-behind-arduino-servo-library/
 dsq_thread_id: "3293479740"
-categories: [ "Programming" ]
+category: "Programming"
 tags: [ "Basics", "Interface" ]
 ---
 

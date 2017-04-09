@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.png
 permalink: /need-for-clock/
 dsq_thread_id: "2728591622"
-categories: [ "Embedded Theory" ]
+category: "Embedded Theory"
 tags: [ "Basics", "FAQ" ]
 ---
 

@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /pc-serial-port-not-dead/
 dsq_thread_id: "2728589255"
-categories: [ "General Posts" ]
+category: "General Posts"
 tags: [ "DIY" ]
 ---
 

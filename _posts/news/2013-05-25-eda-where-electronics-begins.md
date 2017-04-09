@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.gif
 permalink: /eda-where-electronics-begins/
 dsq_thread_id: "2728571220"
-categories: [ "News" ]
+category: "News"
 tags: [ "EDA" ]
 ---
 

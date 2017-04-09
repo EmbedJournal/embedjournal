@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /character-lcd-command-sheet/
 dsq_thread_id: "3295036483"
-categories: [ "Embedded Theory" ]
+category: "Embedded Theory"
 tags: [ "LCD" ]
 ---
 

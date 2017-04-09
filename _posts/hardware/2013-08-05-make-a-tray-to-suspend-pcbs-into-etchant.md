@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /make-a-tray-to-suspend-pcbs-into-etchant/
 dsq_thread_id: "3297032822"
-categories: [ "Hardware" ]
+category: "Hardware"
 tags: [ "HowTo", "EDA", "DIY" ]
 ---
 

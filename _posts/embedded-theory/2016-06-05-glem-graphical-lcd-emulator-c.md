@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.png
 permalink: /glem-graphical-lcd-emulator-c/
 dsq_thread_id: "4885041559"
-categories: [ "Embedded Theory" ]
+category: "Embedded Theory"
 tags: [ "Tools" ]
 ---
 

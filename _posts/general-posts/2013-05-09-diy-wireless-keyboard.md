@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /diy-wireless-keyboard/
 dsq_thread_id: "2728571102"
-categories: [ "General Posts" ]
+category: "General Posts"
 tags: [ "DIY", "Ideas", "Wireless" ]
 ---
 

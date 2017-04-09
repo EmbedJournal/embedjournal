@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.png
 permalink: /8-reasons-why-you-should-switch-to-mplab-x-ide/
 dsq_thread_id: "2728571357"
-categories: [ "Microchip PIC" ]
+category: "Microchip PIC"
 tags: [ "Tools", "Review" ]
 ---
 
