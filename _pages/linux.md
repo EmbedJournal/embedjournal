@@ -2,7 +2,7 @@
 title: "Linux"
 paginate:
   limit: false
-  category: "Linux"
+category: "Linux"
 permalink: "/category/linux/"
 layout: category-list
 ---

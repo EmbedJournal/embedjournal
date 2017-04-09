@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /interfacing-rtc-with-microcontroller/
 dsq_thread_id: "2728571110"
-category: "Embedded Theory"
+category: "Embedded"
 tags: [ "I2C", "Interface", "RTC" ]
 ---
 

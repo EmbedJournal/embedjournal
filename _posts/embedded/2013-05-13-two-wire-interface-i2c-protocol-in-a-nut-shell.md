@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.png
 permalink: /two-wire-interface-i2c-protocol-in-a-nut-shell/
 dsq_thread_id: "2728571673"
-category: "Embedded Theory"
+category: "Embedded"
 tags: [ "Basics", "I2C", "Protocol", "Theory" ]
 ---
 

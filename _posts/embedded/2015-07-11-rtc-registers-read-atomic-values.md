@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /rtc-registers-read-atomic-values/
 dsq_thread_id: "3923345886"
-category: "Embedded Theory"
+category: "Embedded"
 tags: [ "RTC", "Algorithms" ]
 ---
 

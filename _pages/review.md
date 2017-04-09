@@ -2,7 +2,7 @@
 title: "Review"
 paginate:
   limit: false
-  category: "Review"
+category: "Review"
 permalink: "/category/review/"
 layout: category-list
 ---

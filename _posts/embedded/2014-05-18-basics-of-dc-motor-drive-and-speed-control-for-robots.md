@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /basics-of-dc-motor-drive-and-speed-control-for-robots/
 dsq_thread_id: "3290522357"
-category: "Embedded Theory"
+category: "Embedded"
 tags: [ "Basics", "Interface", "Theory" ]
 ---
 

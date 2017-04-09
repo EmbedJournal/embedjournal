@@ -2,7 +2,7 @@
 title: "Robotics"
 paginate:
   limit: false
-  category: "Robotics"
+category: "Robotics"
 permalink: "/category/robotics/"
 layout: category-list
 ---

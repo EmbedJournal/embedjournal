@@ -1,8 +1,8 @@
 main:
   - item: "Archives"
     url:  "/archives/"
-  - item: "Embedded Theory"
-    url:  "/category/embedded-theory/"
+  - item: "Embedded"
+    url:  "/category/embedded/"
   - item: "Microchip PIC"
     url:  "/category/microchip-pic/"
   - item: "Arduino"

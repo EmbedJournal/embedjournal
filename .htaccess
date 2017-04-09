@@ -62,7 +62,7 @@ SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip
 # ----------------------------------------------------------------------
 # Permanent Redirection
 # ----------------------------------------------------------------------
-
+redirect 301 /category/embedded-theory /category/embedded
 redirect 301 /how-to /category/how-to
 redirect 301 /category/how-to /tag/howto
 redirect 301 /generalposts /category/general-posts

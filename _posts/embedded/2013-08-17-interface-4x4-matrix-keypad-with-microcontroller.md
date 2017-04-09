@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /interface-4x4-matrix-keypad-with-microcontroller/
 dsq_thread_id: "2701818794"
-category: "Embedded Theory"
+category: "Embedded"
 tags: [ "Algorithm", "Interface", "Theory" ]
 ---
 

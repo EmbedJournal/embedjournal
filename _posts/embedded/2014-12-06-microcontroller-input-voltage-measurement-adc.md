@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.png
 permalink: /microcontroller-input-voltage-measurement-adc/
 dsq_thread_id: "3296548731"
-category: "Embedded Theory"
+category: "Embedded"
 tags: [ "Theory", "Basics" ]
 ---
 

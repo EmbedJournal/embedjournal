@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /interfacing-lcd-module-basics/
 dsq_thread_id: "2728571244"
-category: "Embedded Theory"
+category: "Embedded"
 tags: [ "Interface", "LCD" ]
 ---
 

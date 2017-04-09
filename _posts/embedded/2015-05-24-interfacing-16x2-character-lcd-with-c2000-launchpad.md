@@ -6,7 +6,7 @@ author: Mani
 thumbnail: post-thumb.png
 permalink: /interfacing-16x2-character-lcd-with-c2000-launchpad/
 dsq_thread_id: "3785730768"
-category: "Embedded Theory"
+category: "Embedded"
 tags: [ "Interface", "LCD" ]
 ---
 

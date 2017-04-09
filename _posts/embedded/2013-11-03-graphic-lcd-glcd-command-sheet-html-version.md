@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.png
 permalink: /graphic-lcd-glcd-command-sheet-html-version/
 dsq_thread_id: "2728572025"
-category: "Embedded Theory"
+category: "Embedded"
 tags: [ "LCD" ]
 ---
 

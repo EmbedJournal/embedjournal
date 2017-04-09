@@ -10,7 +10,7 @@ layout: default
 			</div>
 			<div class="b-posts">
 				{% for post in site.posts %}
-				{% if post.category == page.title %}
+				{% if post.category == page.category %}
 				<div class="b-postItem">
 				    <div class="b-postImg">
 				        <a href="{{ post.url | relative_url }}" title="{{ post.title }}">

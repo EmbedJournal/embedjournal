@@ -2,7 +2,7 @@
 title: "Programming"
 paginate:
   limit: false
-  category: "Programming"
+category: "Programming"
 permalink: "/category/programming/"
 layout: category-list
 ---
