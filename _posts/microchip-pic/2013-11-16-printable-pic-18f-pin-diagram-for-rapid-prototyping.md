@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.png
 permalink: /printable-pic-18f-pin-diagram-for-rapid-prototyping/
 dsq_thread_id: "3291262335"
-categories: [ "Microchip PIC" ]
+category: "Microchip PIC"
 tags: [ "Intro" ]
 ---
 

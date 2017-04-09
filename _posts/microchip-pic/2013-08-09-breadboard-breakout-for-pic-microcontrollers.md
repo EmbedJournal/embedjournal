@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /breadboard-breakout-for-pic-microcontrollers/
 dsq_thread_id: "3298312963"
-categories: [ "Microchip PIC" ]
+category: "Microchip PIC"
 tags: [ "DIY" ]
 ---
 

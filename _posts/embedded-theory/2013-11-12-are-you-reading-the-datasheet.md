@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.png
 permalink: /are-you-reading-the-datasheet/
 dsq_thread_id: "2728571966"
-categories: [ "Embedded Theory" ]
+category: "Embedded Theory"
 tags: [ "Basics" ]
 ---
 

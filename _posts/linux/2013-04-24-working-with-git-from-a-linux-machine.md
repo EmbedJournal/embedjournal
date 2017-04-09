@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.png
 permalink: /working-with-git-from-a-linux-machine/
 dsq_thread_id: "3293147013"
-categories: [ "Linux" ]
+category: "Linux"
 tags: [ "CLI",  "git", Intro ]
 ---
 

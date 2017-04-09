@@ -6,7 +6,7 @@ author: Mani
 thumbnail: post-thumb.png
 permalink: /custom-rfs-beaglebone-black/
 dsq_thread_id: "5291157687"
-categories: [ "Linux" ]
+category: "Linux"
 tags: [ "Beagle Bone" ]
 ---
 

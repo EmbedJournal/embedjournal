@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /getting-started-with-embedded-systems/
 dsq_thread_id: "3290443883"
-categories: [ "General Posts" ]
+category: "General Posts"
 tags: [ "Intro" ]
 ---
 

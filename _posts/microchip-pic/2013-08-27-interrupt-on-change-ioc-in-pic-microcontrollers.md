@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.png
 permalink: /interrupt-on-change-ioc-in-pic-microcontrollers/
 dsq_thread_id: "2728571858"
-categories: [ "Microchip PIC" ]
+category: "Microchip PIC"
 tags: [ "Basics", "Theory" ]
 ---
 

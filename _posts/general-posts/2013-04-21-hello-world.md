@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /hello-world/
 dsq_thread_id: "3306085917"
-categories: [ "General Posts" ]
+category: "General Posts"
 tags: [ "Intro" ]
 ---
 

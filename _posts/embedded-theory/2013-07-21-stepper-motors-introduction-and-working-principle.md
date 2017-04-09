@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /stepper-motors-introduction-and-working-principle/
 dsq_thread_id: "2728571571"
-categories: [ "Embedded Theory" ]
+category: "Embedded Theory"
 tags: [ "Interface", "Programming", "PWM" ]
 
 gallery:

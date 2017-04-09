@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /circuit-debugging-tips-tricks-techniques/
 dsq_thread_id: "2728571998"
-categories: [ "Hardware" ]
+category: "Hardware"
 tags: [ "Basics", "Intro" ]
 ---
 

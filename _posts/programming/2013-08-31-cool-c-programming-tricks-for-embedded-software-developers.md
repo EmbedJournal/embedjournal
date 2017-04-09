@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /cool-c-programming-tricks-for-embedded-software-developers/
 dsq_thread_id: "2728571436"
-categories: [ "Programming" ]
+category: "Programming"
 tags: [ "Ideas" ]
 ---
 

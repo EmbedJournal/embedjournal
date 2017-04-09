@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /getting-started-with-linux/
 dsq_thread_id: "3295791995"
-categories: [ "Linux" ]
+category: "Linux"
 tags: [ "Intro" ]
 ---
 

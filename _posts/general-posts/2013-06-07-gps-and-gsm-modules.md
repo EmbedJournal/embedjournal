@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /gps-and-gsm-modules/
 dsq_thread_id: "3292256477"
-categories: [ "General Posts" ]
+category: "General Posts"
 tags: [ "GSM", "GPS", "GPRS" ]
 ---
 

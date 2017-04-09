@@ -35,9 +35,7 @@ layout: default
                                     <div class="b-category">
                                         <p>
                                             <span class="fa fa-folder"></span>
-                                            {% for category in post.categories %}
-                                                <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}</a>{% unless forloop.last %},{% endunless %}
-                                            {% endfor %}
+                                            <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ post.category }}</a>
                                         </p>
                                     </div>
                                     <div class="b-tags">
@@ -82,9 +80,7 @@ layout: default
                                     <div class="b-category">
                                         <p>
                                             <span class="fa fa-folder"></span>
-                                            {% for category in post.categories %}
-                                                <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
-                                            {% endfor %}
+                                            <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ post.category }}</a>
                                         </p>
                                     </div>
                                     <div class="b-tags">
@@ -133,9 +129,7 @@ layout: default
                                     <div class="b-category">
                                         <p>
                                             <span class="fa fa-folder"></span>
-                                            {% for category in post.categories %}
-                                                <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
-                                            {% endfor %}
+                                            <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ post.category }}</a>
                                         </p>
                                     </div>
                                     <div class="b-tags">
@@ -184,9 +178,7 @@ layout: default
                                     <div class="b-category">
                                         <p>
                                             <span class="fa fa-folder"></span>
-                                            {% for category in post.categories %}
-                                                <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
-                                            {% endfor %}
+                                            <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ post.category }}</a>
                                         </p>
                                     </div>
                                     <div class="b-tags">

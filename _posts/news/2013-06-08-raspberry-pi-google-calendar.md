@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /raspberry-pi-google-calendar/
 dsq_thread_id: "2728571503"
-categories: [ "News" ]
+category: "News"
 tags: [ "RaspberryPi" ]
 ---
 

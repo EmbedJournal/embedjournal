@@ -7,7 +7,7 @@ thumbnail: post-thumb.jpg
 permalink: /external-event-counter-seven-segment-displays/
 dsq_thread_id: "2701807862"
 popular_post: true
-categories: [ "Microchip PIC" ]
+category: "Microchip PIC"
 tags: [ "Interface", "Theory" ]
 ---
 

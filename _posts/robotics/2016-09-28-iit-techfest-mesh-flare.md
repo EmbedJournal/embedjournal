@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /iit-techfest-mesh-flare/
 dsq_thread_id: "5179907417"
-categories: [ "Robotics" ]
+category: "Robotics"
 tags: [ "Tech Fest", "Programming", "Theory" ]
 ---
 

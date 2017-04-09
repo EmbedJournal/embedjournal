@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /raspberry-pi-lets-take-a-bite/
 dsq_thread_id: "3296171215"
-categories: [ "Review" ]
+category: "Review"
 tags: [ "Raspberry Pi" ]
 ---
 

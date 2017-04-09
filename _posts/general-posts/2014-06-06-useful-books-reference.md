@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.png
 permalink: /useful-books-reference/
 dsq_thread_id: "3290444297"
-categories: [ "General Posts" ]
+category: "General Posts"
 tags: [ "Ideas" ]
 ---
 

@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.png
 permalink: /programming-lcd-in-8-bit-mode/
 dsq_thread_id: "2728571557"
-categories: [ "Microchip PIC" ]
+category: "Microchip PIC"
 tags: [ "Interface", "LCD" ]
 ---
 

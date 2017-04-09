@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /diy-dont-buy-breadboard-power-supply-make-it/
 dsq_thread_id: "2728638611"
-categories: [ "Hardware" ]
+category: "Hardware"
 tags: [ "HowTo", "DIY" ]
 
 gallery1:

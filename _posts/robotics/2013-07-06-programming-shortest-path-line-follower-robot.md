@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /programming-shortest-path-line-follower-robot/
 dsq_thread_id: "2701844078"
-categories: [ "Robotics" ]
+category: "Robotics"
 tags: [ "Algorithm", "Programming" ]
 
 gallery:

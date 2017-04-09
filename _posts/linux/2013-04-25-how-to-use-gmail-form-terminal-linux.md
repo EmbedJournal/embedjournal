@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.png
 permalink: /how-to-use-gmail-form-terminal-linux/
 dsq_thread_id: "2728571155"
-categories: [ "Linux" ]
+category: "Linux"
 tags: [ HowTo, "CLI", "Intro" ]
 ---
 

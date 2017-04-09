@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.png
 permalink: /pic-timer-calculator-give-away-1/
 dsq_thread_id: "3297077771"
-categories: [ "Microchip PIC" ]
+category: "Microchip PIC"
 tags: [ "Tools" ]
 ---
 

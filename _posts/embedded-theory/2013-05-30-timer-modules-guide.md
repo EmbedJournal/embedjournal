@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /timer-modules-guide/
 dsq_thread_id: "3300463351"
-categories: [ "Embedded Theory" ]
+category: "Embedded Theory"
 tags: [ "Basics", "Interface", "Theory" ]
 ---
 

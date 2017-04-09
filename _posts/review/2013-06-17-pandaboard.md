@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.png
 permalink: /pandaboard/
 dsq_thread_id: "3298571283"
-categories: [ "Review" ]
+category: "Review"
 tags: [ "DevKit" ]
 ---
 

@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /cubieboard/
 dsq_thread_id: "3298574154"
-categories: [ "Review" ]
+category: "Review"
 tags: [ "DevKit" ]
 ---
 

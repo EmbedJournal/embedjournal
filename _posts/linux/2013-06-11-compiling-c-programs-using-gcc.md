@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.png
 permalink: /compiling-c-programs-using-gcc/
 dsq_thread_id: "3290507807"
-categories: [ "Linux" ]
+category: "Linux"
 tags: [ "CLI" ]
 ---
 

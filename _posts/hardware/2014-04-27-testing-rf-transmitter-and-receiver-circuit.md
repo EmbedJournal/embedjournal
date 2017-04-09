@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /testing-rf-transmitter-and-receiver-circuit/
 dsq_thread_id: "3290444642"
-categories: [ "Hardware" ]
+category: "Hardware"
 tags: [ "HowTo", "Wireless" ]
 ---
 

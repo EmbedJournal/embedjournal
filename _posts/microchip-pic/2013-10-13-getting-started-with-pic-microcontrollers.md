@@ -6,7 +6,7 @@ author: Siddharth
 thumbnail: post-thumb.png
 permalink: /getting-started-with-pic-microcontrollers/
 dsq_thread_id: "3290736684"
-categories: [ "Microchip PIC" ]
+category: "Microchip PIC"
 tags: [ "Intro" ]
 
 gallery:

@@ -7,7 +7,7 @@ thumbnail: post-thumb.jpg
 permalink: /kernel-compilation-beaglebone-black/
 dsq_thread_id: "4194274455"
 popular_post: true
-categories: [ "Linux" ]
+category: "Linux"
 tags: [ "Beagle Bone" ]
 ---
 
