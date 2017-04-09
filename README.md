@@ -57,7 +57,7 @@ $ rvm install 2.4.0
 Use rvm command to set up default ruby version to be used by applications. You may also install multiple versions of ruby using above step command and select which version you want to use.
 
 ``` shell
-$ rvm use 2.4.0 --default 
+$ rvm use 2.4.0 --default
 ```
 
 **Check Ruby Version**
@@ -101,3 +101,6 @@ bootstrap-theme.js
 * js-expand in author page not working after js min and unify
 * Homepage sticky nav bar not working, while in post page it works.
 * Fix different height for different 2, 4, and 4 (lager height for 2 column galleries, smaller for 4).
+* pagination doesn't work in IE 11.
+* image size not restricted in IE 11.
+* home page nav bar doesn't stick.
