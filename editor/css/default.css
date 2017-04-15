@@ -193,9 +193,8 @@ body {margin: 0;}
   padding: 10px;
   padding-left: 20px;
   color: #444;
-  font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+  font-family:'Istok Web', sans-serif;
   font-size: 16px;
-  line-height: 1.5em
 }
 
 #menu {
@@ -292,33 +291,76 @@ a:active{ color:#faa700; }
 a:focus{ outline: thin dotted; }
 a:hover, a:active{ outline: 0; }
 
-p{margin:1em 0;}
-
 img{max-width:100%;}
-
-h1,h2,h3,h4,h5,h6{font-weight:normal;color:#111;line-height:1em;}
-h4,h5,h6{ font-weight: bold; }
-h1{ font-size:2.5em; }
-h2{ font-size:2em; border-bottom:1px solid silver; padding-bottom: 5px; }
-h3{ font-size:1.5em; }
-h4{ font-size:1.2em; }
-h5{ font-size:1em; }
-h6{ font-size:0.9em; }
-
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #436303;
+    font-size: 32px;
+    line-height: 1.4;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+h2 {
+    margin-top: 0;
+    color: #293314;
+    font-size: 24px;
+    line-height: 1.4;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+h3 {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    color: #293314;
+    font-size: 22px;
+    line-height: 1.4;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+h4 {
+    padding-top: 10px;
+    margin-bottom: 10px;
+    color: #293314;
+    font-size: 18px;
+    line-height: 1.4;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+p {
+    margin-bottom: 20px;
+    color: #676864;
+    font-size: 17px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+p.meta {
+    margin-bottom: 10px;
+}
 blockquote{color:#666666;margin:0;padding-left: 3em;border-left: 0.5em #EEE solid;}
 hr { display: block; height: 2px; border: 0; border-top: 1px solid #aaa;border-bottom: 1px solid #eee; margin: 1em 0; padding: 0; }
-
-pre, code{
-  color: #000;
-  font-family:Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 0.94em; /* 0.94 = 0.88 + (1.00 - 0.88) / 2 */
-  border-radius:3px;
-  background-color: #F8F8F8;
-  border: 1px solid #CCC;
+pre {
+    margin-bottom: 20px;
+    padding: .5em .75em;
+    font-size: .83333em;
+    max-height: 600px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: .25em;
+    overflow: auto;
+    font-size: 17px;
+    word-break: normal;
+    word-wrap: normal;
+    white-space: pre;
 }
-pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 5px;}
-pre code { border: 0px !important; background: transparent !important; line-height: 1.3em; }
-code { padding: 0 3px 0 3px; }
+pre code {
+    background: none;
+    border-radius: 0;
+    border: none;
+    padding: 0;
+    word-break: keep-all;
+    white-space: pre;
+}
 sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
