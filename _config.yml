@@ -43,10 +43,9 @@ collections:
     permalink: /:path/index.html
   authors:
     output: true
-    permalink: /authors/:path/index.html
-  category_pages:
+  category:
     output: true
-    permalink: /category/:path/index.html
+    permalink: category/:path/index.html
 
 liquid:
   error_mode: warn
@@ -65,6 +64,12 @@ defaults:
       type: "pages"
     values:
       layout: page
+  -
+    scope:
+      path: ""       # empty string for all files
+      type: "category"
+    values:
+      layout: category-posts
 
 gems:
   - jekyll
