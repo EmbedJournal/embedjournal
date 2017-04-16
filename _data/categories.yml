@@ -1,0 +1,96 @@
+-
+  name: "Embedded"
+  url:  "/category/embedded"
+  image: "/assets/images/categories/embedded.jpg"
+  description: >
+    This is the primary category of EmbedJournal. An embedded system is a computer
+    system with a dedicated function within a larger mechanical or electrical system,
+    often with real-time computing constraints. It is embedded as part of a complete
+    device often including hardware and mechanical parts. Embedded systems control many
+    devices in common use today.
+-
+  name: "Arduino"
+  url:  "/category/arduino"
+  image: "/assets/images/categories/arduino.jpg"
+  description: >
+    Arduino has been the buzz word among hobbyist for a long time now. Arduino
+    is an open source, computer hardware and software company, project, and user
+    community that designs and manufactures microcontroller kits for building digital
+    devices and interactive objects that can sense and control objects in the physical
+    world. This category focuses on content using or related to arduino in some way.
+-
+  name: "Robotics"
+  url:  "/category/robotics"
+  image: "/assets/images/categories/robotics.jpg"
+  description: >
+    what use is all these embedded technologies if you don't go out and make robots? This category
+    will discuss about embedded system's most interesting application, Robotics. We will wire up
+    some motors on to a chassis and write some software to bing the robots into life. At times, we
+    do talk about some robot theory as well, be sure check them out.
+-
+  name: "Microchip PIC"
+  url:  "/category/microchip-pic"
+  image: "/assets/images/categories/microchip-pic.jpg"
+  description: >
+    Microchip PIC had been my favorite in college days. Partly because my college had development tools
+    purchased for the labs and partly because they were easily available in the local  market. This
+    category has projects that were done with PIC 18, PIC 24 and PIC 32 series of microcontrollers. Some
+    of these posts although filed in this category discuss some very basic embedded concepts. Be sure to
+    check it out.
+-
+  name: "Hardware"
+  url:  "/category/hardware"
+  image: "/assets/images/categories/hardware.jpg"
+  description: >
+    Embedded Systems is 70% software and 30% hardware (IMHO). Most hardware bugs are overcome with
+    software hacks/workarounds. Nevertheless, we have to get our hardwares up for the software to run
+    This category has anything you have have to get your hands dirty. This includes anything from
+    soldering to making chassis for you robots to things as simple as making a power supply.
+-
+  name: "Linux"
+  url:  "/category/linux"
+  image: "/assets/images/categories/linux.jpg"
+  description: >
+    Linux has been the heart of the computing world since its first inception in late 1991. It has
+    since evolved into one of the most apt operating systems for high end embedded devices. Regardless
+    target platform, your development machine ought to be Linux even if you are a half way decent
+    dev. This category is dedicated to tools, tricks and tips the Linux user environment form an
+    embedded developer's perspective.
+-
+  name: "General Posts"
+  url:  "/category/general-posts"
+  image: "/assets/images/categories/general-posts.jpg"
+  description: >
+    Anything that doesn't fit into other more specific categories get thrown in here. But
+    it doesn't mean posts here are totally irrelevent to the code theme of EmbedJoural, its
+    more like a place where the authors can rant about tools, technologies and platforms which
+    they really love or hate using. Check out these posts if you have the time for some tech
+    rant!
+-
+  name: "Programming"
+  url:  "/category/programming"
+  image: "/assets/images/categories/programming.jpg"
+  description: >
+    This category has to have been called software development, but for legacy reasons, we still call it
+    programming. There is a lot of difference between the two and hopefully you will get to know a little
+    about both as you browse through the content in this category. Content here will discuss about software
+    in the context of embedded systems, so don't expect to see anything more complex than what an embedded
+    device can handle.
+-
+  name: "Review"
+  url:  "/category/review"
+  image: "/assets/images/categories/review.jpg"
+  description: >
+    Occasionally we will review about hardware and software tool that we work on. At times, we review products
+    on our own accord but some time, vendors send us development boards and ask us to review them for marketing
+    purposes. Nevertheless, we will objectively evaluate the product and post out findings for our readers to
+    make informed decisions on using or purchasing those tools.
+-
+  name: "News"
+  url:  "/category/news"
+  image: "/assets/images/categories/news.jpg"
+  description: >
+    It is always good to keep tabs with whats happening around us on the small niche that we are in. This
+    category will deal with the talk of the embedded world. Things that are happening currently and things
+    that may be good to watch out for in the near future. There is no use going through this category now but
+    be sure to subscribe to our posts to get upcoming updates in your inbox.

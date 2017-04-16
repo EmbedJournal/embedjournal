@@ -1,5 +1,5 @@
 ---
 title: "Category List"
-layout: page
+layout: category-list
 permalink: /category/
 ---

@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class="row">
+    <div class="col-lg-10 col-lg-offset-1">
+        <div class="c-posts">
+            <div class="b-title">
+                <h3>{{ page.title }}</h3>
+            </div>
+            <div class="b-posts">
+                {% for cat in site.data.categories %}
+                <div class="b-postItem">
+                    <div class="b-postImg">
+                        <a href="{{ cat.url }}"><img src="{{ cat.image }}"></a>
+                    </div>
+                    <div class="b-postDesc">
+                        <a href="{{ cat.url }}" title="{{ cat.name }}"><h4 class="e-title">{{ cat.name }}</h4></a>
+                        <p>{{ cat.description }}</p>
+                        <!-- <div class="b-dateLabel">
+                            {{ site.categories[cat.name] | last | size }} <span class="e-label">Posts</span>
+                        </div> -->
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -6,18 +6,7 @@ title: "Guest Blogging"
 
 Welcome Blogger! If your are reading this we take it that you liked this blog and wish to submit a write up on one of your cool project that you wish to share. You could also become a full time blogger at EmbedJournal.
 
-The content submitted by the contributor will be published after review by one of the authors. Anyone can submit an article as long as the related to one of the following categories.
-
-  * Arduino
-  * Embedded
-  * General Posts
-  * Hardware
-  * Linux
-  * Microchip PIC
-  * News
-  * Programming
-  * Review
-  * Robotics
+The content submitted by the contributor will be published after review by one of the authors. Anyone can submit an article as long as the related to one of the [categories of EmbedJoural](/category/).
 
 ### Guidelines
 
@@ -32,7 +21,7 @@ Authors must adhere to the following guidelines,
 
 All content for EmbedJournal is written in GFM (GitHub Flavored Markdown). It is really easy to learn, and should take you less than 10 minutes to understand how things are done the markdown way. To make your life easy, we have made an online editor for you.
 
-Visit [EmbedJoural Editor](/editor) and read through the document to get an idea of how the post must be formatted. Once you are done editing, hit Ctrl-S and save the file and mail to us at admin@embedjournal.com. We will review and publish the article as soon as possible.
+Visit [EmbedJoural Editor](/editor/) and read through the document to get an idea of how the post must be formatted. Once you are done editing, hit Ctrl-S and save the file and mail to us at admin@embedjournal.com. We will review and publish the article as soon as possible.
 
 ### Ownership of content and copyright:
 
