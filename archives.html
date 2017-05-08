@@ -17,10 +17,17 @@ paginate:
 				{% for post in paginator.posts %}
 				<div class="b-postItem">
 				    <div class="b-postImg">
-				        <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
-				            {% capture image-path %}{{ site.baseurl }}/assets/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}{% endcapture %}
-				            <img src="{{ image-path }}/{{ post.thumbnail }}" alt="{{ post.title }}">
-				        </a>
+                        {% if post.thumbnail %}
+                        <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
+                            {% capture image-path %}{{ site.baseurl }}/assets/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}{% endcapture %}
+                            <img src="{{ image-path }}/{{ post.thumbnail }}" alt="{{ post.title }}">
+                        </a>
+                        {% else %}
+                        <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
+                            {% capture image-name %}{{ post.category | slugify }}.jpg{% endcapture %}
+                            <img src="{{ site.baseurl }}/assets/images/categories/{{ image-name }}" alt="{{ post.title }}">
+                        </a>
+                        {% endif %}
 				    </div>
 				    <div class="b-postDesc">
 				        <a href="{{ post.url | relative_url }}" title="{{ post.title }}" class="e-title"><h4>{{ post.title }}</h4></a>

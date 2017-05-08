@@ -71,6 +71,12 @@ $ ruby --version
 $ gem install jekyll bundler
 ```
 
+### Notes for configuring apache
+
+Build script will attempt to build the site to /var/www/embedjoural.com/public_html. Make sure that this directory is present and writable. 
+
+Enabke mode_rewrite in apache2 and setup a new sire with doc root at /var/www/embedjoural.com/public_html.
+
 # Jekyll
 
 ### Notes:
