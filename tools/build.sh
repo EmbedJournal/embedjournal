@@ -21,6 +21,17 @@ if [ "$1" == "production" ]; then
     # When building for production, override some variables.
     CONFIG_FILE=_config.yml
     JEKYLL_ENV=production
+else
+
+	while true; do
+		read -p "Building for development. Do you wish to continue? [y/N]: " yn
+		case $yn in
+		[Yy]* ) break;;
+		[Nn]* ) exit;;
+		* ) echo "Please answer yes or no.";;
+		esac
+	done
+
 fi
 
 jekyll build --config $CONFIG_FILE -s $SRC_PATH -d $DEST_PATH

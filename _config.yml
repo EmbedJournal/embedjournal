@@ -84,7 +84,8 @@ exclude:
   - package.json
   - README.md
   - robots.txt
-  - bin
+  - tools/
+  - drafts/
 
 include:
   - .htaccess
