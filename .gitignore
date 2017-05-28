@@ -6,3 +6,4 @@ _site/*
 .code-highlighter-cache
 Gemfile.lock
 drafts/
+.author.yml
