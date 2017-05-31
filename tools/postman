@@ -145,7 +145,7 @@ sub createDraft()
 	my $slug = getSlug($title);
 	my $post_yml = {
 		title => $title,
-		date_created => strftime('%Y:%m:%dT%H:%M:%S%z', localtime()),
+		date_created => strftime('%Y-%m-%dT%H:%M:%S%z', localtime()),
 		author => $author_yml->{name},
 		permalink => "/$slug/",
 		category => $category,
@@ -189,15 +189,16 @@ sub publishDraft()
 	my $postName = strftime('%Y-%m-%d-', localtime()) . $post_slug;
 
 	my @fileList = grep {!(/post.md$/)} glob "$publishDraftPath/*";
-	my $postPath = "_posts/$category_slug/$postName";
+	my $postPath = "_posts/$category_slug";
 	my $imagePath = "assets/posts/$category_slug/$postName";
+
 	system("mkdir -p $postPath");
 	system("mkdir -p $imagePath");
 	open (my $O, "<", "$publishDraftPath/post.md");
 	open (my $F, ">", "$postPath/$postName.md") or die "Unable to create post file";
 	print $F "---\n";
 	print $F "title: \"$post_yml->{title}\"\n";
-	print $F "date: ", strftime('%Y:%m:%dT%H:%M:%S%z', localtime()), "\n";
+	print $F "date: ", strftime('%Y-%m-%dT%H:%M:%S%z', localtime()), "\n";
 	print $F "author: $post_yml->{author}\n";
 	print $F "thumbnail: $thumbnail\n" if (!defined($thumbnail));
 	print $F "permalink: /$post_slug/\n";
