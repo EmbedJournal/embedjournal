@@ -17,7 +17,7 @@ Let's take a look at zephyr and how we can use it to create amazing applications
 Why Zephyr?
 -----------
 
-Intel is spearheading Zephyr, primarily for the [Arduino 101][arduino-101] and is released under Open Source Apache license. You might have already known, MIT and Apache are some of the most desirable licenses for Free and Open Source Software (FOSS) as they don't pose much regulation and you can do pretty much anything with it.
+The Linux Foundation, backed by companies like Linaro, Intel, ST, and NXP are spearheading Zephyr development. Zephyr is released under Open Source Apache license, needless to say, MIT and Apache are some of the most desirable licenses for Free and Open Source Software (FOSS) as they don't pose much regulation. This means you can use it on pretty much any commercial product without having to worry about licensing related implications.
 
 Zephyr is being developed by the Linux developer community. So the source code organization is very well done and resembles the Linux kernel source tree in a lot of sense. The make system has been adopted from the Linux kernel, it kind of makes you feel at home.
 
@@ -88,7 +88,7 @@ After a bunch of email exchanges with Erwan Gouriou (Zephyr developer), [here][z
 Build and Flash
 ---------------
 
-Now before you start building with zephyr, you will need to setup the zephyr tool chain. This is fairly straight forward procedure and Zephyr's [Development Environment Setup][zephyr-doc] page is pretty accurate.
+Now before you start building with zephyr, you will need to setup the zephyr tool chain. This is fairly straight forward procedure and Zephyr's [Development Environment Setup][zephyr-dev] page is pretty accurate.
 
 Now that we have the right setup in place, lets go ahead and build the embedded equivalent of a "hello world".
 
