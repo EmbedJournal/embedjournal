@@ -1,12 +1,10 @@
 ErrorDocument 404 /404.html
 
 RewriteEngine On
-RewriteBase /
+RewriteCond %{SERVER_PORT} !443
+RewriteRule ^(/(.*))?$ https://%{HTTP_HOST}/$1 [R=301,L]
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
-
-RewriteCond %{HTTPS} off
-RewriteRule (.*) https://%{HTTPHOST}%{REQUESTURI}
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
 <IfModule mod_expires.c>
     ExpiresActive on
