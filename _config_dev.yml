@@ -7,4 +7,13 @@ use_local_resources: true
 
 include:
   - robots.txt
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - README.md
+  - robots.txt
+  - tools/
+  - drafts/
   - .htaccess
