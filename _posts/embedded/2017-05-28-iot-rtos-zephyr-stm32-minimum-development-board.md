@@ -17,9 +17,9 @@ Let's take a look at zephyr and how we can use it to create amazing applications
 Why Zephyr?
 -----------
 
-The Linux Foundation, backed by companies like Linaro, Intel, ST, and NXP are spearheading Zephyr development. Zephyr is released under Open Source Apache license, needless to say, MIT and Apache are some of the most desirable licenses for Free and Open Source Software (FOSS) as they don't pose much regulation. This means you can use it on pretty much any commercial product without having to worry about licensing related implications.
+The Linux Foundation, backed by companies like Linaro, Intel, ST, and NXP are spearheading Zephyr development. Zephyr is released under Open Source Apache license, needless to say, MIT and Apache are some of the most desirable licenses for Free and Open Source Software (FOSS) as they don't pose much regulation. This means you can use it on, pretty much any commercial product without having to worry about licensing related implications.
 
-Zephyr is being developed by the Linux developer community. So the source code organization is very well done and resembles the Linux kernel source tree in a lot of sense. The make system has been adopted from the Linux kernel, it kind of makes you feel at home.
+Zephyr is being developed by the Linux developer community. So the source code organization is very well done and resembles the Linux kernel source tree in a lot of sense. The make system has been adopted from the Linux kernel, it kind off makes you feel at home.
 
 I have used [FreeRTOS][freertos] in the past, and during my initial days, have had great difficulty in locating where a given module fell ie., it wasn't very intuitive to begin with. Also, it had the macro soup (#ifdefs literally everywhere) issue that Zephyr doesn't (currently) suffer.
 
@@ -37,7 +37,7 @@ Well, this is not exactly a development board in the strictest of senses (all it
 
 {% include image.html src="stm32_min_dev.jpg" alt="minimum system development board" %}
 
-I have been having my eye on the STM32F103C8T6 series SoC for some time. Reason being they were cheap and had sufficient just to do some intermediate level stuffs. So I went ahead and bought one of these [minimum system development board][stm32-ebay] from eBay for like $4 including shipment.
+I have been having my eye on the STM32F103C8T6 series SoC for some time. Reason being, they were inexpensive and had sufficient juice to do some intermediate level stuffs. So I went ahead and bought one of these [minimum system development board][stm32-ebay] from eBay for like $4 including shipment.
 
 STLink V2
 ---------
@@ -81,7 +81,7 @@ Zephyr - Board Support Package
 
 To my disappointment, Zephyr wouldn't run on the board out of the box as the SoC wasn't ported and the board itself didn't have a port ie., there was no Board Support Package (BSP) for this board as yet.
 
-Then I read through Zephyr's docs and looked at other supported hardware and branched off to start making some changes of my own. Within the first 5 or 6 hours of effort, I was able to get a make shift BSP port working with the my board (although I wasn't able to get the UART to work at that point).
+Then I read through Zephyr's docs and looked at other supported hardware. After some time, I branched off to start making changes of my own. Within the first 5 or 6 hours of effort, I was able to get a make shift BSP port working with the my board (although I wasn't able to get the UART to work at that point).
 
 After a bunch of email exchanges with Erwan Gouriou (Zephyr developer), [here][zephry-list-1] and [here][zephry-list-2], I was able to get a fully working BSP for the STM32F103C8T6 breadboard breakout board. I have raised a [pull request][zephyr-pull] and expecting it to be merged sometime soon.
 
@@ -99,7 +99,7 @@ $ cd ~/workspace
 $ git clone https://github.com/zephyrproject-rtos/zephyr.git
 ```
 
-As I said, the support for this board is not upstreamed yet. So you will have to add my fork of the repository as a remote and checkout `board_stm32_min_dev` branch.
+As I said, the support for this board is not upstreamed yet. Ergo, you will have to add my fork of the repository as a remote and checkout `board_stm32_min_dev` branch.
 
 ``` shell
 $ git remote add embedjournal https://github.com/cbsiddharth/zephyr.git
@@ -107,7 +107,7 @@ $ git fetch embedjournal
 $ git checkout embedjournal/board_stm32_min_dev
 ```
 
-Zephyr allows your application software to be isolated from the Zephyr kernel (although they are build together) so it's a good practice to copy samples into your workspace and then build them. This way, your git tree remains pristine.
+Zephyr allows your application software to be isolated from the Zephyr kernel (although, they are built together) so, it's a good practice to copy samples into your workspace and then build them. This way, your git tree remains pristine.
 
 ``` shell
 $ cp -r $ZEPHYR_BASE/samples/basic/blinky ~/workspace/stm32/
@@ -115,17 +115,17 @@ $ cd ~/workspace/stm32/blinky
 $ make BOARD=stm32_min_dev
 ```
 
-If you did everything right, this `make` should build without any warnings or errors. This build triggers a recursive _make_ process that walks up the Zephyr source tree and builds all required modules. Since this is a Zephyr primer, we won't get into the details on how configure the kernel. This will be tasked in a separate post.
+If you did everything right, this `make` should build without any warnings or errors. This build triggers a recursive _make_ process that walks up the Zephyr source tree and builds all required modules. Since this is a Zephyr primer, we won't get into the details on how to configure the kernel. This will be tasked in a separate post.
 
-Now, the final step, sending the built binary into the board to see the output. To do this, all you have to do is invoke the `flash` target and the rest of the work is done for you.
+Now, the final step, sending the built binary into the board to see the output. To do this, all you have to do is, invoke the `flash` target and the rest of the work is done for you.
 
 ``` shell
 $ make BOARD=stm32_min_dev flash
 ```
 
-You will notice that Zephyr invokes [open On Chip Debugger (openOCD)][openocd-home] to flash the board you could also invoke the `debug` target to invoke a GDB session with the board. Again, this is a huge topic and hence merits a separate post.
+You will notice that Zephyr invokes [open On Chip Debugger (openOCD)][openocd-home] to flash the board. You could also invoke the `debug` target to setup a GDB session with the board. Again, this is a huge topic and hence merits a separate post.
 
-Once this succeeds, you should see the only LED on the board, blink away to eternity. In my next post we will explore some other other interesting features of Zephyr that could come in handy.
+Once this succeeds, you should see the only LED on the board, blink away to eternity. In my next post we will explore some other interesting features of Zephyr that could come in handy.
 
 [freertos]: http://www.freertos.org/
 [arduino-101]: https://www.arduino.cc/en/Main/ArduinoBoard101
