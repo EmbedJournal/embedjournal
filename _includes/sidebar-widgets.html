@@ -114,7 +114,7 @@
                                 <ul class="b-panelItems">
             {% assign post_count = 0 %}
         {% else %}
-            {% capture post_count %}{{ post_count | plus:1 }}{% endcapture %}   
+            {% capture post_count %}{{ post_count | plus:1 }}{% endcapture %}
             {% if this_month != next_month %}
                         <li><a href="{{ site.baseurl }}/archives/{{ this_year }}/{{ next_month_num }}"><span class="fa fa-folder-outline"></span> {{ this_month }} <span class="b-badge">{{ post_count }}</span></a></li>
             {% assign post_count = 0 %}
@@ -135,8 +135,12 @@
     <div class="media">
         <div class="media-left">
             <a href="{{ post.url | relative_url }}">
-                {% capture image-path %}{{ site.baseurl }}/assets/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}{% endcapture %}
-                <img class="media-object" src="{{ image-path }}/{{ post.thumbnail }}" alt="{{ post.title }}">
+                {% if post.thumbnail %}
+                    {% capture image-path %}{{ site.baseurl }}/assets/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/{{ post.thumbnail }}{% endcapture %}
+                {% else %}
+                    {% capture image-path %}{{ site.baseurl }}/assets/images/categories/{{ post.category | slugify }}.jpg{% endcapture %}
+                {% endif %}
+                <img class="media-object" src="{{ image-path }}" alt="{{ post.title }}">
             </a>
         </div>
         <div class="media-body">
@@ -150,13 +154,17 @@
 <!-- Popular page widget -->
 <div class="b-popularPost">
     <h3>Popular Posts</h3>
-    {% assign posts = site.posts | where: 'popular', 'true' %} 
+    {% assign posts = site.posts | where: 'popular', 'true' %}
     {% for post in posts limit:10 %}
     <div class="media">
         <div class="media-left">
             <a href="{{ post.url | relative_url }}">
-                {% capture image-path %}{{ site.baseurl }}/assets/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}{% endcapture %}
-                <img class="media-object" src="{{ image-path }}/{{ post.thumbnail }}" alt="{{ post.title }}">
+                {% if post.thumbnail %}
+                    {% capture image-path %}{{ site.baseurl }}/assets/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/{{ post.thumbnail }}{% endcapture %}
+                {% else %}
+                    {% capture image-path %}{{ site.baseurl }}/assets/images/categories/{{ post.category | slugify }}.jpg{% endcapture %}
+                {% endif %}
+                <img class="media-object" src="{{ image-path }}" alt="{{ post.title }}">
             </a>
         </div>
         <div class="media-body">
