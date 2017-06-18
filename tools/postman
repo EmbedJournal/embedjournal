@@ -177,7 +177,7 @@ sub publishDraft()
 	die "Unable to locate post.md" unless(-f "$publishDraftPath/post.md");
 
 	my $thumb = glob "$publishDraftPath/post-thumb.*";
-	my $thumbnail = basename($thumb) if (!defined($thumb));
+	my $thumbnail = basename($thumb) if (defined($thumb));
 
 	system(cat => "$publishDraftPath/.post.yml");
 
@@ -200,7 +200,7 @@ sub publishDraft()
 	print $F "title: \"$post_yml->{title}\"\n";
 	print $F "date: ", strftime('%Y-%m-%dT%H:%M:%S%z', localtime()), "\n";
 	print $F "author: $post_yml->{author}\n";
-	print $F "thumbnail: $thumbnail\n" if (!defined($thumbnail));
+	print $F "thumbnail: $thumbnail\n" if (defined($thumbnail));
 	print $F "permalink: /$post_slug/\n";
 	print $F "category: \"$post_yml->{category}\"\n";
 	print $F "tags: [  ]\n";
