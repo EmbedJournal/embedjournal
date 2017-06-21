@@ -993,19 +993,18 @@ body.model-open {
     border-radius: 0;
     color: #F5A623;
     font-family: 'Inconsolata', monospace;
-    font-size: 17px;
+    font-size: 15px;
     white-space: nowrap;
 }
 .c-singlePost .b-postContent pre, .c-contentBlock pre {
     margin-bottom: 20px;
     padding: .5em .75em;
-    font-size: .83333em;
     max-height: 600px;
     background-color: #f8f8f8;
     border: 1px solid #ccc;
     border-radius: .25em;
     overflow: auto;
-    font-size: 17px;
+    font-size: 15px;
     word-break: normal;
     word-wrap: normal;
     white-space: pre;
@@ -1017,7 +1016,8 @@ body.model-open {
     padding: 0;
     word-break: keep-all;
     white-space: pre;
-    line-height: 1.5;
+    font-size: 15px;
+    line-height: 1.2;
 }
 
 .c-singlePost .b-postContent kbd, .c-contentBlock kbd {
@@ -1037,11 +1037,11 @@ body.model-open {
 
 .c-singlePost .b-postContent code, .c-contentBlock code {
     display: inline-block;
-    font-size: .88889em;
+    font-size: 15px;
     border: 1px solid #ddd;
     background-color: #f8f8f8;
     border-radius: 3px;
-    padding: 5px;
+    padding: 5px 4px 5px 4px;
     line-height: 1;
     color: #333;
     vertical-align: middle;
