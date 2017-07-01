@@ -129,7 +129,7 @@ layout: default
                     <a href="{{ page.previous.url }}" class="btn btn-green"><span class="fa fa-angle-double-left"></span> Older Post</a>
                 </div>
                 <div class="c-loadComment">
-					<div class="btn btn-green js-loadComment"><span class="fa fa-commenting-o"></span> Show Discussions</div>
+                    <a href="/about/" class="btn btn-green"><span class="fa fa-users"></span> About EmebdJoural</a>
 				</div>
                 <div class="b-navNext">
                     <a href="{{ page.next.url }}" class="btn btn-green">Newer Post <span class="fa fa-angle-double-right"></span></a>
@@ -166,14 +166,17 @@ layout: default
 				<!-- Load comments button -->
 				<div id="disqus_thread"></div>
 				<script type="text/javascript">
+                    var disqus_name = {{ site.disqus }};
+                    var disqus_shortname = {{ site.disqus }};
 					var disqus_config = function () {
 						this.page.url = "http://embedjournal.com{{ page.url }}";
 						{% if page.dsq_thread_id %}
-						this.page.identifier = {{ page.dsq_thread_id }};
+						  this.page.identifier = {{ page.dsq_thread_id }};
 						{% endif %}
 					};
 				</script>
-				<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                <script type="text/javascript" src="https://embedjournal.disqus.com/embed.js"></script>
+                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 			{% endif %}
 		</div>
     </div>

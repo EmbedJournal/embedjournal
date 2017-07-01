@@ -123,6 +123,7 @@ $(document).ready(function() {
         $('<div class="caption">').text(caption).appendTo(this.$instance.find('.featherlight-content'));
     };
 
+    /*
     $('.js-loadComment').on('click', function(){
         var disqus_shortname = 'embedjournal';
         $.ajax({
@@ -133,6 +134,7 @@ $(document).ready(function() {
         });
         $(this).fadeOut();
     });
+    */
 
     insertPostPageAdd();
 });
