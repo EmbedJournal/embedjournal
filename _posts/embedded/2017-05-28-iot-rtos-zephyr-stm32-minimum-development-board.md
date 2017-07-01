@@ -83,7 +83,7 @@ To my disappointment, Zephyr wouldn't run on the board out of the box as the SoC
 
 Then I read through Zephyr's docs and looked at other supported hardware. After some time, I branched off to start making changes of my own. Within the first 5 or 6 hours of effort, I was able to get a make shift BSP port working with the my board (although I wasn't able to get the UART to work at that point).
 
-After a bunch of email exchanges with Erwan Gouriou (Zephyr developer), [here][zephry-list-1] and [here][zephry-list-2], I was able to get a fully working BSP for the STM32F103C8T6 breadboard breakout board. I have raised a [pull request][zephyr-pull] and expecting it to be merged sometime soon.
+After a bunch of email exchanges with Erwan Gouriou (Zephyr developer), [here][zephry-list-1] and [here][zephry-list-2], I was able to get a fully working BSP for the STM32F103C8T6 breadboard breakout board. I raised a [pull request][zephyr-pull] sometime back and ~~expecting it to be merged sometime soon~~ is now available upstream.
 
 Build and Flash
 ---------------
@@ -98,15 +98,6 @@ To being with, you will need a local copy of the Zephyr source tree. So lets go 
 $ cd ~/workspace
 $ git clone https://github.com/zephyrproject-rtos/zephyr.git
 ```
-
-As I said, the support for this board is not upstreamed yet. Ergo, you will have to add my fork of the repository as a remote and checkout `board_stm32_min_dev` branch.
-
-``` shell
-$ git remote add embedjournal https://github.com/cbsiddharth/zephyr.git
-$ git fetch embedjournal
-$ git checkout embedjournal/board_stm32_min_dev
-```
-
 Zephyr allows your application software to be isolated from the Zephyr kernel (although, they are built together) so, it's a good practice to copy samples into your workspace and then build them. This way, your git tree remains pristine.
 
 ``` shell
