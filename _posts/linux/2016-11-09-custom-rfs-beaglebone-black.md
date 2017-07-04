@@ -12,7 +12,7 @@ tags: [ "Beagle Bone" ]
 
 Hello folks,
 
-In my [previous post](/kernel-compilation-beaglebone-black/) about Linux kernel compilation for Beaglebone black, I had used pre-built RFS for booting the kernel. Also, I mentioned that the RFS could be built from scratch using a utility called Busybox. In this post, we'll see, how to create a Custom RFS using Busybox and what are all the additional files required to boot the kernel. The RFS which we're going to create contains only the bare minimum stuff required to boot the kernel, so you can't expect it to behave like your distribution's rootfs.
+In my previous post on [Linux kernel compilation for Beaglebone black](/kernel-compilation-beaglebone-black/), I had used pre-built RFS for booting the kernel. Also, I mentioned that the RFS could be built from scratch using a utility called Busybox. In this post, we'll see, how to create a Custom RFS using Busybox and what are all the additional files required to boot the kernel. The RFS which we're going to create contains only the bare minimum stuff required to boot the kernel, so you can't expect it to behave like your distribution's rootfs.
 
 Before getting our hands dirty by working with Busybox, let's acquire some basic theory to get things organized!
 
@@ -64,7 +64,7 @@ Busybox is focused mainly on Embedded platforms as the size optimization is vast
 
 ### Working with Busybox
 
-Download the Busybox source from [here:](https://busybox.net/downloads/busybox-1.24.1.tar.bz2)
+Download the Busybox source from [here](https://busybox.net/downloads/busybox-1.24.1.tar.bz2).
 
 Extract the tarball with `tar -xvf busybox-1.24.1.tar.bz2`. Then, cross compile the source for ARM platform using the following commands.
 

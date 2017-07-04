@@ -202,4 +202,4 @@ $ sudo make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- INSTALL_MOD_PATH=/media/
 
 That's it. After completing the above steps, remove the SD card and place it in your BeagleBone. Connect the Bone to your PC via USB to serial converter and open the serial console using minicom in PC. (Set baud rate as 115200). After ensuring all things are correct, power on your BBB while holding the Boot switch (SW2). It will boot from your own custom kernel. Now you can cherish that you have created your own kernel image and deployed it in BeagleBone Black!!!
 
-In my next post I will show you how to create custom RFS using BusyBox. As always, if you encountered any troubles on the way, just throw it in the comments, we will try to figure it out.
+In my next post I will show you [how to create custom RFS using BusyBox](/custom-rfs-beaglebone-black/). As always, if you encountered any troubles on the way, just throw it in the comments, we will try to figure it out.
