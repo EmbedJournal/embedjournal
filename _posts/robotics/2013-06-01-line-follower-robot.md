@@ -33,7 +33,7 @@ This one to the is an upgraded version of the previous robot. You can see that b
 
 {% include image.html src="blackboy.jpg" %}
 
-This is a line follower I designed to trace  Grid type tracks, It has 5 line sensors to track the line. This five sensor arrangement is quite good; I have used it a couple of times with good results. I call this the BlackBoy. It has a Beagle Bone sitting on top of it adjacent to the 20x4 LCD display. I added the Bone to control BlackBoy through WiFi (you can see a WiFi adapter connected to it even though the WiFi control is still a future plan. 
+This is a line follower I designed to trace  Grid type tracks, It has 5 line sensors to track the line. This five sensor arrangement is quite good; I have used it a couple of times with good results. I call this the BlackBoy. It has a Beagle Bone sitting on top of it adjacent to the 20x4 LCD display. I added the Bone to control BlackBoy through WiFi (you can see a WiFi adapter connected to it even though the WiFi control is still a future plan.
 
 This I can call the best hardware design I have ever achieved. It was built with such foresight that it is no longer just a line follower. That was probably the reason behind the fact that it has a name while the others don't. It can be modified to work as an edge detector or a wall follower or a maze solver. I will publish a separate post on blackboy some time later.
 
@@ -51,15 +51,13 @@ Some people prefer to buy a fully designed chassis from robotic kit vendors and 
 
 It is my opinion that one should spend adequate, if not lots of time designing and producing the chassis. The chassis build is a craft and it develops over time. So don't worry if you make a crappy looking robot in the first go.
 
-I remember these words from a book that I read a long time ago and I don't happen to remember the name of the author, or the book. I will update this post if I found the the name of the book. It had pretty detailed accounts on various design strategy, especially the part which dealt with choosing the right material for the chassis.
-
-That is something I leave it as experimentation section. Try your luck with all the materials and find out which one is the best, he says,
+Above all, the chassis is what is going to house the motors, sensors and the electronics, so its worth spending sometime thinking where to place the stuffs or you are going have trouble when you come to the later part of the design. The most important of them is the location of the line sensors. Read the part for sensor alignment (yet to come) carefully before deciding on the position of motors and circuitry.
 
 > Don't be surprised if you go to a robotic event close by and find some robots that look like they were built, rammed by a truck and put back to shape with a hammer.
 
-That is something that I have personally seen and verified and that is probably the reason behind the persistence of the idea in my head. So build a poor but self built chassis. I suggest you start off with wood as they are the most commonly available material. Then you could move on to Acrylic, for making some designer finish and vibrant colored chassis.
+I remember these words from a book that I read a long time ago. This is something that I have personally seen and verified; that's probably the reason why this statement kind of stuck on to my head.  Unfortunately, I don't remember the name of the author, or the book. I will update this post if I am able to recollect it later. It had some pretty detailed accounts on various design strategy, especially the part which dealt with choosing the right material for the chassis.
 
-Above all, the chassis is what is going to house the motors, sensors and the electronics, so spend some time thinking where to place the stuffs or you are going have trouble when you come to the later part of the design. The most important of them is the location of the line sensors. Read the part for sensor alignment (yet to come) carefully before deciding on the position of motors and circuitry.
+So build a poor but self built chassis. I suggest you start off with wood as they are the most commonly available material. Then you could move on to Acrylic, for making some designer finish and vibrant colored chassis. You should check out my writeup on [chassis building and the various materials that you can choose from](/how-to-make-chassis/) if you are so inclined.
 
 Use Google to find some creative design for the chassis and show your passion for the design of the robot and make it look great. If you did a good job, it will inspire you to do more and learn more. There is no substitute for an inspiration from within you.
 
