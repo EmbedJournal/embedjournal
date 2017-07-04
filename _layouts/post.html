@@ -166,16 +166,22 @@ layout: default
 				<!-- Load comments button -->
 				<div id="disqus_thread"></div>
 				<script type="text/javascript">
-                    var disqus_name = {{ site.disqus }};
-                    var disqus_shortname = {{ site.disqus }};
+                    var disqus_shortname = '{{ site.disqus }}';
 					var disqus_config = function () {
-						this.page.url = "http://embedjournal.com{{ page.url }}";
 						{% if page.dsq_thread_id %}
-						  this.page.identifier = {{ page.dsq_thread_id }};
-						{% endif %}
+						  this.page.identifier = '{{ page.dsq_thread_id }}';
+                        {% else %}
+                          this.page.url = "https://embedjournal.com{{ page.url }}";
+                        {% endif %}
 					};
+                    (function() {
+                        var d = document, s = d.createElement('script');
+                        s.src = '//embedjournal.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
 				</script>
-                <script type="text/javascript" src="https://embedjournal.disqus.com/embed.js"></script>
+                <!-- <script type="text/javascript" src="https://embedjournal.disqus.com/embed.js"></script> -->
                 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 			{% endif %}
 		</div>
