@@ -4,6 +4,7 @@ date: 2017-05-28T11:02:56+0530
 author: Siddharth
 thumbnail: post-thumb.jpg
 permalink: /iot-rtos-zephyr-stm32-minimum-system-development-board/
+dsq_thread_id: "N2U5ZmFkNzE5NGQ5"
 category: "Embedded"
 tags: [ "Zephyr", "RTOS", "STM32", "stm32_min_dev" ]
 ---
