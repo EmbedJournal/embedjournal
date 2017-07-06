@@ -105,8 +105,6 @@ bootstrap-theme.js
 * Finalize and provide dependency chain for JS and CSS. (update this README)
 * Center footer social icons in all views.
 * js-expand in author page not working after js min and unify
-* Homepage sticky nav bar not working, while in post page it works.
 * Fix different height for different 2, 4, and 4 (lager height for 2 column galleries, smaller for 4).
 * pagination doesn't work in IE 11.
 * image size not restricted in IE 11.
-* home page nav bar doesn't stick.
