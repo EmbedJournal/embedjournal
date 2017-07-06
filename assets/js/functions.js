@@ -197,3 +197,7 @@ $.fn.customGallery = function() {
     $(this).find('.b-galleryImg').height(galleryheight);
     $(this).find('.b-galleryImg > img').height(galleryheight);
 }
+
+$(function(){
+  $("#postContent a").attr("target","_blank");
+});
