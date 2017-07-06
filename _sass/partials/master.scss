@@ -1424,6 +1424,16 @@ body.model-open {
     font-family: 'Bree Serif', serif;
     font-size: 20px;
 }
+.c-relatedArticle .b-relatedArticle .media .media-left img {
+    border: 1px solid #e3e5dc;
+    max-width: 80px;
+}
+.c-relatedArticle .b-relatedArticle .media .media-left a {
+    display: inline-block;
+    padding: 2px;
+    border: 1px solid #e3e5dc;
+    box-shadow: 0px 1px 2px rgba(204,204,204,1);
+}
 .c-relatedArticle .b-relatedArticle .media .media-body .b-dateLabel {
     margin: 0;
     color: #636364;
