@@ -34,7 +34,7 @@ STM32 Minimum Development Board
 
 Since Zephyr is a fairly new RTOS, there are very few boards to which it has already been ported to. Most of the boards which already have a port are either not available or outright expensive. In this post I will take up the "STM32 Minimum Development Board" - a cheaper alternative and try to run Zephyr on it.
 
-Well, this is not exactly a development board in the strictest of senses (all it has is an on board LED). This is more of a breakout board with just the bare minimum to get the CPU to boot. Somehow, the term "STM32 Minimum Development Board" seems to have caught on to it and for the sake of consistency with the existing SEO, we will refer to this board in the same way.
+Well, this is not exactly a development board in the strictest of senses (all it has is an on board LED). This is more of a breakout board with just the bare minimum to get the CPU to boot. Somehow, the term "STM32 Minimum Development Board" seems to have caught on to it and for the sake of consistency with the existing SEO, we will refer to this board in the same way. Mote details on the board cab be found at [zephyr's board document page][zephyr-stm32-min-dev].
 
 {% include image.html src="stm32_min_dev.jpg" alt="minimum system development board" %}
 
@@ -99,6 +99,16 @@ To being with, you will need a local copy of the Zephyr source tree. So lets go 
 $ cd ~/workspace
 $ git clone https://github.com/zephyrproject-rtos/zephyr.git
 ```
+
+Once you have clone the zephyr source tree, you will have export zephyr SDK path and GCC variant so that the zephyr make system understand where to find the toolchains. You will also need to source `zephyr-env.sh` present in the top level of the cloned repository.
+
+``` shell
+$ export ZEPHYR_GCC_VARIANT=zephyr
+$ export ZEPHYR_SDK_INSTALL_DIR=/path/to/zephyr-sdk/
+$ cd zephyr
+$ source zephyr-env.sh
+```
+
 Zephyr allows your application software to be isolated from the Zephyr kernel (although, they are built together) so, it's a good practice to copy samples into your workspace and then build them. This way, your git tree remains pristine.
 
 ``` shell
@@ -122,6 +132,7 @@ Once this succeeds, you should see the only LED on the board, blink away to eter
 [freertos]: http://www.freertos.org/
 [arduino-101]: https://www.arduino.cc/en/Main/ArduinoBoard101
 [zephyr-project-home]: https://www.zephyrproject.org/
+[zephyr-stm32-min-dev]: https://www.zephyrproject.org/doc/boards/arm/stm32_min_dev/doc/stm32_min_dev.html
 [zephry-github]: https://github.com/zephyrproject-rtos/zephyr
 [zephry-list-1]: https://lists.zephyrproject.org/pipermail/zephyr-devel/2017-May/007664.html
 [zephry-list-2]: https://lists.zephyrproject.org/pipermail/zephyr-devel/2017-May/007678.html
