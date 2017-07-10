@@ -7,7 +7,7 @@ thumbnail: post-thumb.png
 permalink: /implementing-circular-buffer-embedded-c/
 dsq_thread_id: "3290596090"
 category: "Programming"
-tags: [ "Theory", "Algorithms" ]
+tags: [ "Theory", "Algorithm" ]
 ---
 
 Embedded software often involves state machines, circular buffers and queues. In this article will give you an overview of the data structure and walks you through the steps involved in implementing circular/ring buffers in low memory devices.

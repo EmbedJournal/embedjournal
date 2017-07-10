@@ -7,7 +7,7 @@ thumbnail: post-thumb.jpg
 permalink: /rtc-registers-read-atomic-values/
 dsq_thread_id: "3923345886"
 category: "Embedded"
-tags: [ "RTC", "Algorithms" ]
+tags: [ "RTC", "Algorithm" ]
 ---
 
 Most of you must have used a Real Time Clock (RTC) at some point. RTCs are small ICs that have a separate battery backup and allow you to keep  track of time. Typical place where you can expect to see an RTC in action is your computer. They are used to keep track of time when your computer is powered off. Another more obvious application is digital clocks, not to mention that [making your own digital clock](/make-a-digital-clock/) is an interesting intermediate level project.
