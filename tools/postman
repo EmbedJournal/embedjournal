@@ -169,6 +169,19 @@ sub packPost()
 	exit;
 }
 
+sub get_rand_token()
+{
+	srand( time() ^ ($$ + ($$ << 15)) );
+	my @v = qw ( a e i o u y );
+	my @c = qw ( b c d f g h j k l m n p q r s t v w x z );
+
+	my ($flip, $str) = (0,'');
+	$str .= ($flip++ % 2) ? $v[rand(6)] : $c[rand(20)] for 1 .. 9;
+	$str =~ s/(....)/$1 . int rand(10)/e;
+	$str = ucfirst $str if rand() > 0.5;
+	return $str;
+}
+
 sub publishDraft()
 {
 	die "Invalid draft path path $publishDraftPath" unless (-d $publishDraftPath);
@@ -176,6 +189,7 @@ sub publishDraft()
 	die "Unable to locate .post.yml" unless(-f "$publishDraftPath/.post.yml");
 	die "Unable to locate post.md" unless(-f "$publishDraftPath/post.md");
 
+	my $rand_token = get_rand_token();
 	my $thumb = glob "$publishDraftPath/post-thumb.*";
 	my $thumbnail = basename($thumb) if (defined($thumb));
 
@@ -202,6 +216,7 @@ sub publishDraft()
 	print $F "author: $post_yml->{author}\n";
 	print $F "thumbnail: $thumbnail\n" if (defined($thumbnail));
 	print $F "permalink: /$post_slug/\n";
+	print $F "dsq_thread_id: \"$rand_token\"\n";
 	print $F "category: \"$post_yml->{category}\"\n";
 	print $F "tags: [  ]\n";
 	print $F "---\n\n";
