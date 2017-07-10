@@ -87,9 +87,9 @@ sub getSlug
 {
 	my $s = shift;
 	$s = lc $s;
-	$s =~ s/\s/-/g;
+	$s =~ s/\s+/-/g;
 	$s =~ s/[^A-Za-z0-9\-\.]//g;
-	$s =~ s/--/-/g;
+	$s =~ s/-+/-/g;
 	return $s;
 }
 
