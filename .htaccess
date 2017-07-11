@@ -1,8 +1,20 @@
 ErrorDocument 404 /404.html
 
 RewriteEngine On
+
+# redirect http to https and www.domain.com to domain.com
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
 RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# redirect YYYY/MM/ to archives/YYYY/MM/
+RewriteRule ^(\d+/\d+/?)$ /archives/$1 [L,R=301]
+
+# redirect YYYY/MM/post-slug/ to /post-slug/
+RewriteRule ^\d+/\d+/(.*)$ /$1 [L,R=301]
+
+# strip any URL parameters
+RewriteCond %{QUERY_STRING} .
+RewriteRule ^ %{REQUEST_URI}? [R=301,L,NE]
 
 <IfModule mod_expires.c>
     ExpiresActive on
@@ -61,6 +73,7 @@ SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip
 # ----------------------------------------------------------------------
 # Permanent Redirection
 # ----------------------------------------------------------------------
+
 redirect 301 /category/embedded-theory /category/embedded
 redirect 301 /how-to /tag/howto
 redirect 301 /category/how-to /tag/howto
