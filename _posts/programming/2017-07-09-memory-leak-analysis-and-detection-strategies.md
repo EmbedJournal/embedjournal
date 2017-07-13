@@ -32,7 +32,7 @@ This is perhaps the single most common type of leak that I have come across. The
 This can be better explained with an example.  Let's assume method `print_model_name` gets a cars model name (dynamically allocated pointer for some odd reason!) and prints it.
 
 ``` c
-int get print_model_name(car_t *car)
+int get_print_model_name(car_t *car)
 {
     char *model = malloc(sizeof(CAR_MODEL_STR));
     if (model == null)
@@ -48,7 +48,7 @@ int get print_model_name(car_t *car)
 So far so good. Later, a maintenance programmer drops by and find that `get_car_model_name` returns error for cars that were manufactured before 1999 (not relevant, but maybe they didn't have a model number back them). He goes ahead and makes the changes necessary to handle this case. After the change, the code looked like this:
 
 ``` c
-int get print_model_name(car_t *car)
+int get_print_model_name(car_t *car)
 {
     char *model = malloc(sizeof(CAR_MODEL_STR));
     if (model == null)
