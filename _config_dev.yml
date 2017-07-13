@@ -1,6 +1,7 @@
 title: "EJ Staging"
 host: ""
 env: developement
+disable_adsense: true
 
 # Switch to local resources when working offline.
 use_local_resources: true

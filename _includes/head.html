@@ -23,7 +23,9 @@
 <script src="/assets/js/jquery-1.11.1.min.js"></script>
 
 <!-- Non Blocking Scripts -->
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+{% if site.disable_adsense == false %}
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+{% endif %}
 
 <!-- Content -->
 <meta charset="utf-8">

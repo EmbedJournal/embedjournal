@@ -5,7 +5,12 @@ layout: compress
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  {% include head.html %}
+    <!-- JS global variables -->
+    <script type="text/javascript">
+        var disable_adsense = {{ site.disable_adsense }};
+    </script>
+
+    {% include head.html %}
 </head>
 <body>
 

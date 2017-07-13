@@ -123,20 +123,10 @@ $(document).ready(function() {
         $('<div class="caption">').text(caption).appendTo(this.$instance.find('.featherlight-content'));
     };
 
-    /*
-    $('.js-loadComment').on('click', function(){
-        var disqus_shortname = 'embedjournal';
-        $.ajax({
-            type: "GET",
-            url: "https://" + disqus_shortname + ".disqus.com/embed.js",
-            dataType: "script",
-            cache: true
-        });
-        $(this).fadeOut();
-    });
-    */
+    if (!disable_adsense) {
+        insertPostPageAdd();
+    }
 
-    insertPostPageAdd();
 });
 
 
@@ -199,5 +189,5 @@ $.fn.customGallery = function() {
 }
 
 $(function(){
-  $("#postContent a").attr("target","_blank");
+    $("#postContent a").attr("target","_blank");
 });
