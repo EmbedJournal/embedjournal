@@ -25,7 +25,7 @@ kramdown:
 sass:
   style: compressed
 
-disable_adsense: false
+disable_adsense: true
 google_analytics: UA-41190078-1
 disqus: embedjournal
 
