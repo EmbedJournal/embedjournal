@@ -17,7 +17,8 @@ Siddharth:
     facebook: https://facebook.com/cbsiddharth
     github:   https://github.com/cbsiddharth
     linkedin: https://in.linkedin.com/in/cbsiddharth
-  twitter: cbsiddharth
+  social:
+    twitter: cbsiddharth
   homepage: http://siddharthc.in/
 
 Mani:
@@ -33,5 +34,6 @@ Mani:
     twitter:  http://twitter.com/mani_sadhasivam
     facebook: http://www.facebook.com/mani.manivannan.888
     linkedin: https://in.linkedin.com/in/manisadhasivam
-  twitter: mani_sadhasivam
+  social:
+    twitter: mani_sadhasivam
   homepage: http://www.facebook.com/mani.manivannan.888
