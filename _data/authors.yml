@@ -12,12 +12,11 @@ Siddharth:
     Siddharth is the founder and editor of embedjournal.com. He is a Firmware Engineer, techie, and
     a movie-buff. His interests include, Programming, Embedded Systems, Linux, Robotics, CV, Carpentry
     and a lot more. You get to know him on the following social channels.
-  social:
+  social-url:
     twitter:  http://twitter.com/cbsiddharth
     facebook: https://facebook.com/cbsiddharth
     github:   https://github.com/cbsiddharth
     linkedin: https://in.linkedin.com/in/cbsiddharth
-  picture: "/assets/images/authors/siddharth.jpg"
   twitter: cbsiddharth
   homepage: http://siddharthc.in/
 
@@ -30,10 +29,9 @@ Mani:
   short_desc: >
     Mani is an Embedded Linux hobbyist having perennial interest towards Electronics and Agriculture. You
     can reach him by the following social channels.
-  social:
+  social-url:
     twitter:  http://twitter.com/mani_sadhasivam
     facebook: http://www.facebook.com/mani.manivannan.888
     linkedin: https://in.linkedin.com/in/manisadhasivam
-  picture: "/assets/images/authors/mani.jpg"
   twitter: mani_sadhasivam
   homepage: http://www.facebook.com/mani.manivannan.888

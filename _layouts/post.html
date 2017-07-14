@@ -77,17 +77,17 @@ layout: default
 					</div>
 					<div class="b-authorSocial">
 						<ul>
-							{% if author.social.facebook %}
-							<li class="b-facebook"><a href="{{author.social.facebook}}" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+							{% if author.social-url.facebook %}
+							<li class="b-facebook"><a href="{{author.social-url.facebook}}" title="Facebook"><span class="fa fa-facebook"></span></a></li>
 							{% endif %}
-							{% if author.social.twitter %}
-							<li class="b-twitter"><a href="{{author.social.twitter}}" title="Twitter"><span class="fa fa-twitter"></span></a></li>
+							{% if author.social-url.twitter %}
+							<li class="b-twitter"><a href="{{author.social-url.twitter}}" title="Twitter"><span class="fa fa-twitter"></span></a></li>
 							{% endif %}
-							{% if author.social.google_plus %}
-							<li class="b-google-plus"><a href="{{author.social.google_plus}}" title="Google+"><span class="fa fa-google-plus"></span></a></li>
+							{% if author.social-url.google_plus %}
+							<li class="b-google-plus"><a href="{{author.social-url.google_plus}}" title="Google+"><span class="fa fa-google-plus"></span></a></li>
 							{% endif %}
-							{% if author.social.linkedin %}
-							<li class="b-linkedin"><a href="{{author.social.linkedin}}" title="Linkedin"><span class="fa fa-linkedin"></span></a></li>
+							{% if author.social-url.linkedin %}
+							<li class="b-linkedin"><a href="{{author.social-url.linkedin}}" title="Linkedin"><span class="fa fa-linkedin"></span></a></li>
 							{% endif %}
 	                    </ul>
 					</div>
