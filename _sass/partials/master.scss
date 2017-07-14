@@ -273,6 +273,7 @@ body.model-open {
     display: inline-block;
 }
 .c-faq .panel-default .panel-body p {
+    padding: 16px 48px;
     margin-bottom: 10px;
     font-size: 15px;
     line-height: 1.7;
@@ -838,7 +839,7 @@ body.model-open {
     color: $primary-text;
 }
 .c-authorInfo .b-authorDesc {
-    padding: 16px;
+    padding: 32px;
     background: #fff;
 }
 .c-authorInfo .b-authorDesc p {
@@ -900,6 +901,9 @@ body.model-open {
     text-align: center;
     font-size: 14px;
 }
+.c-contentBlock {
+    padding: 32px;
+}
 .c-contentBlock h1 {
     margin-top: 0;
     margin-bottom: 20px;
@@ -944,6 +948,7 @@ body.model-open {
     font-size: 17px;
     line-height: 1.7;
     font-weight: 400;
+    text-align: justify;
 }
 .c-singlePost .b-postContent p.meta, .c-contentBlock p.meta {
     margin-bottom: 10px;
@@ -2110,7 +2115,7 @@ body.model-open {
         border-right-color: $secondary-text-color;
     }
     .c-singlePost .b-postContent, .c-contentBlock {
-        padding: 32px;
+        padding: 18px 32px 32px 32px;
         padding-top: 18px;
     }
     .c-singlePost .b-postContent pre.b-codeBlock, .c-contentBlock pre.b-codeBlock {
@@ -2315,6 +2320,7 @@ body.model-open {
     }
     .c-posts .b-posts .b-postItem .b-postDesc {
         padding-right: 15px;
+        padding-left: 5px;
         width: 80%;
     }
     .c-posts .b-posts .b-postItem h4 {
@@ -2512,10 +2518,13 @@ body.model-open {
         padding: 32px;
     }
     .c-authorInfo .b-authorDesc {
-        padding: 32px;
+        padding: 32px 100px 50px 100px;
     }
     .table-responsive table {
         margin-bottom: 0;
+    }
+    .c-contentBlock {
+        padding: 32px 100px;
     }
     .c-singlePost .b-postContent ul, .c-contentBlock ul {
         margin-bottom: 20px;
@@ -2537,6 +2546,8 @@ body.model-open {
         margin-bottom: 8px;;
     }
     .c-posts .b-posts .b-postItem .b-postDesc {
+        padding-right: 15px;
+        padding-left: 5px;
         width: 80%;
     }
     .c-posts .b-posts .b-postItem .b-postImg {
