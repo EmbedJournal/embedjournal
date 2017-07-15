@@ -17,9 +17,12 @@ layout: default
 						<span class="b-year">{{ page.date | date: "%Y" }}</span>
 					</div>
 					<div class="c-postInfo">
-						<div class="b-author">
-							<p>By <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}">{{ author.name }}</a></p>
-						</div>
+                        <div class="b-author">
+                            <p>
+                                <span class ="fa fa-user"></span>
+                                <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}">{{ author.full_name }}</a>
+                            </p>
+                        </div>
 						<div class="b-category">
                             <p>
                                 <span class="fa fa-folder"></span>
