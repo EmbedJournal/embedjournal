@@ -538,9 +538,11 @@ body.model-open {
 }
 .c-postInfo .b-author a {
     color: $primary-color-dark;
+    letter-spacing: 0.8px;
 }
 .c-postInfo .b-category {
     padding-right: 15px;
+    letter-spacing: 0.8px;
 }
 .c-postInfo .b-category p {
     color: $primary-text;
@@ -578,7 +580,7 @@ body.model-open {
     font-size: 14px;
     border-radius: 2px;
     vertical-align: middle;
-
+    margin-top: -3px;
 }
 .c-posts .b-posts .b-postItem .b-dateLabel {
     position: relative;
@@ -918,16 +920,14 @@ body.model-open {
 }
 .c-singlePost .b-postContent h2, .c-contentBlock h2 {
     margin-top: 0;
-    color: #293314;
-    font-size: 24px;
+    color: $primary-text-dark;
+    font-size: 28px;
     line-height: 1.4;
     font-family: 'Bree Serif', serif;
     font-weight: 400;
 }
 .c-singlePost .b-postContent h3, .c-contentBlock h3 {
-    padding-top: 10px;
-    margin-bottom: 20px;
-    color: #293314;
+    color: $primary-text-dark;
     font-size: 22px;
     line-height: 1.4;
     font-family: 'Bree Serif', serif;
@@ -936,7 +936,7 @@ body.model-open {
 .c-singlePost .b-postContent h4, .c-contentBlock h4 {
     padding-top: 10px;
     margin-bottom: 10px;
-    color: #293314;
+    color: $primary-text-dark;
     font-size: 18px;
     line-height: 1.4;
     font-family: 'Bree Serif', serif;
@@ -1059,11 +1059,12 @@ body.model-open {
 
 .c-singlePost .b-postContent code, .c-contentBlock code {
     display: inline-block;
-    font-size: 15px;
+    font-size: 14px;
     border: 1px solid #ddd;
     background-color: #f8f8f8;
-    border-radius: 3px;
-    padding: 5px 4px 5px 4px;
+    border-radius: 4px;
+    padding: 3px;
+    margin: 1px;
     line-height: 1;
     color: #333;
     vertical-align: middle;
@@ -1546,7 +1547,7 @@ body.model-open {
     display: block;
     text-decoration: none;
     border-bottom: 1px solid #e3e5dc;
-    color: #293314;
+    color: $primary-text-dark;
 }
 .c-cardWidget .b-cardContent .panel-default > .panel-heading a.collapsed {
     color: $primary-text;
@@ -1562,7 +1563,7 @@ body.model-open {
     display: block;
     text-decoration: none;
     border-bottom: 1px solid #e3e5dc;
-    color: #293314;
+    color: $primary-text-dark;
     font-size: 16px;
 }
 .c-cardWidget h3 {
@@ -1801,7 +1802,7 @@ body.model-open {
 }
 .c-aside .b-categories .panel-default .panel-heading .panel-title a {
     text-decoration: none;
-    color: #293314;
+    color: $primary-text-dark;
 }
 .c-aside .b-asideAdd {
     text-align: center;
@@ -2531,10 +2532,6 @@ body.model-open {
     }
     .c-singlePost .b-postHeader h1, .c-contentBlock h1 {
         font-size: 36px;
-    }
-    .c-singlePost .b-postContent h2, .c-contentBlock h2 {
-        margin-bottom: 20px;
-        font-size: 32px;
     }
     .c-singlePost .b-postContent p, .c-contentBlock p {
         line-height: 2;
