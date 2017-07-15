@@ -74,6 +74,10 @@ SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip
 # Permanent Redirection
 # ----------------------------------------------------------------------
 
+redirect 301 /board_stm32_min_dev.patch /iot-rtos-zephyr-stm32-minimum-system-development-board/
+redirect 301 /board_stm32_min_dev_v1.patch /iot-rtos-zephyr-stm32-minimum-system-development-board/
+redirect 301 /board /iot-rtos-zephyr-stm32-minimum-system-development-board/
+
 redirect 301 /category/embedded-theory /category/embedded
 redirect 301 /how-to /tag/howto
 redirect 301 /category/how-to /tag/howto
