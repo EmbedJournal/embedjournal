@@ -19,12 +19,12 @@ use File::Basename;
 
 =head1 SYNOPSIS
 
-  EmbedJournal Post Management Utility.
-  post [OPTIONS]
+  Jekyll Fervour Management Utility.
+  fervour [OPTIONS]
 
 =head1 OPTIONS
 
-  -n, --new            Create new draft interactively
+  -d, --draft          Create new draft interactively
   -c, --check          Check if post is structured correctly
   -p, --publish PATH   Pubish a draft at POST
   -w, --wrap PATH      Wrap a post specified by PATH for email.
@@ -52,27 +52,14 @@ my $author_default = {
 my $argc = @ARGV;
 
 GetOptions(
-  'new'           => \ my $newPost,
-  'check'         => \ my $checkPost,
+  'draft'         => \ my $new_draft,
+  'category=s'    => \ my $category_name,
   'publish=s'     => \ my $publishDraftPath,
   'wrap=s'        => \ my $packPostPath,
   'help'          =>   sub { pod2usage(1) },
 );
 
 pod2usage(1) if($argc == 0);
-
-my @categories = (
-	"Arduino",
-	"Embedded",
-	"General Posts",
-	"Hardware",
-	"Linux",
-	"Microchip PIC",
-	"News",
-	"Programming",
-	"Review",
-	"Robotics"
-);
 
 sub readInput {
 	my $inp;
@@ -95,6 +82,8 @@ sub getSlug
 
 sub getCategory
 {
+	my $yaml = LoadFile('_data/categories.yml');
+	my @categories = map { $_->{name} } @{$yaml};
 	for my $i (0..$#categories) {
 		printf "\t%2d - %s\n", $i+1, $categories[$i];
 	}
@@ -134,7 +123,7 @@ sub getInputInteractive()
 	return ($t, $c);
 }
 
-sub createDraft()
+sub create_draft()
 {
 	unless(-f ".author.yml") {
 		DumpFile('.author.yml', $author_default);
@@ -161,7 +150,7 @@ sub createDraft()
 	exit;
 }
 
-sub packPost()
+sub pack_post()
 {
 	die "Unable to find $packPostPath. Should be path to post directory." unless (-d $packPostPath);
 	my $zipName = strftime ('%y%m%d', localtime()) . "_post.tar.gz";
@@ -182,7 +171,7 @@ sub get_rand_token()
 	return $str;
 }
 
-sub publishDraft()
+sub publish_draft()
 {
 	die "Invalid draft path path $publishDraftPath" unless (-d $publishDraftPath);
 	die "Unable to locate .authors.yml" unless(-f "$publishDraftPath/.author.yml");
@@ -231,11 +220,71 @@ sub publishDraft()
 	exit;
 }
 
+sub write_categories_yml
+{
+	my $yml_object = shift;
+	my $file = shift;
+	open my $f, ">", $file // die "Unable to open file $file";
+	foreach (@{$yml_object}) {
+		# Wrap description at 100 chars and strip tailing newline.
+		$_->{description} =~ s/(.{0,100}(?:\s|$))/    $1\n/g;
+		$_->{description} =~ s/\s+$//;
+		# Write data to file.
+		print $f "-\n";
+		print $f "  name: \"$_->{name}\"\n";
+		print $f "  url:  \"$_->{url}\"\n";
+		print $f "  image: \"$_->{image}\"\n";
+		print $f "  description: >\n";
+		print $f "$_->{description}\n";
+	}
+	close ($f);
+}
+
+sub create_category()
+{
+	my $tf = '/tmp/cat_' . get_rand_token() . '.yml';
+	open my $f, ">", $tf // die "cannot crete file $tf";
+	print $f "name: \"$category_name\"\n";
+	print $f "image: \"/assets/images/categories/default.jpg\"\n";
+	print $f "description: >\n";
+	print $f "  TODO, add a short summary for your category. This can extend\n";
+	print $f "  multiple lines (like this one) too.\n";
+	close($f);
+	system(vi => $tf);
+	print "\n";
+	system(cat => $tf);
+	exit if (readInput("\n\nDo you wish to proceed? [y/N]") !~ /y/i);
+	
+	my $new_cat = LoadFile("$tf");
+	$category_name = $new_cat->{name};
+	my $cat_slug = getSlug($category_name);
+	$new_cat{url} = "/category/$cat_slug";
+
+	system(mkdir => _posts/$cat_slug);
+	system(mkdir => assets/posts/$cat_slug);
+
+	open my $cat_file, ">", "_category/$cat_slug.md";
+	print $cat_file "---\n"
+	print $cat_file "title: \"$category_name\"\n"
+	print $cat_file "paginate:\n"
+	print $cat_file "  limit: false\n"
+	print $cat_file "category: \"Embedded\"\n";
+	print $cat_file "---\n"
+	close($cat_file);
+
+	# Append this new category to existing category list
+	my $yaml = LoadFile('_data/categories.yml');
+	push @{$yaml}, $new_cat;
+	write_categories_yml($yaml, '_data/categories.yml');
+	unlink($tf);
+}
+
 sub main()
 {
-	createDraft() if $newPost;
-	publishDraft() if (defined $publishDraftPath);
-	packPost() if (defined $packPostPath);
+	create_draft() if $new_draft;
+	create_category() if (defined $category_name);
+	publish_draft() if (defined $publishDraftPath);
+	pack_post() if (defined $packPostPath);
 }
 
 main();

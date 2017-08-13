@@ -14,42 +14,97 @@ $(window).scroll(function(event){
     }
 });
 
-// $(window).resize(function(){
-//     $('.js-rectGallery').customGallery();
-// });
-
-setInterval(function() {
+function scrollCheck() {
     if (didScroll) {
-        hasScrolled();
+        var st = $(this).scrollTop();
+
+        // Make sure they scroll more than delta
+        if(Math.abs(lastScrollTop - st) <= delta)
+            return;
+        // If they scrolled down and are past the navbar, add class .nav-up.
+        // This is necessary so you never see what is "behind" the navbar.
+        if (st > lastScrollTop && st > navbarHeight && st > 81){
+            // Scroll Down
+            $('.s-categoryNav').removeClass('nav-down').addClass('nav-up');
+            // $('.c-aside').removeClass('view-top').addClass('view-bottom');
+        } else {
+            // Scroll Up
+            if(st + $(window).height() < $(document).height() && st > 81) {
+                $('.s-categoryNav').removeClass('nav-up').addClass('nav-down');
+                // $('.c-aside').removeClass('view-bottom').addClass('view-top');
+                $('.s-categoryNav').addClass('-fixed');
+            }
+        }
+
+        lastScrollTop = st;
         didScroll = false;
     }
-}, 250);
+}
 
-function hasScrolled() {
-    var st = $(this).scrollTop();
-
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight && st > 81){
-        // Scroll Down
-        $('.s-categoryNav').removeClass('nav-down').addClass('nav-up');
-        // $('.c-aside').removeClass('view-top').addClass('view-bottom');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height() && st > 81) {
-            $('.s-categoryNav').removeClass('nav-up').addClass('nav-down');
-            // $('.c-aside').removeClass('view-bottom').addClass('view-top');
-            $('.s-categoryNav').addClass('-fixed');
-        }
+function validate_email(email)
+{
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+    return (true);
     }
-
-    lastScrollTop = st;
+    return (false);
 }
 
 $(document).ready(function() {
+
+    $('#subscribe-form .form-input').click(function() {
+        console.log("in focus");
+        $(this).removeClass('form-error');
+    });
+
+    $('#subscribe-form').submit(function(event) {
+
+        event.preventDefault();
+
+        var error = false;
+        var form_name = $("#subscribe-form input[name='fname']").val();
+        var form_email = $("#subscribe-form input[name='email']").val();
+
+        console.log({
+            name: form_name,
+            email: form_email
+        });
+
+        if ((typeof form_name !== 'undefined') &&
+            (form_name.length == 0 || form_name.length > 64)) {
+            console.log('Got here');
+            $('#form-fname').closest('div').addClass('form-error');
+            error = true;
+        }
+
+        if (validate_email(form_email) == false) {
+            $('#form-email').closest('div').addClass('form-error');
+            error = true;
+        }
+
+        if (error) return false;
+
+        $.ajax({
+            type: 'POST',
+            url: '/assets/php/subscribe.php',
+            timeout: 5000,
+            data: {
+                name: form_name,
+                email: form_email
+            },
+            success: function(data, textStatus) {
+                $('.b-field').hide();
+                $('#submit-response').html(data);
+            },
+            error: function(xhr, textStatus, errorThrown) {
+                $('.b-field').hide();
+                $('#submit-response').html('<p>Request failed! Try again later.</p>');
+            }
+        });
+    });
+
+    setInterval(scrollCheck, 250);
+
+    $("#postContent a").attr("target","_blank");
 
     $('#newsletter').on('change', function() {
         triggerCheck($(this));
@@ -60,9 +115,6 @@ $(document).ready(function() {
             $('#landingSubmit').val('Download');
         }
     });
-
-    // // jquery code here
-    // $('.js-rectGallery').customGallery();
 
     $('.js-checkbox').customCheckbox();
 
@@ -188,6 +240,3 @@ $.fn.customGallery = function() {
     $(this).find('.b-galleryImg > img').height(galleryheight);
 }
 
-$(function(){
-    $("#postContent a").attr("target","_blank");
-});
