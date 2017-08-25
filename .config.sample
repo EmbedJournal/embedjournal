@@ -1,0 +1,7 @@
+# The default build environment.
+ENV=prod
+#ENV=dev
+
+# Paths for development and production envs
+PROD_PATH=/var/www/embedjournal.com/public_html/
+DEV_PATH=/var/www/embedjournal.com/public_html/
