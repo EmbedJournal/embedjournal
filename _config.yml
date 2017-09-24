@@ -73,7 +73,7 @@ defaults:
     values:
       layout: category-posts
 
-gems:
+plugins:
   - jekyll
   - jekyll-feed
   - jekyll-archives
@@ -81,6 +81,7 @@ gems:
   - octopress-paginate
 
 exclude:
+  - robots.txt
   - Gemfile
   - Gemfile.lock
   - package.json
