@@ -113,7 +113,7 @@ To make maintenance a little easier, you could use this macro but compromises co
 #define CIRCBUF_DEF(x,y)          \
     uint8_t x##_dataSpace[y];     \
     circBuf_t x = {               \
-        .buffer = x##_space,      \
+        .buffer = x##_dataSpace,      \
         .head = 0,                \
         .tail = 0,                \
         .maxLen = y               \
