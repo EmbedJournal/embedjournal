@@ -1,7 +1,9 @@
 <?php
 
-    // Put your MailChimp API and List ID hehe
-    $api_key = 'c2f4431b34483023531340a03dee7701-us7';
+    $config = parse_ini_file("config.ini");
+
+    // Put your MailChimp API and List ID here
+    $api_key = $config['api_key'];
 
     // Let's start by including the MailChimp API wrapper
     include('./inc/MailChimp.php');

@@ -8,3 +8,4 @@ Gemfile.lock
 drafts/
 local/
 .author.yml
+assets/php/config.ini
