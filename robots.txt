@@ -1,7 +1,0 @@
-# www.robotstxt.org/
-
-# Prevent crawling of all content. This is used to prevent dev builds
-# from being indexed accidentally.
-User-agent: *
-Disallow: /
-

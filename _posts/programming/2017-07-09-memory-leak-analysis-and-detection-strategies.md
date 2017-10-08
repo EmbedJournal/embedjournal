@@ -12,7 +12,7 @@ The first thing that comes to mind when we talk about dynamic memory and leaks i
 
 But what if such tools are _NOT_ an option?
 
-This is not as remote as it appears at first glance. Coverity is not FOSS, ergo not at your disposal when you really need it. Valgrind may not have been ported on to your target platform or there may not be enough space&mdash;in a near production product&mdash;left to add a beast like Valgrind.
+This is not as remote as it appears at first glance. Coverity is not open source, ergo not at your disposal when you really need it. Valgrind may not have been ported on to your target platform or there may not be enough space&mdash;in a near production product&mdash;left to add a beast like Valgrind.
 
 For all you know, it could just be that your delivery time lines are too rigid to accommodate the time taken to setup the necessary test bed to do a full scale memory analysis. This is particularly likely in memory leaks; they have a nasty habit of surfacing during the last minute when longevity test are conducted.
 

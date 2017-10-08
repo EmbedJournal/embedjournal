@@ -9,12 +9,24 @@ The build process and internal tools reqire the following dependecies. Make
 you have perl and cpan installed.
 
 ``` shell
-$ sudo apt-get install perl git curl gnupg2
+$ sudo apt-get install perl git curl wget gnupg2
 $ cpan -i 'YAML::XS'
 
 $ sudo apt install install php7.0 php7.0-curl libapache2-mod-php7.0
- # alternatively, (when php7 is not available) 
+ # alternatively, (when php7 is not available)
 $ sudo apt install install php5 php5-curl libapache2-mod-php5
+```
+
+### Mailchimp Integration:
+
+All PHP code required to subscribe a user to EJ mailing list is already present in
+the source tree and no changes are required. For protection of privacy reasons, we
+keep the API Key in a separate file which is not in VCS.
+
+Put the API Key in the following format and place it in /assets/php/config.ini
+
+``` text
+api_key = your-api-key
 ```
 
 ### RVM, Ruby and Gem
@@ -34,6 +46,19 @@ command. so that current shell takes new environment settings.
 
 ``` shell
 $ source /home/${USER}/.rvm/scripts/rvm
+```
+
+You might want to append the following to your bashrc if you don't what to keep
+sourcing rvm scripts manually.
+
+``` shell
+if [ -f /home/${USER}/.rvm/scripts/rvm ]; then
+        source /home/${USER}/.rvm/scripts/rvm
+
+        # Add RVM to PATH for scripting. Make sure this is the last PATH
+        # variable change.
+        export PATH="$PATH:/home/${USER}/.rvm/bin"
+fi
 ```
 
 **Install Ruby Dependencies:**
@@ -88,7 +113,7 @@ present and writable.
 
 ``` shell
 sudo apt-get update
-sudo apt-get install apache2
+sudo apt-get install apache2 libapache2-mod-php5
 sudo mkdir -p /var/www/embedjournal.com/public_html
 sudo chown $USER:$USER /var/www/embedjournal.com/public_html
 ```
