@@ -72,16 +72,16 @@ layout: default
 					<div class="b-authorSocial">
 						<ul>
 							{% if author.social-url.facebook %}
-							<li class="b-facebook"><a href="{{author.social-url.facebook}}" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+							<li class="b-facebook"><a href="{{author.social-url.facebook}}" title="Facebook" target="_blank"><span class="fa fa-facebook"></span></a></li>
 							{% endif %}
 							{% if author.social-url.twitter %}
-							<li class="b-twitter"><a href="{{author.social-url.twitter}}" title="Twitter"><span class="fa fa-twitter"></span></a></li>
+							<li class="b-twitter"><a href="{{author.social-url.twitter}}" title="Twitter" target="_blank"><span class="fa fa-twitter"></span></a></li>
 							{% endif %}
 							{% if author.social-url.google_plus %}
-							<li class="b-google-plus"><a href="{{author.social-url.google_plus}}" title="Google+"><span class="fa fa-google-plus"></span></a></li>
+							<li class="b-google-plus"><a href="{{author.social-url.google_plus}}" title="Google+" target="_blank"><span class="fa fa-google-plus"></span></a></li>
 							{% endif %}
 							{% if author.social-url.linkedin %}
-							<li class="b-linkedin"><a href="{{author.social-url.linkedin}}" title="Linkedin"><span class="fa fa-linkedin"></span></a></li>
+							<li class="b-linkedin"><a href="{{author.social-url.linkedin}}" title="Linkedin" target="_blank"><span class="fa fa-linkedin"></span></a></li>
 							{% endif %}
 	                    </ul>
 					</div>
@@ -109,7 +109,7 @@ layout: default
 	                	<a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"><span class="fa fa-facebook"></span> Facebook</a>
 	                </li>
 	                <li class="b-linkedin">
-	                	<a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ share_url }}&title={{ page.title }}&summary={{ post.content | strip_html | truncatewords:30 }}&source="><span class="fa fa-linkedin"></span> Linkedin</a>
+	                	<a href="https://www.linkedin.com/shareArticle?mini=true&url={{ share_url }}&title={{ page.title }}&summary={{ post.content | strip_html | truncatewords:30 }}&source=" rel="nofollow" target="_blank" title="Share on Linkedin"><span class="fa fa-linkedin"></span> Linkedin</a>
 	                </li>
 	                <li class="b-google-plus">
 	                	<a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+"><span class="fa fa-google-plus"></span> Google+</a>
