@@ -20,7 +20,7 @@ Actually Model A can also have Ethernet access by using an USB - Ethernet or by 
 
 Raspberry Pi has no RTC and hence no built in time stamping. This issue must be handled by an Operating System. The Operating System should poll an NTP server each time it boots or ask the user to enter the time while booting the system. However, an external RTC (like the DS1307) with battery backup can be configured through the IA2C interface to obtain the time stamp.
 
-### **Specification: **
+### Specification:
 
   * A 5V supply via Micro USB or GPIO Header as Power source.
   * Internal memory of 512 MB or 256 MB. Expansion of memory is not possible like the PC's.
@@ -30,11 +30,11 @@ Raspberry Pi has no RTC and hence no built in time stamping. This issue must be 
   * Raw LCD panels,HDMI,PAL,NTSC,composite  RC for Video outputs.
   * On-Board network access by the built-in 10/100 Ethernet in Model B.
 
-### **Raspberry Pi Pin Mapping:**
+### Raspberry Pi Pin Mapping:
 
 {% include image.html src="pi-pin-mapping.jpg" %}
 
-### **Raspberry Pi Pin Description:**
+### Raspberry Pi Pin Description:
 
 ``` text
 /* SPI */
@@ -57,7 +57,7 @@ GPIO18 - PWM
 GPIO4 - GPCLK0
 ```
 
-### **Limitations:**
+### Limitations:
 
 Raspberry Pi has a huge list of advantages and most blogs have already posted them. Here are some of its limitations,
 

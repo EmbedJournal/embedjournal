@@ -2,7 +2,7 @@
 title: "BeagleBone - Detailed Technical Review"
 date: 2013-06-09T23:24:23+00:00
 date_modified: 2017-04-01T10:00:00+05:30
-author: Siddharth
+author: Naveen
 thumbnail: post-thumb.jpg
 permalink: /beaglebone-a-quick-review/
 dsq_thread_id: "3298573222"
@@ -24,9 +24,9 @@ The SoC's USB0 connection to the front-end hub works in one of two modes, and yo
 
 In addition to the USB OTG Device or client-mode facilities already described, BeagleBone also provides one host-mode USB type-A socket on the other end of the board. This is driven from the USB1 connection on the AM3358/9 SoC, and provides access to USB host peripherals such as mice, keyboards, storage, and WiFi or Bluetooth dongles, or a USB hub for further expansion.
 
-## **SPECIFICATIONS:**
+## SPECIFICATIONS:
 
-#### **PROCESSOR:**
+#### PROCESSOR:
 
 AM335X 720MHz ARM Cortex-A8 is the processor used in BeagleBone. The Frequency of the processor can be superscaled upto 720MHz. The processor has the following features,****
 
@@ -34,7 +34,7 @@ AM335X 720MHz ARM Cortex-A8 is the processor used in BeagleBone. The Frequency o
   * ARM Cortex-M3 for power management
   * 2x PRU 32-bit RISC CPU's
 
-#### **CONNECTIVITY:**
+#### CONNECTIVITY:
 
   * USB client: power, debug and device
   * USB host
@@ -42,12 +42,12 @@ AM335X 720MHz ARM Cortex-A8 is the processor used in BeagleBone. The Frequency o
   * HDMI
   * 2x 46 pin headers
 
-#### **SOFTWARE COMPATIBILITY: **
+#### SOFTWARE COMPATIBILITY:
 
   * 4GB microSD card w/ Angstrom Distribution
   * Cloud9 IDE on Node.JS w/ BoneScript library
 
-#### **SUPPORTED OPERATING SYSTEMS:**
+#### SUPPORTED OPERATING SYSTEMS:
 
   * Angstrom
   * Debian
@@ -59,13 +59,13 @@ AM335X 720MHz ARM Cortex-A8 is the processor used in BeagleBone. The Frequency o
   * Build-root
   * Nerves Er lang/OTP
 
-#### **BeagleBone Cheat Sheet: **
+#### BeagleBone Cheat Sheet:
 
 If you intend to buy a BeagleBone then this is one sheet you can't keep away from. It's popularly circulated in the internet and called the Bone Cheat Sheet. Thanks to the person who took the effort to put up such a good work.
 
 {% include image.html src="beaglebone-pin-diagram.jpg" %}
 
-### **Summary:**
+### Summary:
 
   * Extensive I/O: 2 I2C, 5 UART, SPI, CAN, 66 GPIO, 8 PWM, 8 ADC
   * +5V DC power from barrel connector or USB device port

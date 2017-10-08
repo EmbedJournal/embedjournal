@@ -2,7 +2,7 @@
 title: "EDA (Electronic Design Automation) - Where Electronics Begins"
 date: 2013-05-25T15:54:54+00:00
 date_modified: 2017-04-01T10:00:00+05:30
-author: Siddharth
+author: Natesan
 thumbnail: post-thumb.gif
 permalink: /eda-where-electronics-begins/
 dsq_thread_id: "2728571220"
@@ -29,11 +29,11 @@ The three aspects of EDA are:
   3. It involves modeling, synthesis, and verification at every level of abstraction.
 
 **History and Evolution**:
-  
+
 Before EDA, integrated circuits were designed by hand. Automation first came with geometric software to generate the tapes for the Gerber photoplotter, but even those copied digital recordings of mechanically-drawn components. The process was fundamentally graphic with the translation from electronics to graphics done manually.
 
 By the mid-70s, developers started to automate design with many tools including place and route (P&R).
-  
+
 The next era began about the time of the publication of "Introduction to VLSI Systems" by Carver Mead and Lynn Conway in 1980. This ground breaking text advocated chip design with programming languages that compiled to silicon. The immediate result was a considerable increase in the complexity of the chips that could be designed, with improved access to design verification tools that used logic simulation.
 
 1981 marks the beginning of EDA as an industry. For many years, the larger semiconductor companies developed EDA software internally. In 1981, executives and engineers spun out of these companies to concentrate on EDA as a business. Daisy Systems, Mentor Graphics, and Valid Logic Systems were all founded around this time, and collectively referred to as DMV. Within a few years there were many companies specializing in EDA, each with a slightly different emphasis.

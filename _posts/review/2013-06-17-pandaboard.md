@@ -2,7 +2,7 @@
 title: "PandaBoard, Technical Reference and Review."
 date: 2013-06-17T10:20:56+00:00
 date_modified: 2017-04-01T10:00:00+05:30
-author: Siddharth
+author: Naveen
 thumbnail: post-thumb.png
 permalink: /pandaboard/
 dsq_thread_id: "3298571283"

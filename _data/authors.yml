@@ -1,6 +1,8 @@
 list:
   - Siddharth
   - Mani
+  - Naveen
+  - Natesan
 
 Siddharth:
   name: "Siddharth"
@@ -33,7 +35,42 @@ Mani:
   social-url:
     twitter:  http://twitter.com/mani_sadhasivam
     facebook: http://www.facebook.com/mani.manivannan.888
+    github:   https://github.com/Mani-Sadhasivam
     linkedin: https://in.linkedin.com/in/manisadhasivam
   social:
     twitter: mani_sadhasivam
   homepage: http://www.facebook.com/mani.manivannan.888
+
+Naveen:
+  name: "Naveen"
+  full_name: "Naveen Kumar"
+  email: naveenkumar.dharma@gmail.com
+  image: "/assets/images/authors/naveen.jpg"
+  blogging_since: "March 2013"
+  short_desc: >
+    Naveen has a masters in VLSI design and is an avid reader, teche, and and a badminton player. In is
+    free time, he evaluates and benchmarks electronic hardware for fun.
+  social-url:
+    twitter:  http://twitter.com/dunaveenkumar
+    facebook: https://www.facebook.com/dunaveenkumar
+    linkedin: https://www.linkedin.com/in/naveen-kumar-a867a375/
+  social:
+    twitter: dunaveenkumar
+  homepage: https://www.facebook.com/dunaveenkumar
+
+Natesan:
+  name: "Natesan"
+  full_name: "Natesan Sivaramakrishnan"
+  email: natesan.srk@gmail.com
+  image: "/assets/images/authors/natesan.jpg"
+  blogging_since: "March 2013"
+  short_desc: >
+    Natesan is currently pursuing is masters in Computer Sciences at New Jersey Institute of Technology.
+    His interests include Programming, PLCs, and circuit design.
+  social-url:
+    twitter:  https://twitter.com/natesan_sk
+    facebook: https://www.facebook.com/natesan.nsrk
+    linkedin: https://www.linkedin.com/in/natesan-sivaramakrishnan/
+  social:
+    twitter: natesan.nsrk
+  homepage: https://www.facebook.com/natesan.nsrk
