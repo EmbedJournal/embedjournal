@@ -39,7 +39,7 @@ For building linux kernel you will need several tools other than BeagleBone. The
 
 The first and foremost thing in compiling kernel is installing ARM gcc cross compiler. Since, BeagleBone Black is based on AM335x Sitara Processor, we need to compile the kernel for that environment. There are numerous compilers available online for free but it is important to install a stable one for proper compilation. For instance gcc-arm-linux-gnueabihf compiler available in standard Ubuntu package is an unstable one. So, download a stable compiler. The preferred one is Linaro cross compiler.
 
-You can download the compiler [here](http://releases.linaro.org/14.04/components/toolchain/binaries/gcc-linaro-arm-linux-gnueabihf-4.8-2014.04_linux.tar.xz)
+You can download the compiler [here](http://releases.linaro.org/components/toolchain/binaries/5.4-2017.05/arm-linux-gnueabihf/)
 
 After downloading, extract the compiler using the following command.
 
