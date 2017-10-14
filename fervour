@@ -25,6 +25,7 @@ use File::Basename;
 =head1 OPTIONS
 
   -b, --build          Build site for specified ENV (--env) or for configured ENV
+  -i, --incremental    Passes incremental build flag to jekyll.
   -e, --env ENV        Specify (override) build environment. Can be (dev|prod).
   -d, --draft          Create new draft interactively
   -c, --check          Check if post is structured correctly
@@ -56,6 +57,7 @@ my %g_config;
 
 GetOptions(
   'build'         => \ my $do_build,
+  'incremental'   => \ my $inc_build,
   'env=s'         => \ my $build_env,
   'draft'         => \ my $new_draft,
   'category=s'    => \ my $category_name,
@@ -327,6 +329,8 @@ sub build_site()
 	} else {
 		die "Unknown build environment!\n";
 	}
+
+	$opts .= "--incremental " if ($inc_build);
 
 	print "jekyll build $opts\n";
 	system ("jekyll build $opts");
