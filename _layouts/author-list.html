@@ -3,46 +3,45 @@ layout: default
 ---
 
 <div class="row">
-    <div class="col-lg-10 col-lg-offset-1">
-        <!-- Loop through all the authors -->
+    <div class="col-lg-8 col-lg-offset-2">
         {% for author_name in site.data.authors.list %}
         {% assign author = site.data.authors[author_name] %}
-        <div class="c-authorInfo">
-            <div class="b-authorImg">
-                <div class="b-img">  <!-- js-expand -->
-                    <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}"><img src="{{ author.image }}"></a>
+            <!-- Author box -->
+            <div class="c-postAuthor">
+                <div class="b-authorTitle">
+                    <div class="b-title">
+                        <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}"><h3>{{ author.full_name }}</h3></a>
+                    </div>
+                    <div class="b-authorSocial">
+                        <ul>
+                            {% if author.social-url.facebook %}
+                            <li class="b-facebook"><a href="{{author.social-url.facebook}}" title="Facebook" target="_blank"><span class="fa fa-facebook"></span></a></li>
+                            {% endif %}
+                            {% if author.social-url.twitter %}
+                            <li class="b-twitter"><a href="{{author.social-url.twitter}}" title="Twitter" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                            {% endif %}
+                            {% if author.social-url.google_plus %}
+                            <li class="b-google-plus"><a href="{{author.social-url.google_plus}}" title="Google+" target="_blank"><span class="fa fa-google-plus"></span></a></li>
+                            {% endif %}
+                            {% if author.social-url.linkedin %}
+                            <li class="b-linkedin"><a href="{{author.social-url.linkedin}}" title="Linkedin" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+                            {% endif %}
+                            {% if author.social-url.github %}
+                            <li class="b-github"><a href="{{author.social-url.github}}" title="Github" target="_blank"><span class="fa fa-github"></span></a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+                <div class="b-authorCard">
+                    <div class="b-authorImg">
+                        <img src="{{ author.image }}" alt="Sample Thumb">
+                    </div>
+                    <div class="b-authorDesc">
+                        <p>{{ author.short_desc }}</p>
+                    </div>
+                    <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}" class="e-readMore">Read more about {{ author.name }}</a>
                 </div>
             </div>
-            <div class="b-authorInfo">
-                <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}"><h3 class="e-title">{{ author.full_name }}</h3></a>
-                <div class="b-contact">
-                    <p><strong>Email:</strong> <a href="mailto:{{ author.email }}">{{ author.email }}</a></p>
-                </div>
-                <div class="b-social">
-                    <ul>
-                    {% if author.social-url.facebook %}
-                        <li class="b-facebook"><a href="{{author.social-url.facebook}}" title="Facebook" target="_blank"><span class="fa fa-facebook"></span></a></li>
-                    {% endif %}
-                    {% if author.social-url.twitter %}
-                        <li class="b-twitter"><a href="{{author.social-url.twitter}}" title="Twitter" target="_blank"><span class="fa fa-twitter"></span></a></li>
-                    {% endif %}
-                    {% if author.social-url.google_plus %}
-                        <li class="b-google-plus"><a href="{{author.social-url.google_plus}}" title="Google+" target="_blank"><span class="fa fa-google-plus"></span></a></li>
-                    {% endif %}
-                    {% if author.social-url.linkedin %}
-                        <li class="b-linkedin"><a href="{{author.social-url.linkedin}}" title="Linkedin" target="_blank"><span class="fa fa-linkedin"></span></a></li>
-                    {% endif %}
-                    {% if author.social-url.github %}
-                        <li class="b-github"><a href="{{author.social-url.github}}" title="Github" target="_blank"><span class="fa fa-github"></span></a></li>
-                    {% endif %}
-                    </ul>
-                </div>
-                <div class="b-metaTag">
-                    <p><span class="e-label">Posts</span> {{ site.posts | where: "author", author.name | size }}</p>
-                    <p><span class="e-label">Since</span> {{ author.blogging_since }}</p>
-                </div>
-            </div>
-        </div>
         {% endfor %}
     </div>
 </div>

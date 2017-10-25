@@ -2,26 +2,47 @@
 title: "About"
 ---
 
-# About
+# About EmbedJournal
 
-Hello, and welcome to embedjournal.com,
+EmbedJournal was launched in 2013 with a focus on Embedded Systems, electronics Linux and Robotics. It started off primarily as a place for [Siddharth][1] to share this hobby projects. In mid 2014, it received a lot more attention and became a go-to destination for students and hobbyists.
 
-Before saying anything about embedjournal, we thank you for taking your time to stop at this page. This blog is maintained by a group of like-minded friends sharing similar interests. We have done a few small projects for various tech fests in and around our place. Whatever we write here as tutorials and how-to's are personally tested methods by at least one of our members. You are free to raise any questions regarding the tutorials in the comments section; We will get back to you as soon as possible.
+Today, EmbedJournal receives close to 2K page views per day and almost all of it organic traffic. We have growing list of subscribers for our mailing list. Last we checked we had about 2.5K subscribers around the world.
 
-This is a website focusing on embedded software/hardware design and a bunch of other things that has to do with it. Embedded systems play a vital role in our day to day lives. Even without our knowledge we are using dozens of embedded devices. The applications of embedded electronics is so vast that there are tons of companies that are directly involved in the Design and Development of embedded systems. Besides, these companies there is a huge ecosystem that has been thriving symbiotically for ages. Together they have been exploring all possibilities making embedded systems a practical money making venture.
+### Write for us
 
-That being said, the scope of a talented Embedded Engineer is always growing. Embedded systems is a fast evolving field. Yesterday is obsolete and today has already been written down to be told tomorrow as history. All one has to do is to be updated with the latest technologies and trends. Obsolescence is inevitable if we do not move along with the tide. EmbedJournal like all other blogs in the same domain has been started with a vision to keep knowledge open and available to any one who is looking forward to get it. Together we can reach where we could never have reached otherwise.
+EmbedJounal is no longer a single author blog. We are now embracing open content and so we encourage our readers to step up and share their projects with us. We we make sure you have a place at EmbedJournal for ever. Please refer to our [guest blogging policies][8] for more details.
 
-We are working full time to make this place look and feel better for you. We are putting in our time and effort to produce the best content possible. You can show us your support by subscribing to our newsletters and like our page on [Facebook](https://www.facebook.com/embedjournal), where we will be most active in updating our latest posts or you can follow us on a bunch of other social media channels listed in the footer.
+### Have a question?
 
-You can also get involved in the community by submitting articles (will be treated as your content hosted at EmbedJournal). If you have something to say, then here is your place to raise your voice and be heard. For more details check out our policies on [Guest Blogging](/guest-blogging/).
+We are always eager to hear form our readers. Read our FAQ page to check if we get your question very often. If you don't find your question there, please read our [contact guidelines][9] and the write an email to author. We will be glad to assist you in any way possible.
 
-**We will always be there!!**
+### About the Authors
 
-We are online almost all days and respond to your comment regularly so you can use the comment section at the end of each post to reach us. EmbedJournal is all about sharing knowledge and improving oneself in the process. You can reach any of the authors at their email for any specific queries. But before you do, make sure you read our [contact guidelines](/contact/).
+The Authors where once students and hobbyists, today they are professional Firmware developers living their passions. You can read more about the authors at our [authors list page][11].
 
-We thank you once again for being here. You make our day!
+### About the website
 
-Regards,
+EmbedJournal's content is written in [GitHub Flavored Markdown][10] syntax and built into static HTML files. The backed of EmbedJournal is powered by [Jekyll][2] and some Perl scripts to automate the build process.
 
-EmbedJournal Team.
+### Credits:
+
+EmbedJournal is what it is today because of a lot of nice folks around the world and we would like to take the opportunity to thank them.
+
+  * [Jekyll][2] - The awesome static site generator from which EmbedJournal is built.
+  * [Markdown Editor][3] - The online editor that we have [here][4] to test our markdown syntax.
+  * [Mailchimp API][5] - The wrapper for Mailchimp API that we use to manage our subscriptions for mailing lists.
+  * [IndicServer][6] - Our domain registrar who has been generously offering us a huge discount.
+  * Folks at [AlphaWebLab][7] for helping us get our UI right.
+
+
+[1]: /authors/siddharth-chandrasekaran/
+[2]: https://github.com/jekyll/jekyll
+[3]: https://github.com/cbsiddharth/markdown-editor
+[4]: https://embedjournal.com/editor/
+[5]: https://github.com/drewm/mailchimp-api
+[6]: http://indicserver.com/
+[7]: http://alphaweblab.com/
+[8]: /guest-blogging/
+[9]: /contact/
+[10]: https://github.github.com/gfm/
+[11]: /authors

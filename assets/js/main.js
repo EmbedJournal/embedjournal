@@ -1,3 +1,5 @@
+
+/*
 // Hide Header on on scroll down
 var didScroll;
 var lastScrollTop = 0;
@@ -40,6 +42,7 @@ function scrollCheck() {
         didScroll = false;
     }
 }
+*/
 
 function validate_email(email)
 {
@@ -102,7 +105,7 @@ $(document).ready(function() {
         });
     });
 
-    setInterval(scrollCheck, 250);
+    //setInterval(scrollCheck, 250);
 
     $("#postContent a").attr("target","_blank");
 

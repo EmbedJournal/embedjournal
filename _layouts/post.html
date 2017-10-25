@@ -12,15 +12,16 @@ layout: default
 	        	<!-- Post Head -->
 				<div class="b-postHeader -withoutImg">
 					<h1>{{ page.title }}</h1>
-					<div class="b-postDate">
-						<span class="b-dayMonth">{{ page.date | date: "%b %-d" }}</span>
-						<span class="b-year">{{ page.date | date: "%Y" }}</span>
-					</div>
 					<div class="c-postInfo">
+                        <div class="b-date">
+                            <p><span class ="fa fa-calendar"></span>
+                            <a href="{{ site.baseurl }}/archives/{{ page.date | date: '%Y/%m' }}">{{ page.date | date: "%b %Y" }}</a>
+                            </p>
+                        </div>
                         <div class="b-author">
                             <p>
                                 <span class ="fa fa-user"></span>
-                                <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}">{{ author.full_name }}</a>
+                                <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}">{{ author.name }}</a>
                             </p>
                         </div>
 						<div class="b-category">
@@ -47,10 +48,9 @@ layout: default
                     <!-- subscribe form -->
                     <div class="c-subscribe">
                         <div class="b-subscribeContent">
-                            <p>Like what you just read? don't miss any of our posts. Signup now and join the 2000+ hackers around the world!</p>
                             <form id="subscribe-form">
                                 <div class="b-field form-input">
-                                    <input name="email" type="text" id="form-email" placeholder="Email" />
+                                    <input name="email" type="text" id="form-email" placeholder="join the 2000+ hackers around the world" />
                                 </div>
                                 <div class="b-field">
                                     <input type="submit" value="Subscribe" id="form-submit"  class="btn btn-soft" />
@@ -59,7 +59,6 @@ layout: default
                             <div id="submit-response"></div>
                         </div>
                     </div>
-
 				</div>
 	        </article>
 
@@ -83,6 +82,9 @@ layout: default
 							{% if author.social-url.linkedin %}
 							<li class="b-linkedin"><a href="{{author.social-url.linkedin}}" title="Linkedin" target="_blank"><span class="fa fa-linkedin"></span></a></li>
 							{% endif %}
+                            {% if author.social-url.github %}
+                            <li class="b-github"><a href="{{author.social-url.github}}" title="Github" target="_blank"><span class="fa fa-github"></span></a></li>
+                            {% endif %}
 	                    </ul>
 					</div>
 				</div>
@@ -118,7 +120,7 @@ layout: default
 	        </div>
 
             <!-- Post navigation -->
-            <div class="c-postNav">
+            <!-- <div class="c-postNav">
                 <div class="b-navPrev">
                     <a href="{{ page.previous.url }}" class="btn btn-green"><span class="fa fa-angle-double-left"></span> Older Post</a>
                 </div>
@@ -128,7 +130,7 @@ layout: default
                 <div class="b-navNext">
                     <a href="{{ page.next.url }}" class="btn btn-green">Newer Post <span class="fa fa-angle-double-right"></span></a>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Related Posts -->
             {% assign hasSimilar = '' %}
@@ -139,7 +141,7 @@ layout: default
                         {% if postHasSimilar == false and hasSimilar.size < 4 and post != page and tag == thisTag %}
                             {% if hasSimilar.size == 0 %}
                                 <div class="c-relatedArticle">
-                                    <h3>Related Articles</h3>
+                                    <h3>Related Posts</h3>
                                     <div class="b-relatedArticle">
                             {% endif %}
                                 <div class="media">

@@ -4,15 +4,15 @@ layout: default
 
 <div class="row">
     <div class="col-lg-10 col-lg-offset-1">
-		<div class="c-posts">
-			<div class="b-title">
-				<h3>{{ page.title }}</h3>
-			</div>
-			<div class="b-posts">
-				{% for post in site.posts %}
-				{% if post.category == page.category %}
-				<div class="b-postItem">
-				    <div class="b-postImg">
+        <div class="c-posts">
+            <div class="b-title">
+                <h3>{{ page.title }}</h3>
+            </div>
+            <div class="b-posts">
+                {% for post in site.posts %}
+                {% if post.category == page.category %}
+                <div class="b-postItem">
+                    <div class="b-postImg">
                         {% if post.thumbnail %}
                         <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
                             {% capture image-path %}{{ site.baseurl }}/assets/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}{% endcapture %}
@@ -24,39 +24,41 @@ layout: default
                             <img src="{{ site.baseurl }}/assets/images/categories/{{ image-name }}" alt="{{ post.title }}">
                         </a>
                         {% endif %}
-				    </div>
-				    <div class="b-postDesc">
-				        <a href="{{ post.url | relative_url }}" title="{{ post.title }}" class="e-title"><h4>{{ post.title }}</h4></a>
-                        <div class="b-dateLabel">
-    				        {{ post.date | date: "%b %-d, %Y" }}
-    				    </div>
-				        <p>{{ post.content | strip_html | truncatewords:50 }}</p>
-				        <div class="c-postInfo">
-				            <div class="b-author">
-				                {% assign author = site.data.authors[post.author] %}
-				                <p>By <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}">{{ author.name }}</a></p>
-				            </div>
-				            <div class="b-category">
+                    </div>
+                    <div class="b-postDesc">
+                        <a href="{{ post.url | relative_url }}" title="{{ post.title }}" class="e-title"><h4>{{ post.title }}</h4></a>
+                        <p>{{ post.content | strip_html | truncatewords:50 }}</p>
+                        <div class="c-postInfo">
+                            <div class="b-date">
+                                <p><span class ="fa fa-calendar"></span>
+                                <a href="{{ site.baseurl }}/archives/{{ post.date | date: '%Y/%m' }}">{{ post.date | date: "%b %Y" }}</a>
+                                </p>
+                            </div>
+                            <div class="b-author">
+                                {% assign author = site.data.authors[post.author] %}
+                                <p>By <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}">{{ author.name }}</a></p>
+                            </div>
+                            <div class="b-category">
                                 <p>
                                     <span class="fa fa-folder"></span>
                                     <a href="{{ site.baseurl }}/category/{{ post.category | slugify }}">{{ post.category }}</a>
                                 </p>
-				            </div>
-				            <div class="b-tags">
-				                <p><span class="fa fa-tags"></span></p>
-				                <ul>
-				                    {% for tag in post.tags %}
-				                        <li><a href="{{ site.baseurl }}/tag/{{ tag | slugify }}">{{ tag }}</a></li>
-				                    {% endfor %}
-				                </ul>
-				            </div>
-				        </div>
-				    </div>
-				</div>
-				{% endif %}
-				{% endfor %}
+                            </div>
+                            <div class="b-tags">
+                                <p><span class="fa fa-tags"></span></p>
+                                <ul>
+                                    {% for tag in post.tags %}
+                                        <li><a href="{{ site.baseurl }}/tag/{{ tag | slugify }}">{{ tag }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
 
-			</div>
-		</div>
+            </div>
+        </div>
     </div>
 </div>

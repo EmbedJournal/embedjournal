@@ -35,10 +35,6 @@ layout: default
                     {% endif %}
                     </ul>
                 </div>
-                <div class="b-metaTag">
-                    <p><span class="e-label">Posts</span> {{ site.posts | where: "author", author.name | size }}</p>
-                    <p><span class="e-label">Since</span> {{ author.blogging_since }}</p>
-                </div>
             </div>
 			<div class="b-authorDesc">
 				{{ content }}
@@ -47,7 +43,7 @@ layout: default
 
 		<div class="c-posts">
 			<div class="b-title" id="authorName">
-				<h3>{{ author.name }}'s Recent Posts</h3>
+				<h3>{{ author.name }}'s Posts</h3>
 			</div>
 			<div class="b-posts">
 				{% assign author_posts = site.posts | where: "author", author.name %}
@@ -70,6 +66,11 @@ layout: default
 					        <a href="{{ post.url | relative_url }}" title="{{ post.title }}" class="e-title"><h4>{{ post.title }}</h4></a>
 					        <p>{{ post.content | strip_html | truncatewords:50 }}</p>
 					        <div class="c-postInfo">
+                                <div class="b-date">
+                                    <p><span class ="fa fa-calendar"></span>
+                                    <a href="{{ site.baseurl }}/archives/{{ post.date | date: '%Y/%m' }}">{{ post.date | date: "%b %Y" }}</a>
+                                    </p>
+                                </div>
 					            <div class="b-author">
 					                {% assign author = site.data.authors[post.author] %}
 					                <p>By <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}">{{ author.name }}</a></p>
@@ -89,9 +90,6 @@ layout: default
 					                </ul>
 					            </div>
 					        </div>
-					    </div>
-					    <div class="b-dateLabel">
-					        {{ post.date | date: "%b %-d, %Y" }}
 					    </div>
 					</div>
 				{% endfor %}
