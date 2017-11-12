@@ -54,6 +54,13 @@ function validate_email(email)
 
 $(document).ready(function() {
 
+    // Make shell prompt in rouge syntax highlight un-selectable.
+    $(".nv").each(function(index) {
+        if ($(this).html() == '$ ') {
+            $(this).addClass("unselectable");
+        }
+    });
+
     $('#subscribe-form .form-input').click(function() {
         console.log("in focus");
         $(this).removeClass('form-error');
