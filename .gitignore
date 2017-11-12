@@ -1,12 +1,7 @@
-_site/*
-.config
 .sass-cache
 .asset-cache
 .jekyll-metadata
 .code-highlighter-cache
-Gemfile.lock
-
-drafts/
+.config
 local/
-.author.yml
-assets/php/config.ini
+
