@@ -20,7 +20,7 @@
                         {% for nav in site.data.navigation.main %}
                             {% if page.url == nav.url %}
                                 <li class="active visible-xs visible-sm">
-                                    <a href="{{ nav.url }}">{{ nav.item }} <span class="sr-only">(current)</span></a>
+                                    <a href="{{ nav.url }}">{{ nav.item }}</a>
                                 </li>
                             {% else %}
                                 <li class="visible-xs visible-sm">
@@ -31,9 +31,13 @@
 
                         {% for nav in site.data.navigation.static %}
                             {% if page.url == nav.url %}
-                                <li class="active"><a href="{{ nav.url }}">{{ nav.item }} <span class="sr-only">(current)</span></a></li>
+                                <li class="active">
+                                    <a href="{{ nav.url }}">{{ nav.item }}</a>
+                                </li>
                             {% else %}
-                                <li><a href="{{ nav.url }}">{{ nav.item }}</a></li>
+                                <li>
+                                    <a href="{{ nav.url }}">{{ nav.item }}</a>
+                                </li>
                             {% endif %}
                         {% endfor %}
                     </ul>

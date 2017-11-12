@@ -26,11 +26,8 @@ use File::Basename;
 
   -b, --build          Build site for specified ENV (--env) or for configured ENV
   -i, --incremental    Passes incremental build flag to jekyll.
+  -c, --category CAT   Create category CAT (experimental)
   -e, --env ENV        Specify (override) build environment. Can be (dev|prod).
-  -d, --draft          Create new draft interactively
-  -c, --check          Check if post is structured correctly
-  -p, --publish PATH   Pubish a draft at POST
-  -w, --wrap PATH      Wrap a post specified by PATH for email.
   -h, --help           Print this help
 
 =head1 VERSION
@@ -39,19 +36,6 @@ use File::Basename;
 
 =cut
 
-my $author_default = {
-	name => 'Your-Nick-Name',
-	full_name => 'Fistname Lastname',
-	email => 'you@example.com',
-	short_desc => 'A short writeup about yourself.',
-	social => {
-		twitter  => 'http://twitter.com/XXX',
-		facebook => 'https://facebook.com/XXX',
-		github   => 'https://github.com/XXX',
-		linkedin => 'https://in.linkedin.com/in/XXX'
-	}
-};
-
 my $argc = @ARGV;
 my %g_config;
 
@@ -59,10 +43,7 @@ GetOptions(
   'build'         => \ my $do_build,
   'incremental'   => \ my $inc_build,
   'env=s'         => \ my $build_env,
-  'draft'         => \ my $new_draft,
   'category=s'    => \ my $category_name,
-  'publish=s'     => \ my $publishDraftPath,
-  'wrap=s'        => \ my $packPostPath,
   'help'          =>   sub { pod2usage(1) },
 );
 
@@ -86,146 +67,6 @@ sub getSlug
 	$s =~ s/[^A-Za-z0-9\-\.]//g;
 	$s =~ s/-+/-/g;
 	return $s;
-}
-
-sub getCategory
-{
-	my $yaml = LoadFile('jekyll/_data/categories.yml');
-	my @categories = map { $_->{name} } @{$yaml};
-	for my $i (0..$#categories) {
-		printf "\t%2d - %s\n", $i+1, $categories[$i];
-	}
-	print "\n";
-	my $catID;
-	while (1) {
-		$catID = readInput("Category index");
-		my $isValid = 1;
-		$isValid = 0 if (($catID !~ /^\d+$/) or
-				(int($catID) < 0) or
-				(int($catID) > ($#categories + 1)));
-		print ("\nInvalid Input\n") unless($isValid);
-		last if ($isValid);
-	}
-	return $categories[int($catID)-1];
-}
-
-sub getInputInteractive()
-{
-	print "\n\t----------------------------------------------------------------------------\n";
-	print "\t   EmbedJournal.com  - Add a brain to eveything with embedded electronics       ";
-	print "\n\t----------------------------------------------------------------------------\n";
-
-	print "\n\tWelcome Author, Give your article a title. be sure to keep the title attractive\n";
-	print   "\tmeaningful and short. This how your post will be called once it is published\n";
-	print   "\tThink what your readers will search for when they have to reach your post. Use\n";
-	print   "\tthose keywords in the post title so your post will be ranked well at google.\n\n";
-
-	my $t = readInput("Post title");
-
-	print "\n\tCurrently we support the following categories. Choose the broad field that best\n";
-	print   "\tsuits your content. If your field is not here, or you have some doubts mail one\n";
-	print   "\tother authors and they should be able to help you out.\n\n";
-
-	my $c = getCategory();
-
-	return ($t, $c);
-}
-
-sub create_draft()
-{
-	unless(-f ".author.yml") {
-		DumpFile('.author.yml', $author_default);
-		system(vi => '.author.yml');
-	}
-	my $author_yml = LoadFile('.author.yml');
-	my ($title, $category) = getInputInteractive();
-	my $slug = getSlug($title);
-	my $post_yml = {
-		title => $title,
-		date_created => strftime('%Y-%m-%dT%H:%M:%S%z', localtime()),
-		author => $author_yml->{name},
-		permalink => "/$slug/",
-		category => $category,
-	};
-	my $draftPath = "drafts/draft-$slug";
-	system("mkdir -p $draftPath");
-	DumpFile("$draftPath/.post.yml", $post_yml);
-	DumpFile("$draftPath/.author.yml", $author_yml);
-
-	system("touch", "$draftPath/post.md");
-
-	print "\nCreated new draft at $draftPath\n";
-	exit;
-}
-
-sub pack_post()
-{
-	die "Unable to find $packPostPath. Should be path to post directory." unless (-d $packPostPath);
-	my $zipName = strftime ('%y%m%d', localtime()) . "_post.tar.gz";
-	system("tar", "czf", $zipName, $packPostPath);
-	exit;
-}
-
-sub get_rand_token()
-{
-	srand( time() ^ ($$ + ($$ << 15)) );
-		my @v = qw ( a e i o u y );
-	my @c = qw ( b c d f g h j k l m n p q r s t v w x z );
-
-	my ($flip, $str) = (0,'');
-	$str .= ($flip++ % 2) ? $v[rand(6)] : $c[rand(20)] for 1 .. 9;
-	$str =~ s/(....)/$1 . int rand(10)/e;
-	$str = ucfirst $str if rand() > 0.5;
-	return $str;
-}
-
-sub publish_draft()
-{
-	die "Invalid draft path path $publishDraftPath" unless (-d $publishDraftPath);
-	die "Unable to locate .authors.yml" unless(-f "$publishDraftPath/.author.yml");
-	die "Unable to locate .post.yml" unless(-f "$publishDraftPath/.post.yml");
-	die "Unable to locate post.md" unless(-f "$publishDraftPath/post.md");
-
-	my $rand_token = get_rand_token();
-	my $thumb = glob "$publishDraftPath/post-thumb.*";
-	my $thumbnail = basename($thumb) if (defined($thumb));
-
-	system(cat => "$publishDraftPath/.post.yml");
-
-	exit if (readInput("Do you wish to proceed? [y/N]") !~ /y/i);
-
-	my $post_yml = LoadFile("$publishDraftPath/.post.yml");
-	my $post_slug = getSlug($post_yml->{title});
-	my $category_slug = getSlug($post_yml->{category});
-	my $postName = strftime('%Y-%m-%d-', localtime()) . $post_slug;
-
-	my @fileList = grep {!(/post.md$/)} glob "$publishDraftPath/*";
-	my $postPath = "jekyll/_posts/$category_slug";
-	my $imagePath = "jekyll/assets/posts/$category_slug/$postName";
-
-	system("mkdir -p $postPath");
-	system("mkdir -p $imagePath");
-	open (my $O, "<", "$publishDraftPath/post.md");
-	open (my $F, ">", "$postPath/$postName.md") or die "Unable to create post file";
-	print $F "---\n";
-	print $F "title: \"$post_yml->{title}\"\n";
-	print $F "date: ", strftime('%Y-%m-%dT%H:%M:%S%z', localtime()), "\n";
-	print $F "author: $post_yml->{author}\n";
-	print $F "thumbnail: $thumbnail\n" if (defined($thumbnail));
-	print $F "permalink: /$post_slug/\n";
-	print $F "dsq_thread_id: \"$rand_token\"\n";
-	print $F "category: \"$post_yml->{category}\"\n";
-	print $F "tags: [  ]\n";
-	print $F "---\n\n";
-
-	while (<$O>) {
-		print $F "$_";
-	}
-
-	foreach (@fileList) {
-		system("cp", "$_", "$imagePath");
-	}
-	exit;
 }
 
 sub write_categories_yml
@@ -338,14 +179,7 @@ sub build_site()
 	exit;
 }
 
-sub main()
-{
-	load_config();
-	build_site() if $do_build;
-	create_draft() if $new_draft;
-	create_category() if (defined $category_name);
-	publish_draft() if (defined $publishDraftPath);
-	pack_post() if (defined $packPostPath);
-}
+load_config();
+build_site() if $do_build;
+create_category() if (defined $category_name);
 
-main();

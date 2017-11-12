@@ -41,13 +41,13 @@ social:
 collections:
   pages:
     output: true
-    permalink: /:path/index.html
+    permalink: /:path/
   authors:
     output: true
-    permalink: /authors/:path/index.html
+    permalink: /authors/:path/
   category:
     output: true
-    permalink: /category/:path/index.html
+    permalink: /category/:path/
 
 liquid:
   error_mode: warn

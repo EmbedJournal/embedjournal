@@ -33,6 +33,11 @@ paginate:
 				        <a href="{{ post.url | relative_url }}" title="{{ post.title }}" class="e-title"><h4>{{ post.title }}</h4></a>
 				        <p>{{ post.content | strip_html | truncatewords:50 }}</p>
 				        <div class="c-postInfo">
+                            <div class="b-date">
+                                <p><span class ="fa fa-calendar"></span>
+                                <a href="{{ site.baseurl }}/archives/{{ post.date | date: '%Y/%m' }}">{{ post.date | date: "%b %Y" }}</a>
+                                </p>
+                            </div>
 				            <div class="b-author">
 				                {% assign author = site.data.authors[post.author] %}
 				                <p>By <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}">{{ author.name }}</a></p>
@@ -52,9 +57,6 @@ paginate:
 				                </ul>
 				            </div>
 				        </div>
-				    </div>
-				    <div class="b-dateLabel">
-				        {{ post.date | date: "%b %-d, %Y" }}
 				    </div>
 				</div>
 				{% endfor %}
