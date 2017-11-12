@@ -90,7 +90,7 @@ sub getSlug
 
 sub getCategory
 {
-	my $yaml = LoadFile('_data/categories.yml');
+	my $yaml = LoadFile('jekyll/_data/categories.yml');
 	my @categories = map { $_->{name} } @{$yaml};
 	for my $i (0..$#categories) {
 		printf "\t%2d - %s\n", $i+1, $categories[$i];
@@ -169,7 +169,7 @@ sub pack_post()
 sub get_rand_token()
 {
 	srand( time() ^ ($$ + ($$ << 15)) );
-	my @v = qw ( a e i o u y );
+		my @v = qw ( a e i o u y );
 	my @c = qw ( b c d f g h j k l m n p q r s t v w x z );
 
 	my ($flip, $str) = (0,'');
@@ -200,8 +200,8 @@ sub publish_draft()
 	my $postName = strftime('%Y-%m-%d-', localtime()) . $post_slug;
 
 	my @fileList = grep {!(/post.md$/)} glob "$publishDraftPath/*";
-	my $postPath = "_posts/$category_slug";
-	my $imagePath = "assets/posts/$category_slug/$postName";
+	my $postPath = "jekyll/_posts/$category_slug";
+	my $imagePath = "jekyll/assets/posts/$category_slug/$postName";
 
 	system("mkdir -p $postPath");
 	system("mkdir -p $imagePath");
@@ -317,14 +317,15 @@ sub build_site()
 	$env = $build_env if (defined($build_env));
 
 	die "Must provide/configure ENV\n" if (!defined ($env));
+	$opts = "--source jekyll ";
 
 	if ($env =~ /dev/) {
 		$ENV{'JEKYLL_ENV'}="development";
-		$opts .= "--config _config.yml,_config_dev.yml ";
+		$opts .= "--config jekyll/_config.yml,jekyll/_config_dev.yml ";
 		$opts .= "-d $g_config{'DEV_PATH'} " if ($g_config{'DEV_PATH'});
 	} elsif ($env =~ /prod/) {
 		$ENV{'JEKYLL_ENV'}="production";
-		$opts .= "--config _config.yml ";
+		$opts .= "--config jekyll/_config.yml ";
 		$opts .= "-d $g_config{'PROD_PATH'} " if ($g_config{'PROD_PATH'});
 	} else {
 		die "Unknown build environment!\n";
