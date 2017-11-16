@@ -79,6 +79,7 @@ plugins:
   - jekyll-archives
   - jekyll-sitemap
   - octopress-paginate
+  - jemoji
 
 exclude:
   - Gemfile
