@@ -1,3 +1,6 @@
 [submodule "content"]
 	path = content
 	url = https://github.com/EmbedJournal/web-content.git
+[submodule "jekyll/editor"]
+	path = jekyll/editor
+	url = https://github.com/EmbedJournal/markdown-editor.git
