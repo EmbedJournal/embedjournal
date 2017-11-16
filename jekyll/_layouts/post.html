@@ -6,13 +6,13 @@ layout: default
 
 <div class="row">
     <div class="col-md-8 js-content">
-    	<div class="theiaStickySidebar">
-	        <article class="c-singlePost">
+        <div class="theiaStickySidebar">
+            <article class="c-singlePost">
 
-	        	<!-- Post Head -->
-				<div class="b-postHeader -withoutImg">
-					<h1>{{ page.title }}</h1>
-					<div class="c-postInfo">
+                <!-- Post Head -->
+                <div class="b-postHeader -withoutImg">
+                    <h1>{{ page.title }}</h1>
+                    <div class="c-postInfo">
                         <div class="b-date">
                             <p><span class ="fa fa-calendar"></span>
                             <a href="{{ site.baseurl }}/archives/{{ page.date | date: '%Y/%m' }}">{{ page.date | date: "%b %Y" }}</a>
@@ -24,26 +24,27 @@ layout: default
                                 <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}">{{ author.name }}</a>
                             </p>
                         </div>
-						<div class="b-category">
+                        <div class="b-category">
                             <p>
                                 <span class="fa fa-folder"></span>
                                 <a href="{{ site.baseurl }}/category/{{ page.category | slugify }}">{{ page.category }}</a>
                             </p>
-						</div>
-						<div class="b-tags">
-							<p><span class="fa fa-tags"></span></p>
-							<ul>
-								{% for tag in page.tags %}
-									<li><a href="{{ site.baseurl }}/tag/{{ tag | slugify }}">{{ tag }}</a></li>
-								{% endfor %}
-							</ul>
-						</div>
-					</div>
-				</div>
-	            <!-- Main content -->
-	            <div class="b-postContent" id="postContent">
+                        </div>
+                        <div class="b-tags">
+                            <p><span class="fa fa-tags"></span></p>
+                            <ul>
+                                {% for tag in page.tags %}
+                                    <li><a href="{{ site.baseurl }}/tag/{{ tag | slugify }}">{{ tag }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-	        		{{ content }}
+                <!-- Main content -->
+                <div class="b-postContent" id="postContent">
+
+                    {{ content }}
 
                     <!-- subscribe form -->
                     <div class="c-subscribe">
@@ -59,65 +60,65 @@ layout: default
                             <div id="submit-response"></div>
                         </div>
                     </div>
-				</div>
-	        </article>
+                </div>
+            </article>
 
-	        <!-- Author box -->
-			<div class="c-postAuthor">
-				<div class="b-authorTitle">
-					<div class="b-title">
-						<a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}"><h3>{{ author.full_name }}</h3></a>
-					</div>
-					<div class="b-authorSocial">
-						<ul>
-							{% if author.social-url.facebook %}
-							<li class="b-facebook"><a href="{{author.social-url.facebook}}" title="Facebook" target="_blank"><span class="fa fa-facebook"></span></a></li>
-							{% endif %}
-							{% if author.social-url.twitter %}
-							<li class="b-twitter"><a href="{{author.social-url.twitter}}" title="Twitter" target="_blank"><span class="fa fa-twitter"></span></a></li>
-							{% endif %}
-							{% if author.social-url.google_plus %}
-							<li class="b-google-plus"><a href="{{author.social-url.google_plus}}" title="Google+" target="_blank"><span class="fa fa-google-plus"></span></a></li>
-							{% endif %}
-							{% if author.social-url.linkedin %}
-							<li class="b-linkedin"><a href="{{author.social-url.linkedin}}" title="Linkedin" target="_blank"><span class="fa fa-linkedin"></span></a></li>
-							{% endif %}
+            <!-- Author box -->
+            <div class="c-postAuthor">
+                <div class="b-authorTitle">
+                    <div class="b-title">
+                        <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}"><h3>{{ author.full_name }}</h3></a>
+                    </div>
+                    <div class="b-authorSocial">
+                        <ul>
+                            {% if author.social-url.facebook %}
+                            <li class="b-facebook"><a href="{{author.social-url.facebook}}" title="Facebook" target="_blank"><span class="fa fa-facebook"></span></a></li>
+                            {% endif %}
+                            {% if author.social-url.twitter %}
+                            <li class="b-twitter"><a href="{{author.social-url.twitter}}" title="Twitter" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                            {% endif %}
+                            {% if author.social-url.google_plus %}
+                            <li class="b-google-plus"><a href="{{author.social-url.google_plus}}" title="Google+" target="_blank"><span class="fa fa-google-plus"></span></a></li>
+                            {% endif %}
+                            {% if author.social-url.linkedin %}
+                            <li class="b-linkedin"><a href="{{author.social-url.linkedin}}" title="Linkedin" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+                            {% endif %}
                             {% if author.social-url.github %}
                             <li class="b-github"><a href="{{author.social-url.github}}" title="Github" target="_blank"><span class="fa fa-github"></span></a></li>
                             {% endif %}
-	                    </ul>
-					</div>
-				</div>
-				<div class="b-authorCard">
-					<div class="b-authorImg">
-						<img src="{{ author.image }}" alt="Sample Thumb">
-					</div>
-					<div class="b-authorDesc">
-						<p>{{ author.short_desc }}</p>
-					</div>
-					<a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}" class="e-readMore">Read more about {{ author.name }}</a>
-				</div>
-			</div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="b-authorCard">
+                    <div class="b-authorImg">
+                        <img src="{{ author.image }}" alt="Sample Thumb">
+                    </div>
+                    <div class="b-authorDesc">
+                        <p>{{ author.short_desc }}</p>
+                    </div>
+                    <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}" class="e-readMore">Read more about {{ author.name }}</a>
+                </div>
+            </div>
 
-			<!-- Post social share -->
-			<div class="c-postSocial">
-				{% capture share_url %}http%3a//{{ site.host }}/{{ site.baseurl}}/{{ page.url }}{% endcapture %}
-	            <ul>
-	                <li class="b-label">Share</li>
-	                <li class="b-twitter">
-	                	<a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.social.twitter }}&related={{ site.social.twitter }}" rel="nofollow" target="_blank" title="Share on Twitter"><span class="fa fa-twitter"></span> Twitter</a>
-	                </li>
-	                <li class="b-facebook">
-	                	<a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"><span class="fa fa-facebook"></span> Facebook</a>
-	                </li>
-	                <li class="b-linkedin">
-	                	<a href="https://www.linkedin.com/shareArticle?mini=true&url={{ share_url }}&title={{ page.title }}&summary={{ post.content | strip_html | truncatewords:30 }}&source=" rel="nofollow" target="_blank" title="Share on Linkedin"><span class="fa fa-linkedin"></span> Linkedin</a>
-	                </li>
-	                <li class="b-google-plus">
-	                	<a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+"><span class="fa fa-google-plus"></span> Google+</a>
-	                </li>
-	            </ul>
-	        </div>
+            <!-- Post social share -->
+            <div class="c-postSocial">
+                {% capture share_url %}http%3a//{{ site.host }}/{{ site.baseurl}}/{{ page.url }}{% endcapture %}
+                <ul>
+                    <li class="b-label">Share</li>
+                    <li class="b-twitter">
+                        <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.social.twitter }}&related={{ site.social.twitter }}" rel="nofollow" target="_blank" title="Share on Twitter"><span class="fa fa-twitter"></span> Twitter</a>
+                    </li>
+                    <li class="b-facebook">
+                        <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"><span class="fa fa-facebook"></span> Facebook</a>
+                    </li>
+                    <li class="b-linkedin">
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ share_url }}&title={{ page.title }}&summary={{ post.content | strip_html | truncatewords:30 }}&source=" rel="nofollow" target="_blank" title="Share on Linkedin"><span class="fa fa-linkedin"></span> Linkedin</a>
+                    </li>
+                    <li class="b-google-plus">
+                        <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+"><span class="fa fa-google-plus"></span> Google+</a>
+                    </li>
+                </ul>
+            </div>
 
             <!-- Post navigation -->
             <!-- <div class="c-postNav">
@@ -126,7 +127,7 @@ layout: default
                 </div>
                 <div class="c-loadComment">
                     <a href="/about/" class="btn btn-green"><span class="fa fa-users"></span> About EmebdJoural</a>
-				</div>
+                </div>
                 <div class="b-navNext">
                     <a href="{{ page.next.url }}" class="btn btn-green">Newer Post <span class="fa fa-angle-double-right"></span></a>
                 </div>
@@ -174,7 +175,6 @@ layout: default
             {% endif %}
 
             {% if site.disqus %}
-                <!-- Load comments button -->
                 <div id="disqus_thread"></div>
                 <script type="text/javascript">
                     var disqus_shortname = '{{ site.disqus }}';
@@ -192,15 +192,15 @@ layout: default
                 </script>
                 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
             {% endif %}
-		</div>
+        </div>
     </div>
 
     <!-- Blog Sidebar Widgets Column -->
     <div class="col-md-4 js-aside">
-    	<div class="theiaStickySidebar">
-	    	<aside class="c-aside">
-	        	{% include sidebar-postpage.html %}
-	        </aside>
+        <div class="theiaStickySidebar">
+            <aside class="c-aside">
+                {% include sidebar-postpage.html %}
+            </aside>
         </div>
     </div>
 

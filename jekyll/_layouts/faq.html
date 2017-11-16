@@ -3,23 +3,23 @@ layout: blank
 ---
 
 <div class="c-faq">
-	<div class="b-title">
-		<h2>{{ page.title }}</h2>
-	</div>
-	<div class="panel-group" id="accordion">
-		{% assign count = 0 %}
-		{% for entry in page.faq %}
-		{% capture count %}{{ count | plus:1 }}{% endcapture %}
-		<div class="panel panel-default">
-			<div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-target="#collapse-{{ count }}">
-				{{ entry.question }}
-			</div>
-			<div id="collapse-{{ count }}" class="panel-collapse collapse">
-				<div class="panel-body">
-					<p>{{ entry.answer }}</p>
-				</div>
-			</div>
-		</div>
-		{% endfor %}
-	</div>
+    <div class="b-title">
+        <h2>{{ page.title }}</h2>
+    </div>
+    <div class="panel-group" id="accordion">
+        {% assign count = 0 %}
+        {% for entry in page.faq %}
+        {% capture count %}{{ count | plus:1 }}{% endcapture %}
+        <div class="panel panel-default">
+            <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-target="#collapse-{{ count }}">
+                {{ entry.question }}
+            </div>
+            <div id="collapse-{{ count }}" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>{{ entry.answer }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </div>

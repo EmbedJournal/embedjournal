@@ -1,24 +1,24 @@
 {% if include.post %}
-	{% capture image-path %}{{ site.baseurl }}/assets/posts/{{ include.post | replace:'.md','' }}/{{ include.src }}{% endcapture %}
+    {% capture image-path %}{{ site.baseurl }}/assets/posts/{{ include.post | replace:'.md','' }}/{{ include.src }}{% endcapture %}
 {% else %}
-	{% capture image-path %}{{ site.baseurl }}/assets/{{ page.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/{{ include.src }}{% endcapture %}
+    {% capture image-path %}{{ site.baseurl }}/assets/{{ page.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/{{ include.src }}{% endcapture %}
 {% endif %}
 
 <div class="text-center">
-	<a class="b-captionImg" href="#" data-featherlight="{{ image-path }}">
-		<img 
-			data-src="{{ image-path }}" class="img-responsive lazyload" 
-			{% if include.width %}
-				width="{{ include.width }}"
-				{% endif %}
-			{% if include.alt %}
-				alt="{{ include.alt }}"
-			{% else %}
-				alt="{{ include.src | replace: '-', ' ' | replace: '.png', '' | replace: '.jpg', '' | replace: '.gif', '' }}"
-			{% endif %}
-		/>
-		{% if include.caption %}
-			<p>{{ include.caption }}</p>
-		{% endif %}
-	</a>
+    <a class="b-captionImg" href="#" data-featherlight="{{ image-path }}">
+        <img
+            data-src="{{ image-path }}" class="img-responsive lazyload"
+            {% if include.width %}
+                width="{{ include.width }}"
+                {% endif %}
+            {% if include.alt %}
+                alt="{{ include.alt }}"
+            {% else %}
+                alt="{{ include.src | replace: '-', ' ' | replace: '.png', '' | replace: '.jpg', '' | replace: '.gif', '' }}"
+            {% endif %}
+        />
+        {% if include.caption %}
+            <p>{{ include.caption }}</p>
+        {% endif %}
+    </a>
 </div>
