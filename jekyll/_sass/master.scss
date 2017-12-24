@@ -862,7 +862,7 @@ body.model-open {
     font-weight: 400;
 }
 .c-singlePost {
-    padding: 16px 0px;
+    padding: 16px;
     padding-bottom: 0;
 }
 .c-singlePost .b-postContent h2, .c-contentBlock h2 {
@@ -1814,7 +1814,7 @@ body.model-open {
         text-indent: 0;
     }
     .c-singlePost {
-        padding: 16px;
+        padding: 16px 0;
     }
     .c-singlePost .b-postDate {
         position: absolute;
@@ -2157,6 +2157,9 @@ body.model-open {
     }
     .c-contentBlock {
         padding: 32px 100px;
+    }
+    .c-singlePost {
+        padding: 16px 0;
     }
     .c-singlePost .b-postContent ul, .c-contentBlock ul {
         margin-bottom: 20px;
