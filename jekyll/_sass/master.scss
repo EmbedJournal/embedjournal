@@ -1,13 +1,13 @@
-$font-stack-one: 'Roboto', sans-serif;
-$font-stack-two: 'Open Sans', sans-serif;
-$font-stack-three: 'Inconsolata', monospace;
+$font-stack-one: 'Lato', sans-serif;
+$font-stack-two: 'Lato', sans-serif;
+$font-stack-three: 'Roboto Mono', monospace;
 
 $primary-color-light: #89cf00;
 $primary-color: #578300;
 $primary-color-dark: #436303;
 $primary-color-darker: #375000;
 
-$primary-text-color: black;
+$primary-text-color: #222;
 $primary-text-color-light: #293314;
 $primary-text-color-lighter: #676864;
 
@@ -21,6 +21,7 @@ $footer-text-lighter: #cdcdcb;
 
 body {
     font-family: $font-stack-two;
+    -webkit-font-smoothing: antialiased;
     /*background: hsla(210, 10%, 92%, 1);*/
 }
 body.landing {
@@ -481,6 +482,9 @@ body.model-open {
     background: #fff;
     /*box-shadow: 2px 2px 8px 0 rgba(204,204,204,1);*/
 }
+.c-posts .b-posts .b-postItem .c-postInfo {
+    background: #fff;
+}
 .c-posts .b-posts .b-postItem:last-child {
     margin-bottom: 0;
 }
@@ -521,6 +525,9 @@ body.model-open {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    background: #ddd;
+    padding: 8px 0 0 15px;
+    border-radius: 5px;
 }
 .c-postInfo .b-author {
     padding-right: 15px;
@@ -535,7 +542,7 @@ body.model-open {
     padding-right: 15px;
 }
 .c-postInfo .b-date p {
-    color: $primary-color;
+    color: $primary-text-color;
 }
 .c-postInfo .b-date a {
     color: $primary-color-dark;
@@ -550,11 +557,13 @@ body.model-open {
     color: $primary-color-dark;
 }
 .c-postInfo .b-tags {
-    width: 100%;
-    display: flex;
+    padding-right: 15px;
 }
 .c-postInfo .b-tags p {
-    padding-right: 10px;
+    color: $primary-text-color;
+}
+.c-postInfo .b-tags a {
+    color: $primary-color-dark;
 }
 .c-postInfo .b-tags ul {
     margin-bottom: 0;
@@ -568,9 +577,6 @@ body.model-open {
     padding-bottom: 5px;
 }
 .c-postInfo .b-tags ul li a {
-    padding-left: 8px;
-    padding-right: 8px;
-    background: #d8d8d8;
     color: #333;
     text-decoration: none;
     display: inline-block;
@@ -664,6 +670,7 @@ body.model-open {
     bottom: 0;
     left: 0;
     width: 100%;
+    margin-bottom: 10px;
  }
 .c-singlePost .b-postDate {
     margin-bottom: 20px;
@@ -809,7 +816,6 @@ body.model-open {
 .c-singlePost .b-postHeader h1 {
     margin-top: 0;
     margin-bottom: 10px;
-    color: $primary-color-dark;
     font-size: 36px;
     line-height: 1.4;
     font-family: $font-stack-one;
@@ -867,23 +873,26 @@ body.model-open {
 }
 .c-singlePost .b-postContent h2, .c-contentBlock h2 {
     margin-top: 0;
-    color: $primary-text-color-light;
+    color: $primary-text-color;
     font-size: 28px;
     line-height: 1.4;
     font-family: $font-stack-one;
     font-weight: bold;
+    border-bottom: 2px solid hsla(0,0%,10%,.2);
+    margin-bottom: 20px;
 }
 .c-singlePost .b-postContent h3, .c-contentBlock h3 {
-    color: $primary-text-color-light;
+    color: $primary-text-color;
     font-size: 22px;
     line-height: 1.4;
     font-family: $font-stack-one;
     font-weight: bold;
+    border-bottom: 1px solid hsla(0,0%,10%,.1);
 }
 .c-singlePost .b-postContent h4, .c-contentBlock h4 {
     padding-top: 10px;
     margin-bottom: 10px;
-    color: $primary-text-color-light;
+    color: $primary-text-color;
     font-size: 18px;
     line-height: 1.4;
     font-family: $font-stack-one;
@@ -1382,14 +1391,12 @@ body.model-open {
 }
 .c-cardWidget .b-cardTitle {
     padding: 8px;
-    background: #869e7e;
-    border-radius: 4px;
+    border-bottom: 1px solid hsla(0,0%,10%,.3);
 }
 .c-cardWidget .b-cardTitle h3 {
     margin-top: 0;
     margin-bottom: 0;
     font-family: $font-stack-two;
-    color: #fff;
     font-size: 24px;
 }
 .c-cardWidget .b-cardContent .b-tagCloud {
