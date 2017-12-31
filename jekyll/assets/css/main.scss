@@ -3,5 +3,12 @@
 # only Main files contain this front matter, not partials.
 ---
 
+@import 'variables';
 @import 'master';
+@import 'card-widget';
+@import 'post';
+@import 'page';
 @import 'syntax';
+@import 'footer';
+
+@import 'responsive';

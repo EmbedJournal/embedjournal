@@ -1,34 +1,27 @@
-$color_1: #008000;
-$color_2: #0000ff;
-$color_3: #2b91af;
-$color_4: #a31515;
-$color_5: #FF0000;
-$background_color_1: #ffffcc;
-
 .highlight {
     .hll {
-        background-color: $background_color_1;
+        background-color: $background_color_s1;
     }
     .c {
-        color: $color_1;
+        color: $color_s1;
     }
     .err {
-        border: 1px solid $color_5;
+        border: 1px solid $color_s5;
     }
     .k {
-        color: $color_2;
+        color: $color_s2;
     }
     .cm {
-        color: $color_1;
+        color: $color_s1;
     }
     .cp {
-        color: $color_2;
+        color: $color_s2;
     }
     .c1 {
-        color: $color_1;
+        color: $color_s1;
     }
     .cs {
-        color: $color_1;
+        color: $color_s1;
     }
     .ge {
         font-style: italic;
@@ -53,63 +46,63 @@ $background_color_1: #ffffcc;
         font-weight: bold;
     }
     .kc {
-        color: $color_2;
+        color: $color_s2;
     }
     .kd {
-        color: $color_2;
+        color: $color_s2;
     }
     .kn {
-        color: $color_2;
+        color: $color_s2;
     }
     .kp {
-        color: $color_2;
+        color: $color_s2;
     }
     .kr {
-        color: $color_2;
+        color: $color_s2;
     }
     .kt {
-        color: $color_3;
+        color: $color_s3;
     }
     .s {
-        color: $color_4;
+        color: $color_s4;
     }
     .nc {
-        color: $color_3;
+        color: $color_s3;
     }
     .ow {
-        color: $color_2;
+        color: $color_s2;
     }
     .sb {
-        color: $color_4;
+        color: $color_s4;
     }
     .sc {
-        color: $color_4;
+        color: $color_s4;
     }
     .sd {
-        color: $color_4;
+        color: $color_s4;
     }
     .s2 {
-        color: $color_4;
+        color: $color_s4;
     }
     .se {
-        color: $color_4;
+        color: $color_s4;
     }
     .sh {
-        color: $color_4;
+        color: $color_s4;
     }
     .si {
-        color: $color_4;
+        color: $color_s4;
     }
     .sx {
-        color: $color_4;
+        color: $color_s4;
     }
     .sr {
-        color: $color_4;
+        color: $color_s4;
     }
     .s1 {
-        color: $color_4;
+        color: $color_s4;
     }
     .ss {
-        color: $color_4;
+        color: $color_s4;
     }
 }

@@ -1,0 +1,108 @@
+.s-footer {
+    margin-top: 22px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background: #151A0D;
+}
+
+.c-footerLogo {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.c-footerSocial {
+    margin-bottom: 32px;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+        align-items: center;
+        justify-content: center;
+        li {
+            margin-bottom: 16px;
+            padding-left: 16px;
+            padding-right: 16px;
+            width: 25%;
+            text-align: center;
+            a {
+                color: $color_4;
+                font-size: 30px;
+                &:hover {
+                    color: $color_14;
+                }
+            }
+        }
+    }
+}
+
+.c-footerAbout {
+    h3 {
+        margin-top: 0;
+        margin-bottom: 8px;
+        color: $color_15;
+        font-family: $font_family_1;
+        font-weight: 700;
+        text-align: center;
+    }
+    p {
+        color: $color_4;
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            h3 {
+                color: $color_14;
+            }
+        }
+    }
+}
+
+.c-footerCopyText {
+    p {
+        margin-bottom: 0;
+        color: $color_4;
+        text-align: center;
+    }
+    a {
+        color: $color_4;
+        text-decoration: none;
+        &:hover {
+            color: $color_14;
+        }
+    }
+}
+
+.c-footerNav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+    ul {
+        display: none;
+        margin-bottom: 0;
+        padding-left: 72px;
+        list-style: none;
+        li {
+            margin-bottom: 8px;
+            width: 100%;
+            a {
+                color: $color_4;
+                text-decoration: none;
+                font-size: 14px;
+                &:hover {
+                    color: $color_14;
+                }
+            }
+            a.e-title {
+                color: $color_14;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

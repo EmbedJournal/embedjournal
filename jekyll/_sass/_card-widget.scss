@@ -1,0 +1,237 @@
+.c-cardWidget {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 30px;
+    background: #fff;
+    .b-cardTitle {
+        padding: 8px;
+        border-bottom: 1px solid rgba(26, 26, 26, 0.3);
+        h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: $font_family_1;
+            font-size: 24px;
+        }
+    }
+    .b-cardContent {
+        .b-tagCloud {
+            padding: 16px;
+            a {
+                margin-right: 5px;
+                margin-bottom: 5px;
+                padding: 5px;
+                color: $color_8;
+                font-size: 16px;
+                display: inline-block;
+                background: #d8d8d8;
+                border-radius: 4px;
+                text-decoration: none;
+            }
+        }
+        .panel-group {
+            margin-bottom: 0;
+            .panel {
+                margin-top: 10px;
+                border-radius: 0;
+                border: none;
+            }
+        }
+        .panel-default {
+            .panel-body {
+                border: none;
+                padding: 0;
+                .b-panelItems {
+                    margin-bottom: 0;
+                    padding-left: 0;
+                    list-style: none;
+                    li {
+                        a {
+                            position: relative;
+                            padding: 8px 16px;
+                            display: block;
+                            text-decoration: none;
+                            font-size: 14px;
+                            color: $color_6;
+                        }
+                    }
+                }
+            }
+            .b-badge {
+                position: absolute;
+                top: 50%;
+                right: 16px;
+                padding-left: 4px;
+                padding-right: 4px;
+                transform: translateY(-50%);
+                display: block;
+                background: #333;
+                color: $color_1;
+                min-width: 37px;
+                height: 20px;
+                line-height: 20px;
+                font-size: 14px;
+                border-radius: 6px;
+                text-align: center;
+            }
+            >.panel-heading {
+                position: relative;
+                padding: 0;
+                background: none;
+                a {
+                    padding: 8px 16px;
+                    display: block;
+                    text-decoration: none;
+                    color: $color_6;
+                }
+                a.collapsed {
+                    color: $color_6;
+                }
+            }
+        }
+        .b-category {
+            .b-badge {
+                position: absolute;
+                top: 50%;
+                right: 16px;
+                padding-left: 4px;
+                padding-right: 4px;
+                transform: translateY(-50%);
+                display: block;
+                background: #333;
+                color: $color_1;
+                min-width: 37px;
+                height: 20px;
+                line-height: 20px;
+                font-size: 14px;
+                border-radius: 6px;
+                text-align: center;
+            }
+            .b-categoryItems {
+                margin: 10px 0 0 0;
+                padding-left: 0;
+                list-style: none;
+                li {
+                    a {
+                        position: relative;
+                        padding: 8px 16px;
+                        display: block;
+                        text-decoration: none;
+                        color: $color_6;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .b-cardSocial {
+            ul {
+                margin-bottom: 0;
+                padding: 16px;
+                padding-bottom: 0;
+                display: flex;
+                list-style: none;
+                align-items: center;
+                li {
+                    margin-bottom: 16px;
+                    width: 25%;
+                    text-align: center;
+                    a {
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                        color: $color_1;
+                        border-radius: 50%;
+                        text-align: center;
+                        font-size: 14px;
+                        transition: 0.3s all;
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+                li.b-rss {
+                    a {
+                        background: #fcbb2d;
+                    }
+                }
+                li.b-google-plus {
+                    a {
+                        background: #dd4c37;
+                    }
+                }
+                li.b-facebook {
+                    a {
+                        background: #3b589a;
+                    }
+                }
+                li.b-twitter {
+                    a {
+                        background: #22a3f6;
+                    }
+                }
+                li.b-linkedin {
+                    a {
+                        background: #0077b3;
+                    }
+                }
+                li.b-youtube {
+                    a {
+                        background: #cd211f;
+                    }
+                }
+                li.b-tumblr {
+                    a {
+                        background: #344356;
+                    }
+                }
+                li.b-github {
+                    a {
+                        background: #343434;
+                    }
+                }
+            }
+        }
+        .media {
+            margin-top: 0;
+            padding: 16px;
+            &:last-child {
+                border-bottom: none;
+            }
+            .media-left {
+                img {
+                    max-width: 80px;
+                    border: 1px solid #e3e5dc;
+                }
+                a {
+                    display: inline-block;
+                    padding: 2px;
+                    border: 1px solid #e3e5dc;
+                }
+            }
+            .media-body {
+                a {
+                    display: block;
+                    text-decoration: none;
+                    h4 {
+                        margin-bottom: 14px;
+                        color: $color_7;
+                        font-family: $font_family_1;
+                        font-size: 20px;
+                    }
+                }
+                .b-dateLabel {
+                    margin: 0;
+                    color: $color_13;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: $font_family_1;
+        color: $color_6;
+        font-size: 30px;
+    }
+}
