@@ -5,10 +5,13 @@ EmbedJournal Jekyll Template
 
 ### Build Dependencies:
 
-The build process and internal tools reqire the following dependecies. Make
-you have perl and cpan installed.
+The build process and internal tools reqire the following dependecies. Make sure
+you have perl and cpan installed. To build some native modules you will need
+build essentials too.
 
 ``` shell
+sudo apt-get update
+$ sudo apt install build-essential
 $ sudo apt-get install perl git curl wget gnupg2
 $ cpan -i 'YAML::XS'
 
@@ -17,13 +20,22 @@ $ sudo apt install install php7.0 php7.0-curl libapache2-mod-php7.0
 $ sudo apt install install php5 php5-curl libapache2-mod-php5
 ```
 
+### Clone Repo
+
+Clone and update submodules with the following commands.
+
+``` shell
+$ git clone https://gitlab.com/embedjournal/jekyll-depot.git ej-jekyll
+$ cd ej-jekyll/content && git submodule init && git submodule update
+```
+
 ### Mailchimp Integration:
 
 All PHP code required to subscribe a user to EJ mailing list is already present in
 the source tree and no changes are required. For protection of privacy reasons, we
 keep the API Key in a separate file which is not in VCS.
 
-Put the API Key in the following format and place it in /assets/php/config.ini
+Put the API Key in the following format and place it in jekyll/assets/php/config.ini
 
 ``` text
 api_key = your-api-key
@@ -45,7 +57,8 @@ After installing RVM first we need to set up rvm environment using below
 command. so that current shell takes new environment settings.
 
 ``` shell
-$ source /home/${USER}/.rvm/scripts/rvm
+$ source /home/${USER}/.rvm/scripts/rvm # for non-root users
+$ source /etc/profile.d/rvm.sh          # for roor
 ```
 
 You might want to append the following to your bashrc if you don't what to keep
@@ -87,7 +100,7 @@ following command to install required version of Ruby. As below example we are
 installing Ruby 2.2.4 on our system.
 
 ``` shell
-$ rvm install 2.4.0
+$ rvm install 2.4.1
 ```
 
 **Setup Default Ruby Version**
@@ -97,7 +110,7 @@ may also install multiple versions of ruby using above step command and select
 which version you want to use.
 
 ``` shell
-$ rvm use 2.4.0 --default
+$ rvm use 2.4.1 --default
 ```
 
 **Check Ruby Version**
@@ -112,8 +125,7 @@ site to /var/www/embedjoural.com/public_html. Make sure that this directory is
 present and writable.
 
 ``` shell
-sudo apt-get update
-sudo apt-get install apache2 libapache2-mod-php5
+sudo apt-get install apache2 libapache2-mod-php7.0
 sudo mkdir -p /var/www/embedjournal.com/public_html
 sudo chown $USER:$USER /var/www/embedjournal.com/public_html
 ```
@@ -121,6 +133,7 @@ Enable mode_rewrite in apache2 and setup a new site with DocumentRoot at
 /var/www/embedjoural.com/public_html.
 
 ``` shell
+sudo a2enmod ssl
 sudo a2enmod rewrite
 
 cat > /etc/apache2/sites-available/embedjournal.conf << EOF
@@ -159,7 +172,7 @@ Now, we have met all ruby, jekyll related dependencies. Time to meet embedjoural
 dependencies (sigh!). Since we have bundler, this is quite simple.
 
 ``` shell
-$ cd path-to-cloned-repo
+$ cd ej-jekyll/jekyll/
 $ bundle install
 ```
 
