@@ -1280,15 +1280,22 @@ body.model-open {
     }
 }
 
-.section-nav {
+#section-nav {
     border: 1px solid #3333332b;
     border-radius: 4px;
-    padding: 0 16px;
+    padding: 0 16px 16px 16px;
     font-size: 12px;
-    width: 50%;
-    margin-left: 30px;
+    width: 70%;
+    margin: 30px;
     h3 {
+        padding-bottom: 4px;
         border-bottom: 1px solid #3333332b;
-        font-size: 20px;
+    }
+    ul, li {
+        margin-bottom: 0;
+    }
+    ul li {
+        font-size: 15px;
+        line-height: 1.5;
     }
 }

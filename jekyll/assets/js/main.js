@@ -114,7 +114,15 @@ $(document).ready(function() {
 
     //setInterval(scrollCheck, 250);
 
-    $("#postContent a").attr("target","_blank");
+    $('#postContent a').addClass('post-link');
+
+    $('a').each(function() {
+        if( location.hostname !== this.hostname && this.hostname.length ) {
+            if ( $(this).hasClass('post-link') ) {
+                $(this).attr("target", "_blank");
+            }
+        }
+    });
 
     $('#newsletter').on('change', function() {
         triggerCheck($(this));
