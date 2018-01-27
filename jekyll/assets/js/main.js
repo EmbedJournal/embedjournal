@@ -61,8 +61,7 @@ $(document).ready(function() {
         }
     });
 
-    $('#subscribe-form .form-input').click(function() {
-        console.log("in focus");
+    $('#form-fname,#form-email').click(function() {
         $(this).removeClass('form-error');
     });
 
@@ -71,23 +70,23 @@ $(document).ready(function() {
         event.preventDefault();
 
         var error = false;
-        var form_name = $("#subscribe-form input[name='fname']").val();
-        var form_email = $("#subscribe-form input[name='email']").val();
+        var form_name = $("#subscribe-form .input-wrapper input[name='fname']").val();
+        var form_email = $("#subscribe-form .input-wrapper input[name='email']").val();
 
-        console.log({
-            name: form_name,
-            email: form_email
-        });
+        // console.log({
+        //     name: form_name,
+        //     email: form_email
+        // });
 
         if ((typeof form_name !== 'undefined') &&
             (form_name.length == 0 || form_name.length > 64)) {
-            console.log('Got here');
-            $('#form-fname').closest('div').addClass('form-error');
+            $('#form-fname').addClass('form-error');
             error = true;
         }
 
         if (validate_email(form_email) == false) {
-            $('#form-email').closest('div').addClass('form-error');
+            // console.log('Email validation error!');
+            $('#form-email').addClass('form-error');
             error = true;
         }
 
@@ -102,12 +101,17 @@ $(document).ready(function() {
                 email: form_email
             },
             success: function(data, textStatus) {
-                $('.b-field').hide();
-                $('#submit-response').html(data);
+                $('#form-email,#subscribe-submit').hide();
+                $('#submit-response').html('<p>Success!, you are now added to our list of hackers. You will hear from us soon.</p>');
             },
             error: function(xhr, textStatus, errorThrown) {
-                $('.b-field').hide();
-                $('#submit-response').html('<p>Request failed! Try again later.</p>');
+                $('#form-email,#subscribe-submit').hide();
+                $('#submit-response').html('<p>Oops, your request failed! Please try again later.</p>');
+            },
+            statusCode: {
+                500: function() {
+                    $('#submit-response').html('<p>Request failed due to an internal error. Please contact us for support.</p>');
+                }
             }
         });
     });
@@ -258,3 +262,15 @@ $.fn.customGallery = function() {
     $(this).find('.b-galleryImg > img').height(galleryheight);
 }
 
+$(function() {
+    // Add header-link class to all headers except h1 to produce header links.
+    return $("h2, h3, h4, h5, h6").each(function(i, el) {
+        var $el, icon, id;
+        $el = $(el);
+        id = $el.attr('id');
+        icon = '<i class="fa fa-link"></i>';
+        if (id) {
+            return $el.prepend($("<a />").addClass("header-link").attr("href", "#" + id).html(icon));
+        }
+    });
+});

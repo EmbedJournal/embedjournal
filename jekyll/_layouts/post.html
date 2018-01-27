@@ -5,7 +5,7 @@ layout: default
 {% assign author = site.data.authors[page.author] %}
 
 <div class="row">
-    <div class="col-md-8 js-content">
+    <div class="col-md-8 js-content content">
         <div class="theiaStickySidebar">
             <article class="c-singlePost">
 
@@ -47,20 +47,6 @@ layout: default
 
                     {{ content }}
 
-                    <!-- subscribe form -->
-                    <div class="c-subscribe">
-                        <div class="b-subscribeContent">
-                            <form id="subscribe-form">
-                                <div class="b-field form-input">
-                                    <input name="email" type="text" id="form-email" placeholder="join the 2000+ hackers around the world" />
-                                </div>
-                                <div class="b-field">
-                                    <input type="submit" value="Subscribe" id="form-submit"  class="btn btn-soft" />
-                                </div>
-                            </form>
-                            <div id="submit-response"></div>
-                        </div>
-                    </div>
                 </div>
             </article>
 
@@ -107,13 +93,13 @@ layout: default
                 <ul>
                     <li class="b-label">Share</li>
                     <li class="b-twitter">
-                        <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.social.twitter }}&related={{ site.social.twitter }}" rel="nofollow" target="_blank" title="Share on Twitter"><span class="fa fa-twitter"></span> Twitter</a>
+                        <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=embedjournal&related=embedjournal" rel="nofollow" target="_blank" title="Share on Twitter"><span class="fa fa-twitter"></span> Twitter</a>
                     </li>
                     <li class="b-facebook">
                         <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"><span class="fa fa-facebook"></span> Facebook</a>
                     </li>
                     <li class="b-linkedin">
-                        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ share_url }}&title={{ page.title }}&summary={{ post.content | strip_html | truncatewords:30 }}&source=" rel="nofollow" target="_blank" title="Share on Linkedin"><span class="fa fa-linkedin"></span> Linkedin</a>
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&summary="{{ page.content | strip_html | truncatewords:50 }}"&source={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Linkedin"><span class="fa fa-linkedin"></span> Linkedin</a>
                     </li>
                     <li class="b-google-plus">
                         <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+"><span class="fa fa-google-plus"></span> Google+</a>
@@ -197,7 +183,7 @@ layout: default
     </div>
 
     <!-- Blog Sidebar Widgets Column -->
-    <div class="col-md-4 js-aside">
+    <div class="col-md-4 js-aside sidebar">
         <div class="theiaStickySidebar">
             <aside class="c-aside">
                 {% include sidebar-postpage.html %}

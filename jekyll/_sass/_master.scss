@@ -32,6 +32,113 @@ body.model-open {
     background: #578300;
 }
 
+.sidebar {
+    border-left: 1px solid #f3f3f3;
+}
+
+.header-link {
+    position: absolute;
+    left: -0.5em;
+    opacity: 0;
+
+    \-webkit-transition: opacity 0.2s ease-in-out 0.1s;
+    \-moz-transition: opacity 0.2s ease-in-out 0.1s;
+    \-ms-transition: opacity 0.2s ease-in-out 0.1s;
+}
+
+h2:hover .header-link,
+h3:hover .header-link,
+h4:hover .header-link,
+h5:hover .header-link,
+h6:hover .header-link {
+    opacity: 1;
+}
+
+
+.c-subscribeBox {
+    margin: 20px;
+    padding: 5px 20px;
+    background: #5a5a5a;
+    text-align: center;
+    max-width: 600px;
+
+    .title {
+        display: inline-block;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        color: #FFF;
+        font-size: 1.6em;
+        line-height: 1;
+    }
+
+    .input-wrapper {
+        position: relative;
+        span {
+            position: absolute;
+            left: 14px;
+            top: 16px;
+        }
+        .fa .fa-envelope-o {
+            vertical-align: middle;
+            font-weight: 400;
+            line-height: 1;
+            color: #206494;
+            font-size: .1rem;
+            height: 15px;
+            &:before {
+                content: "\f003";
+                float: left;
+                margin-top: 10px;
+                color: #ccc;
+                flex-wrap: wrap;
+            }
+        }
+        #form-email {
+            padding-left: 40px;
+            font-size: 1.1em;
+            width: 100%;
+            height: 48px;
+        }
+    }
+
+    .button {
+        margin: 10px 0;
+        transition: all .1s ease-in-out;
+        display: inline-block;
+        border: none;
+        border-radius: 6px;
+        background: #89b631;
+        color: #fff;
+        font-weight: 600;
+        text-align: center;
+        text-decoration: none;
+        line-height: 1;
+        cursor: pointer;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        width: 100%;
+        height: 48px;
+        &:hover {
+            background: #568200;
+        }
+    }
+
+    #subscribe-form {
+        >.form-error {
+            input[type=text] {
+                border-style: solid;
+                border-color: red;
+            }
+        }
+    }
+
+    #submit-response {
+        color: #c5c5c5;
+        font-size: 18px;
+    }
+}
+
 .s-categoryNav.-fixed {
     position: fixed;
     top: 0px;
@@ -427,7 +534,7 @@ body.model-open {
 }
 
 .c-posts {
-    margin: 0 -15px 30px -15px;
+    margin: 0 -15px;
     .b-title {
         padding: 16px;
         h3 {
@@ -827,7 +934,7 @@ body.model-open {
 }
 
 .c-postAuthor {
-    margin: 60px -15px 30px -15px;
+    margin: 20px -15px;
     margin-right: -15px;
     margin-bottom: 30px;
     margin-left: -15px;
@@ -1011,15 +1118,6 @@ body.model-open {
                 width: 100%;
                 border-radius: 4px;
             }
-        }
-    }
-}
-
-#subscribe-form {
-    >.form-error {
-        input[type=text] {
-            border-style: solid;
-            border-color: $border_color_2;
         }
     }
 }
