@@ -677,5 +677,13 @@
     }
     #section-nav {
         width: auto;
+        margin: 30px 0;
+    }
+}
+
+@media print{
+    .sidebar, .c-relatedArticle, div#st-1, div#disqus_thread, section.s-footer,
+    .b-authorSocial, .c-postAuthor .b-authorCard .b-authorImg, header.l-header {
+        display: none;
     }
 }
