@@ -612,41 +612,23 @@ h6:hover .header-link {
     background: #ddd;
     padding: 8px 0 0 15px;
     border-radius: 5px;
+    p {
+        color: $color_6;
+    }
+    a {
+        color: $color_7;
+    }
     .b-author {
         padding-right: 15px;
-        p {
-            color: $color_6;
-        }
-        a {
-            color: $color_7;
-        }
     }
     .b-date {
         padding-right: 15px;
-        p {
-            color: $color_6;
-        }
-        a {
-            color: $color_7;
-        }
     }
     .b-category {
         padding-right: 15px;
-        p {
-            color: $color_6;
-        }
-        a {
-            color: $color_7;
-        }
     }
     .b-tags {
         padding-right: 15px;
-        p {
-            color: $color_6;
-        }
-        a {
-            color: $color_7;
-        }
         ul {
             margin-bottom: 0;
             padding-left: 0;
@@ -669,6 +651,13 @@ h6:hover .header-link {
                 }
             }
         }
+    }
+    .b-print {
+        padding-left: 15px;
+        direction: rtl;
+        position: absolute;
+        right: 30px;
+        display: none;
     }
 }
 

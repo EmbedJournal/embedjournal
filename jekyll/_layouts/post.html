@@ -39,6 +39,11 @@ layout: default
                                 {% endfor %}
                             </p>
                         </div>
+                        <div class="b-print">
+                            <p><span class ="fa fa-print"></span>
+                            <a href="#" onclick="window.print();">Print</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -50,13 +55,15 @@ layout: default
                 </div>
             </article>
 
+            <div class="sharethis-inline-share-buttons"></div>
+
             <!-- Author box -->
             <div class="c-postAuthor">
                 <div class="b-authorTitle">
                     <div class="b-title">
                         <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}"><h3>{{ author.full_name }}</h3></a>
                     </div>
-                    <div class="b-authorSocial">
+                    <!-- <div class="b-authorSocial">
                         <ul>
                             {% if author.social-url.facebook %}
                             <li class="b-facebook"><a href="{{author.social-url.facebook}}" title="Facebook" target="_blank"><span class="fa fa-facebook"></span></a></li>
@@ -74,7 +81,7 @@ layout: default
                             <li class="b-github"><a href="{{author.social-url.github}}" title="Github" target="_blank"><span class="fa fa-github"></span></a></li>
                             {% endif %}
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="b-authorCard">
                     <div class="b-authorImg">
@@ -86,8 +93,6 @@ layout: default
                     <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}" class="e-readMore">Read more about {{ author.name }}</a>
                 </div>
             </div>
-
-            <div class="sharethis-inline-share-buttons"></div>
 
             <!-- Related Posts -->
             {% assign hasSimilar = '' %}

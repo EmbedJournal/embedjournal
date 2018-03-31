@@ -141,33 +141,6 @@
     </div>
 </div>
 
-<!-- Recent posts widget -->
-<div class="c-cardWidget">
-    <div class="b-cardTitle">
-        <h3>Recent Posts</h3>
-    </div>
-    <div class="b-cardContent">
-        {% for post in site.posts limit:5 %}
-        <div class="media">
-            <div class="media-left">
-                <a href="{{ post.url | relative_url }}">
-                    {% if post.thumbnail %}
-                        {% capture image-path %}{{ site.baseurl }}/assets/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/{{ post.thumbnail }}{% endcapture %}
-                    {% else %}
-                        {% capture image-path %}{{ site.baseurl }}/assets/images/categories/{{ post.category | slugify }}.jpg{% endcapture %}
-                    {% endif %}
-                    <img class="media-object" src="{{ image-path }}" alt="{{ post.title }}">
-                </a>
-            </div>
-            <div class="media-body">
-                <a href="{{ post.url | relative_url }}"><h4 class="media-heading">{{ post.title }}</h4></a>
-                <p class="b-dateLabel">{{ post.date | date: "%b %-d, %Y" }}</p>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-</div>
-
 <!-- Popular page widget -->
 <div class="c-cardWidget">
     <div class="b-cardTitle">
