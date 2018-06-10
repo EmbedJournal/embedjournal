@@ -150,6 +150,23 @@ sub load_config()
 	}
 }
 
+sub generate_scaled_images()
+{
+	my @file_list;
+	my @post_file_list = `find content/images/ jekyll/assets/images/categories/ -type f -name 'post-thumb.*' | grep -v '/scaled/'`;
+	my @category_file_list = `find jekyll/assets/images/categories/ -maxdepth 1 -type f`;
+	@file_list = (@post_file_list, @category_file_list);
+	foreach (@file_list) {
+		chomp;
+		print("Testing $_\n");
+		my ($name, $path) = fileparse($_);
+		next if (-f "$path/scaled/$name");
+		print "Generating scaled image at $path/scaled/$name";
+		system("mkdir -p $path/scaled");
+		system("convert $path/$name -resize 80x80^ -gravity center -extent 80x80 $path/scaled/$name");
+	}
+}
+
 sub build_site()
 {
 	my ($env, $opts);
@@ -180,6 +197,7 @@ sub build_site()
 }
 
 load_config();
+generate_scaled_images();
 build_site() if $do_build;
 create_category() if (defined $category_name);
 

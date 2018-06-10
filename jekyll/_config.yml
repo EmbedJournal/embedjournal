@@ -88,6 +88,7 @@ exclude:
   - README.md
   - tools/
   - drafts/
+  - vendor/
 
 include:
   - .htaccess
