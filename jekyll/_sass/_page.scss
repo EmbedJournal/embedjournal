@@ -40,10 +40,10 @@
     h1 {
         margin-top: 0;
         margin-bottom: 20px;
-        color: $color_7;
+        color: $color_6;
         font-size: 32px;
         line-height: 1.4;
-        font-family: $font_family_1;
+        font-family: $primary_font;
         font-weight: 400;
     }
     h2 {
@@ -51,7 +51,7 @@
         color: $color_6;
         font-size: 28px;
         line-height: 1.4;
-        font-family: $font_family_1;
+        font-family: $primary_font;
         font-weight: bold;
         /* border-bottom: 2px solid rgba(26, 26, 26, 0.2); */
         margin-bottom: 20px;
@@ -60,7 +60,7 @@
         color: $color_6;
         font-size: 22px;
         line-height: 1.4;
-        font-family: $font_family_1;
+        font-family: $primary_font;
         font-weight: bold;
         /* border-bottom: 1px solid rgba(26, 26, 26, 0.1); */
     }
@@ -70,7 +70,7 @@
         color: $color_6;
         font-size: 18px;
         line-height: 1.4;
-        font-family: $font_family_1;
+        font-family: $primary_font;
         font-weight: bold;
     }
     p {
@@ -129,7 +129,7 @@
         background: #151A0D;
         border-radius: 0;
         color: $color_10;
-        font-family: $font_family_3;
+        font-family: $mono_font;
         font-size: 15px;
         white-space: nowrap;
     }
@@ -175,7 +175,7 @@
         font-size: 14px;
         border: 1px solid #ddd;
         background-color: $background_color_1;
-        border-radius: 4px;
+        // border-radius: 4px;
         padding: 3px;
         margin: 1px;
         line-height: 1;

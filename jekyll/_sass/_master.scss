@@ -1,5 +1,5 @@
 body {
-    font-family: $font_family_1;
+    font-family: $primary_font;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -29,7 +29,7 @@ body.model-open {
     left: 0;
     width: 100%;
     z-index: 4;
-    background: #578300;
+    background: #424242;
 }
 
 .sidebar {
@@ -108,7 +108,7 @@ h6:hover .header-link {
         display: inline-block;
         border: none;
         border-radius: 6px;
-        background: #89b631;
+        background: #568200;
         color: #fff;
         font-weight: 600;
         text-align: center;
@@ -120,7 +120,7 @@ h6:hover .header-link {
         width: 100%;
         height: 48px;
         &:hover {
-            background: #568200;
+            background: #89b631;
         }
     }
 
@@ -190,7 +190,7 @@ h6:hover .header-link {
                 color: $color_1;
                 text-decoration: none;
                 &:hover {
-                    background: #375000;
+                    background: #262626;
                 }
             }
             .submenu {
@@ -227,7 +227,8 @@ h6:hover .header-link {
         }
         li.active {
             a {
-                background: #375000;
+                background: #262626;
+                pointer-events:none;
             }
         }
         li.hasSubmenu {
@@ -264,7 +265,7 @@ h6:hover .header-link {
             color: $color_2;
             font-size: 42px;
             line-height: 1.4;
-            font-family: $font_family_1;
+            font-family: $primary_font;
             font-weight: bold;
         }
         p {
@@ -398,7 +399,7 @@ h6:hover .header-link {
     right: 20px;
     bottom: -40px;
     z-index: 4;
-    background: rgba(87, 131, 0, 0.6);
+    background: rgba(86, 86, 86, 0.82);
     text-decoration: none;
     color: $color_1;
     width: 40px;
@@ -409,8 +410,8 @@ h6:hover .header-link {
     border-radius: 4px;
     transition: 0.3s all;
     &:hover {
-        color: $color_1;
-        background: #476900;
+        color: #fff;
+        background: #222;
     }
     &:focus {
         color: $color_1;
@@ -427,7 +428,7 @@ h6:hover .header-link {
         h3 {
             margin-top: 0;
             margin-bottom: 0;
-            font-family: $font_family_1;
+            font-family: $primary_font;
             color: $color_4;
             font-size: 36px;
         }
@@ -452,14 +453,14 @@ h6:hover .header-link {
             color: $color_5;
             font-size: 18px;
             background: none;
-            font-family: $font_family_1;
+            font-family: $primary_font;
             cursor: pointer;
             &:after {
                 position: absolute;
                 top: 10px;
                 right: 10px;
                 content: "\f078";
-                font-family: $font_family_2;
+                font-family: "fontAwesome";
                 display: inline-block;
             }
         }
@@ -491,14 +492,17 @@ h6:hover .header-link {
                 color: $color_6;
                 font-size: 16px;
                 text-align: center;
+                margin-top: 2px;
+                &:hover {
+                    color: $color_13;
+                }
             }
         }
         li.active {
             a {
-                background: transparent;
+                pointer-events:none;
                 box-shadow: none;
-                border-bottom: 2px solid #578300;
-                color: $color_2;
+                border-top: 2px solid #222;
             }
         }
     }
@@ -540,7 +544,7 @@ h6:hover .header-link {
         h3 {
             margin-top: 0;
             margin-bottom: 0;
-            font-family: $font_family_1;
+            font-family: $primary_font;
             color: $color_6;
             font-size: 36px;
         }
@@ -589,8 +593,8 @@ h6:hover .header-link {
             }
             h4 {
                 margin-bottom: 8px;
-                color: $color_7;
-                font-family: $font_family_1;
+                color: $color_6;
+                font-family: $primary_font;
                 font-size: 22px;
                 font-weight: bold;
                 line-height: 1.5;
@@ -612,11 +616,12 @@ h6:hover .header-link {
     background: #ddd;
     padding: 8px 0 0 15px;
     border-radius: 5px;
+    margin: 0 0 30px 0;
     p {
         color: $color_6;
     }
     a {
-        color: $color_7;
+        color: $color_6;
     }
     .b-author {
         padding-right: 15px;
@@ -720,8 +725,8 @@ h6:hover .header-link {
         .e-title {
             margin-top: 0;
             text-align: center;
-            color: $color_2;
-            font-family: $font_family_1;
+            color: $color_6;
+            font-family: $primary_font;
         }
         .b-contact {
             text-align: center;
@@ -748,6 +753,9 @@ h6:hover .header-link {
                         font-size: 24px;
                         color: $color_6;
                     }
+                    &:hover {
+                        color: $color_15;
+                    }
                 }
             }
         }
@@ -764,7 +772,7 @@ h6:hover .header-link {
         blockquote {
             p {
                 margin: 0;
-                font-size: 20px;
+                font-size: 18px;
                 font-style: italic;
             }
         }
@@ -843,8 +851,8 @@ h6:hover .header-link {
         }
         li.active {
             a {
-                color: $color_7;
-                border-bottom: 2px solid #578300;
+                color: $color_6;
+                border-bottom: 2px solid #222;
             }
         }
         li.disabled {
@@ -949,7 +957,7 @@ h6:hover .header-link {
     h3 {
         margin-top: 5px;
         margin-bottom: 16px;
-        font-family: $font_family_1;
+        font-family: $primary_font;
         color: $color_13;
         font-size: 25px;
     }
@@ -977,16 +985,9 @@ h6:hover .header-link {
         }
         .b-authorDesc {
             margin-bottom: 15px;
-            h4 {
-                margin-top: 0;
-                margin-bottom: 8px;
-                color: $color_7;
-                font-family: $font_family_1;
-                font-size: 24px;
-            }
             p {
                 margin: 0;
-                color: $color_13;
+                color: $color_8;
                 font-size: 15px;
                 line-height: 1.6;
             }
@@ -1071,10 +1072,13 @@ h6:hover .header-link {
         left: 0;
         display: block;
         text-decoration: none;
-        color: $color_7;
+        color: $color_6;
         font-size: 14px;
         text-align: center;
         width: 100%;
+        &:hover {
+            color: $color_7;
+        }
     }
 }
 
@@ -1147,7 +1151,7 @@ h6:hover .header-link {
         margin-bottom: 0;
         padding: 16px;
         border-bottom: 1px solid #e3e5dc;
-        font-family: $font_family_1;
+        font-family: $primary_font;
         color: $color_6;
         font-size: 30px;
     }
@@ -1164,8 +1168,8 @@ h6:hover .header-link {
                     text-decoration: none;
                     h4 {
                         margin-bottom: 14px;
-                        color: $color_7;
-                        font-family: $font_family_1;
+                        color: $color_6;
+                        font-family: $primary_font;
                         font-size: 20px;
                     }
                 }
