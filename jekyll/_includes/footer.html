@@ -51,7 +51,8 @@
                 </div>
                 <div class="col-sm-12">
                     <div class="c-footerCopyText">
-                        <p>© Copyright 2017 <a href="{{ site.url }}">{{ site.title }}</a> All Rights Reserved.</p>
+                        <p>© Copyright {{ site.time | date: '%Y' }} <a href="{{ site.url }}">{{ site.title }}</a> All Rights Reserved.</p>
+                        <p><span class="c-hiddenBuildStamp">{{ site.time  | date: '%d%m%Y'}}</span></p>
                     </div>
                 </div>
             </div>
