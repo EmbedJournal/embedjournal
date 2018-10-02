@@ -1,3 +1,9 @@
+/*
+@media not|only mediatype and (media feature and|or|not mediafeature) {
+    CSS-Code;
+}
+*/
+
 @media (min-width: 768px) {
     .c-toTop {
         display: block;
@@ -634,6 +640,17 @@
                     padding-right: 0;
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .heading-tags {
+        display: none !important;
+    }
+    .c-postInfo {
+        .b-tags {
+            margin-right: 60px;
         }
     }
 }

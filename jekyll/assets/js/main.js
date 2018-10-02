@@ -52,7 +52,35 @@ function validate_email(email)
     return (false);
 }
 
+function create(htmlStr)
+{
+    var frag = document.createDocumentFragment();
+    var temp = document.createElement('div');
+    temp.innerHTML = htmlStr;
+    while (temp.firstChild) {
+        frag.appendChild(temp.firstChild);
+    }
+    return frag;
+}
+
+function create_heading_tags(e)
+{
+    var tags = e.innerHTML.split(/,\s{0,}/);
+    var temp = document.createElement('div');
+    temp.className += "heading-tags";
+    for (i = 0; i < tags.length; i++) {
+        var fragment = create('<span class="heading-tag">' + tags[i] + '</span>');
+        temp.appendChild(fragment);
+    }
+    e.parentNode.insertBefore(temp, e);
+    e.remove();
+}
+
 $(document).ready(function() {
+
+    $('.heading-tags').each(function() {
+        create_heading_tags(this);
+    });
 
     // Make shell prompt in rouge syntax highlight un-selectable.
     $(".nv").each(function(index) {

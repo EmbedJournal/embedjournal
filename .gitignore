@@ -5,3 +5,4 @@
 .config
 local/
 scaled/
+.vscode
