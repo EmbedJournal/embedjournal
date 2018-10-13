@@ -4,7 +4,7 @@
     {% capture image-path %}{{ site.baseurl }}/assets/{{ page.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/{{ include.src }}{% endcapture %}
 {% endif %}
 
-<div class="text-center">
+<div class="text-center"  markdown="0">
     <a class="b-captionImg" href="#" data-featherlight="{{ image-path }}">
         <img
             data-src="{{ image-path }}" class="img-responsive lazyload"
