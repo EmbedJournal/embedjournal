@@ -32,7 +32,7 @@ RewriteRule ^ %{REQUEST_URI}? [R=301,L,NE]
     ExpiresByType image/ico "access plus 1 month"
     ExpiresByType image/x-icon "access plus 1 month"
     ExpiresByType text/html "access plus 600 seconds"
-    ExpiresDefault "access plus 1 month"
+   ExpiresDefault "access plus 1 month"
 </IfModule>
 
 <IfModule mod_headers.c>
@@ -116,3 +116,4 @@ redirect 301 /0-to-99-counter-using-7-segment-displays-based-on-external-events 
 redirect 301 /pc-does-not-have-serial-port-maybe-it-does /pc-serial-port-not-dead
 
 redirect 301 /stepper-motor-and-how-they-work /stepper-motors-introduction-and-working-principle
+redirect 301 /how-to-use-gmail-form-terminal-linux /how-to-use-gmail-from-terminal-linux
