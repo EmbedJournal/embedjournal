@@ -97,7 +97,7 @@
                                         </form> -->
                                     </div>
                                     <div class="c-footerCopyText">
-                                        <p>© Copyright 2017 <a href="site.url">{{ site.title }}</a> All Rights Reserved.</p>
+					<p>© Copyright {{ site.time | date: '%Y' }} <a href="{{ site.url }}">{{ site.title }}</a> All Rights Reserved.</p>
                                     </div>
                                 </div>
                             </div>
@@ -112,4 +112,4 @@
     <a href="#" class="c-toTop js-toTop"><span class="fa fa-angle-up"></span></a>
     <script src="{{ site.baseurl }}/assets/js/main.min.js"></script>
 </body>
-</html>
+</html
