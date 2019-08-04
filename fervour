@@ -29,6 +29,7 @@ use File::Basename;
   -i, --incremental    Passes incremental build flag to jekyll.
   -c, --category CAT   Create category CAT (experimental)
   -e, --env ENV        Specify (override) build environment. Can be (dev|prod).
+  -s, --ss-cert        Setup self signed SSL certificate
   -h, --help           Print this help
 
 =head1 VERSION
@@ -44,8 +45,9 @@ GetOptions(
   'build'         => \ my $do_build,
   'update'        => \ my $do_git_update,
   'incremental'   => \ my $inc_build,
-  'env=s'         => \ my $build_env,
   'category=s'    => \ my $category_name,
+  'env=s'         => \ my $build_env,
+  'ss-cert'       => \ my $do_create_cert,
   'help'          =>   sub { pod2usage(1) },
 );
 
@@ -176,38 +178,30 @@ sub git_update()
 	exit;
 }
 
+sub create_self_signed_ssl_certificate()
+{
+	system("mkdir -p site/ssl");
+	system(
+		"openssl req -x509 -newkey rsa:4096 -nodes"
+			." -subj '/CN=loc.embedjournal.com'"
+			." -keyout site/ssl/embedjournal-key.pem"
+			." -out site/ssl/embedjournal-cert.pem"
+			." -days 365"
+			." > /dev/null 2>&1"
+	);
+	exit;
+}
+
 sub build_site()
 {
-	my ($env, $opts);
-
 	generate_scaled_images();
-
-	$env = $g_config{'ENV'} if (defined($g_config{'ENV'}));
-	$env = $build_env if (defined($build_env));
-
-	die "Must provide/configure ENV\n" if (!defined ($env));
-	$opts = "--source jekyll ";
-
-	if ($env =~ /dev/) {
-		$ENV{'JEKYLL_ENV'}="development";
-		$opts .= "--config jekyll/_config.yml,jekyll/_config_dev.yml ";
-		$opts .= "-d $g_config{'DEV_PATH'} " if ($g_config{'DEV_PATH'});
-	} elsif ($env =~ /prod/) {
-		$ENV{'JEKYLL_ENV'}="production";
-		$opts .= "--config jekyll/_config.yml ";
-		$opts .= "-d $g_config{'PROD_PATH'} " if ($g_config{'PROD_PATH'});
-	} else {
-		die "Unknown build environment!\n";
-	}
-
-	$opts .= "--incremental " if ($inc_build);
-
-	print "jekyll build $opts\n";
-	system ("jekyll build $opts");
+	print "fervour: defering build to docker!\n";
+	system("docker-compose up embedjournal");
 	exit;
 }
 
 git_update() if $do_git_update;
+create_self_signed_ssl_certificate() if $do_create_cert;
 
 load_config();
 build_site() if $do_build;

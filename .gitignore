@@ -2,7 +2,9 @@
 .asset-cache
 .jekyll-metadata
 .code-highlighter-cache
-.config
 local/
 scaled/
 .vscode
+.env
+.conf
+site/
