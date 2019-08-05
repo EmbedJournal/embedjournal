@@ -18,7 +18,7 @@ services:
         mkdir -p /srv/jekyll/site/www/ /srv/jekyll/jekyll/.jekyll-cache
         chmod a+w /srv/jekyll/jekyll/Gemfile.lock /srv/jekyll/site/www/ /srv/jekyll/jekyll/.jekyll-cache
         bundle install
-        if [ $${JEKYLL_ENV} == production ]; then
+        if [ \"x$${JEKYLL_ENV}\" == \"production\" ]; then
             jekyll build \
                 --source /srv/jekyll/jekyll \
                 --destination /srv/jekyll/site/www/embedjournal.com \
@@ -38,5 +38,5 @@ services:
       - $PWD/site/www:/var/www
       - $PWD/site/ssl:/var/ssl
     ports:
-      - "80:80"
-      - "443:443"
+      - 80:80
+      - 443:443
