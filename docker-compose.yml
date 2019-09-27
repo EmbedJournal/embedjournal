@@ -15,7 +15,8 @@ services:
       /bin/bash -c "
         set -e
         touch /srv/jekyll/jekyll/Gemfile.lock
-        chmod a+w /srv/jekyll/jekyll/Gemfile.lock /srv/jekyll/site/www/
+        mkdir -p /srv/jekyll/site/www/ /srv/jekyll/jekyll/.jekyll-cache
+        chmod a+w /srv/jekyll/jekyll/Gemfile.lock /srv/jekyll/site/www/ /srv/jekyll/jekyll/.jekyll-cache
         bundle install
         if [ $${JEKYLL_ENV} == production ]; then
             jekyll build \

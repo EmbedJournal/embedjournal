@@ -30,6 +30,7 @@ use File::Basename;
   -c, --category CAT   Create category CAT (experimental)
   -e, --env ENV        Specify (override) build environment. Can be (dev|prod).
   -s, --ss-cert        Setup self signed SSL certificate
+  -r, --run            Run nginx container
   -h, --help           Print this help
 
 =head1 VERSION
@@ -48,6 +49,7 @@ GetOptions(
   'category=s'    => \ my $category_name,
   'env=s'         => \ my $build_env,
   'ss-cert'       => \ my $do_create_cert,
+  'run'           => \ my $run_server,
   'help'          =>   sub { pod2usage(1) },
 );
 
@@ -200,10 +202,18 @@ sub build_site()
 	exit;
 }
 
+sub run_nginx()
+{
+	print "fervour: starting server...\n";
+	system("docker-compose up -d server");
+	exit;
+}
+
 git_update() if $do_git_update;
 create_self_signed_ssl_certificate() if $do_create_cert;
 
 load_config();
 build_site() if $do_build;
+run_nginx() if $run_server;
 create_category() if (defined $category_name);
 
