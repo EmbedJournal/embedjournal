@@ -5,8 +5,8 @@ services:
   embedjournal:
     image: jekyll/builder:latest
     volumes:
-      - $PWD:/srv/jekyll
-      - $PWD/site/bundle:/usr/local/bundle
+      - $PWD:/srv/jekyll:z
+      - $PWD/site/bundle:/usr/local/bundle:z
     environment:
       - GEM_HOME /usr/local/bundle
         JEKYLL_ENV ${JEKYLL_ENV}
@@ -14,17 +14,19 @@ services:
     command: |
       /bin/bash -c "
         set -e
+        touch /srv/jekyll/jekyll/Gemfile.lock
+        chmod a+w /srv/jekyll/jekyll/Gemfile.lock /srv/jekyll/site/www/
         bundle install
         if [ $${JEKYLL_ENV} == production ]; then
             jekyll build \
                 --source /srv/jekyll/jekyll \
                 --destination /srv/jekyll/site/www/embedjournal.com \
-                --config /srv/jekyll/jekyll/_config.yml
+                --config /srv/jekyll/jekyll/_config.yml --trace
         else
             jekyll build \
                 --source /srv/jekyll/jekyll \
                 --destination /srv/jekyll/site/www/embedjournal.com \
-                --config /srv/jekyll/jekyll/_config.yml,/srv/jekyll/jekyll/_config_dev.yml
+                --config /srv/jekyll/jekyll/_config.yml,/srv/jekyll/jekyll/_config_dev.yml --trace
         fi
       "
   # deploy nginx container
