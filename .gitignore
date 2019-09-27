@@ -8,3 +8,4 @@ scaled/
 .env
 .conf
 site/
+jekyll/.jekyll-cache/
