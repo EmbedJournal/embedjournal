@@ -26,11 +26,11 @@ use File::Basename;
 
   -b, --build          Build site for specified ENV (--env) or for configured ENV
   -u, --update         Updated git repo to latest pushed changes
-  -i, --incremental    Passes incremental build flag to jekyll.
   -c, --category CAT   Create category CAT (experimental)
   -e, --env ENV        Specify (override) build environment. Can be (dev|prod).
   -s, --ss-cert        Setup self signed SSL certificate
   -r, --run            Run nginx container
+  -i, --init           Initialize the repository. (run this only after a fresh clone)
   -h, --help           Print this help
 
 =head1 VERSION
@@ -43,9 +43,11 @@ my $argc = @ARGV;
 my %g_config;
 
 GetOptions(
-  'build'         => \ my $do_build,
-  'update'        => \ my $do_git_update,
-  'incremental'   => \ my $inc_build,
+  'build'         =>   sub { build_site() },
+  'update'        =>   sub { git_update() },
+  'ss-cert'       =>   sub { create_self_signed_ssl_certificate() },
+  'init'          =>   sub { init_depot() },
+  'help'          =>   sub { pod2usage(1) },
   'category=s'    => \ my $category_name,
   'env=s'         => \ my $build_env,
   'ss-cert'       => \ my $do_create_cert,
@@ -95,8 +97,31 @@ sub write_categories_yml
 	close ($f);
 }
 
+sub load_config()
+{
+	my ($line, $k, $v);
+	return undef unless (-f ".config");
+
+	open(my $f, "<", ".config");
+
+	while (<$f>) {
+		chomp; ++$line;
+		next if (/^$/);
+		next if (/^#.*/);
+		($k, $v) = /^\s?+(\S+)\s?+=\s?+(\S+)\s?+$/;
+		if (!defined($k) || !defined($v)) {
+			print "Invalid. In file .config at line $line: $_\n";
+			next;
+		}
+		# print("k:$k v:$v\n");
+		$g_config{$k}=$v;
+	}
+}
+
 sub create_category()
 {
+	load_config();
+
 	my $tf = '/tmp/cat_' . get_rand_token() . '.yml';
 	open my $f, ">", $tf // die "cannot crete file $tf";
 	print $f "name: \"$category_name\"\n";
@@ -135,27 +160,6 @@ sub create_category()
 	unlink($tf);
 }
 
-sub load_config()
-{
-	my ($line, $k, $v);
-	return undef unless (-f ".config");
-
-	open(my $f, "<", ".config");
-
-	while (<$f>) {
-		chomp; ++$line;
-		next if (/^$/);
-		next if (/^#.*/);
-		($k, $v) = /^\s?+(\S+)\s?+=\s?+(\S+)\s?+$/;
-		if (!defined($k) || !defined($v)) {
-			print "Invalid. In file .config at line $line: $_\n";
-			next;
-		}
-		# print("k:$k v:$v\n");
-		$g_config{$k}=$v;
-	}
-}
-
 sub generate_scaled_images()
 {
 	my @file_list;
@@ -176,27 +180,34 @@ sub generate_scaled_images()
 sub git_update()
 {
 	system("git pull origin master");
-	system("git submodule update --recursive --remote");
+	system("git pull --recurse-submodules");
 	exit;
 }
 
 sub create_self_signed_ssl_certificate()
 {
-	system("mkdir -p site/ssl");
-	system(
-		"openssl req -x509 -newkey rsa:4096 -nodes"
-			." -subj '/CN=loc.embedjournal.com'"
-			." -keyout site/ssl/embedjournal-key.pem"
-			." -out site/ssl/embedjournal-cert.pem"
-			." -days 365"
-			." > /dev/null 2>&1"
-	);
+	unless (-f "site/ssl/embedjournal-key.pem") {
+		printf "Creating self-signed SSL certificate for embedjournal.com\n";
+		system("mkdir -p site/ssl");
+		system("openssl req -x509 -newkey rsa:4096 -nodes"
+				." -subj '/CN=embedjournal.com'"
+				." -keyout site/ssl/embedjournal-key.pem"
+				." -out site/ssl/embedjournal-cert.pem"
+				." -days 365"
+				." > /dev/null 2>&1"
+		);
+	}
 	exit;
+}
+
+sub init_depot()
+{
+	system("cp .env.sample .env");
+	generate_scaled_images();
 }
 
 sub build_site()
 {
-	generate_scaled_images();
 	print "fervour: defering build to docker!\n";
 	system("docker-compose up embedjournal");
 	exit;
@@ -209,11 +220,7 @@ sub run_nginx()
 	exit;
 }
 
-git_update() if $do_git_update;
-create_self_signed_ssl_certificate() if $do_create_cert;
-
 load_config();
-build_site() if $do_build;
 run_nginx() if $run_server;
 create_category() if (defined $category_name);
 
