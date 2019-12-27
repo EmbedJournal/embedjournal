@@ -1,5 +1,3 @@
-_site/*
+_site/
 Gemfile.lock
-assets/php/config.ini
-vendor/
 .jekyll-cache/
