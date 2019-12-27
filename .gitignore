@@ -1,11 +1,4 @@
-.sass-cache
-.asset-cache
-.jekyll-metadata
-.code-highlighter-cache
-local/
-scaled/
-.vscode
-.env
-.conf
-site/
-jekyll/.jekyll-cache/
+_site/*
+Gemfile.lock
+assets/php/config.ini
+vendor/
