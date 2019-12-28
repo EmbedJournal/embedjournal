@@ -16,5 +16,5 @@ Gemfile.lock:
 clean:
 	rm -rf _site Gemfile.lock .jekyll-cache/
 
-clean_vendor:
-	rm -rf vendor/
+clean_bundles:
+	rm -rf .bundle/
