@@ -168,7 +168,7 @@ gem. So let's go ahead and install jekyll and bundler.
 $ gem install jekyll bundler
 ```
 
-Now, we have met all ruby, jekyll related dependencies. Time to meet embedjoural's
+Now, we have met all ruby, jekyll related dependencies. Time to meet embedjournal's
 dependencies (sigh!). Since we have bundler, this is quite simple.
 
 ``` shell

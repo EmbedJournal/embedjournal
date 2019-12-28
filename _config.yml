@@ -84,11 +84,8 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - package.json
+  - Makefile
   - README.md
-  - tools/
-  - drafts/
-  - vendor/
 
 include:
   - .htaccess
@@ -106,3 +103,6 @@ compress_html:
   comments: all
   ignore:
     envs: development  # disable compression in development environment
+
+paginate_path: "/archives/page:num/"
+paginate: 10

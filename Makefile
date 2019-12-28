@@ -5,10 +5,10 @@
 #
 
 all: Gemfile.lock
-	jekyll build --trace
+	bundle exec jekyll build --trace
 
 run:
-	jekyll serve --incremental --port 8080 --trace
+	bundle exec jekyll serve --incremental --port 3858 --trace
 
 Gemfile.lock:
 	bundle install
