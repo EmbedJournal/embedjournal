@@ -77,7 +77,7 @@ plugins:
   - jekyll
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-archives
   - jemoji
 
@@ -98,11 +98,14 @@ jekyll-archives:
     month: "/archives/:year/:month/"
     tag:   "/tag/:name/"
 
+pagination:
+  enabled: true
+  sort_reverse: true
+  per_page: 10
+
 compress_html:
   clippings: all
   comments: all
   ignore:
     envs: development  # disable compression in development environment
 
-paginate_path: "/archives/page:num/"
-paginate: 10

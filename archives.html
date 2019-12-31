@@ -1,19 +1,22 @@
 ---
 title: Archives
 layout: default
+permalink: /archives/
+pagination:
+  enabled: true
 ---
 
 <div class="row">
     <div class="col-lg-10 col-lg-offset-1">
-		<div class="c-posts">
-			<div class="b-title">
-				<h3>Archives</h3>
-			</div>
-			<div class="b-posts">
+        <div class="c-posts">
+            <div class="b-title">
+                <h3>Archives</h3>
+            </div>
+            <div class="b-posts">
 
-				{% for post in paginator.posts %}
-				<div class="b-postItem">
-				    <div class="b-postImg">
+                {% for post in paginator.posts %}
+                <div class="b-postItem">
+                    <div class="b-postImg">
                         {% if post.thumbnail %}
                         <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
                             {% capture image-path %}{{ site.baseurl }}/assets/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}{% endcapture %}
@@ -25,26 +28,26 @@ layout: default
                             <img src="{{ site.baseurl }}/assets/images/categories/{{ image-name }}" alt="{{ post.title }}">
                         </a>
                         {% endif %}
-				    </div>
-				    <div class="b-postDesc">
-				        <a href="{{ post.url | relative_url }}" title="{{ post.title }}" class="e-title"><h4>{{ post.title }}</h4></a>
-				        <p>{{ post.content | strip_html | truncatewords:50 }}</p>
-				        <div class="c-postInfo">
+                    </div>
+                    <div class="b-postDesc">
+                        <a href="{{ post.url | relative_url }}" title="{{ post.title }}" class="e-title"><h4>{{ post.title }}</h4></a>
+                        <p>{{ post.content | strip_html | truncatewords:50 }}</p>
+                        <div class="c-postInfo">
                             <div class="b-date">
                                 <p><span class ="fa fa-calendar"></span>
                                 <a href="{{ site.baseurl }}/archives/{{ post.date | date: '%Y/%m' }}">{{ post.date | date: "%b %Y" }}</a>
                                 </p>
                             </div>
-				            <div class="b-author">
-				                {% assign author = site.data.authors[post.author] %}
-				                <p>By <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}">{{ author.name }}</a></p>
-				            </div>
-				            <div class="b-category">
+                            <div class="b-author">
+                                {% assign author = site.data.authors[post.author] %}
+                                <p>By <a href="{{ site.baseurl }}/authors/{{ author.full_name | slugify }}">{{ author.name }}</a></p>
+                            </div>
+                            <div class="b-category">
                                 <p>
                                     <span class="fa fa-folder"></span>
                                     <a href="{{ site.baseurl }}/category/{{ post.category | slugify }}">{{ post.category }}</a>
                                 </p>
-				            </div>
+                            </div>
                             <div class="b-tags">
                                 <p>
                                     <span class="fa fa-tags"></span>
@@ -54,27 +57,13 @@ layout: default
                                     {% endfor %}
                                 </p>
                             </div>
-				        </div>
-				    </div>
-				</div>
-				{% endfor %}
-			</div>
-		</div>
-		{% capture paginator_base_path %}{{ site.baseurl }}/archives{% endcapture %}
-		{% if paginator.total_pages > 1 %}
-			<div class="c-pagination">
-			    <ul>
-			        {% for page in (1..paginator.total_pages) %}
-			            {% if page == paginator.page %}
-			                <li class="active disabled"><a href="#">{{ page }}</a></li>
-			            {% elsif page == 1 %}
-			                <li><a href="{{ paginator_base_path }}/">{{ page }}</a></li>
-			            {% else %}
-			                <li><a href="{{ paginator_base_path }}/page{{ page }}">{{ page }}</a></li>
-			            {% endif %}
-			        {% endfor %}
-			    </ul>
-			</div>
-		{% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% capture paginator_base_path %}{{ site.baseurl }}/archives{% endcapture %}
+        {% include paginator.html %}
     </div>
 </div>

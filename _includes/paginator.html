@@ -1,0 +1,15 @@
+{% if paginator.total_pages > 1 %}
+    <div class="c-pagination">
+        <ul>
+            {% for page_no in (1..paginator.total_pages) %}
+                {% if page_no == paginator.page %}
+                    <li class="active disabled"><a href="#">{{ page_no }}</a></li>
+                {% elsif page_no == 1 %}
+                    <li><a href="{{ paginator_base_path }}/">{{ page_no }}</a></li>
+                {% else %}
+                    <li><a href="{{ paginator_base_path }}/page{{ page_no }}">{{ page_no }}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+{% endif %}
