@@ -31,5 +31,5 @@ Lastly, in the embedded world there are a [lot of stuffs that can go wrong][EJ_L
 [EJ_LINK1]: /are-you-reading-the-datasheet/ "Are you reading the datasheet? What to look for and how to find them!"
 {:target="_blank"}
 
-[EJ_LINK2]: /circuit-debugging-tips-tricks-techniques/" "Circuit Debugging aEUR" Tips Tricks & Techniques"
+[EJ_LINK2]: /circuit-debugging-tips-tricks-techniques/ "Circuit Debugging aEUR" Tips Tricks & Techniques"
 {:target="_blank"}

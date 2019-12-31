@@ -48,7 +48,7 @@ Once the last byte in the buffer is loaded, we will have to **disable the interr
 
 The program runs close to 400 lines so I will refrain from posting it here. You can find the code along with an example program at our GitHub Repository.
 
-#### <a title="Vist GitHub repository" href="https://github.com/EmbedJournal/PIC-Hardware-UART" target="_blank">Download from GitHhub<br /> </a>
+~~~Download from GitHub~~~
 
 I have commented the code enough so I don't think there is any need for a description here. Besides, the most important part of the code, dealing with the circular buffer and their use has already been discussed. If you still have some thing to ask, leave a comment and I will get back to you as soon as possible.
 

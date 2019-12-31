@@ -111,4 +111,4 @@ The PandaBoard comes as is. That is it cannot be used fully out of the box. Ther
 
 PandaBoard is a good choice if you are a seasoned Linux user looking forward to some real beast in terms of processing and computation powers. For beginners and intermediate level users you might have to wait a little longer to use this board. There are other boards that will suit your need properly.
 
-Also read our review on some other popular SBCs such as [BeagleBone](/beaglebone-a-quick-review/), [RaspberryPi](/raspberry-pi-lets-take-a-bite/) and [Cubieboard](/cubiebord/).
+Also read our review on some other popular SBCs such as [BeagleBone](/beaglebone-a-quick-review/), [RaspberryPi](/raspberry-pi-lets-take-a-bite/) and [Cubieboard](/cubieboard/).

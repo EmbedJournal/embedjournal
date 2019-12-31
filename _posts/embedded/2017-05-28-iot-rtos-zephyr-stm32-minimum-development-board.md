@@ -25,9 +25,9 @@ Zephyr is being developed by the Linux developer community. So the source code o
 I have used [FreeRTOS][freertos] in the past, and during my initial days, have had great difficulty in locating where a given module fell ie., it wasn't very intuitive to begin with. Also, it had the macro soup (#ifdefs literally everywhere) issue that Zephyr doesn't (currently) suffer.
 
 To follow this article, you will need the following,
-  * [STM32 Minimum Development Board][stm32-ebay]
-  * [STLink V2][stlink-v2-ebay]
-  * [USB to UART converter][usb-uart-ebay]
+  * [STM32 Minimum Development Board][stm32]
+  * [STLink V2][stlink-v2]
+  * [USB to UART converter][usb-uart]
 
 STM32 Minimum Development Board
 -------------------------------
@@ -38,14 +38,14 @@ Well, this is not exactly a development board in the strictest of senses (all it
 
 {% include image.html src="stm32_min_dev.jpg" alt="minimum system development board" %}
 
-I have been having my eye on the STM32F103C8T6 series SoC for some time. Reason being, they were inexpensive and had sufficient juice to do some intermediate level stuffs. So I went ahead and bought one of these [minimum system development board][stm32-ebay] from eBay for like $4 including shipment.
+I have been having my eye on the STM32F103C8T6 series SoC for some time. Reason being, they were inexpensive and had sufficient juice to do some intermediate level stuffs. So I went ahead and bought one of these [minimum system development board][stm32] from eBay for like $4 including shipment.
 
 STLink V2
 ---------
 
 {% include image.html src="stlink_v2_openocd.jpg" alt="stlink v2 debugger" %}
 
-Although STM32 can be bootloaded without the need for any external hardware, I bought one of this [STLink V2][stlink-v2-ebay] to flash and debug mu code. It was dirt cheap and I know it will come in handy at some point in time.
+Although STM32 can be bootloaded without the need for any external hardware, I bought one of this [STLink V2][stlink-v2] to flash and debug mu code. It was dirt cheap and I know it will come in handy at some point in time.
 
 Hardware Setup
 --------------
@@ -150,13 +150,13 @@ Edit History:
 [freertos]: http://www.freertos.org/
 [arduino-101]: https://www.arduino.cc/en/Main/ArduinoBoard101
 [zephyr-project-home]: https://www.zephyrproject.org/
-[zephyr-stm32-min-dev]: https://www.zephyrproject.org/doc/boards/arm/stm32_min_dev/doc/stm32_min_dev.html
+[zephyr-stm32-min-dev]: https://docs.zephyrproject.org/latest/boards/arm/stm32_min_dev/doc/index.html
 [zephry-github]: https://github.com/zephyrproject-rtos/zephyr
 [zephry-list-1]: https://lists.zephyrproject.org/pipermail/zephyr-devel/2017-May/007664.html
 [zephry-list-2]: https://lists.zephyrproject.org/pipermail/zephyr-devel/2017-May/007678.html
 [zephyr-pull]: https://github.com/zephyrproject-rtos/zephyr/pull/272
-[zephyr-dev]:https://www.zephyrproject.org/doc/latest/getting_started/installation_linux.html
+[zephyr-dev]:https://docs.zephyrproject.org/latest/getting_started/installation_linux.html
 [openocd-home]: http://openocd.org/
-[stm32-ebay]: http://www.ebay.in/itm/STM32F103C8T6-ARM-STM32-Minimum-System-Development-Board-Module-For-arduino-/142309080435
-[stlink-v2-ebay]: http://www.ebay.in/itm/ST-Link-V2-upgrade-for-STM8-STM32-Downloader-Programer-Emulator-STLink-V2-/141670713904
-[usb-uart-ebay]: http://www.ebay.in/itm/FT232RL-USB-TO-TTL-5V-3-3V-Download-Cable-To-Serial-Adapter-Module-For-Arduino-/142321843275
+[stm32]: https://robu.in/product/stm32f103c8t6-minimum-system-board-microcomputer-stm32-arm-core-board/
+[stlink-v2]: https://robu.in/product/st-link-v2-programmer-for-stm8-and-stm32/
+[usb-uart]: https://robu.in/product/ft232rl-usb-to-ttl-5v-3-3v-download-cable-to-serial-adapter-module-for-arduino/

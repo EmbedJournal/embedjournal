@@ -108,4 +108,3 @@ compress_html:
   comments: all
   ignore:
     envs: development  # disable compression in development environment
-
