@@ -16,7 +16,7 @@ Have you ever wondered how your PC and phones keep track of time even when the d
 
 {% include image.html src="digital-clock.jpg" %}
 
-This how the competed project will look like (at least mine did) once you have gone through the entire post ![:)](http://s0.wp.com/wp-includes/images/smilies/icon_smile.gif?m=1129645325g) The LCD display is a standard 20 character 4 line module. Besides that I have a MCU section on the right and the RTC and <a title="EEPROM" href="http://en.wikipedia.org/wiki/EEPROM" target="_blank" rel="wikipedia">EEPROM</a> breakout board with a CMOS battery on the left. You don't have to have a module to get started with you can make the circuit connection on a GP board or on a breadboard. Here is a schematic of the DS1307, as for the PIC schematic I leave it to you to make your own schematic.
+This how the competed project will look like (at least mine did) once you have gone through the entire post :). The LCD display is a standard 20 character 4 line module. Besides that I have a MCU section on the right and the RTC and <a title="EEPROM" href="http://en.wikipedia.org/wiki/EEPROM" target="_blank" rel="wikipedia">EEPROM</a> breakout board with a CMOS battery on the left. You don't have to have a module to get started with you can make the circuit connection on a GP board or on a breadboard. Here is a schematic of the DS1307, as for the PIC schematic I leave it to you to make your own schematic.
 
 
 {% include image.html src="rtc-ds1307-schematic.png" %}

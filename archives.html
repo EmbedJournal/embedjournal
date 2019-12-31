@@ -10,7 +10,11 @@ pagination:
     <div class="col-lg-10 col-lg-offset-1">
         <div class="c-posts">
             <div class="b-title">
-                <h3>Archives</h3>
+                {% if paginator.page == 1 %}
+                    <h3>Archives</h3>
+                {% else %}
+                    <h3>Archives - Page {{ paginator.page }}</h3>
+                {% endif %}
             </div>
             <div class="b-posts">
 
