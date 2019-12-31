@@ -10,17 +10,18 @@ all: Gemfile.lock
 run:
 	bundle exec jekyll serve --incremental -P 3858 -H 0.0.0.0 --trace
 
-Gemfile.lock:
-	find assets/ -type f -name 'post-thumb.*' | grep -v '/scaled/' | \
+scale:
+	find assets/ -type f -name 'post-thumb.*' | \
 		perl -ne ' \
 			use File::Basename; \
 			chomp; \
-			($$n,$$p)i = fileparse($$_); \
-			next if (-f "$$p/scaled/$$n"); \
-			system("mkdir -p $$p/scaled"); \
-			system("convert $$_ -resize 80x80^ -gravity center -extent 80x80 $$p/scaled/$$n"); \
+			($$n,$$p) = fileparse($$_); \
+			next if (-f "$$p/post-thumb-80x80.jpg"); \
+			system("convert $$_ -resize 80x80^ -gravity center -extent 80x80 $$p/post-thumb-80x80.jpg"); \
 			print "Scaling: $$_\n" \
 		'
+
+Gemfile.lock:
 	bundle install --path .bundle/vendor
 
 clean:
@@ -29,4 +30,4 @@ clean:
 clean_bundles:
 	rm -rf .bundle/
 
-.PHONY: all run clean clean_bundles
+.PHONY: all run clean clean_bundles scale

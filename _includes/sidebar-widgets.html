@@ -136,9 +136,9 @@
         <div class="media-left">
             <a href="{{ post.url | relative_url }}">
                 {% if post.thumbnail %}
-                    {% capture image-path %}{{ site.baseurl }}/assets/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/scaled/{{ post.thumbnail }}{% endcapture %}
+                    {% capture image-path %}{{ site.baseurl }}/assets/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/post-thumb-80x80.jpg{% endcapture %}
                 {% else %}
-                    {% capture image-path %}{{ site.baseurl }}/assets/images/categories/scaled/{{ post.category | slugify }}.jpg{% endcapture %}
+                    {% capture image-path %}{{ site.baseurl }}/assets/images/categories/{{ post.category | slugify }}-80x80.jpg{% endcapture %}
                 {% endif %}
                 <img class="media-object" src="{{ image-path }}" alt="{{ post.title }}">
             </a>
@@ -160,9 +160,9 @@
         <div class="media-left">
             <a href="{{ post.url | relative_url }}">
                 {% if post.thumbnail %}
-                    {% capture image-path %}{{ site.baseurl }}/assets/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/scaled/{{ post.thumbnail }}{% endcapture %}
+                    {% capture image-path %}{{ site.baseurl }}/assets/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/post-thumb-80x80.jpg{% endcapture %}
                 {% else %}
-                    {% capture image-path %}{{ site.baseurl }}/assets/images/categories/scaled/{{ post.category | slugify }}.jpg{% endcapture %}
+                    {% capture image-path %}{{ site.baseurl }}/assets/images/categories/{{ post.category | slugify }}-80x80.jpg{% endcapture %}
                 {% endif %}
                 <img class="media-object" src="{{ image-path }}" alt="{{ post.title }}">
             </a>

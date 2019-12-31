@@ -109,9 +109,9 @@ layout: default
                                 <div class="media">
                                     <div class="media-left">
                                         {% if post.thumbnail %}
-                                            {% capture image-path %}{{ site.baseurl }}/assets/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/scaled/{{ post.thumbnail }}{% endcapture %}
+                                            {% capture image-path %}{{ site.baseurl }}/assets/{{ post.path | replace:'_posts/', 'posts/' | replace:'.md','' }}/post-thumb-80x80.jpg{% endcapture %}
                                         {% else %}
-                                            {% capture image-path %}{{ site.baseurl }}/assets/images/categories/scaled/{{ post.category | slugify }}.jpg{% endcapture %}
+                                            {% capture image-path %}{{ site.baseurl }}/assets/images/categories/{{ post.category | slugify }}-80x80.jpg{% endcapture %}
                                         {% endif %}
                                         <div class="media-object">
                                             <a href="{{ post.url | relative_url }}">
