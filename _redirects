@@ -1,0 +1,48 @@
+# Post redirects
+
+/2013/07/interface-lcd-in-4-bit-mode/ /interface-lcd-in-4-bit-mode/
+/board_stm32_min_dev.patch /iot-rtos-zephyr-stm32-minimum-system-development-board/
+/board_stm32_min_dev_v1.patch /iot-rtos-zephyr-stm32-minimum-system-development-board/
+/board /iot-rtos-zephyr-stm32-minimum-system-development-board/
+
+# Legacy Redirects
+
+/tag/algorithms/ /tag/algorithm/
+/category/embedded-theory /category/embedded
+/how-to /tag/howto
+/category/how-to /tag/howto
+/generalposts /category/general-posts
+/circuit_design /category/hardware
+/latest-news /category/news
+/linux /category/linux
+/programming-2 /category/programming
+
+/tech-review/embedded-software /category/review
+/tech-review/embedded-hardware /category/review
+/tech-review /category/review
+
+/embedded-systems/pic-microcontroller /category/microchip-pic
+/embedded-systems/arduino-embedded_systems /category/arduino
+/embedded-systems/basics /tag/basics
+/embedded-systems/interface /tag/interface
+/embedded-systems /category/embedded-theory
+
+/robotics/robots /category/robotics
+/robotics/robot-theory /category/robotics
+/robotics /category/robotics
+
+/embedjournal-about /about
+/about-embedjournal /about
+/embed-journal-about /about
+
+/siddharth-chandrasekaran /authors/siddharth-chandrasekaran
+/author/siddharth /authors/siddharth-chandrasekaran
+/author/manivannan /authors/mani-sadhashivam
+/author /authors
+
+/interfacing-lcd-module-part-1 /interfacing-lcd-module-basics
+/0-to-99-counter-using-7-segment-displays-based-on-external-events /external-event-counter-seven-segment-displays
+/pc-does-not-have-serial-port-maybe-it-does /pc-serial-port-not-dead
+
+/stepper-motor-and-how-they-work /stepper-motors-introduction-and-working-principle
+/how-to-use-gmail-form-terminal-linux /how-to-use-gmail-from-terminal-linux
