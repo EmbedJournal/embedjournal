@@ -5,7 +5,7 @@
 
 {% if page.description %} {% assign desc = page.description %} {% else %} {% capture headchars %}{{ page.content | strip_html
 | truncatewords:50 }}{% endcapture %} {% assign desc = headchars %} {% endif %} {% assign author = site.data.authors.[page.author]
-%} {% capture post_image %}{{ site.url }}/assets/{{ page.path | replace:'.md','' | replace:'_post','post_image' }}/{{ page.thumbnail
+%} {% capture post_image %}{{ site.url }}/assets/{{ page.path | replace:'.md','' | replace:'_post','post' }}/{{ page.thumbnail
 }}{% endcapture %}
 
 <title>{{ page.title }} - {{ site.title }}</title>
