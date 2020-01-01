@@ -1,3 +1,7 @@
+# Site redirect
+
+https://quizzical-jang-990f91.netlify.com/* https://embedjournal.com/:splat 301!
+
 # Post redirects
 
 /2013/07/interface-lcd-in-4-bit-mode /interface-lcd-in-4-bit-mode 301!
