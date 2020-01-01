@@ -1,48 +1,48 @@
 # Post redirects
 
-/2013/07/interface-lcd-in-4-bit-mode/ /interface-lcd-in-4-bit-mode/
-/board_stm32_min_dev.patch /iot-rtos-zephyr-stm32-minimum-system-development-board/
-/board_stm32_min_dev_v1.patch /iot-rtos-zephyr-stm32-minimum-system-development-board/
-/board /iot-rtos-zephyr-stm32-minimum-system-development-board/
+/2013/07/interface-lcd-in-4-bit-mode /interface-lcd-in-4-bit-mode 301!
+/board_stm32_min_dev.patch /iot-rtos-zephyr-stm32-minimum-system-development-board 301!
+/board_stm32_min_dev_v1.patch /iot-rtos-zephyr-stm32-minimum-system-development-board 301!
+/board /iot-rtos-zephyr-stm32-minimum-system-development-board 301!
 
 # Legacy Redirects
 
-/tag/algorithms/ /tag/algorithm/
-/category/embedded-theory /category/embedded
-/how-to /tag/howto
-/category/how-to /tag/howto
-/generalposts /category/general-posts
-/circuit_design /category/hardware
-/latest-news /category/news
-/linux /category/linux
-/programming-2 /category/programming
+/tag/algorithms /tag/algorithm 301!
+/category/embedded-theory /category/embedded 301!
+/how-to /tag/howto 301!
+/category/how-to /tag/howto 301!
+/generalposts /category/general-posts 301!
+/circuit_design /category/hardware 301!
+/latest-news /category/news 301!
+/linux /category/linux 301!
+/programming-2 /category/programming 301!
 
-/tech-review/embedded-software /category/review
-/tech-review/embedded-hardware /category/review
-/tech-review /category/review
+/tech-review/embedded-software /category/review 301!
+/tech-review/embedded-hardware /category/review 301!
+/tech-review /category/review 301!
 
-/embedded-systems/pic-microcontroller /category/microchip-pic
-/embedded-systems/arduino-embedded_systems /category/arduino
-/embedded-systems/basics /tag/basics
-/embedded-systems/interface /tag/interface
-/embedded-systems /category/embedded-theory
+/embedded-systems/pic-microcontroller /category/microchip-pic 301!
+/embedded-systems/arduino-embedded_systems /category/arduino 301!
+/embedded-systems/basics /tag/basics 301!
+/embedded-systems/interface /tag/interface 301!
+/embedded-systems /category/embedded-theory 301!
 
-/robotics/robots /category/robotics
-/robotics/robot-theory /category/robotics
-/robotics /category/robotics
+/robotics/robots /category/robotics 301!
+/robotics/robot-theory /category/robotics 301!
+/robotics /category/robotics 301!
 
-/embedjournal-about /about
-/about-embedjournal /about
-/embed-journal-about /about
+/embedjournal-about /about 301!
+/about-embedjournal /about 301!
+/embed-journal-about /about 301!
 
-/siddharth-chandrasekaran /authors/siddharth-chandrasekaran
-/author/siddharth /authors/siddharth-chandrasekaran
-/author/manivannan /authors/mani-sadhashivam
-/author /authors
+/siddharth-chandrasekaran /authors/siddharth-chandrasekaran 301!
+/author/siddharth /authors/siddharth-chandrasekaran 301!
+/author/manivannan /authors/mani-sadhashivam 301!
+/author /authors 301!
 
-/interfacing-lcd-module-part-1 /interfacing-lcd-module-basics
-/0-to-99-counter-using-7-segment-displays-based-on-external-events /external-event-counter-seven-segment-displays
-/pc-does-not-have-serial-port-maybe-it-does /pc-serial-port-not-dead
+/interfacing-lcd-module-part-1 /interfacing-lcd-module-basics 301!
+/0-to-99-counter-using-7-segment-displays-based-on-external-events /external-event-counter-seven-segment-displays 301!
+/pc-does-not-have-serial-port-maybe-it-does /pc-serial-port-not-dead 301!
 
-/stepper-motor-and-how-they-work /stepper-motors-introduction-and-working-principle
-/how-to-use-gmail-form-terminal-linux /how-to-use-gmail-from-terminal-linux
+/stepper-motor-and-how-they-work /stepper-motors-introduction-and-working-principle 301!
+/how-to-use-gmail-form-terminal-linux /how-to-use-gmail-from-terminal-linux 301!
