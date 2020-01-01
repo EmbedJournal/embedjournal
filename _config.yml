@@ -88,7 +88,7 @@ exclude:
   - README.md
 
 include:
-  - .htaccess
+  - _redirects
 
 jekyll-archives:
   enabled: [ "year", "month", "tags" ]
