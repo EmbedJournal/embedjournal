@@ -6,7 +6,7 @@ version: "1.1.0"
 url:     "https://embedjournal.com"
 encoding: utf-8
 baseurl: "" # path to load the site from.
-logo:    "/assets/images/logo/embedjournal-60px.png"
+logo:    "/assets/images/logo/embedjournal-120px.png"
 env: production
 permalink: disqus
 markdown: kramdown

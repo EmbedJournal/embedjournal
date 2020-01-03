@@ -8,7 +8,7 @@ all: Gemfile.lock
 	bundle exec jekyll build --trace
 
 run:
-	bundle exec jekyll serve --incremental -P 3858 -H 0.0.0.0 --trace
+	bundle exec jekyll serve --watch -P 3858 -H 0.0.0.0 --trace
 
 scale:
 	find assets/ -type f -name 'post-thumb.*' | \
