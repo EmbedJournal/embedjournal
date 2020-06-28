@@ -34,7 +34,7 @@ STM32 Minimum Development Board
 
 Since Zephyr is a fairly new RTOS, there are very few boards to which it has already been ported to. Most of the boards which already have a port are either not available or outright expensive. In this post I will take up the "STM32 Minimum Development Board" - a cheaper alternative and try to run Zephyr on it.
 
-Well, this is not exactly a development board in the strictest of senses (all it has is an on board LED). This is more of a breakout board with just the bare minimum to get the CPU to boot. Somehow, the term "STM32 Minimum Development Board" seems to have caught on to it and for the sake of consistency with the existing SEO, we will refer to this board in the same way. Mote details on the board cab be found at [zephyr's board document page][zephyr-stm32-min-dev].
+Well, this is not exactly a development board in the strictest of senses (all it has is an on board LED). This is more of a breakout board with just the bare minimum to get the CPU to boot. Somehow, the term "STM32 Minimum Development Board" seems to have caught on to it and for the sake of consistency with the existing SEO, we will refer to this board in the same way. More details on the board cab be found at [zephyr's board document page][zephyr-stm32-min-dev].
 
 {% include image.html src="stm32_min_dev.jpg" alt="minimum system development board" %}
 
