@@ -1,3 +1,5 @@
+<img align="center" src="https://user-images.githubusercontent.com/22770735/92944646-e2b1b400-f471-11ea-852d-d1c0a4b4b475.png" />
+
 EmbedJournal Jekyll Template
 ============================
 
