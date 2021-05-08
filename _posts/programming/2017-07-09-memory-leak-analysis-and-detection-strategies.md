@@ -211,4 +211,4 @@ With all these in mind, I wrote a simple but effective [memory profiler][dmprof]
 
 Hope that was helpful. Did I miss something? leave you comments below. I will gladly take your inputs into this post.
 
-[dmprof]: https://github.com/cbsiddharth/DinkyMemProf
+[dmprof]: https://github.com/EmbedJournal/dmprof

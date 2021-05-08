@@ -37,7 +37,7 @@ EmbedJournal is what it is today because of a lot of nice folks around the world
 
 [1]: /authors/siddharth-chandrasekaran/
 [2]: https://github.com/jekyll/jekyll
-[3]: https://github.com/cbsiddharth/markdown-editor
+[3]: https://github.com/sidcha/markdown-editor
 [4]: https://embedjournal.com/editor/
 [5]: https://github.com/drewm/mailchimp-api
 [6]: http://indicserver.com/

@@ -45,11 +45,11 @@ This makes it an ideal data structure for bare-metal embedded programs. The bott
 
 ### The full vs empty problem
 
-The big pain point in circular buffers is that there is no _clean way_ to differentiate the buffer full vs empty cases. This is because in both the cases, head is equal to tail. That is, initially head and tail pointed point to the same location; when data is filled into the buffer, head is incremented and eventually it wraps around (more on this later) and catches tail when you fill the N<sup>th</sup> element into the N element buffer. At this point, head will point to the same location as tail but now the buffer is actually full, not empty.
+The big pain point in circular buffers is that there is no _clean way_ to differentiate the buffer full vs empty cases. This is because in both the cases, head is equal to tail. That is, initially head and tail pointed point to the same location; when data is filled into the buffer, head is incremented and eventually it wraps around (more on this later) and catches tail when you fill the N<sup>th</sup> element (note: not 0 indexed) into the N element buffer. At this point, head will point to the same location as tail but now the buffer is actually full, not empty.
 
 There are a lot of ways/workarounds to deal with this but most of them introduce a lot of complexity and hinders readability. This article presents a method that gives importance to elegance in design.
 
-In this method, we deliberately use only N-1 elements in the N element buffer. The last element is used (this of this more like a flag) to differentiate between empty and full cases. By this logic,
+In this method, we deliberately use only N-1 elements in the N element buffer. The last element is used (think of this more like a flag) to differentiate between empty and full cases. By this logic,
 
   * if head is equal to tail -> the buffer is empty
   * if (head + 1) is equal to tail -> the buffer is full
@@ -180,7 +180,7 @@ int your_application()
 }
 ```
 
-You can find a complete implementation of the above at [EmbedJournal/c-utils][2] in files [circular-byte-buffer.c][3] and [circular-byte-buffer.h][4].
+You can find a complete implementation of the above at [goToMain/c-utils][2] in files [circular-byte-buffer.c][3] and [circular-byte-buffer.h][4].
 
 I hope this post was of some help in understanding circular buffers. We will see more such data structures and an advanced extensions to this circular buffer that allows push/pop of non just bytes but any data type (even user defined data types) with type checking and other niceness in a future post.
 
@@ -193,6 +193,7 @@ Edit History:
 ```
 
 [1]: https://en.wikipedia.org/wiki/Circular_buffer
-[2]: https://github.com/EmbedJournal/c-utils
-[3]: https://github.com/EmbedJournal/c-utils/blob/master/archive/circular-byte-buffer.c
-[4]: https://github.com/EmbedJournal/c-utils/blob/master/archive/circular-byte-buffer.h
+[2]: https://github.com/goToMain/c-utils
+[3]: https://github.com/goToMain/c-utils/blob/master/archive/circular-byte-buffer.c
+[4]: https://github.com/goToMain/c-utils/blob/master/archive/circular-byte-buffer.h
+

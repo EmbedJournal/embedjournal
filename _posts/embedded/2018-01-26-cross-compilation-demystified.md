@@ -178,8 +178,8 @@ Edit History:
 [4]: https://en.wikipedia.org/wiki/Word_(computer_architecture)
 [5]: https://stackoverflow.com/a/26832773/8294130
 [6]: https://en.wikipedia.org/wiki/Cross_compiler#Canadian_Cross
-[7]: https://github.com/cbsiddharth/glem
-[8]: https://github.com/cbsiddharth/limpid
+[7]: https://github.com/EmbedJournal/glem
+[8]: https://github.com/EmbedJournal/limpid
 [9]: https://en.wikipedia.org/wiki/POSIX
 [10]: https://www.gnu.org/software/make/manual/html_node/Flavors.html#Flavors
 [11]: /cross-compilation-demystified/#what-is-the-need-for-cross-compilation

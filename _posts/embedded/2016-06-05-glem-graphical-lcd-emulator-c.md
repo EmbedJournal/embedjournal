@@ -44,7 +44,7 @@ Therefore, the glcd buffer length would be, <code>buf_len = glcd_width/8 * glcd_
 
 If you have any experience installing software in Linux, installing GLEM should be little/no trouble at all.
 
-You can find the git upstream at <https://github.com/cbsiddharth/glem>.Clone this repository into your machine and follow the instructions in the README.md file to install it.
+You can find the git upstream at <https://github.com/EmbedJournal/glem>.Clone this repository into your machine and follow the instructions in the README.md file to install it.
 
 Once you have made the project, you will have to start the GLEM server with your GLCD's width and height as arguments. For example if you have a 128x64 1bit GLCD, you should run,
 
