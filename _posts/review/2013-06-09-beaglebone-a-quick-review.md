@@ -1,6 +1,6 @@
 ---
 title: "BeagleBone - Detailed Technical Review"
-date: 2013-06-09T23:24:23+00:00
+date: 2017-06-09T23:24:23+00:00
 date_modified: 2017-04-01T10:00:00+05:30
 author: Naveen
 thumbnail: post-thumb.jpg
