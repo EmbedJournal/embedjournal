@@ -1,7 +1,7 @@
 ---
 title: "Raspberry Pi Google Calendar - A Combined venture for Mobile Phones"
-date: 2017-06-08T12:22:54+00:00
-date_modified: 2017-04-01T10:00:00+05:30
+date: 2017-08-08T12:22:54+00:00
+date_modified: 2022-01-13T07:28:02+02:00
 author: Naveen
 thumbnail: post-thumb.jpg
 permalink: /raspberry-pi-google-calendar/
