@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem "kramdown"
 gem "jekyll"
+gem "jekyll-sass-converter", "~> 2.0"
 gem "jekyll-feed"
 gem "jekyll-paginate-v2"
 gem "jekyll-sitemap"
